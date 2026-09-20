@@ -1,0 +1,19 @@
+* text=auto
+
+*.md text eol=lf
+*.txt text eol=lf
+*.v text eol=lf
+*.sv text eol=lf
+*.vh text eol=lf
+*.pdc text eol=lf
+*.al text eol=lf
+*.ps1 text eol=crlf
+
+*.bit binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.bmp binary
+*.wav binary
+*.mp3 binary
+

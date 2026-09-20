@@ -1,0 +1,56 @@
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.bak
+*.tmp
+*~
+
+# Large archives and installers
+*.zip
+*.rar
+*.7z
+*.iso
+*.exe
+*.msi
+*.lic
+
+# Anlogic TD
+fpga/**/Runs/
+fpga/**/runs/
+fpga/**/db/
+fpga/**/work/
+fpga/**/*.log
+fpga/**/*.html
+fpga/**/*.json
+fpga/**/*.bit
+!fpga/release/*.bit
+
+# ModelSim
+work/
+transcript
+vsim.wlf
+modelsim.ini
+*.vstf
+
+# Large raw evidence
+evidence/raw/
+evidence/video/
+evidence/**/*.mp4
+evidence/**/*.mov
+evidence/**/*.avi
+
+# OS/editor temporary files
+.DS_Store
+*.autosave
+
+# Local environment and secrets
+.env
+.env.*
+secrets/
+
