@@ -6,7 +6,7 @@
 
 | ID | 任务 | 负责人 | 依赖 | 状态 | 验收结果 | 分支日志 |
 |---|---|---|---|---|---|---|
-| T-001 | 建立仓库、文档记忆和 Git Worktree 流程 | main | 无 | 进行中 | 待提交 | `memory/daily/2026-09-20.md` |
+| T-001 | 建立仓库、文档记忆和 Git Worktree 流程 | main | 无 | 已合并 | 初始提交 `debaff7`，49 个文件，脚本静态检查通过 | `memory/daily/2026-09-20.md` |
 | T-002 | 硬件采购、到货核验和演示台准备 | team | 无 | 待启动 | 待验证 | `memory/branches/hardware-demo.md` |
 | T-003 | TD 6.2.1、License、驱动和 lab1 上板 | main | T-002 | 待启动 | 待验证 | `memory/branches/env-bringup.md` |
 | T-004 | 自研视频基线、DDR2、HDMI 和接口冻结 | main | T-003 | 待启动 | 待验证 | `memory/branches/video-pipeline.md` |
@@ -22,11 +22,10 @@
 
 ## 当前关键任务
 
-1. T-001 完成初始提交。
+1. T-001 已完成初始提交。
 2. T-002 核对硬件数量、到货时间和演示环境。
 3. T-003 在开发板可用后立即完成环境上板和 lab1 验收。
 
 ## 审核队列
 
 当前没有等待审核的分支。
-

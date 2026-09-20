@@ -1,5 +1,8 @@
 * text=auto
 
+.gitignore text eol=lf
+.gitattributes text eol=lf
+*.gitkeep text eol=lf
 *.md text eol=lf
 *.txt text eol=lf
 *.v text eol=lf
@@ -16,4 +19,3 @@
 *.bmp binary
 *.wav binary
 *.mp3 binary
-
