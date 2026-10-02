@@ -1,124 +1,32 @@
-[CmdletBinding(SupportsShouldProcess = $true)]
+#Requires -Version 7.5
+[CmdletBinding()]
 param(
-    [Parameter(Mandatory = $true)]
-    [ValidatePattern('^[a-z0-9][a-z0-9-]*$')]
-    [string]$TaskId,
-
-    [Parameter(Mandatory = $true)]
-    [string]$AcceptanceEvidence,
-
+    [Parameter(Mandatory)][string]$TaskId,
+    [Parameter(Mandatory)][string]$PullRequestUrl,
+    [Parameter(Mandatory)][string]$AcceptanceReport,
+    [string]$RepoRoot = (Split-Path -Parent $PSScriptRoot),
     [string]$BaseBranch = 'main',
-
-    [string]$Tag = '',
-
-    [switch]$RemoveWorktree
+    [string]$PolicyRef = ''
 )
-
-$ErrorActionPreference = 'Stop'
-
-function Invoke-Git {
-    param(
-        [Parameter(Mandatory = $true)]
-        [string[]]$Arguments,
-
-        [switch]$AllowFailure
-    )
-
-    $output = & git -C $RepoRoot @Arguments 2>&1
-    $exitCode = $LASTEXITCODE
-
-    if ($exitCode -ne 0 -and -not $AllowFailure) {
-        throw "git $($Arguments -join ' ') 执行失败：`n$($output -join [Environment]::NewLine)"
-    }
-
-    return [pscustomobject]@{
-        Output   = $output
-        ExitCode = $exitCode
-    }
-}
-
-$RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
-$RepoParent = Split-Path -Parent $RepoRoot
-$ProjectName = Split-Path -Leaf $RepoRoot
-$WorktreeRoot = Join-Path $RepoParent (Join-Path 'worktrees' $ProjectName)
-$WorktreePath = Join-Path $WorktreeRoot $TaskId
-$BranchName = "task/$TaskId"
-$LogRelativePath = "memory/branches/$TaskId.md"
-
-$currentBranch = (Invoke-Git -Arguments @('branch', '--show-current')).Output.Trim()
-if ($currentBranch -ne $BaseBranch) {
-    throw "只能在 $BaseBranch 分支合并。当前分支：$currentBranch"
-}
-
-$status = (Invoke-Git -Arguments @('status', '--porcelain')).Output
-if ($status.Count -gt 0) {
-    throw '主仓库存在未提交修改。合并前必须先处理。'
-}
-
-$branchCheck = Invoke-Git -Arguments @('show-ref', '--verify', '--quiet', "refs/heads/$BranchName") -AllowFailure
-if ($branchCheck.ExitCode -ne 0) {
-    throw "任务分支不存在：$BranchName"
-}
-
-$logResult = Invoke-Git -Arguments @('show', "${BranchName}:$LogRelativePath")
-$logContent = ($logResult.Output -join [Environment]::NewLine)
-if ($logContent -notmatch '(?m)^- 状态：等待主对话审核\s*$') {
-    throw ('分支 ' + $BranchName + ' 尚未标记为等待主对话审核。')
-}
-
-if ([System.IO.Path]::IsPathRooted($AcceptanceEvidence)) {
-    $evidencePath = $AcceptanceEvidence
-}
-else {
-    $evidencePath = Join-Path $RepoRoot $AcceptanceEvidence
-}
-
-if (-not (Test-Path -LiteralPath $evidencePath)) {
-    throw "验收证据不存在：$evidencePath"
-}
-
-if ($Tag -and $Tag -notmatch '^[A-Za-z0-9._/-]+$') {
-    throw "标签名称不合法：$Tag"
-}
-
-if ($Tag) {
-    $tagCheckBeforeMerge = Invoke-Git -Arguments @('show-ref', '--verify', '--quiet', "refs/tags/$Tag") -AllowFailure
-    if ($tagCheckBeforeMerge.ExitCode -eq 0) {
-        throw "标签已存在：$Tag"
-    }
-}
-
-$action = "将分支 $BranchName 以 --no-ff 合并到 $BaseBranch"
-if (-not $PSCmdlet.ShouldProcess($RepoRoot, $action)) {
-    return
-}
-
+. (Join-Path $PSScriptRoot 'task-common.ps1')
 try {
-    Invoke-Git -Arguments @('merge', '--no-ff', $BranchName, '-m', "merge: $TaskId") | Out-Null
+    $context = Get-TaskContext $RepoRoot $TaskId $BaseBranch $PolicyRef -RequireReady
+    $null = Test-TaskReport $context $AcceptanceReport
+    if ($PullRequestUrl -cnotmatch '^https://github\.com/([A-Za-z0-9_.-]+)/([A-Za-z0-9_.-]+)/pull/([1-9][0-9]*)$') { throw 'An exact github.com pull request URL is required.' }
+    $repository = "$($Matches[1])/$($Matches[2])"
+    $remote = (Invoke-TaskGit $context.Root @('remote', 'get-url', 'origin')).Trim()
+    $normalized = $remote -creplace '^git@github\.com:', 'https://github.com/' -creplace '\.git$', ''
+    if ($normalized -cne "https://github.com/$repository") { throw 'PR repository does not match origin.' }
+    [pscustomobject]@{
+        Mode = 'LocalPreflightOnly'
+        Executed = $false
+        MergeAuthorized = $false
+        TaskId = $TaskId
+        Head = $context.Head
+        ExpectedBase = $BaseBranch
+        ExpectedHead = $context.Branch
+        Unverified = @('PR open and not draft', 'remote head SHA matches local HEAD', 'PR base/head/repository', 'required CI success and branch protection', 'user approval')
+        CommandAfterIndependentVerification = "gh pr merge $PullRequestUrl --merge --match-head-commit $($context.Head)"
+    } | ConvertTo-Json -Depth 5
 }
-catch {
-    Write-Warning "合并失败或出现冲突。解决冲突后继续，或运行：git -C `"$RepoRoot`" merge --abort"
-    throw
-}
-
-$mergeCommit = (Invoke-Git -Arguments @('rev-parse', '--short', 'HEAD')).Output.Trim()
-
-if ($Tag) {
-    Invoke-Git -Arguments @('tag', $Tag) | Out-Null
-}
-
-if ($RemoveWorktree) {
-    if (Test-Path -LiteralPath $WorktreePath) {
-        Invoke-Git -Arguments @('worktree', 'remove', $WorktreePath) | Out-Null
-    }
-}
-
-Write-Host ''
-Write-Host '任务分支已合并。' -ForegroundColor Green
-Write-Host "任务：$TaskId"
-Write-Host "合并提交：$mergeCommit"
-if ($Tag) {
-    Write-Host "标签：$Tag"
-}
-Write-Host ''
-Write-Host '主对话仍需更新 PROJECT_MEMORY.md、TASKS.md、DECISIONS.md、CHANGELOG.md 和相关稳定文档。'
+catch { Write-Error $_ -ErrorAction Continue; exit 1 }
