@@ -73,3 +73,12 @@
 ## 下一分支交接
 
 主对话审核本分支相对 `c08ffbe` 的三个新增文档、来源哈希和安全门禁；不推送、不合并。用户下一步只需提供断电状态的板卡正反面、摄像头正反面、供电铭牌、FPC 两端与接口照片，补齐手册版本/页码；核对完成并确认连接/扫描后，才执行指南第 2 步。
+
+## 2026-10-02 审查修正：运行证据归属
+
+- 2026-10-02T11:56:36+08:00 接受用户定向修正，基础提交 `39833c9`，本 Worktree 起始干净；只改指南/模板的运行目录说明及本日志，不重做其他内容。
+- 实际执行者为 `env-bringup`，填写版和运行证据统一放 `evidence/env-bringup/runs/<run-id>/`；指南编制/验证证据仍属 `evidence/bringup-kit/`，不因此扩张本分支写集。本次只改文字，没有创建、迁移或复制证据目录。
+- `runs/` 为不随源码提交的本地运行产物，跨电脑交接用 `evidence/env-bringup/` 下非忽略清单记录相对路径、共享链接和哈希，不依赖 Git 自动同步运行文件。
+- 已只读核对总控树新 `.gitignore`：`git -C E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/team-workflow check-ignore -v --no-index evidence/env-bringup/runs/path-check/record.md` 退出 0，命中第 46 行 `evidence/*/runs/`；没有创建测试文件。本分支旧 `.gitignore` 不在写集中，不修改；最终规则由主对话集成。
+- 此修正按用户明确给出的 `env-bringup` 写集对齐；本次未找到可直接读取的 `env-bringup.json`，不声称已运行新任务权限检查器。主对话集成后仍需用正式任务卡复核。文档状态继续为等待主对话审核，不代表硬件通过。
+- 本次实际验证：与 `git show HEAD:<文件>` 逐行比较，指南和模板各仅一行目录/归属说明变化，模板所有待填数据与其他内容原样保留；旧运行路径已无残留，6 个本地 Markdown 链接存在，`git diff --check` 通过，改动严格为原三个文档。未执行编译、硬件操作、推送或合并。

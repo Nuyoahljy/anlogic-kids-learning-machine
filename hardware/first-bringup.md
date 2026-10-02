@@ -132,7 +132,7 @@ foreach ($Path in @($OfficialBit, $WorkingBit, $WorkingProject)) {
 
 ## 8. 给队友和主对话的最小交接包
 
-- 保持[验收记录模板](first-bringup-record.md)空白；实际执行时在获授权的 `evidence/bringup-kit/<run-id>/` 新建填写版和小证据，`run-id` 用 `YYYYMMDD-HHmmss-operator` 形式的 ASCII 名称。该目录是将来执行时建立，本次未创建硬件证据。
+- 保持[验收记录模板](first-bringup-record.md)空白；实际上板由 `env-bringup` 执行，在其获授权的 `evidence/env-bringup/runs/<run-id>/` 保存填写版及运行证据，`run-id` 用 `YYYYMMDD-HHmmss-operator` 形式的 ASCII 名称。`runs/` 按集成后的 `.gitignore` 作为本地运行产物，不随源码提交；由执行者在 `evidence/env-bringup/` 的非忽略清单中登记相对路径、双方可访问链接及 SHA-256。指南编制/验证证据仍归 `evidence/bringup-kit/`。该运行目录由实际执行时建立，本次未创建硬件证据。
 - 在作品仓库根运行 `git rev-parse HEAD` 记录协作文档版本；另记工作副本的实际源码身份，两者不能混用。照片、记录、清单通过仓库相对路径交接，不把本机 `E:` 路径当作队友也能打开的证据。
 - 图片用 `board-front.jpg`、`camera-front.jpg` 等 ASCII 名称。大视频/镜像不直接塞进 Git，清单记相对证据路径或双方可访问的私有链接、文件大小、SHA-256；队友实际验证能读取。记录不上传 License、安装包或未脱敏的订单。
 - 每轮带上：来源/哈希、执行人与时间、工具版本、实际步骤、失败原始记录、30 分钟日志、恢复结果和待验证项。只写“PASS”或给本机截图路径不算交接完成。
