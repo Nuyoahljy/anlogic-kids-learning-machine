@@ -1,129 +1,57 @@
-[CmdletBinding(SupportsShouldProcess = $true)]
+#Requires -Version 7.5
+[CmdletBinding(SupportsShouldProcess)]
 param(
-    [Parameter(Mandatory = $true)]
-    [ValidatePattern('^[a-z0-9][a-z0-9-]*$')]
-    [string]$TaskId,
-
-    [string]$Owner = '未指定',
-
-    [string]$BaseBranch = 'main'
+    [Parameter(Mandatory)][string]$TaskId,
+    [string]$Owner = '',
+    [string]$RepoRoot = (Split-Path -Parent $PSScriptRoot),
+    [string]$BaseBranch = 'main',
+    [string]$PolicyRef = '',
+    [string]$WorktreeRoot = ''
 )
-
-$ErrorActionPreference = 'Stop'
-
-function Invoke-Git {
-    param(
-        [Parameter(Mandatory = $true)]
-        [string[]]$Arguments,
-
-        [switch]$AllowFailure
-    )
-
-    $output = & git -C $RepoRoot @Arguments 2>&1
-    $exitCode = $LASTEXITCODE
-
-    if ($exitCode -ne 0 -and -not $AllowFailure) {
-        throw "git $($Arguments -join ' ') 执行失败：`n$($output -join [Environment]::NewLine)"
-    }
-
-    return [pscustomobject]@{
-        Output   = $output
-        ExitCode = $exitCode
-    }
-}
-
-function Set-Utf8NoBom {
-    param(
-        [Parameter(Mandatory = $true)]
-        [string]$Path,
-
-        [Parameter(Mandatory = $true)]
-        [string]$Content
-    )
-
-    $encoding = New-Object System.Text.UTF8Encoding($false)
-    [System.IO.File]::WriteAllText($Path, $Content, $encoding)
-}
-
-$RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
-$RepoParent = Split-Path -Parent $RepoRoot
-$ProjectName = Split-Path -Leaf $RepoRoot
-$WorktreeRoot = Join-Path $RepoParent (Join-Path 'worktrees' $ProjectName)
-$WorktreePath = Join-Path $WorktreeRoot $TaskId
-$BranchName = "task/$TaskId"
-$LogRelativePath = "memory/branches/$TaskId.md"
-$LogPathInMain = Join-Path $RepoRoot $LogRelativePath
-
-$currentBranch = (Invoke-Git -Arguments @('branch', '--show-current')).Output.Trim()
-if ($currentBranch -ne $BaseBranch) {
-    throw "必须在 $BaseBranch 分支运行。当前分支：$currentBranch"
-}
-
-$status = (Invoke-Git -Arguments @('status', '--porcelain')).Output
-if ($status.Count -gt 0) {
-    throw '主仓库存在未提交修改。请先提交或处理后再创建 Worktree。'
-}
-
-if (-not (Test-Path -LiteralPath $LogPathInMain -PathType Leaf)) {
-    throw "找不到分支日志：$LogPathInMain。请先在 main 中从模板创建任务日志。"
-}
-
-$branchCheck = Invoke-Git -Arguments @('show-ref', '--verify', '--quiet', "refs/heads/$BranchName") -AllowFailure
-if ($branchCheck.ExitCode -eq 0) {
-    throw "分支已存在：$BranchName"
-}
-
-if (Test-Path -LiteralPath $WorktreePath) {
-    throw "Worktree 路径已存在：$WorktreePath"
-}
-
-$baseCommit = (Invoke-Git -Arguments @('rev-parse', '--short', "$BaseBranch^{commit}")).Output.Trim()
-
-$action = "创建分支 $BranchName 和 Worktree $WorktreePath，并启动任务 $TaskId"
-
-if (-not $PSCmdlet.ShouldProcess($WorktreePath, $action)) {
-    return
-}
-
-New-Item -ItemType Directory -Path $WorktreeRoot -Force | Out-Null
-
-Invoke-Git -Arguments @('branch', $BranchName, $BaseBranch) | Out-Null
-Invoke-Git -Arguments @('worktree', 'add', $WorktreePath, $BranchName) | Out-Null
-
-$branchLogPath = Join-Path $WorktreePath $LogRelativePath
-if (-not (Test-Path -LiteralPath $branchLogPath -PathType Leaf)) {
-    throw "Worktree 中缺少分支日志：$branchLogPath"
-}
-
+. (Join-Path $PSScriptRoot 'task-common.ps1')
 try {
-    $content = [System.IO.File]::ReadAllText($branchLogPath)
-    $startedAt = Get-Date -Format 'yyyy-MM-dd HH:mm:ss'
-
-    $content = $content -replace '(?m)^- 状态：.*$', '- 状态：进行中'
-    $content = $content -replace '(?m)^- 负责人：.*$', "- 负责人：$Owner"
-    $content = $content -replace '(?m)^- 分支：.*$', "- 分支：$BranchName"
-    $content = $content -replace '(?m)^- 基础提交：.*$', "- 基础提交：$baseCommit"
-    $content = $content -replace '(?m)^- 开始时间：.*$', "- 开始时间：$startedAt"
-
-    Set-Utf8NoBom -Path $branchLogPath -Content $content
-
-    Invoke-Git -Arguments @('add', '--', $LogRelativePath) | Out-Null
-    Invoke-Git -Arguments @('commit', '-m', "chore($TaskId): start task") | Out-Null
+    $root = Get-TaskRoot $RepoRoot
+    Assert-TaskId $TaskId
+    $branch = (Invoke-TaskGit $root @('branch', '--show-current')).Trim()
+    if ($branch -cne $BaseBranch -or $branch -ceq "task/$TaskId") { throw "Run from BaseBranch checkout: $BaseBranch" }
+    if ((Invoke-TaskGit $root @('status', '--porcelain=v1', '--untracked-files=all')).Length) { throw 'Base checkout is dirty.' }
+    $policy = Get-TaskPolicy $root $TaskId $BaseBranch $PolicyRef
+    if (-not $Owner) { $Owner = $policy.Card.Owner }
+    if ($Owner -cne $policy.Card.Owner) { throw 'Owner does not match trusted task card.' }
+    $null = Assert-TaskLog $root $TaskId -AllowPendingIdentity
+    $logRelative = "memory/branches/$TaskId.md"
+    Assert-TaskOwned $logRelative $policy.Card
+    $null = Invoke-TaskGit $root @('show', "$($policy.BaseCommit):$logRelative")
+    $null = Invoke-TaskGit $root @('show', "$($policy.BaseCommit):memory/tasks/$TaskId.json")
+    if (-not $WorktreeRoot) {
+        $common = (Invoke-TaskGit $root @('rev-parse', '--path-format=absolute', '--git-common-dir')).Trim()
+        $primary = Split-Path -Parent $common
+        $WorktreeRoot = Join-Path (Split-Path -Parent $primary) (Join-Path 'worktrees' (Split-Path -Leaf $primary))
+    }
+    $workRoot = [IO.Path]::GetFullPath($WorktreeRoot)
+    Assert-NoTaskLink $workRoot
+    if ($workRoot -eq $root -or $workRoot.StartsWith($root + [IO.Path]::DirectorySeparatorChar, [StringComparison]::OrdinalIgnoreCase)) { throw 'WorktreeRoot must be outside the base checkout.' }
+    $target = [IO.Path]::GetFullPath((Join-Path $workRoot $TaskId))
+    if (-not $target.StartsWith($workRoot.TrimEnd('\', '/') + [IO.Path]::DirectorySeparatorChar, [StringComparison]::OrdinalIgnoreCase)) { throw 'Unsafe worktree target.' }
+    Assert-NoTaskLink $target
+    if (Test-Path -LiteralPath $target) { throw "Target exists: $target" }
+    $branches = Invoke-TaskGit $root @('for-each-ref', '--format=%(refname:short)', 'refs/heads/')
+    if (@($branches.Trim().Split("`n") | Where-Object { $_.Trim() -ieq "task/$TaskId" }).Count) { throw 'Task branch already exists.' }
+    $beforeHead = (Invoke-TaskGit $root @('rev-parse', 'HEAD')).Trim()
+    if (-not $PSCmdlet.ShouldProcess($target, "Create task/$TaskId and commit its startup log only in the new checkout")) { return }
+    $null = New-Item -ItemType Directory -Path $workRoot -Force
+    $null = Invoke-TaskGit $root @('worktree', 'add', '-b', "task/$TaskId", $target, $policy.BaseCommit)
+    $logPath = Get-TaskFile $target $logRelative
+    $content = Get-Content -LiteralPath $logPath -Raw
+    $values = @{ '任务 ID' = $TaskId; '状态' = '进行中'; '负责人' = $Owner; '分支' = "task/$TaskId"; '基础提交' = $beforeHead; '开始时间' = (Get-TaskTime); '结束时间' = '待完成' }
+    foreach ($field in $values.Keys) {
+        $replacement = "- ${field}：$($values[$field])"
+        $content = [regex]::Replace($content, "(?m)^- ${field}：[^\r\n]+", [Text.RegularExpressions.MatchEvaluator]{ param($match) $replacement })
+    }
+    [IO.File]::WriteAllText($logPath, $content, [Text.UTF8Encoding]::new($false))
+    $null = Invoke-TaskGit $target @('add', '--', $logRelative)
+    $null = Invoke-TaskGit $target @('commit', '-m', "chore($TaskId): start task")
+    if ((Invoke-TaskGit $root @('rev-parse', 'HEAD')).Trim() -cne $beforeHead -or (Invoke-TaskGit $root @('status', '--porcelain=v1', '--untracked-files=all')).Length) { throw 'Base checkout changed concurrently; inspect it without resetting.' }
+    [pscustomobject]@{ TaskId = $TaskId; Worktree = $target; Branch = "task/$TaskId"; Head = (Invoke-TaskGit $target @('rev-parse', 'HEAD')).Trim(); BaseHeadUnchanged = $true }
 }
-catch {
-    Write-Warning "Worktree 已创建，但启动日志提交失败：$($_.Exception.Message)"
-    Write-Warning "可进入 $WorktreePath 后手工检查并提交。"
-    throw
-}
-
-$commit = (Invoke-Git -Arguments @('rev-parse', '--short', 'HEAD')).Output.Trim()
-
-Write-Host ''
-Write-Host '任务 Worktree 已创建。' -ForegroundColor Green
-Write-Host "任务：$TaskId"
-Write-Host "分支：$BranchName"
-Write-Host "目录：$WorktreePath"
-Write-Host "启动提交：$commit"
-Write-Host ''
-Write-Host '下一步：在该目录发起分支对话，并先读取 AGENTS.md 和分支日志。'
-
+catch { Write-Error $_ -ErrorAction Continue; exit 1 }

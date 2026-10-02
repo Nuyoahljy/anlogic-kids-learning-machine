@@ -1,0 +1,32 @@
+{
+  "TaskId": "learning-assets",
+  "Owner": "teammate",
+  "Role": "worker",
+  "AllowedPaths": [
+    "memory/branches/learning-assets.md",
+    "evidence/learning-assets/",
+    "assets/item-index.md"
+  ],
+  "RequiredChecks": [
+    "delivery-files"
+  ],
+  "Checks": [
+    {
+      "Executable": "pwsh",
+      "Arguments": [
+        "-NoProfile",
+        "-File",
+        "tools/check-delivery.ps1"
+      ],
+      "EvidencePaths": [],
+      "ExpectedExitCode": 0,
+      "Id": "delivery-files"
+    }
+  ],
+  "ManualAcceptance": [
+    "Index lists exactly 14 distinct item IDs matching docs/03-interface-contracts.md",
+    "Chinese, pinyin and English reviewed by the teammate",
+    "Missing material explicitly pending; no fabricated files or provenance",
+    "Both people can access PR and evidence; no HDL/interface changes"
+  ]
+}

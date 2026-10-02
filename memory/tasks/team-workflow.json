@@ -1,0 +1,104 @@
+{
+  "TaskId": "team-workflow",
+  "Owner": "coordinator",
+  "Role": "coordinator",
+  "AllowedPaths": [
+    "AGENTS.md",
+    "PROJECT_MEMORY.md",
+    "PLAN.md",
+    "TASKS.md",
+    "DECISIONS.md",
+    "CHANGELOG.md",
+    "README.md",
+    ".gitignore",
+    ".github/",
+    "docs/04-hardware-bom.md",
+    "docs/05-competition-checklist.md",
+    "docs/06-test-plan.md",
+    "docs/07-risk-register.md",
+    "docs/08-ai-workflow.md",
+    "docs/09-branch-prompt.md",
+    "docs/10-github-collaboration.md",
+    "tools/README.md",
+    "tools/new-task-worktree.ps1",
+    "tools/finish-task.ps1",
+    "tools/merge-task.ps1",
+    "tools/task-common.ps1",
+    "tools/check-task.ps1",
+    "tools/test-task.ps1",
+    "tools/test-task-workflow.ps1",
+    "tools/check-delivery.ps1",
+    "tools/test-delivery.ps1",
+    "tools/update-workspace-index.ps1",
+    "tools/test-workspace-index.ps1",
+    "memory/tasks/",
+    "memory/branches/_TEMPLATE.md",
+    "memory/branches/team-workflow.md",
+    "memory/branches/workflow-tools.md",
+    "memory/branches/bringup-kit.md",
+    "memory/branches/env-bringup.md",
+    "memory/branches/learning-assets.md",
+    "hardware/first-bringup.md",
+    "hardware/first-bringup-record.md",
+    "evidence/team-workflow/",
+    "evidence/workflow-tools/",
+    "evidence/bringup-kit/"
+  ],
+  "RequiredChecks": [
+    "workflow-regression",
+    "index-regression",
+    "delivery-regression",
+    "delivery-files"
+  ],
+  "Checks": [
+    {
+      "Executable": "pwsh",
+      "Arguments": [
+        "-NoProfile",
+        "-File",
+        "tools/test-task-workflow.ps1"
+      ],
+      "EvidencePaths": [],
+      "ExpectedExitCode": 0,
+      "Id": "workflow-regression"
+    },
+    {
+      "Executable": "pwsh",
+      "Arguments": [
+        "-NoProfile",
+        "-File",
+        "tools/test-workspace-index.ps1"
+      ],
+      "EvidencePaths": [],
+      "ExpectedExitCode": 0,
+      "Id": "index-regression"
+    },
+    {
+      "Executable": "pwsh",
+      "Arguments": [
+        "-NoProfile",
+        "-File",
+        "tools/test-delivery.ps1"
+      ],
+      "EvidencePaths": [],
+      "ExpectedExitCode": 0,
+      "Id": "delivery-regression"
+    },
+    {
+      "Executable": "pwsh",
+      "Arguments": [
+        "-NoProfile",
+        "-File",
+        "tools/check-delivery.ps1"
+      ],
+      "EvidencePaths": [],
+      "ExpectedExitCode": 0,
+      "Id": "delivery-files"
+    }
+  ],
+  "ManualAcceptance": [
+    "User confirms exact PR head before main merge",
+    "No hardware milestone is claimed by script checks",
+    "Existing main worktree changes preserved"
+  ]
+}

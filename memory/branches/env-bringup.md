@@ -2,7 +2,7 @@
 
 - 任务 ID：`env-bringup`
 - 状态：待启动
-- 负责人：main
+- 负责人：board-holder
 - 分支：待创建
 - 基础提交：待填写
 - 开始时间：待填写
@@ -27,7 +27,8 @@
 
 ## 修改文件
 
-- 预计：`fpga/vendor_labs/lab_ex1/`、`hardware/`、`evidence/env-bringup/`
+- 仅允许任务卡指定的 `fpga/vendor_labs/lab_ex1/`、`hardware/env-bringup/`、自身日志和 `evidence/env-bringup/`；不修改共享 hardware 文档或原始例程。
+- 先读 hardware/first-bringup.md；填写记录副本放 evidence/env-bringup/runs/<run-id>/，保留空白模板。
 
 ## 验证命令与结果
 
@@ -45,8 +46,8 @@
 
 ## 阻塞与风险
 
-- 驱动签名、内存完整性、BitLocker 或 WinUSB 操作必须在日志中逐步记录。
-- 原始工程路径有中文和空格时必须复制到 `E:\FPGA\anlogic_2026` 或项目内短英文路径，不直接修改原目录。
+- 驱动签名、内存完整性、BitLocker 或 WinUSB 的任何改变必须事前用户确认，再逐步记录；默认不关闭安全保护。
+- 原始工程只在确认来源/许可/归属后还原到任务卡允许的短 ASCII 项目目录；不直接改 E:/juan/FPGA/anlogic_2026 的既有副本或另一人的构建输出。
 
 ## 待决策事项
 
@@ -59,4 +60,3 @@
 ## 下一分支交接
 
 - 向 `video-pipeline` 交接已验证的 TD 工程、时钟约束、摄像头配置和 bit 烧录流程。
-

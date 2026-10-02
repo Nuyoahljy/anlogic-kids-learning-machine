@@ -1,0 +1,74 @@
+name: repository-checks
+
+on:
+  pull_request:
+  push:
+    branches: [main, 'task/**']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: checks-${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: windows-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+      - name: Validate task scope and run real script checks
+        shell: pwsh
+        env:
+          TASK_BRANCH: ${{ github.head_ref || github.ref_name }}
+          BASE_BRANCH: ${{ github.event.pull_request.base.ref || 'main' }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          if ($PSVersionTable.PSVersion -lt [version]'7.5') { throw 'PowerShell 7.5+ required; do not skip checks.' }
+          $baseRef = "origin/$env:BASE_BRANCH"
+          git rev-parse --verify $baseRef
+          if ($LASTEXITCODE -ne 0) { throw 'Missing trusted base ref.' }
+          git branch --force ci-approved-base $baseRef
+          if ($LASTEXITCODE -ne 0) { throw 'Cannot pin CI local base to fetched remote.' }
+          if ($env:TASK_BRANCH -cmatch '^task/([a-z0-9][a-z0-9-]*)$') {
+            $taskId = $Matches[1]
+            git switch --create $env:TASK_BRANCH
+            if ($LASTEXITCODE -ne 0) { throw 'Cannot establish isolated CI task branch.' }
+            $policyRef = 'ci-approved-base'
+            $baseCommit = (git rev-parse $baseRef).Trim()
+            git cat-file -e "${baseRef}:memory/tasks/$taskId.json" 2>$null
+            if ($LASTEXITCODE -ne 0) {
+              if ($taskId -cne 'team-workflow' -or $baseCommit -cne 'f609426044982c986b54e999866be9f4c1af2682') {
+                throw 'No task card in trusted base. Coordinator must approve one first.'
+              }
+              $policyRef = 'e4992305dfd3fe4d8382e5edb4e6d90def470512'
+            }
+            pwsh -NoProfile -File tools/check-task.ps1 -TaskId $taskId -BaseBranch ci-approved-base -PolicyRef $policyRef -Json
+            if ($LASTEXITCODE -ne 0) { throw 'Task scope check failed.' }
+            pwsh -NoProfile -File tools/test-task.ps1 -TaskId $taskId -BaseBranch ci-approved-base -PolicyRef $policyRef
+            if ($LASTEXITCODE -ne 0) { throw 'Required task checks failed.' }
+          } elseif ($env:TASK_BRANCH -ceq 'main') {
+            foreach ($script in @('tools/test-workspace-index.ps1','tools/test-task-workflow.ps1','tools/test-delivery.ps1','tools/check-delivery.ps1')) {
+              pwsh -NoProfile -File $script
+              if ($LASTEXITCODE -ne 0) { throw "Failed: $script" }
+            }
+          } else {
+            throw 'Expected main or a task/<task-id> branch.'
+          }
+      - name: Preserve reports and raw test logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: script-evidence-${{ github.sha }}
+          if-no-files-found: warn
+          path: |
+            evidence/**/runs/**/*.json
+            evidence/**/runs/**/*.log
+            evidence/**/runs/**/*.stdout.txt
+            evidence/**/runs/**/*.stderr.txt
