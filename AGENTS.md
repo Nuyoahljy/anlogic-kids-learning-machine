@@ -2,6 +2,16 @@
 
 本文件适用于本项目主仓库以及所有 Git Worktree。任何 Codex 对话在修改文件前，都必须先读取并遵守本文件。
 
+## 2026-10-02 总控实施入口
+
+本次由用户授权的总控对话 `01a0fa88-5b2b-7ca1-b51f-76159bc35851` 在 `task/team-workflow` 实施协作升级。主仓库已有未提交改动保持原样；本分支在用户确认 GitHub PR 前不得合入 main。
+
+所有任务先读所在机器工作区根目录的 AGENTS、README、FILE_INDEX 和相关批次。每批文件变化在该机器 workspace-records 新增独立记录，再通过主仓库 tools/update-workspace-index.ps1 刷新并 -Check；记录不是技术验收。
+
+本轮委派的 `workflow-tools` 只允许修改指定的 tools 脚本、memory/tasks 下自己的任务卡、memory/branches/workflow-tools.md 和 evidence/workflow-tools；`bringup-kit` 只允许新增 hardware/first-bringup.md、hardware/first-bringup-record.md、memory/branches/bringup-kit.md 和 evidence/bringup-kit。主对话独占总文档、docs、.github 和其他任务卡。委派不得扩大目录权限或修改其他分支。
+
+本轮允许任务分支提交和推送；主干合并、硬件烧录、接线和安全设置变化仍须用户确认。实际资料在 E:/juan/FPGA/Data，不使用旧文档目录。以下旧流程正由本分支更新；与本节冲突时以本节和用户批准计划为准。
+
 ## 1. 项目目标
 
 项目名称：基于安路 PH1P35 的儿童启蒙识物学习机。
@@ -116,4 +126,3 @@ pwsh -File .\tools\finish-task.ps1 -TaskId <task-id>
 - 日期使用 `YYYY-MM-DD`，时间使用 `Asia/Shanghai`。
 - 版本标签：`m1-bringup`、`m2-video`、`m3-detector`、`m4-feature-complete`、`v1.0-release`。
 - 结论必须区分“已验证”“推断”“待验证”，不得把推断当作实测结果。
-

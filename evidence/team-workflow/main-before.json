@@ -1,0 +1,242 @@
+{
+  "CapturedAt": "2026-10-02T11:22:53.7870662+08:00",
+  "Branch": "main",
+  "Head": "f609426044982c986b54e999866be9f4c1af2682",
+  "Status": [
+    " M AGENTS.md",
+    " M CHANGELOG.md",
+    " M DECISIONS.md",
+    " M PLAN.md",
+    " M PROJECT_MEMORY.md",
+    " M README.md",
+    " M TASKS.md",
+    " M docs/04-hardware-bom.md",
+    " M docs/05-competition-checklist.md",
+    " M docs/06-test-plan.md",
+    " M docs/07-risk-register.md",
+    " M docs/08-ai-workflow.md",
+    " M docs/09-branch-prompt.md",
+    " M hardware/README.md",
+    " M memory/branches/_TEMPLATE.md",
+    " M memory/branches/hardware-demo.md",
+    " M tools/README.md",
+    "?? hardware/procurement-ledger.md",
+    "?? memory/daily/2026-09-27.md",
+    "?? tools/test-workspace-index.ps1",
+    "?? tools/update-workspace-index.ps1"
+  ],
+  "Files": [
+    {
+      "Path": ".gitattributes",
+      "SHA256": "10D2FA479FE9156BD600D23FE18792E814BCC7FC58A3A37F66192B914402CCE6"
+    },
+    {
+      "Path": ".gitignore",
+      "SHA256": "6CB2E305B0FEEA86265CB45E95235CFEBBA57E29227C3A5EB21CF182080AD6FE"
+    },
+    {
+      "Path": "AGENTS.md",
+      "SHA256": "FBB7963B5915DCDF71116AD447962C7FA3B567859C2F199D3CDE461BEF226C4E"
+    },
+    {
+      "Path": "assets/audio/.gitkeep",
+      "SHA256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B"
+    },
+    {
+      "Path": "assets/cards/.gitkeep",
+      "SHA256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B"
+    },
+    {
+      "Path": "assets/fonts/.gitkeep",
+      "SHA256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B"
+    },
+    {
+      "Path": "assets/README.md",
+      "SHA256": "F359F1A61B760E629FDFBE31747E613AD1497582B1922E471E4023406C209ED8"
+    },
+    {
+      "Path": "assets/templates/.gitkeep",
+      "SHA256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B"
+    },
+    {
+      "Path": "CHANGELOG.md",
+      "SHA256": "82AECF90734635B02D4F396029E10F83D4560CA7E3CB891DF8C42F1BFD5F0626"
+    },
+    {
+      "Path": "DECISIONS.md",
+      "SHA256": "5C687FB8A20DE7D1933579F45238EA6A28134B12DB708F55165BE2E81FB7AC58"
+    },
+    {
+      "Path": "docs/01-product-spec.md",
+      "SHA256": "73C3481385479DEEB17BD77F9684705FEFF11DF597121A2890A0FAA1ADA0755C"
+    },
+    {
+      "Path": "docs/02-system-architecture.md",
+      "SHA256": "59607403652035A14B7A2FCBF0391D83CB1EC769CBC5A9C9173D94B91432BBB1"
+    },
+    {
+      "Path": "docs/03-interface-contracts.md",
+      "SHA256": "CAFFA5A9A83345B7CBB1F670C9559EF922122512762287A5199BA68D35F91920"
+    },
+    {
+      "Path": "docs/04-hardware-bom.md",
+      "SHA256": "C0EB386ABC6ACC406E14BFD8B7F63A9590E8D63010C9ABE0A5AE448623370BB4"
+    },
+    {
+      "Path": "docs/05-competition-checklist.md",
+      "SHA256": "B6A727F8F2676E6A3BEBBB43CA66CD522F3C9AA120E07A3890A1E997214CDC25"
+    },
+    {
+      "Path": "docs/06-test-plan.md",
+      "SHA256": "5C40F74B221414C011CBB6E507B04E8B44058E2FCB8FE6E1149899E5094F6C97"
+    },
+    {
+      "Path": "docs/07-risk-register.md",
+      "SHA256": "9921ED16A9A56C262B4A98054F5E9C60AF6FECD39D57BE08E9598790F180988A"
+    },
+    {
+      "Path": "docs/08-ai-workflow.md",
+      "SHA256": "0AB40D29F262CC121C486521425218DA11172A3AC1FAA90ED6A7E5941AF446A6"
+    },
+    {
+      "Path": "docs/09-branch-prompt.md",
+      "SHA256": "80659DA1B2231BFA1394A8D14DB14559B7F80A99703348BED547BA0F6C230DB1"
+    },
+    {
+      "Path": "evidence/README.md",
+      "SHA256": "24FBCBC086040BCA2108E37B866382013B300F1DC61F1EE02E50F892746C6FE0"
+    },
+    {
+      "Path": "fpga/constraints/.gitkeep",
+      "SHA256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B"
+    },
+    {
+      "Path": "fpga/custom_project/.gitkeep",
+      "SHA256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B"
+    },
+    {
+      "Path": "fpga/README.md",
+      "SHA256": "BA9B4FAE9A0275721A908F2DDE3874E2470A02D76A3497B673D55AD1C411D2F1"
+    },
+    {
+      "Path": "fpga/release/.gitkeep",
+      "SHA256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B"
+    },
+    {
+      "Path": "fpga/scripts/.gitkeep",
+      "SHA256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B"
+    },
+    {
+      "Path": "fpga/sim/.gitkeep",
+      "SHA256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B"
+    },
+    {
+      "Path": "fpga/vendor_labs/.gitkeep",
+      "SHA256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B"
+    },
+    {
+      "Path": "hardware/procurement-ledger.md",
+      "SHA256": "5362DFF78E0D7353264DF387B6EFC834953AE8066A7A526E4FF662DF6F1A9702"
+    },
+    {
+      "Path": "hardware/README.md",
+      "SHA256": "151D91AF670FD3EAEEBC2EA1F18D7E420F1477FCA69421376ACFB4EADA7DC603"
+    },
+    {
+      "Path": "memory/branches/_TEMPLATE.md",
+      "SHA256": "649527368AD0436A93961EB1FAD19420B5FABC0F6CC0D894621F30BDD5A429CE"
+    },
+    {
+      "Path": "memory/branches/audio-quiz.md",
+      "SHA256": "9800F3C149B2F850C89FFDA5B4B77A5DF2432D20F9BF621ACDB3A99B8A99F014"
+    },
+    {
+      "Path": "memory/branches/card-detector.md",
+      "SHA256": "53458717D1F942E1D3281C2DF42CD16EF4747A9ADB35DF757D4F40D959FE5D46"
+    },
+    {
+      "Path": "memory/branches/color-shape-detector.md",
+      "SHA256": "C54A7E5C54860D38FCA3F570076D21D83D3C12268E66FBB65C5272FE6E8A9E85"
+    },
+    {
+      "Path": "memory/branches/env-bringup.md",
+      "SHA256": "855D32109CC5E2C080CCDBDD94685506DFAFB34C0209E424FE97CF4870734A3D"
+    },
+    {
+      "Path": "memory/branches/hardware-demo.md",
+      "SHA256": "E5493CD15EC5E36159B4CC8FE46025B4FD7D2F998D9DC9AC8ADD8A75F6D0BA60"
+    },
+    {
+      "Path": "memory/branches/learning-assets.md",
+      "SHA256": "B5ABB6CFC5C2CC651F52EB787F95544545B27B547E8846212E51E9A7A498E473"
+    },
+    {
+      "Path": "memory/branches/osd-font.md",
+      "SHA256": "749821895D677F9DA1D386EECDE9E157233BACE8DB41452E394EEC19F7C96938"
+    },
+    {
+      "Path": "memory/branches/simulation-doc.md",
+      "SHA256": "DBACCBEC1D38B8362767EFF9E7A9F8707C5DB4FDEACFE61992A45F3654EE7C3F"
+    },
+    {
+      "Path": "memory/branches/system-integration.md",
+      "SHA256": "5274663A63F761F04ED55BD2F5F4C68ADCBA984D398036BAF74754FCF964685B"
+    },
+    {
+      "Path": "memory/branches/verification-submission.md",
+      "SHA256": "E98267F7082E3097C5EFBD70A07B17A550B5A82BB0AE11A90397B66A0795319F"
+    },
+    {
+      "Path": "memory/branches/video-pipeline.md",
+      "SHA256": "A1056208284FAF889943A545B829FD6F4848A4A978B7321F268AE2553C338CB0"
+    },
+    {
+      "Path": "memory/daily/2026-09-20.md",
+      "SHA256": "B249D7486766D6E2019971758232D7898F2CFA919ECADF1547B059B8BD1249E5"
+    },
+    {
+      "Path": "memory/daily/2026-09-27.md",
+      "SHA256": "8328D4F939237C087522DEE00AE898AFCC7CF852DDE9F5CB2E42D27BC7D6B034"
+    },
+    {
+      "Path": "PLAN.md",
+      "SHA256": "48E00D9CBB4F6230ABCC7AAD4A17CAEB1169E186C9D14ABC3118639693CD03DB"
+    },
+    {
+      "Path": "PROJECT_MEMORY.md",
+      "SHA256": "619AA7CE5871D1CC1AF14030433812CC37827166E854B5379EA66A85A2494CFA"
+    },
+    {
+      "Path": "README.md",
+      "SHA256": "B863C4663C1810DEBEAA955157EFBE7FD5E7DE1B2B0352DFDC8A0CE88EE6F608"
+    },
+    {
+      "Path": "TASKS.md",
+      "SHA256": "A0F615132BCA2D40F7A53DE8E40413AFDEA0A6E44B747D654D557C00C24BFC39"
+    },
+    {
+      "Path": "tools/finish-task.ps1",
+      "SHA256": "98D1FE5FAEC9C6B6D9E2F59FA1024B60F1CFDCECF44C13CCB8C512E8C0F631ED"
+    },
+    {
+      "Path": "tools/merge-task.ps1",
+      "SHA256": "16F8AA763E142B269B42A57F8FEC35E1BA12CFD29B8F1840A8B4D52108FCF732"
+    },
+    {
+      "Path": "tools/new-task-worktree.ps1",
+      "SHA256": "DCE8E11E9518EC52AB8FE43129870F4C3C46127828BC835C47AAC567C8E25277"
+    },
+    {
+      "Path": "tools/README.md",
+      "SHA256": "E010396E8860AA9DFB4D32097402BFF74F0D43FEE62098E1DE963D0B496A2097"
+    },
+    {
+      "Path": "tools/test-workspace-index.ps1",
+      "SHA256": "E676B993E045A2F4E5FCFC7965F0F941E633610A450E125BD48009E17C28C500"
+    },
+    {
+      "Path": "tools/update-workspace-index.ps1",
+      "SHA256": "9901AD1BCDC163D8CFA2C5540825C9557023098DA6CDB15A0AA1853F7A091C5A"
+    }
+  ]
+}
