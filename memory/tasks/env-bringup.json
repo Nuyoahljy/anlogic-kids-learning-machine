@@ -1,0 +1,34 @@
+{
+  "TaskId": "env-bringup",
+  "Owner": "board-holder",
+  "Role": "worker",
+  "AllowedPaths": [
+    "memory/branches/env-bringup.md",
+    "evidence/env-bringup/",
+    "hardware/env-bringup/",
+    "fpga/vendor_labs/lab_ex1/"
+  ],
+  "RequiredChecks": [
+    "delivery-files"
+  ],
+  "Checks": [
+    {
+      "Executable": "pwsh",
+      "Arguments": [
+        "-NoProfile",
+        "-File",
+        "tools/check-delivery.ps1"
+      ],
+      "EvidencePaths": [],
+      "ExpectedExitCode": 0,
+      "Id": "delivery-files"
+    }
+  ],
+  "ManualAcceptance": [
+    "Power and FPC checked from actual hardware/manual with user confirmation",
+    "Device identified and vendor bit displayed at 720p60",
+    "New build sources and bit SHA256 recorded; timing and warnings reviewed",
+    "Rebuilt bit verified and 30-minute real video test evidenced",
+    "No Flash or wiring operation without user confirmation"
+  ]
+}
