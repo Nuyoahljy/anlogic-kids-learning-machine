@@ -63,7 +63,7 @@ function New-Fixture {
     $null = Invoke-TaskGit $primary @('config', 'core.autocrlf', 'false')
     $null = Invoke-TaskGit $primary @('config', 'commit.gpgsign', 'false')
     $null = Invoke-TaskGit $primary @('config', 'core.hooksPath', (Join-Path $folder 'no-hooks'))
-    $card = [ordered]@{ TaskId = 'demo'; Owner = 'tester'; Role = 'worker'; AllowedPaths = @('fpga/allowed.v', 'fpga/new.v', 'fpga/moved.v', 'fpga/scope/', 'AGENTS.md', 'docs/', 'memory/branches/demo.md', 'memory/tasks/demo.json', 'evidence/demo/'); RequiredChecks = @('probe'); Checks = @([ordered]@{ Id = 'probe'; Executable = $Executable; Arguments = @('-NoProfile', '-File', 'tools/probe.ps1', '-ExitCode', [string]$ExitCode); ExpectedExitCode = $Expected; EvidencePaths = $EvidencePaths }) }
+    $card = [ordered]@{ TaskId = 'demo'; Owner = 'tester'; Role = 'worker'; AllowedPaths = @('fpga/allowed.v', 'fpga/new.v', 'fpga/moved.v', 'fpga/scope/', 'AGENTS.md', 'docs/', '.github/', 'memory/branches/demo.md', 'memory/tasks/demo.json', 'evidence/demo/'); RequiredChecks = @('probe'); Checks = @([ordered]@{ Id = 'probe'; Executable = $Executable; Arguments = @('-NoProfile', '-File', 'tools/probe.ps1', '-ExitCode', [string]$ExitCode); ExpectedExitCode = $Expected; EvidencePaths = $EvidencePaths }) }
     Write-FixtureFile (Join-Path $primary 'memory/tasks/demo.json') ($card | ConvertTo-Json -Depth 20)
     Write-FixtureFile (Join-Path $primary 'memory/branches/demo.md') "# demo`n- 任务 ID：demo`n- 状态：待启动`n- 负责人：tester`n- 分支：task/demo`n- 基础提交：pending`n- 开始时间：pending`n- 结束时间：pending`n"
     Write-FixtureFile (Join-Path $primary '.gitignore') "evidence/*/runs/`n"
@@ -160,6 +160,9 @@ try {
     Write-FixtureFile (Join-Path $fixture.Worker 'AGENTS.md') 'forbidden despite allowlist'
     Assert-Case 'worker cannot change coordinator file even if allowlisted' ((Invoke-FixtureScript 'check-task.ps1' $fixture.Worker).ExitCode -ne 0)
     $null = Invoke-TaskGit $fixture.Worker @('restore', '--worktree', '--', 'AGENTS.md')
+    Write-FixtureFile (Join-Path $fixture.Worker '.github/workflow.yml') 'forbidden despite allowlist'
+    Assert-Case 'worker cannot change GitHub workflow even if allowlisted' ((Invoke-FixtureScript 'check-task.ps1' $fixture.Worker).ExitCode -ne 0)
+    Remove-FixtureFile (Join-Path $fixture.Worker '.github/workflow.yml')
     $cardPath = Join-Path $fixture.Worker 'memory/tasks/demo.json'
     $cardText = Get-Content -LiteralPath $cardPath -Raw
     $expanded = $cardText | ConvertFrom-Json
@@ -218,6 +221,10 @@ try {
     Write-FixtureFile $reportPath ($report | ConvertTo-Json -Depth 40)
     Assert-Case 'missing check rejected' ((Invoke-FixtureScript 'check-task.ps1' $fixture.Worker @('-AcceptanceReport', $reportPath)).ExitCode -ne 0)
     $report = $reportText | ConvertFrom-Json -Depth 40
+    $report.BaseCommit = '0000000000000000000000000000000000000000'
+    Write-FixtureFile $reportPath ($report | ConvertTo-Json -Depth 40)
+    Assert-Case 'report from different base rejected' ((Invoke-FixtureScript 'check-task.ps1' $fixture.Worker @('-AcceptanceReport', $reportPath)).ExitCode -ne 0)
+    $report = $reportText | ConvertFrom-Json -Depth 40
     $report.Checks[0].Artifacts[0].Path = 'evidence/demo/runs/absent.txt'
     Write-FixtureFile $reportPath ($report | ConvertTo-Json -Depth 40)
     Assert-Case 'missing evidence file rejected' ((Invoke-FixtureScript 'check-task.ps1' $fixture.Worker @('-AcceptanceReport', $reportPath)).ExitCode -ne 0)
@@ -244,6 +251,14 @@ try {
         if ($scenario -eq 'mutated-source') { Assert-Case 'source modified by test cannot attest HEAD' (-not $negativeReport.SourceClean -and $negativeReport.Overall -ceq 'failed') }
     }
     $committed = New-Fixture 'committed-violation'
+    $legacy = New-Fixture 'legacy-pending-template'
+    $legacyPath = Join-Path $legacy.Primary 'memory/branches/demo.md'
+    $legacyText = (Get-Content -LiteralPath $legacyPath -Raw).Replace('- 任务 ID：demo', '- 任务 ID：`demo`').Replace('- 分支：task/demo', '- 分支：待创建')
+    Write-FixtureFile $legacyPath $legacyText
+    $null = Invoke-TaskGit $legacy.Primary @('add', '--', 'memory/branches/demo.md')
+    $null = Invoke-TaskGit $legacy.Primary @('commit', '-m', 'legacy template fixture')
+    Start-Fixture $legacy
+    Assert-Case 'legacy pending template normalized in child only' ((Invoke-FixtureScript 'check-task.ps1' $legacy.Worker).ExitCode -eq 0 -and (Get-Content -LiteralPath $legacyPath -Raw) -ceq $legacyText)
     Start-Fixture $committed
     Write-FixtureFile (Join-Path $committed.Worker 'denied.v') 'committed outside ownership'
     $null = Invoke-TaskGit $committed.Worker @('add', '--', 'denied.v')

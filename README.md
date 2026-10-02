@@ -28,7 +28,7 @@ Set-Location E:\juan\FPGA\anlogic-kids-learning-machine
 当主仓库干净且位于 `main` 时，创建任务分支和工作目录：
 
 ```powershell
-pwsh -File .\tools\new-task-worktree.ps1 -TaskId env-bringup -Owner main
+pwsh -File .\tools\new-task-worktree.ps1 -TaskId env-bringup
 ```
 
 任务完成后，在对应任务目录中运行：

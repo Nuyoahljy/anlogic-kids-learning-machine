@@ -18,7 +18,7 @@ try {
     $policy = Get-TaskPolicy $root $TaskId $BaseBranch $PolicyRef
     if (-not $Owner) { $Owner = $policy.Card.Owner }
     if ($Owner -cne $policy.Card.Owner) { throw 'Owner does not match trusted task card.' }
-    $null = Assert-TaskLog $root $TaskId
+    $null = Assert-TaskLog $root $TaskId -AllowPendingIdentity
     $logRelative = "memory/branches/$TaskId.md"
     Assert-TaskOwned $logRelative $policy.Card
     $null = Invoke-TaskGit $root @('show', "$($policy.BaseCommit):$logRelative")
@@ -43,7 +43,7 @@ try {
     $null = Invoke-TaskGit $root @('worktree', 'add', '-b', "task/$TaskId", $target, $policy.BaseCommit)
     $logPath = Get-TaskFile $target $logRelative
     $content = Get-Content -LiteralPath $logPath -Raw
-    $values = @{ '状态' = '进行中'; '负责人' = $Owner; '分支' = "task/$TaskId"; '基础提交' = $beforeHead; '开始时间' = (Get-TaskTime); '结束时间' = '待完成' }
+    $values = @{ '任务 ID' = $TaskId; '状态' = '进行中'; '负责人' = $Owner; '分支' = "task/$TaskId"; '基础提交' = $beforeHead; '开始时间' = (Get-TaskTime); '结束时间' = '待完成' }
     foreach ($field in $values.Keys) {
         $replacement = "- ${field}：$($values[$field])"
         $content = [regex]::Replace($content, "(?m)^- ${field}：[^\r\n]+", [Text.RegularExpressions.MatchEvaluator]{ param($match) $replacement })

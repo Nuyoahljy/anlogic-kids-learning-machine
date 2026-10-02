@@ -99,7 +99,7 @@ function Assert-TaskOwned {
     Assert-TaskPath $Path -DirectoryAllowed
     if (-not (Test-TaskAllowed $Path $Card)) { throw "Outside AllowedPaths: $Path" }
     if ($Card.Role -ceq 'worker') {
-        if ($Path -imatch '^(AGENTS\.md|PROJECT_MEMORY\.md|PLAN\.md|TASKS\.md|DECISIONS\.md|CHANGELOG\.md)$|^docs/') { throw "Coordinator-only file: $Path" }
+        if ($Path -imatch '^(AGENTS\.md|PROJECT_MEMORY\.md|PLAN\.md|TASKS\.md|DECISIONS\.md|CHANGELOG\.md)$|^(docs|\.github)/') { throw "Coordinator-only file: $Path" }
         foreach ($section in @('branches', 'tasks')) {
             $own = if ($section -eq 'branches') { "memory/branches/$($Card.TaskId).md" } else { "memory/tasks/$($Card.TaskId).json" }
             if ($Path.StartsWith("memory/$section/", [StringComparison]::OrdinalIgnoreCase) -and $Path -cne $own) { throw "Another task's metadata: $Path" }
@@ -174,14 +174,21 @@ function Get-TaskChanges {
 }
 
 function Assert-TaskLog {
-    param([string]$Root, [string]$TaskId, [switch]$RequireReady)
+    param([string]$Root, [string]$TaskId, [switch]$RequireReady, [switch]$AllowPendingIdentity)
     $path = Get-TaskFile $Root "memory/branches/$TaskId.md"
     if (-not (Test-Path -LiteralPath $path -PathType Leaf)) { throw 'Missing task log.' }
     $log = Get-Content -LiteralPath $path -Raw
     foreach ($field in @('任务 ID', '状态', '负责人', '分支', '基础提交', '开始时间', '结束时间')) {
         if ([regex]::Matches($log, "(?m)^- ${field}：[^\r\n]+\r?$").Count -ne 1) { throw "Missing/ambiguous log field: $field" }
     }
-    if ($log -cnotmatch "(?m)^- 任务 ID：$([regex]::Escape($TaskId))\r?$" -or $log -cnotmatch "(?m)^- 分支：task/$([regex]::Escape($TaskId))\r?$") { throw 'Task log identity mismatch.' }
+    $identity = [regex]::Match($log, '(?m)^- 任务 ID：([^\r\n]+)\r?$').Groups[1].Value
+    $loggedBranch = [regex]::Match($log, '(?m)^- 分支：([^\r\n]+)\r?$').Groups[1].Value
+    if ($AllowPendingIdentity) {
+        $identity = $identity.Trim([char]96)
+        if ($loggedBranch -cnotin @('待创建', "task/$TaskId")) { throw 'Pending task log branch mismatch.' }
+    }
+    elseif ($loggedBranch -cne "task/$TaskId") { throw 'Task log branch mismatch.' }
+    if ($identity -cne $TaskId) { throw 'Task log identity mismatch.' }
     $state = [regex]::Match($log, '(?m)^- 状态：([^\r\n]+)\r?$').Groups[1].Value
     if ($state -cnotin @('待启动', '进行中', '等待主对话审核', '已合并', '阻塞', '取消')) { throw 'Invalid task log state.' }
     if ($RequireReady -and $state -cne '等待主对话审核') { throw 'Task is not ready for coordinator review.' }
@@ -228,7 +235,7 @@ function Test-TaskReport {
     if (-not [IO.Path]::IsPathFullyQualified($ReportPath)) { $ReportPath = Get-TaskFile $Context.Root $ReportPath }
     Assert-NoTaskLink $ReportPath
     $report = Get-Content -LiteralPath $ReportPath -Raw | ConvertFrom-Json -Depth 40
-    if ($report.SchemaVersion -ne 1 -or $report.TaskId -cne $Context.TaskId -or $report.Head -cne $Context.Head -or $report.PolicyCommit -cne $Context.Policy.PolicyCommit -or $report.CardBlob -cne $Context.Policy.CardBlob -or $report.SourceClean -isnot [bool] -or -not $report.SourceClean -or $report.Overall -cne 'passed') { throw 'Report HEAD/policy/status mismatch.' }
+    if ($report.SchemaVersion -ne 1 -or $report.TaskId -cne $Context.TaskId -or $report.Head -cne $Context.Head -or $report.BaseCommit -cne $Context.Policy.BaseCommit -or $report.PolicyCommit -cne $Context.Policy.PolicyCommit -or $report.CardBlob -cne $Context.Policy.CardBlob -or $report.SourceClean -isnot [bool] -or -not $report.SourceClean -or $report.Overall -cne 'passed') { throw 'Report HEAD/base/policy/status mismatch.' }
     $null = [DateTimeOffset]::Parse($report.StartedAt)
     $null = [DateTimeOffset]::Parse($report.FinishedAt)
     if ($Context.Policy.Card.RequiredChecks.Count -eq 0) { throw 'No RequiredChecks; acceptance remains unverified.' }
