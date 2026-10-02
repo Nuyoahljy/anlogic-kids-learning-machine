@@ -1,31 +1,35 @@
 # 任务清单
 
-> 只有主对话可以修改本文件。分支在自己的日志中报告进度，主对话审核后回填状态和合并结果。
+总控在任务分支维护，用户确认 PR 后才成为 main 基线。状态：待启动、进行中、等待主对话审核、已合并、阻塞、取消。状态不替代验收层级。
 
-状态说明：`待启动`、`进行中`、`等待审核`、`已合并`、`阻塞`、`取消`。
+| ID / task-id | 任务 | 负责人 | 依赖 | 状态 | 实际验收边界 |
+|---|---|---|---|---|---|
+| T-001 / bootstrap | 仓库初始化 | 主对话 | 无 | 已合并 | 历史提交 debaff7、f609426；不是当前协作升级 |
+| T-002 / hardware-demo | 到货核对与配件准备 | 你操作，队友记录 | 无 | 进行中 | 用户报告主要硬件到货；型号、FPC、供电和功能待验 |
+| T-003 / env-bringup | 官方与自编译 lab1 上板 | 你 + 总控 | 安全检查 | 进行中 | 仅准备检查清单；未扫描、下载、上板或完成 30 分钟测试 |
+| T-004 / video-pipeline | lab3 视频基线与接口对齐 | 你 + 总控 | T-003 | 待启动 | 不因局部边框仿真通过而提前关闭 |
+| T-005 / learning-assets | 字模、音频、卡片、积木索引 | 队友 | 无 | 待启动 | 先完成一个小 PR 和 14 对象映射核对 |
+| T-006 / simulation-doc | 复现仿真、测试输入与记录 | 队友 | 小模块可先做 | 待启动 | 独立源码引用、检查器与退出码都需验证 |
+| T-007 / color-shape-detector | 9 类积木识别 | 你 + 总控 | T-004 | 待启动 | 每类至少 20 次，首次正确率 ≥90% |
+| T-008 / card-detector | 5 类卡片 | 队友协助，总控整合 | T-004、T-005 | 待启动 | 每类至少 20 次，3 秒内正确率 ≥80% |
+| T-009 / osd-font | 中文/拼音/英文/检测框 | 队友协助，总控整合 | T-004、T-005 | 待启动 | 14 对象映射、时序和上板显示待验 |
+| T-010 / audio-quiz | 音频、消抖、问答计分 | 队友 + 总控 | 接口及素材 | 待启动 | 没有外设时先仿真，不声称硬件通过 |
+| T-011 / system-integration | 单镜像整机联调 | 你 + 总控 | T-007..010 | 待启动 | 不自动烧录或固化 |
+| T-012 / verification-submission | 稳定性和资源时序 | 两人交叉 | T-011 | 待启动 | 2 小时、冷启动、误识别与恢复待验 |
+| T-013 / release-package | 演示与提交包 | 两人 | T-012 | 待启动 | 11/02—11/04 缓冲，不删除基础要求 |
+| T-014 / team-workflow | 本轮协作流程、工具与 GitHub | 本总控 | 用户批准计划 | 进行中 | 隔离分支实施；GitHub 认证、首 PR 与用户合并确认分开记录 |
 
-| ID | 任务 | 负责人 | 依赖 | 状态 | 验收结果 | 分支日志 |
-|---|---|---|---|---|---|---|
-| T-001 | 建立仓库、文档记忆和 Git Worktree 流程 | main | 无 | 已合并 | 初始提交 `debaff7`，49 个文件，脚本静态检查通过 | `memory/daily/2026-09-20.md` |
-| T-002 | 硬件采购、到货核验和演示台准备 | team | 无 | 待启动 | 待验证 | `memory/branches/hardware-demo.md` |
-| T-003 | TD 6.2.1、License、驱动和 lab1 上板 | main | T-002 | 待启动 | 待验证 | `memory/branches/env-bringup.md` |
-| T-004 | 自研视频基线、DDR2、HDMI 和接口冻结 | main | T-003 | 待启动 | 待验证 | `memory/branches/video-pipeline.md` |
-| T-005 | 字模、语音、卡片和积木素材 | team | 无 | 待启动 | 待验证 | `memory/branches/learning-assets.md` |
-| T-006 | 仿真、测试脚本和接口验证 | team | T-004 | 待启动 | 待验证 | `memory/branches/simulation-doc.md` |
-| T-007 | 9 类颜色形状积木检测 | main | T-004 | 待启动 | 待验证 | `memory/branches/color-shape-detector.md` |
-| T-008 | 5 类卡片模板匹配 | team | T-004、T-005 | 待启动 | 待验证 | `memory/branches/card-detector.md` |
-| T-009 | 中文/拼音/英文/检测框 OSD | team | T-004、T-005 | 待启动 | 待验证 | `memory/branches/osd-font.md` |
-| T-010 | DFPlayer、模式状态机和计分 | team | T-004、T-005 | 待启动 | 待验证 | `memory/branches/audio-quiz.md` |
-| T-011 | 单镜像整机联调和延迟可视化 | main | T-007、T-008、T-009、T-010 | 待启动 | 待验证 | `memory/branches/system-integration.md` |
-| T-012 | 稳定性、资源、时序和鲁棒性测试 | team | T-011 | 待启动 | 待验证 | `memory/branches/verification-submission.md` |
-| T-013 | 测试报告、视频、PPT、说明和提交包 | team | T-012 | 待启动 | 待验证 | `memory/branches/verification-submission.md` |
+## 已有成果审核队列
 
-## 当前关键任务
+| 候选 | 来源 | 状态 | 下一步 |
+|---|---|---|---|
+| fixed-rect-overlay | 同名 Worktree，未提交 | 等待主对话审核 | 审查代码/局部协议，补真实显示同步、全尺寸与工程测试；不擅自接手提交 |
+| pixel-coord-adapter | learning/pixel-coord-adapter，非 Git | 等待主对话审核 | 审查边界与波形，批准后再导入正式工程并登记来源；保留教学原件 |
 
-1. T-001 已完成初始提交。
-2. T-002 核对硬件数量、到货时间和演示环境。
-3. T-003 在开发板可用后立即完成环境上板和 lab1 验收。
+## 每轮总控使用
 
-## 审核队列
-
-当前没有等待审核的分支。
+1. 先查当前 Git、日志、最新共享记录和相关 PR，不能只读表格推断进度。
+2. 选择一个关键路径步骤和最多两个互不冲突的小任务。
+3. 必须先有已批准任务卡，列出 AllowedPaths、Owner、RequiredChecks 和验收证据；未建卡的后续模块不得直接开工。
+4. 子任务到等待审核后，核对提交/差异/真实测试；人确认合并前仍不记已合并。
+5. 完成任何文件变化批次都登记共享 JSON 和索引；板卡动作必须由持板人确认。

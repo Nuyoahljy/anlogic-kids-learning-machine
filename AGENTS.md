@@ -1,128 +1,71 @@
 # 项目协作规则
 
-本文件适用于本项目主仓库以及所有 Git Worktree。任何 Codex 对话在修改文件前，都必须先读取并遵守本文件。
+适用于本仓库及其 Worktree。用户已批准 2026-10-02 两人协作计划；总控对话为 `01a0fa88-5b2b-7ca1-b51f-76159bc35851`。当前在 `task/team-workflow` 实施，尚未合入 main，不代表上板或任何里程碑通过。
 
-## 2026-10-02 总控实施入口
+## 1. 开始与恢复
 
-本次由用户授权的总控对话 `01a0fa88-5b2b-7ca1-b51f-76159bc35851` 在 `task/team-workflow` 实施协作升级。主仓库已有未提交改动保持原样；本分支在用户确认 GitHub PR 前不得合入 main。
+先读取所在机器工作区根目录的 AGENTS、README、FILE_INDEX 和相关最新记录，再读本仓库 AGENTS、PROJECT_MEMORY、PLAN、TASKS、DECISIONS、docs/03-interface-contracts.md、对应任务卡和分支日志。不得只依赖聊天历史。
 
-所有任务先读所在机器工作区根目录的 AGENTS、README、FILE_INDEX 和相关批次。每批文件变化在该机器 workspace-records 新增独立记录，再通过主仓库 tools/update-workspace-index.ps1 刷新并 -Check；记录不是技术验收。
+本机工作区为 `E:/juan/FPGA`，作品主目录为 `E:/juan/FPGA/anlogic-kids-learning-machine`，任务目录为 `E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/<task-id>`，原始资料在 `E:/juan/FPGA/Data`。队友使用自己的工作区根路径；共享文档和脚本尽量使用仓库相对路径。旧 `文档` 路径已过时，不据此搬移文件。
 
-本轮委派的 `workflow-tools` 只允许修改指定的 tools 脚本、memory/tasks 下自己的任务卡、memory/branches/workflow-tools.md 和 evidence/workflow-tools；`bringup-kit` 只允许新增 hardware/first-bringup.md、hardware/first-bringup-record.md、memory/branches/bringup-kit.md 和 evidence/bringup-kit。主对话独占总文档、docs、.github 和其他任务卡。委派不得扩大目录权限或修改其他分支。
+修改前检查绝对路径、分支、归属和既有未提交改动。文件名、分支名、HDL 标识符使用 ASCII，说明正文用中文。日期按 Asia/Shanghai，格式 YYYY-MM-DD。
 
-本轮允许任务分支提交和推送；主干合并、硬件烧录、接线和安全设置变化仍须用户确认。实际资料在 E:/juan/FPGA/Data，不使用旧文档目录。以下旧流程正由本分支更新；与本节冲突时以本节和用户批准计划为准。
+## 2. 固定技术约束
 
-## 1. 项目目标
+- HX1P35A / PH1P35MDG324 与符合赛题的 SC500CS 摄像头；实际型号、FPC 方向、供电必须核对实物和官方资料。
+- Anlogic TD 6.2.1，不擅自升级。当前本机已使用 ModelSim SE-64 10.7 做局部实验；队友记录实际合法安装版本，不宣称环境一致。
+- 1280x720@60fps；9 类颜色形状积木与 5 类卡片，共 14 个 item_id。
+- 完全离线，中心识别区、颜色阈值、投影统计、形状特征和模板匹配；不引入云端、CNN/NPU、第二块 FPGA 等新技术路线。
+- 语音沿用 DFPlayer Mini 和预录音频；最终单个上电自动运行镜像。
+- 不重写稳定的摄像头、DDR 和 HDMI 链路。lab1 验板后再基于官方 lab3 建立自研工程。
+- 接口由总控冻结；RGB/坐标/有效标记与 HS/VS 的实际相位和寄存延迟须单独验证，不能直接把 sof/eol 当成 HS/VS。
 
-项目名称：基于安路 PH1P35 的儿童启蒙识物学习机。
+## 3. 角色、权限和并发
 
-比赛：全国大学生嵌入式芯片与系统设计竞赛 2026 FPGA 赛道，安路科技赛题二。
+主对话独占 AGENTS、PROJECT_MEMORY、PLAN、TASKS、DECISIONS、CHANGELOG、docs、.github 及正式任务卡。主对话也在任务分支提出变更，不能直接在 main 开发。改变冻结接口、技术路线或合并 main 仍须用户确认。
 
-平台：HX1P35A / PH1P35MDG324 + SC500CS。
+分支只修改可信任务卡 AllowedPaths 指定的文件，以及卡中明确列出的自身日志和证据；无任务卡不得启动。任务卡从批准基线读取，不能用自己分支上的改动扩大权限。工具维护任务可由主对话明确授予具体 tools 文件，不因此获得所有 tools 或总文档权限。
 
-工具：Anlogic TD 6.2.1。不得使用高于 6.2.1 的版本。
+一项任务一个负责人、一条 task/<task-id> 分支、一个独立 Worktree。默认最多两个执行子代理，必要时加一个审核子代理，总上限三个；审核代理只读，不与开发者争写文件。不能把同一工作目录交给多人并发修改。
 
-最终交付：一个完全离线、上电自动运行、整合基础要求和扩展功能的 FPGA bit 镜像，以及源码、测试证据、演示材料和提交文档。
+本轮已授权 workflow-tools 修改指定协作脚本及自身日志、任务卡和证据；bringup-kit 仅新增 hardware/first-bringup.md、hardware/first-bringup-record.md 和自身日志/证据。其他文件由总控处理。
 
-## 2. 路径约定
+同机最多同时一个 TD 构建和一个 ModelSim 测试；所有输出独立目录。板卡操作串行，由持板人确认。子代理不得烧录、改接线、改安全设置或操作许可证。
 
-- 主仓库：`E:\juan\FPGA\anlogic-kids-learning-machine`
-- 分支工作目录：`E:\juan\FPGA\worktrees\anlogic-kids-learning-machine\<task-id>`
-- 原始比赛资料、TD 安装包、ModelSim 和大型压缩包继续保存在 `E:\juan\FPGA\文档`，不得复制进本仓库。
-- 文件路径、HDL 标识符和 Git 分支名使用 ASCII；面向人的说明使用中文。
+## 4. 文件交接
 
-## 3. 每个分支的必读顺序
+每批新增、修改、删除、移动或工具输出都必须：
 
-1. `AGENTS.md`
-2. `PROJECT_MEMORY.md`
-3. `PLAN.md`
-4. `TASKS.md`
-5. `DECISIONS.md`
-6. `docs/03-interface-contracts.md`
-7. 与本任务相关的 `docs/` 文件
-8. `memory/branches/<task-id>.md`
+1. 在本机工作区 workspace-records 新增独立 JSON，写真实负责人、实际路径、用途、状态、已执行验证和下一步；只写自己的记录。
+2. 用本机主仓库 tools/update-workspace-index.ps1 刷新根 FILE_INDEX，再运行 -Check。索引只能由统一脚本生成，不手改、不覆盖其他记录。
+3. 同步任务日志。主对话合并后再次登记主仓库实际路径；Worktree 的登记不能冒充已合并位置。
 
-如果文档之间冲突，以 `DECISIONS.md` 中编号更大的最新已接受决策和 `PROJECT_MEMORY.md` 为准，并在分支日志中报告冲突。
+本机仍使用 `E:/juan/FPGA/anlogic-kids-learning-machine/tools/update-workspace-index.ps1`。队友首次需要按 GitHub 指南建立自己的外层工作区规则；本机绝对路径记录不跨机器原样复用。CI 在临时工作区测试登记脚本，不要求云端存在个人 E 盘。
 
-## 4. 写入权限
+源码、脚本、人工文档逐文件登记；编译缓存和海量日志按运行目录登记。登记不代表技术审核，-Check 也不能发现全部未登记变动。交接前还须核对 Git 和实际文件清单。
 
-只有主对话可以修改以下文件：
+## 5. 生命周期与 GitHub
 
-- `PROJECT_MEMORY.md`
-- `PLAN.md`
-- `TASKS.md`
-- `DECISIONS.md`
-- `CHANGELOG.md`
-- `AGENTS.md`
-- `docs/`
+- 开始：检查干净基线和任务卡，创建分支/Worktree，启动日志只提交到新 Worktree，主目录 HEAD 不变。
+- 工作：每个实质阶段更新日志；完整记录真实命令、版本、日期、结果、失败与限制。
+- 自测：使用只读范围检查；源码和说明提交后再运行钉住 HEAD 的验收。运行日志不混进源代码提交，否则旧测试不再证明新 HEAD。
+- 提交：finish-task 默认只检查；只有显式提交选项才提交精确任务文件。提交不是通过验收。
+- PR：推送任务分支并创建 PR，写任务 ID、基线、验收报告、原始证据、限制和回归结果。
+- 合并：GitHub PR 是唯一正式入口，保留 merge commit。主对话独立复核后等待用户确认，不本地 merge 后再推 main，不强推、不绕过检查。
+- 同步：用户确认合并后才同步干净主目录、更新总记忆/状态及周版本。保留未提交或未推送内容的 Worktree，不自动删除。
 
-分支对话只允许修改：
+main 不允许直接开发。首次空远程只能上传已审查的现有提交历史作为基线，绝不把旧工作目录直接 git add --all 后上传。分支保护视账号支持启用；未启用时必须明确只是团队约定。
 
-- `memory/branches/<task-id>.md`
-- 任务明确拥有的 `fpga/`、`assets/`、`hardware/` 文件
-- `evidence/<task-id>/` 下的证据文件
+## 6. 验收与人机边界
 
-分支不得直接改变共享模块接口。若必须改变接口，应在分支日志的“待决策事项”和“建议总文档更新”中给出提案，由主对话审核后再修改 `docs/03-interface-contracts.md`。
+必须区分：聊天结束、文件提交、检查通过、模块仿真通过、工程实现通过、真实上板通过、正式合并和发布。总控不能凭子代理自报或 PASS 字样判完成。
 
-## 5. 分支生命周期
+统一检查报告记录实际提交、命令、退出码、证据哈希和未验证层级。缺工具、缺证据、哈希/提交不一致、必要测试未执行都不能标绿。代码由主对话重跑受影响测试；硬件结果由操作人提供照片/视频/日志后核验。
 
-### 开始
+FPC 只能断电插拔。烧录、固化 Flash、改接线、关闭系统安全设置必须事前用户确认，不能自动执行。不要向聊天索取密码、PAT 或 License；本人通过官方登录完成认证。
 
-- 确认当前目录是自己的 Worktree：`git rev-parse --show-toplevel`。
-- 确认当前分支不是 `main`：`git branch --show-current`。
-- 将 `memory/branches/<task-id>.md` 的状态改为“进行中”，填写负责人、开始时间和基础提交。
-- 记录本次任务的目标、输入文件、依赖和验收条件。
+按需总控只在用户发起的当前一轮协调子代理；不创建后台自动化，不承诺关闭聊天后持续监控。队友电脑进度通过 GitHub 提交、PR 和日志获取，不假设能读取其本地聊天。
 
-可使用：
+## 7. 交接回复
 
-```powershell
-pwsh -File .\tools\new-task-worktree.ps1 -TaskId <task-id> -Owner <owner>
-```
-
-### 工作期间
-
-- 每次有实质进展时更新分支日志，不能只在结束时一次性补写。
-- 测试必须记录完整命令、环境、日期和实际结果，不得写未执行的测试。
-- 波形、照片、视频和大型日志放入 `evidence/<task-id>/`；如果文件过大，只提交清单、路径和 SHA-256。
-- 每个可上板版本单独提交，提交信息格式为 `feat(<task-id>): ...`、`fix(<task-id>): ...` 或 `test(<task-id>): ...`。
-
-### 结束
-
-- 在分支日志中将状态改为“等待主对话审核”。
-- 填写修改文件、验证结果、证据、阻塞、风险、待决策事项、建议总文档更新和下一分支交接。
-- 确认没有修改主对话专属文件。
-- 提交全部任务文件，然后运行：
-
-```powershell
-pwsh -File .\tools\finish-task.ps1 -TaskId <task-id>
-```
-
-- 最后回复必须包含：状态、提交号、已完成内容、验收证据、未解决事项、建议主对话动作。
-
-## 6. 主对话合并规则
-
-主对话只有在以下条件全部满足后才能合并：
-
-- 分支日志已到“等待主对话审核”。
-- 验收证据真实、完整且可复现。
-- `git diff main...<branch>` 只包含该任务拥有的文件和分支日志。
-- 合并后不覆盖其他分支已接受的功能。
-
-主对话合并命令由 `tools/merge-task.ps1` 执行。合并后主对话负责更新 `PROJECT_MEMORY.md`、`TASKS.md`、`DECISIONS.md`、`CHANGELOG.md` 和稳定文档，并按里程碑打标签。
-
-## 7. 已锁定约束
-
-- 视频基准：`1280x720@60fps`。
-- 对象：9 个颜色形状积木和 5 类卡片，共 14 个 `item_id`。
-- 对象识别采用中心识别区、颜色阈值、投影统计、形状特征和低分辨率模板匹配。
-- 不使用云端、CNN/NPU、额外树莓派、Jetson、第二块 FPGA 或语音识别。
-- 语音使用 DFPlayer Mini 和预录音频。
-- 最终使用一个上电自动运行的 bit 镜像。
-- 每周必须保留一个已验证的可上板版本。
-
-## 8. 输出语言和格式
-
-- 面向人的说明使用中文。
-- 日期使用 `YYYY-MM-DD`，时间使用 `Asia/Shanghai`。
-- 版本标签：`m1-bringup`、`m2-video`、`m3-detector`、`m4-feature-complete`、`v1.0-release`。
-- 结论必须区分“已验证”“推断”“待验证”，不得把推断当作实测结果。
+包含状态、提交号、实际改动、验证命令与证据、未解决事项和建议总控动作。主干合并和硬件实测未执行时必须显式说明。每周保留一个实际验收的可回退镜像；没有上板证据不得补造标签。

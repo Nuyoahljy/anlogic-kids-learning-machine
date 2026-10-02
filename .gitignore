@@ -29,7 +29,6 @@ fpga/**/*.log
 fpga/**/*.html
 fpga/**/*.json
 fpga/**/*.bit
-!fpga/release/*.bit
 
 # ModelSim
 work/
@@ -44,6 +43,9 @@ evidence/video/
 evidence/**/*.mp4
 evidence/**/*.mov
 evidence/**/*.avi
+evidence/*/runs/
+evidence/*/test-runs/
+hardware/private/
 
 # OS/editor temporary files
 .DS_Store
@@ -53,4 +55,3 @@ evidence/**/*.avi
 .env
 .env.*
 secrets/
-
