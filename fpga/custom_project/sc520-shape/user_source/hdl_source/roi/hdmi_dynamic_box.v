@@ -1,0 +1,136 @@
+module hdmi_dynamic_box #(
+    parameter integer FRAME_WIDTH = 1280,
+    parameter integer FRAME_HEIGHT = 720,
+    parameter integer X_MIN = 320,
+    parameter integer X_MAX = 959,
+    parameter integer Y_MIN = 120,
+    parameter integer Y_MAX = 599,
+    parameter integer MIN_AREA = 256,
+    parameter integer MIN_WIDTH = 8,
+    parameter integer MIN_HEIGHT = 8,
+    parameter integer RUN_LENGTH = 3,
+    parameter integer CONFIRM_FRAMES = 3,
+    parameter integer DROP_FRAMES = 2,
+    parameter integer MAX_STEP = 32,
+    parameter integer JITTER = 2
+) (
+    input wire clk,
+    input wire rst_n,
+    input wire in_vsync,
+    input wire in_hsync,
+    input wire in_de,
+    input wire [23:0] in_rgb,
+    output wire out_vsync,
+    output wire out_hsync,
+    output wire out_de,
+    output wire [23:0] out_rgb
+);
+    reg [2:0] vsync_pipe;
+    reg [2:0] hsync_pipe;
+    reg [2:0] de_pipe;
+    reg [23:0] rgb_sample;
+    reg [23:0] rgb_delay;
+    reg [23:0] rgb_fallback;
+    reg frame_pending;
+    reg previous_vsync;
+    wire sample_sof = de_pipe[0] && frame_pending;
+    wire sample_eol = de_pipe[0] && !in_de;
+    wire [23:0] coord_rgb;
+    wire [10:0] coord_x;
+    wire [9:0] coord_y;
+    wire coord_valid;
+    wire coord_sof;
+    wire coord_eol;
+    wire [23:0] segment_rgb;
+    wire [10:0] segment_x;
+    wire [9:0] segment_y;
+    wire segment_valid;
+    wire segment_sof, segment_eol;
+    wire segment_roi;
+    wire [1:0] segment_color;
+    wire border = segment_roi &&
+                  (segment_x == X_MIN || segment_x == X_MAX ||
+                   segment_y == Y_MIN || segment_y == Y_MAX);
+    wire candidate_frame, candidate_valid;
+    wire [1:0] candidate_color;
+    wire [21:0] candidate_area;
+    wire [10:0] candidate_left, candidate_right;
+    wire [9:0] candidate_top, candidate_bottom;
+    wire box_valid;
+    wire [1:0] box_color;
+    wire [10:0] box_left, box_right;
+    wire [9:0] box_top, box_bottom;
+    wire [7:0] box_stable_count;
+    wire frame_tick = vsync_pipe[2] && !previous_vsync;
+    wire inside_box = box_valid && segment_x >= box_left && segment_x <= box_right &&
+                      segment_y >= box_top && segment_y <= box_bottom;
+    wire dynamic_border = inside_box &&
+        (segment_x-box_left < 2 || box_right-segment_x < 2 ||
+         segment_y-box_top < 2 || box_bottom-segment_y < 2);
+
+
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            vsync_pipe <= 0;
+            hsync_pipe <= 0;
+            de_pipe <= 0;
+            rgb_sample <= 0;
+            rgb_delay <= 0;
+            rgb_fallback <= 0;
+            frame_pending <= 0;
+            previous_vsync <= 0;
+        end else begin
+            previous_vsync <= vsync_pipe[2];
+            vsync_pipe <= {vsync_pipe[1:0], in_vsync};
+            hsync_pipe <= {hsync_pipe[1:0], in_hsync};
+            de_pipe <= {de_pipe[1:0], in_de};
+            rgb_sample <= in_rgb;
+            rgb_delay <= rgb_sample;
+            rgb_fallback <= rgb_delay;
+            if (in_vsync && !vsync_pipe[0]) frame_pending <= 1;
+            else if (de_pipe[0]) frame_pending <= 0;
+        end
+    end
+
+    pixel_coord_adapter #(.FRAME_WIDTH(FRAME_WIDTH), .FRAME_HEIGHT(FRAME_HEIGHT)) coordinates (
+        .clk(clk), .rst_n(rst_n), .in_rgb(rgb_sample), .in_valid(de_pipe[0]),
+        .in_sof(sample_sof), .in_eol(sample_eol), .out_rgb(coord_rgb),
+        .out_x(coord_x), .out_y(coord_y), .out_valid(coord_valid),
+        .out_sof(coord_sof), .out_eol(coord_eol)
+    );
+
+    rgb_color_segment #(.X_MIN(X_MIN), .X_MAX(X_MAX), .Y_MIN(Y_MIN), .Y_MAX(Y_MAX)) segment (
+        .clk(clk), .rst_n(rst_n), .in_rgb(coord_rgb), .in_x(coord_x), .in_y(coord_y),
+        .in_valid(coord_valid), .in_sof(coord_sof), .in_eol(coord_eol),
+        .out_rgb(segment_rgb), .out_x(segment_x), .out_y(segment_y),
+        .out_valid(segment_valid), .out_sof(segment_sof), .out_eol(segment_eol),
+        .out_roi(segment_roi), .out_color(segment_color)
+    );
+
+    color_bbox_stats #(
+        .FRAME_WIDTH(FRAME_WIDTH), .FRAME_HEIGHT(FRAME_HEIGHT),
+        .X_MIN(X_MIN), .X_MAX(X_MAX), .Y_MIN(Y_MIN), .Y_MAX(Y_MAX),
+        .RUN_LENGTH(RUN_LENGTH), .MIN_AREA(MIN_AREA), .MIN_WIDTH(MIN_WIDTH), .MIN_HEIGHT(MIN_HEIGHT)
+    ) statistics (
+        .clk(clk), .rst_n(rst_n), .frame_tick(frame_tick), .in_valid(segment_valid),
+        .in_sof(segment_sof), .in_eol(segment_eol), .in_x(segment_x), .in_y(segment_y),
+        .in_color(segment_color), .out_frame(candidate_frame), .out_valid(candidate_valid),
+        .out_color(candidate_color), .out_area(candidate_area), .out_left(candidate_left),
+        .out_right(candidate_right), .out_top(candidate_top), .out_bottom(candidate_bottom)
+    );
+
+    bbox_stabilizer #(.CONFIRM_FRAMES(CONFIRM_FRAMES), .DROP_FRAMES(DROP_FRAMES),
+        .MAX_STEP(MAX_STEP), .JITTER(JITTER)) stabilizer (
+        .clk(clk), .rst_n(rst_n), .in_frame(candidate_frame), .in_valid(candidate_valid),
+        .in_color(candidate_color), .in_left(candidate_left), .in_right(candidate_right),
+        .in_top(candidate_top), .in_bottom(candidate_bottom), .out_valid(box_valid),
+        .out_color(box_color), .out_left(box_left), .out_right(box_right),
+        .out_top(box_top), .out_bottom(box_bottom), .stable_count(box_stable_count)
+    );
+
+    assign out_vsync = vsync_pipe[2];
+    assign out_hsync = hsync_pipe[2];
+    assign out_de = de_pipe[2];
+    assign out_rgb = !out_de ? 24'd0 : !segment_valid ? rgb_fallback :
+                     border ? 24'hff0000 : dynamic_border ? 24'h00ffff : segment_rgb;
+endmodule
