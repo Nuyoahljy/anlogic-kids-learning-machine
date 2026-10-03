@@ -54,3 +54,15 @@ evidence/**/*.avi
 .env.*
 secrets/
 
+# SC520 checkpoint: external dependencies and runtime evidence stay local
+/%SystemDrive%/
+/fpga/vendor_labs/sc520/
+/fpga/custom_project/sc520*/**
+!/fpga/custom_project/sc520*/user_source/
+!/fpga/custom_project/sc520*/user_source/hdl_source/
+!/fpga/custom_project/sc520*/user_source/hdl_source/roi/
+!/fpga/custom_project/sc520*/user_source/hdl_source/roi/*.v
+/evidence/sc520-*/**
+!/evidence/sc520-fixed-roi/checkpoint/
+!/evidence/sc520-fixed-roi/checkpoint/**
+!/fpga/scripts/sc520-fixed-roi/checkpoint/*.json

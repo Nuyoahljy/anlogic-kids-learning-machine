@@ -19,3 +19,8 @@
 *.bmp binary
 *.wav binary
 *.mp3 binary
+
+fpga/custom_project/sc520*/** -text
+fpga/sim/sc520-*/** -text
+fpga/scripts/sc520-*/** -text
+evidence/sc520-fixed-roi/checkpoint/** -text
