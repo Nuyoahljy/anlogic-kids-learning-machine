@@ -19,3 +19,15 @@
 *.bmp binary
 *.wav binary
 *.mp3 binary
+
+fpga/custom_project/sc520*/** -text
+fpga/sim/sc520-*/** -text
+fpga/scripts/sc520-*/** -text
+evidence/sc520-fixed-roi/checkpoint/** -text
+
+# Historical evidence and handoff manifests bind exact file bytes.
+evidence/sc520-osd-demo/** -text
+evidence/sc520-learning-ui-audio/** -text
+evidence/sc520-quiz-control/** -text
+evidence/sc520-quiz-video/** -text
+memory/branches/sc520-*.md -text

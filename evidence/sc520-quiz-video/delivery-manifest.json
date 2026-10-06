@@ -1,0 +1,540 @@
+{
+  "Task": "sc520-quiz-video",
+  "Owner": "01a11124-e100-75e2-9e85-9f9686e23c73 /root",
+  "Status": "software_verified_waiting_main_review_and_hardware_validation",
+  "CreatedAt": "2026-10-06T23:57:54.055987+08:00",
+  "Workdir": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi",
+  "GitBranch": "task/sc520-fixed-roi",
+  "BaseCommit": "f609426044982c986b54e999866be9f4c1af2682",
+  "NewCommit": null,
+  "Candidate": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\b\\8f1b2f6f\\built.bit",
+    "SHA256": "945E6D5FB6FCA2FF252953AF1B989155D2C28BA2A06E663C67F96A08B1AD2334",
+    "Bytes": 1789539
+  },
+  "CompressedCandidate": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\b\\8f1b2f6f\\built_compress.bit",
+    "SHA256": "F698D640ECCEC1FD3DA059D38EAEACB19886EDBF41AD8651A66EA7376E4C8A4D",
+    "Bytes": 1346033
+  },
+  "BuildDirectory": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\b\\8f1b2f6f",
+  "Metrics": {
+    "SetupWNSps": 132,
+    "SetupTNSps": 0,
+    "SetupFailingEndpoints": 0,
+    "HoldWNSps": 20,
+    "HoldTNSps": 0,
+    "HoldFailingEndpoints": 0,
+    "STACoveragePercent": 96.38,
+    "IO": 58,
+    "lut6": 12872,
+    "reg": 14415,
+    "slice": 14994,
+    "eram": 39,
+    "dsp": 16,
+    "pll": 3,
+    "TimingNonnegative": true
+  },
+  "Tests": [
+    {
+      "Testcase": "osd",
+      "Negative": false,
+      "Manifest": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\runs\\osd-normal-20261006-222336-18ed6cf4\\run-manifest.json",
+      "ManifestSHA256": "18BC84C1FED2E52FB65865F0908ED47777A0FD0B13DD18EFCA577C4BB104AB27",
+      "Summary": {
+        "testcase": "osd",
+        "negative": 0,
+        "done": 1,
+        "errors": 0,
+        "checks": 8320089
+      },
+      "TranscriptSummary": "# SUMMARY checks=8320089 errors=0 cases=26 pixels=8294478 content=21504 test_done=1",
+      "ExitCode": 0,
+      "ToolWarningsMax": 0,
+      "Trace": null
+    },
+    {
+      "Testcase": "osd",
+      "Negative": true,
+      "Manifest": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\runs\\osd-negative-20261006-222515-35cee85f\\run-manifest.json",
+      "ManifestSHA256": "1A0E4424E327FC245D8AC77F4BE36CF51B2134EA97BF164922F60F0A13276E73",
+      "Summary": {
+        "testcase": "osd",
+        "negative": 1,
+        "done": 1,
+        "errors": 1,
+        "checks": 8320079
+      },
+      "TranscriptSummary": "# SUMMARY checks=8320079 errors=1 cases=26 pixels=8294479 content=21504 test_done=1",
+      "ExitCode": 1,
+      "ToolWarningsMax": 0,
+      "Trace": null
+    },
+    {
+      "Testcase": "runtime",
+      "Negative": false,
+      "Manifest": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\runs\\runtime-normal-20261006-222026-6b8c8b66\\run-manifest.json",
+      "ManifestSHA256": "AD91315820806130DDCA3873B8CB744F00C9221A7A8C1A5D10FBF81C853A7940",
+      "Summary": {
+        "testcase": "runtime",
+        "negative": 0,
+        "done": 1,
+        "errors": 0,
+        "checks": 450065
+      },
+      "TranscriptSummary": "# SUMMARY runtime cases=8 checks=450065 errors=0 default_cycles=150003 boot_pulses=4 test_done=1",
+      "ExitCode": 0,
+      "ToolWarningsMax": 0,
+      "Trace": null
+    },
+    {
+      "Testcase": "runtime",
+      "Negative": true,
+      "Manifest": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\runs\\runtime-negative-20261006-222336-317f0009\\run-manifest.json",
+      "ManifestSHA256": "5F3617E2D57C689E5D727747EF9415583BF66662EC465D98F63B8E0AD56798E7",
+      "Summary": {
+        "testcase": "runtime",
+        "negative": 1,
+        "done": 1,
+        "errors": 1,
+        "checks": 450065
+      },
+      "TranscriptSummary": "# SUMMARY runtime cases=8 checks=450065 errors=1 default_cycles=150003 boot_pulses=4 test_done=1",
+      "ExitCode": 1,
+      "ToolWarningsMax": 0,
+      "Trace": null
+    },
+    {
+      "Testcase": "video",
+      "Negative": false,
+      "Manifest": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\runs\\video-normal-20261006-233313-bae91a0b\\run-manifest.json",
+      "ManifestSHA256": "24BE1FCCD4AC554D6A1FF2723DF058FABE6B0E38C4A9BF9DF3DC58E91743ADEE",
+      "Summary": {
+        "testcase": "video",
+        "negative": 0,
+        "done": 1,
+        "errors": 0,
+        "checks": 28339538
+      },
+      "TranscriptSummary": "# SUMMARY checks=28339538 errors=0 cases=6 frames=135 pixels=11337435 ui_checks=99138 answers=3 item_mask=511 test_done=1",
+      "ExitCode": 0,
+      "ToolWarningsMax": 0,
+      "Trace": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\runs\\video-normal-20261006-233313-bae91a0b\\video-frames.csv"
+    },
+    {
+      "Testcase": "video",
+      "Negative": true,
+      "Manifest": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\runs\\video-negative-20261006-233455-cee7abcc\\run-manifest.json",
+      "ManifestSHA256": "3E501DD6DE0221B58D93D4E7EA32F47182A858212CF50E1C7840FE5CFAD14926",
+      "Summary": {
+        "testcase": "video",
+        "negative": 1,
+        "done": 1,
+        "errors": 1,
+        "checks": 28339539
+      },
+      "TranscriptSummary": "# SUMMARY checks=28339539 errors=1 cases=6 frames=135 pixels=11337435 ui_checks=99138 answers=3 item_mask=511 test_done=1",
+      "ExitCode": 1,
+      "ToolWarningsMax": 0,
+      "Trace": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\runs\\video-negative-20261006-233455-cee7abcc\\video-frames.csv"
+    },
+    {
+      "Testcase": "full",
+      "Negative": false,
+      "Manifest": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\runs\\full-normal-20261006-233455-5f98e1af\\run-manifest.json",
+      "ManifestSHA256": "6A84A74E1A54EC90FE3F269F8FBFF80AE7EB35F643EDC397D9C9BC6431806C4F",
+      "Summary": {
+        "testcase": "full",
+        "negative": 0,
+        "done": 1,
+        "errors": 0,
+        "checks": 82601565
+      },
+      "TranscriptSummary": "# SUMMARY checks=82601565 errors=0 cases=4 frames=32 pixels=29491200 ui_checks=547584 answers=2 item_mask=3 test_done=1",
+      "ExitCode": 0,
+      "ToolWarningsMax": 0,
+      "Trace": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\runs\\full-normal-20261006-233455-5f98e1af\\video-frames.csv"
+    },
+    {
+      "Testcase": "full",
+      "Negative": true,
+      "Manifest": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\runs\\full-negative-20261006-233455-00c510a2\\run-manifest.json",
+      "ManifestSHA256": "8AB007A9D5D6E17B0D28F8922C66DEEE00545B53CF2DB88E54635F39C1A22CE2",
+      "Summary": {
+        "testcase": "full",
+        "negative": 1,
+        "done": 1,
+        "errors": 1,
+        "checks": 82601561
+      },
+      "TranscriptSummary": "# SUMMARY checks=82601561 errors=1 cases=4 frames=32 pixels=29491200 ui_checks=547584 answers=2 item_mask=3 test_done=1",
+      "ExitCode": 1,
+      "ToolWarningsMax": 0,
+      "Trace": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\runs\\full-negative-20261006-233455-00c510a2\\video-frames.csv"
+    }
+  ],
+  "NormalChecks": 119711257,
+  "ProtectedCount": 883,
+  "ProtectedDifferences": [],
+  "HardwareDownloaded": false,
+  "HardwareValidated": false,
+  "PhysicalAudioImplemented": false,
+  "PhysicalKeysImplemented": false,
+  "FullFrameTimingVerified": false,
+  "ChecksExecuted": [
+    "verify-evidence.py --runs-json evidence/sc520-quiz-video/selected-runs.json --write",
+    "verify-evidence.py",
+    "verify-build.py --build-directory evidence/sc520-quiz-video/b/8f1b2f6f",
+    "Python AST and all bound Markdown file links"
+  ],
+  "MarkdownLinksChecked": 51,
+  "Files": [
+    {
+      "Path": "E:\\juan\\FPGA\\learning\\sc520-quiz-video\\README.md",
+      "SHA256": "10E74712E5276D92A572408100300C70E4222C92B9F04C7D79BC75F84BBD7258",
+      "Bytes": 4291
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\b\\8f1b2f6f\\archive-manifest.json",
+      "SHA256": "7FF53D4F4B58C5A6AF5100992EFEDBB540DD74D18497AB1ED5316076009418A5",
+      "Bytes": 14429
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\b\\8f1b2f6f\\built.bit",
+      "SHA256": "945E6D5FB6FCA2FF252953AF1B989155D2C28BA2A06E663C67F96A08B1AD2334",
+      "Bytes": 1789539
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\b\\8f1b2f6f\\built_compress.bit",
+      "SHA256": "F698D640ECCEC1FD3DA059D38EAEACB19886EDBF41AD8651A66EA7376E4C8A4D",
+      "Bytes": 1346033
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\b\\8f1b2f6f\\final_area.rpt",
+      "SHA256": "EDCFDE9B9E96515324156EFE4441EDCEEA751DAF6FFE0CC873B5C0E9981B588B",
+      "Bytes": 52581
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\b\\8f1b2f6f\\final_timing.rpt",
+      "SHA256": "857A18B3FBB1C3D84159770909AB06BC3AAFC458962D95CA7401EA7DB4310954",
+      "Bytes": 4789072
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\b\\8f1b2f6f\\result.json",
+      "SHA256": "6737EFA889C58E9BAA8907D6081789F99B5038CDCD088704F47E5DAD46431888",
+      "Bytes": 3826
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\b\\8f1b2f6f\\source-inputs.json",
+      "SHA256": "D183A6DF8B7420D46A2ED85F14470A09BDED71D0A444096D2A19AE1A39CA1C50",
+      "Bytes": 34049
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\local-interface.md",
+      "SHA256": "E3E1B23854CB5049AD160DA0FA605B1BD855F966351C8AFD872E2FF19F26BAEA",
+      "Bytes": 5634
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\origin.json",
+      "SHA256": "A2F6F07BCC6D9C4AFEB0522C79D02E1C9294F015447C454F2793CF2F24094780",
+      "Bytes": 159637
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\osd-notes.md",
+      "SHA256": "BFC02CD827823D92AE42C435D92DE4922D24E6CC4E5DC61183434AE8CC62ECF3",
+      "Bytes": 9015
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\preview\\full-normal-20261006-233455-5f98e1af\\cleared.png",
+      "SHA256": "247C3BD6ACD913ABC733A9F7778D1613AE786F60BD5156C72479DC4AAB0360FD",
+      "Bytes": 9524
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\preview\\full-normal-20261006-233455-5f98e1af\\correct.png",
+      "SHA256": "C17D90BF1BBB5BF3F85082EB1441C82EF75AC44661851899C8479EB854F05F82",
+      "Bytes": 9481
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\preview\\full-normal-20261006-233455-5f98e1af\\finished.png",
+      "SHA256": "27B339A83566759AF0B4F0C9954C75E656104DA44E89EF126B8B733A3A581FBE",
+      "Bytes": 9422
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\preview\\full-normal-20261006-233455-5f98e1af\\preview-manifest.json",
+      "SHA256": "A7FBFB0E9278CE9EAA0A10D5118B4025B6B0FDB31378AA7819E3390A9BD63D68",
+      "Bytes": 4748
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\preview\\full-normal-20261006-233455-5f98e1af\\question.png",
+      "SHA256": "6CB703AC5626505DEB3187CE7B7FF0AE99715B43A14FE1ECE3ABC01CCF37AF20",
+      "Bytes": 9090
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\preview\\full-normal-20261006-233455-5f98e1af\\visual-review.json",
+      "SHA256": "244928415B4625064546E4DC3F640157D6F6DF68171C440620894C160E679EC9",
+      "Bytes": 6473
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\preview\\full-normal-20261006-233455-5f98e1af\\wrong.png",
+      "SHA256": "861F118F889FDF02300348D4480767217D8E9A85B78D4748EC4A773DB2C3CB64",
+      "Bytes": 9510
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\preview\\osd-normal-20261006-221109-36182627\\preview-manifest.json",
+      "SHA256": "1C009EE9A572E6B853256562AB1E6B0D832373ADF7A46B41FF9F50FC6E220A8E",
+      "Bytes": 9399
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\preview\\osd-normal-20261006-221109-36182627\\quiz-osd-00.png",
+      "SHA256": "F63AB601309447793705C6DADD7159E66F2FC24EF6003410A7D229E06CDC0CE6",
+      "Bytes": 6358
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\preview\\osd-normal-20261006-221109-36182627\\quiz-osd-01.png",
+      "SHA256": "A40313A1BC3902D49D7ED281A24D539D538D7DBAAB3F3D3E97B17719B02203A5",
+      "Bytes": 6477
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\preview\\osd-normal-20261006-221109-36182627\\quiz-osd-02.png",
+      "SHA256": "B1B71C9F8BCD86E22AE11EF25BA054340CB95F51871CE85DF9CA2CB33D7F4933",
+      "Bytes": 5860
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\preview\\osd-normal-20261006-221109-36182627\\quiz-osd-10.png",
+      "SHA256": "80327A93BA3EA18B9211E26EC7856007904AD53781C074D1A651FB5DE12B3E2B",
+      "Bytes": 5914
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\preview\\osd-normal-20261006-221109-36182627\\quiz-osd-11.png",
+      "SHA256": "2AB951F6DF1F223ABA3BE13B666176A7E294A1AFB12ECD69A1382CEC1607DF9D",
+      "Bytes": 6006
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\preview\\osd-normal-20261006-221109-36182627\\quiz-osd-12.png",
+      "SHA256": "98AA7B61DCC924934C00EA4CF5F847B79953C1F9570F55AE2D25203AA5D49CCC",
+      "Bytes": 5971
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\preview\\osd-normal-20261006-221109-36182627\\quiz-osd-13.png",
+      "SHA256": "D15DE10D176AAB809EC3E1293D54DEABCAEC86816D51F6EA4D182C9E435192E1",
+      "Bytes": 6089
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\preview\\osd-normal-20261006-221109-36182627\\quiz-osd-14.png",
+      "SHA256": "E1120B9E4B55CCB0C3B25BFCB9ADE50C986A3B27DE43BF9230E01845C46DDAED",
+      "Bytes": 6209
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\preview\\osd-normal-20261006-221109-36182627\\quiz-osd-15.png",
+      "SHA256": "DE1F70D3BF3D15331BED319ABF24B8BB6DFE3C66D43F3841F2FF11234BB8BE5A",
+      "Bytes": 5963
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\preview\\osd-normal-20261006-221109-36182627\\quiz-osd-16.png",
+      "SHA256": "25E611B9FE6741F06964F308F54E29DF2FF40CC6FADF805A04182A6727A26E4B",
+      "Bytes": 5982
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\preview\\osd-normal-20261006-221109-36182627\\quiz-osd-17.png",
+      "SHA256": "159D3C5416F584D98F25697A15AC52A3EEC7773DC0F8919494636F38E948D8AC",
+      "Bytes": 5962
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\preview\\osd-normal-20261006-221109-36182627\\visual-review.json",
+      "SHA256": "CEEAB376C1F0B7781BB55F2B9E11E1739410813599B4C685DF6E83EA67B6E14D",
+      "Bytes": 6852
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\project-manifests.json",
+      "SHA256": "7311C91F8A547892FAF5D27EF3EC9A0AD39094E00E78B3A3B2A4246C28FB2183",
+      "Bytes": 2522
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\protected-before.json",
+      "SHA256": "98F48A4800C29183AC5B48173E3479D9E09692A6FDFEEEFD3CC7CFA5C7D681BC",
+      "Bytes": 253925
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\run-report.md",
+      "SHA256": "09DC00528DC4FEB0FAAA3359DFB17E6670B01456F40CD175297DCD37A319692C",
+      "Bytes": 10045
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\runtime-notes.md",
+      "SHA256": "78309D9FA2B04A1E1D538E775B6910A8F697E2C910AF45CD45C306EB0CDB2657",
+      "Bytes": 1990
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\selected-runs.json",
+      "SHA256": "96710DAA5E355C42C2D8F06D09BC534C1F64325A2CEAB709F5D37A5B57C3AADC",
+      "Bytes": 2071
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\verification-manifest.json",
+      "SHA256": "456EF1C9E3FB5060FA039D0503724DB92C9F4E1B4F0B8552238D861D51C3E07C",
+      "Bytes": 16443
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\video-test-notes.md",
+      "SHA256": "BD551BFB65784DBC3A15F219DF1A09B6A57A2EA2672DFA8D94F9CE1A8D9E1F20",
+      "Bytes": 6430
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\warning-analysis.json",
+      "SHA256": "CA4A057F5A6ED8EAD9D25CCD4938F9DDC0DE6464EE19EA7EC81CBE063C468BC6",
+      "Bytes": 43217
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\warning-analysis.md",
+      "SHA256": "07958F652468224B64335AA8C16910E10C01D8FDC4AF6D57E1426E1F71E1579D",
+      "Bytes": 1887
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-quiz-video\\td_project\\camera_to_dsi_display.al",
+      "SHA256": "06B20899893C04CE4126DAD07CC7D521C629D9E2CB79538A2394628C12EBA934",
+      "Bytes": 33158
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-quiz-video\\td_project\\camera_to_dsi_display_Runs\\phy_1\\camera_to_dsi_display.prj",
+      "SHA256": "7B01C82F449707BB8EE1D367D00560E30C9B09C7F8E4065BDA808741DC3A6F3C",
+      "Bytes": 33067
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-quiz-video\\td_project\\camera_to_dsi_display_Runs\\syn_1\\camera_to_dsi_display.prj",
+      "SHA256": "65A6F77557A295D984AE6106341643F49A2B6422A98699C24AC581E4A718F7E5",
+      "Bytes": 32947
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-quiz-video\\user_source\\hdl_source\\design_top_wrapper.v",
+      "SHA256": "B0C72ACDBC89A86C6FAE8C492096C4ADCCC43615E216E43839A002FBC9B6A497",
+      "Bytes": 34295
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-quiz-video\\user_source\\hdl_source\\quiz\\hdmi_quiz.v",
+      "SHA256": "48DDF2416AA092D0E82A1BAEB31FE7C864B71AB724889BCEC037FA6270C86A3F",
+      "Bytes": 15218
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-quiz-video\\user_source\\hdl_source\\quiz\\quiz_audio_queue.v",
+      "SHA256": "3D99F4A6760F45513E51A84A6DC785E8BD06AD8A420B261153AF52E4175DFD08",
+      "Bytes": 7982
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-quiz-video\\user_source\\hdl_source\\quiz\\quiz_boot_controls.v",
+      "SHA256": "DBB8AF3B57ADF60B3BD13DF03A1FED8F6F7BACCF5FDF76A33683686D64AD1728",
+      "Bytes": 916
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-quiz-video\\user_source\\hdl_source\\quiz\\quiz_content.v",
+      "SHA256": "17D05D4F852FC74A565F1C0EBDB7BE1EE97F5727FA472E209AEC8C103210DBC6",
+      "Bytes": 18885
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-quiz-video\\user_source\\hdl_source\\quiz\\quiz_control.v",
+      "SHA256": "CD41CB3FBD5F5B698CFE1A5AA7E8FB699F91929112EED97B3D9AF724662B8DD0",
+      "Bytes": 8582
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-quiz-video\\user_source\\hdl_source\\quiz\\quiz_font_rom.v",
+      "SHA256": "27EFAFD2338CE5EE6A4874FEC12F55628BD785247F5E8202432FE59B117140DD",
+      "Bytes": 69999
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-quiz-video\\user_source\\hdl_source\\quiz\\quiz_millisecond_tick.v",
+      "SHA256": "173C1155E8EC0B239CA2F7E00EC87C2E7AAD704C9998EA5B4142118CFC37763B",
+      "Bytes": 775
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-quiz-video\\user_source\\hdl_source\\quiz\\quiz_mock_player.v",
+      "SHA256": "83C80A9B06C565BAC4836B90C927B1607458745E638C98C1A3EC39578563518D",
+      "Bytes": 1752
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-quiz-video\\user_source\\hdl_source\\quiz\\quiz_osd.v",
+      "SHA256": "D8F01A0EF0014DEA2794AB809FCD3F71B4E6CA83D0275939C9EABF60A350318D",
+      "Bytes": 1802
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\scripts\\sc520-quiz-video\\archive-build.py",
+      "SHA256": "BCF23EFC8E7E4972C0E38BCC5C01B3C671E4213FE3986233DAD03B84B84C4E7A",
+      "Bytes": 8674
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\scripts\\sc520-quiz-video\\build.ps1",
+      "SHA256": "5C5F8CDBFF58EDFF3D163F3B2FB8F40D36AC3A22EB933CC25FC1AA8A44BE1227",
+      "Bytes": 8036
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\scripts\\sc520-quiz-video\\generate-font.py",
+      "SHA256": "FD3942C440F3118A36D21DF1F4AB50E2C8311B53888DA85CAF6FF35F362EC53C",
+      "Bytes": 9800
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\scripts\\sc520-quiz-video\\integrate.py",
+      "SHA256": "C3E89DC0D2984991B1E7EB3CDAFCB6E9C0356DEA6C439C0819ABA1921CF68178",
+      "Bytes": 10302
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\scripts\\sc520-quiz-video\\prepare.py",
+      "SHA256": "B70C36E0C2E1960BAEA0EC7C5298BAF9CCC7FD43837B207BA8B338FB1E704B0B",
+      "Bytes": 8221
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\scripts\\sc520-quiz-video\\render-preview.py",
+      "SHA256": "3833710470523529C081364573CBCDF860B91F17992A23154E2720375F030113",
+      "Bytes": 4591
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\scripts\\sc520-quiz-video\\run-sim.do",
+      "SHA256": "8F0E548B6BF75CF8D593121831B852FF02252D7144AD8A6B5919EBE2FB9C2235",
+      "Bytes": 1386
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\scripts\\sc520-quiz-video\\simulate.ps1",
+      "SHA256": "A870C3DB73FBE46168F4824EEA3A206D4884A8CBFF236A6A4104BAAE0D1F8B37",
+      "Bytes": 4167
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\scripts\\sc520-quiz-video\\verify-build.py",
+      "SHA256": "FCC93E773C19D42B8224E00BD9749711D5D5FA85E6F964DC181CCBB0D8FA14E0",
+      "Bytes": 5435
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\scripts\\sc520-quiz-video\\verify-evidence.py",
+      "SHA256": "9E38362C90DF73986F4AAFEC644DAD78BD1A1B34DA2B1C581A4C231D7520FE83",
+      "Bytes": 10502
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\sim\\sc520-quiz-video\\quiz_bitmap_reference.svh",
+      "SHA256": "989594B5BE6B75018CE73F04F8607201757555BE59B261687370C1E3116A1DBB",
+      "Bytes": 23446
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\sim\\sc520-quiz-video\\tb_quiz_osd.sv",
+      "SHA256": "EF644E925E944BC8A472DA2354132B52D5054483D96052987DBFAAFCF42B882C",
+      "Bytes": 11472
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\sim\\sc520-quiz-video\\tb_quiz_runtime.sv",
+      "SHA256": "4DA885E0DDC3C212B2C3C7EB09371116A374AC738BA95CD491A53A63DB24308B",
+      "Bytes": 7700
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\sim\\sc520-quiz-video\\tb_quiz_video.sv",
+      "SHA256": "AFEC5EF5C1E594B1242C3A43E36BB0F30DAA578FAD7C1F15E91F2F72A4539518",
+      "Bytes": 18326
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\memory\\branches\\sc520-quiz-video.md",
+      "SHA256": "B9ABD2D736960047249998719D78E0E6B8E1EF60AB6EE068DC936549206DB950",
+      "Bytes": 6928
+    }
+  ],
+  "Notes": [
+    "Full simulation uses 1280x720 active area with shortened blanking and accelerated control ticks.",
+    "OSD strip previews bind an earlier unchanged-OSD run; final five full-frame images bind full-normal-20261006-233455-5f98e1af.",
+    "Failure and superseded outputs remain under runs/builds/b; only the selected build is the handoff candidate.",
+    "Shared workspace record and generated FILE_INDEX are maintained separately without recursive hashing."
+  ],
+  "ReverifiedAt": "2026-10-07T00:06:22.912386+08:00"
+}

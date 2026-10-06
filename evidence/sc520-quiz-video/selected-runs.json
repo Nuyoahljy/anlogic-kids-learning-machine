@@ -1,0 +1,44 @@
+{
+  "Runs": [
+    {
+      "Testcase": "osd",
+      "Negative": false,
+      "Manifest": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\runs\\osd-normal-20261006-222336-18ed6cf4\\run-manifest.json"
+    },
+    {
+      "Testcase": "osd",
+      "Negative": true,
+      "Manifest": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\runs\\osd-negative-20261006-222515-35cee85f\\run-manifest.json"
+    },
+    {
+      "Testcase": "runtime",
+      "Negative": false,
+      "Manifest": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\runs\\runtime-normal-20261006-222026-6b8c8b66\\run-manifest.json"
+    },
+    {
+      "Testcase": "runtime",
+      "Negative": true,
+      "Manifest": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\runs\\runtime-negative-20261006-222336-317f0009\\run-manifest.json"
+    },
+    {
+      "Testcase": "video",
+      "Negative": false,
+      "Manifest": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\runs\\video-normal-20261006-233313-bae91a0b\\run-manifest.json"
+    },
+    {
+      "Testcase": "video",
+      "Negative": true,
+      "Manifest": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\runs\\video-negative-20261006-233455-cee7abcc\\run-manifest.json"
+    },
+    {
+      "Testcase": "full",
+      "Negative": false,
+      "Manifest": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\runs\\full-normal-20261006-233455-5f98e1af\\run-manifest.json"
+    },
+    {
+      "Testcase": "full",
+      "Negative": true,
+      "Manifest": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-quiz-video\\runs\\full-negative-20261006-233455-00c510a2\\run-manifest.json"
+    }
+  ]
+}
