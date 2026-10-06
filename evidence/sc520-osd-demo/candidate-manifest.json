@@ -1,0 +1,174 @@
+{
+  "BuildResultSHA256": "B1B99A24F7D8B368A816232A4665F1E6225122A4945AC0F542B707C34B5F0066",
+  "TimingSHA256": "AA4C6356E476E83D40CAEC4EF0D575E7D18E40FDF30D77DC8FAEC0E073197A68",
+  "SetupWNSps": 136,
+  "STACoveragePercent": "96.10",
+  "AreaReport": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-osd-demo\\builds\\osd-demo-20261003-191555-58524\\final_area.rpt",
+  "AreaSHA256": "6F7F27CE77EB574C1B2CE171BEFA403E2DAFF7E0E8CFAEA3D4C7B19F1F173795",
+  "GeneratedAt": "2026-10-03T19:46:21.6020193+08:00",
+  "HardwareValidated": false,
+  "Status": "software_verified_waiting_user_hardware_test",
+  "ChangedImportedInputs": [
+    "td_project/camera_to_dsi_display.al",
+    "user_source/hdl_source/design_top_wrapper.v",
+    "td_project/camera_to_dsi_display_Runs/phy_1/camera_to_dsi_display.prj",
+    "td_project/camera_to_dsi_display_Runs/syn_1/camera_to_dsi_display.prj"
+  ],
+  "SHA256": "9D3B1CBDB271CF9C3198F4FC9DE49580B54BE2E918B4233829A6625D2D20945B",
+  "RollbackSHA256": "F5F88FD03A99FBD10C23FFCFF4AEC2E7B24991F492F323BEE52E6B10C4E1A254",
+  "TimingReport": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-osd-demo\\builds\\osd-demo-20261003-191555-58524\\final_timing.rpt",
+  "HoldWNSps": 20,
+  "Tests": [
+    {
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-osd-demo\\sim-runs\\launch-sequence-0-20261003-193117-38472.log.json",
+      "Testcase": "sequence",
+      "ExitCode": 0,
+      "Errors": 0,
+      "SHA256": "96F3AAA948F3FD9E9CD7269857C8FB7E096A630E7E592D41840882E7611906C9",
+      "Negative": false
+    },
+    {
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-osd-demo\\sim-runs\\launch-pattern-0-20261003-193122-36516.log.json",
+      "Testcase": "pattern",
+      "ExitCode": 0,
+      "Errors": 0,
+      "SHA256": "67ECDD509CC5A4E4CCDA3422597D30F1BEB1A96D8BF7FCDBE448A98AF7B5B4D8",
+      "Negative": false
+    },
+    {
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-osd-demo\\sim-runs\\launch-osd-0-20261003-193126-48092.log.json",
+      "Testcase": "osd",
+      "ExitCode": 0,
+      "Errors": 0,
+      "SHA256": "5FCC558CACB6169817B284F00CA038057685C801A3E7DBFDFF113F8BE50EABDE",
+      "Negative": false
+    },
+    {
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-osd-demo\\sim-runs\\launch-demo-0-20261003-193033-11612.log.json",
+      "Testcase": "demo",
+      "ExitCode": 0,
+      "Errors": 0,
+      "SHA256": "9E189BA453ED69A369BBD9A72A11E03CDD7CA200B9AD9AAD6EF09BA466BD2F6D",
+      "Negative": false
+    },
+    {
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-osd-demo\\sim-runs\\launch-demo-1-20261003-193235-26080.log.json",
+      "Testcase": "demo",
+      "ExitCode": 1,
+      "Errors": 4,
+      "SHA256": "9FCD718BB8B1F185E05C489DB50E91FD4A3012C1AE1D9E8C75DDB967A9028669",
+      "Negative": true
+    },
+    {
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-osd-demo\\sim-runs\\launch-full-0-20261003-193309-46732.log.json",
+      "Testcase": "full",
+      "ExitCode": 0,
+      "Errors": 0,
+      "SHA256": "8D4672A6046519E8CDE72C148BED99ACF0096B116C319A94521E2CFB3045F79F",
+      "Negative": false
+    },
+    {
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-osd-demo\\sim-runs\\launch-classifier-0-20261003-193131-33788.log.json",
+      "Testcase": "classifier",
+      "ExitCode": 0,
+      "Errors": 0,
+      "SHA256": "2D9AB2A010ECD14CE16B80FE9E62910A23EB42FF8E1FD3D7AA38FF7FCDD73882",
+      "Negative": false
+    },
+    {
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-osd-demo\\sim-runs\\launch-confirm-0-20261003-193135-32064.log.json",
+      "Testcase": "confirm",
+      "ExitCode": 0,
+      "Errors": 0,
+      "SHA256": "9E3F7E0590D071CAF5DFEAC622894DC9B3B0F2F367A01A5B2C15F3426A24B6CD",
+      "Negative": false
+    },
+    {
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-osd-demo\\sim-runs\\launch-label-0-20261003-193139-55700.log.json",
+      "Testcase": "label",
+      "ExitCode": 0,
+      "Errors": 0,
+      "SHA256": "F8F8ED9991325D4483EA2FA5D1BC16F5AA7201F306493F4A642A2A019EB9F7CE",
+      "Negative": false
+    },
+    {
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-osd-demo\\sim-runs\\launch-shapes-0-20261003-193143-46748.log.json",
+      "Testcase": "shapes",
+      "ExitCode": 0,
+      "Errors": 0,
+      "SHA256": "66F05DDA354B32FE53A30607FE37B687FCBE4EB240A5E1E0734B6BFD763319C0",
+      "Negative": false
+    },
+    {
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-osd-demo\\sim-runs\\launch-stats-0-20261003-193150-45672.log.json",
+      "Testcase": "stats",
+      "ExitCode": 0,
+      "Errors": 0,
+      "SHA256": "5DFC0FE7640B68DDEE2EACE5755F5F7B763A0D1F98AD823F56483CBE44214D44",
+      "Negative": false
+    },
+    {
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-osd-demo\\sim-runs\\launch-stability-0-20261003-193154-35324.log.json",
+      "Testcase": "stability",
+      "ExitCode": 0,
+      "Errors": 0,
+      "SHA256": "D4177EE4BB38A479E0EA18D54A477EC48B9C55D6DD04137ACC8A4A033FB1928B",
+      "Negative": false
+    },
+    {
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-osd-demo\\sim-runs\\launch-capacity-0-20261003-193159-44020.log.json",
+      "Testcase": "capacity",
+      "ExitCode": 0,
+      "Errors": 0,
+      "SHA256": "9DF0B1D8FB53DA9D7A682DD2B9DEE8C079EE5CBC6164A53592BA98CFFA0CA981",
+      "Negative": false
+    },
+    {
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-osd-demo\\sim-runs\\launch-color-0-20261003-193205-22636.log.json",
+      "Testcase": "color",
+      "ExitCode": 0,
+      "Errors": 0,
+      "SHA256": "17B73CBC8F1F079D77726D524DE704EFBA324EA1AC087E96B41C3E491F4FCB44",
+      "Negative": false
+    },
+    {
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-osd-demo\\sim-runs\\launch-sync-0-20261003-193209-42696.log.json",
+      "Testcase": "sync",
+      "ExitCode": 0,
+      "Errors": 0,
+      "SHA256": "02FECA5DEC97958291946E4FF5E2B01FB40EFF9087F2B4DB4E9100625F39E25E",
+      "Negative": false
+    },
+    {
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-osd-demo\\sim-runs\\launch-display-0-20261003-193213-39620.log.json",
+      "Testcase": "display",
+      "ExitCode": 0,
+      "Errors": 0,
+      "SHA256": "EEEBAA3E2A773C9C89477DC33454721315B1AB7E1A3F6FA67FD46E9852556B7A",
+      "Negative": false
+    },
+    {
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-osd-demo\\sim-runs\\launch-display-1-20261003-193317-22100.log.json",
+      "Testcase": "display",
+      "ExitCode": 1,
+      "Errors": 4,
+      "SHA256": "13750BBD276CDA1E35304AA36E1EA9997B533C0BA78F6BB309ED9EAEEECD3B52",
+      "Negative": true
+    }
+  ],
+  "SourceSnapshotSHA256": "58CBFA1517ED0111AD3C5864A6CC7C36C1AFF4A27B6CC977DD9687A5C216EBA7",
+  "BuildResult": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-osd-demo\\builds\\osd-demo-20261003-191555-58524\\result.json",
+  "SourceSnapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-osd-demo\\builds\\osd-demo-20261003-191555-58524\\source-inputs.json",
+  "OriginalInputsVerified": 236,
+  "Candidate": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-osd-demo\\candidates\\sc520_osd_demo.bit",
+  "Bytes": 1789539,
+  "UncommittedTask": true,
+  "GitHEAD": null,
+  "Risks": [
+    "Uncalibrated RGB thresholds and area/stability parameters; one dominant color only; heuristic shape classification with limited orientation and unvalidated real-world accuracy",
+    "Inherited timing/clock warnings and incomplete STA coverage",
+    "No DDR, camera or HDMI PHY simulation",
+    "No download, measured frame rate, or hardware stability test"
+  ],
+  "Rollback": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-shape\\candidates\\sc520_shape.bit"
+}

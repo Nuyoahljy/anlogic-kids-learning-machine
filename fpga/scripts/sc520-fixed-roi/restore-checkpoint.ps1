@@ -2,14 +2,14 @@
 [CmdletBinding()]
 param(
     [Parameter(Mandatory)][string]$Archive,
-    [ValidateSet('baseline','overlay','color-mask','dynamic-box','shape')][string]$Stage = 'overlay',
+    [ValidateSet('baseline','overlay','color-mask','dynamic-box','shape','osd-demo','learning-ui-audio','quiz-video')][string]$Stage = 'overlay',
     [switch]$VerifyOnly
 )
 $ErrorActionPreference = 'Stop'
 $repo = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '../../..'))
 $dependency = Get-Content -LiteralPath (Join-Path $PSScriptRoot 'checkpoint/dependency.json') -Raw | ConvertFrom-Json -AsHashtable
 $recipe = Get-Content -LiteralPath (Join-Path $PSScriptRoot "checkpoint/$Stage.json") -Raw | ConvertFrom-Json -AsHashtable
-$projects = @{ baseline='fpga/vendor_labs/sc520'; overlay='fpga/custom_project/sc520'; 'color-mask'='fpga/custom_project/sc520-color-mask'; 'dynamic-box'='fpga/custom_project/sc520-dynamic-box'; shape='fpga/custom_project/sc520-shape' }
+$projects = @{ baseline='fpga/vendor_labs/sc520'; overlay='fpga/custom_project/sc520'; 'color-mask'='fpga/custom_project/sc520-color-mask'; 'dynamic-box'='fpga/custom_project/sc520-dynamic-box'; shape='fpga/custom_project/sc520-shape'; 'osd-demo'='fpga/custom_project/sc520-osd-demo'; 'learning-ui-audio'='fpga/custom_project/sc520-learning-ui-audio'; 'quiz-video'='fpga/custom_project/sc520-quiz-video' }
 if ($recipe.Stage -cne $Stage -or $recipe.Project -cne $projects[$Stage]) { throw 'Unexpected project mapping' }
 if ((Get-FileHash -LiteralPath $Archive -Algorithm SHA256).Hash -cne $dependency.ArchiveSHA256) { throw 'Authorized dependency archive SHA256 mismatch' }
 $project = [IO.Path]::GetFullPath((Join-Path $repo $recipe.Project))

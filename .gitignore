@@ -66,3 +66,14 @@ secrets/
 !/evidence/sc520-fixed-roi/checkpoint/
 !/evidence/sc520-fixed-roi/checkpoint/**
 !/fpga/scripts/sc520-fixed-roi/checkpoint/*.json
+
+# Additional self-authored SC520 learning and quiz checkpoint modules
+!/fpga/custom_project/sc520-learning-ui-audio/user_source/hdl_source/learning/
+!/fpga/custom_project/sc520-learning-ui-audio/user_source/hdl_source/learning/*.v
+!/fpga/custom_project/sc520-quiz-video/user_source/hdl_source/learning/
+!/fpga/custom_project/sc520-quiz-video/user_source/hdl_source/learning/*.v
+!/fpga/custom_project/sc520-quiz-video/user_source/hdl_source/quiz/
+!/fpga/custom_project/sc520-quiz-video/user_source/hdl_source/quiz/*.v
+!/fpga/custom_project/sc520-quiz-control/quiz_audio_queue.v
+!/fpga/custom_project/sc520-quiz-control/quiz_control.v
+!/fpga/custom_project/sc520-quiz-control/quiz_key_debounce.v
