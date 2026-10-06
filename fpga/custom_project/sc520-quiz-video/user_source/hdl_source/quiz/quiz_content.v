@@ -1,0 +1,423 @@
+// Generated text assets with manually specified presentation selectors.
+module quiz_content(
+    input wire [2:0] line_index,
+    input wire [5:0] char_index,
+    input wire [1:0] mode, phase,
+    input wire [3:0] score, question_index, target_item, display_item,
+    input wire [2:0] feedback,
+    input wire source_test, armed, audio_fault, audio_busy,
+    output reg [7:0] glyph,
+    output reg [1:0] tone
+);
+    function [7:0] text_glyph;
+        input [5:0] text_id,position;
+        begin
+            text_glyph=0;
+            case({text_id,position})
+                12'd64: text_glyph=8'd58;
+                12'd65: text_glyph=8'd84;
+                12'd66: text_glyph=8'd89;
+                12'd67: text_glyph=8'd43;
+                12'd128: text_glyph=8'd68;
+                12'd129: text_glyph=8'd110;
+                12'd130: text_glyph=8'd89;
+                12'd131: text_glyph=8'd43;
+                12'd192: text_glyph=8'd131;
+                12'd193: text_glyph=8'd109;
+                12'd194: text_glyph=8'd89;
+                12'd195: text_glyph=8'd43;
+                12'd256: text_glyph=8'd89;
+                12'd257: text_glyph=8'd43;
+                12'd258: text_glyph=8'd42;
+                12'd259: text_glyph=8'd41;
+                12'd320: text_glyph=8'd137;
+                12'd321: text_glyph=8'd28;
+                12'd384: text_glyph=8'd17;
+                12'd385: text_glyph=8'd75;
+                12'd448: text_glyph=8'd93;
+                12'd449: text_glyph=8'd123;
+                12'd450: text_glyph=8'd86;
+                12'd451: text_glyph=8'd95;
+                12'd452: text_glyph=8'd143;
+                12'd453: text_glyph=8'd14;
+                12'd454: text_glyph=8'd114;
+                12'd455: text_glyph=8'd99;
+                12'd456: text_glyph=8'd134;
+                12'd457: text_glyph=8'd142;
+                12'd458: text_glyph=8'd105;
+                12'd459: text_glyph=8'd91;
+                12'd460: text_glyph=8'd92;
+                12'd461: text_glyph=8'd43;
+                12'd462: text_glyph=8'd120;
+                12'd463: text_glyph=8'd17;
+                12'd512: text_glyph=8'd70;
+                12'd513: text_glyph=8'd10;
+                12'd514: text_glyph=8'd86;
+                12'd515: text_glyph=8'd95;
+                12'd516: text_glyph=8'd143;
+                12'd517: text_glyph=8'd39;
+                12'd518: text_glyph=8'd79;
+                12'd519: text_glyph=8'd99;
+                12'd520: text_glyph=8'd134;
+                12'd521: text_glyph=8'd142;
+                12'd522: text_glyph=8'd58;
+                12'd523: text_glyph=8'd39;
+                12'd524: text_glyph=8'd97;
+                12'd525: text_glyph=8'd139;
+                12'd526: text_glyph=8'd72;
+                12'd576: text_glyph=8'd135;
+                12'd577: text_glyph=8'd136;
+                12'd578: text_glyph=8'd89;
+                12'd579: text_glyph=8'd64;
+                12'd580: text_glyph=8'd143;
+                12'd581: text_glyph=8'd108;
+                12'd582: text_glyph=8'd132;
+                12'd587: text_glyph=8'd66;
+                12'd588: text_glyph=8'd130;
+                12'd589: text_glyph=8'd89;
+                12'd590: text_glyph=8'd64;
+                12'd591: text_glyph=8'd143;
+                12'd592: text_glyph=8'd115;
+                12'd593: text_glyph=8'd83;
+                12'd594: text_glyph=8'd69;
+                12'd595: text_glyph=8'd21;
+                12'd640: text_glyph=8'd135;
+                12'd641: text_glyph=8'd136;
+                12'd642: text_glyph=8'd89;
+                12'd643: text_glyph=8'd64;
+                12'd644: text_glyph=8'd143;
+                12'd645: text_glyph=8'd71;
+                12'd646: text_glyph=8'd73;
+                12'd651: text_glyph=8'd66;
+                12'd652: text_glyph=8'd130;
+                12'd653: text_glyph=8'd89;
+                12'd654: text_glyph=8'd64;
+                12'd655: text_glyph=8'd143;
+                12'd656: text_glyph=8'd115;
+                12'd657: text_glyph=8'd83;
+                12'd658: text_glyph=8'd69;
+                12'd659: text_glyph=8'd21;
+                12'd704: text_glyph=8'd135;
+                12'd705: text_glyph=8'd136;
+                12'd706: text_glyph=8'd89;
+                12'd707: text_glyph=8'd64;
+                12'd708: text_glyph=8'd143;
+                12'd709: text_glyph=8'd74;
+                12'd710: text_glyph=8'd133;
+                12'd715: text_glyph=8'd66;
+                12'd716: text_glyph=8'd130;
+                12'd717: text_glyph=8'd89;
+                12'd718: text_glyph=8'd64;
+                12'd719: text_glyph=8'd143;
+                12'd720: text_glyph=8'd115;
+                12'd721: text_glyph=8'd83;
+                12'd722: text_glyph=8'd69;
+                12'd723: text_glyph=8'd21;
+                12'd768: text_glyph=8'd124;
+                12'd769: text_glyph=8'd73;
+                12'd770: text_glyph=8'd114;
+                12'd771: text_glyph=8'd106;
+                12'd772: text_glyph=8'd81;
+                12'd773: text_glyph=8'd142;
+                12'd774: text_glyph=8'd62;
+                12'd775: text_glyph=8'd18;
+                12'd776: text_glyph=8'd67;
+                12'd777: text_glyph=8'd20;
+                12'd778: text_glyph=8'd131;
+                12'd779: text_glyph=8'd109;
+                12'd780: text_glyph=8'd89;
+                12'd781: text_glyph=8'd43;
+                12'd832: text_glyph=8'd68;
+                12'd833: text_glyph=8'd110;
+                12'd834: text_glyph=8'd37;
+                12'd835: text_glyph=8'd6;
+                12'd836: text_glyph=8'd143;
+                12'd837: text_glyph=8'd73;
+                12'd838: text_glyph=8'd12;
+                12'd839: text_glyph=8'd106;
+                12'd840: text_glyph=8'd81;
+                12'd841: text_glyph=8'd121;
+                12'd842: text_glyph=8'd122;
+                12'd843: text_glyph=8'd138;
+                12'd844: text_glyph=8'd116;
+                12'd845: text_glyph=8'd30;
+                12'd846: text_glyph=8'd46;
+                12'd847: text_glyph=8'd98;
+                12'd896: text_glyph=8'd124;
+                12'd897: text_glyph=8'd63;
+                12'd898: text_glyph=8'd16;
+                12'd899: text_glyph=8'd143;
+                12'd960: text_glyph=8'd83;
+                12'd961: text_glyph=8'd126;
+                12'd962: text_glyph=8'd38;
+                12'd963: text_glyph=8'd61;
+                12'd964: text_glyph=8'd143;
+                12'd965: text_glyph=8'd13;
+                12'd966: text_glyph=8'd49;
+                12'd967: text_glyph=8'd48;
+                12'd968: text_glyph=8'd137;
+                12'd969: text_glyph=8'd142;
+                12'd970: text_glyph=8'd60;
+                12'd971: text_glyph=8'd17;
+                12'd1024: text_glyph=8'd98;
+                12'd1025: text_glyph=8'd59;
+                12'd1026: text_glyph=8'd42;
+                12'd1027: text_glyph=8'd41;
+                12'd1028: text_glyph=8'd143;
+                12'd1029: text_glyph=8'd124;
+                12'd1030: text_glyph=8'd35;
+                12'd1031: text_glyph=8'd7;
+                12'd1088: text_glyph=8'd93;
+                12'd1089: text_glyph=8'd123;
+                12'd1090: text_glyph=8'd99;
+                12'd1091: text_glyph=8'd134;
+                12'd1092: text_glyph=8'd26;
+                12'd1093: text_glyph=8'd9;
+                12'd1094: text_glyph=8'd96;
+                12'd1095: text_glyph=8'd104;
+                12'd1096: text_glyph=8'd142;
+                12'd1097: text_glyph=8'd3;
+                12'd1098: text_glyph=8'd24;
+                12'd1099: text_glyph=8'd4;
+                12'd1100: text_glyph=8'd92;
+                12'd1101: text_glyph=8'd43;
+                12'd1102: text_glyph=8'd120;
+                12'd1103: text_glyph=8'd17;
+                12'd1152: text_glyph=8'd109;
+                12'd1153: text_glyph=8'd137;
+                12'd1154: text_glyph=8'd112;
+                12'd1155: text_glyph=8'd85;
+                12'd1156: text_glyph=8'd142;
+                12'd1157: text_glyph=8'd27;
+                12'd1158: text_glyph=8'd94;
+                12'd1159: text_glyph=8'd17;
+                12'd1160: text_glyph=8'd127;
+                12'd1161: text_glyph=8'd16;
+                12'd1162: text_glyph=8'd62;
+                12'd1163: text_glyph=8'd18;
+                12'd1164: text_glyph=8'd67;
+                12'd1165: text_glyph=8'd89;
+                12'd1166: text_glyph=8'd43;
+                12'd1216: text_glyph=8'd31;
+                12'd1217: text_glyph=8'd109;
+                12'd1218: text_glyph=8'd92;
+                12'd1219: text_glyph=8'd103;
+                12'd1220: text_glyph=8'd141;
+                12'd1221: text_glyph=8'd23;
+                12'd1222: text_glyph=8'd49;
+                12'd1223: text_glyph=8'd17;
+                12'd1224: text_glyph=8'd142;
+                12'd1225: text_glyph=8'd124;
+                12'd1226: text_glyph=8'd11;
+                12'd1227: text_glyph=8'd107;
+                12'd1228: text_glyph=8'd125;
+                12'd1229: text_glyph=8'd106;
+                12'd1230: text_glyph=8'd81;
+                12'd1280: text_glyph=8'd15;
+                12'd1281: text_glyph=8'd123;
+                12'd1282: text_glyph=8'd1;
+                12'd1283: text_glyph=8'd90;
+                12'd1284: text_glyph=8'd141;
+                12'd1285: text_glyph=8'd124;
+                12'd1286: text_glyph=8'd11;
+                12'd1287: text_glyph=8'd107;
+                12'd1288: text_glyph=8'd125;
+                12'd1289: text_glyph=8'd142;
+                12'd1290: text_glyph=8'd15;
+                12'd1291: text_glyph=8'd128;
+                12'd1292: text_glyph=8'd76;
+                12'd1293: text_glyph=8'd73;
+                12'd1294: text_glyph=8'd12;
+                12'd1344: text_glyph=8'd5;
+                12'd1345: text_glyph=8'd90;
+                12'd1346: text_glyph=8'd109;
+                12'd1347: text_glyph=8'd129;
+                12'd1348: text_glyph=8'd142;
+                12'd1349: text_glyph=8'd80;
+                12'd1350: text_glyph=8'd104;
+                12'd1351: text_glyph=8'd109;
+                12'd1352: text_glyph=8'd88;
+                12'd1353: text_glyph=8'd142;
+                12'd1354: text_glyph=8'd83;
+                12'd1355: text_glyph=8'd137;
+                12'd1356: text_glyph=8'd3;
+                12'd1357: text_glyph=8'd23;
+                12'd1358: text_glyph=8'd17;
+                12'd1408: text_glyph=8'd40;
+                12'd1409: text_glyph=8'd103;
+                12'd1410: text_glyph=8'd121;
+                12'd1411: text_glyph=8'd107;
+                12'd1412: text_glyph=8'd125;
+                12'd1413: text_glyph=8'd142;
+                12'd1414: text_glyph=8'd124;
+                12'd1415: text_glyph=8'd73;
+                12'd1416: text_glyph=8'd12;
+                12'd1417: text_glyph=8'd109;
+                12'd1418: text_glyph=8'd88;
+                12'd1472: text_glyph=8'd124;
+                12'd1473: text_glyph=8'd11;
+                12'd1474: text_glyph=8'd107;
+                12'd1475: text_glyph=8'd125;
+                12'd1476: text_glyph=8'd78;
+                12'd1477: text_glyph=8'd97;
+                12'd1478: text_glyph=8'd8;
+                12'd1479: text_glyph=8'd142;
+                12'd1480: text_glyph=8'd15;
+                12'd1481: text_glyph=8'd73;
+                12'd1482: text_glyph=8'd12;
+                12'd1483: text_glyph=8'd109;
+                12'd1484: text_glyph=8'd88;
+                12'd1536: text_glyph=8'd101;
+                12'd1537: text_glyph=8'd29;
+                12'd1538: text_glyph=8'd97;
+                12'd1539: text_glyph=8'd8;
+                12'd1540: text_glyph=8'd65;
+                12'd1541: text_glyph=8'd113;
+                12'd1542: text_glyph=8'd36;
+                12'd1543: text_glyph=8'd34;
+                12'd1544: text_glyph=8'd79;
+                12'd1545: text_glyph=8'd3;
+                12'd1546: text_glyph=8'd128;
+                12'd1547: text_glyph=8'd35;
+                12'd1548: text_glyph=8'd119;
+                12'd1549: text_glyph=8'd25;
+                12'd1600: text_glyph=8'd44;
+                12'd1601: text_glyph=8'd22;
+                12'd1602: text_glyph=8'd122;
+                12'd1603: text_glyph=8'd19;
+                12'd1604: text_glyph=8'd143;
+                12'd1664: text_glyph=8'd92;
+                12'd1665: text_glyph=8'd103;
+                12'd1666: text_glyph=8'd109;
+                12'd1667: text_glyph=8'd88;
+                12'd1668: text_glyph=8'd143;
+                12'd1728: text_glyph=8'd82;
+                12'd1729: text_glyph=8'd102;
+                12'd1730: text_glyph=8'd100;
+                12'd1731: text_glyph=8'd87;
+                12'd1792: text_glyph=8'd111;
+                12'd1793: text_glyph=8'd116;
+                12'd1794: text_glyph=8'd33;
+                12'd1795: text_glyph=8'd46;
+                12'd1856: text_glyph=8'd111;
+                12'd1857: text_glyph=8'd116;
+                12'd1858: text_glyph=8'd77;
+                12'd1859: text_glyph=8'd46;
+                12'd1920: text_glyph=8'd111;
+                12'd1921: text_glyph=8'd116;
+                12'd1922: text_glyph=8'd2;
+                12'd1923: text_glyph=8'd118;
+                12'd1924: text_glyph=8'd46;
+                12'd1984: text_glyph=8'd140;
+                12'd1985: text_glyph=8'd116;
+                12'd1986: text_glyph=8'd33;
+                12'd1987: text_glyph=8'd46;
+                12'd2048: text_glyph=8'd140;
+                12'd2049: text_glyph=8'd116;
+                12'd2050: text_glyph=8'd77;
+                12'd2051: text_glyph=8'd46;
+                12'd2112: text_glyph=8'd140;
+                12'd2113: text_glyph=8'd116;
+                12'd2114: text_glyph=8'd2;
+                12'd2115: text_glyph=8'd118;
+                12'd2116: text_glyph=8'd46;
+                12'd2176: text_glyph=8'd117;
+                12'd2177: text_glyph=8'd116;
+                12'd2178: text_glyph=8'd33;
+                12'd2179: text_glyph=8'd46;
+                12'd2240: text_glyph=8'd117;
+                12'd2241: text_glyph=8'd116;
+                12'd2242: text_glyph=8'd77;
+                12'd2243: text_glyph=8'd46;
+                12'd2304: text_glyph=8'd117;
+                12'd2305: text_glyph=8'd116;
+                12'd2306: text_glyph=8'd2;
+                12'd2307: text_glyph=8'd118;
+                12'd2308: text_glyph=8'd46;
+            endcase
+        end
+    endfunction
+    function [7:0] digit;
+        input [3:0] number;
+        input tens;
+        begin
+            if (number > 10) digit=8'd45;
+            else if(tens) digit=number==10 ? 8'd49 : 8'd48;
+            else digit=number==10 ? 8'd48 : 8'd48+number;
+        end
+    endfunction
+    function [7:0] object_glyph;
+        input [3:0] item;
+        input [5:0] column;
+        begin
+            if (item >= 1 && item <= 9) object_glyph=text_glyph(6'd27+item,column);
+            else object_glyph=text_glyph(6'd27,column);
+        end
+    endfunction
+    reg [5:0] message_id;
+    always @* begin
+        glyph=0; tone=0; message_id=0;
+        case(line_index)
+            0: begin
+                tone=1;
+                if(char_index<4) glyph=text_glyph({4'd0,mode}+6'd1,char_index);
+                else if(char_index>=6 && char_index<8) glyph=text_glyph(6'd5,char_index-6);
+                else if(char_index==9 || char_index==10)
+                    glyph=mode==2 && question_index>=1 ? digit(question_index,char_index==9) : 8'd45;
+                else if(char_index==11 || char_index==22) glyph=8'd47;
+                else if(char_index==12 || char_index==23) glyph=8'd49;
+                else if(char_index==13 || char_index==24) glyph=8'd48;
+                else if(char_index>=17 && char_index<19) glyph=text_glyph(6'd6,char_index-17);
+                else if(char_index==20 || char_index==21) glyph=digit(score,char_index==20);
+            end
+            1: begin
+                glyph=text_glyph(source_test ? 6'd7 : 6'd8,char_index);
+                tone=source_test ? 2 : 1;
+            end
+            2: begin
+                glyph=text_glyph(audio_fault ? 6'd11 : (audio_busy ? 6'd10 : 6'd9),char_index);
+                tone=audio_fault ? 2 : 0;
+            end
+            3: begin
+                if(mode==0) glyph=text_glyph(6'd12,char_index);
+                else if(mode==1) glyph=text_glyph(6'd13,char_index);
+                else if(mode!=2 || phase==0) glyph=text_glyph(6'd16,char_index);
+                else if(phase==3) begin
+                    if(char_index<14) glyph=text_glyph(6'd15,char_index);
+                    else if(char_index==14 || char_index==15) glyph=digit(score,char_index==14);
+                    tone=3;
+                end else begin
+                    if(char_index<4) glyph=text_glyph(6'd14,char_index);
+                    else glyph=object_glyph(target_item,char_index-4);
+                    tone=1;
+                end
+            end
+            4: begin
+                if(source_test) begin message_id=17; tone=2; end
+                else if(mode==2 && phase==3) begin message_id=18; tone=3; end
+                else if(mode==2 && phase==2) begin
+                    case(feedback)
+                        1: begin message_id=19; tone=3; end
+                        2: begin message_id=20; tone=2; end
+                        3: begin message_id=21; tone=2; end
+                        default: begin message_id=16; tone=2; end
+                    endcase
+                end else if(mode==2 && phase==1) message_id=armed ? 22 : 23;
+                else if(mode==0 || mode==1) message_id=24;
+                else begin message_id=16; tone=2; end
+                glyph=text_glyph(message_id,char_index);
+            end
+            5: begin
+                if(mode==2 && phase==2 && feedback==3) begin
+                    tone=2;
+                    if(char_index<5) glyph=text_glyph(6'd26,char_index);
+                    else glyph=object_glyph(target_item,char_index-5);
+                end else begin
+                    if(char_index<5) glyph=text_glyph(6'd25,char_index);
+                    else glyph=object_glyph(display_item,char_index-5);
+                end
+            end
+            default: begin end
+        endcase
+    end
+endmodule
