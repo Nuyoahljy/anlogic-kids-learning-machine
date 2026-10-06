@@ -1,0 +1,263 @@
+{
+  "Status": "software_verified_waiting_hardware_and_interface_review",
+  "GeneratedAt": "2026-10-04T12:19:23.456940+08:00",
+  "Candidate": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\candidates\\sc520_learning_ui_audio.bit",
+  "SHA256": "F2AF49F3185330A1416CD837D7086A0009EB9CC2321840A55F5D3C45CDB47BC0",
+  "Bytes": 1789539,
+  "HardwareValidated": false,
+  "PhysicalAudioImplemented": false,
+  "GitHEAD": "f609426044982c986b54e999866be9f4c1af2682",
+  "UncommittedTask": true,
+  "Origin": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\origin.json",
+  "OriginSHA256": "231EB9A7BD260940EDCBA7AABAC6A4887CDA2E46BA471E190E3A33BE112452FE",
+  "PackageScript": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\scripts\\sc520-learning-ui-audio\\package.py",
+  "PackageScriptSHA256": "4B755D68FAF70847F39E0DE2089EE0936D023EFCE2DE1009C09AC85E4987F9AA",
+  "OriginalInputsVerified": 241,
+  "ProtectedFilesVerified": 1508,
+  "ChangedImportedInputs": [
+    "user_source/hdl_source/design_top_wrapper.v",
+    "td_project/camera_to_dsi_display_Runs/syn_1/camera_to_dsi_display.prj",
+    "td_project/camera_to_dsi_display.al",
+    "td_project/camera_to_dsi_display_Runs/phy_1/camera_to_dsi_display.prj"
+  ],
+  "BuildResult": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\builds\\learning-ui-audio-20261004-120640-18752\\result.json",
+  "BuildResultSHA256": "A3BBED3C9BC60E65916D4AA433764C6CD3A096AEF0F87853C0651F237E660B09",
+  "BuildArchive": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\builds\\learning-ui-audio-20261004-120640-18752\\archive-manifest.json",
+  "BuildArchiveSHA256": "0E9943E29930F2535EB8CA688F04305A2C3C79A64DC4DF563BE2F1A08BF651E8",
+  "SourceSnapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\builds\\learning-ui-audio-20261004-120640-18752\\source-inputs.json",
+  "SourceSnapshotSHA256": "AC0173E89643C1F6635765AA5C289CEA4D3BD849DBD262CD0890FF2A62D4ED72",
+  "TimingReport": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\builds\\learning-ui-audio-20261004-120640-18752\\final_timing.rpt",
+  "TimingSHA256": "74FA4ECA83EB0DAC12BA50AD389A4A5FC2226120DE720BF67D27973F0C62000E",
+  "AreaReport": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\builds\\learning-ui-audio-20261004-120640-18752\\final_area.rpt",
+  "AreaSHA256": "1ACF0D4BA6628924E5FFFCF529E0B72FB4B3359EDA710F258B2B4617D363CEAD",
+  "STACoveragePercent": 96.24,
+  "Tests": [
+    {
+      "Kind": "sequence",
+      "Negative": false,
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\sim-runs\\launch-sequence-0-20261004-120810-32716.log.json",
+      "ReportSHA256": "BC8BF79A6DF42BF32B01EF827CFBDE6212B67379413A1F3E471D0E665DAD016A",
+      "Summary": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\sim-runs\\sequence-0-20261004-120810-32716\\summary.json",
+      "SummarySHA256": "D52D3CCF02D0BE494B4FD090837B857F863D13188E9DD8559E116B6813D95668",
+      "Result": {
+        "testcase": "sequence",
+        "negative": 0,
+        "done": 1,
+        "errors": 0
+      },
+      "Transcript": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\sim-runs\\sequence-0-20261004-120810-32716\\transcript.log",
+      "TranscriptSHA256": "50B0B983CB2B8FACA67CA19C8064BDFDF7AEB7ADE751D84313D2FB40CB82106B",
+      "ExitCode": 0
+    },
+    {
+      "Kind": "demo",
+      "Negative": false,
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\sim-runs\\launch-demo-0-20261004-120640-31752.log.json",
+      "ReportSHA256": "99CF1587262537A39AD8BD7DB6E8D9AD2F0401E3B6908303C1FEE110FA5E1030",
+      "Summary": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\sim-runs\\demo-0-20261004-120640-31752\\summary.json",
+      "SummarySHA256": "B4E2E8067DBC9D35332794007B7CB71B786B53DDDAFDD3D597EAEC62EACF4791",
+      "Result": {
+        "testcase": "demo",
+        "negative": 0,
+        "done": 1,
+        "errors": 0
+      },
+      "Transcript": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\sim-runs\\demo-0-20261004-120640-31752\\transcript.log",
+      "TranscriptSHA256": "351B22E3CB3EDA7D1692466547415678A917853A14D8BE3228526E61EFDB4A25",
+      "ExitCode": 0
+    },
+    {
+      "Kind": "demo",
+      "Negative": true,
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\sim-runs\\launch-demo-1-20261004-120810-30112.log.json",
+      "ReportSHA256": "653A22E5B40D44EA2575FEDD27B0B0926745E3E499B1EC0C06ED6334B35F2DDF",
+      "Summary": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\sim-runs\\demo-1-20261004-120810-30112\\summary.json",
+      "SummarySHA256": "6B7632161B05F20E3942290CC964CF4E947DD758321B41CE6CB20BC36075C492",
+      "Result": {
+        "testcase": "demo",
+        "negative": 1,
+        "done": 1,
+        "errors": 4
+      },
+      "Transcript": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\sim-runs\\demo-1-20261004-120810-30112\\transcript.log",
+      "TranscriptSHA256": "535512DF3E326E439967435AB663891B7B54E401E3D610EBA48B1481C75BF6F7",
+      "ExitCode": 1
+    },
+    {
+      "Kind": "full",
+      "Negative": false,
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\sim-runs\\launch-full-0-20261004-120640-32188.log.json",
+      "ReportSHA256": "21E6FB1F8C1BD24ACA2475B5F677EF8237C6D315A017585B1C5BAD16B2E31323",
+      "Summary": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\sim-runs\\full-0-20261004-120640-32188\\summary.json",
+      "SummarySHA256": "C8EDD17C8EE6948808FF6218FA47B4808B5433642CCE1F03CF3655A075721778",
+      "Result": {
+        "testcase": "full",
+        "negative": 0,
+        "done": 1,
+        "errors": 0
+      },
+      "Transcript": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\sim-runs\\full-0-20261004-120640-32188\\transcript.log",
+      "TranscriptSHA256": "6E1162362137D861B66265435F120F4319B9751790F91C7EC08954E51E87E8E8",
+      "ExitCode": 0
+    },
+    {
+      "Kind": "events",
+      "Negative": false,
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\events-runs\\normal-20261004-115506-30800-662e20\\run-manifest.json",
+      "ReportSHA256": "74E13661BAC824B7342985ED735112A68ACB450F3A82D3C759CAD023D6C0FF6E",
+      "Summary": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\events-runs\\normal-20261004-115506-30800-662e20\\summary.json",
+      "SummarySHA256": "39A65A8F40891A17692254C8BED97B368524F5E601C130D974A229648997C927",
+      "Result": {
+        "testcase": "events",
+        "negative": 0,
+        "done": 1,
+        "errors": 0,
+        "checks": 13081,
+        "adapter_cases": 604,
+        "event_cases": 50,
+        "parameter_cases": 3102,
+        "mapping_mask": 511,
+        "auto_events": 5,
+        "replay_events": 2,
+        "cancel_events": 3
+      },
+      "Transcript": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\events-runs\\normal-20261004-115506-30800-662e20\\transcript.log",
+      "TranscriptSHA256": "97A266380762CCEFBD0DA7E40326651CC68A6C28B3C58E793DC38F009202AB62",
+      "ExitCode": 0
+    },
+    {
+      "Kind": "events",
+      "Negative": true,
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\events-runs\\negative-20261004-115545-31228-961722\\run-manifest.json",
+      "ReportSHA256": "429EC9C6FACCA9E43C04399B59492B0D2EB5ABD4D562712D8E398E1693A7081B",
+      "Summary": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\events-runs\\negative-20261004-115545-31228-961722\\summary.json",
+      "SummarySHA256": "F115C7E26120FEFF235F0613141BF58CE30E71505CC667B09106EB7F44D3F229",
+      "Result": {
+        "testcase": "events",
+        "negative": 1,
+        "done": 1,
+        "errors": 1,
+        "checks": 13082,
+        "adapter_cases": 604,
+        "event_cases": 50,
+        "parameter_cases": 3102,
+        "mapping_mask": 511,
+        "auto_events": 5,
+        "replay_events": 2,
+        "cancel_events": 3
+      },
+      "Transcript": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\events-runs\\negative-20261004-115545-31228-961722\\transcript.log",
+      "TranscriptSHA256": "E51BD1BCD2C205F6590CBBC62C9F2BBB4391F287F0DC7C9FCF38BFBD34EAFB8D",
+      "ExitCode": 1
+    },
+    {
+      "Kind": "osd",
+      "Negative": false,
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\osd-runs\\osd-0-20261004-115526-32396\\run-manifest.json",
+      "ReportSHA256": "D0AE31431E4627CCE7BAE48E32A6B85ACCBCAF45CAFEFE49085CC35F3D3F86C7",
+      "Summary": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\osd-runs\\osd-0-20261004-115526-32396\\summary.json",
+      "SummarySHA256": "8FF26DB563B9895C6797FCCF8E2CB0D0CE2799A5B501662A49886C7263ADBC7E",
+      "Result": {
+        "testcase": "learning_osd",
+        "negative": 0,
+        "done": 1,
+        "errors": 0,
+        "content_checks": 8192,
+        "pixel_checks": 5406984
+      },
+      "Transcript": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\osd-runs\\osd-0-20261004-115526-32396\\transcript.log",
+      "TranscriptSHA256": "94A5F5D0204E40B59ECFB97694C62160AE096E00DCE5085B8605F72D53B81A0B",
+      "ExitCode": 0
+    },
+    {
+      "Kind": "osd",
+      "Negative": true,
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\osd-runs\\osd-1-20261004-115556-32272\\run-manifest.json",
+      "ReportSHA256": "7A2E3F381EF19E459A71AD2677DA2A2CBB455BBCB36FA0B1135418A8B3D577C0",
+      "Summary": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\osd-runs\\osd-1-20261004-115556-32272\\summary.json",
+      "SummarySHA256": "45086B01046CADB3BD8A2870170D136EB644FF3124DB3498F33F0BD1EDB017D3",
+      "Result": {
+        "testcase": "learning_osd",
+        "negative": 1,
+        "done": 1,
+        "errors": 5406984,
+        "content_checks": 8192,
+        "pixel_checks": 5406984
+      },
+      "Transcript": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\osd-runs\\osd-1-20261004-115556-32272\\transcript.log",
+      "TranscriptSHA256": "54F979875A658B5A32CF1C86B2DF88EC5166839F1941E9D1FBE3A7D3FCC0C356",
+      "ExitCode": 1
+    },
+    {
+      "Kind": "audio",
+      "Negative": false,
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\audio-runs\\audio-0-20261004-115954-484-19824\\manifest.json",
+      "ReportSHA256": "5D105B9DFC087F8784EB2C645D4F0801ADD2C5B5BA858241C1C16DF8DA863A2D",
+      "Summary": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\audio-runs\\audio-0-20261004-115954-484-19824\\summary.json",
+      "SummarySHA256": "1C837F92F218518355E827C241A8A98218B4FAC4ACCA55A674E7A911238D5D8C",
+      "Result": {
+        "testcase": "audio",
+        "negative": 0,
+        "done": 1,
+        "errors": 0,
+        "checks": 1456,
+        "cases": 28
+      },
+      "Transcript": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\audio-runs\\audio-0-20261004-115954-484-19824\\transcript.log",
+      "TranscriptSHA256": "1B3F738D57626E85F66AF5BA78C5B5F8727267B0C2296481F6A2FD85B5E90160",
+      "ExitCode": 0
+    },
+    {
+      "Kind": "audio",
+      "Negative": true,
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\audio-runs\\audio-1-20261004-120025-070-28896\\manifest.json",
+      "ReportSHA256": "154AD20F61191E1BE9C912540C9F29E672B631FF0FA2884FE0B89894AB907422",
+      "Summary": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\audio-runs\\audio-1-20261004-120025-070-28896\\summary.json",
+      "SummarySHA256": "F7E19B3989CA5AEF913488630BB3C70A78A72E1800FE15A219F205344AE6CF5A",
+      "Result": {
+        "testcase": "audio",
+        "negative": 1,
+        "done": 1,
+        "errors": 1,
+        "checks": 1458,
+        "cases": 28
+      },
+      "Transcript": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\audio-runs\\audio-1-20261004-120025-070-28896\\transcript.log",
+      "TranscriptSHA256": "C1329B8DE41A10B46BF2809024F3EB25EAA22C2D92DA8E9486A25B5B7BFC49B1",
+      "ExitCode": 1
+    },
+    {
+      "Kind": "transition",
+      "Negative": false,
+      "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\transition-runs\\after-fix-20261004-120645-26456-281fec\\run-manifest.json",
+      "ReportSHA256": "29CD727D55710E717F9658046FC3B05E2A23CA2EA7AACF0E15B695D0C97626AE",
+      "Summary": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\transition-runs\\after-fix-20261004-120645-26456-281fec\\summary.json",
+      "SummarySHA256": "7E6571F3692B61C71D256328B0DA9B989E8DC3730FD0443AA4FB87AEA9147ECA",
+      "Result": {
+        "testcase": "transition",
+        "done": 1,
+        "errors": 0,
+        "checks": 3295839,
+        "frames": 35,
+        "checked_pixels": 3225600,
+        "checked_cycles": 3295643,
+        "auto_events": 2,
+        "cancel_events": 1,
+        "mapping_checks": 25,
+        "bbox_checks": 31
+      },
+      "Transcript": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-learning-ui-audio\\transition-runs\\after-fix-20261004-120645-26456-281fec\\transcript.log",
+      "TranscriptSHA256": "F1F8A3CB8218CDE0FA197E29056CEA87D7DAE9C0A5DEC5A4776555372C01AFCA",
+      "ExitCode": 0
+    }
+  ],
+  "SetupWNSps": 102,
+  "HoldWNSps": 20,
+  "Risks": [
+    "No hardware testing; mock player produces no sound and exports no UART pins",
+    "Same-stream transitions use qualified raw candidate presence; this is not universal object tracking",
+    "Inherited camera/DDR/HDMI PHY not simulated; inherited clock warnings and incomplete STA coverage",
+    "Heuristic shape detection and RGB thresholds remain uncalibrated for real objects",
+    "Local interface/queue/timeout/cancellation semantics await main review"
+  ]
+}
