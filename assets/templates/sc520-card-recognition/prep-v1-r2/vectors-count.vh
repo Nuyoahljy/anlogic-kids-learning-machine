@@ -1,0 +1,1 @@
+`define CARD_VECTOR_COUNT 69

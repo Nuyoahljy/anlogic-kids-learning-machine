@@ -1,0 +1,1159 @@
+{
+  "files": [
+    {
+      "path": "generation.json",
+      "bytes": 1524,
+      "sha256": "75eceb1f2e452aca9b1693a9db03946d79b9e6cdf3733375f016f1f822b7d31c"
+    },
+    {
+      "path": "model-report.json",
+      "bytes": 3127,
+      "sha256": "8a325f2ff63ed8420efd8e164ddabbd563513053d9d3715117b655435b549a89"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4215,
+      "sha256": "ec8c393d717551c33b2dd917bebbbd86298787b2b3b314e2d2b58bef5083b3dd"
+    },
+    {
+      "path": "render-jobs.json",
+      "bytes": 2091,
+      "sha256": "a458d1e64106d7061d4a8fd4734803a8784434a810469408567e99072187b759"
+    },
+    {
+      "path": "rendered/card_10_apple_256.png",
+      "bytes": 6670,
+      "sha256": "89535c32fb53b09760cb0d4e16c4cdae3abc8f64b3d2ced637880d3404e0a9e6"
+    },
+    {
+      "path": "rendered/card_10_apple_mask.png",
+      "bytes": 875,
+      "sha256": "675fdb9bb4f4ab299eb92a7a0d7956292fd5ee150c6574b5c2afe8e653468e52"
+    },
+    {
+      "path": "rendered/card_11_banana_256.png",
+      "bytes": 7831,
+      "sha256": "ddd76ac93b963a52e826f2cfa44a0a0a298b7cd41ea420a5206b90ac468dd6ab"
+    },
+    {
+      "path": "rendered/card_11_banana_mask.png",
+      "bytes": 902,
+      "sha256": "ca1dad4f47746dfb1980233b31638c466dc06d0793e5dc8acdac1a0dcb9ce770"
+    },
+    {
+      "path": "rendered/card_12_car_256.png",
+      "bytes": 4974,
+      "sha256": "a5451992081ed5b08786bca5966d162138f76a0f644af540bbe10a1d349a285c"
+    },
+    {
+      "path": "rendered/card_12_car_mask.png",
+      "bytes": 898,
+      "sha256": "c1e3add2e6d86436300e8c771c28d0fe8d6e0061047bbfd6f5829c8349b93741"
+    },
+    {
+      "path": "rendered/card_13_star_256.png",
+      "bytes": 5310,
+      "sha256": "8e21a52ff4ef92efd655a486aac7d64ca23ba28cc70caccd5ab5bfba74731ed0"
+    },
+    {
+      "path": "rendered/card_13_star_mask.png",
+      "bytes": 897,
+      "sha256": "f160fb32d4c6e0e0ea359688d16e40efd2110dc88b4386ed6bae1efbaf3e895d"
+    },
+    {
+      "path": "rendered/card_14_umbrella_256.png",
+      "bytes": 6920,
+      "sha256": "c922a74d93872162b9e14374afec489aae43a753a4b68c0d2e8694e79794548a"
+    },
+    {
+      "path": "rendered/card_14_umbrella_mask.png",
+      "bytes": 912,
+      "sha256": "8b44414c60b4084eea0569d6342dc011cb776d9dbfd0074724fbcdfbe5197041"
+    },
+    {
+      "path": "renderer.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "renderer.stdout.txt",
+      "bytes": 500,
+      "sha256": "0d998748df58e5a9567e87a818275e0f2dd4043d819462c65303828d04fbda69"
+    },
+    {
+      "path": "templates-preview.png",
+      "bytes": 44963,
+      "sha256": "abf540ac77d1a797b2ce88b043644a938e00a525885d4f53a9053496e7d0d5c5"
+    },
+    {
+      "path": "templates.json",
+      "bytes": 10324,
+      "sha256": "4647fc9d78caec0fca96c3c5b2c82c7bd68e3a8e63778040f470a5ef6bcf1b0d"
+    },
+    {
+      "path": "templates.mem",
+      "bytes": 3072,
+      "sha256": "49f75a4695a38afb5290c301c9ab07b538968124a296e7f15711065c85e80c3f"
+    },
+    {
+      "path": "vectors/000_canonical_apple.bits.mem",
+      "bytes": 2048,
+      "sha256": "57aef59581c2bf74ddaf693da6da7ca58adb1137d84a4e4f93a22eabe8119f03"
+    },
+    {
+      "path": "vectors/000_canonical_apple.png",
+      "bytes": 2703,
+      "sha256": "20c387e3a43f0df72581b673ec5235d4fd27a259eacc8a3ff419a93d644552da"
+    },
+    {
+      "path": "vectors/000_canonical_apple.rgb.mem",
+      "bytes": 114688,
+      "sha256": "a7b7c0572ad63b40d9ac642d3560d0fb47719353c63ac1ca812c873f33672caf"
+    },
+    {
+      "path": "vectors/001_canonical_banana.bits.mem",
+      "bytes": 2048,
+      "sha256": "a17623fe3093adfdbf7e9db02c9411c102baf949af85df3675ef1572e88dd6d1"
+    },
+    {
+      "path": "vectors/001_canonical_banana.png",
+      "bytes": 3393,
+      "sha256": "56e9896dbc243483a82a85f3b9380b53507340d2cdb597d8d420bb7b7ba48960"
+    },
+    {
+      "path": "vectors/001_canonical_banana.rgb.mem",
+      "bytes": 114688,
+      "sha256": "080fccd651196f48150d093be61b6f3f3dc41cb55292241c2c769ed43d642c1f"
+    },
+    {
+      "path": "vectors/002_canonical_car.bits.mem",
+      "bytes": 2048,
+      "sha256": "3c8078d5d33d61afc60075aebdf71e3209d823fc9f416829e90c8f334c0894ed"
+    },
+    {
+      "path": "vectors/002_canonical_car.png",
+      "bytes": 2472,
+      "sha256": "0d3c6be51c11240feb93873655a027ba4869bd3dd5e5f84b76e4eaf3e8b18a98"
+    },
+    {
+      "path": "vectors/002_canonical_car.rgb.mem",
+      "bytes": 114688,
+      "sha256": "13eda4f575fca36048f6e4a200e6e1d2be544a9505ded574bc7c61b8d152d844"
+    },
+    {
+      "path": "vectors/003_canonical_star.bits.mem",
+      "bytes": 2048,
+      "sha256": "90fe0c4d621fae248c799345fbb7f21fa207a7ae31fe2effd675bf94280b3e86"
+    },
+    {
+      "path": "vectors/003_canonical_star.png",
+      "bytes": 2378,
+      "sha256": "6f4988d29194006d0ab19600d9f2c0c679b9fd020910775cb714bce33e07c4ea"
+    },
+    {
+      "path": "vectors/003_canonical_star.rgb.mem",
+      "bytes": 114688,
+      "sha256": "fe139b1bd7baa581f8dfb5a3a36f85426c47ba2a57497584277db963e9ca6b64"
+    },
+    {
+      "path": "vectors/004_canonical_umbrella.bits.mem",
+      "bytes": 2048,
+      "sha256": "dd37be3c7baa87b7205e0cbb64ad5b07df48740098aac4522f59c1dd3086e3d9"
+    },
+    {
+      "path": "vectors/004_canonical_umbrella.png",
+      "bytes": 3061,
+      "sha256": "966ef17c470faecb1d7efb9d24c09a36611fcccf105ab218919f1326af17f48f"
+    },
+    {
+      "path": "vectors/004_canonical_umbrella.rgb.mem",
+      "bytes": 114688,
+      "sha256": "41e0f8d05171e10adb23ce3d90e0e6d66dd7b0c02ee4e0dc5fd21e8b7f034afe"
+    },
+    {
+      "path": "vectors/005_shift_apple_left.bits.mem",
+      "bytes": 2048,
+      "sha256": "8472e2eaa579d896a92ca90b7c96ef3c2dfbf310a3722d1b203db1f69406396e"
+    },
+    {
+      "path": "vectors/005_shift_apple_left.png",
+      "bytes": 2705,
+      "sha256": "f6c05ed8ee44d6b6edd96cad181800468c2bae9e9c8c1b2a8cf3d35a04e31609"
+    },
+    {
+      "path": "vectors/005_shift_apple_left.rgb.mem",
+      "bytes": 114688,
+      "sha256": "cb87d7dd40fa32bdae0f98d5d46223ab37c047fa0eaeb9b5a3b92427a721c97e"
+    },
+    {
+      "path": "vectors/006_shift_apple_right.bits.mem",
+      "bytes": 2048,
+      "sha256": "e8944b1840826fb17108304d1dd2d511a11033c425d04bf25ecacb1419876825"
+    },
+    {
+      "path": "vectors/006_shift_apple_right.png",
+      "bytes": 2708,
+      "sha256": "f7a71c4316f4812997b352abbb8d9fa7740a46dc3b60780a6c23a9b886767e58"
+    },
+    {
+      "path": "vectors/006_shift_apple_right.rgb.mem",
+      "bytes": 114688,
+      "sha256": "ec13d8acce2e5864c7cbebdd9372d3d2ff461953d65e138488219bfe7d2befb5"
+    },
+    {
+      "path": "vectors/007_shift_apple_up.bits.mem",
+      "bytes": 2048,
+      "sha256": "f5d698b5a196c13ad6c51c9c8c4832dcd16817aa89a045d75a6e9285651124d3"
+    },
+    {
+      "path": "vectors/007_shift_apple_up.png",
+      "bytes": 2703,
+      "sha256": "58b02a853c01dc11bb4c94ef07863727b63ca50d0eb0ef76b940499920bc1147"
+    },
+    {
+      "path": "vectors/007_shift_apple_up.rgb.mem",
+      "bytes": 114688,
+      "sha256": "14f81daf527ad63a43f9a85af7a599b74579c0ac876a26f43b2fe7b424eab1e8"
+    },
+    {
+      "path": "vectors/008_shift_apple_down.bits.mem",
+      "bytes": 2048,
+      "sha256": "d50593b2c2a1caacda6cf34270d7d3e13b116cca959e27e3bdaf43acc3ba9dec"
+    },
+    {
+      "path": "vectors/008_shift_apple_down.png",
+      "bytes": 2703,
+      "sha256": "e5c8257c749ea83d363b055f241c2787202cbe1676c7dbfe4aae06a35fa00531"
+    },
+    {
+      "path": "vectors/008_shift_apple_down.rgb.mem",
+      "bytes": 114688,
+      "sha256": "44275da3b58a3230ca00ae4e92d7da83736ed222ee98444aeffe5ffb47740379"
+    },
+    {
+      "path": "vectors/009_rotate_apple_minus5.bits.mem",
+      "bytes": 2048,
+      "sha256": "41b64dd0e60e79452d64528e37d00ed51bb1ff62c0134b6a997c226362c1542c"
+    },
+    {
+      "path": "vectors/009_rotate_apple_minus5.png",
+      "bytes": 4272,
+      "sha256": "b008f96a603c1873e01e2e5f210b789d734b7a1bfcadf2cc32222fb705e55d7e"
+    },
+    {
+      "path": "vectors/009_rotate_apple_minus5.rgb.mem",
+      "bytes": 114688,
+      "sha256": "9cc3a6a4d05df336bdc1388bd4e6e17c097899294b7793ccb69baf8ddc08b8eb"
+    },
+    {
+      "path": "vectors/010_rotate_apple_plus5.bits.mem",
+      "bytes": 2048,
+      "sha256": "0e2aedb08e59fc8bd9433cf50ce8a040df69a2b9f4cd1a2c542c641290b38965"
+    },
+    {
+      "path": "vectors/010_rotate_apple_plus5.png",
+      "bytes": 4223,
+      "sha256": "d93a6b19a78ec6a11f7ca8164ac5f45c567ea4510e5cbb4d867737721735df49"
+    },
+    {
+      "path": "vectors/010_rotate_apple_plus5.rgb.mem",
+      "bytes": 114688,
+      "sha256": "cc39284c3c5e8de391e113a9cbf5d1a34d2f3befda34fd2337ec97e0b2a7c5b5"
+    },
+    {
+      "path": "vectors/011_brightness_apple_dark.bits.mem",
+      "bytes": 2048,
+      "sha256": "9be775b04fa8858daed7f3d56356913280f30c4efe5498afcac58e9a78bec52b"
+    },
+    {
+      "path": "vectors/011_brightness_apple_dark.png",
+      "bytes": 2682,
+      "sha256": "405bae335b7117da91ad91dd44606a7e21fa342a3bbb313fa5b8ce2350525272"
+    },
+    {
+      "path": "vectors/011_brightness_apple_dark.rgb.mem",
+      "bytes": 114688,
+      "sha256": "032367b464c8723de84e5570d75251d315a494f8ebdc45189fbc65c4eff471a8"
+    },
+    {
+      "path": "vectors/012_brightness_apple_bright.bits.mem",
+      "bytes": 2048,
+      "sha256": "7468a578e3b4797b49835b471f32dea24a3044d5f9aed124f3abfd4dee556c9f"
+    },
+    {
+      "path": "vectors/012_brightness_apple_bright.png",
+      "bytes": 2546,
+      "sha256": "466398963cf21ec470dc321b4aa494e6feabd962e38cf26e159f106923af3b4c"
+    },
+    {
+      "path": "vectors/012_brightness_apple_bright.rgb.mem",
+      "bytes": 114688,
+      "sha256": "5b15ed72dcd828a5fd6da52f6317aec7fdea2a3caef33fdc448c54d6834d1987"
+    },
+    {
+      "path": "vectors/013_noise_apple.bits.mem",
+      "bytes": 2048,
+      "sha256": "723a08c2d4cae24f3ff2158cea9f140b8efb3e384f75cbb5656c58fd9732772f"
+    },
+    {
+      "path": "vectors/013_noise_apple.png",
+      "bytes": 3523,
+      "sha256": "bc27cf37c585ed7920fbdd2a8aa30fbe53e3dafb11b209e5df0cbe2b867e37dc"
+    },
+    {
+      "path": "vectors/013_noise_apple.rgb.mem",
+      "bytes": 114688,
+      "sha256": "ccba7c6c2b77cfd82bb7144e08e1c1bf6c734faf56c2828580ecabbc21b2a951"
+    },
+    {
+      "path": "vectors/014_occlusion_apple.bits.mem",
+      "bytes": 2048,
+      "sha256": "e4a87cc4bc0976b6185449d367c55187af0367d2703a8d82821c8f627cad8716"
+    },
+    {
+      "path": "vectors/014_occlusion_apple.png",
+      "bytes": 1465,
+      "sha256": "ed6fead5121cb4d493e1d1d8a18808d0f7b95cbf46ed2b23392e3d7dd5410290"
+    },
+    {
+      "path": "vectors/014_occlusion_apple.rgb.mem",
+      "bytes": 114688,
+      "sha256": "131e791a1926514a4b209fbc286a2bd128dbc83f87bbe90044c88548066f5329"
+    },
+    {
+      "path": "vectors/015_shift_banana_left.bits.mem",
+      "bytes": 2048,
+      "sha256": "da0b287d5799b4783172e8426db237e2db5156c006c0ee06651bf4ece424f926"
+    },
+    {
+      "path": "vectors/015_shift_banana_left.png",
+      "bytes": 3394,
+      "sha256": "608e09c79e20fdc33616c0117cbcc22843b524f08c5f6fd57ad86603a62b340b"
+    },
+    {
+      "path": "vectors/015_shift_banana_left.rgb.mem",
+      "bytes": 114688,
+      "sha256": "6f576845d5e14dab37bd005f9ab73eaa891bdfd61bbc279da9c17e0edb2ca1a5"
+    },
+    {
+      "path": "vectors/016_shift_banana_right.bits.mem",
+      "bytes": 2048,
+      "sha256": "67657fb47e5a2dabea182166faade4d80a256c7c73c0a6ed2e9798a999f1734d"
+    },
+    {
+      "path": "vectors/016_shift_banana_right.png",
+      "bytes": 3395,
+      "sha256": "70ec88c4b9877b241dd6009ab31bd6450355bfd2c6379a927508ddc89c0129ce"
+    },
+    {
+      "path": "vectors/016_shift_banana_right.rgb.mem",
+      "bytes": 114688,
+      "sha256": "95b4853e3034cf6b170a114da7c1698dc2ee8833a223343f72fae317c56cd6a4"
+    },
+    {
+      "path": "vectors/017_shift_banana_up.bits.mem",
+      "bytes": 2048,
+      "sha256": "10da7cd45b2b22f7ff8a730050ab36259a70eff7065573e83868514f1696720a"
+    },
+    {
+      "path": "vectors/017_shift_banana_up.png",
+      "bytes": 3393,
+      "sha256": "bcf3b29e4c6c161f478dfabbea2c03cfe4c58168ce663a677e99fbfae2cfd20f"
+    },
+    {
+      "path": "vectors/017_shift_banana_up.rgb.mem",
+      "bytes": 114688,
+      "sha256": "b2a89d985cf4caa5ae53c614fd34f28c22a1ee01ac2478a84dbb47ed1f4581d9"
+    },
+    {
+      "path": "vectors/018_shift_banana_down.bits.mem",
+      "bytes": 2048,
+      "sha256": "6792e92e4797b18ce43ffc5cb2c953f03731076326f29ef88e7b0ad700058d59"
+    },
+    {
+      "path": "vectors/018_shift_banana_down.png",
+      "bytes": 3393,
+      "sha256": "693f4648d8e0c311401d9e0b4dab8763d9a14b35b466dec3f6f70fc68c5b51d0"
+    },
+    {
+      "path": "vectors/018_shift_banana_down.rgb.mem",
+      "bytes": 114688,
+      "sha256": "1f41a3968a13d5651a55fad557578fb2aa6ea4ed7278a111cf4c9d362279b09a"
+    },
+    {
+      "path": "vectors/019_rotate_banana_minus5.bits.mem",
+      "bytes": 2048,
+      "sha256": "fa418615cef7ee8f70c23377319e51354f1343abaa32adb978505674c921f118"
+    },
+    {
+      "path": "vectors/019_rotate_banana_minus5.png",
+      "bytes": 5319,
+      "sha256": "dce537b06c0d90e0b13dd9aa72e7708ef5e411d2b4dc50943a718a13370c4b29"
+    },
+    {
+      "path": "vectors/019_rotate_banana_minus5.rgb.mem",
+      "bytes": 114688,
+      "sha256": "78dcc395c5f4c569017f678d0bcbbead23670bd7855405142e182937022b6268"
+    },
+    {
+      "path": "vectors/020_rotate_banana_plus5.bits.mem",
+      "bytes": 2048,
+      "sha256": "8711959de415f9a179a59b7bad97b3cff8223615ec5143e000df20b82026c4c4"
+    },
+    {
+      "path": "vectors/020_rotate_banana_plus5.png",
+      "bytes": 5357,
+      "sha256": "3a2a377bda1022b31f5d7001456cae3fc13cc39caba1cc6dafd27f8f54122516"
+    },
+    {
+      "path": "vectors/020_rotate_banana_plus5.rgb.mem",
+      "bytes": 114688,
+      "sha256": "4633bfc74734ec18bdabfdadc6d728d7a90f695db0570d4a610cebd0db656af0"
+    },
+    {
+      "path": "vectors/021_brightness_banana_dark.bits.mem",
+      "bytes": 2048,
+      "sha256": "9be775b04fa8858daed7f3d56356913280f30c4efe5498afcac58e9a78bec52b"
+    },
+    {
+      "path": "vectors/021_brightness_banana_dark.png",
+      "bytes": 3435,
+      "sha256": "5add9ad57a346fa8d211e2af03cccfd959bc098d4e7d7de8151912300ad8041e"
+    },
+    {
+      "path": "vectors/021_brightness_banana_dark.rgb.mem",
+      "bytes": 114688,
+      "sha256": "2f8fce9c6fc27c91844ab014607cb7ecedacad45be0e237b8b8367c3c55981c3"
+    },
+    {
+      "path": "vectors/022_brightness_banana_bright.bits.mem",
+      "bytes": 2048,
+      "sha256": "d3ae7627492fe9c70ec61088fadc3bd3ca7541b268678c7b9cfca6e482b66525"
+    },
+    {
+      "path": "vectors/022_brightness_banana_bright.png",
+      "bytes": 3222,
+      "sha256": "40ecd0562cbdb7f726b48a4f52fb2f3639ff8079c0b68ddcbdfaa3738ea7436f"
+    },
+    {
+      "path": "vectors/022_brightness_banana_bright.rgb.mem",
+      "bytes": 114688,
+      "sha256": "d027ce725238e2d4621401577b8d6fdc66558ac17bfbc8e10a1efbe3bfa02900"
+    },
+    {
+      "path": "vectors/023_noise_banana.bits.mem",
+      "bytes": 2048,
+      "sha256": "bcbea259d94c76310c627d6918640e22cad44871d32a1326d582a4aab1ffebf6"
+    },
+    {
+      "path": "vectors/023_noise_banana.png",
+      "bytes": 4097,
+      "sha256": "b00fb7452f94243c54ac3d3ac73d7f2467f8dded3f63781d26123635e4b452c0"
+    },
+    {
+      "path": "vectors/023_noise_banana.rgb.mem",
+      "bytes": 114688,
+      "sha256": "27ca2f2b48e36b036b258970dec64f45c7d425103e1a9e117a08e83a22fe7ce5"
+    },
+    {
+      "path": "vectors/024_occlusion_banana.bits.mem",
+      "bytes": 2048,
+      "sha256": "22cdcb7b233bc99512ef4edc68a9f35d2a0a366fc0b4f44b53e846c9b3fa6f43"
+    },
+    {
+      "path": "vectors/024_occlusion_banana.png",
+      "bytes": 2158,
+      "sha256": "6f27d56ad82e6c75bfbbba56e716828e6e86365fefcfcec16a4324eab96f0b7b"
+    },
+    {
+      "path": "vectors/024_occlusion_banana.rgb.mem",
+      "bytes": 114688,
+      "sha256": "2bf9469673acabec9a1aeb7902f4e8f39b0988f8cb69bde3f011d364946bb7b0"
+    },
+    {
+      "path": "vectors/025_shift_car_left.bits.mem",
+      "bytes": 2048,
+      "sha256": "a2da05ecfbceb0258b09b12c4afd43b0f30975f0de369b84fedf1151b17bb3d0"
+    },
+    {
+      "path": "vectors/025_shift_car_left.png",
+      "bytes": 2473,
+      "sha256": "f3cf3053071c0e3efd253d9e9705c9ffb8ec40c2743532db42c59dd7b6ce50d2"
+    },
+    {
+      "path": "vectors/025_shift_car_left.rgb.mem",
+      "bytes": 114688,
+      "sha256": "28c91861e231839c2b7c5c5b66bf84fae4b226789edaaa1e701249ea0eae2167"
+    },
+    {
+      "path": "vectors/026_shift_car_right.bits.mem",
+      "bytes": 2048,
+      "sha256": "50627712a8c65ee543f7124d8452dabd891483819a8ada10276f5e7a6ec99afb"
+    },
+    {
+      "path": "vectors/026_shift_car_right.png",
+      "bytes": 2471,
+      "sha256": "82f19d5b4e7e8d03aa1ef4e5bf52346360d923c078199b5a62b1b0da100312d4"
+    },
+    {
+      "path": "vectors/026_shift_car_right.rgb.mem",
+      "bytes": 114688,
+      "sha256": "ae8496ed4c6d854e6f7e6a6aa1223ce0b380aaa204e25d1d99e7e7b361d85c4e"
+    },
+    {
+      "path": "vectors/027_shift_car_up.bits.mem",
+      "bytes": 2048,
+      "sha256": "4205a75160042a4aa781867ec762f30b10d3abab94f4c748c9291e33f311ce9a"
+    },
+    {
+      "path": "vectors/027_shift_car_up.png",
+      "bytes": 2471,
+      "sha256": "04d80af4679d2b830cbcdc809f84f2aee14c59b792d31d9a632c74f234e71d45"
+    },
+    {
+      "path": "vectors/027_shift_car_up.rgb.mem",
+      "bytes": 114688,
+      "sha256": "45ab1bdb51dc9d7a301402cbce5f399bcbeb5ad11e3308861bdaa6e88d0cae8b"
+    },
+    {
+      "path": "vectors/028_shift_car_down.bits.mem",
+      "bytes": 2048,
+      "sha256": "1cef894124e2737aef6465081879f3d2c6f14cba36ccbb6c213d4a315c197c59"
+    },
+    {
+      "path": "vectors/028_shift_car_down.png",
+      "bytes": 2472,
+      "sha256": "ab3e79d23c8ae5d6a375f44cbc93beeba9360907e7e49bfba8c44a8976cbdf9a"
+    },
+    {
+      "path": "vectors/028_shift_car_down.rgb.mem",
+      "bytes": 114688,
+      "sha256": "71748602db233c8870fe012e7133ef5e08bd8e19ffc808b4a550214394b90f8e"
+    },
+    {
+      "path": "vectors/029_rotate_car_minus5.bits.mem",
+      "bytes": 2048,
+      "sha256": "33e8534aea34d2af536ebd6d7dc5d2fb52d2182fd8b8256fec52af974eca71a0"
+    },
+    {
+      "path": "vectors/029_rotate_car_minus5.png",
+      "bytes": 4919,
+      "sha256": "464ddeb02f1e0e4bd07cdc1afb56bc665aa4ef3cfa50c390713ab0d6b84be7e9"
+    },
+    {
+      "path": "vectors/029_rotate_car_minus5.rgb.mem",
+      "bytes": 114688,
+      "sha256": "3b303c8e47f93d18c7e2ad91f7677628330c9f4697bd4a4dd744578d5d4affa8"
+    },
+    {
+      "path": "vectors/030_rotate_car_plus5.bits.mem",
+      "bytes": 2048,
+      "sha256": "dc98f3a565078cb4005132cb6453b0885bb822097801f438a2232faa216aafd9"
+    },
+    {
+      "path": "vectors/030_rotate_car_plus5.png",
+      "bytes": 4824,
+      "sha256": "66a453a796dc33a3ddd75ee90924b0a17d683323be7f8ab93d14b9c84b00c187"
+    },
+    {
+      "path": "vectors/030_rotate_car_plus5.rgb.mem",
+      "bytes": 114688,
+      "sha256": "85226e4a2ab70bf96786623add7021128e95c493ea77add2f641835aa941bea0"
+    },
+    {
+      "path": "vectors/031_brightness_car_dark.bits.mem",
+      "bytes": 2048,
+      "sha256": "9be775b04fa8858daed7f3d56356913280f30c4efe5498afcac58e9a78bec52b"
+    },
+    {
+      "path": "vectors/031_brightness_car_dark.png",
+      "bytes": 2407,
+      "sha256": "761f81ecf980d85301173c24d836f1fc7355f19d24902f953039f6361f5f6ca5"
+    },
+    {
+      "path": "vectors/031_brightness_car_dark.rgb.mem",
+      "bytes": 114688,
+      "sha256": "169873f40a867cfee7ee344b0b3c6dd270c31cb1dc8b3386ed9669c2c6b5b981"
+    },
+    {
+      "path": "vectors/032_brightness_car_bright.bits.mem",
+      "bytes": 2048,
+      "sha256": "84064fa86ffb8e334346c0c75e38637336bdb88bbcb62334d0eb871f5f05814d"
+    },
+    {
+      "path": "vectors/032_brightness_car_bright.png",
+      "bytes": 2342,
+      "sha256": "c4bd86148d84d309d87960e5021cd702e2ad4301326f53db400d4cf36aa83323"
+    },
+    {
+      "path": "vectors/032_brightness_car_bright.rgb.mem",
+      "bytes": 114688,
+      "sha256": "3227ed096bcbd3d70451de9da5366ee5406e2cac70e28bbcd6bf89bacf943396"
+    },
+    {
+      "path": "vectors/033_noise_car.bits.mem",
+      "bytes": 2048,
+      "sha256": "2f07d49e13f8e8ee90c63ffa75a32e9e661c667aa15107263b390037ff8322f9"
+    },
+    {
+      "path": "vectors/033_noise_car.png",
+      "bytes": 3163,
+      "sha256": "6a7a19bf2a81300d3d047915da87d73ed8fb1bc2ac40178c17199d4d3256fb45"
+    },
+    {
+      "path": "vectors/033_noise_car.rgb.mem",
+      "bytes": 114688,
+      "sha256": "c0a58b014d3ae47701c267b1c089abac3524ec771901cb25102ad420e443d761"
+    },
+    {
+      "path": "vectors/034_occlusion_car.bits.mem",
+      "bytes": 2048,
+      "sha256": "6cbb9db254cf94d2bed228e7e72bdeedd5d71891640695dedf1063b025a285cd"
+    },
+    {
+      "path": "vectors/034_occlusion_car.png",
+      "bytes": 1432,
+      "sha256": "07785d2d5c234b6529fae1b55c3287563253d93204237946219d446b5c935475"
+    },
+    {
+      "path": "vectors/034_occlusion_car.rgb.mem",
+      "bytes": 114688,
+      "sha256": "7492531459c1a3c88a1cc1fe0f0200defaf8cdb59f0c48729478d129521ecc37"
+    },
+    {
+      "path": "vectors/035_shift_star_left.bits.mem",
+      "bytes": 2048,
+      "sha256": "c001e7ddbcd60e640b0cd16ed6c1aa565b650925c9c70b75d5c8440117940be7"
+    },
+    {
+      "path": "vectors/035_shift_star_left.png",
+      "bytes": 2375,
+      "sha256": "360f9cdcc568d346a335b01b2ae6140dfffa9628380299060c1777efff880f8f"
+    },
+    {
+      "path": "vectors/035_shift_star_left.rgb.mem",
+      "bytes": 114688,
+      "sha256": "a3e9f3d41407e93da31a3a8757c6239d995766ba81128a55383f8c193161516a"
+    },
+    {
+      "path": "vectors/036_shift_star_right.bits.mem",
+      "bytes": 2048,
+      "sha256": "da127948292b4dc8c81932395f700210e04a5155c47ef77c7953fbc237c28427"
+    },
+    {
+      "path": "vectors/036_shift_star_right.png",
+      "bytes": 2381,
+      "sha256": "676538f7df311fde92ed5a379d08182b6ca17b1e35f313347ad974572768cf1d"
+    },
+    {
+      "path": "vectors/036_shift_star_right.rgb.mem",
+      "bytes": 114688,
+      "sha256": "797242eb4b279bb9c14d45575735d4bd7be3c0a25562f1931fdcd3331a4056a3"
+    },
+    {
+      "path": "vectors/037_shift_star_up.bits.mem",
+      "bytes": 2048,
+      "sha256": "9fc063fa8ae0ff4de6672d4f6ec7c40464da06e83893af0c13b33d1557dd4678"
+    },
+    {
+      "path": "vectors/037_shift_star_up.png",
+      "bytes": 2378,
+      "sha256": "91a7f3d18d496c0b08836954ae9ec74e6083c09d34235f22fdeaeab535349781"
+    },
+    {
+      "path": "vectors/037_shift_star_up.rgb.mem",
+      "bytes": 114688,
+      "sha256": "7db5aa59a2ae1ee4d2d5bbedeb24c71507724ef238bea55ff3f59078126aad64"
+    },
+    {
+      "path": "vectors/038_shift_star_down.bits.mem",
+      "bytes": 2048,
+      "sha256": "3f1b6d806d6e9dd3e300c6a9aacb55f96737dda88e22d2ef966ab7d48d286a26"
+    },
+    {
+      "path": "vectors/038_shift_star_down.png",
+      "bytes": 2378,
+      "sha256": "9b7e5ab18d9d0d6c188fc130433f491aabb95e18739bb72776b13d946ce227fb"
+    },
+    {
+      "path": "vectors/038_shift_star_down.rgb.mem",
+      "bytes": 114688,
+      "sha256": "6809bee8d7fa0db9899715e7c15320597674727ce74b12d2dfd53118853a3e39"
+    },
+    {
+      "path": "vectors/039_rotate_star_minus5.bits.mem",
+      "bytes": 2048,
+      "sha256": "91e013c81f95f46de234f09c65a665422167188c7ecccfb6a006f2db803c45cf"
+    },
+    {
+      "path": "vectors/039_rotate_star_minus5.png",
+      "bytes": 4044,
+      "sha256": "edaaf56c9b2b40149031f335a015d857126bf11deba46046f662fce6e7a8723c"
+    },
+    {
+      "path": "vectors/039_rotate_star_minus5.rgb.mem",
+      "bytes": 114688,
+      "sha256": "7edd4fd52ea477dd97548bb2799aa12e564a9d5dd614f6b3611bb1f068fbc2f3"
+    },
+    {
+      "path": "vectors/040_rotate_star_plus5.bits.mem",
+      "bytes": 2048,
+      "sha256": "87290748a585dbabdb1f776cd05fe61ddbf323e8e6a4ce4ab56fcc973f521b16"
+    },
+    {
+      "path": "vectors/040_rotate_star_plus5.png",
+      "bytes": 4053,
+      "sha256": "37bae6412b610cc5a2510fbf874cdee4f45541c50c3c50e28e7f4b0f830c4983"
+    },
+    {
+      "path": "vectors/040_rotate_star_plus5.rgb.mem",
+      "bytes": 114688,
+      "sha256": "240d14dbf5a00b1a921b5c3b40ab03c9822e1ecb24975c35fd3a1c6128f2467e"
+    },
+    {
+      "path": "vectors/041_brightness_star_dark.bits.mem",
+      "bytes": 2048,
+      "sha256": "9be775b04fa8858daed7f3d56356913280f30c4efe5498afcac58e9a78bec52b"
+    },
+    {
+      "path": "vectors/041_brightness_star_dark.png",
+      "bytes": 2391,
+      "sha256": "0f6217937882db7add531aba26edf05e0ce9493bf8779e2aabaa89111951e1a4"
+    },
+    {
+      "path": "vectors/041_brightness_star_dark.rgb.mem",
+      "bytes": 114688,
+      "sha256": "c9c7e45463f370c7c7aaa3c8a2b011bbde10eb794f10dc43c378225953371964"
+    },
+    {
+      "path": "vectors/042_brightness_star_bright.bits.mem",
+      "bytes": 2048,
+      "sha256": "90fe0c4d621fae248c799345fbb7f21fa207a7ae31fe2effd675bf94280b3e86"
+    },
+    {
+      "path": "vectors/042_brightness_star_bright.png",
+      "bytes": 2291,
+      "sha256": "c5c9838b470f5ab316f4ee4b56c1533f4efabc0affded602ad6a84edb5e15d3a"
+    },
+    {
+      "path": "vectors/042_brightness_star_bright.rgb.mem",
+      "bytes": 114688,
+      "sha256": "f0a44e58527acd15db226f3462601feb9a94477407a78427b259aa72929be0f5"
+    },
+    {
+      "path": "vectors/043_noise_star.bits.mem",
+      "bytes": 2048,
+      "sha256": "a17560d0a28818d0ff6123d1d57a253f809032cc1f00a68ab7ad08a1f012f18d"
+    },
+    {
+      "path": "vectors/043_noise_star.png",
+      "bytes": 3099,
+      "sha256": "9d7b9fcc1a4972647e46e689991bdc137d56850a0c3afb241a3968a683c83019"
+    },
+    {
+      "path": "vectors/043_noise_star.rgb.mem",
+      "bytes": 114688,
+      "sha256": "1f7f3215c673d6da63805581f44fc6386f753bcd6c667d3345f6fef78d076382"
+    },
+    {
+      "path": "vectors/044_occlusion_star.bits.mem",
+      "bytes": 2048,
+      "sha256": "b7e43832bd7b9fcf7ea2abab050419b45c2a7266f27611cab0bc37f7d77f7430"
+    },
+    {
+      "path": "vectors/044_occlusion_star.png",
+      "bytes": 1471,
+      "sha256": "a17da3676f23866ed0776e4efca830c7a2b1da2dddff35462c78dad4ef51ffe5"
+    },
+    {
+      "path": "vectors/044_occlusion_star.rgb.mem",
+      "bytes": 114688,
+      "sha256": "6ad25a3b7ca838cfe2a3f306e2189850c07a507293931cc865c91e45ae42c1aa"
+    },
+    {
+      "path": "vectors/045_shift_umbrella_left.bits.mem",
+      "bytes": 2048,
+      "sha256": "16cc26d705c0da62f6600bb72ffe3d203e3af2ad7c9c76abe25673b6630c582c"
+    },
+    {
+      "path": "vectors/045_shift_umbrella_left.png",
+      "bytes": 3060,
+      "sha256": "11dc0c1637295229e74f31ed275dced8ec03480a00ae31bfb7cf72d01dc7493d"
+    },
+    {
+      "path": "vectors/045_shift_umbrella_left.rgb.mem",
+      "bytes": 114688,
+      "sha256": "95ddf0da858328a27db8f6c02774caad908c39e17e58fb1b3ddc68d60c7a7d72"
+    },
+    {
+      "path": "vectors/046_shift_umbrella_right.bits.mem",
+      "bytes": 2048,
+      "sha256": "28aa9567515b027a23dd505295ee0a5007db947e2dc087c42fdc9d896d7fd952"
+    },
+    {
+      "path": "vectors/046_shift_umbrella_right.png",
+      "bytes": 3053,
+      "sha256": "50880fa9dcbbc34a332049a2945fefbe4e64c08360f36ea3d1d4202e77201208"
+    },
+    {
+      "path": "vectors/046_shift_umbrella_right.rgb.mem",
+      "bytes": 114688,
+      "sha256": "0575bbdaec00a8ba321b9567ecaa3dbb11aff57d09a3ea7bdc5f2d45058567f3"
+    },
+    {
+      "path": "vectors/047_shift_umbrella_up.bits.mem",
+      "bytes": 2048,
+      "sha256": "064009c3645d9e3ea19cd8741e1a32a223ab82b4d1c92ba967602182d33029d4"
+    },
+    {
+      "path": "vectors/047_shift_umbrella_up.png",
+      "bytes": 3061,
+      "sha256": "7de52c43b00f00a16f91cfc3c8ed77e622792350a891e5ba273c50feab8f646b"
+    },
+    {
+      "path": "vectors/047_shift_umbrella_up.rgb.mem",
+      "bytes": 114688,
+      "sha256": "9cfc83dd495300e888548cfda44b66d3077a27ec2fdbf72eedf3526b9428377f"
+    },
+    {
+      "path": "vectors/048_shift_umbrella_down.bits.mem",
+      "bytes": 2048,
+      "sha256": "a6691ef77db8bcf38a2a9e0e9d02628fef29f74b16d676b995c9d6d9e5bb0228"
+    },
+    {
+      "path": "vectors/048_shift_umbrella_down.png",
+      "bytes": 3062,
+      "sha256": "3bed48caa5826c504b77380289fa893bf8779d50d053cf85b86e1ed2cbfe7711"
+    },
+    {
+      "path": "vectors/048_shift_umbrella_down.rgb.mem",
+      "bytes": 114688,
+      "sha256": "edb3fc75924f967deed0e17162c0ed839f2566e13a24204dbd6976e3a92ab10d"
+    },
+    {
+      "path": "vectors/049_rotate_umbrella_minus5.bits.mem",
+      "bytes": 2048,
+      "sha256": "2e48f7a76f79ae03cf40d777a3029e1cb31670dc2fd2f873ab555ea5230f5df0"
+    },
+    {
+      "path": "vectors/049_rotate_umbrella_minus5.png",
+      "bytes": 4932,
+      "sha256": "3271b86ce0feec02cbb2fdf334cafef66278218469165b33f067d3e74c87f186"
+    },
+    {
+      "path": "vectors/049_rotate_umbrella_minus5.rgb.mem",
+      "bytes": 114688,
+      "sha256": "af3aac279301abf0618ad76384860e637d57c169383397cb5f32e8c6a1260db0"
+    },
+    {
+      "path": "vectors/050_rotate_umbrella_plus5.bits.mem",
+      "bytes": 2048,
+      "sha256": "03480975a6d577bc2cdae1cbf952e099ab8771ea6b5e9a49eddb246474a92f7c"
+    },
+    {
+      "path": "vectors/050_rotate_umbrella_plus5.png",
+      "bytes": 4948,
+      "sha256": "87bb8ce357f81eecd4601527f9bb5b702bb06aade0a2962b89f8f2ea0897eacd"
+    },
+    {
+      "path": "vectors/050_rotate_umbrella_plus5.rgb.mem",
+      "bytes": 114688,
+      "sha256": "2eeb539282b9bc64c981accaf84a4e0f34a2bb829b78984559e712ed5fb57448"
+    },
+    {
+      "path": "vectors/051_brightness_umbrella_dark.bits.mem",
+      "bytes": 2048,
+      "sha256": "9be775b04fa8858daed7f3d56356913280f30c4efe5498afcac58e9a78bec52b"
+    },
+    {
+      "path": "vectors/051_brightness_umbrella_dark.png",
+      "bytes": 3078,
+      "sha256": "576446cb8035eb5f2ebaa0b49710775fc1d7dfdc24fd831ff3e0443957f999f9"
+    },
+    {
+      "path": "vectors/051_brightness_umbrella_dark.rgb.mem",
+      "bytes": 114688,
+      "sha256": "e3fe3763d2b5c39585624ae0efa9b027984b833589f28faff2ec081352606611"
+    },
+    {
+      "path": "vectors/052_brightness_umbrella_bright.bits.mem",
+      "bytes": 2048,
+      "sha256": "dd37be3c7baa87b7205e0cbb64ad5b07df48740098aac4522f59c1dd3086e3d9"
+    },
+    {
+      "path": "vectors/052_brightness_umbrella_bright.png",
+      "bytes": 2869,
+      "sha256": "994aab9e73cb8a891bfc3d20207f407e1716f3712a9b32d023a4270a330a7849"
+    },
+    {
+      "path": "vectors/052_brightness_umbrella_bright.rgb.mem",
+      "bytes": 114688,
+      "sha256": "e27d8660359c7babfa64b4ed394694f6a0124647d63387b995a561a59b1c0fba"
+    },
+    {
+      "path": "vectors/053_noise_umbrella.bits.mem",
+      "bytes": 2048,
+      "sha256": "2198de2cc37103ade5e4b848fd4345d3f5ca7896c8aff0c682d26fe7bbe0b727"
+    },
+    {
+      "path": "vectors/053_noise_umbrella.png",
+      "bytes": 3723,
+      "sha256": "d4bf35e0032817d3d3994edc1e1208cbe1effdab643cc6f4430465ac70fa9ec4"
+    },
+    {
+      "path": "vectors/053_noise_umbrella.rgb.mem",
+      "bytes": 114688,
+      "sha256": "0e22959e801c6063b3c39e7c05ca4e4ed0b84e0e965e97b324323aa0b0ee2269"
+    },
+    {
+      "path": "vectors/054_occlusion_umbrella.bits.mem",
+      "bytes": 2048,
+      "sha256": "9747e29e23ad47c40eec99c91ce5f1ec328e0c97ae293c03fb3b8e9ef966f692"
+    },
+    {
+      "path": "vectors/054_occlusion_umbrella.png",
+      "bytes": 1619,
+      "sha256": "4a64d15685cc872ad2bd5e954db075af7616529fc87ba82d3f59607813568259"
+    },
+    {
+      "path": "vectors/054_occlusion_umbrella.rgb.mem",
+      "bytes": 114688,
+      "sha256": "4dd527480ae3d15c006f1871ef0165ef80b2fd4e26969373761833d19f64ac9f"
+    },
+    {
+      "path": "vectors/055_all_white.bits.mem",
+      "bytes": 2048,
+      "sha256": "209a151d73facd213f692299a3069420c8733e4800d4c544c381e793af852352"
+    },
+    {
+      "path": "vectors/055_all_white.png",
+      "bytes": 359,
+      "sha256": "ef66840596f664535126428db67dad9cd7a17be6922d606f40ca0452e4cc8965"
+    },
+    {
+      "path": "vectors/055_all_white.rgb.mem",
+      "bytes": 114688,
+      "sha256": "0e18fbeb7bc3ebc9018ec8e940f6fc43d498301c63aad83fde7a55ff20667257"
+    },
+    {
+      "path": "vectors/056_all_black.bits.mem",
+      "bytes": 2048,
+      "sha256": "9be775b04fa8858daed7f3d56356913280f30c4efe5498afcac58e9a78bec52b"
+    },
+    {
+      "path": "vectors/056_all_black.png",
+      "bytes": 127,
+      "sha256": "dbd8e6235a1dba90a6d5e5199db421b6e9f037d56643d2ddec01b18afb7ae64a"
+    },
+    {
+      "path": "vectors/056_all_black.rgb.mem",
+      "bytes": 114688,
+      "sha256": "c87b929463373bce7cef084187bd69c6acba235e2a4fefb83d5654af23e25493"
+    },
+    {
+      "path": "vectors/057_negative_red_circle.bits.mem",
+      "bytes": 2048,
+      "sha256": "c0c395c248c97b3cf95ffd79b3e32162664230c9c85d19048395222a848824cb"
+    },
+    {
+      "path": "vectors/057_negative_red_circle.png",
+      "bytes": 631,
+      "sha256": "60152541d1d573a53199fee1b6cd06aa2867bf36d577c21e38df235604ec3ba5"
+    },
+    {
+      "path": "vectors/057_negative_red_circle.rgb.mem",
+      "bytes": 114688,
+      "sha256": "2393ac467aa93d69b9a74d98e62f042bfdbec919a18cc2c1bccb5e2457c8df77"
+    },
+    {
+      "path": "vectors/058_negative_red_square.bits.mem",
+      "bytes": 2048,
+      "sha256": "a2197df070aa8ac2943c2ba839dd19a84eab11f5baa0e44d2be22086a579dd69"
+    },
+    {
+      "path": "vectors/058_negative_red_square.png",
+      "bytes": 384,
+      "sha256": "fe0f4acc6c4fcc9167631f5856f98da21f0e57d6f0cbbf511158ba998741a915"
+    },
+    {
+      "path": "vectors/058_negative_red_square.rgb.mem",
+      "bytes": 114688,
+      "sha256": "4524aedf0f52b5994b2c7495ddfcd2933d6b1a6c7a60ca5cec7302a58cc7ee73"
+    },
+    {
+      "path": "vectors/059_negative_red_triangle.bits.mem",
+      "bytes": 2048,
+      "sha256": "05fea4e9042f587b588b65edeb81e9bf151c45c759e85b8a7851224dbe6f934a"
+    },
+    {
+      "path": "vectors/059_negative_red_triangle.png",
+      "bytes": 648,
+      "sha256": "feac02e86592d715dfc9f9bce257fd8200579ac0f62434a95344bdbab68830c9"
+    },
+    {
+      "path": "vectors/059_negative_red_triangle.rgb.mem",
+      "bytes": 114688,
+      "sha256": "5ac5cee92041f27e0511bf98f8106ac3fcb2ede2d269012765a4fb86776a431f"
+    },
+    {
+      "path": "vectors/060_negative_yellow_circle.bits.mem",
+      "bytes": 2048,
+      "sha256": "c0c395c248c97b3cf95ffd79b3e32162664230c9c85d19048395222a848824cb"
+    },
+    {
+      "path": "vectors/060_negative_yellow_circle.png",
+      "bytes": 633,
+      "sha256": "5d26530412ed2ee8278ff344fbb06478b44dd5351811de0930bf0fdbef1c2fd8"
+    },
+    {
+      "path": "vectors/060_negative_yellow_circle.rgb.mem",
+      "bytes": 114688,
+      "sha256": "283d733d29b393f1cabe7b86a9d2f1f0fbc75bc4395d1180938d12267591ed0e"
+    },
+    {
+      "path": "vectors/061_negative_yellow_square.bits.mem",
+      "bytes": 2048,
+      "sha256": "a2197df070aa8ac2943c2ba839dd19a84eab11f5baa0e44d2be22086a579dd69"
+    },
+    {
+      "path": "vectors/061_negative_yellow_square.png",
+      "bytes": 386,
+      "sha256": "f2020e34992698718d8e71824af315aebcebf9586d6547c3905838a52b56037d"
+    },
+    {
+      "path": "vectors/061_negative_yellow_square.rgb.mem",
+      "bytes": 114688,
+      "sha256": "0aabdb03bbb31c4ef5eb1491ada7516a6bb70cbc07c5876fd9a306ee27269faa"
+    },
+    {
+      "path": "vectors/062_negative_yellow_triangle.bits.mem",
+      "bytes": 2048,
+      "sha256": "05fea4e9042f587b588b65edeb81e9bf151c45c759e85b8a7851224dbe6f934a"
+    },
+    {
+      "path": "vectors/062_negative_yellow_triangle.png",
+      "bytes": 649,
+      "sha256": "b8a08c60677a4e44697dd7332aec60cb46c3dbbd4f52e3f09201114fb0e44c26"
+    },
+    {
+      "path": "vectors/062_negative_yellow_triangle.rgb.mem",
+      "bytes": 114688,
+      "sha256": "f480b0574af7fd46d037fc012f112bda7d27b9a226ad306a0af62a85a5a49838"
+    },
+    {
+      "path": "vectors/063_negative_blue_circle.bits.mem",
+      "bytes": 2048,
+      "sha256": "c0c395c248c97b3cf95ffd79b3e32162664230c9c85d19048395222a848824cb"
+    },
+    {
+      "path": "vectors/063_negative_blue_circle.png",
+      "bytes": 631,
+      "sha256": "77523d602ae1844990a9007ae879c940a42221b9b99e7167e5bd501a6f7b356e"
+    },
+    {
+      "path": "vectors/063_negative_blue_circle.rgb.mem",
+      "bytes": 114688,
+      "sha256": "4e4c6b0b8fb1a2b3d1da043c77f80c8c6220134f2afafd61e5cfe597adf9b6ed"
+    },
+    {
+      "path": "vectors/064_negative_blue_square.bits.mem",
+      "bytes": 2048,
+      "sha256": "a2197df070aa8ac2943c2ba839dd19a84eab11f5baa0e44d2be22086a579dd69"
+    },
+    {
+      "path": "vectors/064_negative_blue_square.png",
+      "bytes": 384,
+      "sha256": "6edfdcebc225d9cf89ef262c8d711a63163f94b4f03925aabeef82bf4a688914"
+    },
+    {
+      "path": "vectors/064_negative_blue_square.rgb.mem",
+      "bytes": 114688,
+      "sha256": "6839aafb9d88cb1a58c62e79e43020ce1bc205fe0fd5dbcafc56908c2e387bac"
+    },
+    {
+      "path": "vectors/065_negative_blue_triangle.bits.mem",
+      "bytes": 2048,
+      "sha256": "05fea4e9042f587b588b65edeb81e9bf151c45c759e85b8a7851224dbe6f934a"
+    },
+    {
+      "path": "vectors/065_negative_blue_triangle.png",
+      "bytes": 648,
+      "sha256": "a423eaa0997fcff4e1e4e38a930c9ce2dd50e9ca6fa28f73acb213ceb0303287"
+    },
+    {
+      "path": "vectors/065_negative_blue_triangle.rgb.mem",
+      "bytes": 114688,
+      "sha256": "1c7a425c8ad3f5252969c21277297f69f974b620915df01d5ac405594165b40e"
+    },
+    {
+      "path": "vectors/066_unknown_apple_umbrella.bits.mem",
+      "bytes": 2048,
+      "sha256": "60aa65595a355d839dc1bb56f41e8c7254fc29bb867e8113a9b0308c063243d9"
+    },
+    {
+      "path": "vectors/066_unknown_apple_umbrella.png",
+      "bytes": 3041,
+      "sha256": "db21f7c6dead6f3f03a89b6be55ee4d9222bc2c549782f5033cf9bcdc6bb1a56"
+    },
+    {
+      "path": "vectors/066_unknown_apple_umbrella.rgb.mem",
+      "bytes": 114688,
+      "sha256": "259dd39ff42f7c0823fd32c8f74c9cff66417644dec282b02bdd771e76c4ec63"
+    },
+    {
+      "path": "vectors/067_unknown_checkerboard.bits.mem",
+      "bytes": 2048,
+      "sha256": "2b9d912628407990e5b1fcccd531d66d7fe576e6f713f0f358e511751399f949"
+    },
+    {
+      "path": "vectors/067_unknown_checkerboard.png",
+      "bytes": 411,
+      "sha256": "ec8fe3ced18a2228c434b724f358dcb622d575378d63497d6c3cb8a3c0513793"
+    },
+    {
+      "path": "vectors/067_unknown_checkerboard.rgb.mem",
+      "bytes": 114688,
+      "sha256": "91eb7b86b7fb4597618315c56f62f413a1f6e583582fe92d17decc7b62a71d29"
+    },
+    {
+      "path": "vectors/068_between_sample_lines.bits.mem",
+      "bytes": 2048,
+      "sha256": "209a151d73facd213f692299a3069420c8733e4800d4c544c381e793af852352"
+    },
+    {
+      "path": "vectors/068_between_sample_lines.png",
+      "bytes": 368,
+      "sha256": "454fc1c69a23f47a4189cd35325760e8336da48982b342beee64953c39898b8d"
+    },
+    {
+      "path": "vectors/068_between_sample_lines.rgb.mem",
+      "bytes": 114688,
+      "sha256": "801984aa6277f2aa728a1713d4295df2296d0dc4e56346259199fd1265124d3b"
+    },
+    {
+      "path": "vectors-count.vh",
+      "bytes": 29,
+      "sha256": "2d2311578309fe6ba2bbc4762c6ce1f8696b519a816fab78b39144de40b38e28"
+    },
+    {
+      "path": "vectors-files.vh",
+      "bytes": 8949,
+      "sha256": "265b8ec79d89dc7a749461f9843c360529b9d2f5bc2e8375e18d96e6e0315152"
+    },
+    {
+      "path": "vectors.json",
+      "bytes": 70508,
+      "sha256": "d0137dd82dd87927d15ba25f48617a19bca3b8e36637ee6b0e86eb1678ba57f5"
+    },
+    {
+      "path": "vectors.list",
+      "bytes": 3040,
+      "sha256": "2f902f77d0130443ccabaea1782dbc207442aa884aef7287492cbba8c5dad6b0"
+    },
+    {
+      "path": "vectors.meta.mem",
+      "bytes": 4968,
+      "sha256": "dbff2b43eb9de13ff8604c989271f494ac060edb44b0896e9f9a30e31395459b"
+    }
+  ]
+}

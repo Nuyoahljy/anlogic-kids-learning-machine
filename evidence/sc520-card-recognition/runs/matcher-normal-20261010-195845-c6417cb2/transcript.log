@@ -1,0 +1,34 @@
+# set card_top tb_card_matcher
+# tb_card_matcher
+#  set card_sources [list {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/matcher-normal-20261010-195845-c6417cb2/inputs/rtl/card_matcher.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/matcher-normal-20261010-195845-c6417cb2/inputs/rtl/card_recognizer.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/matcher-normal-20261010-195845-c6417cb2/inputs/rtl/card_result_filter.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/matcher-normal-20261010-195845-c6417cb2/inputs/rtl/card_roi_sampler.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/matcher-normal-20261010-195845-c6417cb2/inputs/rtl/card_template_rom.v}]
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/matcher-normal-20261010-195845-c6417cb2/inputs/rtl/card_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/matcher-normal-20261010-195845-c6417cb2/inputs/rtl/card_recognizer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/matcher-normal-20261010-195845-c6417cb2/inputs/rtl/card_result_filter.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/matcher-normal-20261010-195845-c6417cb2/inputs/rtl/card_roi_sampler.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/matcher-normal-20261010-195845-c6417cb2/inputs/rtl/card_template_rom.v
+#  set card_tb {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/matcher-normal-20261010-195845-c6417cb2/inputs/tb/tb_card_matcher.sv}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/matcher-normal-20261010-195845-c6417cb2/inputs/tb/tb_card_matcher.sv
+#  set card_assets {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/matcher-normal-20261010-195845-c6417cb2/inputs/assets}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/matcher-normal-20261010-195845-c6417cb2/inputs/assets
+#  set card_negative 0
+# 0
+#  set card_probe 0
+# 0
+#  source {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/matcher-normal-20261010-195845-c6417cb2/inputs/scripts/run-sim.do}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 19:58:49 on Oct 10,2026
+# vlog E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/matcher-normal-20261010-195845-c6417cb2/inputs/rtl/card_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/matcher-normal-20261010-195845-c6417cb2/inputs/rtl/card_recognizer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/matcher-normal-20261010-195845-c6417cb2/inputs/rtl/card_result_filter.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/matcher-normal-20261010-195845-c6417cb2/inputs/rtl/card_roi_sampler.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/matcher-normal-20261010-195845-c6417cb2/inputs/rtl/card_template_rom.v 
+# -- Compiling module card_matcher
+# -- Compiling module card_recognizer
+# -- Compiling module card_result_filter
+# -- Compiling module card_roi_sampler
+# -- Compiling module card_template_rom
+# 
+# Top level modules:
+# 	card_recognizer
+# End time: 19:58:49 on Oct 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 19:58:49 on Oct 10,2026
+# vlog -sv E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/matcher-normal-20261010-195845-c6417cb2/inputs/tb/tb_card_matcher.sv 
+# -- Compiling module tb_card_matcher
+# ** Error: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/matcher-normal-20261010-195845-c6417cb2/inputs/tb/tb_card_matcher.sv(121): (vlog-2730) Undefined variable: 'out_fg'.
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/matcher-normal-20261010-195845-c6417cb2/inputs/tb/tb_card_matcher.sv(209): Verilog Compiler exiting
+# End time: 19:58:49 on Oct 10,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

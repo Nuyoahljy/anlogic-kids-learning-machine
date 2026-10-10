@@ -1,0 +1,20 @@
+{
+  "status": "pass",
+  "baseline": "prep-v1-r2",
+  "candidate": "prep-v1-max40",
+  "identical_templates_and_fixture_files": 208,
+  "template_sha256": "49f75a4695a38afb5290c301c9ab07b538968124a296e7f15711065c85e80c3f",
+  "all_69_rgb_bits_png_unchanged": true,
+  "source_scripts_compile_and_lf": true,
+  "no_hardware_tests": true,
+  "scripts": [
+    {
+      "path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/scripts/sc520-card-recognition/generate-templates.py",
+      "sha256": "9929ceb4361339e14599c6dd3ff8b19fd0f32b1bcce330aca71769e81c92e8ce"
+    },
+    {
+      "path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/scripts/sc520-card-recognition/test-template-data.py",
+      "sha256": "452fa3aa5296a894f80aa43b31c81956b5a85cb2146d98aa60af9218b83c6f44"
+    }
+  ]
+}

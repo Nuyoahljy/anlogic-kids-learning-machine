@@ -1,0 +1,2105 @@
+{
+  "schema": "sc520-card-vectors-v1",
+  "frame": {
+    "width": 320,
+    "height": 180,
+    "roi_x": 96,
+    "roi_y": 26,
+    "roi_size": 128,
+    "sample_step": 4,
+    "sample_offset": 2
+  },
+  "thresholds": {
+    "dark_min_exclusive": 180,
+    "chroma_min_inclusive": 40,
+    "max_distance": 40,
+    "min_margin": 24,
+    "min_foreground": 16,
+    "max_foreground": 850
+  },
+  "count": 69,
+  "rgb_memory": "128x128 ROI only, row-major, 24-bit RGB888 hex RRGGBB; other frame pixels ffffff",
+  "bits_memory": "1024 lines, bit per line in gy-major order",
+  "meta_memory": [
+    "index",
+    "ground_truth_item_id",
+    "candidate_item_id",
+    "accepted_item_id",
+    "best_distance",
+    "second_distance",
+    "foreground_count",
+    "roi_foreground_pixels"
+  ],
+  "vectors": [
+    {
+      "index": 0,
+      "id": "canonical_apple",
+      "category": "canonical",
+      "ground_truth_item_id": 10,
+      "note": "原SVG派生，接口自一致样本，不计作独立准确率",
+      "rgb_mem": "vectors/000_canonical_apple.rgb.mem",
+      "bits_mem": "vectors/000_canonical_apple.bits.mem",
+      "preview_png": "vectors/000_canonical_apple.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          0,
+          131,
+          133,
+          131,
+          174
+        ],
+        "candidate_item_id": 10,
+        "accepted": true,
+        "accepted_item_id": 10,
+        "best_distance": 0,
+        "second_distance": 131,
+        "margin": 131,
+        "foreground_count": 256,
+        "roi_foreground_pixels": 4088
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "a7b7c0572ad63b40d9ac642d3560d0fb47719353c63ac1ca812c873f33672caf",
+      "bits_mem_sha256": "57aef59581c2bf74ddaf693da6da7ca58adb1137d84a4e4f93a22eabe8119f03"
+    },
+    {
+      "index": 1,
+      "id": "canonical_banana",
+      "category": "canonical",
+      "ground_truth_item_id": 11,
+      "note": "原SVG派生，接口自一致样本，不计作独立准确率",
+      "rgb_mem": "vectors/001_canonical_banana.rgb.mem",
+      "bits_mem": "vectors/001_canonical_banana.bits.mem",
+      "preview_png": "vectors/001_canonical_banana.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          131,
+          0,
+          138,
+          142,
+          227
+        ],
+        "candidate_item_id": 11,
+        "accepted": true,
+        "accepted_item_id": 11,
+        "best_distance": 0,
+        "second_distance": 131,
+        "margin": 131,
+        "foreground_count": 167,
+        "roi_foreground_pixels": 2629
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "080fccd651196f48150d093be61b6f3f3dc41cb55292241c2c769ed43d642c1f",
+      "bits_mem_sha256": "a17623fe3093adfdbf7e9db02c9411c102baf949af85df3675ef1572e88dd6d1"
+    },
+    {
+      "index": 2,
+      "id": "canonical_car",
+      "category": "canonical",
+      "ground_truth_item_id": 12,
+      "note": "原SVG派生，接口自一致样本，不计作独立准确率",
+      "rgb_mem": "vectors/002_canonical_car.rgb.mem",
+      "bits_mem": "vectors/002_canonical_car.bits.mem",
+      "preview_png": "vectors/002_canonical_car.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          133,
+          138,
+          0,
+          124,
+          219
+        ],
+        "candidate_item_id": 12,
+        "accepted": true,
+        "accepted_item_id": 12,
+        "best_distance": 0,
+        "second_distance": 124,
+        "margin": 124,
+        "foreground_count": 167,
+        "roi_foreground_pixels": 2617
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "13eda4f575fca36048f6e4a200e6e1d2be544a9505ded574bc7c61b8d152d844",
+      "bits_mem_sha256": "3c8078d5d33d61afc60075aebdf71e3209d823fc9f416829e90c8f334c0894ed"
+    },
+    {
+      "index": 3,
+      "id": "canonical_star",
+      "category": "canonical",
+      "ground_truth_item_id": 13,
+      "note": "原SVG派生，接口自一致样本，不计作独立准确率",
+      "rgb_mem": "vectors/003_canonical_star.rgb.mem",
+      "bits_mem": "vectors/003_canonical_star.bits.mem",
+      "preview_png": "vectors/003_canonical_star.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          131,
+          142,
+          124,
+          0,
+          131
+        ],
+        "candidate_item_id": 13,
+        "accepted": true,
+        "accepted_item_id": 13,
+        "best_distance": 0,
+        "second_distance": 124,
+        "margin": 124,
+        "foreground_count": 131,
+        "roi_foreground_pixels": 2126
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "fe139b1bd7baa581f8dfb5a3a36f85426c47ba2a57497584277db963e9ca6b64",
+      "bits_mem_sha256": "90fe0c4d621fae248c799345fbb7f21fa207a7ae31fe2effd675bf94280b3e86"
+    },
+    {
+      "index": 4,
+      "id": "canonical_umbrella",
+      "category": "canonical",
+      "ground_truth_item_id": 14,
+      "note": "原SVG派生，接口自一致样本，不计作独立准确率",
+      "rgb_mem": "vectors/004_canonical_umbrella.rgb.mem",
+      "bits_mem": "vectors/004_canonical_umbrella.bits.mem",
+      "preview_png": "vectors/004_canonical_umbrella.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          174,
+          227,
+          219,
+          131,
+          0
+        ],
+        "candidate_item_id": 14,
+        "accepted": true,
+        "accepted_item_id": 14,
+        "best_distance": 0,
+        "second_distance": 131,
+        "margin": 131,
+        "foreground_count": 144,
+        "roi_foreground_pixels": 2326
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "41e0f8d05171e10adb23ce3d90e0e6d66dd7b0c02ee4e0dc5fd21e8b7f034afe",
+      "bits_mem_sha256": "dd37be3c7baa87b7205e0cbb64ad5b07df48740098aac4522f59c1dd3086e3d9"
+    },
+    {
+      "index": 5,
+      "id": "shift_apple_left",
+      "category": "shift_one_cell",
+      "ground_truth_item_id": 10,
+      "note": "整幅卡面平移(-4,0)像素，白色填充，无循环回绕",
+      "rgb_mem": "vectors/005_shift_apple_left.rgb.mem",
+      "bits_mem": "vectors/005_shift_apple_left.bits.mem",
+      "preview_png": "vectors/005_shift_apple_left.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          46,
+          139,
+          137,
+          135,
+          180
+        ],
+        "candidate_item_id": 10,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 46,
+        "second_distance": 135,
+        "margin": 89,
+        "foreground_count": 256,
+        "roi_foreground_pixels": 4088
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "cb87d7dd40fa32bdae0f98d5d46223ab37c047fa0eaeb9b5a3b92427a721c97e",
+      "bits_mem_sha256": "8472e2eaa579d896a92ca90b7c96ef3c2dfbf310a3722d1b203db1f69406396e"
+    },
+    {
+      "index": 6,
+      "id": "shift_apple_right",
+      "category": "shift_one_cell",
+      "ground_truth_item_id": 10,
+      "note": "整幅卡面平移(4,0)像素，白色填充，无循环回绕",
+      "rgb_mem": "vectors/006_shift_apple_right.rgb.mem",
+      "bits_mem": "vectors/006_shift_apple_right.bits.mem",
+      "preview_png": "vectors/006_shift_apple_right.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          46,
+          139,
+          137,
+          137,
+          176
+        ],
+        "candidate_item_id": 10,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 46,
+        "second_distance": 137,
+        "margin": 91,
+        "foreground_count": 256,
+        "roi_foreground_pixels": 4088
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "ec13d8acce2e5864c7cbebdd9372d3d2ff461953d65e138488219bfe7d2befb5",
+      "bits_mem_sha256": "e8944b1840826fb17108304d1dd2d511a11033c425d04bf25ecacb1419876825"
+    },
+    {
+      "index": 7,
+      "id": "shift_apple_up",
+      "category": "shift_one_cell",
+      "ground_truth_item_id": 10,
+      "note": "整幅卡面平移(0,-4)像素，白色填充，无循环回绕",
+      "rgb_mem": "vectors/007_shift_apple_up.rgb.mem",
+      "bits_mem": "vectors/007_shift_apple_up.bits.mem",
+      "preview_png": "vectors/007_shift_apple_up.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          44,
+          131,
+          145,
+          133,
+          158
+        ],
+        "candidate_item_id": 10,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 44,
+        "second_distance": 131,
+        "margin": 87,
+        "foreground_count": 256,
+        "roi_foreground_pixels": 4088
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "14f81daf527ad63a43f9a85af7a599b74579c0ac876a26f43b2fe7b424eab1e8",
+      "bits_mem_sha256": "f5d698b5a196c13ad6c51c9c8c4832dcd16817aa89a045d75a6e9285651124d3"
+    },
+    {
+      "index": 8,
+      "id": "shift_apple_down",
+      "category": "shift_one_cell",
+      "ground_truth_item_id": 10,
+      "note": "整幅卡面平移(0,4)像素，白色填充，无循环回绕",
+      "rgb_mem": "vectors/008_shift_apple_down.rgb.mem",
+      "bits_mem": "vectors/008_shift_apple_down.bits.mem",
+      "preview_png": "vectors/008_shift_apple_down.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          44,
+          139,
+          135,
+          139,
+          192
+        ],
+        "candidate_item_id": 10,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 44,
+        "second_distance": 135,
+        "margin": 91,
+        "foreground_count": 256,
+        "roi_foreground_pixels": 4088
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "44275da3b58a3230ca00ae4e92d7da83736ed222ee98444aeffe5ffb47740379",
+      "bits_mem_sha256": "d50593b2c2a1caacda6cf34270d7d3e13b116cca959e27e3bdaf43acc3ba9dec"
+    },
+    {
+      "index": 9,
+      "id": "rotate_apple_minus5",
+      "category": "rotate",
+      "ground_truth_item_id": 10,
+      "note": "围绕图心旋转-5度，双线性插值，白色填充",
+      "rgb_mem": "vectors/009_rotate_apple_minus5.rgb.mem",
+      "bits_mem": "vectors/009_rotate_apple_minus5.bits.mem",
+      "preview_png": "vectors/009_rotate_apple_minus5.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          22,
+          131,
+          135,
+          135,
+          172
+        ],
+        "candidate_item_id": 10,
+        "accepted": true,
+        "accepted_item_id": 10,
+        "best_distance": 22,
+        "second_distance": 131,
+        "margin": 109,
+        "foreground_count": 256,
+        "roi_foreground_pixels": 4127
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "9cc3a6a4d05df336bdc1388bd4e6e17c097899294b7793ccb69baf8ddc08b8eb",
+      "bits_mem_sha256": "41b64dd0e60e79452d64528e37d00ed51bb1ff62c0134b6a997c226362c1542c"
+    },
+    {
+      "index": 10,
+      "id": "rotate_apple_plus5",
+      "category": "rotate",
+      "ground_truth_item_id": 10,
+      "note": "围绕图心旋转5度，双线性插值，白色填充",
+      "rgb_mem": "vectors/010_rotate_apple_plus5.rgb.mem",
+      "bits_mem": "vectors/010_rotate_apple_plus5.bits.mem",
+      "preview_png": "vectors/010_rotate_apple_plus5.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          17,
+          136,
+          136,
+          134,
+          177
+        ],
+        "candidate_item_id": 10,
+        "accepted": true,
+        "accepted_item_id": 10,
+        "best_distance": 17,
+        "second_distance": 134,
+        "margin": 117,
+        "foreground_count": 259,
+        "roi_foreground_pixels": 4120
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "cc39284c3c5e8de391e113a9cbf5d1a34d2f3befda34fd2337ec97e0b2a7c5b5",
+      "bits_mem_sha256": "0e2aedb08e59fc8bd9433cf50ce8a040df69a2b9f4cd1a2c542c641290b38965"
+    },
+    {
+      "index": 11,
+      "id": "brightness_apple_dark",
+      "category": "brightness",
+      "ground_truth_item_id": 10,
+      "note": "RGB及白背景统一乘0.65；固定暗阈值可把暗背景误当前景",
+      "rgb_mem": "vectors/011_brightness_apple_dark.rgb.mem",
+      "bits_mem": "vectors/011_brightness_apple_dark.bits.mem",
+      "preview_png": "vectors/011_brightness_apple_dark.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          768,
+          857,
+          857,
+          893,
+          880
+        ],
+        "candidate_item_id": 10,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 768,
+        "second_distance": 857,
+        "margin": 89,
+        "foreground_count": 1024,
+        "roi_foreground_pixels": 16384
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "032367b464c8723de84e5570d75251d315a494f8ebdc45189fbc65c4eff471a8",
+      "bits_mem_sha256": "9be775b04fa8858daed7f3d56356913280f30c4efe5498afcac58e9a78bec52b"
+    },
+    {
+      "index": 12,
+      "id": "brightness_apple_bright",
+      "category": "brightness",
+      "ground_truth_item_id": 10,
+      "note": "RGB及白背景统一乘1.2；固定暗阈值可把暗背景误当前景",
+      "rgb_mem": "vectors/012_brightness_apple_bright.rgb.mem",
+      "bits_mem": "vectors/012_brightness_apple_bright.bits.mem",
+      "preview_png": "vectors/012_brightness_apple_bright.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          2,
+          129,
+          133,
+          131,
+          174
+        ],
+        "candidate_item_id": 10,
+        "accepted": true,
+        "accepted_item_id": 10,
+        "best_distance": 2,
+        "second_distance": 129,
+        "margin": 127,
+        "foreground_count": 254,
+        "roi_foreground_pixels": 4064
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "5b15ed72dcd828a5fd6da52f6317aec7fdea2a3caef33fdc448c54d6834d1987",
+      "bits_mem_sha256": "7468a578e3b4797b49835b471f32dea24a3044d5f9aed124f3abfd4dee556c9f"
+    },
+    {
+      "index": 13,
+      "id": "noise_apple",
+      "category": "salt_pepper_noise",
+      "ground_truth_item_id": 10,
+      "note": "固定seed=20261020，328个不同RGB像素置黑或白",
+      "rgb_mem": "vectors/013_noise_apple.rgb.mem",
+      "bits_mem": "vectors/013_noise_apple.bits.mem",
+      "preview_png": "vectors/013_noise_apple.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          10,
+          135,
+          137,
+          133,
+          180
+        ],
+        "candidate_item_id": 10,
+        "accepted": true,
+        "accepted_item_id": 10,
+        "best_distance": 10,
+        "second_distance": 133,
+        "margin": 123,
+        "foreground_count": 256,
+        "roi_foreground_pixels": 4146
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "ccba7c6c2b77cfd82bb7144e08e1c1bf6c734faf56c2828580ecabbc21b2a951",
+      "bits_mem_sha256": "723a08c2d4cae24f3ff2158cea9f140b8efb3e384f75cbb5656c58fd9732772f"
+    },
+    {
+      "index": 14,
+      "id": "occlusion_apple",
+      "category": "half_occlusion",
+      "ground_truth_item_id": 10,
+      "note": "卡面右半幅由白色覆盖；观察拒识或误判，不要求仍识别",
+      "rgb_mem": "vectors/014_occlusion_apple.rgb.mem",
+      "bits_mem": "vectors/014_occlusion_apple.bits.mem",
+      "preview_png": "vectors/014_occlusion_apple.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          136,
+          141,
+          147,
+          119,
+          172
+        ],
+        "candidate_item_id": 13,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 119,
+        "second_distance": 136,
+        "margin": 17,
+        "foreground_count": 120,
+        "roi_foreground_pixels": 1896
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "131e791a1926514a4b209fbc286a2bd128dbc83f87bbe90044c88548066f5329",
+      "bits_mem_sha256": "e4a87cc4bc0976b6185449d367c55187af0367d2703a8d82821c8f627cad8716"
+    },
+    {
+      "index": 15,
+      "id": "shift_banana_left",
+      "category": "shift_one_cell",
+      "ground_truth_item_id": 11,
+      "note": "整幅卡面平移(-4,0)像素，白色填充，无循环回绕",
+      "rgb_mem": "vectors/015_shift_banana_left.rgb.mem",
+      "bits_mem": "vectors/015_shift_banana_left.bits.mem",
+      "preview_png": "vectors/015_shift_banana_left.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          139,
+          48,
+          136,
+          142,
+          229
+        ],
+        "candidate_item_id": 11,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 48,
+        "second_distance": 136,
+        "margin": 88,
+        "foreground_count": 167,
+        "roi_foreground_pixels": 2629
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "6f576845d5e14dab37bd005f9ab73eaa891bdfd61bbc279da9c17e0edb2ca1a5",
+      "bits_mem_sha256": "da0b287d5799b4783172e8426db237e2db5156c006c0ee06651bf4ece424f926"
+    },
+    {
+      "index": 16,
+      "id": "shift_banana_right",
+      "category": "shift_one_cell",
+      "ground_truth_item_id": 11,
+      "note": "整幅卡面平移(4,0)像素，白色填充，无循环回绕",
+      "rgb_mem": "vectors/016_shift_banana_right.rgb.mem",
+      "bits_mem": "vectors/016_shift_banana_right.bits.mem",
+      "preview_png": "vectors/016_shift_banana_right.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          139,
+          48,
+          134,
+          146,
+          223
+        ],
+        "candidate_item_id": 11,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 48,
+        "second_distance": 134,
+        "margin": 86,
+        "foreground_count": 167,
+        "roi_foreground_pixels": 2629
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "95b4853e3034cf6b170a114da7c1698dc2ee8833a223343f72fae317c56cd6a4",
+      "bits_mem_sha256": "67657fb47e5a2dabea182166faade4d80a256c7c73c0a6ed2e9798a999f1734d"
+    },
+    {
+      "index": 17,
+      "id": "shift_banana_up",
+      "category": "shift_one_cell",
+      "ground_truth_item_id": 11,
+      "note": "整幅卡面平移(0,-4)像素，白色填充，无循环回绕",
+      "rgb_mem": "vectors/017_shift_banana_up.rgb.mem",
+      "bits_mem": "vectors/017_shift_banana_up.bits.mem",
+      "preview_png": "vectors/017_shift_banana_up.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          139,
+          40,
+          136,
+          126,
+          207
+        ],
+        "candidate_item_id": 11,
+        "accepted": true,
+        "accepted_item_id": 11,
+        "best_distance": 40,
+        "second_distance": 126,
+        "margin": 86,
+        "foreground_count": 167,
+        "roi_foreground_pixels": 2629
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "b2a89d985cf4caa5ae53c614fd34f28c22a1ee01ac2478a84dbb47ed1f4581d9",
+      "bits_mem_sha256": "10da7cd45b2b22f7ff8a730050ab36259a70eff7065573e83868514f1696720a"
+    },
+    {
+      "index": 18,
+      "id": "shift_banana_down",
+      "category": "shift_one_cell",
+      "ground_truth_item_id": 11,
+      "note": "整幅卡面平移(0,4)像素，白色填充，无循环回绕",
+      "rgb_mem": "vectors/018_shift_banana_down.rgb.mem",
+      "bits_mem": "vectors/018_shift_banana_down.bits.mem",
+      "preview_png": "vectors/018_shift_banana_down.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          131,
+          40,
+          144,
+          164,
+          241
+        ],
+        "candidate_item_id": 11,
+        "accepted": true,
+        "accepted_item_id": 11,
+        "best_distance": 40,
+        "second_distance": 131,
+        "margin": 91,
+        "foreground_count": 167,
+        "roi_foreground_pixels": 2629
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "1f41a3968a13d5651a55fad557578fb2aa6ea4ed7278a111cf4c9d362279b09a",
+      "bits_mem_sha256": "6792e92e4797b18ce43ffc5cb2c953f03731076326f29ef88e7b0ad700058d59"
+    },
+    {
+      "index": 19,
+      "id": "rotate_banana_minus5",
+      "category": "rotate",
+      "ground_truth_item_id": 11,
+      "note": "围绕图心旋转-5度，双线性插值，白色填充",
+      "rgb_mem": "vectors/019_rotate_banana_minus5.rgb.mem",
+      "bits_mem": "vectors/019_rotate_banana_minus5.bits.mem",
+      "preview_png": "vectors/019_rotate_banana_minus5.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          127,
+          24,
+          130,
+          138,
+          227
+        ],
+        "candidate_item_id": 11,
+        "accepted": true,
+        "accepted_item_id": 11,
+        "best_distance": 24,
+        "second_distance": 127,
+        "margin": 103,
+        "foreground_count": 165,
+        "roi_foreground_pixels": 2652
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "78dcc395c5f4c569017f678d0bcbbead23670bd7855405142e182937022b6268",
+      "bits_mem_sha256": "fa418615cef7ee8f70c23377319e51354f1343abaa32adb978505674c921f118"
+    },
+    {
+      "index": 20,
+      "id": "rotate_banana_plus5",
+      "category": "rotate",
+      "ground_truth_item_id": 11,
+      "note": "围绕图心旋转5度，双线性插值，白色填充",
+      "rgb_mem": "vectors/020_rotate_banana_plus5.rgb.mem",
+      "bits_mem": "vectors/020_rotate_banana_plus5.bits.mem",
+      "preview_png": "vectors/020_rotate_banana_plus5.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          130,
+          21,
+          135,
+          139,
+          230
+        ],
+        "candidate_item_id": 11,
+        "accepted": true,
+        "accepted_item_id": 11,
+        "best_distance": 21,
+        "second_distance": 130,
+        "margin": 109,
+        "foreground_count": 166,
+        "roi_foreground_pixels": 2649
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "4633bfc74734ec18bdabfdadc6d728d7a90f695db0570d4a610cebd0db656af0",
+      "bits_mem_sha256": "8711959de415f9a179a59b7bad97b3cff8223615ec5143e000df20b82026c4c4"
+    },
+    {
+      "index": 21,
+      "id": "brightness_banana_dark",
+      "category": "brightness",
+      "ground_truth_item_id": 11,
+      "note": "RGB及白背景统一乘0.65；固定暗阈值可把暗背景误当前景",
+      "rgb_mem": "vectors/021_brightness_banana_dark.rgb.mem",
+      "bits_mem": "vectors/021_brightness_banana_dark.bits.mem",
+      "preview_png": "vectors/021_brightness_banana_dark.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          768,
+          857,
+          857,
+          893,
+          880
+        ],
+        "candidate_item_id": 10,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 768,
+        "second_distance": 857,
+        "margin": 89,
+        "foreground_count": 1024,
+        "roi_foreground_pixels": 16384
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "2f8fce9c6fc27c91844ab014607cb7ecedacad45be0e237b8b8367c3c55981c3",
+      "bits_mem_sha256": "9be775b04fa8858daed7f3d56356913280f30c4efe5498afcac58e9a78bec52b"
+    },
+    {
+      "index": 22,
+      "id": "brightness_banana_bright",
+      "category": "brightness",
+      "ground_truth_item_id": 11,
+      "note": "RGB及白背景统一乘1.2；固定暗阈值可把暗背景误当前景",
+      "rgb_mem": "vectors/022_brightness_banana_bright.rgb.mem",
+      "bits_mem": "vectors/022_brightness_banana_bright.bits.mem",
+      "preview_png": "vectors/022_brightness_banana_bright.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          131,
+          2,
+          136,
+          140,
+          227
+        ],
+        "candidate_item_id": 11,
+        "accepted": true,
+        "accepted_item_id": 11,
+        "best_distance": 2,
+        "second_distance": 131,
+        "margin": 129,
+        "foreground_count": 165,
+        "roi_foreground_pixels": 2596
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "d027ce725238e2d4621401577b8d6fdc66558ac17bfbc8e10a1efbe3bfa02900",
+      "bits_mem_sha256": "d3ae7627492fe9c70ec61088fadc3bd3ca7541b268678c7b9cfca6e482b66525"
+    },
+    {
+      "index": 23,
+      "id": "noise_banana",
+      "category": "salt_pepper_noise",
+      "ground_truth_item_id": 11,
+      "note": "固定seed=20261021，328个不同RGB像素置黑或白",
+      "rgb_mem": "vectors/023_noise_banana.rgb.mem",
+      "bits_mem": "vectors/023_noise_banana.bits.mem",
+      "preview_png": "vectors/023_noise_banana.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          136,
+          7,
+          143,
+          147,
+          232
+        ],
+        "candidate_item_id": 11,
+        "accepted": true,
+        "accepted_item_id": 11,
+        "best_distance": 7,
+        "second_distance": 136,
+        "margin": 129,
+        "foreground_count": 172,
+        "roi_foreground_pixels": 2726
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "27ca2f2b48e36b036b258970dec64f45c7d425103e1a9e117a08e83a22fe7ce5",
+      "bits_mem_sha256": "bcbea259d94c76310c627d6918640e22cad44871d32a1326d582a4aab1ffebf6"
+    },
+    {
+      "index": 24,
+      "id": "occlusion_banana",
+      "category": "half_occlusion",
+      "ground_truth_item_id": 11,
+      "note": "卡面右半幅由白色覆盖；观察拒识或误判，不要求仍识别",
+      "rgb_mem": "vectors/024_occlusion_banana.rgb.mem",
+      "bits_mem": "vectors/024_occlusion_banana.bits.mem",
+      "preview_png": "vectors/024_occlusion_banana.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          197,
+          80,
+          158,
+          142,
+          203
+        ],
+        "candidate_item_id": 11,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 80,
+        "second_distance": 142,
+        "margin": 62,
+        "foreground_count": 87,
+        "roi_foreground_pixels": 1367
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "2bf9469673acabec9a1aeb7902f4e8f39b0988f8cb69bde3f011d364946bb7b0",
+      "bits_mem_sha256": "22cdcb7b233bc99512ef4edc68a9f35d2a0a366fc0b4f44b53e846c9b3fa6f43"
+    },
+    {
+      "index": 25,
+      "id": "shift_car_left",
+      "category": "shift_one_cell",
+      "ground_truth_item_id": 12,
+      "note": "整幅卡面平移(-4,0)像素，白色填充，无循环回绕",
+      "rgb_mem": "vectors/025_shift_car_left.rgb.mem",
+      "bits_mem": "vectors/025_shift_car_left.bits.mem",
+      "preview_png": "vectors/025_shift_car_left.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          137,
+          134,
+          46,
+          126,
+          217
+        ],
+        "candidate_item_id": 12,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 46,
+        "second_distance": 126,
+        "margin": 80,
+        "foreground_count": 167,
+        "roi_foreground_pixels": 2617
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "28c91861e231839c2b7c5c5b66bf84fae4b226789edaaa1e701249ea0eae2167",
+      "bits_mem_sha256": "a2da05ecfbceb0258b09b12c4afd43b0f30975f0de369b84fedf1151b17bb3d0"
+    },
+    {
+      "index": 26,
+      "id": "shift_car_right",
+      "category": "shift_one_cell",
+      "ground_truth_item_id": 12,
+      "note": "整幅卡面平移(4,0)像素，白色填充，无循环回绕",
+      "rgb_mem": "vectors/026_shift_car_right.rgb.mem",
+      "bits_mem": "vectors/026_shift_car_right.bits.mem",
+      "preview_png": "vectors/026_shift_car_right.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          137,
+          136,
+          46,
+          128,
+          219
+        ],
+        "candidate_item_id": 12,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 46,
+        "second_distance": 128,
+        "margin": 82,
+        "foreground_count": 167,
+        "roi_foreground_pixels": 2617
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "ae8496ed4c6d854e6f7e6a6aa1223ce0b380aaa204e25d1d99e7e7b361d85c4e",
+      "bits_mem_sha256": "50627712a8c65ee543f7124d8452dabd891483819a8ada10276f5e7a6ec99afb"
+    },
+    {
+      "index": 27,
+      "id": "shift_car_up",
+      "category": "shift_one_cell",
+      "ground_truth_item_id": 12,
+      "note": "整幅卡面平移(0,-4)像素，白色填充，无循环回绕",
+      "rgb_mem": "vectors/027_shift_car_up.rgb.mem",
+      "bits_mem": "vectors/027_shift_car_up.bits.mem",
+      "preview_png": "vectors/027_shift_car_up.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          135,
+          144,
+          68,
+          126,
+          183
+        ],
+        "candidate_item_id": 12,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 68,
+        "second_distance": 126,
+        "margin": 58,
+        "foreground_count": 167,
+        "roi_foreground_pixels": 2617
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "45ab1bdb51dc9d7a301402cbce5f399bcbeb5ad11e3308861bdaa6e88d0cae8b",
+      "bits_mem_sha256": "4205a75160042a4aa781867ec762f30b10d3abab94f4c748c9291e33f311ce9a"
+    },
+    {
+      "index": 28,
+      "id": "shift_car_down",
+      "category": "shift_one_cell",
+      "ground_truth_item_id": 12,
+      "note": "整幅卡面平移(0,4)像素，白色填充，无循环回绕",
+      "rgb_mem": "vectors/028_shift_car_down.rgb.mem",
+      "bits_mem": "vectors/028_shift_car_down.bits.mem",
+      "preview_png": "vectors/028_shift_car_down.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          145,
+          136,
+          68,
+          126,
+          237
+        ],
+        "candidate_item_id": 12,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 68,
+        "second_distance": 126,
+        "margin": 58,
+        "foreground_count": 167,
+        "roi_foreground_pixels": 2617
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "71748602db233c8870fe012e7133ef5e08bd8e19ffc808b4a550214394b90f8e",
+      "bits_mem_sha256": "1cef894124e2737aef6465081879f3d2c6f14cba36ccbb6c213d4a315c197c59"
+    },
+    {
+      "index": 29,
+      "id": "rotate_car_minus5",
+      "category": "rotate",
+      "ground_truth_item_id": 12,
+      "note": "围绕图心旋转-5度，双线性插值，白色填充",
+      "rgb_mem": "vectors/029_rotate_car_minus5.rgb.mem",
+      "bits_mem": "vectors/029_rotate_car_minus5.bits.mem",
+      "preview_png": "vectors/029_rotate_car_minus5.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          130,
+          141,
+          27,
+          117,
+          206
+        ],
+        "candidate_item_id": 12,
+        "accepted": true,
+        "accepted_item_id": 12,
+        "best_distance": 27,
+        "second_distance": 117,
+        "margin": 90,
+        "foreground_count": 168,
+        "roi_foreground_pixels": 2679
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "3b303c8e47f93d18c7e2ad91f7677628330c9f4697bd4a4dd744578d5d4affa8",
+      "bits_mem_sha256": "33e8534aea34d2af536ebd6d7dc5d2fb52d2182fd8b8256fec52af974eca71a0"
+    },
+    {
+      "index": 30,
+      "id": "rotate_car_plus5",
+      "category": "rotate",
+      "ground_truth_item_id": 12,
+      "note": "围绕图心旋转5度，双线性插值，白色填充",
+      "rgb_mem": "vectors/030_rotate_car_plus5.rgb.mem",
+      "bits_mem": "vectors/030_rotate_car_plus5.bits.mem",
+      "preview_png": "vectors/030_rotate_car_plus5.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          128,
+          141,
+          25,
+          117,
+          212
+        ],
+        "candidate_item_id": 12,
+        "accepted": true,
+        "accepted_item_id": 12,
+        "best_distance": 25,
+        "second_distance": 117,
+        "margin": 92,
+        "foreground_count": 172,
+        "roi_foreground_pixels": 2676
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "85226e4a2ab70bf96786623add7021128e95c493ea77add2f641835aa941bea0",
+      "bits_mem_sha256": "dc98f3a565078cb4005132cb6453b0885bb822097801f438a2232faa216aafd9"
+    },
+    {
+      "index": 31,
+      "id": "brightness_car_dark",
+      "category": "brightness",
+      "ground_truth_item_id": 12,
+      "note": "RGB及白背景统一乘0.65；固定暗阈值可把暗背景误当前景",
+      "rgb_mem": "vectors/031_brightness_car_dark.rgb.mem",
+      "bits_mem": "vectors/031_brightness_car_dark.bits.mem",
+      "preview_png": "vectors/031_brightness_car_dark.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          768,
+          857,
+          857,
+          893,
+          880
+        ],
+        "candidate_item_id": 10,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 768,
+        "second_distance": 857,
+        "margin": 89,
+        "foreground_count": 1024,
+        "roi_foreground_pixels": 16384
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "169873f40a867cfee7ee344b0b3c6dd270c31cb1dc8b3386ed9669c2c6b5b981",
+      "bits_mem_sha256": "9be775b04fa8858daed7f3d56356913280f30c4efe5498afcac58e9a78bec52b"
+    },
+    {
+      "index": 32,
+      "id": "brightness_car_bright",
+      "category": "brightness",
+      "ground_truth_item_id": 12,
+      "note": "RGB及白背景统一乘1.2；固定暗阈值可把暗背景误当前景",
+      "rgb_mem": "vectors/032_brightness_car_bright.rgb.mem",
+      "bits_mem": "vectors/032_brightness_car_bright.bits.mem",
+      "preview_png": "vectors/032_brightness_car_bright.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          133,
+          138,
+          2,
+          124,
+          217
+        ],
+        "candidate_item_id": 12,
+        "accepted": true,
+        "accepted_item_id": 12,
+        "best_distance": 2,
+        "second_distance": 124,
+        "margin": 122,
+        "foreground_count": 165,
+        "roi_foreground_pixels": 2594
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "3227ed096bcbd3d70451de9da5366ee5406e2cac70e28bbcd6bf89bacf943396",
+      "bits_mem_sha256": "84064fa86ffb8e334346c0c75e38637336bdb88bbcb62334d0eb871f5f05814d"
+    },
+    {
+      "index": 33,
+      "id": "noise_car",
+      "category": "salt_pepper_noise",
+      "ground_truth_item_id": 12,
+      "note": "固定seed=20261022，328个不同RGB像素置黑或白",
+      "rgb_mem": "vectors/033_noise_car.rgb.mem",
+      "bits_mem": "vectors/033_noise_car.bits.mem",
+      "preview_png": "vectors/033_noise_car.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          136,
+          143,
+          7,
+          129,
+          224
+        ],
+        "candidate_item_id": 12,
+        "accepted": true,
+        "accepted_item_id": 12,
+        "best_distance": 7,
+        "second_distance": 129,
+        "margin": 122,
+        "foreground_count": 172,
+        "roi_foreground_pixels": 2718
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "c0a58b014d3ae47701c267b1c089abac3524ec771901cb25102ad420e443d761",
+      "bits_mem_sha256": "2f07d49e13f8e8ee90c63ffa75a32e9e661c667aa15107263b390037ff8322f9"
+    },
+    {
+      "index": 34,
+      "id": "occlusion_car",
+      "category": "half_occlusion",
+      "ground_truth_item_id": 12,
+      "note": "卡面右半幅由白色覆盖；观察拒识或误判，不要求仍识别",
+      "rgb_mem": "vectors/034_occlusion_car.rgb.mem",
+      "bits_mem": "vectors/034_occlusion_car.bits.mem",
+      "preview_png": "vectors/034_occlusion_car.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          198,
+          153,
+          85,
+          125,
+          192
+        ],
+        "candidate_item_id": 12,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 85,
+        "second_distance": 125,
+        "margin": 40,
+        "foreground_count": 82,
+        "roi_foreground_pixels": 1261
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "7492531459c1a3c88a1cc1fe0f0200defaf8cdb59f0c48729478d129521ecc37",
+      "bits_mem_sha256": "6cbb9db254cf94d2bed228e7e72bdeedd5d71891640695dedf1063b025a285cd"
+    },
+    {
+      "index": 35,
+      "id": "shift_star_left",
+      "category": "shift_one_cell",
+      "ground_truth_item_id": 13,
+      "note": "整幅卡面平移(-4,0)像素，白色填充，无循环回绕",
+      "rgb_mem": "vectors/035_shift_star_left.rgb.mem",
+      "bits_mem": "vectors/035_shift_star_left.bits.mem",
+      "preview_png": "vectors/035_shift_star_left.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          137,
+          146,
+          128,
+          40,
+          137
+        ],
+        "candidate_item_id": 13,
+        "accepted": true,
+        "accepted_item_id": 13,
+        "best_distance": 40,
+        "second_distance": 128,
+        "margin": 88,
+        "foreground_count": 131,
+        "roi_foreground_pixels": 2126
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "a3e9f3d41407e93da31a3a8757c6239d995766ba81128a55383f8c193161516a",
+      "bits_mem_sha256": "c001e7ddbcd60e640b0cd16ed6c1aa565b650925c9c70b75d5c8440117940be7"
+    },
+    {
+      "index": 36,
+      "id": "shift_star_right",
+      "category": "shift_one_cell",
+      "ground_truth_item_id": 13,
+      "note": "整幅卡面平移(4,0)像素，白色填充，无循环回绕",
+      "rgb_mem": "vectors/036_shift_star_right.rgb.mem",
+      "bits_mem": "vectors/036_shift_star_right.bits.mem",
+      "preview_png": "vectors/036_shift_star_right.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          135,
+          142,
+          126,
+          40,
+          133
+        ],
+        "candidate_item_id": 13,
+        "accepted": true,
+        "accepted_item_id": 13,
+        "best_distance": 40,
+        "second_distance": 126,
+        "margin": 86,
+        "foreground_count": 131,
+        "roi_foreground_pixels": 2126
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "797242eb4b279bb9c14d45575735d4bd7be3c0a25562f1931fdcd3331a4056a3",
+      "bits_mem_sha256": "da127948292b4dc8c81932395f700210e04a5155c47ef77c7953fbc237c28427"
+    },
+    {
+      "index": 37,
+      "id": "shift_star_up",
+      "category": "shift_one_cell",
+      "ground_truth_item_id": 13,
+      "note": "整幅卡面平移(0,-4)像素，白色填充，无循环回绕",
+      "rgb_mem": "vectors/037_shift_star_up.rgb.mem",
+      "bits_mem": "vectors/037_shift_star_up.bits.mem",
+      "preview_png": "vectors/037_shift_star_up.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          139,
+          164,
+          126,
+          44,
+          113
+        ],
+        "candidate_item_id": 13,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 44,
+        "second_distance": 113,
+        "margin": 69,
+        "foreground_count": 131,
+        "roi_foreground_pixels": 2126
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "7db5aa59a2ae1ee4d2d5bbedeb24c71507724ef238bea55ff3f59078126aad64",
+      "bits_mem_sha256": "9fc063fa8ae0ff4de6672d4f6ec7c40464da06e83893af0c13b33d1557dd4678"
+    },
+    {
+      "index": 38,
+      "id": "shift_star_down",
+      "category": "shift_one_cell",
+      "ground_truth_item_id": 13,
+      "note": "整幅卡面平移(0,4)像素，白色填充，无循环回绕",
+      "rgb_mem": "vectors/038_shift_star_down.rgb.mem",
+      "bits_mem": "vectors/038_shift_star_down.bits.mem",
+      "preview_png": "vectors/038_shift_star_down.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          133,
+          126,
+          126,
+          44,
+          161
+        ],
+        "candidate_item_id": 13,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 44,
+        "second_distance": 126,
+        "margin": 82,
+        "foreground_count": 131,
+        "roi_foreground_pixels": 2126
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "6809bee8d7fa0db9899715e7c15320597674727ce74b12d2dfd53118853a3e39",
+      "bits_mem_sha256": "3f1b6d806d6e9dd3e300c6a9aacb55f96737dda88e22d2ef966ab7d48d286a26"
+    },
+    {
+      "index": 39,
+      "id": "rotate_star_minus5",
+      "category": "rotate",
+      "ground_truth_item_id": 13,
+      "note": "围绕图心旋转-5度，双线性插值，白色填充",
+      "rgb_mem": "vectors/039_rotate_star_minus5.rgb.mem",
+      "bits_mem": "vectors/039_rotate_star_minus5.bits.mem",
+      "preview_png": "vectors/039_rotate_star_minus5.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          126,
+          137,
+          125,
+          29,
+          134
+        ],
+        "candidate_item_id": 13,
+        "accepted": true,
+        "accepted_item_id": 13,
+        "best_distance": 29,
+        "second_distance": 125,
+        "margin": 96,
+        "foreground_count": 136,
+        "roi_foreground_pixels": 2163
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "7edd4fd52ea477dd97548bb2799aa12e564a9d5dd614f6b3611bb1f068fbc2f3",
+      "bits_mem_sha256": "91e013c81f95f46de234f09c65a665422167188c7ecccfb6a006f2db803c45cf"
+    },
+    {
+      "index": 40,
+      "id": "rotate_star_plus5",
+      "category": "rotate",
+      "ground_truth_item_id": 13,
+      "note": "围绕图心旋转5度，双线性插值，白色填充",
+      "rgb_mem": "vectors/040_rotate_star_plus5.rgb.mem",
+      "bits_mem": "vectors/040_rotate_star_plus5.bits.mem",
+      "preview_png": "vectors/040_rotate_star_plus5.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          129,
+          132,
+          122,
+          30,
+          135
+        ],
+        "candidate_item_id": 13,
+        "accepted": true,
+        "accepted_item_id": 13,
+        "best_distance": 30,
+        "second_distance": 122,
+        "margin": 92,
+        "foreground_count": 135,
+        "roi_foreground_pixels": 2163
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "240d14dbf5a00b1a921b5c3b40ab03c9822e1ecb24975c35fd3a1c6128f2467e",
+      "bits_mem_sha256": "87290748a585dbabdb1f776cd05fe61ddbf323e8e6a4ce4ab56fcc973f521b16"
+    },
+    {
+      "index": 41,
+      "id": "brightness_star_dark",
+      "category": "brightness",
+      "ground_truth_item_id": 13,
+      "note": "RGB及白背景统一乘0.65；固定暗阈值可把暗背景误当前景",
+      "rgb_mem": "vectors/041_brightness_star_dark.rgb.mem",
+      "bits_mem": "vectors/041_brightness_star_dark.bits.mem",
+      "preview_png": "vectors/041_brightness_star_dark.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          768,
+          857,
+          857,
+          893,
+          880
+        ],
+        "candidate_item_id": 10,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 768,
+        "second_distance": 857,
+        "margin": 89,
+        "foreground_count": 1024,
+        "roi_foreground_pixels": 16384
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "c9c7e45463f370c7c7aaa3c8a2b011bbde10eb794f10dc43c378225953371964",
+      "bits_mem_sha256": "9be775b04fa8858daed7f3d56356913280f30c4efe5498afcac58e9a78bec52b"
+    },
+    {
+      "index": 42,
+      "id": "brightness_star_bright",
+      "category": "brightness",
+      "ground_truth_item_id": 13,
+      "note": "RGB及白背景统一乘1.2；固定暗阈值可把暗背景误当前景",
+      "rgb_mem": "vectors/042_brightness_star_bright.rgb.mem",
+      "bits_mem": "vectors/042_brightness_star_bright.bits.mem",
+      "preview_png": "vectors/042_brightness_star_bright.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          131,
+          142,
+          124,
+          0,
+          131
+        ],
+        "candidate_item_id": 13,
+        "accepted": true,
+        "accepted_item_id": 13,
+        "best_distance": 0,
+        "second_distance": 124,
+        "margin": 124,
+        "foreground_count": 131,
+        "roi_foreground_pixels": 2115
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "f0a44e58527acd15db226f3462601feb9a94477407a78427b259aa72929be0f5",
+      "bits_mem_sha256": "90fe0c4d621fae248c799345fbb7f21fa207a7ae31fe2effd675bf94280b3e86"
+    },
+    {
+      "index": 43,
+      "id": "noise_star",
+      "category": "salt_pepper_noise",
+      "ground_truth_item_id": 13,
+      "note": "固定seed=20261023，328个不同RGB像素置黑或白",
+      "rgb_mem": "vectors/043_noise_star.rgb.mem",
+      "bits_mem": "vectors/043_noise_star.bits.mem",
+      "preview_png": "vectors/043_noise_star.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          138,
+          149,
+          129,
+          7,
+          138
+        ],
+        "candidate_item_id": 13,
+        "accepted": true,
+        "accepted_item_id": 13,
+        "best_distance": 7,
+        "second_distance": 129,
+        "margin": 122,
+        "foreground_count": 136,
+        "roi_foreground_pixels": 2254
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "1f7f3215c673d6da63805581f44fc6386f753bcd6c667d3345f6fef78d076382",
+      "bits_mem_sha256": "a17560d0a28818d0ff6123d1d57a253f809032cc1f00a68ab7ad08a1f012f18d"
+    },
+    {
+      "index": 44,
+      "id": "occlusion_star",
+      "category": "half_occlusion",
+      "ground_truth_item_id": 13,
+      "note": "卡面右半幅由白色覆盖；观察拒识或误判，不要求仍识别",
+      "rgb_mem": "vectors/044_occlusion_star.rgb.mem",
+      "bits_mem": "vectors/044_occlusion_star.bits.mem",
+      "preview_png": "vectors/044_occlusion_star.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          191,
+          158,
+          146,
+          64,
+          147
+        ],
+        "candidate_item_id": 13,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 64,
+        "second_distance": 146,
+        "margin": 82,
+        "foreground_count": 67,
+        "roi_foreground_pixels": 1050
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "6ad25a3b7ca838cfe2a3f306e2189850c07a507293931cc865c91e45ae42c1aa",
+      "bits_mem_sha256": "b7e43832bd7b9fcf7ea2abab050419b45c2a7266f27611cab0bc37f7d77f7430"
+    },
+    {
+      "index": 45,
+      "id": "shift_umbrella_left",
+      "category": "shift_one_cell",
+      "ground_truth_item_id": 14,
+      "note": "整幅卡面平移(-4,0)像素，白色填充，无循环回绕",
+      "rgb_mem": "vectors/045_shift_umbrella_left.rgb.mem",
+      "bits_mem": "vectors/045_shift_umbrella_left.bits.mem",
+      "preview_png": "vectors/045_shift_umbrella_left.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          176,
+          223,
+          219,
+          133,
+          56
+        ],
+        "candidate_item_id": 14,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 56,
+        "second_distance": 133,
+        "margin": 77,
+        "foreground_count": 144,
+        "roi_foreground_pixels": 2326
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "95ddf0da858328a27db8f6c02774caad908c39e17e58fb1b3ddc68d60c7a7d72",
+      "bits_mem_sha256": "16cc26d705c0da62f6600bb72ffe3d203e3af2ad7c9c76abe25673b6630c582c"
+    },
+    {
+      "index": 46,
+      "id": "shift_umbrella_right",
+      "category": "shift_one_cell",
+      "ground_truth_item_id": 14,
+      "note": "整幅卡面平移(4,0)像素，白色填充，无循环回绕",
+      "rgb_mem": "vectors/046_shift_umbrella_right.rgb.mem",
+      "bits_mem": "vectors/046_shift_umbrella_right.bits.mem",
+      "preview_png": "vectors/046_shift_umbrella_right.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          180,
+          229,
+          217,
+          137,
+          56
+        ],
+        "candidate_item_id": 14,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 56,
+        "second_distance": 137,
+        "margin": 81,
+        "foreground_count": 144,
+        "roi_foreground_pixels": 2326
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "0575bbdaec00a8ba321b9567ecaa3dbb11aff57d09a3ea7bdc5f2d45058567f3",
+      "bits_mem_sha256": "28aa9567515b027a23dd505295ee0a5007db947e2dc087c42fdc9d896d7fd952"
+    },
+    {
+      "index": 47,
+      "id": "shift_umbrella_up",
+      "category": "shift_one_cell",
+      "ground_truth_item_id": 14,
+      "note": "整幅卡面平移(0,-4)像素，白色填充，无循环回绕",
+      "rgb_mem": "vectors/047_shift_umbrella_up.rgb.mem",
+      "bits_mem": "vectors/047_shift_umbrella_up.bits.mem",
+      "preview_png": "vectors/047_shift_umbrella_up.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          192,
+          241,
+          237,
+          161,
+          50
+        ],
+        "candidate_item_id": 14,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 50,
+        "second_distance": 161,
+        "margin": 111,
+        "foreground_count": 144,
+        "roi_foreground_pixels": 2326
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "9cfc83dd495300e888548cfda44b66d3077a27ec2fdbf72eedf3526b9428377f",
+      "bits_mem_sha256": "064009c3645d9e3ea19cd8741e1a32a223ab82b4d1c92ba967602182d33029d4"
+    },
+    {
+      "index": 48,
+      "id": "shift_umbrella_down",
+      "category": "shift_one_cell",
+      "ground_truth_item_id": 14,
+      "note": "整幅卡面平移(0,4)像素，白色填充，无循环回绕",
+      "rgb_mem": "vectors/048_shift_umbrella_down.rgb.mem",
+      "bits_mem": "vectors/048_shift_umbrella_down.bits.mem",
+      "preview_png": "vectors/048_shift_umbrella_down.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          158,
+          207,
+          183,
+          113,
+          50
+        ],
+        "candidate_item_id": 14,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 50,
+        "second_distance": 113,
+        "margin": 63,
+        "foreground_count": 144,
+        "roi_foreground_pixels": 2326
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "edb3fc75924f967deed0e17162c0ed839f2566e13a24204dbd6976e3a92ab10d",
+      "bits_mem_sha256": "a6691ef77db8bcf38a2a9e0e9d02628fef29f74b16d676b995c9d6d9e5bb0228"
+    },
+    {
+      "index": 49,
+      "id": "rotate_umbrella_minus5",
+      "category": "rotate",
+      "ground_truth_item_id": 14,
+      "note": "围绕图心旋转-5度，双线性插值，白色填充",
+      "rgb_mem": "vectors/049_rotate_umbrella_minus5.rgb.mem",
+      "bits_mem": "vectors/049_rotate_umbrella_minus5.bits.mem",
+      "preview_png": "vectors/049_rotate_umbrella_minus5.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          171,
+          222,
+          212,
+          130,
+          31
+        ],
+        "candidate_item_id": 14,
+        "accepted": true,
+        "accepted_item_id": 14,
+        "best_distance": 31,
+        "second_distance": 130,
+        "margin": 99,
+        "foreground_count": 147,
+        "roi_foreground_pixels": 2369
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "af3aac279301abf0618ad76384860e637d57c169383397cb5f32e8c6a1260db0",
+      "bits_mem_sha256": "2e48f7a76f79ae03cf40d777a3029e1cb31670dc2fd2f873ab555ea5230f5df0"
+    },
+    {
+      "index": 50,
+      "id": "rotate_umbrella_plus5",
+      "category": "rotate",
+      "ground_truth_item_id": 14,
+      "note": "围绕图心旋转5度，双线性插值，白色填充",
+      "rgb_mem": "vectors/050_rotate_umbrella_plus5.rgb.mem",
+      "bits_mem": "vectors/050_rotate_umbrella_plus5.bits.mem",
+      "preview_png": "vectors/050_rotate_umbrella_plus5.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          171,
+          230,
+          216,
+          134,
+          17
+        ],
+        "candidate_item_id": 14,
+        "accepted": true,
+        "accepted_item_id": 14,
+        "best_distance": 17,
+        "second_distance": 134,
+        "margin": 117,
+        "foreground_count": 147,
+        "roi_foreground_pixels": 2358
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "2eeb539282b9bc64c981accaf84a4e0f34a2bb829b78984559e712ed5fb57448",
+      "bits_mem_sha256": "03480975a6d577bc2cdae1cbf952e099ab8771ea6b5e9a49eddb246474a92f7c"
+    },
+    {
+      "index": 51,
+      "id": "brightness_umbrella_dark",
+      "category": "brightness",
+      "ground_truth_item_id": 14,
+      "note": "RGB及白背景统一乘0.65；固定暗阈值可把暗背景误当前景",
+      "rgb_mem": "vectors/051_brightness_umbrella_dark.rgb.mem",
+      "bits_mem": "vectors/051_brightness_umbrella_dark.bits.mem",
+      "preview_png": "vectors/051_brightness_umbrella_dark.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          768,
+          857,
+          857,
+          893,
+          880
+        ],
+        "candidate_item_id": 10,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 768,
+        "second_distance": 857,
+        "margin": 89,
+        "foreground_count": 1024,
+        "roi_foreground_pixels": 16384
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "e3fe3763d2b5c39585624ae0efa9b027984b833589f28faff2ec081352606611",
+      "bits_mem_sha256": "9be775b04fa8858daed7f3d56356913280f30c4efe5498afcac58e9a78bec52b"
+    },
+    {
+      "index": 52,
+      "id": "brightness_umbrella_bright",
+      "category": "brightness",
+      "ground_truth_item_id": 14,
+      "note": "RGB及白背景统一乘1.2；固定暗阈值可把暗背景误当前景",
+      "rgb_mem": "vectors/052_brightness_umbrella_bright.rgb.mem",
+      "bits_mem": "vectors/052_brightness_umbrella_bright.bits.mem",
+      "preview_png": "vectors/052_brightness_umbrella_bright.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          174,
+          227,
+          219,
+          131,
+          0
+        ],
+        "candidate_item_id": 14,
+        "accepted": true,
+        "accepted_item_id": 14,
+        "best_distance": 0,
+        "second_distance": 131,
+        "margin": 131,
+        "foreground_count": 144,
+        "roi_foreground_pixels": 2310
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "e27d8660359c7babfa64b4ed394694f6a0124647d63387b995a561a59b1c0fba",
+      "bits_mem_sha256": "dd37be3c7baa87b7205e0cbb64ad5b07df48740098aac4522f59c1dd3086e3d9"
+    },
+    {
+      "index": 53,
+      "id": "noise_umbrella",
+      "category": "salt_pepper_noise",
+      "ground_truth_item_id": 14,
+      "note": "固定seed=20261024，328个不同RGB像素置黑或白",
+      "rgb_mem": "vectors/053_noise_umbrella.rgb.mem",
+      "bits_mem": "vectors/053_noise_umbrella.bits.mem",
+      "preview_png": "vectors/053_noise_umbrella.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          179,
+          228,
+          222,
+          140,
+          11
+        ],
+        "candidate_item_id": 14,
+        "accepted": true,
+        "accepted_item_id": 14,
+        "best_distance": 11,
+        "second_distance": 140,
+        "margin": 129,
+        "foreground_count": 149,
+        "roi_foreground_pixels": 2456
+      },
+      "model_outcome": "correct_accept",
+      "rgb_mem_sha256": "0e22959e801c6063b3c39e7c05ca4e4ed0b84e0e965e97b324323aa0b0ee2269",
+      "bits_mem_sha256": "2198de2cc37103ade5e4b848fd4345d3f5ca7896c8aff0c682d26fe7bbe0b727"
+    },
+    {
+      "index": 54,
+      "id": "occlusion_umbrella",
+      "category": "half_occlusion",
+      "ground_truth_item_id": 14,
+      "note": "卡面右半幅由白色覆盖；观察拒识或误判，不要求仍识别",
+      "rgb_mem": "vectors/054_occlusion_umbrella.rgb.mem",
+      "bits_mem": "vectors/054_occlusion_umbrella.bits.mem",
+      "preview_png": "vectors/054_occlusion_umbrella.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          225,
+          200,
+          194,
+          128,
+          83
+        ],
+        "candidate_item_id": 14,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 83,
+        "second_distance": 128,
+        "margin": 45,
+        "foreground_count": 61,
+        "roi_foreground_pixels": 1009
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "4dd527480ae3d15c006f1871ef0165ef80b2fd4e26969373761833d19f64ac9f",
+      "bits_mem_sha256": "9747e29e23ad47c40eec99c91ce5f1ec328e0c97ae293c03fb3b8e9ef966f692"
+    },
+    {
+      "index": 55,
+      "id": "all_white",
+      "category": "negative_blank",
+      "ground_truth_item_id": 0,
+      "note": "全白背景",
+      "rgb_mem": "vectors/055_all_white.rgb.mem",
+      "bits_mem": "vectors/055_all_white.bits.mem",
+      "preview_png": "vectors/055_all_white.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          256,
+          167,
+          167,
+          131,
+          144
+        ],
+        "candidate_item_id": 13,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 131,
+        "second_distance": 144,
+        "margin": 13,
+        "foreground_count": 0,
+        "roi_foreground_pixels": 0
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "0e18fbeb7bc3ebc9018ec8e940f6fc43d498301c63aad83fde7a55ff20667257",
+      "bits_mem_sha256": "209a151d73facd213f692299a3069420c8733e4800d4c544c381e793af852352"
+    },
+    {
+      "index": 56,
+      "id": "all_black",
+      "category": "negative_black",
+      "ground_truth_item_id": 0,
+      "note": "全黑背景",
+      "rgb_mem": "vectors/056_all_black.rgb.mem",
+      "bits_mem": "vectors/056_all_black.bits.mem",
+      "preview_png": "vectors/056_all_black.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          768,
+          857,
+          857,
+          893,
+          880
+        ],
+        "candidate_item_id": 10,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 768,
+        "second_distance": 857,
+        "margin": 89,
+        "foreground_count": 1024,
+        "roi_foreground_pixels": 16384
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "c87b929463373bce7cef084187bd69c6acba235e2a4fefb83d5654af23e25493",
+      "bits_mem_sha256": "9be775b04fa8858daed7f3d56356913280f30c4efe5498afcac58e9a78bec52b"
+    },
+    {
+      "index": 57,
+      "id": "negative_red_circle",
+      "category": "negative_geometry",
+      "ground_truth_item_id": 0,
+      "note": "独立Pillow几何负样本，非卡片；不是九积木实拍或仲裁验证",
+      "rgb_mem": "vectors/057_negative_red_circle.rgb.mem",
+      "bits_mem": "vectors/057_negative_red_circle.bits.mem",
+      "preview_png": "vectors/057_negative_red_circle.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          50,
+          161,
+          155,
+          161,
+          162
+        ],
+        "candidate_item_id": 10,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 50,
+        "second_distance": 155,
+        "margin": 105,
+        "foreground_count": 292,
+        "roi_foreground_pixels": 4645
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "2393ac467aa93d69b9a74d98e62f042bfdbec919a18cc2c1bccb5e2457c8df77",
+      "bits_mem_sha256": "c0c395c248c97b3cf95ffd79b3e32162664230c9c85d19048395222a848824cb"
+    },
+    {
+      "index": 58,
+      "id": "negative_red_square",
+      "category": "negative_geometry",
+      "ground_truth_item_id": 0,
+      "note": "独立Pillow几何负样本，非卡片；不是九积木实拍或仲裁验证",
+      "rgb_mem": "vectors/058_negative_red_square.rgb.mem",
+      "bits_mem": "vectors/058_negative_red_square.bits.mem",
+      "preview_png": "vectors/058_negative_red_square.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          144,
+          233,
+          247,
+          269,
+          256
+        ],
+        "candidate_item_id": 10,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 144,
+        "second_distance": 233,
+        "margin": 89,
+        "foreground_count": 400,
+        "roi_foreground_pixels": 5929
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "4524aedf0f52b5994b2c7495ddfcd2933d6b1a6c7a60ca5cec7302a58cc7ee73",
+      "bits_mem_sha256": "a2197df070aa8ac2943c2ba839dd19a84eab11f5baa0e44d2be22086a579dd69"
+    },
+    {
+      "index": 59,
+      "id": "negative_red_triangle",
+      "category": "negative_geometry",
+      "ground_truth_item_id": 0,
+      "note": "独立Pillow几何负样本，非卡片；不是九积木实拍或仲裁验证",
+      "rgb_mem": "vectors/059_negative_red_triangle.rgb.mem",
+      "bits_mem": "vectors/059_negative_red_triangle.bits.mem",
+      "preview_png": "vectors/059_negative_red_triangle.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          128,
+          179,
+          175,
+          129,
+          218
+        ],
+        "candidate_item_id": 10,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 128,
+        "second_distance": 129,
+        "margin": 1,
+        "foreground_count": 220,
+        "roi_foreground_pixels": 3612
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "5ac5cee92041f27e0511bf98f8106ac3fcb2ede2d269012765a4fb86776a431f",
+      "bits_mem_sha256": "05fea4e9042f587b588b65edeb81e9bf151c45c759e85b8a7851224dbe6f934a"
+    },
+    {
+      "index": 60,
+      "id": "negative_yellow_circle",
+      "category": "negative_geometry",
+      "ground_truth_item_id": 0,
+      "note": "独立Pillow几何负样本，非卡片；不是九积木实拍或仲裁验证",
+      "rgb_mem": "vectors/060_negative_yellow_circle.rgb.mem",
+      "bits_mem": "vectors/060_negative_yellow_circle.bits.mem",
+      "preview_png": "vectors/060_negative_yellow_circle.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          50,
+          161,
+          155,
+          161,
+          162
+        ],
+        "candidate_item_id": 10,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 50,
+        "second_distance": 155,
+        "margin": 105,
+        "foreground_count": 292,
+        "roi_foreground_pixels": 4645
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "283d733d29b393f1cabe7b86a9d2f1f0fbc75bc4395d1180938d12267591ed0e",
+      "bits_mem_sha256": "c0c395c248c97b3cf95ffd79b3e32162664230c9c85d19048395222a848824cb"
+    },
+    {
+      "index": 61,
+      "id": "negative_yellow_square",
+      "category": "negative_geometry",
+      "ground_truth_item_id": 0,
+      "note": "独立Pillow几何负样本，非卡片；不是九积木实拍或仲裁验证",
+      "rgb_mem": "vectors/061_negative_yellow_square.rgb.mem",
+      "bits_mem": "vectors/061_negative_yellow_square.bits.mem",
+      "preview_png": "vectors/061_negative_yellow_square.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          144,
+          233,
+          247,
+          269,
+          256
+        ],
+        "candidate_item_id": 10,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 144,
+        "second_distance": 233,
+        "margin": 89,
+        "foreground_count": 400,
+        "roi_foreground_pixels": 5929
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "0aabdb03bbb31c4ef5eb1491ada7516a6bb70cbc07c5876fd9a306ee27269faa",
+      "bits_mem_sha256": "a2197df070aa8ac2943c2ba839dd19a84eab11f5baa0e44d2be22086a579dd69"
+    },
+    {
+      "index": 62,
+      "id": "negative_yellow_triangle",
+      "category": "negative_geometry",
+      "ground_truth_item_id": 0,
+      "note": "独立Pillow几何负样本，非卡片；不是九积木实拍或仲裁验证",
+      "rgb_mem": "vectors/062_negative_yellow_triangle.rgb.mem",
+      "bits_mem": "vectors/062_negative_yellow_triangle.bits.mem",
+      "preview_png": "vectors/062_negative_yellow_triangle.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          128,
+          179,
+          175,
+          129,
+          218
+        ],
+        "candidate_item_id": 10,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 128,
+        "second_distance": 129,
+        "margin": 1,
+        "foreground_count": 220,
+        "roi_foreground_pixels": 3612
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "f480b0574af7fd46d037fc012f112bda7d27b9a226ad306a0af62a85a5a49838",
+      "bits_mem_sha256": "05fea4e9042f587b588b65edeb81e9bf151c45c759e85b8a7851224dbe6f934a"
+    },
+    {
+      "index": 63,
+      "id": "negative_blue_circle",
+      "category": "negative_geometry",
+      "ground_truth_item_id": 0,
+      "note": "独立Pillow几何负样本，非卡片；不是九积木实拍或仲裁验证",
+      "rgb_mem": "vectors/063_negative_blue_circle.rgb.mem",
+      "bits_mem": "vectors/063_negative_blue_circle.bits.mem",
+      "preview_png": "vectors/063_negative_blue_circle.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          50,
+          161,
+          155,
+          161,
+          162
+        ],
+        "candidate_item_id": 10,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 50,
+        "second_distance": 155,
+        "margin": 105,
+        "foreground_count": 292,
+        "roi_foreground_pixels": 4645
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "4e4c6b0b8fb1a2b3d1da043c77f80c8c6220134f2afafd61e5cfe597adf9b6ed",
+      "bits_mem_sha256": "c0c395c248c97b3cf95ffd79b3e32162664230c9c85d19048395222a848824cb"
+    },
+    {
+      "index": 64,
+      "id": "negative_blue_square",
+      "category": "negative_geometry",
+      "ground_truth_item_id": 0,
+      "note": "独立Pillow几何负样本，非卡片；不是九积木实拍或仲裁验证",
+      "rgb_mem": "vectors/064_negative_blue_square.rgb.mem",
+      "bits_mem": "vectors/064_negative_blue_square.bits.mem",
+      "preview_png": "vectors/064_negative_blue_square.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          144,
+          233,
+          247,
+          269,
+          256
+        ],
+        "candidate_item_id": 10,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 144,
+        "second_distance": 233,
+        "margin": 89,
+        "foreground_count": 400,
+        "roi_foreground_pixels": 5929
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "6839aafb9d88cb1a58c62e79e43020ce1bc205fe0fd5dbcafc56908c2e387bac",
+      "bits_mem_sha256": "a2197df070aa8ac2943c2ba839dd19a84eab11f5baa0e44d2be22086a579dd69"
+    },
+    {
+      "index": 65,
+      "id": "negative_blue_triangle",
+      "category": "negative_geometry",
+      "ground_truth_item_id": 0,
+      "note": "独立Pillow几何负样本，非卡片；不是九积木实拍或仲裁验证",
+      "rgb_mem": "vectors/065_negative_blue_triangle.rgb.mem",
+      "bits_mem": "vectors/065_negative_blue_triangle.bits.mem",
+      "preview_png": "vectors/065_negative_blue_triangle.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          128,
+          179,
+          175,
+          129,
+          218
+        ],
+        "candidate_item_id": 10,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 128,
+        "second_distance": 129,
+        "margin": 1,
+        "foreground_count": 220,
+        "roi_foreground_pixels": 3612
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "1c7a425c8ad3f5252969c21277297f69f974b620915df01d5ac405594165b40e",
+      "bits_mem_sha256": "05fea4e9042f587b588b65edeb81e9bf151c45c759e85b8a7851224dbe6f934a"
+    },
+    {
+      "index": 66,
+      "id": "unknown_apple_umbrella",
+      "category": "negative_mix",
+      "ground_truth_item_id": 0,
+      "note": "左苹果右雨伞合成的未知物",
+      "rgb_mem": "vectors/066_unknown_apple_umbrella.rgb.mem",
+      "bits_mem": "vectors/066_unknown_apple_umbrella.bits.mem",
+      "preview_png": "vectors/066_unknown_apple_umbrella.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          85,
+          168,
+          172,
+          122,
+          89
+        ],
+        "candidate_item_id": 10,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 85,
+        "second_distance": 89,
+        "margin": 4,
+        "foreground_count": 203,
+        "roi_foreground_pixels": 3213
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "259dd39ff42f7c0823fd32c8f74c9cff66417644dec282b02bdd771e76c4ec63",
+      "bits_mem_sha256": "60aa65595a355d839dc1bb56f41e8c7254fc29bb867e8113a9b0308c063243d9"
+    },
+    {
+      "index": 67,
+      "id": "unknown_checkerboard",
+      "category": "negative_unknown",
+      "ground_truth_item_id": 0,
+      "note": "8x8黑白棋盘格",
+      "rgb_mem": "vectors/067_unknown_checkerboard.rgb.mem",
+      "bits_mem": "vectors/067_unknown_checkerboard.bits.mem",
+      "preview_png": "vectors/067_unknown_checkerboard.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          510,
+          511,
+          515,
+          513,
+          508
+        ],
+        "candidate_item_id": 14,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 508,
+        "second_distance": 510,
+        "margin": 2,
+        "foreground_count": 512,
+        "roi_foreground_pixels": 8192
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "91eb7b86b7fb4597618315c56f62f413a1f6e583582fe92d17decc7b62a71d29",
+      "bits_mem_sha256": "2b9d912628407990e5b1fcccd531d66d7fe576e6f713f0f358e511751399f949"
+    },
+    {
+      "index": 68,
+      "id": "between_sample_lines",
+      "category": "negative_unsampled",
+      "ground_truth_item_id": 0,
+      "note": "每4像素在x=0画1像素竖线，x=2采样点全白但ROI有4096前景像素",
+      "rgb_mem": "vectors/068_between_sample_lines.rgb.mem",
+      "bits_mem": "vectors/068_between_sample_lines.bits.mem",
+      "preview_png": "vectors/068_between_sample_lines.png",
+      "expected": {
+        "distances_item_10_to_14": [
+          256,
+          167,
+          167,
+          131,
+          144
+        ],
+        "candidate_item_id": 13,
+        "accepted": false,
+        "accepted_item_id": 0,
+        "best_distance": 131,
+        "second_distance": 144,
+        "margin": 13,
+        "foreground_count": 0,
+        "roi_foreground_pixels": 4096
+      },
+      "model_outcome": "reject",
+      "rgb_mem_sha256": "801984aa6277f2aa728a1713d4295df2296d0dc4e56346259199fd1265124d3b",
+      "bits_mem_sha256": "209a151d73facd213f692299a3069420c8733e4800d4c544c381e793af852352"
+    }
+  ]
+}

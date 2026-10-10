@@ -1,0 +1,66 @@
+{
+  "summary": {
+    "total": 69,
+    "canonical": {
+      "correct_accept": 5
+    },
+    "synthetic_variations": {
+      "reject": 26,
+      "correct_accept": 24
+    },
+    "negatives": {
+      "reject": 14
+    },
+    "by_category": {
+      "canonical": {
+        "correct_accept": 5
+      },
+      "shift_one_cell": {
+        "reject": 16,
+        "correct_accept": 4
+      },
+      "rotate": {
+        "correct_accept": 10
+      },
+      "brightness": {
+        "reject": 5,
+        "correct_accept": 5
+      },
+      "salt_pepper_noise": {
+        "correct_accept": 5
+      },
+      "half_occlusion": {
+        "reject": 5
+      },
+      "negative_blank": {
+        "reject": 1
+      },
+      "negative_black": {
+        "reject": 1
+      },
+      "negative_geometry": {
+        "reject": 9
+      },
+      "negative_mix": {
+        "reject": 1
+      },
+      "negative_unknown": {
+        "reject": 1
+      },
+      "negative_unsampled": {
+        "reject": 1
+      }
+    }
+  },
+  "false_accepts": [],
+  "confusions": [],
+  "caveats": [
+    "Canonical与模板同源，只证明坐标/序列/接口一致，不属于独立准确率。",
+    "平移、旋转、亮度、噪点和遮挡均为人工变换；这些结果不代表相机/打印/摆放实测。",
+    "不执行位移搜索、尺度归一化、透视校正或相机白平衡校准。",
+    "min RGB<180将暗灰白背景也视为前景；偏暗样本会拒识。",
+    "颜色被二值化后，九几何负样本每形状的三色成为同一个轮廓。",
+    "全白与白卡无图案的物理存在无法区分；采样外细线依赖全ROI前景存在信号。",
+    "unknown拒识只保证本组有限模型案例，不能推断任意未知物都拒识。"
+  ]
+}

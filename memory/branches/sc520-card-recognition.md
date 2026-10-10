@@ -1,0 +1,58 @@
+# 五类卡片识别独立开发
+
+- 任务 ID：sc520-card-recognition
+- 状态：等待主对话审核
+- 负责人：01a120ad-c540-7f11-af3b-6360b8cee2e9 /root
+- 分支：task/sc520-card-recognition
+- 基础提交：f609426044982c986b54e999866be9f4c1af2682
+- 开始时间：2026-10-10T19:31:42+08:00
+- 结束时间：2026-10-10；精确运行时间见validation.json和各run-manifest.json
+- 工作目录：E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition
+
+## 目标与验收条件
+
+用户授权在等待DFR0534快递与四键实物验证期间继续下一步，推进五类卡片识别独立软件开发。基于现有prep-v1图稿构建32x32二值模板、带全帧健康检查的固定方形ROI取样、串行像素距离匹配、unknown拒识和稳定滤波。只声明固定摆位下的软件模型验证，不把原图或人工变换当相机实测准确率。
+
+## 已读文档
+
+共享AGENTS/README/FILE_INDEX、最新DFR0534及四键交付记录；主仓库和本工作树AGENTS、总记忆/计划/任务/决策/接口，架构/素材约定，future-assets和prep-v1卡片说明，实际hdmi_quiz/detection_adapter/quiz_control/quiz_content。旧主文档仍有SC500/DFPlayer等历史状态，留主对话维护。原new-task-worktree脚本要求改动并清理主仓库，当前主仓库有他人未提交工作且无此任务日志，因此用git worktree add创建隔离新分支并在本工作树建立日志；没有修改主仓库文件。
+
+## 修改文件
+
+仅本任务fpga/rtl、sim、scripts下sc520-card-recognition目录，assets/templates/sc520-card-recognition、evidence/sc520-card-recognition、hardware/sc520-card-recognition、本日志和共享learning/sc520-card-recognition。已有打印图稿只读，派生物记录源哈希。
+
+## 验证命令与结果
+
+2026-10-10进展：五卡模板与69个软件样本已生成，独立数据检查8组通过、69次中心RGB故障注入全部检出。开发样本比较后选择MAX_DISTANCE40、MIN_MARGIN24、FG16..850；14个负样本全拒、5个标准图接受，但一格平移仅4/20接受。本组用于调参，不是留出验收准确率。
+
+已实现sampler/ROM/matcher/filter/top，补空帧EOF健康拒绝记录。恢复后修复ModelSim只读ini复制、Windows长路径、TB变量笔误和1bit完成标志读取符号。保留全部历史失败输出；初始sim三个目录仅有启动片段，子代理报告vmap失败，不能当成功证据。
+
+最终ModelSim SE-64 10.7正常验证：matcher35场景/29739检查、filter296场景/2370检查、pipeline285场景/16363650检查，合计616场景/16395759检查/零错误。pipeline使用真实320×180RGB输入、69样本各三帧和坏帧恢复；独立检查完整ROI前景、1024采样点、距离、元数据与稳定结果。新增EOF后恰好一个额外空拍的双帧交接，以及source/tag中途变化后两拍内撤销检查均通过。
+
+完整命令：使用`C:/Users/33630/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe -B -X utf8 fpga/scripts/sc520-card-recognition/simulate.py`，分别传`--test matcher`、`--test filter`、`--test pipeline`、`--test matcher --negative`、`--test pipeline --negative`、`--test matcher --watchdog-probe`。均在本工作树根执行。两个negative分别强制实际DUT输出错误，原生退出1/errors1/injected1；watchdog-probe在500ns提前结束，原生退出2/done0/errors0。runner六次均按各自资格条件返回0，不把注错视为RTL功能通过。
+
+最后执行同一Python的`-B -X utf8 fpga/scripts/sc520-card-recognition/audit-delivery.py`，返回0：回读六个最终运行的输入快照/当前源/输出哈希、三批数据manifest、max40的8组QA以及18项受保护旧文件，全部一致。默认720p参数未跑全幅仿真、未综合或上板。共享登记和Git提交随后在本批交接完成。
+
+## 证据路径
+
+总入口`evidence/sc520-card-recognition/validation.json`；保护基线`baseline.json`；最终运行在`runs/matcher-normal-20261010-200102-0678be96`、`filter-normal-20261010-200102-03f0f316`、`pipeline-normal-20261010-200358-122dc04c`、`matcher-negative-20261010-200113-1756163c`、`pipeline-negative-20261010-200358-6b9af9ea`、`matcher-watchdog-20261010-200113-af9eefde`。每目录保存run-start、run-manifest、summary及日志，快照/work/wlf保留磁盘并按目录登记，避免将编译缓存重复提交。
+
+模板入口`assets/templates/sc520-card-recognition/prep-v1-max40`，其templates.mem SHA256为`49F75A4695A38AFB5290C301C9AB07B538968124A296E7F15711065C85E80C3F`。历史120及首次生成目录保留；默认生成器仍120，复现本阶段须显式`--max-distance 40`。接口与复现说明在`hardware/sc520-card-recognition/README.md`，教学在共享`E:/juan/FPGA/learning/sc520-card-recognition/README.md`。
+
+## 阻塞与风险
+
+尚无此套卡片的相机照片。居中/尺度/光照阈值为实验配置；不提供任意苹果等类别的泛化识别承诺。32x32采样以外的ROI前景另计存在性，白卡与白背景不能区分为物理有无。坏帧、未知和真实空背景必须分开。
+
+默认ENABLE_OUTPUT=0；模块不含停流失活看门狗，帧超时需由上层flush。frame_id只透传不检查连续性。EOF后必须至少一个额外无效空拍；EOF后立即SOF不在支持协议中。动态切源必须满足上层清除约定。完整流水线软件验证不构成720p资源、时序或成像质量证明。
+
+## 待决策事项
+
+不改共享接口。五类结果与现有九类冲突须先拒识或使用显式调试模式，不能默认卡片优先。现有控制与字库仅1..9，10..14整机接入和题序另行审核。
+
+## 建议总文档更新
+
+先审核独立模块与模型证据；确认固定ROI协议、默认关输出、最短帧间隔及超时责任。实际卡片采集、模板校准、仲裁、字库题序及新的整机TD构建完成后再更新主状态。不可将本次616场景通过改写为实物识别通过。
+
+## 下一分支交接
+
+本轮交付独立代码和软件证据；当前四键826966ea及音频b982a64保持原状，用户继续各自验证。无新整机bit、下载、Flash、推送、合并或快递自动监控。

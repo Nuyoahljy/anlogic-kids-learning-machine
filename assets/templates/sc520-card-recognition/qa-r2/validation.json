@@ -1,0 +1,155 @@
+{
+  "status": "pass",
+  "created_at": "2026-10-10T19:39:38.268447+08:00",
+  "command": [
+    "C:\\Users\\33630\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "fpga/scripts/sc520-card-recognition/test-template-data.py",
+    "--input",
+    "assets/templates/sc520-card-recognition/prep-v1-r2",
+    "--output",
+    "assets/templates/sc520-card-recognition/qa-r2"
+  ],
+  "script_sha256": "47701a869def3884cf085e3f26aca5334d12ef4f169ae183c798e418f0ce32f3",
+  "dataset": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/assets/templates/sc520-card-recognition/prep-v1-r2",
+  "dataset_manifest_sha256": "e827ebfceebba912da75cd0b3276bb33f3e5042cb04673b3aca2b673b438abaa",
+  "checks": [
+    {
+      "name": "all_files_manifest_sha256_and_size",
+      "status": "pass",
+      "detail": 231
+    },
+    {
+      "name": "source_hashes_rgb_render_sampling_and_5bit_packing",
+      "status": "pass",
+      "detail": 5
+    },
+    {
+      "name": "independent_integer_xor_pairwise_hamming",
+      "status": "pass",
+      "detail": [
+        [
+          0,
+          131,
+          133,
+          131,
+          174
+        ],
+        [
+          131,
+          0,
+          138,
+          142,
+          227
+        ],
+        [
+          133,
+          138,
+          0,
+          124,
+          219
+        ],
+        [
+          131,
+          142,
+          124,
+          0,
+          131
+        ],
+        [
+          174,
+          227,
+          219,
+          131,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "all_rgb_bits_distances_gates_metadata_and_png",
+      "status": "pass",
+      "detail": 69
+    },
+    {
+      "name": "deliberate_center_rgb_corruption_detected",
+      "status": "pass",
+      "detail": 69
+    },
+    {
+      "name": "unsampled_lines_not_mistaken_for_empty_roi",
+      "status": "pass",
+      "detail": {
+        "sample_fg": 0,
+        "roi_fg": 4096
+      }
+    },
+    {
+      "name": "semantic_model_outcomes_reported_including_3_false_accepts",
+      "status": "pass",
+      "detail": {
+        "total": 69,
+        "canonical": {
+          "correct_accept": 5
+        },
+        "synthetic_variations": {
+          "correct_accept": 44,
+          "reject": 6
+        },
+        "negatives": {
+          "reject": 11,
+          "false_accept": 3
+        },
+        "by_category": {
+          "canonical": {
+            "correct_accept": 5
+          },
+          "shift_one_cell": {
+            "correct_accept": 20
+          },
+          "rotate": {
+            "correct_accept": 10
+          },
+          "brightness": {
+            "reject": 5,
+            "correct_accept": 5
+          },
+          "salt_pepper_noise": {
+            "correct_accept": 5
+          },
+          "half_occlusion": {
+            "reject": 1,
+            "correct_accept": 4
+          },
+          "negative_blank": {
+            "reject": 1
+          },
+          "negative_black": {
+            "reject": 1
+          },
+          "negative_geometry": {
+            "false_accept": 3,
+            "reject": 6
+          },
+          "negative_mix": {
+            "reject": 1
+          },
+          "negative_unknown": {
+            "reject": 1
+          },
+          "negative_unsampled": {
+            "reject": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "foreground_threshold_boundaries",
+      "status": "pass",
+      "detail": 8
+    }
+  ],
+  "structural_checks_passed": 8,
+  "vectors_checked": 69,
+  "model_false_accepts": 3,
+  "hardware_validation": "not performed",
+  "note": "结构与软件参考检查通过不代表模型所有负样本都拒识，也不代表实物准确率。"
+}

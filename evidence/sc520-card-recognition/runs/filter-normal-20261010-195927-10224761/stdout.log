@@ -1,0 +1,66 @@
+Reading D:/modeltech64_10.7/tcl/vsim/pref.tcl
+
+# 10.7
+
+# set card_top tb_card_filter
+# tb_card_filter
+#  set card_sources [list {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/rtl/card_matcher.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/rtl/card_recognizer.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/rtl/card_result_filter.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/rtl/card_roi_sampler.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/rtl/card_template_rom.v}]
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/rtl/card_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/rtl/card_recognizer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/rtl/card_result_filter.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/rtl/card_roi_sampler.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/rtl/card_template_rom.v
+#  set card_tb {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/tb/tb_card_filter.sv}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/tb/tb_card_filter.sv
+#  set card_assets {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/assets}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/assets
+#  set card_negative 0
+# 0
+#  set card_probe 0
+# 0
+#  source {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/scripts/run-sim.do}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 19:59:30 on Oct 10,2026
+# vlog E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/rtl/card_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/rtl/card_recognizer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/rtl/card_result_filter.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/rtl/card_roi_sampler.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/rtl/card_template_rom.v 
+# -- Compiling module card_matcher
+# -- Compiling module card_recognizer
+# -- Compiling module card_result_filter
+# -- Compiling module card_roi_sampler
+# -- Compiling module card_template_rom
+# 
+# Top level modules:
+# 	card_recognizer
+# End time: 19:59:30 on Oct 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 19:59:30 on Oct 10,2026
+# vlog -sv E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/tb/tb_card_filter.sv 
+# -- Compiling module tb_card_filter
+# 
+# Top level modules:
+# 	tb_card_filter
+# End time: 19:59:30 on Oct 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -wlf wave.wlf work.tb_card_filter "+ASSET_ROOT=E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/assets" "+INJECT_FAULT=0" 
+# Start time: 19:59:31 on Oct 10,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_card_filter(fast)
+# Loading work.card_result_filter(fast)
+# RESULT tb_card_filter errors=0 checks=2370 scenarios=296
+# ** Note: $finish    : E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/tb/tb_card_filter.sv(46)
+#    Time: 5996 ns  Iteration: 0  Instance: /tb_card_filter
+# Break in Module tb_card_filter at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/tb/tb_card_filter.sv line 46
+# Stopped at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/filter-normal-20261010-195927-10224761/inputs/tb/tb_card_filter.sv line 46
+CARD_SIM_FINISHED tb_card_filter errors=0 checks=2370 scenarios=296 done=-1 injected=0
+# End time: 19:59:32 on Oct 10,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

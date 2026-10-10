@@ -1,0 +1,354 @@
+Reading D:/modeltech64_10.7/tcl/vsim/pref.tcl
+
+# 10.7
+
+# set card_top tb_card_pipeline
+# tb_card_pipeline
+#  set card_sources [list {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/rtl/card_matcher.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/rtl/card_recognizer.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/rtl/card_result_filter.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/rtl/card_roi_sampler.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/rtl/card_template_rom.v}]
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/rtl/card_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/rtl/card_recognizer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/rtl/card_result_filter.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/rtl/card_roi_sampler.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/rtl/card_template_rom.v
+#  set card_tb {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/tb/tb_card_pipeline.sv}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/tb/tb_card_pipeline.sv
+#  set card_assets {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/assets}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/assets
+#  set card_negative 0
+# 0
+#  set card_probe 0
+# 0
+#  source {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/scripts/run-sim.do}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 20:04:02 on Oct 10,2026
+# vlog E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/rtl/card_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/rtl/card_recognizer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/rtl/card_result_filter.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/rtl/card_roi_sampler.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/rtl/card_template_rom.v 
+# -- Compiling module card_matcher
+# -- Compiling module card_recognizer
+# -- Compiling module card_result_filter
+# -- Compiling module card_roi_sampler
+# -- Compiling module card_template_rom
+# 
+# Top level modules:
+# 	card_recognizer
+# End time: 20:04:02 on Oct 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 20:04:02 on Oct 10,2026
+# vlog -sv E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/tb/tb_card_pipeline.sv 
+# -- Compiling module tb_card_pipeline
+# 
+# Top level modules:
+# 	tb_card_pipeline
+# End time: 20:04:03 on Oct 10,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -wlf wave.wlf work.tb_card_pipeline "+ASSET_ROOT=E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/assets" "+INJECT_FAULT=0" 
+# Start time: 20:04:03 on Oct 10,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "card_matcher(fast)".
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_card_pipeline(fast)
+# Loading work.card_recognizer(fast)
+# Loading work.card_roi_sampler(fast)
+# Loading work.card_matcher(fast)
+# Loading work.card_template_rom(fast)
+# Loading work.card_result_filter(fast)
+# CASE pipeline 1 fixture=000_canonical_apple fault=0
+# CASE pipeline 2 fixture=000_canonical_apple fault=0
+# CASE pipeline 3 fixture=000_canonical_apple fault=0
+# CASE pipeline 4 fixture=001_canonical_banana fault=0
+# CASE pipeline 5 fixture=001_canonical_banana fault=0
+# CASE pipeline 6 fixture=001_canonical_banana fault=0
+# CASE pipeline 7 fixture=002_canonical_car fault=0
+# CASE pipeline 8 fixture=002_canonical_car fault=0
+# CASE pipeline 9 fixture=002_canonical_car fault=0
+# CASE pipeline 10 fixture=003_canonical_star fault=0
+# CASE pipeline 11 fixture=003_canonical_star fault=0
+# CASE pipeline 12 fixture=003_canonical_star fault=0
+# CASE pipeline 13 fixture=004_canonical_umbrella fault=0
+# CASE pipeline 14 fixture=004_canonical_umbrella fault=0
+# CASE pipeline 15 fixture=004_canonical_umbrella fault=0
+# CASE pipeline 16 fixture=005_shift_apple_left fault=0
+# CASE pipeline 17 fixture=005_shift_apple_left fault=0
+# CASE pipeline 18 fixture=005_shift_apple_left fault=0
+# CASE pipeline 19 fixture=006_shift_apple_right fault=0
+# CASE pipeline 20 fixture=006_shift_apple_right fault=0
+# CASE pipeline 21 fixture=006_shift_apple_right fault=0
+# CASE pipeline 22 fixture=007_shift_apple_up fault=0
+# CASE pipeline 23 fixture=007_shift_apple_up fault=0
+# CASE pipeline 24 fixture=007_shift_apple_up fault=0
+# CASE pipeline 25 fixture=008_shift_apple_down fault=0
+# CASE pipeline 26 fixture=008_shift_apple_down fault=0
+# CASE pipeline 27 fixture=008_shift_apple_down fault=0
+# CASE pipeline 28 fixture=009_rotate_apple_minus5 fault=0
+# CASE pipeline 29 fixture=009_rotate_apple_minus5 fault=0
+# CASE pipeline 30 fixture=009_rotate_apple_minus5 fault=0
+# CASE pipeline 31 fixture=010_rotate_apple_plus5 fault=0
+# CASE pipeline 32 fixture=010_rotate_apple_plus5 fault=0
+# CASE pipeline 33 fixture=010_rotate_apple_plus5 fault=0
+# CASE pipeline 34 fixture=011_brightness_apple_dark fault=0
+# CASE pipeline 35 fixture=011_brightness_apple_dark fault=0
+# CASE pipeline 36 fixture=011_brightness_apple_dark fault=0
+# CASE pipeline 37 fixture=012_brightness_apple_bright fault=0
+# CASE pipeline 38 fixture=012_brightness_apple_bright fault=0
+# CASE pipeline 39 fixture=012_brightness_apple_bright fault=0
+# CASE pipeline 40 fixture=013_noise_apple fault=0
+# CASE pipeline 41 fixture=013_noise_apple fault=0
+# CASE pipeline 42 fixture=013_noise_apple fault=0
+# CASE pipeline 43 fixture=014_occlusion_apple fault=0
+# CASE pipeline 44 fixture=014_occlusion_apple fault=0
+# CASE pipeline 45 fixture=014_occlusion_apple fault=0
+# CASE pipeline 46 fixture=015_shift_banana_left fault=0
+# CASE pipeline 47 fixture=015_shift_banana_left fault=0
+# CASE pipeline 48 fixture=015_shift_banana_left fault=0
+# CASE pipeline 49 fixture=016_shift_banana_right fault=0
+# CASE pipeline 50 fixture=016_shift_banana_right fault=0
+# CASE pipeline 51 fixture=016_shift_banana_right fault=0
+# CASE pipeline 52 fixture=017_shift_banana_up fault=0
+# CASE pipeline 53 fixture=017_shift_banana_up fault=0
+# CASE pipeline 54 fixture=017_shift_banana_up fault=0
+# CASE pipeline 55 fixture=018_shift_banana_down fault=0
+# CASE pipeline 56 fixture=018_shift_banana_down fault=0
+# CASE pipeline 57 fixture=018_shift_banana_down fault=0
+# CASE pipeline 58 fixture=019_rotate_banana_minus5 fault=0
+# CASE pipeline 59 fixture=019_rotate_banana_minus5 fault=0
+# CASE pipeline 60 fixture=019_rotate_banana_minus5 fault=0
+# CASE pipeline 61 fixture=020_rotate_banana_plus5 fault=0
+# CASE pipeline 62 fixture=020_rotate_banana_plus5 fault=0
+# CASE pipeline 63 fixture=020_rotate_banana_plus5 fault=0
+# CASE pipeline 64 fixture=021_brightness_banana_dark fault=0
+# CASE pipeline 65 fixture=021_brightness_banana_dark fault=0
+# CASE pipeline 66 fixture=021_brightness_banana_dark fault=0
+# CASE pipeline 67 fixture=022_brightness_banana_bright fault=0
+# CASE pipeline 68 fixture=022_brightness_banana_bright fault=0
+# CASE pipeline 69 fixture=022_brightness_banana_bright fault=0
+# CASE pipeline 70 fixture=023_noise_banana fault=0
+# CASE pipeline 71 fixture=023_noise_banana fault=0
+# CASE pipeline 72 fixture=023_noise_banana fault=0
+# CASE pipeline 73 fixture=024_occlusion_banana fault=0
+# CASE pipeline 74 fixture=024_occlusion_banana fault=0
+# CASE pipeline 75 fixture=024_occlusion_banana fault=0
+# CASE pipeline 76 fixture=025_shift_car_left fault=0
+# CASE pipeline 77 fixture=025_shift_car_left fault=0
+# CASE pipeline 78 fixture=025_shift_car_left fault=0
+# CASE pipeline 79 fixture=026_shift_car_right fault=0
+# CASE pipeline 80 fixture=026_shift_car_right fault=0
+# CASE pipeline 81 fixture=026_shift_car_right fault=0
+# CASE pipeline 82 fixture=027_shift_car_up fault=0
+# CASE pipeline 83 fixture=027_shift_car_up fault=0
+# CASE pipeline 84 fixture=027_shift_car_up fault=0
+# CASE pipeline 85 fixture=028_shift_car_down fault=0
+# CASE pipeline 86 fixture=028_shift_car_down fault=0
+# CASE pipeline 87 fixture=028_shift_car_down fault=0
+# CASE pipeline 88 fixture=029_rotate_car_minus5 fault=0
+# CASE pipeline 89 fixture=029_rotate_car_minus5 fault=0
+# CASE pipeline 90 fixture=029_rotate_car_minus5 fault=0
+# CASE pipeline 91 fixture=030_rotate_car_plus5 fault=0
+# CASE pipeline 92 fixture=030_rotate_car_plus5 fault=0
+# CASE pipeline 93 fixture=030_rotate_car_plus5 fault=0
+# CASE pipeline 94 fixture=031_brightness_car_dark fault=0
+# CASE pipeline 95 fixture=031_brightness_car_dark fault=0
+# CASE pipeline 96 fixture=031_brightness_car_dark fault=0
+# CASE pipeline 97 fixture=032_brightness_car_bright fault=0
+# CASE pipeline 98 fixture=032_brightness_car_bright fault=0
+# CASE pipeline 99 fixture=032_brightness_car_bright fault=0
+# CASE pipeline 100 fixture=033_noise_car fault=0
+# CASE pipeline 101 fixture=033_noise_car fault=0
+# CASE pipeline 102 fixture=033_noise_car fault=0
+# CASE pipeline 103 fixture=034_occlusion_car fault=0
+# CASE pipeline 104 fixture=034_occlusion_car fault=0
+# CASE pipeline 105 fixture=034_occlusion_car fault=0
+# CASE pipeline 106 fixture=035_shift_star_left fault=0
+# CASE pipeline 107 fixture=035_shift_star_left fault=0
+# CASE pipeline 108 fixture=035_shift_star_left fault=0
+# CASE pipeline 109 fixture=036_shift_star_right fault=0
+# CASE pipeline 110 fixture=036_shift_star_right fault=0
+# CASE pipeline 111 fixture=036_shift_star_right fault=0
+# CASE pipeline 112 fixture=037_shift_star_up fault=0
+# CASE pipeline 113 fixture=037_shift_star_up fault=0
+# CASE pipeline 114 fixture=037_shift_star_up fault=0
+# CASE pipeline 115 fixture=038_shift_star_down fault=0
+# CASE pipeline 116 fixture=038_shift_star_down fault=0
+# CASE pipeline 117 fixture=038_shift_star_down fault=0
+# CASE pipeline 118 fixture=039_rotate_star_minus5 fault=0
+# CASE pipeline 119 fixture=039_rotate_star_minus5 fault=0
+# CASE pipeline 120 fixture=039_rotate_star_minus5 fault=0
+# CASE pipeline 121 fixture=040_rotate_star_plus5 fault=0
+# CASE pipeline 122 fixture=040_rotate_star_plus5 fault=0
+# CASE pipeline 123 fixture=040_rotate_star_plus5 fault=0
+# CASE pipeline 124 fixture=041_brightness_star_dark fault=0
+# CASE pipeline 125 fixture=041_brightness_star_dark fault=0
+# CASE pipeline 126 fixture=041_brightness_star_dark fault=0
+# CASE pipeline 127 fixture=042_brightness_star_bright fault=0
+# CASE pipeline 128 fixture=042_brightness_star_bright fault=0
+# CASE pipeline 129 fixture=042_brightness_star_bright fault=0
+# CASE pipeline 130 fixture=043_noise_star fault=0
+# CASE pipeline 131 fixture=043_noise_star fault=0
+# CASE pipeline 132 fixture=043_noise_star fault=0
+# CASE pipeline 133 fixture=044_occlusion_star fault=0
+# CASE pipeline 134 fixture=044_occlusion_star fault=0
+# CASE pipeline 135 fixture=044_occlusion_star fault=0
+# CASE pipeline 136 fixture=045_shift_umbrella_left fault=0
+# CASE pipeline 137 fixture=045_shift_umbrella_left fault=0
+# CASE pipeline 138 fixture=045_shift_umbrella_left fault=0
+# CASE pipeline 139 fixture=046_shift_umbrella_right fault=0
+# CASE pipeline 140 fixture=046_shift_umbrella_right fault=0
+# CASE pipeline 141 fixture=046_shift_umbrella_right fault=0
+# CASE pipeline 142 fixture=047_shift_umbrella_up fault=0
+# CASE pipeline 143 fixture=047_shift_umbrella_up fault=0
+# CASE pipeline 144 fixture=047_shift_umbrella_up fault=0
+# CASE pipeline 145 fixture=048_shift_umbrella_down fault=0
+# CASE pipeline 146 fixture=048_shift_umbrella_down fault=0
+# CASE pipeline 147 fixture=048_shift_umbrella_down fault=0
+# CASE pipeline 148 fixture=049_rotate_umbrella_minus5 fault=0
+# CASE pipeline 149 fixture=049_rotate_umbrella_minus5 fault=0
+# CASE pipeline 150 fixture=049_rotate_umbrella_minus5 fault=0
+# CASE pipeline 151 fixture=050_rotate_umbrella_plus5 fault=0
+# CASE pipeline 152 fixture=050_rotate_umbrella_plus5 fault=0
+# CASE pipeline 153 fixture=050_rotate_umbrella_plus5 fault=0
+# CASE pipeline 154 fixture=051_brightness_umbrella_dark fault=0
+# CASE pipeline 155 fixture=051_brightness_umbrella_dark fault=0
+# CASE pipeline 156 fixture=051_brightness_umbrella_dark fault=0
+# CASE pipeline 157 fixture=052_brightness_umbrella_bright fault=0
+# CASE pipeline 158 fixture=052_brightness_umbrella_bright fault=0
+# CASE pipeline 159 fixture=052_brightness_umbrella_bright fault=0
+# CASE pipeline 160 fixture=053_noise_umbrella fault=0
+# CASE pipeline 161 fixture=053_noise_umbrella fault=0
+# CASE pipeline 162 fixture=053_noise_umbrella fault=0
+# CASE pipeline 163 fixture=054_occlusion_umbrella fault=0
+# CASE pipeline 164 fixture=054_occlusion_umbrella fault=0
+# CASE pipeline 165 fixture=054_occlusion_umbrella fault=0
+# CASE pipeline 166 fixture=055_all_white fault=0
+# CASE pipeline 167 fixture=055_all_white fault=0
+# CASE pipeline 168 fixture=055_all_white fault=0
+# CASE pipeline 169 fixture=056_all_black fault=0
+# CASE pipeline 170 fixture=056_all_black fault=0
+# CASE pipeline 171 fixture=056_all_black fault=0
+# CASE pipeline 172 fixture=057_negative_red_circle fault=0
+# CASE pipeline 173 fixture=057_negative_red_circle fault=0
+# CASE pipeline 174 fixture=057_negative_red_circle fault=0
+# CASE pipeline 175 fixture=058_negative_red_square fault=0
+# CASE pipeline 176 fixture=058_negative_red_square fault=0
+# CASE pipeline 177 fixture=058_negative_red_square fault=0
+# CASE pipeline 178 fixture=059_negative_red_triangle fault=0
+# CASE pipeline 179 fixture=059_negative_red_triangle fault=0
+# CASE pipeline 180 fixture=059_negative_red_triangle fault=0
+# CASE pipeline 181 fixture=060_negative_yellow_circle fault=0
+# CASE pipeline 182 fixture=060_negative_yellow_circle fault=0
+# CASE pipeline 183 fixture=060_negative_yellow_circle fault=0
+# CASE pipeline 184 fixture=061_negative_yellow_square fault=0
+# CASE pipeline 185 fixture=061_negative_yellow_square fault=0
+# CASE pipeline 186 fixture=061_negative_yellow_square fault=0
+# CASE pipeline 187 fixture=062_negative_yellow_triangle fault=0
+# CASE pipeline 188 fixture=062_negative_yellow_triangle fault=0
+# CASE pipeline 189 fixture=062_negative_yellow_triangle fault=0
+# CASE pipeline 190 fixture=063_negative_blue_circle fault=0
+# CASE pipeline 191 fixture=063_negative_blue_circle fault=0
+# CASE pipeline 192 fixture=063_negative_blue_circle fault=0
+# CASE pipeline 193 fixture=064_negative_blue_square fault=0
+# CASE pipeline 194 fixture=064_negative_blue_square fault=0
+# CASE pipeline 195 fixture=064_negative_blue_square fault=0
+# CASE pipeline 196 fixture=065_negative_blue_triangle fault=0
+# CASE pipeline 197 fixture=065_negative_blue_triangle fault=0
+# CASE pipeline 198 fixture=065_negative_blue_triangle fault=0
+# CASE pipeline 199 fixture=066_unknown_apple_umbrella fault=0
+# CASE pipeline 200 fixture=066_unknown_apple_umbrella fault=0
+# CASE pipeline 201 fixture=066_unknown_apple_umbrella fault=0
+# CASE pipeline 202 fixture=067_unknown_checkerboard fault=0
+# CASE pipeline 203 fixture=067_unknown_checkerboard fault=0
+# CASE pipeline 204 fixture=067_unknown_checkerboard fault=0
+# CASE pipeline 205 fixture=068_between_sample_lines fault=0
+# CASE pipeline 206 fixture=068_between_sample_lines fault=0
+# CASE pipeline 207 fixture=068_between_sample_lines fault=0
+# CASE pipeline 208 fixture=000_canonical_apple fault=0
+# CASE pipeline 209 fixture=000_canonical_apple fault=0
+# CASE pipeline 210 shortest-supported-EOF-gap
+# CASE pipeline 211 fixture=000_canonical_apple fault=0
+# CASE pipeline 212 fixture=000_canonical_apple fault=0
+# CASE pipeline 213 fixture=000_canonical_apple fault=0
+# CASE pipeline 215 fixture=000_canonical_apple fault=0
+# CASE pipeline 216 fixture=000_canonical_apple fault=0
+# CASE pipeline 217 fixture=000_canonical_apple fault=0
+# CASE pipeline 218 fixture=000_canonical_apple fault=0
+# CASE pipeline 219 fixture=000_canonical_apple fault=1
+# CASE pipeline 220 fixture=000_canonical_apple fault=0
+# CASE pipeline 221 fixture=000_canonical_apple fault=0
+# CASE pipeline 222 fixture=000_canonical_apple fault=0
+# CASE pipeline 223 fixture=000_canonical_apple fault=0
+# CASE pipeline 224 fixture=000_canonical_apple fault=2
+# CASE pipeline 225 fixture=000_canonical_apple fault=0
+# CASE pipeline 226 fixture=000_canonical_apple fault=0
+# CASE pipeline 227 fixture=000_canonical_apple fault=0
+# CASE pipeline 228 fixture=000_canonical_apple fault=0
+# CASE pipeline 229 fixture=000_canonical_apple fault=3
+# CASE pipeline 230 fixture=000_canonical_apple fault=0
+# CASE pipeline 231 fixture=000_canonical_apple fault=0
+# CASE pipeline 232 fixture=000_canonical_apple fault=0
+# CASE pipeline 233 fixture=000_canonical_apple fault=0
+# CASE pipeline 234 fixture=000_canonical_apple fault=4
+# CASE pipeline 235 fixture=000_canonical_apple fault=0
+# CASE pipeline 236 fixture=000_canonical_apple fault=0
+# CASE pipeline 237 fixture=000_canonical_apple fault=0
+# CASE pipeline 238 fixture=000_canonical_apple fault=0
+# CASE pipeline 239 fixture=000_canonical_apple fault=5
+# CASE pipeline 240 fixture=000_canonical_apple fault=0
+# CASE pipeline 241 fixture=000_canonical_apple fault=0
+# CASE pipeline 242 fixture=000_canonical_apple fault=0
+# CASE pipeline 243 fixture=000_canonical_apple fault=0
+# CASE pipeline 244 fixture=000_canonical_apple fault=6
+# CASE pipeline 245 fixture=000_canonical_apple fault=0
+# CASE pipeline 246 fixture=000_canonical_apple fault=0
+# CASE pipeline 247 fixture=000_canonical_apple fault=0
+# CASE pipeline 248 fixture=000_canonical_apple fault=0
+# CASE pipeline 249 fixture=000_canonical_apple fault=7
+# CASE pipeline 250 fixture=000_canonical_apple fault=0
+# CASE pipeline 251 fixture=000_canonical_apple fault=0
+# CASE pipeline 252 fixture=000_canonical_apple fault=0
+# CASE pipeline 253 fixture=000_canonical_apple fault=0
+# CASE pipeline 254 fixture=000_canonical_apple fault=8
+# CASE pipeline 255 fixture=000_canonical_apple fault=0
+# CASE pipeline 256 fixture=000_canonical_apple fault=0
+# CASE pipeline 257 fixture=000_canonical_apple fault=0
+# CASE pipeline 258 fixture=000_canonical_apple fault=0
+# CASE pipeline 259 fixture=000_canonical_apple fault=9
+# CASE pipeline 260 fixture=000_canonical_apple fault=0
+# CASE pipeline 261 fixture=000_canonical_apple fault=0
+# CASE pipeline 262 fixture=000_canonical_apple fault=0
+# CASE pipeline 263 fixture=000_canonical_apple fault=0
+# CASE pipeline 264 fixture=000_canonical_apple fault=10
+# CASE pipeline 265 fixture=000_canonical_apple fault=0
+# CASE pipeline 266 fixture=000_canonical_apple fault=0
+# CASE pipeline 267 fixture=000_canonical_apple fault=0
+# CASE pipeline 268 fixture=000_canonical_apple fault=0
+# CASE pipeline 269 fixture=000_canonical_apple fault=11
+# CASE pipeline 270 fixture=000_canonical_apple fault=0
+# CASE pipeline 271 fixture=000_canonical_apple fault=0
+# CASE pipeline 272 fixture=000_canonical_apple fault=0
+# CASE pipeline 273 fixture=000_canonical_apple fault=0
+# CASE pipeline 274 fixture=000_canonical_apple fault=12
+# CASE pipeline 275 fixture=000_canonical_apple fault=0
+# CASE pipeline 276 fixture=000_canonical_apple fault=0
+# CASE pipeline 277 fixture=000_canonical_apple fault=0
+# CASE pipeline 278 fixture=000_canonical_apple fault=0
+# CASE pipeline 279 fixture=000_canonical_apple fault=0
+# CASE pipeline 280 fixture=000_canonical_apple fault=0
+# CASE pipeline 281 fixture=000_canonical_apple fault=0
+# CASE pipeline 282 fixture=unsampled-one-pixel-line fault=0
+# CASE pipeline 283 fixture=threshold-boundaries fault=0
+# CASE pipeline 285 fixture=threshold-boundaries fault=0
+# RESULT tb_card_pipeline errors=0 checks=16363650 scenarios=285 vectors=69 injected=0 revoke_checks=2 pair_seen=2
+# ** Note: $finish    : E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/tb/tb_card_pipeline.sv(270)
+#    Time: 164062766 ns  Iteration: 0  Instance: /tb_card_pipeline
+# Break in Module tb_card_pipeline at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/tb/tb_card_pipeline.sv line 270
+# Stopped at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/pipeline-normal-20261010-200358-122dc04c/inputs/tb/tb_card_pipeline.sv line 270
+CARD_SIM_FINISHED tb_card_pipeline errors=0 checks=16363650 scenarios=285 done=1 injected=0
+# End time: 20:04:30 on Oct 10,2026, Elapsed time: 0:00:27
+# Errors: 0, Warnings: 0

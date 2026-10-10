@@ -1,0 +1,1084 @@
+{
+  "source_vectors_sha256": "d0137dd82dd87927d15ba25f48617a19bca3b8e36637ee6b0e86eb1678ba57f5",
+  "policies": [
+    {
+      "max_distance": 120,
+      "min_margin": 24,
+      "foreground_min": 16,
+      "foreground_max": 850,
+      "ratio_distance_times4_lte_template_fg": false,
+      "by_category": {
+        "canonical": {
+          "total": 5,
+          "accepted": 5,
+          "rejected": 0,
+          "confusion_or_false_accept": 0
+        },
+        "shift_one_cell": {
+          "total": 20,
+          "accepted": 20,
+          "rejected": 0,
+          "confusion_or_false_accept": 0
+        },
+        "rotate": {
+          "total": 10,
+          "accepted": 10,
+          "rejected": 0,
+          "confusion_or_false_accept": 0
+        },
+        "brightness": {
+          "total": 10,
+          "accepted": 5,
+          "rejected": 5,
+          "confusion_or_false_accept": 0
+        },
+        "salt_pepper_noise": {
+          "total": 5,
+          "accepted": 5,
+          "rejected": 0,
+          "confusion_or_false_accept": 0
+        },
+        "half_occlusion": {
+          "total": 5,
+          "accepted": 4,
+          "rejected": 1,
+          "confusion_or_false_accept": 0
+        },
+        "negative_blank": {
+          "total": 1,
+          "accepted": 0,
+          "rejected": 1,
+          "confusion_or_false_accept": 0
+        },
+        "negative_black": {
+          "total": 1,
+          "accepted": 0,
+          "rejected": 1,
+          "confusion_or_false_accept": 0
+        },
+        "negative_geometry": {
+          "total": 9,
+          "accepted": 3,
+          "rejected": 6,
+          "confusion_or_false_accept": 3
+        },
+        "negative_mix": {
+          "total": 1,
+          "accepted": 0,
+          "rejected": 1,
+          "confusion_or_false_accept": 0
+        },
+        "negative_unknown": {
+          "total": 1,
+          "accepted": 0,
+          "rejected": 1,
+          "confusion_or_false_accept": 0
+        },
+        "negative_unsampled": {
+          "total": 1,
+          "accepted": 0,
+          "rejected": 1,
+          "confusion_or_false_accept": 0
+        }
+      },
+      "per_sample": [
+        {
+          "id": "canonical_apple",
+          "accepted_item_id": 10
+        },
+        {
+          "id": "canonical_banana",
+          "accepted_item_id": 11
+        },
+        {
+          "id": "canonical_car",
+          "accepted_item_id": 12
+        },
+        {
+          "id": "canonical_star",
+          "accepted_item_id": 13
+        },
+        {
+          "id": "canonical_umbrella",
+          "accepted_item_id": 14
+        },
+        {
+          "id": "shift_apple_left",
+          "accepted_item_id": 10
+        },
+        {
+          "id": "shift_apple_right",
+          "accepted_item_id": 10
+        },
+        {
+          "id": "shift_apple_up",
+          "accepted_item_id": 10
+        },
+        {
+          "id": "shift_apple_down",
+          "accepted_item_id": 10
+        },
+        {
+          "id": "rotate_apple_minus5",
+          "accepted_item_id": 10
+        },
+        {
+          "id": "rotate_apple_plus5",
+          "accepted_item_id": 10
+        },
+        {
+          "id": "brightness_apple_dark",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "brightness_apple_bright",
+          "accepted_item_id": 10
+        },
+        {
+          "id": "noise_apple",
+          "accepted_item_id": 10
+        },
+        {
+          "id": "occlusion_apple",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_banana_left",
+          "accepted_item_id": 11
+        },
+        {
+          "id": "shift_banana_right",
+          "accepted_item_id": 11
+        },
+        {
+          "id": "shift_banana_up",
+          "accepted_item_id": 11
+        },
+        {
+          "id": "shift_banana_down",
+          "accepted_item_id": 11
+        },
+        {
+          "id": "rotate_banana_minus5",
+          "accepted_item_id": 11
+        },
+        {
+          "id": "rotate_banana_plus5",
+          "accepted_item_id": 11
+        },
+        {
+          "id": "brightness_banana_dark",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "brightness_banana_bright",
+          "accepted_item_id": 11
+        },
+        {
+          "id": "noise_banana",
+          "accepted_item_id": 11
+        },
+        {
+          "id": "occlusion_banana",
+          "accepted_item_id": 11
+        },
+        {
+          "id": "shift_car_left",
+          "accepted_item_id": 12
+        },
+        {
+          "id": "shift_car_right",
+          "accepted_item_id": 12
+        },
+        {
+          "id": "shift_car_up",
+          "accepted_item_id": 12
+        },
+        {
+          "id": "shift_car_down",
+          "accepted_item_id": 12
+        },
+        {
+          "id": "rotate_car_minus5",
+          "accepted_item_id": 12
+        },
+        {
+          "id": "rotate_car_plus5",
+          "accepted_item_id": 12
+        },
+        {
+          "id": "brightness_car_dark",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "brightness_car_bright",
+          "accepted_item_id": 12
+        },
+        {
+          "id": "noise_car",
+          "accepted_item_id": 12
+        },
+        {
+          "id": "occlusion_car",
+          "accepted_item_id": 12
+        },
+        {
+          "id": "shift_star_left",
+          "accepted_item_id": 13
+        },
+        {
+          "id": "shift_star_right",
+          "accepted_item_id": 13
+        },
+        {
+          "id": "shift_star_up",
+          "accepted_item_id": 13
+        },
+        {
+          "id": "shift_star_down",
+          "accepted_item_id": 13
+        },
+        {
+          "id": "rotate_star_minus5",
+          "accepted_item_id": 13
+        },
+        {
+          "id": "rotate_star_plus5",
+          "accepted_item_id": 13
+        },
+        {
+          "id": "brightness_star_dark",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "brightness_star_bright",
+          "accepted_item_id": 13
+        },
+        {
+          "id": "noise_star",
+          "accepted_item_id": 13
+        },
+        {
+          "id": "occlusion_star",
+          "accepted_item_id": 13
+        },
+        {
+          "id": "shift_umbrella_left",
+          "accepted_item_id": 14
+        },
+        {
+          "id": "shift_umbrella_right",
+          "accepted_item_id": 14
+        },
+        {
+          "id": "shift_umbrella_up",
+          "accepted_item_id": 14
+        },
+        {
+          "id": "shift_umbrella_down",
+          "accepted_item_id": 14
+        },
+        {
+          "id": "rotate_umbrella_minus5",
+          "accepted_item_id": 14
+        },
+        {
+          "id": "rotate_umbrella_plus5",
+          "accepted_item_id": 14
+        },
+        {
+          "id": "brightness_umbrella_dark",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "brightness_umbrella_bright",
+          "accepted_item_id": 14
+        },
+        {
+          "id": "noise_umbrella",
+          "accepted_item_id": 14
+        },
+        {
+          "id": "occlusion_umbrella",
+          "accepted_item_id": 14
+        },
+        {
+          "id": "all_white",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "all_black",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "negative_red_circle",
+          "accepted_item_id": 10
+        },
+        {
+          "id": "negative_red_square",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "negative_red_triangle",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "negative_yellow_circle",
+          "accepted_item_id": 10
+        },
+        {
+          "id": "negative_yellow_square",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "negative_yellow_triangle",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "negative_blue_circle",
+          "accepted_item_id": 10
+        },
+        {
+          "id": "negative_blue_square",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "negative_blue_triangle",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "unknown_apple_umbrella",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "unknown_checkerboard",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "between_sample_lines",
+          "accepted_item_id": 0
+        }
+      ]
+    },
+    {
+      "max_distance": 40,
+      "min_margin": 24,
+      "foreground_min": 16,
+      "foreground_max": 850,
+      "ratio_distance_times4_lte_template_fg": false,
+      "by_category": {
+        "canonical": {
+          "total": 5,
+          "accepted": 5,
+          "rejected": 0,
+          "confusion_or_false_accept": 0
+        },
+        "shift_one_cell": {
+          "total": 20,
+          "accepted": 4,
+          "rejected": 16,
+          "confusion_or_false_accept": 0
+        },
+        "rotate": {
+          "total": 10,
+          "accepted": 10,
+          "rejected": 0,
+          "confusion_or_false_accept": 0
+        },
+        "brightness": {
+          "total": 10,
+          "accepted": 5,
+          "rejected": 5,
+          "confusion_or_false_accept": 0
+        },
+        "salt_pepper_noise": {
+          "total": 5,
+          "accepted": 5,
+          "rejected": 0,
+          "confusion_or_false_accept": 0
+        },
+        "half_occlusion": {
+          "total": 5,
+          "accepted": 0,
+          "rejected": 5,
+          "confusion_or_false_accept": 0
+        },
+        "negative_blank": {
+          "total": 1,
+          "accepted": 0,
+          "rejected": 1,
+          "confusion_or_false_accept": 0
+        },
+        "negative_black": {
+          "total": 1,
+          "accepted": 0,
+          "rejected": 1,
+          "confusion_or_false_accept": 0
+        },
+        "negative_geometry": {
+          "total": 9,
+          "accepted": 0,
+          "rejected": 9,
+          "confusion_or_false_accept": 0
+        },
+        "negative_mix": {
+          "total": 1,
+          "accepted": 0,
+          "rejected": 1,
+          "confusion_or_false_accept": 0
+        },
+        "negative_unknown": {
+          "total": 1,
+          "accepted": 0,
+          "rejected": 1,
+          "confusion_or_false_accept": 0
+        },
+        "negative_unsampled": {
+          "total": 1,
+          "accepted": 0,
+          "rejected": 1,
+          "confusion_or_false_accept": 0
+        }
+      },
+      "per_sample": [
+        {
+          "id": "canonical_apple",
+          "accepted_item_id": 10
+        },
+        {
+          "id": "canonical_banana",
+          "accepted_item_id": 11
+        },
+        {
+          "id": "canonical_car",
+          "accepted_item_id": 12
+        },
+        {
+          "id": "canonical_star",
+          "accepted_item_id": 13
+        },
+        {
+          "id": "canonical_umbrella",
+          "accepted_item_id": 14
+        },
+        {
+          "id": "shift_apple_left",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_apple_right",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_apple_up",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_apple_down",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "rotate_apple_minus5",
+          "accepted_item_id": 10
+        },
+        {
+          "id": "rotate_apple_plus5",
+          "accepted_item_id": 10
+        },
+        {
+          "id": "brightness_apple_dark",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "brightness_apple_bright",
+          "accepted_item_id": 10
+        },
+        {
+          "id": "noise_apple",
+          "accepted_item_id": 10
+        },
+        {
+          "id": "occlusion_apple",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_banana_left",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_banana_right",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_banana_up",
+          "accepted_item_id": 11
+        },
+        {
+          "id": "shift_banana_down",
+          "accepted_item_id": 11
+        },
+        {
+          "id": "rotate_banana_minus5",
+          "accepted_item_id": 11
+        },
+        {
+          "id": "rotate_banana_plus5",
+          "accepted_item_id": 11
+        },
+        {
+          "id": "brightness_banana_dark",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "brightness_banana_bright",
+          "accepted_item_id": 11
+        },
+        {
+          "id": "noise_banana",
+          "accepted_item_id": 11
+        },
+        {
+          "id": "occlusion_banana",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_car_left",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_car_right",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_car_up",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_car_down",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "rotate_car_minus5",
+          "accepted_item_id": 12
+        },
+        {
+          "id": "rotate_car_plus5",
+          "accepted_item_id": 12
+        },
+        {
+          "id": "brightness_car_dark",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "brightness_car_bright",
+          "accepted_item_id": 12
+        },
+        {
+          "id": "noise_car",
+          "accepted_item_id": 12
+        },
+        {
+          "id": "occlusion_car",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_star_left",
+          "accepted_item_id": 13
+        },
+        {
+          "id": "shift_star_right",
+          "accepted_item_id": 13
+        },
+        {
+          "id": "shift_star_up",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_star_down",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "rotate_star_minus5",
+          "accepted_item_id": 13
+        },
+        {
+          "id": "rotate_star_plus5",
+          "accepted_item_id": 13
+        },
+        {
+          "id": "brightness_star_dark",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "brightness_star_bright",
+          "accepted_item_id": 13
+        },
+        {
+          "id": "noise_star",
+          "accepted_item_id": 13
+        },
+        {
+          "id": "occlusion_star",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_umbrella_left",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_umbrella_right",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_umbrella_up",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_umbrella_down",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "rotate_umbrella_minus5",
+          "accepted_item_id": 14
+        },
+        {
+          "id": "rotate_umbrella_plus5",
+          "accepted_item_id": 14
+        },
+        {
+          "id": "brightness_umbrella_dark",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "brightness_umbrella_bright",
+          "accepted_item_id": 14
+        },
+        {
+          "id": "noise_umbrella",
+          "accepted_item_id": 14
+        },
+        {
+          "id": "occlusion_umbrella",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "all_white",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "all_black",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "negative_red_circle",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "negative_red_square",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "negative_red_triangle",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "negative_yellow_circle",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "negative_yellow_square",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "negative_yellow_triangle",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "negative_blue_circle",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "negative_blue_square",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "negative_blue_triangle",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "unknown_apple_umbrella",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "unknown_checkerboard",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "between_sample_lines",
+          "accepted_item_id": 0
+        }
+      ]
+    },
+    {
+      "max_distance": 40,
+      "min_margin": 24,
+      "foreground_min": 16,
+      "foreground_max": 850,
+      "ratio_distance_times4_lte_template_fg": true,
+      "by_category": {
+        "canonical": {
+          "total": 5,
+          "accepted": 5,
+          "rejected": 0,
+          "confusion_or_false_accept": 0
+        },
+        "shift_one_cell": {
+          "total": 20,
+          "accepted": 2,
+          "rejected": 18,
+          "confusion_or_false_accept": 0
+        },
+        "rotate": {
+          "total": 10,
+          "accepted": 10,
+          "rejected": 0,
+          "confusion_or_false_accept": 0
+        },
+        "brightness": {
+          "total": 10,
+          "accepted": 5,
+          "rejected": 5,
+          "confusion_or_false_accept": 0
+        },
+        "salt_pepper_noise": {
+          "total": 5,
+          "accepted": 5,
+          "rejected": 0,
+          "confusion_or_false_accept": 0
+        },
+        "half_occlusion": {
+          "total": 5,
+          "accepted": 0,
+          "rejected": 5,
+          "confusion_or_false_accept": 0
+        },
+        "negative_blank": {
+          "total": 1,
+          "accepted": 0,
+          "rejected": 1,
+          "confusion_or_false_accept": 0
+        },
+        "negative_black": {
+          "total": 1,
+          "accepted": 0,
+          "rejected": 1,
+          "confusion_or_false_accept": 0
+        },
+        "negative_geometry": {
+          "total": 9,
+          "accepted": 0,
+          "rejected": 9,
+          "confusion_or_false_accept": 0
+        },
+        "negative_mix": {
+          "total": 1,
+          "accepted": 0,
+          "rejected": 1,
+          "confusion_or_false_accept": 0
+        },
+        "negative_unknown": {
+          "total": 1,
+          "accepted": 0,
+          "rejected": 1,
+          "confusion_or_false_accept": 0
+        },
+        "negative_unsampled": {
+          "total": 1,
+          "accepted": 0,
+          "rejected": 1,
+          "confusion_or_false_accept": 0
+        }
+      },
+      "per_sample": [
+        {
+          "id": "canonical_apple",
+          "accepted_item_id": 10
+        },
+        {
+          "id": "canonical_banana",
+          "accepted_item_id": 11
+        },
+        {
+          "id": "canonical_car",
+          "accepted_item_id": 12
+        },
+        {
+          "id": "canonical_star",
+          "accepted_item_id": 13
+        },
+        {
+          "id": "canonical_umbrella",
+          "accepted_item_id": 14
+        },
+        {
+          "id": "shift_apple_left",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_apple_right",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_apple_up",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_apple_down",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "rotate_apple_minus5",
+          "accepted_item_id": 10
+        },
+        {
+          "id": "rotate_apple_plus5",
+          "accepted_item_id": 10
+        },
+        {
+          "id": "brightness_apple_dark",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "brightness_apple_bright",
+          "accepted_item_id": 10
+        },
+        {
+          "id": "noise_apple",
+          "accepted_item_id": 10
+        },
+        {
+          "id": "occlusion_apple",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_banana_left",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_banana_right",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_banana_up",
+          "accepted_item_id": 11
+        },
+        {
+          "id": "shift_banana_down",
+          "accepted_item_id": 11
+        },
+        {
+          "id": "rotate_banana_minus5",
+          "accepted_item_id": 11
+        },
+        {
+          "id": "rotate_banana_plus5",
+          "accepted_item_id": 11
+        },
+        {
+          "id": "brightness_banana_dark",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "brightness_banana_bright",
+          "accepted_item_id": 11
+        },
+        {
+          "id": "noise_banana",
+          "accepted_item_id": 11
+        },
+        {
+          "id": "occlusion_banana",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_car_left",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_car_right",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_car_up",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_car_down",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "rotate_car_minus5",
+          "accepted_item_id": 12
+        },
+        {
+          "id": "rotate_car_plus5",
+          "accepted_item_id": 12
+        },
+        {
+          "id": "brightness_car_dark",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "brightness_car_bright",
+          "accepted_item_id": 12
+        },
+        {
+          "id": "noise_car",
+          "accepted_item_id": 12
+        },
+        {
+          "id": "occlusion_car",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_star_left",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_star_right",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_star_up",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_star_down",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "rotate_star_minus5",
+          "accepted_item_id": 13
+        },
+        {
+          "id": "rotate_star_plus5",
+          "accepted_item_id": 13
+        },
+        {
+          "id": "brightness_star_dark",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "brightness_star_bright",
+          "accepted_item_id": 13
+        },
+        {
+          "id": "noise_star",
+          "accepted_item_id": 13
+        },
+        {
+          "id": "occlusion_star",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_umbrella_left",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_umbrella_right",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_umbrella_up",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "shift_umbrella_down",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "rotate_umbrella_minus5",
+          "accepted_item_id": 14
+        },
+        {
+          "id": "rotate_umbrella_plus5",
+          "accepted_item_id": 14
+        },
+        {
+          "id": "brightness_umbrella_dark",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "brightness_umbrella_bright",
+          "accepted_item_id": 14
+        },
+        {
+          "id": "noise_umbrella",
+          "accepted_item_id": 14
+        },
+        {
+          "id": "occlusion_umbrella",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "all_white",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "all_black",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "negative_red_circle",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "negative_red_square",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "negative_red_triangle",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "negative_yellow_circle",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "negative_yellow_square",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "negative_yellow_triangle",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "negative_blue_circle",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "negative_blue_square",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "negative_blue_triangle",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "unknown_apple_umbrella",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "unknown_checkerboard",
+          "accepted_item_id": 0
+        },
+        {
+          "id": "between_sample_lines",
+          "accepted_item_id": 0
+        }
+      ]
+    }
+  ],
+  "recommendation": "max40_without_ratio",
+  "boundary": "All cases are generated from artwork or synthetic geometry, not camera validation. The same samples informed this threshold choice; these are development results, not held-out accuracy."
+}

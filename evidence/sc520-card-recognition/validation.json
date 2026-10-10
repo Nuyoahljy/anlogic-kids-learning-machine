@@ -1,0 +1,696 @@
+{
+  "Task": "sc520-card-recognition",
+  "Status": "software_verified_pending_main_review",
+  "RecordedAt": "2026-10-10T20:05:06+08:00",
+  "Command": [
+    "C:\\Users\\33630\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "fpga/scripts/sc520-card-recognition/audit-delivery.py"
+  ],
+  "AuditScriptSHA256": "FD360AD86C9D09EB493C09464EEAA32658C1270A97241F9815B75020ABFA8BC0",
+  "BaseCommit": "f609426044982c986b54e999866be9f4c1af2682",
+  "Scope": "独立模板、RTL与软件像素验证；未综合、未生成bit、未相机或实物验收",
+  "Runs": [
+    {
+      "Test": "filter",
+      "Mode": "normal",
+      "Manifest": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\filter-normal-20261010-200102-03f0f316\\run-manifest.json",
+      "ManifestSHA256": "8B98FB531EDBCB52F9155A7AF1A47FEB5BAD041D8B0CC2BF199D3E8ACFE01423",
+      "NativeExitCode": 0,
+      "Summary": {
+        "errors": 0,
+        "checks": 2370,
+        "scenarios": 296,
+        "done": 1,
+        "injected": 0
+      },
+      "InputsRechecked": 240,
+      "OutputsRechecked": 6,
+      "ElapsedSeconds": 2.5
+    },
+    {
+      "Test": "matcher",
+      "Mode": "negative",
+      "Manifest": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\matcher-negative-20261010-200113-1756163c\\run-manifest.json",
+      "ManifestSHA256": "9B07154593EA951378913160280908E94E71963A2DA9BBB17F79D765EA91FC3C",
+      "NativeExitCode": 1,
+      "Summary": {
+        "errors": 1,
+        "checks": 29739,
+        "scenarios": 35,
+        "done": 1,
+        "injected": 1
+      },
+      "InputsRechecked": 240,
+      "OutputsRechecked": 6,
+      "ElapsedSeconds": 2.5309999999881256
+    },
+    {
+      "Test": "matcher",
+      "Mode": "normal",
+      "Manifest": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\matcher-normal-20261010-200102-0678be96\\run-manifest.json",
+      "ManifestSHA256": "A0A97DD0ACBC323043C3F8AADF48F41CC73B7BA5B728C44E23FE619BFFBD93A0",
+      "NativeExitCode": 0,
+      "Summary": {
+        "errors": 0,
+        "checks": 29739,
+        "scenarios": 35,
+        "done": 1,
+        "injected": 0
+      },
+      "InputsRechecked": 240,
+      "OutputsRechecked": 6,
+      "ElapsedSeconds": 2.562999999994645
+    },
+    {
+      "Test": "matcher",
+      "Mode": "watchdog",
+      "Manifest": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\matcher-watchdog-20261010-200113-af9eefde\\run-manifest.json",
+      "ManifestSHA256": "E55CBAC23456FB147BBC8314A1FBDE0AC8DABBBC45A02C0E409A72A74B29DE42",
+      "NativeExitCode": 2,
+      "Summary": {
+        "errors": 0,
+        "checks": 55,
+        "scenarios": 2,
+        "done": 0,
+        "injected": 0
+      },
+      "InputsRechecked": 240,
+      "OutputsRechecked": 6,
+      "ElapsedSeconds": 2.4679999999934807
+    },
+    {
+      "Test": "pipeline",
+      "Mode": "negative",
+      "Manifest": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\pipeline-negative-20261010-200358-6b9af9ea\\run-manifest.json",
+      "ManifestSHA256": "312D1E50914079E91FFB5220C04C326FFF7D640E872C56B30E7715D5D046D1BE",
+      "NativeExitCode": 1,
+      "Summary": {
+        "errors": 1,
+        "checks": 16363650,
+        "scenarios": 285,
+        "done": 1,
+        "injected": 1
+      },
+      "InputsRechecked": 240,
+      "OutputsRechecked": 6,
+      "ElapsedSeconds": 29.53100000001723
+    },
+    {
+      "Test": "pipeline",
+      "Mode": "normal",
+      "Manifest": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\pipeline-normal-20261010-200358-122dc04c\\run-manifest.json",
+      "ManifestSHA256": "411E26176DFA13E1D17BBC27680C6928B6995E2D9D6090560D271B8773B92B08",
+      "NativeExitCode": 0,
+      "Summary": {
+        "errors": 0,
+        "checks": 16363650,
+        "scenarios": 285,
+        "done": 1,
+        "injected": 0
+      },
+      "InputsRechecked": 240,
+      "OutputsRechecked": 6,
+      "ElapsedSeconds": 29.421999999991385
+    }
+  ],
+  "NormalTotals": {
+    "scenarios": 616,
+    "checks": 16395759,
+    "errors": 0
+  },
+  "DataQA": {
+    "Report": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\qa-max40\\validation.json",
+    "SHA256": "2FF10946A81014667769BFD1E1E64DD246D816BA681D72EB6BE60EBB77D49A14",
+    "StructuralGroupsPassed": 8,
+    "VectorsChecked": 69,
+    "RGBFaultInjectionsDetected": 69
+  },
+  "Datasets": [
+    {
+      "Dataset": "prep-v1",
+      "ManifestSHA256": "032DA7D8F98C287426E51C75ACEFC019701293072738CC88E51EC2F39CD19799",
+      "FilesRechecked": 230
+    },
+    {
+      "Dataset": "prep-v1-r2",
+      "ManifestSHA256": "E827EBFCEEBBA912DA75CD0B3276BB33F3E5042CB04673B3ACA2B673B438ABAA",
+      "FilesRechecked": 231
+    },
+    {
+      "Dataset": "prep-v1-max40",
+      "ManifestSHA256": "16F778DFCEC8EB1A71FA35372709BC60C520A8EF8038FD356CD2ECC668CD36B1",
+      "FilesRechecked": 231
+    }
+  ],
+  "DevelopmentPolicy": {
+    "max_distance": 40,
+    "min_margin": 24,
+    "foreground_min": 16,
+    "foreground_max": 850,
+    "ratio_distance_times4_lte_template_fg": false,
+    "by_category": {
+      "canonical": {
+        "total": 5,
+        "accepted": 5,
+        "rejected": 0,
+        "confusion_or_false_accept": 0
+      },
+      "shift_one_cell": {
+        "total": 20,
+        "accepted": 4,
+        "rejected": 16,
+        "confusion_or_false_accept": 0
+      },
+      "rotate": {
+        "total": 10,
+        "accepted": 10,
+        "rejected": 0,
+        "confusion_or_false_accept": 0
+      },
+      "brightness": {
+        "total": 10,
+        "accepted": 5,
+        "rejected": 5,
+        "confusion_or_false_accept": 0
+      },
+      "salt_pepper_noise": {
+        "total": 5,
+        "accepted": 5,
+        "rejected": 0,
+        "confusion_or_false_accept": 0
+      },
+      "half_occlusion": {
+        "total": 5,
+        "accepted": 0,
+        "rejected": 5,
+        "confusion_or_false_accept": 0
+      },
+      "negative_blank": {
+        "total": 1,
+        "accepted": 0,
+        "rejected": 1,
+        "confusion_or_false_accept": 0
+      },
+      "negative_black": {
+        "total": 1,
+        "accepted": 0,
+        "rejected": 1,
+        "confusion_or_false_accept": 0
+      },
+      "negative_geometry": {
+        "total": 9,
+        "accepted": 0,
+        "rejected": 9,
+        "confusion_or_false_accept": 0
+      },
+      "negative_mix": {
+        "total": 1,
+        "accepted": 0,
+        "rejected": 1,
+        "confusion_or_false_accept": 0
+      },
+      "negative_unknown": {
+        "total": 1,
+        "accepted": 0,
+        "rejected": 1,
+        "confusion_or_false_accept": 0
+      },
+      "negative_unsampled": {
+        "total": 1,
+        "accepted": 0,
+        "rejected": 1,
+        "confusion_or_false_accept": 0
+      }
+    },
+    "per_sample": [
+      {
+        "id": "canonical_apple",
+        "accepted_item_id": 10
+      },
+      {
+        "id": "canonical_banana",
+        "accepted_item_id": 11
+      },
+      {
+        "id": "canonical_car",
+        "accepted_item_id": 12
+      },
+      {
+        "id": "canonical_star",
+        "accepted_item_id": 13
+      },
+      {
+        "id": "canonical_umbrella",
+        "accepted_item_id": 14
+      },
+      {
+        "id": "shift_apple_left",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "shift_apple_right",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "shift_apple_up",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "shift_apple_down",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "rotate_apple_minus5",
+        "accepted_item_id": 10
+      },
+      {
+        "id": "rotate_apple_plus5",
+        "accepted_item_id": 10
+      },
+      {
+        "id": "brightness_apple_dark",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "brightness_apple_bright",
+        "accepted_item_id": 10
+      },
+      {
+        "id": "noise_apple",
+        "accepted_item_id": 10
+      },
+      {
+        "id": "occlusion_apple",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "shift_banana_left",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "shift_banana_right",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "shift_banana_up",
+        "accepted_item_id": 11
+      },
+      {
+        "id": "shift_banana_down",
+        "accepted_item_id": 11
+      },
+      {
+        "id": "rotate_banana_minus5",
+        "accepted_item_id": 11
+      },
+      {
+        "id": "rotate_banana_plus5",
+        "accepted_item_id": 11
+      },
+      {
+        "id": "brightness_banana_dark",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "brightness_banana_bright",
+        "accepted_item_id": 11
+      },
+      {
+        "id": "noise_banana",
+        "accepted_item_id": 11
+      },
+      {
+        "id": "occlusion_banana",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "shift_car_left",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "shift_car_right",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "shift_car_up",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "shift_car_down",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "rotate_car_minus5",
+        "accepted_item_id": 12
+      },
+      {
+        "id": "rotate_car_plus5",
+        "accepted_item_id": 12
+      },
+      {
+        "id": "brightness_car_dark",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "brightness_car_bright",
+        "accepted_item_id": 12
+      },
+      {
+        "id": "noise_car",
+        "accepted_item_id": 12
+      },
+      {
+        "id": "occlusion_car",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "shift_star_left",
+        "accepted_item_id": 13
+      },
+      {
+        "id": "shift_star_right",
+        "accepted_item_id": 13
+      },
+      {
+        "id": "shift_star_up",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "shift_star_down",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "rotate_star_minus5",
+        "accepted_item_id": 13
+      },
+      {
+        "id": "rotate_star_plus5",
+        "accepted_item_id": 13
+      },
+      {
+        "id": "brightness_star_dark",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "brightness_star_bright",
+        "accepted_item_id": 13
+      },
+      {
+        "id": "noise_star",
+        "accepted_item_id": 13
+      },
+      {
+        "id": "occlusion_star",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "shift_umbrella_left",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "shift_umbrella_right",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "shift_umbrella_up",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "shift_umbrella_down",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "rotate_umbrella_minus5",
+        "accepted_item_id": 14
+      },
+      {
+        "id": "rotate_umbrella_plus5",
+        "accepted_item_id": 14
+      },
+      {
+        "id": "brightness_umbrella_dark",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "brightness_umbrella_bright",
+        "accepted_item_id": 14
+      },
+      {
+        "id": "noise_umbrella",
+        "accepted_item_id": 14
+      },
+      {
+        "id": "occlusion_umbrella",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "all_white",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "all_black",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "negative_red_circle",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "negative_red_square",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "negative_red_triangle",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "negative_yellow_circle",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "negative_yellow_square",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "negative_yellow_triangle",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "negative_blue_circle",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "negative_blue_square",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "negative_blue_triangle",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "unknown_apple_umbrella",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "unknown_checkerboard",
+        "accepted_item_id": 0
+      },
+      {
+        "id": "between_sample_lines",
+        "accepted_item_id": 0
+      }
+    ]
+  },
+  "ProtectedFilesRechecked": [
+    {
+      "Path": "E:\\juan\\FPGA\\learning\\sc520-next-stage-prep\\cards\\card_10_apple.svg",
+      "SHA256": "AB75BC0617AA59BAA4C830D3CCAE05FC37F83AA79B5A20E8260BCAD9937CB1CB"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\learning\\sc520-next-stage-prep\\cards\\card_11_banana.svg",
+      "SHA256": "C967356A076CB6465D2C7AC2665C3284E6AB11515550F8ABD8873FFD928C5B7F"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\learning\\sc520-next-stage-prep\\cards\\card_12_car.svg",
+      "SHA256": "16555F84AFCE7FD75745603D964B1D051943996FE1A740F3B7DFF576B5A1103A"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\learning\\sc520-next-stage-prep\\cards\\card_13_star.svg",
+      "SHA256": "F3AF10B786DFE76ABAB649D22FECD7F522D8DF17FC10092F2F179A7CB7D73AE9"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\learning\\sc520-next-stage-prep\\cards\\card_14_umbrella.svg",
+      "SHA256": "27BE15A8E26AE457E5DE2AEA7AB70C983C7DB6570B714931260DF1B25194C46D"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\learning\\sc520-next-stage-prep\\cards\\manifest.json",
+      "SHA256": "BF9809848DE569A2C2307915B99037A218E7F63891CEF75B12BB51772A15269C"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\learning\\sc520-next-stage-prep\\cards\\recognition-cards-print.pdf",
+      "SHA256": "D8E250DF07914898E30AB60A6B913321E97C3A27496FF1E7E2876E31068E85E3"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\quiz\\hdmi_quiz.v",
+      "SHA256": "59B72B1C55A1B0D29950CD7865330F1E34AC350E5EA4497965564AD486F4C2CA"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\quiz\\quiz_audio_queue.v",
+      "SHA256": "3D99F4A6760F45513E51A84A6DC785E8BD06AD8A420B261153AF52E4175DFD08"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\quiz\\quiz_mock_player.v",
+      "SHA256": "83C80A9B06C565BAC4836B90C927B1607458745E638C98C1A3EC39578563518D"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-board-keys\\b\\826966ea\\built.bit",
+      "SHA256": "5814035C7553C4996D4CE25D19576D31F32233BBD58EA141C3A1C08AA733C1E7"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\anlogic-kids-learning-machine\\PROJECT_MEMORY.md",
+      "SHA256": "619AA7CE5871D1CC1AF14030433812CC37827166E854B5379EA66A85A2494CFA"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\anlogic-kids-learning-machine\\docs\\03-interface-contracts.md",
+      "SHA256": "CAFFA5A9A83345B7CBB1F670C9559EF922122512762287A5199BA68D35F91920"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\.gitattributes",
+      "SHA256": "8E3AD5D83AEB5A7528CDF91D652334EBEC66F986C4A7076A96CB3F002A8B014B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\.gitignore",
+      "SHA256": "CEE705EF284A5ED96DF2EB65B73F0D2811E1DB82B689BD91209165EFB4D5BD39"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-audio-replacement\\source-review.json",
+      "SHA256": "29663977FE609158196BB9B49514F138731D2A7A62725A7BC8624FC62EC93823"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-audio-replacement\\seller-wiki-review-20261010.json",
+      "SHA256": "EFFB67C9D9801A1CB018246F0842EA82F5C56096D0471F99D6315359071E2325"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\evidence\\sc520-audio-replacement\\user-io-levels-20261010.json",
+      "SHA256": "7454199DFAEAD4660E99C0770C27619676F58149AE41F90BD471C0821676B6C9"
+    }
+  ],
+  "HistoricalRuns": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\filter-normal-20261010-195927-10224761",
+      "Qualified": false,
+      "NativeExitCode": 0,
+      "Summary": {
+        "errors": 0,
+        "checks": 2370,
+        "scenarios": 296,
+        "done": -1,
+        "injected": 0
+      }
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\filter-normal-20261010-200102-03f0f316",
+      "Qualified": true,
+      "NativeExitCode": 0,
+      "Summary": {
+        "errors": 0,
+        "checks": 2370,
+        "scenarios": 296,
+        "done": 1,
+        "injected": 0
+      }
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\matcher-negative-20261010-200113-1756163c",
+      "Qualified": true,
+      "NativeExitCode": 1,
+      "Summary": {
+        "errors": 1,
+        "checks": 29739,
+        "scenarios": 35,
+        "done": 1,
+        "injected": 1
+      }
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\matcher-normal-20261010-195809-92c0938b",
+      "Status": "incomplete snapshot, no simulation result"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\matcher-normal-20261010-195845-c6417cb2",
+      "Qualified": false,
+      "NativeExitCode": 2,
+      "Summary": null
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\matcher-normal-20261010-200102-0678be96",
+      "Qualified": true,
+      "NativeExitCode": 0,
+      "Summary": {
+        "errors": 0,
+        "checks": 29739,
+        "scenarios": 35,
+        "done": 1,
+        "injected": 0
+      }
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\matcher-watchdog-20261010-200113-af9eefde",
+      "Qualified": true,
+      "NativeExitCode": 2,
+      "Summary": {
+        "errors": 0,
+        "checks": 55,
+        "scenarios": 2,
+        "done": 0,
+        "injected": 0
+      }
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\pipeline-negative-20261010-200358-6b9af9ea",
+      "Qualified": true,
+      "NativeExitCode": 1,
+      "Summary": {
+        "errors": 1,
+        "checks": 16363650,
+        "scenarios": 285,
+        "done": 1,
+        "injected": 1
+      }
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\pipeline-normal-20261010-200358-122dc04c",
+      "Qualified": true,
+      "NativeExitCode": 0,
+      "Summary": {
+        "errors": 0,
+        "checks": 16363650,
+        "scenarios": 285,
+        "done": 1,
+        "injected": 0
+      }
+    }
+  ],
+  "HistoricalPreRunnerRuns": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\sim\\run-20261010-194648-tb_card_filter-3c7839",
+      "Status": "vmap失败，未编译或仿真；保留，不计通过"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\sim\\run-20261010-194648-tb_card_matcher-f22f15",
+      "Status": "vmap失败，未编译或仿真；保留，不计通过"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\sim\\run-20261010-194648-tb_card_pipeline-33dc94",
+      "Status": "vmap失败，未编译或仿真；保留，不计通过"
+    }
+  ],
+  "Limitations": [
+    "开发图稿同源且本组参与调参，不是留出准确率",
+    "默认720p配置尚未综合/实测",
+    "固定ROI、固定尺度；多数平移和全部偏暗样本拒识",
+    "需要上层停流超时flush",
+    "ID仅标记，不验证递增；EOF后至少一个额外空拍",
+    "未接九类仲裁、文字、题序或真实音频"
+  ]
+}
