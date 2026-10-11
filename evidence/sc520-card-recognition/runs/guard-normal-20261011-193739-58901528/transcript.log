@@ -1,0 +1,78 @@
+# set card_top tb_card_guard
+# tb_card_guard
+#  set card_sources [list {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/guard-normal-20261011-193739-58901528/inputs/card_frame_guard.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/guard-normal-20261011-193739-58901528/inputs/card_result_filter.v}]
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/guard-normal-20261011-193739-58901528/inputs/card_frame_guard.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/guard-normal-20261011-193739-58901528/inputs/card_result_filter.v
+#  set card_tb {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/guard-normal-20261011-193739-58901528/inputs/tb_card_guard.sv}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/guard-normal-20261011-193739-58901528/inputs/tb_card_guard.sv
+#  set card_assets {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/guard-normal-20261011-193739-58901528/inputs}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/guard-normal-20261011-193739-58901528/inputs
+#  set card_negative 0
+# 0
+#  set card_probe 0
+# 0
+#  source {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/guard-normal-20261011-193739-58901528/inputs/run-sim.do}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 19:37:47 on Oct 11,2026
+# vlog E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/guard-normal-20261011-193739-58901528/inputs/card_frame_guard.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/guard-normal-20261011-193739-58901528/inputs/card_result_filter.v 
+# -- Compiling module card_frame_guard
+# -- Compiling module card_result_filter
+# 
+# Top level modules:
+# 	card_frame_guard
+# 	card_result_filter
+# End time: 19:37:47 on Oct 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 19:37:47 on Oct 11,2026
+# vlog -sv E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/guard-normal-20261011-193739-58901528/inputs/tb_card_guard.sv 
+# -- Compiling module tb_card_guard
+# 
+# Top level modules:
+# 	tb_card_guard
+# End time: 19:37:47 on Oct 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -wlf wave.wlf work.tb_card_guard "+ASSET_ROOT=E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/guard-normal-20261011-193739-58901528/inputs" "+INJECT_FAULT=0" 
+# Start time: 19:37:47 on Oct 11,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_card_guard(fast)
+# Loading work.card_frame_guard(fast)
+# Loading work.card_frame_guard(fast__1)
+# Loading work.card_result_filter(fast)
+# Loading work.card_frame_guard(fast__2)
+# CASE guard 1 lane=0 startup without pixels, sparse ticks, single timeout
+# CASE guard 2 lane=0 recovery, deadline priority, renewal before deadline
+# CASE guard 3 lane=0 healthy unknown and empty results feed watchdog
+# CASE guard 4 lane=0 all item codes and independent checker fault injection
+# CASE guard 5 lane=0 candidate gaps, no-event withdrawal and ignored data
+# CASE guard 6 lane=0 bad frames cannot extend deadline or clear timeout
+# CASE guard 7 lane=0 flush priority, held flush, rearm and deadline restart
+# CASE guard 8 lane=1 startup without pixels, sparse ticks, single timeout
+# CASE guard 9 lane=1 recovery, deadline priority, renewal before deadline
+# CASE guard 10 lane=1 healthy unknown and empty results feed watchdog
+# CASE guard 11 lane=1 all item codes and independent checker fault injection
+# CASE guard 12 lane=1 candidate gaps, no-event withdrawal and ignored data
+# CASE guard 13 lane=1 bad frames cannot extend deadline or clear timeout
+# CASE guard 14 lane=1 flush priority, held flush, rearm and deadline restart
+# CASE guard 15 lane=2 real three-frame filter is synchronously cleared at timeout
+# CASE guard 16 lane=2 first two post-timeout frames unconfirmed, third confirmed
+# RESULT tb_card_guard errors=0 checks=2432 scenarios=16 injected=0
+# ** Note: $finish    : E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/guard-normal-20261011-193739-58901528/inputs/tb_card_guard.sv(314)
+#    Time: 2916 ns  Iteration: 0  Instance: /tb_card_guard
+# Break in Module tb_card_guard at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/guard-normal-20261011-193739-58901528/inputs/tb_card_guard.sv line 314
+# Stopped at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/guard-normal-20261011-193739-58901528/inputs/tb_card_guard.sv line 314
+# End time: 19:37:50 on Oct 11,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

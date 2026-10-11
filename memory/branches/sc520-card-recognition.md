@@ -2,7 +2,7 @@
 
 - 任务 ID：sc520-card-recognition
 - 状态：等待主对话审核
-- 负责人：01a120ad-c540-7f11-af3b-6360b8cee2e9 /root
+- 负责人：本轮 SC520 后续开发对话 /root；前阶段负责人 01a120ad-c540-7f11-af3b-6360b8cee2e9 /root
 - 分支：task/sc520-card-recognition
 - 基础提交：f609426044982c986b54e999866be9f4c1af2682
 - 开始时间：2026-10-10T19:31:42+08:00
@@ -56,3 +56,17 @@
 ## 下一分支交接
 
 本轮交付独立代码和软件证据；当前四键826966ea及音频b982a64保持原状，用户继续各自验证。无新整机bit、下载、Flash、推送、合并或快递自动监控。
+
+## 2026-10-11 继续开发：帧超时保护
+
+- 阶段状态：等待主对话审核；基础提交 ad106b537a2216e6cfb1d2a4d920fe2cea2cff54，开始时本工作树干净。
+- 用户请求：说明验证后的下一步，并继续可并行的软件开发。先完成 card_frame_guard 候选模块，补齐完全停流时旧卡片结果无法撤销的已知缺口。
+- 范围：新增独立 guard、针对性 ModelSim 测试、证据与集成说明；不改现有识别器、四键工程或共享接口，不生成新的 bit。
+- 验收条件：只有健康完整帧能重置超时；截止边沿与健康帧同时出现时健康优先；超时清除上游并输出一次不可信撤销；持续超时不反复触发；恢复后重新累计三帧；外部 flush 和无事件提前失效可撤销输出。持续 clk 和同域 tick_1ms 是使用前提。
+- 资料差异：工作树总文档仍为 2026-09-20，主仓库为 2026-09-27，两者均早于 SC520/DFR0534 分支证据。本阶段沿用已读最新独立交付记录；只在此报告冲突，不回写主文档状态。
+- 本阶段文件：新增 fpga/rtl/sc520-card-recognition/card_frame_guard.v、fpga/sim/sc520-card-recognition/tb_card_guard.sv、fpga/scripts/sc520-card-recognition/simulate-guard.py、hardware/sc520-card-recognition/frame-guard.md、evidence/sc520-card-recognition/guard-validation.json；更新任务日志和本任务硬件README；共享learning新增next-stage.md并更新README。
+- 实际验证：在本工作树根使用 C:/Users/33630/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe -B -X utf8 fpga/scripts/sc520-card-recognition/simulate-guard.py，另分别增加 --negative 与 --watchdog-probe。ModelSim SE-64 10.7正常16场景/2432检查/0错误；注错exit1/errors1/injected1；提前500ns结束exit2/done0/errors0；runner三次均返回0。未改代码即一次通过，不以注错结果作为正常RTL通过。
+- 证据：runs/guard-normal-20261011-193739-58901528、guard-negative-20261011-193739-7af1cf18、guard-watchdog-20261011-193739-ca45c3a0；各run-manifest保存完整命令、源/快照/输出哈希和实际退出状态。guard-validation.json汇总root回读三次运行的6项输入/5项输出（每轮）及15项旧文件保护基线，均一致。
+- 结果：截止tick健康帧优先、连续坏帧不续期、held flush只一次撤销、TIMEOUT_MS=1/5、无事件撤销、候选count空拍保持、真实三帧滤波器同边沿清零及恢复均通过。旧616场景未重跑，原始验证文件保留。
+- 限制与待决策：guard只保护完整健康结果中断；DDR继续重复旧帧、整体clk停止、可信采集帧号、跨域与视频接入仍未解决。下游必须把不健康记录及无事件失效适配为不可信撤销，不能仅当空背景；现有quiz_control仅present1/stable0不能清既有armed。默认100个tick阈值、十四类仲裁及接口扩展待审核。
+- 下一步：主对话审核本候选和软件证据；在隔离工程推进十四类统一结果/显示/题序/音频事件与诊断画面，随后TD构建、卡片实拍校准和DFR0534实物接入。用户继续验证旧四键bit。root完成共享记录、索引、最终提交；本阶段不合并、不推送、不修改主接口。
