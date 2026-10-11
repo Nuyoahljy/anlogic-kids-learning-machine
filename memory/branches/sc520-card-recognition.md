@@ -70,3 +70,18 @@
 - 结果：截止tick健康帧优先、连续坏帧不续期、held flush只一次撤销、TIMEOUT_MS=1/5、无事件撤销、候选count空拍保持、真实三帧滤波器同边沿清零及恢复均通过。旧616场景未重跑，原始验证文件保留。
 - 限制与待决策：guard只保护完整健康结果中断；DDR继续重复旧帧、整体clk停止、可信采集帧号、跨域与视频接入仍未解决。下游必须把不健康记录及无事件失效适配为不可信撤销，不能仅当空背景；现有quiz_control仅present1/stable0不能清既有armed。默认100个tick阈值、十四类仲裁及接口扩展待审核。
 - 下一步：主对话审核本候选和软件证据；在隔离工程推进十四类统一结果/显示/题序/音频事件与诊断画面，随后TD构建、卡片实拍校准和DFR0534实物接入。用户继续验证旧四键bit。root完成共享记录、索引、最终提交；本阶段不合并、不推送、不修改主接口。
+
+## 2026-10-11 并行开发：十四类结果与业务候选
+
+- 阶段状态：等待主对话审核；基础提交 b3bc3784825a7f4364488b68856360b454a742e1，启动时本工作树干净；旧sc520-fixed-roi存在多任务未提交文件，仅读取实际四键工程作来源参考。
+- 用户授权：继续下一步开发并行。root负责同帧结果汇合、超时撤销、业务顶层和联调；items14_control负责十四类问答与题库，items14_display负责文字/同步字库/显示，items14_review审查仲裁和测试。
+- 范围：本任务items14目录中的独立结果级软件子系统；接入两路完成帧记录，不声称完成相机像素链路或产生可上板bit。旧识别器/guard和四键工程保留，未修改主文档或共享模块接口。
+- 候选策略：每路一个待匹配槽，帧号/来源必须一致；双稳定候选冲突拒识；健康空背景只有两路都无前景才成立；坏帧、错帧、溢出、超时等显式撤销答题资格。每轮十题，通过14项题库的起点轮转覆盖全部对象。具体本地接口和策略均待主对话审核。
+- 验收：同帧错序/异步到达、冲突、非法编号、不可信撤销、真实空背景重新武装、14类显示与两轮问答/语音事件，以及三子系统联合软件测试，均按下述实际命令完成。
+- 修改文件：新增本任务rtl/items14的7个RTL（join、system、control、question_bank、content、font_rom、osd）；4个tb_items14测试、字体生成/仿真/审计脚本及Tcl宏；11项派生字库/文案/参考/预览资产；3份items14接口说明；items14-baseline、validation历史及v2最终汇总、预览总览与20轮独立运行目录。本日志和本任务hardware README更新；共享learning新增items14.md并更新README/next-stage。逐文件绝对路径/哈希见共享批次登记。
+- 实际生成：bundled Python -B -X utf8 fpga/scripts/sc520-card-recognition/generate-items14-font.py 两次exit0（同批迭代），152字形/44文案/7图；系统字体只读，未复制。root目视检查苹果/不可信原图及七图总览，文字和中心ROI分离；不称为板上显示验收。
+- 实际仿真：同一Python -B -X utf8 fpga/scripts/sc520-card-recognition/simulate-items14.py --test join/control/display/system，每类另带 --negative 和 --watchdog-probe，ModelSim SE-64 10.7最终12轮资格全部通过。正常join34/3083、control16/3106、display47/850417、system10/802（场景/检查），合计107场景/857408检查/0错；4注错均实际force输出、native exit1/errors1/injected1；4个500ns提前停止native exit2/done0/errors0。工具编译/仿真无错误。
+- 迭代与历史：首轮control normal因test$plusargs把INJECT_FAULT=0当true导致注错，正常资格失败，旧normal/negative保留；改数值解析、保留撤销时TEST来源并补7轮起点循环后重跑。system先8场景，再补问答已排队正答案与K2被新fault阻止、TEST超时后的帧快照；最后把不可信文字断言从共同前缀改为实际名称位置，重跑三模式，旧结果和早期audit保留。总20个运行目录，不混用历史为当前通过。
+- 最终证据：evidence/sc520-card-recognition/items14-validation-v2.json；最终system为i14-system-*-20261011-200510三目录，其他九轮确切路径由audit-items14.py固定清单及v2汇总列出。执行同一Python的 -B -X utf8 fpga/scripts/sc520-card-recognition/audit-items14.py --output evidence/sc520-card-recognition/items14-validation-v2.json，exit0；root回读最终99项当前源/快照/前后哈希、60项输出、902项旧文件及5字库输出/7预览一致。早期items14-validation.json为历史，不绑定最终TB。
+- 未解决：这里只接收完成帧记录，未接原RGB/摄像头/HDMI PHY/真实UART。旧block detector的hold、帧结算及card EOF需新适配；帧号必须来自真实采集，不能靠重播旧图的新标记骗过新鲜度检查。持续clk、跨域、100ms实时时基、TD ROM映射/资源/时序与实物卡片效果均待验证。双候选拒识和十题轮转仍是待审核本地策略。
+- 建议主对话动作：审核本候选接口与软件证据后，建立隔离视频诊断工程，接入真实两路帧记录/预OSD像素及同步清除，完成TD6.2.1再给用户诊断bit实拍；DFR0534实测后接真实声音。不将本次107场景写为14类实物或整机通过。root完成共享登记/索引及本地提交，未合并/推送。

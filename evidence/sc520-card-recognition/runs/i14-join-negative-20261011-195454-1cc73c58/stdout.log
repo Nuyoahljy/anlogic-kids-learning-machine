@@ -1,0 +1,98 @@
+Reading D:/modeltech64_10.7/tcl/vsim/pref.tcl
+
+# 10.7
+
+# set card_top tb_items14_join
+# tb_items14_join
+#  set card_sources [list {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/i14-join-negative-20261011-195454-1cc73c58/inputs/items14_result_join.v}]
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/i14-join-negative-20261011-195454-1cc73c58/inputs/items14_result_join.v
+#  set card_tb {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/i14-join-negative-20261011-195454-1cc73c58/inputs/tb_items14_join.sv}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/i14-join-negative-20261011-195454-1cc73c58/inputs/tb_items14_join.sv
+#  set card_assets {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/i14-join-negative-20261011-195454-1cc73c58/inputs}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/i14-join-negative-20261011-195454-1cc73c58/inputs
+#  set card_negative 1
+# 1
+#  set card_probe 0
+# 0
+#  source {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/i14-join-negative-20261011-195454-1cc73c58/inputs/run-items14.do}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 19:54:55 on Oct 11,2026
+# vlog E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/i14-join-negative-20261011-195454-1cc73c58/inputs/items14_result_join.v 
+# -- Compiling module items14_result_join
+# 
+# Top level modules:
+# 	items14_result_join
+# End time: 19:54:55 on Oct 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 19:54:55 on Oct 11,2026
+# vlog -sv "+incdir+E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/i14-join-negative-20261011-195454-1cc73c58/inputs" E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/i14-join-negative-20261011-195454-1cc73c58/inputs/tb_items14_join.sv 
+# -- Compiling module tb_items14_join
+# 
+# Top level modules:
+# 	tb_items14_join
+# End time: 19:54:55 on Oct 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -wlf wave.wlf work.tb_items14_join "+ASSET_ROOT=E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/i14-join-negative-20261011-195454-1cc73c58/inputs" "+INJECT_FAULT=1" 
+# Start time: 19:54:55 on Oct 11,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_items14_join(fast)
+# Loading work.items14_result_join(fast)
+# Loading work.items14_result_join(fast__1)
+# CASE items14_join 1 lane=0 startup timeout uses sparse ticks and expires only once
+# CASE items14_join 2 lane=0 all fourteen unique legal candidates and one actual output fault
+# CASE items14_join 3 lane=0 block arrives first and unframed replacement payload is ignored
+# CASE items14_join 4 lane=0 card arrives first then stable result changes without a fake absence
+# CASE items14_join 5 lane=0 healthy empty and each unknown presence combination remain distinct
+# CASE items14_join 6 lane=0 conflict is healthy but revokes and advances anti-replay history
+# CASE items14_join 7 lane=0 mismatched tags clear both slots and do not publish a crossed pair
+# CASE items14_join 8 lane=0 same-frame source mismatch and epoch source change are rejected
+# CASE items14_join 9 lane=0 same-port overflow drops both old and new transaction halves
+# CASE items14_join 10 lane=0 malformed valid records and unhealthy frames revoke immediately
+# CASE items14_join 11 lane=0 duplicate backward and half-range tags cannot be replayed
+# CASE items14_join 12 lane=0 external flush resets history while keeping last display tag on revoke
+# CASE items14_join 13 lane=0 held detector revokes are explicit and do not erase replay history
+# CASE items14_join 14 lane=0 exact watchdog deadline accepts a healthy pair and renews fully
+# CASE items14_join 15 lane=0 unpaired healthy traffic cannot conceal partner disappearance
+# CASE items14_join 16 lane=0 bad records never renew watchdog even when both event strobes pulse
+# CASE items14_join 17 lane=0 conflict on final tick renews frame health but still revokes business result
+# CASE items14_join 18 lane=1 startup timeout uses sparse ticks and expires only once
+# CASE items14_join 19 lane=1 all fourteen unique legal candidates and one actual output fault
+# ERROR items14_join case=19 time=1867000 legal class with exact selected diagnostic count stable validity
+# CASE items14_join 20 lane=1 block arrives first and unframed replacement payload is ignored
+# CASE items14_join 21 lane=1 card arrives first then stable result changes without a fake absence
+# CASE items14_join 22 lane=1 healthy empty and each unknown presence combination remain distinct
+# CASE items14_join 23 lane=1 conflict is healthy but revokes and advances anti-replay history
+# CASE items14_join 24 lane=1 mismatched tags clear both slots and do not publish a crossed pair
+# CASE items14_join 25 lane=1 same-frame source mismatch and epoch source change are rejected
+# CASE items14_join 26 lane=1 same-port overflow drops both old and new transaction halves
+# CASE items14_join 27 lane=1 malformed valid records and unhealthy frames revoke immediately
+# CASE items14_join 28 lane=1 duplicate backward and half-range tags cannot be replayed
+# CASE items14_join 29 lane=1 external flush resets history while keeping last display tag on revoke
+# CASE items14_join 30 lane=1 held detector revokes are explicit and do not erase replay history
+# CASE items14_join 31 lane=1 exact watchdog deadline accepts a healthy pair and renews fully
+# CASE items14_join 32 lane=1 unpaired healthy traffic cannot conceal partner disappearance
+# CASE items14_join 33 lane=1 bad records never renew watchdog even when both event strobes pulse
+# CASE items14_join 34 lane=1 conflict on final tick renews frame health but still revokes business result
+# RESULT tb_items14_join errors=1 checks=3083 scenarios=34 injected=1
+# ** Note: $finish    : E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/i14-join-negative-20261011-195454-1cc73c58/inputs/tb_items14_join.sv(299)
+#    Time: 3140 ns  Iteration: 1  Instance: /tb_items14_join
+# Break in Module tb_items14_join at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/i14-join-negative-20261011-195454-1cc73c58/inputs/tb_items14_join.sv line 299
+# Stopped at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/i14-join-negative-20261011-195454-1cc73c58/inputs/tb_items14_join.sv line 299
+CARD_SIM_FINISHED tb_items14_join errors=1 checks=3083 scenarios=34 done=1 injected=1
+# End time: 19:54:56 on Oct 11,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
