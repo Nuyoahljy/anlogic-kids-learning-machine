@@ -1,0 +1,15 @@
+# Keep compact manifests and physical CDC reports; retain large TD products on disk.
+*
+!.gitignore
+!*/
+!audit.json
+!inputs.json
+!started.json
+!stages.json
+!result.json
+!failure.json
+!*.launch.tcl
+!*/analysis/*.rpt
+!*/analysis/*.txt
+!*/analysis/*.sdc
+!*/analysis/*.json

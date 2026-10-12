@@ -1,0 +1,61 @@
+Reading D:/modeltech64_10.7/tcl/vsim/pref.tcl
+
+# 10.7
+
+# set card_top tb_pixel14_block
+# tb_pixel14_block
+#  set card_sources [list {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-watchdog-20261012-110622-675cd773/inputs/block_frame_recognizer.v}]
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-watchdog-20261012-110622-675cd773/inputs/block_frame_recognizer.v
+#  set card_tb {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-watchdog-20261012-110622-675cd773/inputs/tb_pixel14_block.sv}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-watchdog-20261012-110622-675cd773/inputs/tb_pixel14_block.sv
+#  set card_assets {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-watchdog-20261012-110622-675cd773/inputs}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-watchdog-20261012-110622-675cd773/inputs
+#  set card_negative 0
+# 0
+#  set card_probe 1
+# 1
+#  set card_full 0
+# 0
+#  source {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-watchdog-20261012-110622-675cd773/inputs/run-pixel14.do}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 11:06:24 on Oct 12,2026
+# vlog E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-watchdog-20261012-110622-675cd773/inputs/block_frame_recognizer.v 
+# -- Compiling module block_frame_recognizer
+# 
+# Top level modules:
+# 	block_frame_recognizer
+# End time: 11:06:24 on Oct 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 11:06:24 on Oct 12,2026
+# vlog -sv "+incdir+E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-watchdog-20261012-110622-675cd773/inputs" E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-watchdog-20261012-110622-675cd773/inputs/tb_pixel14_block.sv 
+# -- Compiling module tb_pixel14_block
+# 
+# Top level modules:
+# 	tb_pixel14_block
+# End time: 11:06:24 on Oct 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -wlf wave.wlf work.tb_pixel14_block "+ASSET_ROOT=E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-watchdog-20261012-110622-675cd773/inputs" "+INJECT_FAULT=0" 
+# Start time: 11:06:24 on Oct 12,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "block_frame_recognizer(fast)".
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_pixel14_block(fast)
+# Loading work.block_frame_recognizer(fast)
+# CASE block 1 full raster item 1
+PIXEL14_SIM_FINISHED tb_pixel14_block errors=0 checks=0 scenarios=1 done=0 injected=0
+# End time: 11:06:25 on Oct 12,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

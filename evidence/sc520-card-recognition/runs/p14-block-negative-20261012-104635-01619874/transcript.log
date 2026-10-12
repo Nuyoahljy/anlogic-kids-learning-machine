@@ -1,0 +1,82 @@
+# set card_top tb_pixel14_block
+# tb_pixel14_block
+#  set card_sources [list {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-negative-20261012-104635-01619874/inputs/block_frame_recognizer.v}]
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-negative-20261012-104635-01619874/inputs/block_frame_recognizer.v
+#  set card_tb {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-negative-20261012-104635-01619874/inputs/tb_pixel14_block.sv}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-negative-20261012-104635-01619874/inputs/tb_pixel14_block.sv
+#  set card_assets {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-negative-20261012-104635-01619874/inputs}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-negative-20261012-104635-01619874/inputs
+#  set card_negative 1
+# 1
+#  set card_probe 0
+# 0
+#  source {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-negative-20261012-104635-01619874/inputs/run-pixel14.do}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 10:46:36 on Oct 12,2026
+# vlog E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-negative-20261012-104635-01619874/inputs/block_frame_recognizer.v 
+# -- Compiling module block_frame_recognizer
+# 
+# Top level modules:
+# 	block_frame_recognizer
+# End time: 10:46:36 on Oct 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 10:46:36 on Oct 12,2026
+# vlog -sv "+incdir+E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-negative-20261012-104635-01619874/inputs" E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-negative-20261012-104635-01619874/inputs/tb_pixel14_block.sv 
+# -- Compiling module tb_pixel14_block
+# 
+# Top level modules:
+# 	tb_pixel14_block
+# End time: 10:46:36 on Oct 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -wlf wave.wlf work.tb_pixel14_block "+ASSET_ROOT=E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-negative-20261012-104635-01619874/inputs" "+INJECT_FAULT=1" 
+# Start time: 10:46:36 on Oct 12,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "block_frame_recognizer(fast)".
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_pixel14_block(fast)
+# Loading work.block_frame_recognizer(fast)
+# CASE block 1 full raster item 1
+# FAIL block 1 deliberately corrupted real DUT item is illegal
+# CASE block 2 full raster item 2
+# CASE block 3 full raster item 3
+# CASE block 4 full raster item 4
+# CASE block 5 full raster item 5
+# CASE block 6 full raster item 6
+# CASE block 7 full raster item 7
+# CASE block 8 full raster item 8
+# CASE block 9 full raster item 9
+# CASE block 10 healthy empty resets stable state
+# CASE block 11 mixed colors, clipped box, unsampled foreground and black unknown
+# CASE block 12 mixed colors, clipped box, unsampled foreground and black unknown
+# CASE block 13 mixed colors, clipped box, unsampled foreground and black unknown
+# CASE block 14 mixed colors, clipped box, unsampled foreground and black unknown
+# CASE block 15 raster or metadata defect 1 withdraws stale result
+# CASE block 16 raster or metadata defect 2 withdraws stale result
+# CASE block 17 raster or metadata defect 3 withdraws stale result
+# CASE block 18 raster or metadata defect 4 withdraws stale result
+# CASE block 19 raster or metadata defect 5 withdraws stale result
+# CASE block 20 raster or metadata defect 6 withdraws stale result
+# CASE block 21 raster or metadata defect 7 withdraws stale result
+# CASE block 22 flush is silent, held, and resets confirmation
+# CASE block 23 source change resets confirmation without mislabelling result
+# RESULT block errors=1 checks=249 scenarios=23 injected=1
+# ** Note: $finish    : E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-negative-20261012-104635-01619874/inputs/tb_pixel14_block.sv(102)
+#    Time: 3491880 ns  Iteration: 1  Instance: /tb_pixel14_block
+# Break in Module tb_pixel14_block at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-negative-20261012-104635-01619874/inputs/tb_pixel14_block.sv line 102
+# Stopped at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-block-negative-20261012-104635-01619874/inputs/tb_pixel14_block.sv line 102
+# End time: 10:46:38 on Oct 12,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

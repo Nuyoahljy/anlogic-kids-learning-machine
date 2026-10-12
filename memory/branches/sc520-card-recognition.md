@@ -1,4 +1,4 @@
-# 五类卡片识别独立开发
+# 五类卡片与十四类采集视频开发
 
 - 任务 ID：sc520-card-recognition
 - 状态：等待主对话审核
@@ -6,7 +6,7 @@
 - 分支：task/sc520-card-recognition
 - 基础提交：f609426044982c986b54e999866be9f4c1af2682
 - 开始时间：2026-10-10T19:31:42+08:00
-- 结束时间：2026-10-10；精确运行时间见validation.json和各run-manifest.json
+- 结束时间：2026-10-12；精确分阶段运行与恢复审计时间见各manifest、validation和recovery-audit.json
 - 工作目录：E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition
 
 ## 目标与验收条件
@@ -85,3 +85,51 @@
 - 最终证据：evidence/sc520-card-recognition/items14-validation-v2.json；最终system为i14-system-*-20261011-200510三目录，其他九轮确切路径由audit-items14.py固定清单及v2汇总列出。执行同一Python的 -B -X utf8 fpga/scripts/sc520-card-recognition/audit-items14.py --output evidence/sc520-card-recognition/items14-validation-v2.json，exit0；root回读最终99项当前源/快照/前后哈希、60项输出、902项旧文件及5字库输出/7预览一致。早期items14-validation.json为历史，不绑定最终TB。
 - 未解决：这里只接收完成帧记录，未接原RGB/摄像头/HDMI PHY/真实UART。旧block detector的hold、帧结算及card EOF需新适配；帧号必须来自真实采集，不能靠重播旧图的新标记骗过新鲜度检查。持续clk、跨域、100ms实时时基、TD ROM映射/资源/时序与实物卡片效果均待验证。双候选拒识和十题轮转仍是待审核本地策略。
 - 建议主对话动作：审核本候选接口与软件证据后，建立隔离视频诊断工程，接入真实两路帧记录/预OSD像素及同步清除，完成TD6.2.1再给用户诊断bit实拍；DFR0534实测后接真实声音。不将本次107场景写为14类实物或整机通过。root完成共享登记/索引及本地提交，未合并/推送。
+
+## 2026-10-11 下一步并行开发：采集像素与视频诊断
+
+- 阶段状态：进行中；基础提交 a698a53e5dcf62819e2045b687d6cf386352d121，开始时本工作树干净。用户明确原四键bit和DFR0534实物继续待验证，允许继续软件开发。
+- root负责像素协议/真实采集标签、联调与统一证据；video_block审计并实现本帧积木适配，video_build负责隔离工程与TD路径，video_provenance审查采集/DDR/跨域来源。首轮子任务只读，源码分工确认后才写。
+- 当前发现：旧识别在DDR显示RGB之后，显示帧号不能证明采集新鲜；旧bbox/shape保持也不能直接作为当前完整帧结果。新候选从真实采集像素建立健康与tag，原四键工程和已提交items14作为保护基线。
+- 验收目标：健康完整帧、坏帧/丢像素/溢出/中断与恢复的真实像素激励，当前帧两路结果和OSD旁带对齐，隔离构建实际可行性及TD6.2.1验证。具体硬件接入/bit产出以实际结果为准；软件仿真和构建不得写作上板通过。
+- 修改登记：pixel14-baseline.json保护本任务既有文件、旧四键源/脚本/bit及主文档；逐路径见共享启动批次。任何新接口只作为本任务候选，不修改主接口/项目总状态。
+
+## 2026-10-12 断点恢复：pixel14
+
+- 当前负责人：SC520断点恢复对话 /root；读取关联聊天01a12ab4-0540-73a1-bb34-5857045b63cd后接手其未提交pixel14文件。HEAD仍为a698a53；原四键bit及DFR0534实物验证继续等待用户，不因开发而升级状态。
+- 恢复时核对1284项保护基线一致。中断遗留capture/CDC/pipeline、runner、测试和六个运行目录此前仅有启动登记；本批以observed补登记，不冒称本轮创建或重跑。
+- 尚缺当前帧积木识别模块、完整管线联调和真实CSI到ISP完成资格关联，不能作为可下载工程。继续补齐并实际验证；主文档/旧bit保持保护。
+
+- 2026-10-12 root联调修复批次：独立审查确认前向mailbox无法接连续近邻两路结果、held flush只清一拍、done紧邻SOF与matcher DRAIN冲突。已改为采集双路暂存单包发送、同步持续flush及过早SOF撤销；新增完整RGB96管线TB并增加provenance runner入口，模板从快照定位。当前待实际仿真，不能标为通过。
+
+- 2026-10-12 软件联调：因block分工多次限流而未落盘，root接手并完成block RTL及独立TB；只使用已接手任务文件。新增第三处隔离边界修复：外部短flush独立排队，避免隔离收尾时再次清除丢失。
+- 实际命令：bundled Python -B -X utf8 fpga/scripts/sc520-card-recognition/simulate-pixel14.py，capture/cdc/block/pipeline四个--test各执行normal、--negative、--watchdog-probe。12轮均按资格返回0；正常capture19场景/1914703检查，cdc8/1440，block23/249，pipeline18/196，全部0错。4轮真实输出注错均native exit1/errors1/injected1；4轮500ns提前停止均native exit2/done0/errors0。没有用负向结果冒充正常通过。
+- pipeline覆盖真实RGB96模板卡10..14、红方形、双路原子汇合、一次正确问答计分、完整前景漏采点、坏EOF、采集时钟停转、持有flush与帧中释放、采集tag重放、切源、EOF紧邻SOF、短flush重叠及视频RGB/DE同步。block以64×64完整光栅验证九类、混色、裁剪、未知、逐类健康与恢复；未使用实拍。
+- 当前仍等待provenance实际vendor时序核对、TD工程/资源/时序；本批不是可上板版本。1284项保护完整性会在最终audit重新核对。
+
+- 2026-10-12 最终软件验证：为核对默认几何，pipeline增加--full-resolution并实际以1280×720运行全部18场景；小几何历史仍保留。provenance编译实际厂商CSI/RAW解析器并测试最短包间隔及截短HS，正常18场景71检查。runner和输入快照冻结后，五类normal/negative/watchdog最终15轮通过，正常共86场景/1916659检查/0错。
+- 已实际执行 audit-pixel14.py 返回0：15轮当前源码/输入快照/输出哈希全部一致，1284项旧代码、旧bit和主文件哈希未变。总证据 evidence/sc520-card-recognition/pixel14-validation.json。full pipeline正常p14-pipeline-normal-20261012-105005-c9d1ca68；最终各轮由总证据逐项列出。
+- TD隔离工程由build_impl负责，已遇并保留初始XML/长路径/启动标记失败，后续运行进行中；这些探索结果不计为最终TD通过。真实硬件、精确DDR帧对应及声音仍待验证。
+
+- 2026-10-12 首次完整TD 6a50b105完成但时序拒收：SWNS -5.063ns/STNS -70.009ns，HWNS +0.020ns，最差matcher distance到out_item串行排序；blocks框选择到输出另有负路径。bit仅为不合格候选，不建议下载；具体路径及sha由build批次登记。
+- root据真实报告新增pixel14_card_matcher派生模块，旧受保护card_matcher保持原状。新模块用独立快照逐拍排序并允许下一帧采集同时进行；block的bbox选择与宽高差分拆开。pipeline转用新模块，TB新增最短帧间隔下两帧并行捕获与排序；首轮旧18场景对新RTL正常通过，最终回归正在重跑。审计v2独立保留首轮validation历史。
+- 独立审查还发现provenance最终关闭同拍重复结束/开始标记可能漏拒，build_impl修复并新增四边沿测试。后续构建同时检查新CDC物理传播上界，不用时钟组切断替代验证。
+
+- 2026-10-12 v2软件回读已完成：pipeline新排序/框选择流水线全720p 19场景199检查，provenance关闭边沿补测后22场景95检查；最终15轮正常共91场景1916686检查0错，负向和提前结束各五轮如预期拒绝。audit-pixel14.py实际返回0，当前源/快照/输出及1284保护一致，独立保留pixel14-validation-v2.json，不覆盖首轮软件历史。106已过综合进入P&R，ROM/IO与CDC由build批次报告。
+
+- 2026-10-12 交接复核进行中：root与review_compact独立回读v2十五个manifest、126项输入及78项输出，正常91场景/1916686检查0错；1284保护文件全一致。106实际final_timing为SWNS +0.105ns/STNS0、HWNS +0.020ns/HTNS0；bitgen已完成，但追加CDC报告要求已优化的泛型fault端点而使phy进程退出1，原failure/stages/bit/DB保持不变。
+- 原布线数据库的独立CDC报告正在建立恢复资格；root发现物理单元名与逻辑同步器名不一致后，已从LSLICE B触发器网表确认staging_fault打包映射。后续审计必须逐项映射逻辑net、物理Q/D和目标时钟，不得凭报告文件名或集合数量宣称通过。staging/config的实测2ns比较与req/ack实际2ns约束需分别记录；在最终audit落单前不宣称CDC资格。任务README已增加当前pixel14导航并标明原独立模块历史边界。
+
+## 2026-10-12 pixel14 最终交接
+
+- 状态：等待主对话审核。阶段基础提交 a698a53；负责人 SC520 断点恢复 /root，build_impl 负责原工程/构建与初始物理报告，review_compact 独立核对软件哈希和 CDC 逐位映射。build_impl 后续限流未能封存，root 接手最终恢复脚本、构建文档与登记；未覆盖其他任务。
+- 完成内容：真实 AWB96/CSI 帧资格、卡片与本帧积木识别、两路原子结果包、双向握手/清除/超时恢复、十四类业务与预 OSD 视频接入，独立 overlay 工程和 TD 6.2.1 构建。新增分拍 matcher 修复 105 的真实负建立路径，block bbox 分段；关闭边沿标记、连续帧排序重叠及短 flush 重入均有回归。
+- 软件结果：v2 十五轮资格通过，正常 91 场景/1,916,686 检查/0 错；五轮真实输出注错和五轮 500ns 提前停止按预期拒绝。完整 pipeline 为 1280×720。根与独立复核回读 126 项输入、78 项输出及 1284 项保护文件一致；没有为文档收尾重复运行已通过的 RTL 仿真。
+- 106 原始构建：综合 exit0；bitgen 实际成功；随后报告钩子找不到综合已删除的泛型 fault 同步器，phy 进程 exit1。原 failure/stages、快照、数据库和 bit 均保留原样。最终 SWNS +0.105ns/STNS0、HWNS +0.020ns/HTNS0，覆盖 96.12%。资源为 slice15075、register15206、ERAM43、DSP17。105 的 -5.063ns 不合格镜像及此前尝试保留为历史。
+- 独立恢复验收：root 实际执行 bundled Python -B -X utf8 fpga/custom_project/sc520-pixel14/tools/audit-recovery.py evidence/sc520-card-recognition/builds/6a50b106 evidence/sc520-card-recognition/builds/cdc106-v3，最终退出0，产生 6a50b106/recovery-audit.json。脚本首次因 config 第二级使用 provenance/cfg_done 别名而拒收，核对物理 Q/D 与 snapshot 顶层连线后修正审计器；无 RTL/SDC/bit 改动，无重复 TD。292 项输入记录与24快照通过，实现输入一致；唯一旧路径差异为 bitgen 后的报告辅助 Tcl。
+- ROM/IO：模板1024×5及字库3×4096×5全部地址逐字 INIT 验证，4份签名存在于路由网表；四键 D5/A9/B9/C7 为 INPUT/LVCMOS33/PULLUP。bit位于 evidence/sc520-card-recognition/builds/6a50b106/td_project/camera_to_dsi_display_Runs/phy_1/camera_to_dsi_display.bit，1,789,539 字节，SHA256 3909C31AA81D7EB5C3153EFC2DBAC6D54C655A82A698107AA08CB0B14AFC0ABD。
+- CDC：物理单元名可能是其他寄存器，已按逻辑 net、物理 Q/D 与寄存器选择解码确认打包别名。4条req/ack和4键实际2ns预算通过且hold正；staging/config是原周期预算，实测延迟分别0.604/0.405/1.429ns，小于2ns但不称2ns约束生效。payload目标集合160项中，排除19条setup+19条min同域附带路径，剩余80+80条跨域路径覆盖全部80有效位，69为dst_data、11为同位joiner别名。最大传播1.397ns；10ns是恢复审计的外部上限，工具未应用尝试的10ns exception。0.110ns相位预算/异步负slack不作为CDC通过或失败结论，也不提供MTBF证明。
+- 修改与证据入口：本任务 pixel14 RTL、5个TB、仿真/审计/构建脚本、custom_project/sc520-pixel14 overlay与配置，硬件README及4份pixel14说明，v2软件汇总、106恢复audit、全部历史run/build目录和本日志。源/脚本/文档逐文件，生成目录及关键bit路径按共享最终批次登记；缓存、网表和bit保留本地，Git仅收小型清单与报告。
+- 阻塞与风险：没有相机实拍校准、新bit上板、真实HDMI/按键/长时间运行或音频播放证据。仍未核算CSI CRC/ECC数值，没有采集tag与DDR显示帧的精确绑定；停流保护依赖显示时钟持续运行。该恢复资格只绑定本轮bit，不自动适用于下一轮路由。实验模板与固定ROI不能当任意物体分类准确率。
+- 待决策与建议主对话更新：审核pixel14本地接口、真实采集身份、双候选拒识、问答清除与候选bit及物理报告后，再决定接口接受和合并。主文档仍含SC500/DFPlayer及旧环境状态，须由主对话结合各分支证据更新，本任务未修改。
+- 下一步：旧四键826966ea bit与DFR0534实物测试继续独立待完成；主对话审核后安排新候选的相机/视频实测、卡片模板校准，再接真实音频。未下载、写Flash、替换旧bit、推送或合并。最终本地提交号及finish-task检查结果由共享提交批次绑定。

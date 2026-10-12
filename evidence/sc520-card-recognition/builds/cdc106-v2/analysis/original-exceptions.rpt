@@ -1,0 +1,814 @@
+Created by          : Tang Dynasty v6.2.168116
+                    : Copyright (c) 2012-2025 Anlogic Inc.
+Generated           : Mon Oct 12 11:16:14 2026
+
+Top Model           : design_top_wrapper
+Device              : PH1P35MDG324
+Speed               : 3
+STA coverage        : 96.12%
+Constraint File     : E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/overlay/pixel14.sdc;
+Confidence          : Routed
+Check Corner        : Both (Slow and Fast)
+CRPR Enabled        : Yes
+Report Scheme       : 10 end point(s) per path group, 1 path(s) per end point
+
+
+Check Status
+-------------
+
+Corner   | Max      Min     
+------------------------------------
+Slow     | yes      yes     
+Fast     | yes      yes     
+
+MCP/SMD Summary
+--------------------
+
+		Max Check
+		--------------------
+		     Total    Dominated     Shadowed      Ignored   Constraint
+		         1            1            0            0   set_max_delay -from [get_regs {u_quiz_keys/keys_sync_meta[0]}] -to [get_regs {u_quiz_keys/keys_sync_safe[0]}] 2.000
+		         1            1            0            0   set_max_delay -from [get_regs {u_quiz_keys/keys_sync_meta[1]}] -to [get_regs {u_quiz_keys/keys_sync_safe[1]}] 2.000
+		         1            1            0            0   set_max_delay -from [get_regs {u_quiz_keys/keys_sync_meta[2]}] -to [get_regs {u_quiz_keys/keys_sync_safe[2]}] 2.000
+		         1            1            0            0   set_max_delay -from [get_regs {u_quiz_keys/keys_sync_meta[3]}] -to [get_regs {u_quiz_keys/keys_sync_safe[3]}] 2.000
+		         1            1            0            0   set_max_delay -from [get_regs {u_p14_pipeline/forward/req_meta}] -to [get_regs {u_p14_pipeline/forward/req_sync}] 2.000
+		         1            1            0            0   set_max_delay -from [get_regs {u_p14_pipeline/forward/ack_meta}] -to [get_regs {u_p14_pipeline/forward/ack_sync}] 2.000
+		         1            1            0            0   set_max_delay -from [get_regs {u_p14_pipeline/backward/req_meta}] -to [get_regs {u_p14_pipeline/backward/req_sync}] 2.000
+		         1            1            0            0   set_max_delay -from [get_regs {u_p14_pipeline/backward/ack_meta}] -to [get_regs {u_p14_pipeline/backward/ack_sync}] 2.000
+		        18            0            0           18   set_max_delay -from [get_regs -nowarn {*/primary_addr_gray_reg[*]}] -to [get_regs -nowarn {*/sync_r1[*]}] -datapath_only 9.360
+		        18            0            0           18   set_max_delay -from [get_regs -nowarn {*/primary_addr_gray_reg[*]}] -to [get_regs -nowarn {*/sync_r1[*]}] -datapath_only 13.033
+
+		Min Check
+		--------------------
+		     Total    Dominated     Shadowed      Ignored   Constraint
+
+Status of timing exceptions
+--------------------------------------------------
+
+MCP/SMD Details
+--------------------
+
+
+Constraint     :   set_max_delay -from [get_regs {u_quiz_keys/keys_sync_meta[0]}] -to [get_regs {u_quiz_keys/keys_sync_safe[0]}] 2.000
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_max_delay -from [get_regs {u_quiz_keys/keys_sync_meta[1]}] -to [get_regs {u_quiz_keys/keys_sync_safe[1]}] 2.000
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_max_delay -from [get_regs {u_quiz_keys/keys_sync_meta[2]}] -to [get_regs {u_quiz_keys/keys_sync_safe[2]}] 2.000
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_max_delay -from [get_regs {u_quiz_keys/keys_sync_meta[3]}] -to [get_regs {u_quiz_keys/keys_sync_safe[3]}] 2.000
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_max_delay -from [get_regs {u_p14_pipeline/forward/req_meta}] -to [get_regs {u_p14_pipeline/forward/req_sync}] 2.000
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_max_delay -from [get_regs {u_p14_pipeline/forward/ack_meta}] -to [get_regs {u_p14_pipeline/forward/ack_sync}] 2.000
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_max_delay -from [get_regs {u_p14_pipeline/backward/req_meta}] -to [get_regs {u_p14_pipeline/backward/req_sync}] 2.000
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_max_delay -from [get_regs {u_p14_pipeline/backward/ack_meta}] -to [get_regs {u_p14_pipeline/backward/ack_sync}] 2.000
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            1
+Dominated      :            1,        100.0%
+
+
+Constraint     :   set_max_delay -from [get_regs -nowarn {*/primary_addr_gray_reg[*]}] -to [get_regs -nowarn {*/sync_r1[*]}] -datapath_only 9.360
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :           18
+Dominated      :            0,          0.0%
+Ignored        :           18,        100.0%
+               :           18, by set_clock_groups
+
+
+Constraint     :   set_max_delay -from [get_regs -nowarn {*/primary_addr_gray_reg[*]}] -to [get_regs -nowarn {*/sync_r1[*]}] -datapath_only 13.033
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :           18
+Dominated      :            0,          0.0%
+Ignored        :           18,        100.0%
+               :           18, by set_clock_groups
+
+
+Details on timing exceptions
+--------------------------------------------------
+
+Timing details for constraint:
+	set_max_delay -from [get_regs {u_quiz_keys/keys_sync_meta[0]}] -to [get_regs {u_quiz_keys/keys_sync_safe[0]}] 2.000
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     
+set_max_delay -from [get_regs {u_quiz_keys/keys_sync_meta[0]}] -to [get_regs {u_quiz_keys/keys_sync_safe[0]}] 2.000
+
+Type           :     SMD
+
+Statistics:
+Max            : SWNS      1.531ns, STNS      0.000ns,         0 Viol Endpoints,         1 Total Endpoints,         1 Paths Analyzed
+Min            : HWNS      0.000ns, HTNS      0.000ns,         0 Viol Endpoints,         0 Total Endpoints,         0 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 1.531ns
+Begin Point         : u_quiz_keys/keys_sync_meta_reg[0]_syn_2.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_quiz_keys/keys_sync_meta_reg[0]_syn_2.imb (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 2.000ns { HDMI_PIXEL_CLK rising@0.000ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 0.405ns (cell 0.204ns (50%), net 0.201ns (50%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.684          1.494          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.115          1.609          net: I_sys_clk_dup_6,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/overlay/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.645         -0.036          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.827          0.791          net: u_hdmi_mixer/I_clk,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/hdmi_mixer.v(8)
+                                                                      pin: u_hdmi_mixer/I_clk_created_gclkinst.clkin[0]
+GCLK                x023y039z17         0.016          0.807          pin: u_hdmi_mixer/I_clk_created_gclkinst.clkout
+net (fo=4)                              0.388          1.195          net: u_hdmi_mixer/I_clk_syn_657,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/hdmi_mixer.v(8)
+                                                                      pin: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_1_l_bk3.clkin
+SCLK                x023y059z2          0.079          1.274          pin: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_1_l_bk3.clkout
+net (fo=81)                             0.633          1.907          net: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_1_l_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_quiz_keys/keys_sync_meta_reg[0]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x014y058z0          0.126    f     2.033          pin: u_quiz_keys/keys_sync_meta_reg[0]_syn_2.oqa
+net (fo=1)                              0.201          2.234          net: u_quiz_keys/keys_sync_meta[0],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/quiz/quiz_key_inputs.v(27)
+                                                                      pin: u_quiz_keys/keys_sync_meta_reg[0]_syn_2.imb
+reg                 x014y058z0          0.078    r     2.312          net: u_quiz_keys/keys_sync_safe[0],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/quiz/quiz_key_inputs.v(28)
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.312               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.745          0.745          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.629          1.374          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.099          1.473          net: I_sys_clk_dup_6,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/overlay/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.411          0.062          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.708          0.770          net: u_hdmi_mixer/I_clk,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/hdmi_mixer.v(8)
+                                                                      pin: u_hdmi_mixer/I_clk_created_gclkinst.clkin[0]
+GCLK                x023y039z17         0.014          0.784          pin: u_hdmi_mixer/I_clk_created_gclkinst.clkout
+net (fo=4)                              0.333          1.117          net: u_hdmi_mixer/I_clk_syn_657,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/hdmi_mixer.v(8)
+                                                                      pin: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_1_l_bk3.clkin
+SCLK                x023y059z2          0.068          1.185          pin: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_1_l_bk3.clkout
+net (fo=81)                             0.551          1.736          net: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_1_l_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_quiz_keys/keys_sync_meta_reg[0]_syn_2.clk
+constraint delay                        2.000          3.736               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.064          3.672               
+clock uncertainty                       0.000          3.672               
+clock pessimism                         0.171          3.843               
+--------------------------------------------------------------------  ---------------
+Required                                               3.843               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.531               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+
+
+Timing details for constraint:
+	set_max_delay -from [get_regs {u_quiz_keys/keys_sync_meta[1]}] -to [get_regs {u_quiz_keys/keys_sync_safe[1]}] 2.000
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     
+set_max_delay -from [get_regs {u_quiz_keys/keys_sync_meta[1]}] -to [get_regs {u_quiz_keys/keys_sync_safe[1]}] 2.000
+
+Type           :     SMD
+
+Statistics:
+Max            : SWNS      1.531ns, STNS      0.000ns,         0 Viol Endpoints,         1 Total Endpoints,         1 Paths Analyzed
+Min            : HWNS      0.000ns, HTNS      0.000ns,         0 Viol Endpoints,         0 Total Endpoints,         0 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 1.531ns
+Begin Point         : u_quiz_keys/keys_sync_meta_reg[1]_syn_2.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_quiz_keys/keys_sync_meta_reg[1]_syn_2.imb (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 2.000ns { HDMI_PIXEL_CLK rising@0.000ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 0.405ns (cell 0.204ns (50%), net 0.201ns (50%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.684          1.494          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.115          1.609          net: I_sys_clk_dup_6,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/overlay/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.645         -0.036          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.827          0.791          net: u_hdmi_mixer/I_clk,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/hdmi_mixer.v(8)
+                                                                      pin: u_hdmi_mixer/I_clk_created_gclkinst.clkin[0]
+GCLK                x023y039z17         0.016          0.807          pin: u_hdmi_mixer/I_clk_created_gclkinst.clkout
+net (fo=4)                              0.388          1.195          net: u_hdmi_mixer/I_clk_syn_657,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/hdmi_mixer.v(8)
+                                                                      pin: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_1_l_bk3.clkin
+SCLK                x023y059z2          0.079          1.274          pin: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_1_l_bk3.clkout
+net (fo=81)                             0.631          1.905          net: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_1_l_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_quiz_keys/keys_sync_meta_reg[1]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x016y078z4          0.126    f     2.031          pin: u_quiz_keys/keys_sync_meta_reg[1]_syn_2.oqa
+net (fo=1)                              0.201          2.232          net: u_quiz_keys/keys_sync_meta[1],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/quiz/quiz_key_inputs.v(27)
+                                                                      pin: u_quiz_keys/keys_sync_meta_reg[1]_syn_2.imb
+reg                 x016y078z4          0.078    r     2.310          net: u_quiz_keys/keys_sync_safe[1],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/quiz/quiz_key_inputs.v(28)
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.310               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.745          0.745          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.629          1.374          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.099          1.473          net: I_sys_clk_dup_6,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/overlay/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.411          0.062          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.708          0.770          net: u_hdmi_mixer/I_clk,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/hdmi_mixer.v(8)
+                                                                      pin: u_hdmi_mixer/I_clk_created_gclkinst.clkin[0]
+GCLK                x023y039z17         0.014          0.784          pin: u_hdmi_mixer/I_clk_created_gclkinst.clkout
+net (fo=4)                              0.333          1.117          net: u_hdmi_mixer/I_clk_syn_657,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/hdmi_mixer.v(8)
+                                                                      pin: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_1_l_bk3.clkin
+SCLK                x023y059z2          0.068          1.185          pin: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_1_l_bk3.clkout
+net (fo=81)                             0.549          1.734          net: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_1_l_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_quiz_keys/keys_sync_meta_reg[1]_syn_2.clk
+constraint delay                        2.000          3.734               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.064          3.670               
+clock uncertainty                       0.000          3.670               
+clock pessimism                         0.171          3.841               
+--------------------------------------------------------------------  ---------------
+Required                                               3.841               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.531               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+
+
+Timing details for constraint:
+	set_max_delay -from [get_regs {u_quiz_keys/keys_sync_meta[2]}] -to [get_regs {u_quiz_keys/keys_sync_safe[2]}] 2.000
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     
+set_max_delay -from [get_regs {u_quiz_keys/keys_sync_meta[2]}] -to [get_regs {u_quiz_keys/keys_sync_safe[2]}] 2.000
+
+Type           :     SMD
+
+Statistics:
+Max            : SWNS      1.629ns, STNS      0.000ns,         0 Viol Endpoints,         1 Total Endpoints,         1 Paths Analyzed
+Min            : HWNS      0.000ns, HTNS      0.000ns,         0 Viol Endpoints,         0 Total Endpoints,         0 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 1.629ns
+Begin Point         : u_quiz_keys/keys_sync_meta_reg[2]_syn_2.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_quiz_keys/keys_sync_meta_reg[2]_syn_2.imb (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 2.000ns { HDMI_PIXEL_CLK rising@0.000ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 0.307ns (cell 0.204ns (66%), net 0.103ns (34%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.684          1.494          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.115          1.609          net: I_sys_clk_dup_6,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/overlay/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.645         -0.036          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.827          0.791          net: u_hdmi_mixer/I_clk,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/hdmi_mixer.v(8)
+                                                                      pin: u_hdmi_mixer/I_clk_created_gclkinst.clkin[0]
+GCLK                x023y039z17         0.016          0.807          pin: u_hdmi_mixer/I_clk_created_gclkinst.clkout
+net (fo=4)                              0.388          1.195          net: u_hdmi_mixer/I_clk_syn_657,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/hdmi_mixer.v(8)
+                                                                      pin: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_1_l_bk3.clkin
+SCLK                x023y059z2          0.079          1.274          pin: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_1_l_bk3.clkout
+net (fo=81)                             0.631          1.905          net: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_1_l_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_quiz_keys/keys_sync_meta_reg[2]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x017y078z6          0.126    f     2.031          pin: u_quiz_keys/keys_sync_meta_reg[2]_syn_2.oqa
+net (fo=1)                              0.103          2.134          net: u_quiz_keys/keys_sync_meta[2],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/quiz/quiz_key_inputs.v(27)
+                                                                      pin: u_quiz_keys/keys_sync_meta_reg[2]_syn_2.imb
+reg                 x017y078z6          0.078    r     2.212          net: u_quiz_keys/keys_sync_safe[2],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/quiz/quiz_key_inputs.v(28)
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.212               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.745          0.745          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.629          1.374          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.099          1.473          net: I_sys_clk_dup_6,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/overlay/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.411          0.062          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.708          0.770          net: u_hdmi_mixer/I_clk,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/hdmi_mixer.v(8)
+                                                                      pin: u_hdmi_mixer/I_clk_created_gclkinst.clkin[0]
+GCLK                x023y039z17         0.014          0.784          pin: u_hdmi_mixer/I_clk_created_gclkinst.clkout
+net (fo=4)                              0.333          1.117          net: u_hdmi_mixer/I_clk_syn_657,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/hdmi_mixer.v(8)
+                                                                      pin: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_1_l_bk3.clkin
+SCLK                x023y059z2          0.068          1.185          pin: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_1_l_bk3.clkout
+net (fo=81)                             0.549          1.734          net: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_1_l_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_quiz_keys/keys_sync_meta_reg[2]_syn_2.clk
+constraint delay                        2.000          3.734               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.064          3.670               
+clock uncertainty                       0.000          3.670               
+clock pessimism                         0.171          3.841               
+--------------------------------------------------------------------  ---------------
+Required                                               3.841               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.629               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+
+
+Timing details for constraint:
+	set_max_delay -from [get_regs {u_quiz_keys/keys_sync_meta[3]}] -to [get_regs {u_quiz_keys/keys_sync_safe[3]}] 2.000
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     
+set_max_delay -from [get_regs {u_quiz_keys/keys_sync_meta[3]}] -to [get_regs {u_quiz_keys/keys_sync_safe[3]}] 2.000
+
+Type           :     SMD
+
+Statistics:
+Max            : SWNS      1.531ns, STNS      0.000ns,         0 Viol Endpoints,         1 Total Endpoints,         1 Paths Analyzed
+Min            : HWNS      0.000ns, HTNS      0.000ns,         0 Viol Endpoints,         0 Total Endpoints,         0 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 1.531ns
+Begin Point         : u_quiz_keys/keys_sync_meta_reg[3]_syn_2.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_quiz_keys/keys_sync_meta_reg[3]_syn_2.imb (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 2.000ns { HDMI_PIXEL_CLK rising@0.000ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 0.405ns (cell 0.204ns (50%), net 0.201ns (50%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.684          1.494          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.115          1.609          net: I_sys_clk_dup_6,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/overlay/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.645         -0.036          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.827          0.791          net: u_hdmi_mixer/I_clk,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/hdmi_mixer.v(8)
+                                                                      pin: u_hdmi_mixer/I_clk_created_gclkinst.clkin[0]
+GCLK                x023y039z17         0.016          0.807          pin: u_hdmi_mixer/I_clk_created_gclkinst.clkout
+net (fo=4)                              0.388          1.195          net: u_hdmi_mixer/I_clk_syn_657,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/hdmi_mixer.v(8)
+                                                                      pin: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_1_l_bk3.clkin
+SCLK                x023y059z2          0.079          1.274          pin: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_1_l_bk3.clkout
+net (fo=81)                             0.652          1.926          net: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_1_l_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_quiz_keys/keys_sync_meta_reg[3]_syn_2.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x009y075z4          0.126    f     2.052          pin: u_quiz_keys/keys_sync_meta_reg[3]_syn_2.oqa
+net (fo=1)                              0.201          2.253          net: u_quiz_keys/keys_sync_meta[3],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/quiz/quiz_key_inputs.v(27)
+                                                                      pin: u_quiz_keys/keys_sync_meta_reg[3]_syn_2.imb
+reg                 x009y075z4          0.078    r     2.331          net: u_quiz_keys/keys_sync_safe[3],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/quiz/quiz_key_inputs.v(28)
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.331               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.745          0.745          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.629          1.374          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.099          1.473          net: I_sys_clk_dup_6,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/overlay/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.411          0.062          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.708          0.770          net: u_hdmi_mixer/I_clk,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/hdmi_mixer.v(8)
+                                                                      pin: u_hdmi_mixer/I_clk_created_gclkinst.clkin[0]
+GCLK                x023y039z17         0.014          0.784          pin: u_hdmi_mixer/I_clk_created_gclkinst.clkout
+net (fo=4)                              0.333          1.117          net: u_hdmi_mixer/I_clk_syn_657,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/hdmi_mixer.v(8)
+                                                                      pin: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_1_l_bk3.clkin
+SCLK                x023y059z2          0.068          1.185          pin: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_1_l_bk3.clkout
+net (fo=81)                             0.567          1.752          net: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_1_l_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_quiz_keys/keys_sync_meta_reg[3]_syn_2.clk
+constraint delay                        2.000          3.752               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.064          3.688               
+clock uncertainty                       0.000          3.688               
+clock pessimism                         0.174          3.862               
+--------------------------------------------------------------------  ---------------
+Required                                               3.862               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.531               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+
+
+Timing details for constraint:
+	set_max_delay -from [get_regs {u_p14_pipeline/forward/req_meta}] -to [get_regs {u_p14_pipeline/forward/req_sync}] 2.000
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     
+set_max_delay -from [get_regs {u_p14_pipeline/forward/req_meta}] -to [get_regs {u_p14_pipeline/forward/req_sync}] 2.000
+
+Type           :     SMD
+
+Statistics:
+Max            : SWNS      1.206ns, STNS      0.000ns,         0 Viol Endpoints,         1 Total Endpoints,         1 Paths Analyzed
+Min            : HWNS      0.000ns, HTNS      0.000ns,         0 Viol Endpoints,         0 Total Endpoints,         0 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 1.206ns
+Begin Point         : u_p14_pipeline/forward/req_meta_reg_syn_3.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_p14_pipeline/forward/req_sync_reg_syn_3.id (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 2.000ns { HDMI_PIXEL_CLK rising@0.000ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 0.628ns (cell 0.337ns (53%), net 0.291ns (47%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( LUT2=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.102ns (sdc uncertainty: 0.000ns, default uncertainty: 0.102ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.684          1.494          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.115          1.609          net: I_sys_clk_dup_6,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/overlay/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.645         -0.036          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.827          0.791          net: u_hdmi_mixer/I_clk,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/hdmi_mixer.v(8)
+                                                                      pin: u_hdmi_mixer/I_clk_created_gclkinst.clkin[0]
+GCLK                x023y039z17         0.016          0.807          pin: u_hdmi_mixer/I_clk_created_gclkinst.clkout
+net (fo=4)                              0.374          1.181          net: u_hdmi_mixer/I_clk_syn_657,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/hdmi_mixer.v(8)
+                                                                      pin: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_0_l_bk3.clkin
+SCLK                x023y019z2          0.079          1.260          pin: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_0_l_bk3.clkout
+net (fo=397)                            0.633          1.893          net: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_0_l_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_p14_pipeline/forward/req_meta_reg_syn_3.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x014y024z7          0.126    f     2.019          pin: u_p14_pipeline/forward/req_meta_reg_syn_3.oqa
+net (fo=1)                              0.291          2.310          net: u_p14_pipeline/forward/req_meta,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/rtl/pixel14_result_cdc.v(27)
+                                                                      pin: u_p14_pipeline/forward/req_sync_reg_syn_3.id
+LUT2 (reg)          x014y024z6          0.211    f     2.521       1  net: u_p14_pipeline/forward/req_sync,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/rtl/pixel14_result_cdc.v(27)
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.521               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.745          0.745          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.629          1.374          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.099          1.473          net: I_sys_clk_dup_6,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/overlay/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.411          0.062          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.708          0.770          net: u_hdmi_mixer/I_clk,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/hdmi_mixer.v(8)
+                                                                      pin: u_hdmi_mixer/I_clk_created_gclkinst.clkin[0]
+GCLK                x023y039z17         0.014          0.784          pin: u_hdmi_mixer/I_clk_created_gclkinst.clkout
+net (fo=4)                              0.321          1.105          net: u_hdmi_mixer/I_clk_syn_657,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/hdmi_mixer.v(8)
+                                                                      pin: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_0_l_bk3.clkin
+SCLK                x023y019z2          0.068          1.173          pin: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_0_l_bk3.clkout
+net (fo=397)                            0.551          1.724          net: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_0_l_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_p14_pipeline/forward/req_sync_reg_syn_3.clk
+constraint delay                        2.000          3.724               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.064          3.660               
+clock uncertainty                      -0.102          3.558               
+clock pessimism                         0.169          3.727               
+--------------------------------------------------------------------  ---------------
+Required                                               3.727               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.206               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+
+
+Timing details for constraint:
+	set_max_delay -from [get_regs {u_p14_pipeline/forward/ack_meta}] -to [get_regs {u_p14_pipeline/forward/ack_sync}] 2.000
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     
+set_max_delay -from [get_regs {u_p14_pipeline/forward/ack_meta}] -to [get_regs {u_p14_pipeline/forward/ack_sync}] 2.000
+
+Type           :     SMD
+
+Statistics:
+Max            : SWNS      1.440ns, STNS      0.000ns,         0 Viol Endpoints,         1 Total Endpoints,         1 Paths Analyzed
+Min            : HWNS      0.000ns, HTNS      0.000ns,         0 Viol Endpoints,         0 Total Endpoints,         0 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 1.440ns
+Begin Point         : u_p14_pipeline/forward/ack_meta_reg_syn_3.clk (rising edge triggered by clock MIPI_RX_BYTE_CLK  { rise@0.000000ns  fall@4.832000ns  period=9.660000 })
+End Point           : u_p14_pipeline/forward/ack_sync_reg_syn_3.imf (rising edge triggered by clock MIPI_RX_BYTE_CLK  { rise@0.000000ns  fall@4.832000ns  period=9.660000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 2.000ns { MIPI_RX_BYTE_CLK rising@0.000ns - MIPI_RX_BYTE_CLK rising@0.000ns }
+Data Path Delay     : 0.446ns (cell 0.343ns (76%), net 0.103ns (24%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( LUT2=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.000ns, default uncertainty: 0.050ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: IO_rx_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.io_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.tif_c16_in
+hierarchy                               0.038          0.038          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.o_fabric_div4_8_clk
+net (fo=1)                              0.934          0.972          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/S_mipiio_hs_rx_clk,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/mipi_dphy_rx/ph1p_mipiio_rx_wrapper.v(115)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkin[0]
+GCLK                x023y039z0          0.016          0.988          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkout
+net (fo=4)                              0.368          1.356          net: u_isp_top/u_demosaic/raw_matrix_3x3_buffer_d/zhenghe_d/blk_mem_gen_zhenghe_d1/ram_d32970204f32_Inst/clkb,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/isp/demosaic_4x_2_0/blk_mem_gen_zhenghe/RTL/ram_d32970204f32.v(51)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_l_bk1.clkin
+SCLK                x023y019z0          0.079          1.435          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_l_bk1.clkout
+net (fo=1115)                           0.633          2.068          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_l_bk1_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_p14_pipeline/forward/ack_meta_reg_syn_3.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x014y024z3          0.126    f     2.194          pin: u_p14_pipeline/forward/ack_meta_reg_syn_3.oqa
+net (fo=1)                              0.103          2.297          net: u_p14_pipeline/forward/ack_meta,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/rtl/pixel14_result_cdc.v(27)
+                                                                      pin: u_p14_pipeline/forward/ack_sync_reg_syn_3.imf
+LUT2 (reg)          x014y024z0          0.217    f     2.514       1  net: u_p14_pipeline/forward/ack_sync,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/rtl/pixel14_result_cdc.v(27)
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.514               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: IO_rx_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.io_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.tif_c16_in
+hierarchy                               0.034          0.034          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.o_fabric_div4_8_clk
+net (fo=1)                              0.800          0.834          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/S_mipiio_hs_rx_clk,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/mipi_dphy_rx/ph1p_mipiio_rx_wrapper.v(115)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkin[0]
+GCLK                x023y039z0          0.014          0.848          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkout
+net (fo=4)                              0.315          1.163          net: u_isp_top/u_demosaic/raw_matrix_3x3_buffer_d/zhenghe_d/blk_mem_gen_zhenghe_d1/ram_d32970204f32_Inst/clkb,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/isp/demosaic_4x_2_0/blk_mem_gen_zhenghe/RTL/ram_d32970204f32.v(51)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_l_bk1.clkin
+SCLK                x023y019z0          0.068          1.231          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_l_bk1.clkout
+net (fo=1115)                           0.551          1.782          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_l_bk1_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_p14_pipeline/forward/ack_sync_reg_syn_3.clk
+constraint delay                        2.000          3.782               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.064          3.718               
+clock uncertainty                      -0.050          3.668               
+clock pessimism                         0.286          3.954               
+--------------------------------------------------------------------  ---------------
+Required                                               3.954               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.440               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+
+
+Timing details for constraint:
+	set_max_delay -from [get_regs {u_p14_pipeline/backward/req_meta}] -to [get_regs {u_p14_pipeline/backward/req_sync}] 2.000
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     
+set_max_delay -from [get_regs {u_p14_pipeline/backward/req_meta}] -to [get_regs {u_p14_pipeline/backward/req_sync}] 2.000
+
+Type           :     SMD
+
+Statistics:
+Max            : SWNS      1.553ns, STNS      0.000ns,         0 Viol Endpoints,         1 Total Endpoints,         1 Paths Analyzed
+Min            : HWNS      0.000ns, HTNS      0.000ns,         0 Viol Endpoints,         0 Total Endpoints,         0 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 1.553ns
+Begin Point         : u_p14_pipeline/backward/req_meta_reg_syn_3.clk (rising edge triggered by clock MIPI_RX_BYTE_CLK  { rise@0.000000ns  fall@4.832000ns  period=9.660000 })
+End Point           : u_p14_pipeline/backward/req_meta_reg_syn_3.ie (rising edge triggered by clock MIPI_RX_BYTE_CLK  { rise@0.000000ns  fall@4.832000ns  period=9.660000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 2.000ns { MIPI_RX_BYTE_CLK rising@0.000ns - MIPI_RX_BYTE_CLK rising@0.000ns }
+Data Path Delay     : 0.383ns (cell 0.280ns (73%), net 0.103ns (27%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( LUT2=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: IO_rx_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.io_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.tif_c16_in
+hierarchy                               0.038          0.038          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.o_fabric_div4_8_clk
+net (fo=1)                              0.934          0.972          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/S_mipiio_hs_rx_clk,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/mipi_dphy_rx/ph1p_mipiio_rx_wrapper.v(115)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkin[0]
+GCLK                x023y039z0          0.016          0.988          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkout
+net (fo=4)                              0.368          1.356          net: u_isp_top/u_demosaic/raw_matrix_3x3_buffer_d/zhenghe_d/blk_mem_gen_zhenghe_d1/ram_d32970204f32_Inst/clkb,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/isp/demosaic_4x_2_0/blk_mem_gen_zhenghe/RTL/ram_d32970204f32.v(51)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_l_bk1.clkin
+SCLK                x023y019z0          0.079          1.435          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_l_bk1.clkout
+net (fo=1115)                           0.631          2.066          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_l_bk1_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_p14_pipeline/backward/req_meta_reg_syn_3.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x017y021z4          0.126    f     2.192          pin: u_p14_pipeline/backward/req_meta_reg_syn_3.oqa
+net (fo=1)                              0.103          2.295          net: u_p14_pipeline/backward/req_meta,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/rtl/pixel14_result_cdc.v(27)
+                                                                      pin: u_p14_pipeline/backward/req_meta_reg_syn_3.ie
+LUT2 (reg)          x017y021z4          0.154    r     2.449       1  net: u_p14_pipeline/backward/req_sync,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/rtl/pixel14_result_cdc.v(27)
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.449               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: IO_rx_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.io_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.tif_c16_in
+hierarchy                               0.034          0.034          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.o_fabric_div4_8_clk
+net (fo=1)                              0.800          0.834          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/S_mipiio_hs_rx_clk,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/mipi_dphy_rx/ph1p_mipiio_rx_wrapper.v(115)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkin[0]
+GCLK                x023y039z0          0.014          0.848          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkout
+net (fo=4)                              0.315          1.163          net: u_isp_top/u_demosaic/raw_matrix_3x3_buffer_d/zhenghe_d/blk_mem_gen_zhenghe_d1/ram_d32970204f32_Inst/clkb,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/isp/demosaic_4x_2_0/blk_mem_gen_zhenghe/RTL/ram_d32970204f32.v(51)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_l_bk1.clkin
+SCLK                x023y019z0          0.068          1.231          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_l_bk1.clkout
+net (fo=1115)                           0.549          1.780          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_l_bk1_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_p14_pipeline/backward/req_meta_reg_syn_3.clk
+constraint delay                        2.000          3.780               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.064          3.716               
+clock uncertainty                       0.000          3.716               
+clock pessimism                         0.286          4.002               
+--------------------------------------------------------------------  ---------------
+Required                                               4.002               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.553               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+
+
+Timing details for constraint:
+	set_max_delay -from [get_regs {u_p14_pipeline/backward/ack_meta}] -to [get_regs {u_p14_pipeline/backward/ack_sync}] 2.000
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     
+set_max_delay -from [get_regs {u_p14_pipeline/backward/ack_meta}] -to [get_regs {u_p14_pipeline/backward/ack_sync}] 2.000
+
+Type           :     SMD
+
+Statistics:
+Max            : SWNS      1.388ns, STNS      0.000ns,         0 Viol Endpoints,         1 Total Endpoints,         1 Paths Analyzed
+Min            : HWNS      0.000ns, HTNS      0.000ns,         0 Viol Endpoints,         0 Total Endpoints,         0 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 1.388ns
+Begin Point         : u_p14_pipeline/backward/ack_meta_reg_syn_3.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_p14_pipeline/backward/ack_sync_reg_syn_3.imf (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 2.000ns { HDMI_PIXEL_CLK rising@0.000ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 0.446ns (cell 0.343ns (76%), net 0.103ns (24%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( LUT2=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.102ns (sdc uncertainty: 0.000ns, default uncertainty: 0.102ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.684          1.494          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.115          1.609          net: I_sys_clk_dup_6,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/overlay/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.645         -0.036          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.827          0.791          net: u_hdmi_mixer/I_clk,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/hdmi_mixer.v(8)
+                                                                      pin: u_hdmi_mixer/I_clk_created_gclkinst.clkin[0]
+GCLK                x023y039z17         0.016          0.807          pin: u_hdmi_mixer/I_clk_created_gclkinst.clkout
+net (fo=4)                              0.374          1.181          net: u_hdmi_mixer/I_clk_syn_657,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/hdmi_mixer.v(8)
+                                                                      pin: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_0_l_bk3.clkin
+SCLK                x023y019z2          0.079          1.260          pin: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_0_l_bk3.clkout
+net (fo=397)                            0.651          1.911          net: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_0_l_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_p14_pipeline/backward/ack_meta_reg_syn_3.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x011y031z3          0.126    f     2.037          pin: u_p14_pipeline/backward/ack_meta_reg_syn_3.oqa
+net (fo=1)                              0.103          2.140          net: u_p14_pipeline/backward/ack_meta,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/rtl/pixel14_result_cdc.v(27)
+                                                                      pin: u_p14_pipeline/backward/ack_sync_reg_syn_3.imf
+LUT2 (reg)          x011y031z2          0.217    f     2.357       1  net: u_p14_pipeline/backward/ack_sync,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/rtl/pixel14_result_cdc.v(27)
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.357               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.745          0.745          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.629          1.374          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.099          1.473          net: I_sys_clk_dup_6,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/overlay/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.411          0.062          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.708          0.770          net: u_hdmi_mixer/I_clk,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/hdmi_mixer.v(8)
+                                                                      pin: u_hdmi_mixer/I_clk_created_gclkinst.clkin[0]
+GCLK                x023y039z17         0.014          0.784          pin: u_hdmi_mixer/I_clk_created_gclkinst.clkout
+net (fo=4)                              0.321          1.105          net: u_hdmi_mixer/I_clk_syn_657,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/hdmi_mixer.v(8)
+                                                                      pin: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_0_l_bk3.clkin
+SCLK                x023y019z2          0.068          1.173          pin: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_0_l_bk3.clkout
+net (fo=397)                            0.566          1.739          net: u_hdmi_mixer/I_clk_created_gclkinst_auto_created_sclk_s_0_l_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_p14_pipeline/backward/ack_sync_reg_syn_3.clk
+constraint delay                        2.000          3.739               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.064          3.675               
+clock uncertainty                      -0.102          3.573               
+clock pessimism                         0.172          3.745               
+--------------------------------------------------------------------  ---------------
+Required                                               3.745               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.388               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+
+
+
+

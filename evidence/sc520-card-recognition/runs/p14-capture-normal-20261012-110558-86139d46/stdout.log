@@ -1,0 +1,84 @@
+Reading D:/modeltech64_10.7/tcl/vsim/pref.tcl
+
+# 10.7
+
+# set card_top tb_pixel14_capture
+# tb_pixel14_capture
+#  set card_sources [list {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-capture-normal-20261012-110558-86139d46/inputs/capture_rgb96.v}]
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-capture-normal-20261012-110558-86139d46/inputs/capture_rgb96.v
+#  set card_tb {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-capture-normal-20261012-110558-86139d46/inputs/tb_pixel14_capture.sv}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-capture-normal-20261012-110558-86139d46/inputs/tb_pixel14_capture.sv
+#  set card_assets {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-capture-normal-20261012-110558-86139d46/inputs}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-capture-normal-20261012-110558-86139d46/inputs
+#  set card_negative 0
+# 0
+#  set card_probe 0
+# 0
+#  set card_full 0
+# 0
+#  source {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-capture-normal-20261012-110558-86139d46/inputs/run-pixel14.do}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 11:05:59 on Oct 12,2026
+# vlog E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-capture-normal-20261012-110558-86139d46/inputs/capture_rgb96.v 
+# -- Compiling module capture_rgb96
+# 
+# Top level modules:
+# 	capture_rgb96
+# End time: 11:05:59 on Oct 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 11:05:59 on Oct 12,2026
+# vlog -sv "+incdir+E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-capture-normal-20261012-110558-86139d46/inputs" E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-capture-normal-20261012-110558-86139d46/inputs/tb_pixel14_capture.sv 
+# -- Compiling module tb_pixel14_capture
+# 
+# Top level modules:
+# 	tb_pixel14_capture
+# End time: 11:05:59 on Oct 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -wlf wave.wlf work.tb_pixel14_capture "+ASSET_ROOT=E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-capture-normal-20261012-110558-86139d46/inputs" "+INJECT_FAULT=0" 
+# Start time: 11:05:59 on Oct 12,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_pixel14_capture(fast)
+# Loading work.capture_rgb96(fast)
+# Loading work.capture_rgb96(fast__1)
+# CASE pixel14_capture 1 256x256 cell4 with unaligned ROI, threshold boundaries and early SOF
+# CASE pixel14_capture 2 all expected pixels still cannot invent a real capture EOF
+# CASE pixel14_capture 3 full1280x720 cell15 exercises all four packed RGB lanes
+# CASE pixel14_capture 4 SOF may share the first group; healthy white ROI is absence
+# CASE pixel14_capture 5 a tiny foreground point missed by all4x4 centers is still present
+# CASE pixel14_capture 6 complete raster cannot override upstream failure or wrong done identity
+# CASE pixel14_capture 7 complete raster cannot override upstream failure or wrong done identity
+# CASE pixel14_capture 8 complete raster cannot override upstream failure or wrong done identity
+# CASE pixel14_capture 9 short frame EOF fails immediately
+# CASE pixel14_capture 10 blank EOL is a protocol fault, once per frame
+# CASE pixel14_capture 11 wrong line length immediately revokes without padding
+# CASE pixel14_capture 12 changing tag or source while active cannot relabel pixels
+# CASE pixel14_capture 13 overlapping start aborts old frame and rejects ambiguous new start
+# CASE pixel14_capture 14 unframed data is rejected and not counted as a frame
+# CASE pixel14_capture 15 flush cancels synchronously without a revoke feedback loop
+# CASE pixel14_capture 16 external revoke may remain asserted and poisons the active frame
+# CASE pixel14_capture 17 EOF simultaneous with pixels is never a successful close
+# CASE pixel14_capture 18 reset during a frame cannot publish partial work
+# CASE pixel14_capture 19 fresh complete frame recovers after reset and multiple faults
+# RESULT tb_pixel14_capture errors=0 checks=1914703 scenarios=19 injected=0
+# ** Note: $finish    : E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-capture-normal-20261012-110558-86139d46/inputs/tb_pixel14_capture.sv(231)
+#    Time: 3453426 ns  Iteration: 0  Instance: /tb_pixel14_capture
+# Break in Module tb_pixel14_capture at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-capture-normal-20261012-110558-86139d46/inputs/tb_pixel14_capture.sv line 231
+# Stopped at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-capture-normal-20261012-110558-86139d46/inputs/tb_pixel14_capture.sv line 231
+PIXEL14_SIM_FINISHED tb_pixel14_capture errors=0 checks=1914703 scenarios=19 done=1 injected=0
+# End time: 11:06:01 on Oct 12,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

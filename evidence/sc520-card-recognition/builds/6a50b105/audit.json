@@ -1,0 +1,164 @@
+{
+  "AuditedAt": "2026-10-12T11:08:04.853593+08:00",
+  "Run": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b105",
+  "Owner": "SC520 recovery /root/build_impl",
+  "BitSHA256": "3CA9A28A38A4BC2EB4BAFF3297DFE9F5109346AC188CC1C1AD0A6C7FC429A285",
+  "MetricsNs": {
+    "SWNS": -5.063,
+    "STNS": -70.009,
+    "HWNS": 0.02,
+    "HTNS": 0.0
+  },
+  "Resources": {
+    "slice": 15101,
+    "eram": 43,
+    "dsp": 17,
+    "reg": 15032
+  },
+  "ROMs": [
+    {
+      "GateInstance": "\\u_p14_pipeline/matcher/templates/ramread0_syn_23",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "DepthChecked": 1024,
+      "OutputBitOffset": 0,
+      "InitialBitsSHA256": "793419242ae7380d931884050a4a2aaeff245c6ef43b43aa6f3220f54a92548d",
+      "RoutedInstancesWithIdenticalInit": 1
+    },
+    {
+      "GateInstance": "\\u_p14_pipeline/system/panel/font/ramread0_syn_24",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "DepthChecked": 4096,
+      "OutputBitOffset": 1,
+      "InitialBitsSHA256": "e0f482637c7914a899722306622471f523f48cfa0f2284d9013df1efc4b1ff32",
+      "RoutedInstancesWithIdenticalInit": 1
+    },
+    {
+      "GateInstance": "\\u_p14_pipeline/system/panel/font/ramread0_syn_30",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "DepthChecked": 4096,
+      "OutputBitOffset": 6,
+      "InitialBitsSHA256": "32c4a4a0c25a61274ae51e30b4bdd9fd8d50869930f7f678dadafa5d468a3021",
+      "RoutedInstancesWithIdenticalInit": 1
+    },
+    {
+      "GateInstance": "\\u_p14_pipeline/system/panel/font/ramread0_syn_36",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "DepthChecked": 4096,
+      "OutputBitOffset": 11,
+      "InitialBitsSHA256": "edaa616310470b0f6ed519d57afa49623ef55fa53bb0654a81d18d2f3f5e7442",
+      "RoutedInstancesWithIdenticalInit": 1
+    }
+  ],
+  "KeyIO": [
+    {
+      "Index": 0,
+      "Ball": "D5",
+      "Direction": "INPUT",
+      "IOSTANDARD": "LVCMOS33",
+      "Pull": "PULLUP"
+    },
+    {
+      "Index": 1,
+      "Ball": "A9",
+      "Direction": "INPUT",
+      "IOSTANDARD": "LVCMOS33",
+      "Pull": "PULLUP"
+    },
+    {
+      "Index": 2,
+      "Ball": "B9",
+      "Direction": "INPUT",
+      "IOSTANDARD": "LVCMOS33",
+      "Pull": "PULLUP"
+    },
+    {
+      "Index": 3,
+      "Ball": "C7",
+      "Direction": "INPUT",
+      "IOSTANDARD": "LVCMOS33",
+      "Pull": "PULLUP"
+    }
+  ],
+  "CurrentSourceDifferences": [
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\prepare-pixel14.py",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\build-pixel14.ps1",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\block_frame_recognizer.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_capture_provenance.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_pipeline.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\pixel14.sdc"
+  ],
+  "SnapshotDifferences": [],
+  "UnknownModulesOrToolErrors": [],
+  "CriticalWarnings": [
+    "PHY-5060 CRITICAL-WARNING: Clock net candidate u_uicfgcs520/u_i2c/scl_clk has mixed fanouts of 1 clock pins; 2 data/ctrl pins. Please check connection of the net in design.",
+    "PHY-5060 CRITICAL-WARNING: Clock net candidate O_cam_24m_syn_3 has mixed fanouts of 161 clock pins; 1 data/ctrl pins. Please check connection of the net in design.",
+    "PHY-5079 CRITICAL-WARNING: Marked 1 clock net(s) utilize the local routing resources. Please check log message and the sinks of clock nets.",
+    "PHY-5079 CRITICAL-WARNING: Marked 1 clock net(s) utilize the local routing resources. Please check log message and the sinks of clock nets."
+  ],
+  "TimingNonnegative": false,
+  "HardwareValidated": false,
+  "DownloadQualified": false,
+  "Artifacts": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b105\\inputs.json",
+      "Bytes": 103603,
+      "SHA256": "0C04DCD609976D3173BDC52D5A64C35DA20CDC98F055FF5D8EB7EAD0E7B24B9D"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b105\\started.json",
+      "Bytes": 301,
+      "SHA256": "83479AA3D361BC8EA385ABED972715C49E60E5B12DFF790BC696EF9116D99B41"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b105\\stages.json",
+      "Bytes": 1090,
+      "SHA256": "33651CA07E496A3C5710500341AF5A7D1FE933960BF837D414E95D993B59ADAC"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b105\\result.json",
+      "Bytes": 1608,
+      "SHA256": "CC0AA646F0AE0BD3A41DC51AC0F264921DF084199C01AD087427131F1AF8D6C6"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b105\\syn_1.stdout.log",
+      "Bytes": 231816,
+      "SHA256": "680C110E6CCEC5474C3AEBA2DF19EC9B8A59BD7458EA889CA7830B9055E5895F"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b105\\phy_1.stdout.log",
+      "Bytes": 201632,
+      "SHA256": "F56AADB6449A99C619CE9F277B796DE94CC932ED1B154BF06A784F557101181A"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b105\\td_project\\camera_to_dsi_display_Runs\\syn_1\\pixel14-syn_1-netlist.v",
+      "Bytes": 31465766,
+      "SHA256": "95B5DCB0AF9D636BF1D37E301B7FA2004A02C461AD67E861FF37EB61FF50507B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b105\\td_project\\camera_to_dsi_display_Runs\\phy_1\\pixel14-phy_1-netlist.v",
+      "Bytes": 27850377,
+      "SHA256": "932B0AB988E9A244A9BAB31612F48C3854C7753E9ADE4A735A0CEF2766793256"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b105\\td_project\\camera_to_dsi_display_Runs\\phy_1\\camera_to_dsi_display_pr.db",
+      "Bytes": 18135892,
+      "SHA256": "BB6450BC506116430F33B6464D6B2DDEB2C836D6A84E1ED3EF76FD8A25E1715D"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b105\\td_project\\camera_to_dsi_display_Runs\\phy_1\\camera_to_dsi_display_pr.timing",
+      "Bytes": 5237547,
+      "SHA256": "34C6662F948A7890EE19054750ADB3018A0DE3E1FCFCDBE6E7E1FCAD94E52224"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b105\\td_project\\camera_to_dsi_display_Runs\\phy_1\\camera_to_dsi_display_phy.area",
+      "Bytes": 53093,
+      "SHA256": "5990A5AC92ACE16FB3296B0C3AF820E314529624D4B9DE29A2D2E16E4872E2C5"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b105\\td_project\\camera_to_dsi_display_Runs\\phy_1\\camera_to_dsi_display.bit",
+      "Bytes": 1789539,
+      "SHA256": "3CA9A28A38A4BC2EB4BAFF3297DFE9F5109346AC188CC1C1AD0A6C7FC429A285"
+    }
+  ],
+  "Limitations": "CDC reports require separate endpoint/propagation review; no CRC/ECC computation, DDR display identity, physical audio or board validation."
+}

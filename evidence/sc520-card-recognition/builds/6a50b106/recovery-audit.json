@@ -1,0 +1,2922 @@
+{
+  "SchemaVersion": 1,
+  "AuditedAt": "2026-10-12T19:15:56+08:00",
+  "Owner": "SC520 recovery /root; independent read-only review /root/review_compact",
+  "Run": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b106",
+  "AnalysisRun": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\cdc106-v3",
+  "RecoveryQualified": true,
+  "AutomaticBuildSucceeded": false,
+  "OriginalStageExitCodes": {
+    "syn_1": 0,
+    "phy_1": 1
+  },
+  "OriginalPostBitgenFailure": "CDC register resolution failed: u_p14_pipeline/forward/fault_meta u_p14_pipeline/forward/fault_sync",
+  "CandidateBit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b106\\td_project\\camera_to_dsi_display_Runs\\phy_1\\camera_to_dsi_display.bit",
+    "Bytes": 1789539,
+    "SHA256": "3909C31AA81D7EB5C3153EFC2DBAC6D54C655A82A698107AA08CB0B14AFC0ABD"
+  },
+  "HardwareValidated": false,
+  "DownloadPerformed": false,
+  "FlashWritten": false,
+  "TimingNs": {
+    "SWNS": 0.105,
+    "STNS": 0.0,
+    "HWNS": 0.02,
+    "HTNS": 0.0
+  },
+  "STAcoveragePercent": 96.12,
+  "Resources": {
+    "slice": 15075,
+    "eram": 43,
+    "dsp": 17,
+    "reg": 15206
+  },
+  "ROMs": [
+    {
+      "Instance": "\\u_p14_pipeline/matcher/templates/ramread0_syn_23",
+      "WordsChecked": 1024,
+      "BitOffset": 0,
+      "RoutedInitSignature": "793419242ae7380d931884050a4a2aaeff245c6ef43b43aa6f3220f54a92548d",
+      "RoutedMatches": 1
+    },
+    {
+      "Instance": "\\u_p14_pipeline/system/panel/font/ramread0_syn_24",
+      "WordsChecked": 4096,
+      "BitOffset": 1,
+      "RoutedInitSignature": "e0f482637c7914a899722306622471f523f48cfa0f2284d9013df1efc4b1ff32",
+      "RoutedMatches": 1
+    },
+    {
+      "Instance": "\\u_p14_pipeline/system/panel/font/ramread0_syn_30",
+      "WordsChecked": 4096,
+      "BitOffset": 6,
+      "RoutedInitSignature": "32c4a4a0c25a61274ae51e30b4bdd9fd8d50869930f7f678dadafa5d468a3021",
+      "RoutedMatches": 1
+    },
+    {
+      "Instance": "\\u_p14_pipeline/system/panel/font/ramread0_syn_36",
+      "WordsChecked": 4096,
+      "BitOffset": 11,
+      "RoutedInitSignature": "edaa616310470b0f6ed519d57afa49623ef55fa53bb0654a81d18d2f3f5e7442",
+      "RoutedMatches": 1
+    }
+  ],
+  "KeyIO": [
+    {
+      "Index": 0,
+      "Ball": "D5",
+      "Direction": "INPUT",
+      "IOStandard": "LVCMOS33",
+      "Pull": "PULLUP"
+    },
+    {
+      "Index": 1,
+      "Ball": "A9",
+      "Direction": "INPUT",
+      "IOStandard": "LVCMOS33",
+      "Pull": "PULLUP"
+    },
+    {
+      "Index": 2,
+      "Ball": "B9",
+      "Direction": "INPUT",
+      "IOStandard": "LVCMOS33",
+      "Pull": "PULLUP"
+    },
+    {
+      "Index": 3,
+      "Ball": "C7",
+      "Direction": "INPUT",
+      "IOStandard": "LVCMOS33",
+      "Pull": "PULLUP"
+    }
+  ],
+  "InputRecordsChecked": 292,
+  "SnapshotsChecked": 24,
+  "CurrentImplementationInputsUnchanged": true,
+  "ReportHelperChanges": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\report-pixel14-cdc.tcl",
+      "OriginalSHA256": "3F472639B7DC1468D337F5560C8AA10B2B2A4706A0992F2C5F49343DE252A7C2",
+      "CurrentSHA256": "6C9D44423020EC3BC1F0D95C5C5CE2C8E3E01E9CE6E581BABE63A4E30DC5F83B",
+      "Role": "post-bitgen report helper only"
+    }
+  ],
+  "ProtectedFilesChecked": 1284,
+  "Synchronizers": [
+    {
+      "Name": "forward-req",
+      "Setup": {
+        "Check": "setup",
+        "FromClock": "HDMI_PIXEL_CLK",
+        "ToClock": "HDMI_PIXEL_CLK",
+        "Begin": "u_p14_pipeline/forward/req_meta_reg_syn_3.clk",
+        "End": "u_p14_pipeline/forward/req_sync_reg_syn_3.id",
+        "SourceQ": "u_p14_pipeline/forward/req_meta_reg_syn_3.oqa",
+        "SourceNet": "u_p14_pipeline/forward/req_meta",
+        "DestinationNet": "u_p14_pipeline/forward/req_sync",
+        "DelayNs": 0.628,
+        "BudgetNs": 2.0,
+        "SlackNs": 1.206
+      },
+      "Hold": {
+        "Check": "hold",
+        "FromClock": "HDMI_PIXEL_CLK",
+        "ToClock": "HDMI_PIXEL_CLK",
+        "Begin": "u_p14_pipeline/forward/req_meta_reg_syn_3.clk",
+        "End": "u_p14_pipeline/forward/req_sync_reg_syn_3.id",
+        "SourceQ": "u_p14_pipeline/forward/req_meta_reg_syn_3.oqa",
+        "SourceNet": "u_p14_pipeline/forward/req_meta",
+        "DestinationNet": "u_p14_pipeline/forward/req_sync",
+        "DelayNs": 0.203,
+        "BudgetNs": 0.0,
+        "SlackNs": 0.141
+      },
+      "TwoNsConstraintApplied": true,
+      "ObservedDelayBelowTwoNs": true
+    },
+    {
+      "Name": "forward-ack",
+      "Setup": {
+        "Check": "setup",
+        "FromClock": "MIPI_RX_BYTE_CLK",
+        "ToClock": "MIPI_RX_BYTE_CLK",
+        "Begin": "u_p14_pipeline/forward/ack_meta_reg_syn_3.clk",
+        "End": "u_p14_pipeline/forward/ack_sync_reg_syn_3.imf",
+        "SourceQ": "u_p14_pipeline/forward/ack_meta_reg_syn_3.oqa",
+        "SourceNet": "u_p14_pipeline/forward/ack_meta",
+        "DestinationNet": "u_p14_pipeline/forward/ack_sync",
+        "DelayNs": 0.446,
+        "BudgetNs": 2.0,
+        "SlackNs": 1.44
+      },
+      "Hold": {
+        "Check": "hold",
+        "FromClock": "MIPI_RX_BYTE_CLK",
+        "ToClock": "MIPI_RX_BYTE_CLK",
+        "Begin": "u_p14_pipeline/forward/ack_meta_reg_syn_3.clk",
+        "End": "u_p14_pipeline/forward/ack_sync_reg_syn_3.imf",
+        "SourceQ": "u_p14_pipeline/forward/ack_meta_reg_syn_3.oqa",
+        "SourceNet": "u_p14_pipeline/forward/ack_meta",
+        "DestinationNet": "u_p14_pipeline/forward/ack_sync",
+        "DelayNs": 0.153,
+        "BudgetNs": 0.0,
+        "SlackNs": 0.091
+      },
+      "TwoNsConstraintApplied": true,
+      "ObservedDelayBelowTwoNs": true
+    },
+    {
+      "Name": "backward-req",
+      "Setup": {
+        "Check": "setup",
+        "FromClock": "MIPI_RX_BYTE_CLK",
+        "ToClock": "MIPI_RX_BYTE_CLK",
+        "Begin": "u_p14_pipeline/backward/req_meta_reg_syn_3.clk",
+        "End": "u_p14_pipeline/backward/req_meta_reg_syn_3.ie",
+        "SourceQ": "u_p14_pipeline/backward/req_meta_reg_syn_3.oqa",
+        "SourceNet": "u_p14_pipeline/backward/req_meta",
+        "DestinationNet": "u_p14_pipeline/backward/req_sync",
+        "DelayNs": 0.383,
+        "BudgetNs": 2.0,
+        "SlackNs": 1.553
+      },
+      "Hold": {
+        "Check": "hold",
+        "FromClock": "MIPI_RX_BYTE_CLK",
+        "ToClock": "MIPI_RX_BYTE_CLK",
+        "Begin": "u_p14_pipeline/backward/req_meta_reg_syn_3.clk",
+        "End": "u_p14_pipeline/backward/req_meta_reg_syn_3.ie",
+        "SourceQ": "u_p14_pipeline/backward/req_meta_reg_syn_3.oqa",
+        "SourceNet": "u_p14_pipeline/backward/req_meta",
+        "DestinationNet": "u_p14_pipeline/backward/req_sync",
+        "DelayNs": 0.134,
+        "BudgetNs": 0.0,
+        "SlackNs": 0.122
+      },
+      "TwoNsConstraintApplied": true,
+      "ObservedDelayBelowTwoNs": true
+    },
+    {
+      "Name": "backward-ack",
+      "Setup": {
+        "Check": "setup",
+        "FromClock": "HDMI_PIXEL_CLK",
+        "ToClock": "HDMI_PIXEL_CLK",
+        "Begin": "u_p14_pipeline/backward/ack_meta_reg_syn_3.clk",
+        "End": "u_p14_pipeline/backward/ack_sync_reg_syn_3.imf",
+        "SourceQ": "u_p14_pipeline/backward/ack_meta_reg_syn_3.oqa",
+        "SourceNet": "u_p14_pipeline/backward/ack_meta",
+        "DestinationNet": "u_p14_pipeline/backward/ack_sync",
+        "DelayNs": 0.446,
+        "BudgetNs": 2.0,
+        "SlackNs": 1.388
+      },
+      "Hold": {
+        "Check": "hold",
+        "FromClock": "HDMI_PIXEL_CLK",
+        "ToClock": "HDMI_PIXEL_CLK",
+        "Begin": "u_p14_pipeline/backward/ack_meta_reg_syn_3.clk",
+        "End": "u_p14_pipeline/backward/ack_sync_reg_syn_3.imf",
+        "SourceQ": "u_p14_pipeline/backward/ack_meta_reg_syn_3.oqa",
+        "SourceNet": "u_p14_pipeline/backward/ack_meta",
+        "DestinationNet": "u_p14_pipeline/backward/ack_sync",
+        "DelayNs": 0.153,
+        "BudgetNs": 0.0,
+        "SlackNs": 0.091
+      },
+      "TwoNsConstraintApplied": true,
+      "ObservedDelayBelowTwoNs": true
+    },
+    {
+      "Name": "key-0",
+      "Setup": {
+        "Check": "setup",
+        "FromClock": "HDMI_PIXEL_CLK",
+        "ToClock": "HDMI_PIXEL_CLK",
+        "Begin": "u_quiz_keys/keys_sync_meta_reg[0]_syn_2.clk",
+        "End": "u_quiz_keys/keys_sync_meta_reg[0]_syn_2.imb",
+        "SourceQ": "u_quiz_keys/keys_sync_meta_reg[0]_syn_2.oqa",
+        "SourceNet": "u_quiz_keys/keys_sync_meta[0]",
+        "DestinationNet": "u_quiz_keys/keys_sync_safe[0]",
+        "DelayNs": 0.405,
+        "BudgetNs": 2.0,
+        "SlackNs": 1.531
+      },
+      "Hold": {
+        "Check": "hold",
+        "FromClock": "HDMI_PIXEL_CLK",
+        "ToClock": "HDMI_PIXEL_CLK",
+        "Begin": "u_quiz_keys/keys_sync_meta_reg[0]_syn_2.clk",
+        "End": "u_quiz_keys/keys_sync_meta_reg[0]_syn_2.imb",
+        "SourceQ": "u_quiz_keys/keys_sync_meta_reg[0]_syn_2.oqa",
+        "SourceNet": "u_quiz_keys/keys_sync_meta[0]",
+        "DestinationNet": "u_quiz_keys/keys_sync_safe[0]",
+        "DelayNs": 0.145,
+        "BudgetNs": 0.0,
+        "SlackNs": 0.133
+      },
+      "TwoNsConstraintApplied": true,
+      "ObservedDelayBelowTwoNs": true
+    },
+    {
+      "Name": "key-1",
+      "Setup": {
+        "Check": "setup",
+        "FromClock": "HDMI_PIXEL_CLK",
+        "ToClock": "HDMI_PIXEL_CLK",
+        "Begin": "u_quiz_keys/keys_sync_meta_reg[1]_syn_2.clk",
+        "End": "u_quiz_keys/keys_sync_meta_reg[1]_syn_2.imb",
+        "SourceQ": "u_quiz_keys/keys_sync_meta_reg[1]_syn_2.oqa",
+        "SourceNet": "u_quiz_keys/keys_sync_meta[1]",
+        "DestinationNet": "u_quiz_keys/keys_sync_safe[1]",
+        "DelayNs": 0.405,
+        "BudgetNs": 2.0,
+        "SlackNs": 1.531
+      },
+      "Hold": {
+        "Check": "hold",
+        "FromClock": "HDMI_PIXEL_CLK",
+        "ToClock": "HDMI_PIXEL_CLK",
+        "Begin": "u_quiz_keys/keys_sync_meta_reg[1]_syn_2.clk",
+        "End": "u_quiz_keys/keys_sync_meta_reg[1]_syn_2.imb",
+        "SourceQ": "u_quiz_keys/keys_sync_meta_reg[1]_syn_2.oqa",
+        "SourceNet": "u_quiz_keys/keys_sync_meta[1]",
+        "DestinationNet": "u_quiz_keys/keys_sync_safe[1]",
+        "DelayNs": 0.145,
+        "BudgetNs": 0.0,
+        "SlackNs": 0.133
+      },
+      "TwoNsConstraintApplied": true,
+      "ObservedDelayBelowTwoNs": true
+    },
+    {
+      "Name": "key-2",
+      "Setup": {
+        "Check": "setup",
+        "FromClock": "HDMI_PIXEL_CLK",
+        "ToClock": "HDMI_PIXEL_CLK",
+        "Begin": "u_quiz_keys/keys_sync_meta_reg[2]_syn_2.clk",
+        "End": "u_quiz_keys/keys_sync_meta_reg[2]_syn_2.imb",
+        "SourceQ": "u_quiz_keys/keys_sync_meta_reg[2]_syn_2.oqa",
+        "SourceNet": "u_quiz_keys/keys_sync_meta[2]",
+        "DestinationNet": "u_quiz_keys/keys_sync_safe[2]",
+        "DelayNs": 0.307,
+        "BudgetNs": 2.0,
+        "SlackNs": 1.629
+      },
+      "Hold": {
+        "Check": "hold",
+        "FromClock": "HDMI_PIXEL_CLK",
+        "ToClock": "HDMI_PIXEL_CLK",
+        "Begin": "u_quiz_keys/keys_sync_meta_reg[2]_syn_2.clk",
+        "End": "u_quiz_keys/keys_sync_meta_reg[2]_syn_2.imb",
+        "SourceQ": "u_quiz_keys/keys_sync_meta_reg[2]_syn_2.oqa",
+        "SourceNet": "u_quiz_keys/keys_sync_meta[2]",
+        "DestinationNet": "u_quiz_keys/keys_sync_safe[2]",
+        "DelayNs": 0.116,
+        "BudgetNs": 0.0,
+        "SlackNs": 0.104
+      },
+      "TwoNsConstraintApplied": true,
+      "ObservedDelayBelowTwoNs": true
+    },
+    {
+      "Name": "key-3",
+      "Setup": {
+        "Check": "setup",
+        "FromClock": "HDMI_PIXEL_CLK",
+        "ToClock": "HDMI_PIXEL_CLK",
+        "Begin": "u_quiz_keys/keys_sync_meta_reg[3]_syn_2.clk",
+        "End": "u_quiz_keys/keys_sync_meta_reg[3]_syn_2.imb",
+        "SourceQ": "u_quiz_keys/keys_sync_meta_reg[3]_syn_2.oqa",
+        "SourceNet": "u_quiz_keys/keys_sync_meta[3]",
+        "DestinationNet": "u_quiz_keys/keys_sync_safe[3]",
+        "DelayNs": 0.405,
+        "BudgetNs": 2.0,
+        "SlackNs": 1.531
+      },
+      "Hold": {
+        "Check": "hold",
+        "FromClock": "HDMI_PIXEL_CLK",
+        "ToClock": "HDMI_PIXEL_CLK",
+        "Begin": "u_quiz_keys/keys_sync_meta_reg[3]_syn_2.clk",
+        "End": "u_quiz_keys/keys_sync_meta_reg[3]_syn_2.imb",
+        "SourceQ": "u_quiz_keys/keys_sync_meta_reg[3]_syn_2.oqa",
+        "SourceNet": "u_quiz_keys/keys_sync_meta[3]",
+        "DestinationNet": "u_quiz_keys/keys_sync_safe[3]",
+        "DelayNs": 0.145,
+        "BudgetNs": 0.0,
+        "SlackNs": 0.133
+      },
+      "TwoNsConstraintApplied": true,
+      "ObservedDelayBelowTwoNs": true
+    },
+    {
+      "Name": "staging-fault",
+      "Setup": {
+        "Check": "setup",
+        "FromClock": "HDMI_PIXEL_CLK",
+        "ToClock": "HDMI_PIXEL_CLK",
+        "Begin": "u_hdmi_mixer/S_video_de_2d_reg_syn_3.clk",
+        "End": "u_hdmi_mixer/S_video_de_1d_reg_syn_3.imb",
+        "SourceQ": "u_hdmi_mixer/S_video_de_2d_reg_syn_3.oqb",
+        "SourceNet": "u_p14_pipeline/staging_fault_meta",
+        "DestinationNet": "u_p14_pipeline/staging_fault_sync",
+        "DelayNs": 0.604,
+        "BudgetNs": 13.333,
+        "SlackNs": 12.563
+      },
+      "Hold": {
+        "Check": "hold",
+        "FromClock": "HDMI_PIXEL_CLK",
+        "ToClock": "HDMI_PIXEL_CLK",
+        "Begin": "u_hdmi_mixer/S_video_de_2d_reg_syn_3.clk",
+        "End": "u_hdmi_mixer/S_video_de_1d_reg_syn_3.imb",
+        "SourceQ": "u_hdmi_mixer/S_video_de_2d_reg_syn_3.oqb",
+        "SourceNet": "u_p14_pipeline/staging_fault_meta",
+        "DestinationNet": "u_p14_pipeline/staging_fault_sync",
+        "DelayNs": 0.217,
+        "BudgetNs": 0.0,
+        "SlackNs": 0.155
+      },
+      "TwoNsConstraintApplied": false,
+      "ObservedDelayBelowTwoNs": true
+    },
+    {
+      "Name": "config-done",
+      "Setup": {
+        "Check": "setup",
+        "FromClock": "MIPI_RX_BYTE_CLK",
+        "ToClock": "MIPI_RX_BYTE_CLK",
+        "Begin": "S_p14_cfg_done_reg[0]_syn_2.clk",
+        "End": "S_p14_cfg_done_reg[0]_syn_2.imb",
+        "SourceQ": "S_p14_cfg_done_reg[0]_syn_2.oqa",
+        "SourceNet": "S_p14_cfg_done[0]",
+        "DestinationNet": "u_p14_provenance/cfg_done",
+        "DelayNs": 0.405,
+        "BudgetNs": 9.66,
+        "SlackNs": 9.191
+      },
+      "Hold": {
+        "Check": "hold",
+        "FromClock": "MIPI_RX_BYTE_CLK",
+        "ToClock": "MIPI_RX_BYTE_CLK",
+        "Begin": "S_p14_cfg_done_reg[0]_syn_2.clk",
+        "End": "S_p14_cfg_done_reg[0]_syn_2.imb",
+        "SourceQ": "S_p14_cfg_done_reg[0]_syn_2.oqa",
+        "SourceNet": "S_p14_cfg_done[0]",
+        "DestinationNet": "u_p14_provenance/cfg_done",
+        "DelayNs": 0.145,
+        "BudgetNs": 0.0,
+        "SlackNs": 0.133
+      },
+      "TwoNsConstraintApplied": false,
+      "ObservedDelayBelowTwoNs": true
+    },
+    {
+      "Name": "config-error",
+      "Setup": {
+        "Check": "setup",
+        "FromClock": "MIPI_RX_BYTE_CLK",
+        "ToClock": "MIPI_RX_BYTE_CLK",
+        "Begin": "u_p14_provenance/hs_words_reg[4]_syn_2.clk",
+        "End": "u_p14_provenance/bad_reg_syn_46.imb",
+        "SourceQ": "u_p14_provenance/hs_words_reg[4]_syn_2.oqb",
+        "SourceNet": "S_p14_cfg_error[0]",
+        "DestinationNet": "u_p14_provenance/cfg_error",
+        "DelayNs": 1.429,
+        "BudgetNs": 9.66,
+        "SlackNs": 8.106
+      },
+      "Hold": {
+        "Check": "hold",
+        "FromClock": "MIPI_RX_BYTE_CLK",
+        "ToClock": "MIPI_RX_BYTE_CLK",
+        "Begin": "u_p14_provenance/hs_words_reg[4]_syn_2.clk",
+        "End": "u_p14_provenance/bad_reg_syn_46.imb",
+        "SourceQ": "u_p14_provenance/hs_words_reg[4]_syn_2.oqb",
+        "SourceNet": "S_p14_cfg_error[0]",
+        "DestinationNet": "u_p14_provenance/cfg_error",
+        "DelayNs": 0.466,
+        "BudgetNs": 0.0,
+        "SlackNs": 0.395
+      },
+      "TwoNsConstraintApplied": false,
+      "ObservedDelayBelowTwoNs": true
+    }
+  ],
+  "CDC": {
+    "SourceRegisters": 80,
+    "ExpandedDestinationCollection": 160,
+    "MatchedPayloadBits": 80,
+    "MatchedSetupPaths": 80,
+    "MatchedMinPaths": 80,
+    "ExcludedSameDomainSetupPaths": 19,
+    "ExcludedSameDomainMinPaths": 19,
+    "MaxObservedDataPathNs": 1.397,
+    "ObservedUpperBoundNs": 10.0,
+    "PayloadTenNsExceptionApplied": false,
+    "AsynchronousSetupHoldSignoffClaimed": false,
+    "PayloadByBit": {
+      "9": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[44]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[9]_syn_2.id",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[44]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[9]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[9]",
+          "DelayNs": 1.056,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.48
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[44]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[9]_syn_2.id",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[44]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[9]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[9]",
+          "DelayNs": 0.339,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.304
+        }
+      },
+      "10": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/card_record_reg[10]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[10]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/card_record_reg[10]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[10]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[10]",
+          "DelayNs": 0.827,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.269
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/card_record_reg[10]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[10]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/card_record_reg[10]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[10]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[10]",
+          "DelayNs": 0.269,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.239
+        }
+      },
+      "11": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/card_record_reg[11]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[11]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/card_record_reg[11]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[11]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[11]",
+          "DelayNs": 0.672,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.098
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/card_record_reg[11]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[11]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/card_record_reg[11]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[11]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[11]",
+          "DelayNs": 0.223,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.187
+        }
+      },
+      "12": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[12]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[23]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[12]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[12]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[12]",
+          "DelayNs": 0.789,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.213
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[12]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[23]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[12]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[12]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[12]",
+          "DelayNs": 0.265,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.23
+        }
+      },
+      "13": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[13]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[13]_syn_2.id",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[13]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[13]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[13]",
+          "DelayNs": 0.44,
+          "BudgetNs": 0.11,
+          "SlackNs": -0.866
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[13]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[13]_syn_2.id",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[13]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[13]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[13]",
+          "DelayNs": 0.148,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.112
+        }
+      },
+      "14": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[14]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[60]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[14]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[14]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[14]",
+          "DelayNs": 0.944,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.368
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[14]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[60]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[14]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[14]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[14]",
+          "DelayNs": 0.306,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.271
+        }
+      },
+      "15": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[38]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[21]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[38]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[15]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[15]",
+          "DelayNs": 1.189,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.597
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[38]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[21]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[38]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[15]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[15]",
+          "DelayNs": 0.374,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.333
+        }
+      },
+      "16": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[16]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[63]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[16]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[16]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[16]",
+          "DelayNs": 0.77,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.194
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[16]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[63]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[16]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[16]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[16]",
+          "DelayNs": 0.252,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.217
+        }
+      },
+      "17": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[17]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[48]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[17]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[17]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[17]",
+          "DelayNs": 0.789,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.213
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[17]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[48]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[17]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[17]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[17]",
+          "DelayNs": 0.265,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.23
+        }
+      },
+      "18": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[48]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[62]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[48]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[18]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[18]",
+          "DelayNs": 0.681,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.105
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[48]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[62]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[48]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[18]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[18]",
+          "DelayNs": 0.23,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.195
+        }
+      },
+      "19": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[19]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[29]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[19]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[19]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[19]",
+          "DelayNs": 0.997,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.405
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[19]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[29]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[19]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[19]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[19]",
+          "DelayNs": 0.326,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.285
+        }
+      },
+      "20": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[20]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[61]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[20]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[20]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[20]",
+          "DelayNs": 0.803,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.227
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[20]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[61]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[20]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[20]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[20]",
+          "DelayNs": 0.268,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.233
+        }
+      },
+      "21": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/card_record_reg[21]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[21]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/card_record_reg[21]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[21]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[21]",
+          "DelayNs": 0.843,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.251
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/card_record_reg[21]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[21]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/card_record_reg[21]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[21]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[21]",
+          "DelayNs": 0.271,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.23
+        }
+      },
+      "22": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[29]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[10]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[29]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[22]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[22]",
+          "DelayNs": 1.035,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.459
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[29]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[10]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[29]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[22]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[22]",
+          "DelayNs": 0.328,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.293
+        }
+      },
+      "23": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[23]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[23]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[23]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[23]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[23]",
+          "DelayNs": 0.951,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.375
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[23]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[23]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[23]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[23]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[23]",
+          "DelayNs": 0.318,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.283
+        }
+      },
+      "24": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[24]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[30]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[24]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[24]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[24]",
+          "DelayNs": 0.687,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.095
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[24]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[30]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[24]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[24]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[24]",
+          "DelayNs": 0.232,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.191
+        }
+      },
+      "25": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[25]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[25]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[25]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[25]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[25]",
+          "DelayNs": 0.746,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.172
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[25]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[25]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[25]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[25]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[25]",
+          "DelayNs": 0.251,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.215
+        }
+      },
+      "26": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[26]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[25]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[26]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[26]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[26]",
+          "DelayNs": 0.656,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.064
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[26]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[25]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[26]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[26]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[26]",
+          "DelayNs": 0.217,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.176
+        }
+      },
+      "27": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[43]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[27]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[43]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[27]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[27]",
+          "DelayNs": 0.822,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.23
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[43]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[27]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[43]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[27]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[27]",
+          "DelayNs": 0.28,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.239
+        }
+      },
+      "28": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[28]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[75]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[28]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[28]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[28]",
+          "DelayNs": 0.677,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.101
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[28]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[75]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[28]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[28]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[28]",
+          "DelayNs": 0.221,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.186
+        }
+      },
+      "29": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[29]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[29]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[29]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[29]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[29]",
+          "DelayNs": 0.819,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.227
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[29]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[29]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[29]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[29]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[29]",
+          "DelayNs": 0.266,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.225
+        }
+      },
+      "30": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[30]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[30]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[30]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[30]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[30]",
+          "DelayNs": 0.84,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.266
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[30]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[30]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[30]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[30]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[30]",
+          "DelayNs": 0.273,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.237
+        }
+      },
+      "31": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[31]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[41]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[31]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[31]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[31]",
+          "DelayNs": 0.7,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.126
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[31]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[41]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[31]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[31]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[31]",
+          "DelayNs": 0.229,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.193
+        }
+      },
+      "32": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[32]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[43]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[32]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[32]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[32]",
+          "DelayNs": 0.747,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.171
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[32]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[43]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[32]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[32]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[32]",
+          "DelayNs": 0.251,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.216
+        }
+      },
+      "33": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[19]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[33]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[19]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[33]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[33]",
+          "DelayNs": 0.911,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.319
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[19]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[33]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[19]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[33]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[33]",
+          "DelayNs": 0.311,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.27
+        }
+      },
+      "34": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[36]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[66]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[36]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[34]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[34]",
+          "DelayNs": 0.957,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.381
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[36]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[66]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[36]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[34]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[34]",
+          "DelayNs": 0.303,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.268
+        }
+      },
+      "35": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[35]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[67]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[35]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[35]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[35]",
+          "DelayNs": 0.481,
+          "BudgetNs": 0.11,
+          "SlackNs": -0.905
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[35]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[67]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[35]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[35]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[35]",
+          "DelayNs": 0.164,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.129
+        }
+      },
+      "36": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[36]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[40]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[36]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[36]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[36]",
+          "DelayNs": 0.894,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.302
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[36]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[40]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[36]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[36]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[36]",
+          "DelayNs": 0.294,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.253
+        }
+      },
+      "37": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/card_record_reg[37]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[37]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/card_record_reg[37]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[37]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[37]",
+          "DelayNs": 0.858,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.266
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/card_record_reg[37]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[37]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/card_record_reg[37]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[37]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[37]",
+          "DelayNs": 0.29,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.249
+        }
+      },
+      "38": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[38]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[37]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[38]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[38]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[38]",
+          "DelayNs": 0.658,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.066
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[38]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[37]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[38]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[38]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[38]",
+          "DelayNs": 0.216,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.175
+        }
+      },
+      "39": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[39]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[69]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[39]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[39]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[39]",
+          "DelayNs": 0.795,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.219
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[39]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[69]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[39]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[39]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[39]",
+          "DelayNs": 0.267,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.232
+        }
+      },
+      "40": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[32]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[40]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[32]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[40]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[40]",
+          "DelayNs": 0.819,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.227
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[32]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[40]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[32]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[40]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[40]",
+          "DelayNs": 0.284,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.243
+        }
+      },
+      "41": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[41]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[41]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[41]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[41]",
+          "DestinationNet": "u_p14_pipeline/system/joiner/card_item[0]",
+          "DelayNs": 1.228,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.636
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[41]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[41]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[41]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[41]",
+          "DestinationNet": "u_p14_pipeline/system/joiner/card_item[0]",
+          "DelayNs": 0.397,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.356
+        }
+      },
+      "42": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/card_record_reg[42]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[33]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/card_record_reg[42]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[42]",
+          "DestinationNet": "u_p14_pipeline/system/joiner/card_item[1]",
+          "DelayNs": 1.003,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.429
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/card_record_reg[42]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[33]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/card_record_reg[42]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[42]",
+          "DestinationNet": "u_p14_pipeline/system/joiner/card_item[1]",
+          "DelayNs": 0.321,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.285
+        }
+      },
+      "43": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[43]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[43]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[43]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[43]",
+          "DestinationNet": "u_p14_pipeline/system/joiner/card_item[2]",
+          "DelayNs": 0.791,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.215
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[43]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[43]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[43]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[43]",
+          "DestinationNet": "u_p14_pipeline/system/joiner/card_item[2]",
+          "DelayNs": 0.26,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.225
+        }
+      },
+      "44": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[44]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[27]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[44]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[44]",
+          "DestinationNet": "u_p14_pipeline/system/joiner/card_item[3]",
+          "DelayNs": 0.782,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.19
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[44]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[27]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[44]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[44]",
+          "DestinationNet": "u_p14_pipeline/system/joiner/card_item[3]",
+          "DelayNs": 0.256,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.215
+        }
+      },
+      "46": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[46]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[11]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[46]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[46]",
+          "DestinationNet": "u_p14_pipeline/system/joiner/card_present",
+          "DelayNs": 0.667,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.075
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[46]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[11]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[46]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[46]",
+          "DestinationNet": "u_p14_pipeline/system/joiner/card_present",
+          "DelayNs": 0.219,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.178
+        }
+      },
+      "47": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[46]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[47]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[46]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[47]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[47]",
+          "DelayNs": 0.932,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.356
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[46]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[47]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[46]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[47]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[47]",
+          "DelayNs": 0.312,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.277
+        }
+      },
+      "48": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[48]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[48]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[48]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[48]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[48]",
+          "DelayNs": 0.544,
+          "BudgetNs": 0.11,
+          "SlackNs": -0.968
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[48]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[48]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[48]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[48]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[48]",
+          "DelayNs": 0.182,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.147
+        }
+      },
+      "58": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/block_record_reg[25]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[59]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/block_record_reg[25]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[58]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[58]",
+          "DelayNs": 0.678,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.101
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/block_record_reg[25]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[59]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/block_record_reg[25]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[58]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[58]",
+          "DelayNs": 0.222,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.186
+        }
+      },
+      "59": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[59]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[59]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[59]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[59]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[59]",
+          "DelayNs": 0.923,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.348
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[59]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[59]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[59]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[59]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[59]",
+          "DelayNs": 0.299,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.264
+        }
+      },
+      "60": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[60]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[60]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[60]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[60]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[60]",
+          "DelayNs": 0.856,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.28
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[60]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[60]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[60]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[60]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[60]",
+          "DelayNs": 0.283,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.248
+        }
+      },
+      "61": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[61]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[61]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[61]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[61]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[61]",
+          "DelayNs": 1.046,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.471
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[61]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[61]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[61]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[61]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[61]",
+          "DelayNs": 0.343,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.308
+        }
+      },
+      "62": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[61]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[62]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[61]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[62]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[62]",
+          "DelayNs": 1.117,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.542
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[61]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[62]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[61]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[62]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[62]",
+          "DelayNs": 0.359,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.324
+        }
+      },
+      "63": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[64]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[63]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[64]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[63]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[63]",
+          "DelayNs": 0.683,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.108
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[64]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[63]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[64]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[63]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[63]",
+          "DelayNs": 0.218,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.183
+        }
+      },
+      "64": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[64]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[78]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[64]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[64]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[64]",
+          "DelayNs": 0.762,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.187
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[64]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[78]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[64]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[64]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[64]",
+          "DelayNs": 0.249,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.214
+        }
+      },
+      "65": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[65]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[47]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[65]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[65]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[65]",
+          "DelayNs": 0.617,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.04
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[65]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[47]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[65]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[65]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[65]",
+          "DelayNs": 0.203,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.167
+        }
+      },
+      "66": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[66]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[66]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[66]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[66]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[66]",
+          "DelayNs": 0.961,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.386
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[66]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[66]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[66]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[66]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[66]",
+          "DelayNs": 0.313,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.278
+        }
+      },
+      "67": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[67]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[67]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[67]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[67]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[67]",
+          "DelayNs": 0.815,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.24
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[67]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[67]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[67]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[67]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[67]",
+          "DelayNs": 0.265,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.23
+        }
+      },
+      "68": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[68]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[68]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[68]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[68]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[68]",
+          "DelayNs": 0.943,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.367
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[68]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[68]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[68]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[68]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[68]",
+          "DelayNs": 0.307,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.269
+        }
+      },
+      "69": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[69]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[69]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[69]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[69]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[69]",
+          "DelayNs": 0.948,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.373
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[69]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[69]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[69]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[69]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[69]",
+          "DelayNs": 0.3,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.265
+        }
+      },
+      "70": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[69]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[77]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[69]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[70]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[70]",
+          "DelayNs": 0.832,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.257
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[69]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[77]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[69]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[70]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[70]",
+          "DelayNs": 0.287,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.252
+        }
+      },
+      "71": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[88]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[80]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[88]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[71]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[71]",
+          "DelayNs": 0.796,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.22
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[88]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[80]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[88]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[71]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[71]",
+          "DelayNs": 0.261,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.223
+        }
+      },
+      "72": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[72]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[81]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[72]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[72]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[72]",
+          "DelayNs": 0.678,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.102
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[72]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[81]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[72]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[72]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[72]",
+          "DelayNs": 0.226,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.188
+        }
+      },
+      "73": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[73]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[95]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[73]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[73]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[73]",
+          "DelayNs": 0.694,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.118
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[73]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[95]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[73]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[73]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[73]",
+          "DelayNs": 0.234,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.196
+        }
+      },
+      "74": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/block_record_reg[16]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[68]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/block_record_reg[16]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[74]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[74]",
+          "DelayNs": 0.796,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.218
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/block_record_reg[16]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[68]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/block_record_reg[16]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[74]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[74]",
+          "DelayNs": 0.273,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.234
+        }
+      },
+      "75": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[67]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[75]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[67]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[75]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[75]",
+          "DelayNs": 1.397,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.822
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[67]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[75]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[67]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[75]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[75]",
+          "DelayNs": 0.439,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.404
+        }
+      },
+      "76": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[94]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[76]_syn_2.imb",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[94]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[76]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[76]",
+          "DelayNs": 1.319,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.743
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[94]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[76]_syn_2.imb",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[94]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[76]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[76]",
+          "DelayNs": 0.438,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.4
+        }
+      },
+      "77": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[77]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[77]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[77]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[77]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[77]",
+          "DelayNs": 0.868,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.293
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[77]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[77]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[77]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[77]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[77]",
+          "DelayNs": 0.294,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.259
+        }
+      },
+      "78": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[78]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[78]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[78]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[78]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[78]",
+          "DelayNs": 0.822,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.247
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[78]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[78]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[78]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[78]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[78]",
+          "DelayNs": 0.28,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.245
+        }
+      },
+      "79": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[72]_syn_2.clk",
+          "End": "u_p14_pipeline/out_de_reg_syn_3.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[72]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[79]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[79]",
+          "DelayNs": 0.592,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.016
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[72]_syn_2.clk",
+          "End": "u_p14_pipeline/out_de_reg_syn_3.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[72]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[79]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[79]",
+          "DelayNs": 0.203,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.165
+        }
+      },
+      "80": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[82]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[80]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[82]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[80]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[80]",
+          "DelayNs": 0.869,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.293
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[82]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[80]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[82]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[80]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[80]",
+          "DelayNs": 0.286,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.248
+        }
+      },
+      "81": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[73]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[81]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[73]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[81]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[81]",
+          "DelayNs": 0.987,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.411
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[73]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[81]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[73]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[81]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[81]",
+          "DelayNs": 0.327,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.289
+        }
+      },
+      "82": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[82]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[92]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[82]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[82]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[82]",
+          "DelayNs": 0.893,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.317
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[82]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[92]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[82]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[82]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[82]",
+          "DelayNs": 0.298,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.26
+        }
+      },
+      "83": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[90]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[84]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[90]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[83]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[83]",
+          "DelayNs": 0.836,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.26
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[90]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[84]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[90]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[83]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[83]",
+          "DelayNs": 0.286,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.248
+        }
+      },
+      "84": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[89]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[84]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[89]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[84]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[84]",
+          "DelayNs": 0.724,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.148
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[89]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[84]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[89]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[84]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[84]",
+          "DelayNs": 0.248,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.21
+        }
+      },
+      "85": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[68]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[85]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[68]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[85]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[85]",
+          "DelayNs": 1.2,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.624
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[68]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[85]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[68]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[85]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[85]",
+          "DelayNs": 0.381,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.343
+        }
+      },
+      "86": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[97]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[94]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[97]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[86]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[86]",
+          "DelayNs": 0.803,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.227
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[97]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[94]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[97]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[86]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[86]",
+          "DelayNs": 0.263,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.225
+        }
+      },
+      "87": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[91]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[98]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[91]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[87]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[87]",
+          "DelayNs": 0.88,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.304
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[91]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[98]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[91]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[87]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[87]",
+          "DelayNs": 0.284,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.246
+        }
+      },
+      "88": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[88]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[93]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[88]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[88]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[88]",
+          "DelayNs": 0.705,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.129
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[88]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[93]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[88]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[88]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[88]",
+          "DelayNs": 0.235,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.197
+        }
+      },
+      "89": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[89]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[89]_syn_2.id",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[89]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[89]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[89]",
+          "DelayNs": 0.836,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.26
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[89]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[89]_syn_2.id",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[89]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[89]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[89]",
+          "DelayNs": 0.269,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.231
+        }
+      },
+      "90": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[90]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[91]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[90]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[90]",
+          "DestinationNet": "u_p14_pipeline/system/joiner/block_item[0]",
+          "DelayNs": 0.779,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.203
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[90]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[91]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[90]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[90]",
+          "DestinationNet": "u_p14_pipeline/system/joiner/block_item[0]",
+          "DelayNs": 0.254,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.216
+        }
+      },
+      "91": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[91]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[91]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[91]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[91]",
+          "DestinationNet": "u_p14_pipeline/system/joiner/block_item[1]",
+          "DelayNs": 0.869,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.293
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[91]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[91]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[91]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[91]",
+          "DestinationNet": "u_p14_pipeline/system/joiner/block_item[1]",
+          "DelayNs": 0.295,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.257
+        }
+      },
+      "92": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[93]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[92]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[93]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[92]",
+          "DestinationNet": "u_p14_pipeline/system/joiner/block_item[2]",
+          "DelayNs": 1.088,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.512
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[93]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[92]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[93]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[92]",
+          "DestinationNet": "u_p14_pipeline/system/joiner/block_item[2]",
+          "DelayNs": 0.366,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.328
+        }
+      },
+      "93": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[93]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[93]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[93]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[93]",
+          "DestinationNet": "u_p14_pipeline/system/joiner/block_item[3]",
+          "DelayNs": 0.97,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.394
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[93]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[93]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[93]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[93]",
+          "DestinationNet": "u_p14_pipeline/system/joiner/block_item[3]",
+          "DelayNs": 0.325,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.287
+        }
+      },
+      "94": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[94]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[94]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[94]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[94]",
+          "DestinationNet": "u_p14_pipeline/system/joiner/block_valid",
+          "DelayNs": 0.861,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.285
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[94]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[94]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[94]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[94]",
+          "DestinationNet": "u_p14_pipeline/system/joiner/block_valid",
+          "DelayNs": 0.286,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.248
+        }
+      },
+      "95": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[96]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[95]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[96]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[95]",
+          "DestinationNet": "u_p14_pipeline/system/joiner/block_present",
+          "DelayNs": 1.061,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.485
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[96]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[95]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[96]_syn_2.oqb",
+          "SourceNet": "u_p14_pipeline/forward/held_data[95]",
+          "DestinationNet": "u_p14_pipeline/system/joiner/block_present",
+          "DelayNs": 0.34,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.302
+        }
+      },
+      "96": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[96]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[97]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[96]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[96]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[96]",
+          "DelayNs": 0.613,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.037
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[96]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[97]_syn_2.ie",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[96]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[96]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[96]",
+          "DelayNs": 0.21,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.172
+        }
+      },
+      "97": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[97]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[97]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[97]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[97]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[97]",
+          "DelayNs": 0.676,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.1
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[97]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[97]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[97]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[97]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[97]",
+          "DelayNs": 0.229,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.191
+        }
+      },
+      "98": {
+        "setup": {
+          "Check": "setup",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[98]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[98]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[98]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[98]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[98]",
+          "DelayNs": 0.666,
+          "BudgetNs": 0.11,
+          "SlackNs": -1.09
+        },
+        "hold": {
+          "Check": "hold",
+          "FromClock": "MIPI_RX_BYTE_CLK",
+          "ToClock": "HDMI_PIXEL_CLK",
+          "Begin": "u_p14_pipeline/forward/held_data_reg[98]_syn_2.clk",
+          "End": "u_p14_pipeline/forward/dst_data_reg[98]_syn_2.imf",
+          "SourceQ": "u_p14_pipeline/forward/held_data_reg[98]_syn_2.oqa",
+          "SourceNet": "u_p14_pipeline/forward/held_data[98]",
+          "DestinationNet": "u_p14_pipeline/forward/dst_data[98]",
+          "DelayNs": 0.219,
+          "BudgetNs": 0.0,
+          "SlackNs": 0.181
+        }
+      }
+    },
+    "GenericFaultSynchronizers": "Both optimized away as constant; actual staging fault separately checked",
+    "Method": "Reconstructed actual physical clock pins at 9.660/13.333 ns without blanket clock-group cuts. Compare only routed Data Path Delay against external 10 ns upper bound; phase-derived slack is not a CDC pass/fail metric."
+  },
+  "CriticalWarnings": [
+    "USR-8012 CRITICAL-WARNING: value for option -from is invalid.",
+    "USR-8159 CRITICAL-WARNING: Command set_max_delay -from [get_regs {u_p14_pipeline/forward/fault_meta}] -to [get_regs {u_p14_pipeline/forward/fault_sync}] 2.000 in E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/overlay/pixel14.sdc(39) fails.",
+    "USR-8012 CRITICAL-WARNING: value for option -from is invalid.",
+    "USR-8159 CRITICAL-WARNING: Command set_max_delay -from [get_regs {u_p14_pipeline/backward/fault_meta}] -to [get_regs {u_p14_pipeline/backward/fault_sync}] 2.000 in E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/overlay/pixel14.sdc(42) fails.",
+    "PHY-5060 CRITICAL-WARNING: Clock net candidate u_uicfgcs520/u_i2c/scl_clk has mixed fanouts of 1 clock pins; 2 data/ctrl pins. Please check connection of the net in design.",
+    "PHY-5060 CRITICAL-WARNING: Clock net candidate O_cam_24m_syn_3 has mixed fanouts of 161 clock pins; 1 data/ctrl pins. Please check connection of the net in design.",
+    "USR-8012 CRITICAL-WARNING: value for option -from is invalid.",
+    "USR-8159 CRITICAL-WARNING: Command set_max_delay -from [get_regs {u_p14_pipeline/forward/fault_meta}] -to [get_regs {u_p14_pipeline/forward/fault_sync}] 2.000 in E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/overlay/pixel14.sdc(39) fails.",
+    "USR-8012 CRITICAL-WARNING: value for option -from is invalid.",
+    "USR-8159 CRITICAL-WARNING: Command set_max_delay -from [get_regs {u_p14_pipeline/backward/fault_meta}] -to [get_regs {u_p14_pipeline/backward/fault_sync}] 2.000 in E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/overlay/pixel14.sdc(42) fails.",
+    "USR-8012 CRITICAL-WARNING: value for option -from is invalid.",
+    "USR-8159 CRITICAL-WARNING: Command set_max_delay -from [get_regs {u_p14_pipeline/forward/fault_meta}] -to [get_regs {u_p14_pipeline/forward/fault_sync}] 2.000 in E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/overlay/pixel14.sdc(39) fails.",
+    "USR-8012 CRITICAL-WARNING: value for option -from is invalid.",
+    "USR-8159 CRITICAL-WARNING: Command set_max_delay -from [get_regs {u_p14_pipeline/backward/fault_meta}] -to [get_regs {u_p14_pipeline/backward/fault_sync}] 2.000 in E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b106/overlay/pixel14.sdc(42) fails.",
+    "PHY-5079 CRITICAL-WARNING: Marked 1 clock net(s) utilize the local routing resources. Please check log message and the sinks of clock nets."
+  ],
+  "Artifacts": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b106\\inputs.json",
+      "Bytes": 104730,
+      "SHA256": "504569AE9FA61385B33278B4E885A3F4E1B042166709678395E056CF64E2DBB7"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b106\\started.json",
+      "Bytes": 301,
+      "SHA256": "9F02CB14867B343E85C71C7126FDBE7F41EEDFEE921A5BE62CA0CE945D8D5933"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b106\\stages.json",
+      "Bytes": 1091,
+      "SHA256": "DCB54043CEBF6F5A7118B5CAB6B84339F0081C8EEC5EF83D2D78BECF3DDBDE3B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b106\\failure.json",
+      "Bytes": 1234,
+      "SHA256": "F8CE7C095BB71EED3F5727070A7CB25D6F58DB8748C9939F7D1EBF994D61989D"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b106\\syn_1.stdout.log",
+      "Bytes": 230676,
+      "SHA256": "F4F5C135E8B0E19D11C30C67674356A52EB0D18CC7A782E50BF37AC01FDB825C"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b106\\syn_1.stderr.log",
+      "Bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b106\\phy_1.stdout.log",
+      "Bytes": 192161,
+      "SHA256": "D6FE9C5F54A3C64775296A08AC95C8B0592154DD0B0AE5DA83D23855292367BA"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b106\\phy_1.stderr.log",
+      "Bytes": 101,
+      "SHA256": "2C6B1F5261A0430B3FACC44C21CD99C9EA1B062AB44D55157D50E804E6296C7F"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b106\\td_project\\camera_to_dsi_display_Runs\\syn_1\\pixel14-syn_1-netlist.v",
+      "Bytes": 31482358,
+      "SHA256": "8584FE6D6887CC6BF2E2F9617D1E3C3C209F39EC118175E22BED4F6FBBDD4F71"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b106\\td_project\\camera_to_dsi_display_Runs\\phy_1\\pixel14-phy_1-netlist.v",
+      "Bytes": 27782819,
+      "SHA256": "28E6D065BEA32120667A660826AB0F928DD1C9168924638C5A792DF778B6D8EC"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b106\\td_project\\camera_to_dsi_display_Runs\\phy_1\\camera_to_dsi_display_pr.db",
+      "Bytes": 18010602,
+      "SHA256": "3153E04ED2CE85B545C4302637D9A53E3BF4336E031671D5673C6606F2B2FB33"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b106\\td_project\\camera_to_dsi_display_Runs\\phy_1\\final_timing.rpt",
+      "Bytes": 5265459,
+      "SHA256": "FB93FBC78C1BD67B4818B04B71242D832495BEFC0694C9D22BD8E96C1CE9F4D5"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b106\\td_project\\camera_to_dsi_display_Runs\\phy_1\\camera_to_dsi_display_phy.area",
+      "Bytes": 53093,
+      "SHA256": "8F454403161BA77066332E1EF965ACBEBF8FF229B25738D40AC88B8569FB38A8"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b106\\td_project\\camera_to_dsi_display_Runs\\phy_1\\camera_to_dsi_display.bit",
+      "Bytes": 1789539,
+      "SHA256": "3909C31AA81D7EB5C3153EFC2DBAC6D54C655A82A698107AA08CB0B14AFC0ABD"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\cdc106-v3\\analysis\\analysis-clocks.rpt",
+      "Bytes": 303,
+      "SHA256": "3915178B17C80C614ED8EDFAE623766D68BE218552C719E63824FDC00343181A"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\cdc106-v3\\analysis\\analysis-exceptions.rpt",
+      "Bytes": 1941,
+      "SHA256": "86AB4CEB27C00451EB38E458DBEA258C1AA2FCC999594820F57EA69E80AE30D4"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\cdc106-v3\\analysis\\analysis-ignored.rpt",
+      "Bytes": 1090,
+      "SHA256": "39B09FEF25A8202181292ECFC2C2D8890C95548C8CDC2C2B721493E824D5A379"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\cdc106-v3\\analysis\\backward-ack.rpt",
+      "Bytes": 16882,
+      "SHA256": "D660C7E05598C0795C8DEB3F4FD73280099906A7038F87BA55BDDDE67375F83D"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\cdc106-v3\\analysis\\backward-req.rpt",
+      "Bytes": 17350,
+      "SHA256": "4A267D9F6D5966B9641F4AEC4E116D5EA345CC13FF1235E4E13510F24802AD39"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\cdc106-v3\\analysis\\config-done.rpt",
+      "Bytes": 16319,
+      "SHA256": "F256E54A92700F0D8B973D01A6BB54D67979BBE26D82ABFD47D79D3A06EF269A"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\cdc106-v3\\analysis\\config-error.rpt",
+      "Bytes": 16412,
+      "SHA256": "E43AAFBF12EC8CB10822C57375F28379E3D65DDAD97EDB46913622F43D002C17"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\cdc106-v3\\analysis\\forward-ack.rpt",
+      "Bytes": 17336,
+      "SHA256": "C8BAAE433FBEBC54126C67A608BDC2BDDFE4F0B61488E61AAA423D3E7BAA580C"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\cdc106-v3\\analysis\\forward-req.rpt",
+      "Bytes": 16860,
+      "SHA256": "84FD9CEEA8FD5EDA5DA6792D536970B22915AB68FA40A94CE5E08664885D952F"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\cdc106-v3\\analysis\\key-0.rpt",
+      "Bytes": 16818,
+      "SHA256": "378F93DA551DA2C79CD08BE949A3457D77209B3A90589EE94117D1F7FEAA54A5"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\cdc106-v3\\analysis\\key-1.rpt",
+      "Bytes": 16818,
+      "SHA256": "93379D8DF1BB73210D55CAD9DCA6EB588F117CA3CBFF7BE6C2724E98C54FABD7"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\cdc106-v3\\analysis\\key-2.rpt",
+      "Bytes": 16818,
+      "SHA256": "7815CB51802637ECC7BD630F4F9739B445DDD309649DCA948867AD99369729D4"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\cdc106-v3\\analysis\\key-3.rpt",
+      "Bytes": 16818,
+      "SHA256": "1934867FCDE34D76401A0C8E7A9913048B0D14CDFDE61CC3AB5476407D3605AB"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\cdc106-v3\\analysis\\original-exceptions.rpt",
+      "Bytes": 74195,
+      "SHA256": "8667BE8BB18EBF4612810EF31026F63900E03B524A14B7AAFA3257C7E0250249"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\cdc106-v3\\analysis\\original-ignored.rpt",
+      "Bytes": 317538,
+      "SHA256": "8CE757E5BB2932AB61E8D4836F556931CEF8508D4A9F84924D8AD90373BFC6FD"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\cdc106-v3\\analysis\\payload-max10.rpt",
+      "Bytes": 1272982,
+      "SHA256": "9739C21A21A018C46CB00E91ACAB955C5BC7BDF9AE5D8DBAF56DB3ADAAAFB033"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\cdc106-v3\\analysis\\payload-objects.txt",
+      "Bytes": 9358,
+      "SHA256": "9E0B83F6F2C0A4D95919AF515DD4B6DD9C13ACB83E8D565B8A33F9CD05D27F3C"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\cdc106-v3\\analysis\\staging-fault.rpt",
+      "Bytes": 15972,
+      "SHA256": "083B4D02AD96123FFCCAACB7A8298EA09C05B3A74457DE278A33860FDDF604DD"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\cdc106-v3\\query.tcl",
+      "Bytes": 676,
+      "SHA256": "302B8C92562706463EAACC6A11621236FB8BD2AE8D467A6D040C0652E3D1EB92"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\cdc106-v3\\stdout.log",
+      "Bytes": 13946,
+      "SHA256": "F7A163C6E8C734A3525BBB5C4BEB911069C68AEA51D6689725271F151E00FAC7"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\cdc106-v3\\stderr.log",
+      "Bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\tools\\audit-recovery.py",
+      "Bytes": 16287,
+      "SHA256": "CE9BB31D112B207D984AA171C3518F454F657663E4728EC2F2469B910D486B94"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\tools\\audit-build.py",
+      "Bytes": 5544,
+      "SHA256": "74613AA08F06DAD9F8E822EE3FC1F642F2B9111680AEAFB55EF3D25D73274C0B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\report-pixel14-cdc.tcl",
+      "Bytes": 3613,
+      "SHA256": "6C9D44423020EC3BC1F0D95C5C5CE2C8E3E01E9CE6E581BABE63A4E30DC5F83B"
+    }
+  ],
+  "Limits": [
+    "Recovery audit records existing artifacts now; original failure and snapshots remain unchanged.",
+    "This report qualifies this exact routed bit as a review candidate, not all future builds.",
+    "No metastability MTBF proof; staging/config observed below 2 ns under original clock-period constraints.",
+    "No CSI CRC/ECC numeric checking, exact DDR display-frame identity, physical audio or board validation."
+  ]
+}
