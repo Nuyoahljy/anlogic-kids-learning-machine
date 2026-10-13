@@ -20,11 +20,14 @@ def require(condition, message):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--output', type=Path, default=EVIDENCE / 'pixel14-validation-v2.json')
+    parser.add_argument('--output', type=Path, default=EVIDENCE / 'pixel14-validation-v3.json')
     args = parser.parse_args()
     baselines = json.loads((EVIDENCE / 'pixel14-baseline.json').read_text(encoding='utf-8'))
     for item in baselines['Protected']:
         require(sha(item['Path']) == item['SHA256'].upper(), 'protected file changed: '+item['Path'])
+    history = json.loads((EVIDENCE / 'pixel14-boardfix-baseline.json').read_text(encoding='utf-8'))
+    for item in [history['OldBit'], *history['ProtectedHistory']]:
+        require(sha(item['Path']) == item['SHA256'].upper(), 'historical evidence changed: '+item['Path'])
     candidates = []
     for path in (EVIDENCE / 'runs').glob('p14-*/run-manifest.json'):
         manifest = json.loads(path.read_text(encoding='utf-8'))
@@ -34,7 +37,7 @@ def main():
         if current:
             candidates.append((path, manifest))
     selected = []
-    for test in ('capture', 'block', 'cdc', 'pipeline', 'provenance'):
+    for test in ('capture', 'block', 'cdc', 'pipeline', 'provenance', 'diag'):
         for mode in ('normal', 'negative', 'watchdog'):
             matches = [(p, m) for p, m in candidates if m['Test'] == test and m['Mode'] == mode]
             require(bool(matches), f'no current qualified run: {test}/{mode}')
@@ -65,13 +68,14 @@ def main():
     result = {
         'Task': 'sc520-card-recognition', 'Stage': 'pixel14',
         'VerifiedAt': datetime.now(timezone(timedelta(hours=8))).isoformat(timespec='seconds'),
-        'ProtectedFiles': len(baselines['Protected']), 'Runs': selected,
+        'ProtectedFiles': len(baselines['Protected']), 'ProtectedHistoryFiles': len(history['ProtectedHistory']), 'Runs': selected,
         'NormalScenarios': sum(x['Summary']['scenarios'] for x in positive),
         'NormalChecks': sum(x['Summary']['checks'] for x in positive), 'NormalErrors': 0,
         'Scope': 'Synthetic RGB96 and CSI/RAW/ISP framing; input snapshots, outputs and protected files verified. This does not certify physical camera recognition, DDR frame alignment, hardware CDC or board operation.'
     }
     out = args.output.resolve()
     require(out.parent == EVIDENCE.resolve(), 'validation output must stay in task evidence directory')
+    require(not out.exists(), 'choose a new output name; do not overwrite historical validation')
     out.write_text(json.dumps(result, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
     print(json.dumps({'validated': str(out), 'runs': len(selected),
                       'scenarios': result['NormalScenarios'], 'checks': result['NormalChecks'],

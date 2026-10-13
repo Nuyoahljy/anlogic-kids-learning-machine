@@ -18,7 +18,7 @@ REPO = common.REPO
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--test', choices=('capture', 'block', 'cdc', 'pipeline', 'provenance'), required=True)
+    parser.add_argument('--test', choices=('capture', 'block', 'cdc', 'pipeline', 'provenance', 'diag'), required=True)
     parser.add_argument('--full-resolution', action='store_true', help='Run the pipeline at its actual 1280x720 geometry')
     modes = parser.add_mutually_exclusive_group()
     modes.add_argument("--negative", action="store_true")
@@ -37,6 +37,7 @@ def main():
         "capture": [pixel / "capture_rgb96.v"],
         "block": sorted(pixel.glob("block*.v")),
         "cdc": [pixel / "pixel14_result_cdc.v"],
+        "diag": [pixel / "pixel14_diag_osd.v"],
         "provenance": [pixel / "pixel14_capture_provenance.v", vendor_isp / 'csi_unpacket_2lane.v',
                        vendor_isp / 'raw10_unpacket_2lane.v'],
         "pipeline": [pixel / name for name in ("capture_rgb96.v", "block_frame_recognizer.v", "pixel14_card_matcher.v",

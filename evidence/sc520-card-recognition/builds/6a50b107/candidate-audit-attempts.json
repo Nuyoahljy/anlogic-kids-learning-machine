@@ -1,0 +1,11 @@
+{
+  "RecordedAt": "2026-10-13T10:35:51+08:00",
+  "Command": "python -B -X utf8 fpga/custom_project/sc520-pixel14/tools/audit-candidate.py evidence/sc520-card-recognition/builds/6a50b107",
+  "InitialExitCode": 1,
+  "InitialFailure": "audit-recovery.py timing_paths did not resolve packed same-clock endpoint u_p14_provenance/last_errors_reg[5]_syn_2.cea",
+  "Repair": "Only new audit-candidate.py changed. Classify all paths by reported clocks; retain same-clock exclusions, require all asynchronous paths to match physical Q/D and exact payload bit.",
+  "FinalExitCode": 0,
+  "FinalReport": "candidate-audit.json",
+  "NoRerouting": true,
+  "NoBitOrSnapshotChange": true
+}

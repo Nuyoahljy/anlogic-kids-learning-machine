@@ -1,0 +1,43 @@
+{
+  "Version": "0107",
+  "Build": "6a50b107",
+  "Status": "Software and build qualified; board retest pending",
+  "HardwareValidated": false,
+  "Bit": {
+    "File": "sc520-pixel14-0107.bit",
+    "Bytes": 1789539,
+    "SHA256": "3AC5E069788CA11EA2136D36AAE5993447C2A2C62B9109C821F7DE77C6834044"
+  },
+  "SourceBit": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b107\\td_project\\camera_to_dsi_display_Runs\\phy_1\\camera_to_dsi_display.bit",
+  "BuildAudit": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b107\\candidate-audit.json",
+  "BuildAuditSHA256": "E07024FF758EF43A323DAF788E4026F5ABA41C95FABAEDD90625F8E30E6D32EE",
+  "Validation": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\pixel14-validation-v4.json",
+  "ValidationSHA256": "6908AD4C41B1F0B85C56FE19050A90AB341617D871AE9BF61B6A7100114C0BB3",
+  "NormalScenarios": 121,
+  "NormalChecks": 1917079,
+  "TimingNs": {
+    "SWNS": 0.117,
+    "STNS": 0.0,
+    "HWNS": 0.02,
+    "HTNS": 0.0
+  },
+  "Guide": {
+    "File": "SC520-0107-guide.md",
+    "SHA256": "E2656ABA3CE9D2AFA8EFDFB2B684FC0CBE85DA3476959767A3D1DEB68CC7F45C"
+  },
+  "ExportedArtifacts": [
+    {
+      "Path": "C:\\Users\\33630\\Documents\\Codex\\2026-10-13\\sc520-thread-01a12dda-0625-7f41-a058-3\\outputs\\sc520-pixel14-0107.bit",
+      "Bytes": 1789539,
+      "SHA256": "3AC5E069788CA11EA2136D36AAE5993447C2A2C62B9109C821F7DE77C6834044"
+    },
+    {
+      "Path": "C:\\Users\\33630\\Documents\\Codex\\2026-10-13\\sc520-thread-01a12dda-0625-7f41-a058-3\\outputs\\SC520-0107-guide.md",
+      "Bytes": 2102,
+      "SHA256": "E2656ABA3CE9D2AFA8EFDFB2B684FC0CBE85DA3476959767A3D1DEB68CC7F45C"
+    }
+  ],
+  "ExternalDeliveryNote": "Codex outputs directory is outside E:/juan/FPGA; record this manifest in the workspace index, retaining exact exported paths and hashes here.",
+  "BaseCommit": "38552a50fd7641134ea9c72888d9bdc734011316",
+  "CheckpointBinding": "Final checkpoint commit is recorded in the shared workspace record and exported SC520-0107-manifest.json after commit."
+}

@@ -16,6 +16,12 @@ foreach direction {forward backward} {
         report_timing_path -from [get_regs $start] -to [get_regs $finish] -ep_num 1 -path_num 1 -file "${direction}-${signal}.rpt"
     }
 }
+foreach signal {req ack} {
+    set start "u_p14_diag_cdc/${signal}_meta"
+    set finish "u_p14_diag_cdc/${signal}_sync"
+    if {[llength [get_regs $start]] != 1 || [llength [get_regs $finish]] != 1} {error "Diagnostic CDC register resolution failed: $start $finish"}
+    report_timing_path -from [get_regs $start] -to [get_regs $finish] -ep_num 1 -path_num 1 -file "diagnostic-${signal}.rpt"
+}
 foreach pair {{u_p14_pipeline/staging_fault_meta u_p14_pipeline/staging_fault_sync staging-fault} {S_p14_cfg_done[0] S_p14_cfg_done[1] config-done} {S_p14_cfg_error[0] S_p14_cfg_error[1] config-error}} {
     lassign $pair start finish name
     if {[llength [get_regs $start]] != 1 || [llength [get_regs $finish]] != 1} {error "CDC register resolution failed: $start $finish"}
@@ -46,11 +52,20 @@ create_clock -name MIPI_RX_BYTE_CLK -period 9.660 $mipi_pin
 create_clock -name HDMI_PIXEL_CLK -period 13.333 $hdmi_pin
 set payload_from [get_regs {u_p14_pipeline/forward/held_data*}]
 set payload_to [get_regs {u_p14_pipeline/forward/dst_data*}]
-set_max_delay -datapath_only -from $payload_from -to $payload_to 10.000
+# No interactive max-delay exception: this view measures routed propagation.
+# The audit compares actual data delays against an explicit external bound.
 update_timing -mode final
 if {[llength [get_clocks MIPI_RX_BYTE_CLK]]!=1 || [llength [get_clocks HDMI_PIXEL_CLK]]!=1} {error "CDC analysis clock reconstruction failed"}
 report_clock_summary -file analysis-clocks.rpt
-report_timing_path -from $payload_from -to $payload_to -ep_num 200 -path_num 1 -file payload-max10.rpt
+report_timing_path -from $payload_from -to $payload_to -ep_num 400 -path_num 1 -file payload-routing.rpt
+set diagnostic_from [get_regs {u_p14_diag_cdc/held_data*}]
+set diagnostic_to [get_regs {u_p14_diag_cdc/dst_data*}]
+if {[llength $diagnostic_from]<32 || [llength $diagnostic_to]<32} {error "Diagnostic payload unexpectedly optimized away"}
+set fd [open diagnostic-objects.txt w]
+puts $fd "FROM [llength $diagnostic_from] $diagnostic_from"
+puts $fd "TO [llength $diagnostic_to] $diagnostic_to"
+close $fd
+report_timing_path -from $diagnostic_from -to $diagnostic_to -ep_num 600 -path_num 1 -file diagnostic-routing.rpt
 report_timing_exception -file analysis-exceptions.rpt
 report_timing_ignored -file analysis-ignored.rpt
 puts "PIXEL14_CDC_PHYSICAL_REPORTS_OK"

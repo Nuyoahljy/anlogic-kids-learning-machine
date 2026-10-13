@@ -1,0 +1,204 @@
+Created by          : Tang Dynasty v6.2.168116
+                    : Copyright (c) 2012-2025 Anlogic Inc.
+Generated           : Mon Oct 12 20:25:56 2026
+
+Top Model           : design_top_wrapper
+Device              : PH1P35MDG324
+Speed               : 3
+STA coverage        : 95.86%
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     HDMI_PIXEL_CLK -> HDMI_PIXEL_CLK
+Type           :     Self
+From Clock     :     HDMI_PIXEL_CLK
+To Clock       :     HDMI_PIXEL_CLK
+Min Period     :     0.000ns
+Fmax           :     0.000MHz
+
+Statistics:
+Max            : SWNS      0.000ns, STNS      0.000ns,         0 Viol Endpoints,         0 Total Endpoints,         0 Paths Analyzed
+Min            : HWNS      0.151ns, HTNS      0.000ns,         0 Viol Endpoints,         1 Total Endpoints,         1 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 0.151ns
+Begin Point         : u_p14_diag_cdc/req_meta_reg_syn_3.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_p14_diag_cdc/req_meta_reg_syn_3.ie (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : hold
+Process             : fast_m40c
+Budget              : 0.000ns { HDMI_PIXEL_CLK rising@0.000ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 0.163ns (cell 0.106ns (65%), net 0.057ns (35%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( LUT2=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.257          1.067          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.040          1.107          net: I_sys_clk_dup_6,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b107/overlay/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.619          0.488          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.314          0.802          net: S_hdmi_pixel_clk,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b107/overlay/design_top_wrapper.v(99)
+                                                                      pin: S_hdmi_pixel_clk_created_gclkinst.clkin[0]
+GCLK                x023y039z17         0.006          0.808          pin: S_hdmi_pixel_clk_created_gclkinst.clkout
+net (fo=4)                              0.137          0.945          net: S_hdmi_pixel_clk_syn_657,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b107/overlay/design_top_wrapper.v(99)
+                                                                      pin: S_hdmi_pixel_clk_created_gclkinst_auto_created_sclk_s_0_l_bk3.clkin
+SCLK                x023y019z2          0.025          0.970          pin: S_hdmi_pixel_clk_created_gclkinst_auto_created_sclk_s_0_l_bk3.clkout
+net (fo=415)                            0.223          1.193          net: S_hdmi_pixel_clk_created_gclkinst_auto_created_sclk_s_0_l_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_p14_diag_cdc/req_meta_reg_syn_3.clk
+launch edge                             0.000    r     1.193               
+--------------------------------------------------------------------  ---------------
+clk2q               x014y007z6          0.062    f     1.255          pin: u_p14_diag_cdc/req_meta_reg_syn_3.oqa
+net (fo=1)                              0.057          1.312          net: u_p14_diag_cdc/req_meta,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b107/rtl/pixel14_result_cdc.v(27)
+                                                                      pin: u_p14_diag_cdc/req_meta_reg_syn_3.ie
+LUT2 (reg)          x014y007z6          0.044    f     1.356       1  net: u_p14_diag_cdc/req_sync,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b107/rtl/pixel14_result_cdc.v(27)
+--------------------------------------------------------------------  ---------------
+Arrival                                                1.356               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.915          0.915          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.290          1.205          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.043          1.248          net: I_sys_clk_dup_6,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b107/overlay/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.674          0.574          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.341          0.915          net: S_hdmi_pixel_clk,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b107/overlay/design_top_wrapper.v(99)
+                                                                      pin: S_hdmi_pixel_clk_created_gclkinst.clkin[0]
+GCLK                x023y039z17         0.007          0.922          pin: S_hdmi_pixel_clk_created_gclkinst.clkout
+net (fo=4)                              0.149          1.071          net: S_hdmi_pixel_clk_syn_657,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b107/overlay/design_top_wrapper.v(99)
+                                                                      pin: S_hdmi_pixel_clk_created_gclkinst_auto_created_sclk_s_0_l_bk3.clkin
+SCLK                x023y019z2          0.030          1.101          pin: S_hdmi_pixel_clk_created_gclkinst_auto_created_sclk_s_0_l_bk3.clkout
+net (fo=415)                            0.246          1.347          net: S_hdmi_pixel_clk_created_gclkinst_auto_created_sclk_s_0_l_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_p14_diag_cdc/req_meta_reg_syn_3.clk
+capture edge                            0.000    r     1.347               
+--------------------------------------------------------------------  ---------------
+hold                                    0.012          1.359               
+clock uncertainty                       0.000          1.359               
+clock pessimism                        -0.154          1.205               
+--------------------------------------------------------------------  ---------------
+Required                                               1.205               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.151               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     
+set_max_delay -from [get_regs {u_p14_diag_cdc/req_meta}] -to [get_regs {u_p14_diag_cdc/req_sync}] 2.000
+
+Type           :     SMD
+
+Statistics:
+Max            : SWNS      1.455ns, STNS      0.000ns,         0 Viol Endpoints,         1 Total Endpoints,         1 Paths Analyzed
+Min            : HWNS      0.000ns, HTNS      0.000ns,         0 Viol Endpoints,         0 Total Endpoints,         0 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 1.455ns
+Begin Point         : u_p14_diag_cdc/req_meta_reg_syn_3.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_p14_diag_cdc/req_meta_reg_syn_3.ie (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 2.000ns { HDMI_PIXEL_CLK rising@0.000ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 0.481ns (cell 0.280ns (58%), net 0.201ns (42%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( LUT2=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.684          1.494          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.115          1.609          net: I_sys_clk_dup_6,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b107/overlay/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.640         -0.031          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.831          0.800          net: S_hdmi_pixel_clk,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b107/overlay/design_top_wrapper.v(99)
+                                                                      pin: S_hdmi_pixel_clk_created_gclkinst.clkin[0]
+GCLK                x023y039z17         0.016          0.816          pin: S_hdmi_pixel_clk_created_gclkinst.clkout
+net (fo=4)                              0.374          1.190          net: S_hdmi_pixel_clk_syn_657,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b107/overlay/design_top_wrapper.v(99)
+                                                                      pin: S_hdmi_pixel_clk_created_gclkinst_auto_created_sclk_s_0_l_bk3.clkin
+SCLK                x023y019z2          0.079          1.269          pin: S_hdmi_pixel_clk_created_gclkinst_auto_created_sclk_s_0_l_bk3.clkout
+net (fo=415)                            0.633          1.902          net: S_hdmi_pixel_clk_created_gclkinst_auto_created_sclk_s_0_l_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_p14_diag_cdc/req_meta_reg_syn_3.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x014y007z6          0.126    f     2.028          pin: u_p14_diag_cdc/req_meta_reg_syn_3.oqa
+net (fo=1)                              0.201          2.229          net: u_p14_diag_cdc/req_meta,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b107/rtl/pixel14_result_cdc.v(27)
+                                                                      pin: u_p14_diag_cdc/req_meta_reg_syn_3.ie
+LUT2 (reg)          x014y007z6          0.154    r     2.383       1  net: u_p14_diag_cdc/req_sync,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b107/rtl/pixel14_result_cdc.v(27)
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.383               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.745          0.745          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.629          1.374          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.099          1.473          net: I_sys_clk_dup_6,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b107/overlay/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.406          0.067          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.712          0.779          net: S_hdmi_pixel_clk,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b107/overlay/design_top_wrapper.v(99)
+                                                                      pin: S_hdmi_pixel_clk_created_gclkinst.clkin[0]
+GCLK                x023y039z17         0.014          0.793          pin: S_hdmi_pixel_clk_created_gclkinst.clkout
+net (fo=4)                              0.321          1.114          net: S_hdmi_pixel_clk_syn_657,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b107/overlay/design_top_wrapper.v(99)
+                                                                      pin: S_hdmi_pixel_clk_created_gclkinst_auto_created_sclk_s_0_l_bk3.clkin
+SCLK                x023y019z2          0.068          1.182          pin: S_hdmi_pixel_clk_created_gclkinst_auto_created_sclk_s_0_l_bk3.clkout
+net (fo=415)                            0.551          1.733          net: S_hdmi_pixel_clk_created_gclkinst_auto_created_sclk_s_0_l_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_p14_diag_cdc/req_meta_reg_syn_3.clk
+constraint delay                        2.000          3.733               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.064          3.669               
+clock uncertainty                       0.000          3.669               
+clock pessimism                         0.169          3.838               
+--------------------------------------------------------------------  ---------------
+Required                                               3.838               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.455               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+

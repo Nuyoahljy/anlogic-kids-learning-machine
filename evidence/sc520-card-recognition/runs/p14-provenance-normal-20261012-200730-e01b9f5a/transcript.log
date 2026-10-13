@@ -1,0 +1,93 @@
+# set card_top tb_pixel14_provenance
+# tb_pixel14_provenance
+#  set card_sources [list {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-provenance-normal-20261012-200730-e01b9f5a/inputs/pixel14_capture_provenance.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-provenance-normal-20261012-200730-e01b9f5a/inputs/csi_unpacket_2lane.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-provenance-normal-20261012-200730-e01b9f5a/inputs/raw10_unpacket_2lane.v}]
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-provenance-normal-20261012-200730-e01b9f5a/inputs/pixel14_capture_provenance.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-provenance-normal-20261012-200730-e01b9f5a/inputs/csi_unpacket_2lane.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-provenance-normal-20261012-200730-e01b9f5a/inputs/raw10_unpacket_2lane.v
+#  set card_tb {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-provenance-normal-20261012-200730-e01b9f5a/inputs/tb_pixel14_provenance.sv}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-provenance-normal-20261012-200730-e01b9f5a/inputs/tb_pixel14_provenance.sv
+#  set card_assets {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-provenance-normal-20261012-200730-e01b9f5a/inputs}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-provenance-normal-20261012-200730-e01b9f5a/inputs
+#  set card_negative 0
+# 0
+#  set card_probe 0
+# 0
+#  set card_full 0
+# 0
+#  source {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-provenance-normal-20261012-200730-e01b9f5a/inputs/run-pixel14.do}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 20:07:31 on Oct 12,2026
+# vlog E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-provenance-normal-20261012-200730-e01b9f5a/inputs/pixel14_capture_provenance.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-provenance-normal-20261012-200730-e01b9f5a/inputs/csi_unpacket_2lane.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-provenance-normal-20261012-200730-e01b9f5a/inputs/raw10_unpacket_2lane.v 
+# -- Compiling module pixel14_capture_provenance
+# -- Compiling module csi_unpacket_2lane
+# -- Compiling module raw10_unpacket_2lane
+# 
+# Top level modules:
+# 	pixel14_capture_provenance
+# 	csi_unpacket_2lane
+# 	raw10_unpacket_2lane
+# End time: 20:07:31 on Oct 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 20:07:31 on Oct 12,2026
+# vlog -sv "+incdir+E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-provenance-normal-20261012-200730-e01b9f5a/inputs" E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-provenance-normal-20261012-200730-e01b9f5a/inputs/tb_pixel14_provenance.sv 
+# -- Compiling module tb_pixel14_provenance
+# 
+# Top level modules:
+# 	tb_pixel14_provenance
+# End time: 20:07:31 on Oct 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -wlf wave.wlf work.tb_pixel14_provenance "+ASSET_ROOT=E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-provenance-normal-20261012-200730-e01b9f5a/inputs" "+INJECT_FAULT=0" 
+# Start time: 20:07:31 on Oct 12,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_pixel14_provenance(fast)
+# Loading work.pixel14_capture_provenance(fast)
+# Loading work.csi_unpacket_2lane(fast)
+# Loading work.raw10_unpacket_2lane(fast)
+# Loading work.pixel14_capture_provenance(fast__1)
+# VENDOR gap=1 csi=80 raw=64 eof=1 good=1
+# VENDOR gap=2 csi=80 raw=64 eof=1 good=1
+# VENDOR gap=4 csi=80 raw=64 eof=1 good=1
+# VENDOR gap=8 csi=80 raw=64 eof=1 good=1
+# VENDOR_TAIL short=1 long=0 csi=80 raw=64 eof=1 eof_hs=1 hs_min=43 hs_max=43 good=0 done=1 revoke_cycles=87
+# ERROR provenance 23 complete vendor frame with short-packet HS tail remains healthy
+# VENDOR_TAIL short=2 long=0 csi=80 raw=64 eof=1 eof_hs=1 hs_min=43 hs_max=43 good=0 done=1 revoke_cycles=88
+# ERROR provenance 24 complete vendor frame with short-packet HS tail remains healthy
+# VENDOR_TAIL short=4 long=0 csi=80 raw=64 eof=1 eof_hs=1 hs_min=43 hs_max=43 good=0 done=1 revoke_cycles=90
+# ERROR provenance 25 complete vendor frame with short-packet HS tail remains healthy
+# VENDOR_TAIL short=8 long=0 csi=80 raw=64 eof=1 eof_hs=1 hs_min=43 hs_max=43 good=0 done=1 revoke_cycles=94
+# ERROR provenance 26 complete vendor frame with short-packet HS tail remains healthy
+# VENDOR_TAIL short=16 long=0 csi=80 raw=64 eof=1 eof_hs=1 hs_min=43 hs_max=43 good=0 done=1 revoke_cycles=102
+# ERROR provenance 27 complete vendor frame with short-packet HS tail remains healthy
+# VENDOR_TAIL short=0 long=1 csi=80 raw=64 eof=1 eof_hs=0 hs_min=44 hs_max=44 good=0 done=1 revoke_cycles=224
+# ERROR provenance 28 complete vendor payload with bounded post-CRC HS tail remains healthy
+# VENDOR_TAIL short=0 long=2 csi=80 raw=64 eof=1 eof_hs=0 hs_min=45 hs_max=45 good=0 done=1 revoke_cycles=227
+# ERROR provenance 29 complete vendor payload with bounded post-CRC HS tail remains healthy
+# VENDOR_TAIL short=0 long=4 csi=80 raw=64 eof=1 eof_hs=0 hs_min=47 hs_max=47 good=0 done=1 revoke_cycles=233
+# ERROR provenance 30 complete vendor payload with bounded post-CRC HS tail remains healthy
+# VENDOR_TAIL short=0 long=8 csi=80 raw=64 eof=1 eof_hs=0 hs_min=51 hs_max=51 good=0 done=1 revoke_cycles=245
+# ERROR provenance 31 complete vendor payload with bounded post-CRC HS tail remains healthy
+# VENDOR_TAIL short=0 long=16 csi=80 raw=64 eof=1 eof_hs=0 hs_min=59 hs_max=59 good=0 done=1 revoke_cycles=269
+# ERROR provenance 32 complete vendor payload with bounded post-CRC HS tail remains healthy
+# VENDOR_TAIL short=0 long=17 csi=80 raw=64 eof=1 eof_hs=0 hs_min=60 hs_max=60 good=0 done=1 revoke_cycles=272
+# VENDOR_TAIL short=0 long=32 csi=80 raw=64 eof=1 eof_hs=0 hs_min=75 hs_max=75 good=0 done=1 revoke_cycles=317
+# VENDOR_EXCESS wc_words=50 csi=100 raw=80 eof=1 good=0
+# PROVENANCE_COMPLETE scenarios=36 checks=141 errors=10
+# ** Note: $finish    : E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-provenance-normal-20261012-200730-e01b9f5a/inputs/tb_pixel14_provenance.sv(225)
+#    Time: 206150 ns  Iteration: 1  Instance: /tb_pixel14_provenance
+# Break in Module tb_pixel14_provenance at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-provenance-normal-20261012-200730-e01b9f5a/inputs/tb_pixel14_provenance.sv line 225
+# Stopped at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-provenance-normal-20261012-200730-e01b9f5a/inputs/tb_pixel14_provenance.sv line 225
+# End time: 20:07:32 on Oct 12,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

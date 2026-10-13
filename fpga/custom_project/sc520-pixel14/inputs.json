@@ -1,5 +1,5 @@
 {
-  "CreatedAt": "2026-10-12T11:05:58.874490+08:00",
+  "CreatedAt": "2026-10-12T20:19:12.113693+08:00",
   "Owner": "SC520 recovery /root/build_impl",
   "SourceProject": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys",
   "Project": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14",
@@ -7,7 +7,7 @@
   "Files": [
     {
       "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\design_top_wrapper.v",
-      "SHA256": "C806F8B7F401E441093411E143A0C1732C710C3A1E1C993DE7B6650B4511B26F"
+      "SHA256": "8176BA3FA7A579ED5A7A1124747C364FDDB55CEB11FD62EC2DDF39038C09DBC0"
     },
     {
       "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\isp_top.v",
@@ -19,7 +19,7 @@
     },
     {
       "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\pixel14.sdc",
-      "SHA256": "31120A9D6701C586C2540AE167E09AF53C092561A714F5F06FFEFC9FFEAFC830"
+      "SHA256": "9E450FD494926361C3F1D037E0B6E3388D1F76DB7C46206210A56378A4474203"
     },
     {
       "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\card_result_filter.v",
@@ -67,11 +67,15 @@
     },
     {
       "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_capture_provenance.v",
-      "SHA256": "FD937AF7A5A3E3AB14004C4DCBB15FD7EFA3E5A96A3C939BC682B77EB1B1F44D"
+      "SHA256": "98DF6B45CDA1EF595E5C50332A8103F729A7574D8129D8309621B266D633FA00"
     },
     {
       "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_card_matcher.v",
       "SHA256": "52571D751CAA7A7435C4AAE33DB66BEA2D0EF2A94F77765844F7A30EBFAEF4CE"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_diag_osd.v",
+      "SHA256": "787C9E179233FF506140CF11EA2329CB785498410A76FC67A7C7BCAFB1584B1C"
     },
     {
       "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_pipeline.v",
@@ -1096,6 +1100,7 @@
     "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\capture_rgb96.v",
     "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_capture_provenance.v",
     "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_card_matcher.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_diag_osd.v",
     "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_pipeline.v",
     "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_result_cdc.v",
     "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\td_project\\al_ip\\ChipWatcher_mipi\\ChipWatcher_mipi.xml",

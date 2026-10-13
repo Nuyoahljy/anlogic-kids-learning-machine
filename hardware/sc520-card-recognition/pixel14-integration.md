@@ -1,5 +1,7 @@
 # 采集像素至十四类业务的集成候选
 
+> 本页描述106的软件与接口历史；2026-10-13当前候选已为107，修复合法HS尾部并加入屏幕诊断，见 [0107排障与复测](pixel14-boardfix107.md)。下文“尚未上板”是106交付当时状态；其后的实物不可信反馈及107待复测状态以当前入口为准。
+
 本阶段接续 `a698a53` 的结果级子系统，把真实采集域的四像素 RGB 输入接入两路识别、跨时钟结果传送、问答和 OSD。原四键 `826966ea` bit 和 DFR0534 实物验证继续独立等待；本候选的源码、仿真和构建均不能替代板上验收。
 
 入口：[管线 RTL](../../fpga/rtl/sc520-card-recognition/pixel14/pixel14_pipeline.v)、[完整像素测试](../../fpga/sim/sc520-card-recognition/tb_pixel14_pipeline.sv)、[采集协议](pixel14-capture.md)。最终软件证据由 [audit-pixel14.py](../../fpga/scripts/sc520-card-recognition/audit-pixel14.py) 生成 [pixel14-validation-v2.json](../../evidence/sc520-card-recognition/pixel14-validation-v2.json)；只有实际存在且通过回读校验的结果才代表本次验证完成。

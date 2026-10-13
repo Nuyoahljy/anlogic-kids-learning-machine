@@ -375,7 +375,7 @@
           <Attr Name="CompileOrder" Val="203" />
         </FileInfo>
       </File>
-      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/pixel14/pixel14_pipeline.v">
+      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/pixel14/pixel14_diag_osd.v">
         <FileInfo>
           <Attr Name="UsedInSyn" Val="true" />
           <Attr Name="UsedInP&R" Val="true" />
@@ -383,7 +383,7 @@
           <Attr Name="CompileOrder" Val="204" />
         </FileInfo>
       </File>
-      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/pixel14/pixel14_result_cdc.v">
+      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/pixel14/pixel14_pipeline.v">
         <FileInfo>
           <Attr Name="UsedInSyn" Val="true" />
           <Attr Name="UsedInP&R" Val="true" />
@@ -391,7 +391,7 @@
           <Attr Name="CompileOrder" Val="205" />
         </FileInfo>
       </File>
-      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/items14/items14_content.v">
+      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/pixel14/pixel14_result_cdc.v">
         <FileInfo>
           <Attr Name="UsedInSyn" Val="true" />
           <Attr Name="UsedInP&R" Val="true" />
@@ -399,7 +399,7 @@
           <Attr Name="CompileOrder" Val="206" />
         </FileInfo>
       </File>
-      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/items14/items14_font_rom.v">
+      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/items14/items14_content.v">
         <FileInfo>
           <Attr Name="UsedInSyn" Val="true" />
           <Attr Name="UsedInP&R" Val="true" />
@@ -407,7 +407,7 @@
           <Attr Name="CompileOrder" Val="207" />
         </FileInfo>
       </File>
-      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/items14/items14_osd.v">
+      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/items14/items14_font_rom.v">
         <FileInfo>
           <Attr Name="UsedInSyn" Val="true" />
           <Attr Name="UsedInP&R" Val="true" />
@@ -415,7 +415,7 @@
           <Attr Name="CompileOrder" Val="208" />
         </FileInfo>
       </File>
-      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/items14/items14_question_bank.v">
+      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/items14/items14_osd.v">
         <FileInfo>
           <Attr Name="UsedInSyn" Val="true" />
           <Attr Name="UsedInP&R" Val="true" />
@@ -423,7 +423,7 @@
           <Attr Name="CompileOrder" Val="209" />
         </FileInfo>
       </File>
-      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/items14/items14_quiz_control.v">
+      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/items14/items14_question_bank.v">
         <FileInfo>
           <Attr Name="UsedInSyn" Val="true" />
           <Attr Name="UsedInP&R" Val="true" />
@@ -431,7 +431,7 @@
           <Attr Name="CompileOrder" Val="210" />
         </FileInfo>
       </File>
-      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/items14/items14_result_join.v">
+      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/items14/items14_quiz_control.v">
         <FileInfo>
           <Attr Name="UsedInSyn" Val="true" />
           <Attr Name="UsedInP&R" Val="true" />
@@ -439,7 +439,7 @@
           <Attr Name="CompileOrder" Val="211" />
         </FileInfo>
       </File>
-      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/items14/items14_system.v">
+      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/items14/items14_result_join.v">
         <FileInfo>
           <Attr Name="UsedInSyn" Val="true" />
           <Attr Name="UsedInP&R" Val="true" />
@@ -447,7 +447,7 @@
           <Attr Name="CompileOrder" Val="212" />
         </FileInfo>
       </File>
-      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/card_template_rom.v">
+      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/items14/items14_system.v">
         <FileInfo>
           <Attr Name="UsedInSyn" Val="true" />
           <Attr Name="UsedInP&R" Val="true" />
@@ -455,12 +455,20 @@
           <Attr Name="CompileOrder" Val="213" />
         </FileInfo>
       </File>
-      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/card_result_filter.v">
+      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/card_template_rom.v">
         <FileInfo>
           <Attr Name="UsedInSyn" Val="true" />
           <Attr Name="UsedInP&R" Val="true" />
           <Attr Name="BelongTo" Val="design_1" />
           <Attr Name="CompileOrder" Val="214" />
+        </FileInfo>
+      </File>
+      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/card_result_filter.v">
+        <FileInfo>
+          <Attr Name="UsedInSyn" Val="true" />
+          <Attr Name="UsedInP&R" Val="true" />
+          <Attr Name="BelongTo" Val="design_1" />
+          <Attr Name="CompileOrder" Val="215" />
         </FileInfo>
       </File>
     </Verilog>

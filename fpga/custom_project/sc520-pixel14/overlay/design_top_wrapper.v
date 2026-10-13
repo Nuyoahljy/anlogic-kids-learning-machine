@@ -903,6 +903,7 @@ isp_top u_isp_top (
     // Real acquisition provenance is independent of DDR/display refresh.
     wire S_p14_start,S_p14_done,S_p14_good,S_p14_revoke;
     wire [31:0] S_p14_id,S_p14_done_id;
+    wire [255:0] S_p14_diag_capture,S_p14_diag_display;
     reg [1:0] S_p14_cfg_done,S_p14_cfg_error;
     always @(posedge S_csi_rx_clk or negedge S_rst_n)
         if(!S_rst_n) begin S_p14_cfg_done<=0;S_p14_cfg_error<=0;end
@@ -917,7 +918,8 @@ isp_top u_isp_top (
         .raw_valid(S_raw10_valid),.isp_sof(S_p14_rgb_sof),.isp_valid(S_p14_rgb_valid),.isp_eol(S_p14_rgb_eol),
         .cfg_done(S_p14_cfg_done[1]),.cfg_error(S_p14_cfg_error[1]),
         .frame_start(S_p14_start),.frame_id(S_p14_id),.frame_done(S_p14_done),
-        .frame_good(S_p14_good),.done_id(S_p14_done_id),.revoke(S_p14_revoke));
+        .frame_good(S_p14_good),.done_id(S_p14_done_id),.revoke(S_p14_revoke),
+        .diagnostic(S_p14_diag_capture));
 
     wire S_p14_tick;
     quiz_millisecond_tick #(.CLOCK_HZ(75000000)) u_p14_tick(
@@ -940,6 +942,32 @@ isp_top u_isp_top (
                 else S_p14_next_x<=S_p14_x+1'b1;
             end
         end
+    wire [23:0] S_p14_business_rgb,S_p14_diag_rgb;
+    wire S_p14_obs_event,S_p14_obs_healthy,S_p14_obs_conflict,S_p14_timeout,S_p14_link_fault,S_p14_quarantined;
+    wire S_p14_diag_ready,S_p14_diag_valid,S_p14_diag_fault,S_p14_diag_active;
+    reg [19:0] S_p14_diag_divider;
+    always @(posedge S_csi_rx_clk or negedge S_rst_n)
+        if(!S_rst_n) S_p14_diag_divider<=0;
+        else S_p14_diag_divider<=S_p14_diag_divider+1'b1;
+    pixel14_result_cdc #(.WIDTH(256)) u_p14_diag_cdc(
+        .rst_n(S_rst_n && S_hdmi_rst_n),.src_clk(S_csi_rx_clk),
+        .src_valid(S_p14_diag_divider==0 && S_p14_diag_ready),.src_data(S_p14_diag_capture),
+        .src_ready(S_p14_diag_ready),.src_fault(),.dst_clk(S_hdmi_pixel_clk),
+        .dst_valid(S_p14_diag_valid),.dst_data(S_p14_diag_display),.dst_fault(S_p14_diag_fault));
+    reg S_p14_diag_received,S_p14_event_seen,S_p14_conflict_seen;
+    always @(posedge S_hdmi_pixel_clk or negedge S_hdmi_rst_n)
+        if(!S_hdmi_rst_n) begin S_p14_diag_received<=0;S_p14_event_seen<=0;S_p14_conflict_seen<=0;end
+        else begin
+            if(S_p14_diag_valid) S_p14_diag_received<=1;
+            if(S_p14_obs_event) begin S_p14_event_seen<=1;S_p14_conflict_seen<=S_p14_obs_conflict;end
+        end
+    pixel14_diag_osd u_p14_diag_osd(
+        .clk(S_hdmi_pixel_clk),.rst_n(S_hdmi_rst_n),.frame_start(S_p14_display_sof),
+        .pixel_x(S_p14_x),.pixel_y(S_p14_y),.diagnostic(S_p14_diag_display),
+        .business_flags({S_p14_diag_fault,S_p14_diag_received,S_p14_link_fault,S_p14_quarantined,
+            S_p14_timeout,S_p14_conflict_seen,S_p14_obs_healthy,S_p14_event_seen}),
+        .active(S_p14_diag_active),.rgb(S_p14_diag_rgb));
+    assign S_roi_data=S_roi_de && S_p14_diag_active ? S_p14_diag_rgb : S_p14_business_rgb;
     pixel14_pipeline #(.ENABLE_OUTPUT(1),.TEMPLATE_FILE("E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/assets/templates/sc520-card-recognition/prep-v1-max40/templates.mem")) u_p14_pipeline(
         .rst_n(S_rst_n && S_hdmi_rst_n),.capture_clk(S_csi_rx_clk),.display_clk(S_hdmi_pixel_clk),
         .in_frame_start(S_p14_start),.in_frame_id(S_p14_id),.in_source_test(1'b0),
@@ -952,7 +980,9 @@ isp_top u_isp_top (
         .video_frame_start(S_p14_display_sof),.pixel_x(S_p14_x),.pixel_y(S_p14_y),
         .video_vsync(S_hdmi_out_vsync),.video_hsync(S_hdmi_out_hsync),.video_de(S_hdmi_out_de),
         .video_rgb(S_hdmi_out_data),.out_vsync(S_roi_vsync),.out_hsync(S_roi_hsync),
-        .out_de(S_roi_de),.out_rgb(S_roi_data));
+        .out_de(S_roi_de),.out_rgb(S_p14_business_rgb),
+        .obs_event(S_p14_obs_event),.obs_healthy(S_p14_obs_healthy),.obs_conflict(S_p14_obs_conflict),
+        .timed_out(S_p14_timeout),.link_fault(S_p14_link_fault),.quarantined(S_p14_quarantined));
 
     hdmi_tx u_hdmi_tx(
         .I_pixel_clk        ( S_hdmi_pixel_clk  ),

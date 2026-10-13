@@ -3,7 +3,8 @@
 // This certifies observed framing/counts, not CRC/ECC (vendor does not expose it).
 module pixel14_capture_provenance #(
     parameter integer FRAME_WIDTH=1280, FRAME_HEIGHT=720,
-    parameter integer DRAIN_IDLE_CYCLES=64, FRAME_TIMEOUT_CYCLES=2000000
+    parameter integer DRAIN_IDLE_CYCLES=64, FRAME_TIMEOUT_CYCLES=2000000,
+    parameter integer HS_TRAIL_MAX_WORDS=16
 ) (
     input wire clk,rst_n,
     input wire csi_sof,csi_eof,
@@ -16,7 +17,8 @@ module pixel14_capture_provenance #(
     output wire [31:0] frame_id,
     output wire frame_done,frame_good,
     output wire [31:0] done_id,
-    output wire revoke
+    output wire revoke,
+    output wire [255:0] diagnostic
 );
     localparam integer GROUPS=FRAME_WIDTH/4*FRAME_HEIGHT;
     localparam integer CSI_WORDS=FRAME_WIDTH*10/32*FRAME_HEIGHT;
@@ -35,7 +37,9 @@ module pixel14_capture_provenance #(
     wire blank=!isp_valid && !isp_eol && !isp_sof;
     wire timed_out=age>=FRAME_TIMEOUT_CYCLES-1;
     wire drained=idle_count>=DRAIN_IDLE_CYCLES && isp_count>=GROUPS;
-    wire close_ready=eof_seen && raw_end_seen && drained;
+    // CSI short-packet decode precedes the end of aligned D-PHY HS-valid.
+    // Wait for that transport window to close, rather than rejecting EOF in it.
+    wire close_ready=eof_seen && raw_end_seen && drained && !hs_valid && !burst_is_raw;
     wire structure_good=raw_seen && eof_seen && raw_end_seen &&
         line_count==FRAME_HEIGHT && csi_count==CSI_WORDS && raw_count==GROUPS &&
         isp_count==GROUPS && isp_lines==FRAME_HEIGHT && !hs_valid && !burst_is_raw;
@@ -63,7 +67,10 @@ module pixel14_capture_provenance #(
                 else if(hs_words!=16'hffff) hs_words<=hs_words+1'b1;
             end
             if(!hs_valid && hs_d) begin
-                if(active && burst_is_raw && hs_words!=LINE_WORDS+3) bad<=1;
+                // Preserve minimum header/payload/CRC coverage. The aligned HS
+                // window may include a bounded tail after the CSI payload.
+                if(active && burst_is_raw &&
+                   (hs_words<LINE_WORDS+3 || hs_words>LINE_WORDS+3+HS_TRAIL_MAX_WORDS)) bad<=1;
                 burst_is_raw<=0;
             end
             if(csi_sof) begin
@@ -99,7 +106,7 @@ module pixel14_capture_provenance #(
                 end
                 if(csi_eof) begin
                     eof_seen<=1;
-                    if(eof_seen || line_count!=FRAME_HEIGHT || csi_count!=CSI_WORDS || hs_valid || burst_is_raw) bad<=1;
+                    if(eof_seen || line_count!=FRAME_HEIGHT || csi_count!=CSI_WORDS || burst_is_raw) bad<=1;
                 end
                 if(raw_eof) begin
                     raw_end_seen<=1;
@@ -131,9 +138,71 @@ module pixel14_capture_provenance #(
             end else if(isp_sof || csi_eof || raw_eof) fault_pulse<=1;
         end
     end
+
+    // Diagnostics never drive frame_good/revoke. Freeze a completed/rejected
+    // frame's counts so a photograph can identify the first failure boundary.
+    // The top captures all 256 bits atomically through a separate mailbox.
+    reg [15:0] frame_errors,last_errors,frame_hs_max,last_hs_max;
+    reg [15:0] frame_eof_hs,last_eof_hs,seen_frames,good_frames;
+    reg [19:0] last_csi,last_raw,last_isp;
+    reg [10:0] last_lines,last_isp_lines;
+    reg [20:0] last_age;
+    reg [15:0] faults;
+    always @* begin
+        faults=0;
+        if(!cfg_done) faults[0]=1;
+        if(cfg_error) faults[1]=1;
+        if(lane_error) faults[2]=1;
+        if(csi_sof && active) faults[3]=1;
+        if(active) begin
+            if(packet_start && (csi_length!=LINE_WORDS || eof_seen || line_count>=FRAME_HEIGHT || !hs_valid)) faults[4]=1;
+            if(!hs_valid && hs_d && burst_is_raw &&
+               (hs_words<LINE_WORDS+3 || hs_words>LINE_WORDS+3+HS_TRAIL_MAX_WORDS)) faults[5]=1;
+            if(csi_valid && (eof_seen || csi_count>=CSI_WORDS)) faults[6]=1;
+            if((raw_sof && (raw_seen || raw_count!=0)) ||
+               (raw_valid && (!(raw_seen || raw_sof) || raw_count>=GROUPS))) faults[7]=1;
+            if(csi_eof && (eof_seen || line_count!=FRAME_HEIGHT || csi_count!=CSI_WORDS || burst_is_raw)) faults[8]=1;
+            if(raw_eof && (raw_end_seen || !eof_seen || !raw_seen)) faults[9]=1;
+            if(isp_sof && (isp_seen || !raw_seen)) faults[10]=1;
+            if((isp_valid && (!(isp_seen || frame_start) || isp_count>=GROUPS ||
+                isp_eol!=(isp_x==FRAME_WIDTH/4-1))) || (!isp_valid && isp_eol)) faults[11]=1;
+            if(frame_done && !frame_good && (!structure_good || raw_sof || raw_eof || csi_eof || packet_start)) faults[12]=1;
+            if(timed_out && !close_ready) faults[13]=1;
+        end else if(isp_sof || csi_eof || raw_eof) faults[14]=1;
+    end
+    always @(posedge clk or negedge rst_n) begin
+        if(!rst_n) begin
+            frame_errors<=0;last_errors<=0;frame_hs_max<=0;last_hs_max<=0;
+            frame_eof_hs<=0;last_eof_hs<=0;seen_frames<=0;good_frames<=0;
+            last_csi<=0;last_raw<=0;last_isp<=0;last_lines<=0;last_isp_lines<=0;last_age<=0;
+        end else begin
+            if(csi_sof) seen_frames<=seen_frames+1'b1;
+            if(frame_good) good_frames<=good_frames+1'b1;
+            if(csi_sof && !active) begin
+                frame_errors<=faults;frame_hs_max<=0;frame_eof_hs<=0;
+            end else if(active) begin
+                frame_errors<=frame_errors | faults;
+                if(!hs_valid && hs_d && burst_is_raw && hs_words>frame_hs_max) frame_hs_max<=hs_words;
+                if(csi_eof) frame_eof_hs<={hs_valid,hs_words[14:0]};
+            end
+            if(active && (frame_done || timed_out || csi_sof)) begin
+                last_errors<=frame_errors | faults;
+                last_hs_max<=!hs_valid && hs_d && burst_is_raw && hs_words>frame_hs_max ? hs_words : frame_hs_max;
+                last_eof_hs<=csi_eof ? {hs_valid,hs_words[14:0]} : frame_eof_hs;
+                last_csi<=csi_count;last_raw<=raw_count;last_isp<=isp_count;
+                last_lines<=line_count;last_isp_lines<=isp_lines;last_age<=age;
+            end else if(!active && !csi_sof && faults[14]) last_errors<=last_errors | faults;
+        end
+    end
+    wire [15:0] live_errors=last_errors | {13'd0,lane_error,cfg_error,!cfg_done};
+    assign diagnostic={16'h0107,live_errors,last_hs_max,last_eof_hs,
+        12'd0,last_csi[19:16],last_csi[15:0],12'd0,last_raw[19:16],last_raw[15:0],
+        12'd0,last_isp[19:16],last_isp[15:0],5'd0,last_lines,5'd0,last_isp_lines,
+        11'd0,last_age[20:16],last_age[15:0],seen_frames,good_frames};
     // synthesis translate_off
     initial if(FRAME_WIDTH<8 || FRAME_WIDTH%16!=0 || FRAME_HEIGHT<1 ||
-        GROUPS>1048574 || CSI_WORDS>1048574 || DRAIN_IDLE_CYCLES<2 || FRAME_TIMEOUT_CYCLES<8)
+        GROUPS>1048574 || CSI_WORDS>1048574 || DRAIN_IDLE_CYCLES<2 || FRAME_TIMEOUT_CYCLES<8 ||
+        FRAME_TIMEOUT_CYCLES>2097151 || HS_TRAIL_MAX_WORDS<0 || HS_TRAIL_MAX_WORDS>256)
         $fatal(1,"pixel14 provenance invalid parameters");
     // synthesis translate_on
 endmodule

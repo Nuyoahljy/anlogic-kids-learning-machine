@@ -43,3 +43,10 @@ set_max_delay -from [get_regs {u_p14_pipeline/backward/fault_meta}] -to [get_reg
 # Bundled payload propagation is audited after routing on this exact database
 # without broad clock-group cuts; see report-pixel14-cdc.tcl. No CDC MTBF claim.
 # SC520_PIXEL14_CDC_END
+
+# Board-debug mailbox and the actual fault/config synchronizer pairs.
+set_max_delay -from [get_regs {u_p14_diag_cdc/req_meta}] -to [get_regs {u_p14_diag_cdc/req_sync}] 2.000
+set_max_delay -from [get_regs {u_p14_diag_cdc/ack_meta}] -to [get_regs {u_p14_diag_cdc/ack_sync}] 2.000
+set_max_delay -from [get_regs {u_p14_pipeline/staging_fault_meta}] -to [get_regs {u_p14_pipeline/staging_fault_sync}] 2.000
+set_max_delay -from [get_regs {S_p14_cfg_done[0]}] -to [get_regs {S_p14_cfg_done[1]}] 2.000
+set_max_delay -from [get_regs {S_p14_cfg_error[0]}] -to [get_regs {S_p14_cfg_error[1]}] 2.000

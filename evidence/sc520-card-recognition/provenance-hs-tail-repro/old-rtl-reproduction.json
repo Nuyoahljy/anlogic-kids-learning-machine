@@ -1,0 +1,232 @@
+{
+  "RecordedAt": "2026-10-12T20:09:03+08:00",
+  "Owner": "/root/review_compact",
+  "BaseCommit": "38552a50fd7641134ea9c72888d9bdc734011316",
+  "Purpose": "真实厂商CSI/RAW解码器下，完整载荷的HS尾部被旧provenance拒绝；这是拟议实验容差的失败复现，不是新RTL通过或板上根因确认。",
+  "Testbench": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\sim\\sc520-card-recognition\\tb_pixel14_provenance.sv",
+    "SHA256": "C8101D85CF87D307B168D7D63B140AD00A09A7622D89155D893A180C22230CD9"
+  },
+  "TestedRtl": {
+    "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-provenance-normal-20261012-200730-e01b9f5a\\inputs\\pixel14_capture_provenance.v",
+    "SHA256": "FD937AF7A5A3E3AB14004C4DCBB15FD7EFA3E5A96A3C939BC682B77EB1B1F44D"
+  },
+  "LongTailCandidateMaxWords": 16,
+  "TestedPermittedShortTailWords": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "TestedPermittedLongTailWords": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "TestedRejectedLongTailWords": [
+    17,
+    32
+  ],
+  "Run": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-provenance-normal-20261012-200730-e01b9f5a",
+  "ManifestSHA256": "4288D9DF9D9A7D3EBECA5BD2FF8FFF57E9B925D4901487F6F2715BC871DD5AF5",
+  "Command": [
+    "C:/Users/33630/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "fpga/scripts/sc520-card-recognition/simulate-pixel14.py",
+    "--test",
+    "provenance"
+  ],
+  "RunnerExitCode": 1,
+  "NativeExitCode": 1,
+  "Summary": {
+    "errors": 10,
+    "checks": 141,
+    "scenarios": 36,
+    "done": 1,
+    "injected": 0
+  },
+  "Qualified": false,
+  "InputsUnchangedDuringRun": true,
+  "InputSnapshotsVerified": 7,
+  "OutputsVerified": 5,
+  "TailObservations": [
+    {
+      "short": 1,
+      "long": 0,
+      "csi": 80,
+      "raw": 64,
+      "eof": 1,
+      "eof_hs": 1,
+      "hs_min": 43,
+      "hs_max": 43,
+      "good": 0,
+      "done": 1,
+      "revoke_cycles": 87
+    },
+    {
+      "short": 2,
+      "long": 0,
+      "csi": 80,
+      "raw": 64,
+      "eof": 1,
+      "eof_hs": 1,
+      "hs_min": 43,
+      "hs_max": 43,
+      "good": 0,
+      "done": 1,
+      "revoke_cycles": 88
+    },
+    {
+      "short": 4,
+      "long": 0,
+      "csi": 80,
+      "raw": 64,
+      "eof": 1,
+      "eof_hs": 1,
+      "hs_min": 43,
+      "hs_max": 43,
+      "good": 0,
+      "done": 1,
+      "revoke_cycles": 90
+    },
+    {
+      "short": 8,
+      "long": 0,
+      "csi": 80,
+      "raw": 64,
+      "eof": 1,
+      "eof_hs": 1,
+      "hs_min": 43,
+      "hs_max": 43,
+      "good": 0,
+      "done": 1,
+      "revoke_cycles": 94
+    },
+    {
+      "short": 16,
+      "long": 0,
+      "csi": 80,
+      "raw": 64,
+      "eof": 1,
+      "eof_hs": 1,
+      "hs_min": 43,
+      "hs_max": 43,
+      "good": 0,
+      "done": 1,
+      "revoke_cycles": 102
+    },
+    {
+      "short": 0,
+      "long": 1,
+      "csi": 80,
+      "raw": 64,
+      "eof": 1,
+      "eof_hs": 0,
+      "hs_min": 44,
+      "hs_max": 44,
+      "good": 0,
+      "done": 1,
+      "revoke_cycles": 224
+    },
+    {
+      "short": 0,
+      "long": 2,
+      "csi": 80,
+      "raw": 64,
+      "eof": 1,
+      "eof_hs": 0,
+      "hs_min": 45,
+      "hs_max": 45,
+      "good": 0,
+      "done": 1,
+      "revoke_cycles": 227
+    },
+    {
+      "short": 0,
+      "long": 4,
+      "csi": 80,
+      "raw": 64,
+      "eof": 1,
+      "eof_hs": 0,
+      "hs_min": 47,
+      "hs_max": 47,
+      "good": 0,
+      "done": 1,
+      "revoke_cycles": 233
+    },
+    {
+      "short": 0,
+      "long": 8,
+      "csi": 80,
+      "raw": 64,
+      "eof": 1,
+      "eof_hs": 0,
+      "hs_min": 51,
+      "hs_max": 51,
+      "good": 0,
+      "done": 1,
+      "revoke_cycles": 245
+    },
+    {
+      "short": 0,
+      "long": 16,
+      "csi": 80,
+      "raw": 64,
+      "eof": 1,
+      "eof_hs": 0,
+      "hs_min": 59,
+      "hs_max": 59,
+      "good": 0,
+      "done": 1,
+      "revoke_cycles": 269
+    },
+    {
+      "short": 0,
+      "long": 17,
+      "csi": 80,
+      "raw": 64,
+      "eof": 1,
+      "eof_hs": 0,
+      "hs_min": 60,
+      "hs_max": 60,
+      "good": 0,
+      "done": 1,
+      "revoke_cycles": 272
+    },
+    {
+      "short": 0,
+      "long": 32,
+      "csi": 80,
+      "raw": 64,
+      "eof": 1,
+      "eof_hs": 0,
+      "hs_min": 75,
+      "hs_max": 75,
+      "good": 0,
+      "done": 1,
+      "revoke_cycles": 317
+    }
+  ],
+  "ExcessPayload": {
+    "Declared16BitWordsPerLine": 50,
+    "Csi32BitWordsPerFrame": 100,
+    "Raw40BitGroupsPerFrame": 80,
+    "Eofs": 1,
+    "HealthyCompletions": 0
+  },
+  "PreservedRejectCoverage": [
+    "payload truncation",
+    "missing CRC placeholder",
+    "long HS tail beyond 16 words",
+    "wrong WC and extra decoded payload",
+    "four closing-edge faults"
+  ],
+  "HardwareRootCauseConfirmed": false,
+  "RtlEditedByThisAgent": false,
+  "NextStep": "root修复RTL后，对同一测试三模式回归；板上诊断还需确认实际HS尾长度与首个拒绝原因。"
+}
