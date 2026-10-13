@@ -24,7 +24,7 @@ INTEGRATION='''
     always @(posedge S_csi_rx_clk or negedge S_rst_n)
         if(!S_rst_n) begin S_p14_cfg_done<=0;S_p14_cfg_error<=0;end
         else begin
-            S_p14_cfg_done<={S_p14_cfg_done[0],S_cam_cfg_done};
+            S_p14_cfg_done<={S_p14_cfg_done[0],S_cam_cfg_done && S_ae_cfg_done};
             S_p14_cfg_error<={S_p14_cfg_error[0],S_cam_i2c_error};
         end
     pixel14_capture_provenance u_p14_provenance(
@@ -117,6 +117,7 @@ def make(destination,snapshot=False):
     replacement={
         (OLD/'user_source/hdl_source/design_top_wrapper.v').resolve():overlay/'design_top_wrapper.v',
         (OLD/'user_source/hdl_source/isp/isp_top.v').resolve():overlay/'isp_top.v',
+        (OLD/'user_source/hdl_source/uics520_cfg/uicfgcs520.v').resolve():overlay/'uicfgcs520.v',
         (OLD/'user_source/constraints_source/pin.adc').resolve():overlay/'pin.adc',
         (OLD/'td_project/camera_to_dsi_display.sdc').resolve():overlay/'pixel14.sdc'}
     refs=set()

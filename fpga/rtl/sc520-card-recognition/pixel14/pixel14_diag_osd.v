@@ -5,15 +5,19 @@ module pixel14_diag_osd (
     input wire [10:0] pixel_x,
     input wire [9:0] pixel_y,
     input wire [255:0] diagnostic,
+    input wire [31:0] i2c_diagnostic,
     input wire [7:0] business_flags,
     output reg active,
     output reg [23:0] rgb
 );
     reg [255:0] snapshot;
     reg [7:0] business;
+    reg [31:0] i2c_context;
     always @(posedge clk or negedge rst_n)
-        if(!rst_n) begin snapshot<=0;business<=0;end
-        else if(frame_start) begin snapshot<=diagnostic;business<=business_flags;end
+        if(!rst_n) begin snapshot<=0;business<=0;i2c_context<=0;end
+        else if(frame_start) begin
+            snapshot<=diagnostic;business<=business_flags;i2c_context<=i2c_diagnostic;
+        end
     wire region_active=pixel_x>=32 && pixel_x<800 && pixel_y>=520 && pixel_y<592;
     wire [10:0] dx=pixel_x-32;
     wire [5:0] column=dx[9:4];
@@ -45,16 +49,17 @@ module pixel14_diag_osd (
         character=8'h20;
         case(line)
             0: begin
-                // D0107 Ehhhh Hhhhh Fhhhh Bhh
+                // D0109 Ehhhh Hhhhh Fhhhh Bhh Qhhhhhhhh
                 case(column)
                     0:character="D";6:character="E";12:character="H";
-                    18:character="F";24:character="B";
+                    18:character="F";24:character="B";28:character="Q";
                     default:begin
                         if(column>=1 && column<=4) character=digit({16'd0,snapshot[255:240]},4-column);
                         else if(column>=7 && column<=10) character=digit({16'd0,snapshot[239:224]},10-column);
                         else if(column>=13 && column<=16) character=digit({16'd0,snapshot[223:208]},16-column);
                         else if(column>=19 && column<=22) character=digit({16'd0,snapshot[207:192]},22-column);
                         else if(column>=25 && column<=26) character=digit({24'd0,business},26-column);
+                        else if(column>=29 && column<=36) character=digit(i2c_context,36-column);
                     end
                 endcase
             end
@@ -112,6 +117,7 @@ module pixel14_diag_osd (
                 "I":bitmap=35'b01110_00100_00100_00100_00100_00100_01110;
                 "L":bitmap=35'b10000_10000_10000_10000_10000_10000_11111;
                 "N":bitmap=35'b10001_11001_11001_10101_10011_10011_10001;
+                "Q":bitmap=35'b01110_10001_10001_10001_10101_10010_01101;
                 "R":bitmap=35'b11110_10001_10001_11110_10100_10010_10001;
                 "Y":bitmap=35'b10001_10001_01010_00100_00100_00100_00100;
                 default:bitmap=0;

@@ -1,0 +1,13 @@
+{
+  "ReceivedFromThread": "01a1330e-e77e-7561-85bf-16b9be3cb203",
+  "RecordedAt": "2026-10-13T19:16:38+08:00",
+  "UserReport": "现象和上次差不多，一直处于识别不可信。要求在 E:/juan/FPGA 工程内操作。",
+  "Observed": "两张照片均显示 D0107 E0002 H0330 F8002 B49 C46500 R38400 I38400 L02D0 Y02D0 G0000。N 分别 4403 和 3F69，未以附件次序推断时间方向或帧率。",
+  "Photos": [
+    {"File": "pixel14-0107-untrusted-a.jpg", "Original": "C:/Users/33630/AppData/Local/Temp/codex-clipboard-11b6e658-e46c-477c-989a-6f3a71676918.jpg"},
+    {"File": "pixel14-0107-untrusted-b.jpg", "Original": "C:/Users/33630/AppData/Local/Temp/codex-clipboard-5f9babbd-590c-4c40-903c-266030f82d5f.jpg"}
+  ],
+  "Interpretation": "按0107源码，E0002是同步配置错误有效；像素/行数量达标。尚未确认该标志是实际NACK还是实现误判，需读取真实vendor配置模块并复现。",
+  "HardwareOperationPerformed": false,
+  "BitReadbackPerformed": false
+}

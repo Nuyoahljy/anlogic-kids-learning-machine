@@ -6,10 +6,18 @@
 - 分支：task/sc520-card-recognition
 - 基础提交：f609426044982c986b54e999866be9f4c1af2682
 - 开始时间：2026-10-10T19:31:42+08:00
-- 结束时间：2026-10-13；精确分阶段运行与审计时间见各manifest、validation和candidate-audit.json
+- 结束时间：2026-10-13；本轮软件/构建完成，0109实物待用户复测
 - 工作目录：E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition
 
 ## 目标与验收条件
+
+2026-10-13 恢复补充：当前 /root 接续聊天 01a1330e-e77e-7561-85bf-16b9be3cb203 最后未处理的两张 0107 照片和用户“仍不可信、所有操作留在工程内”的反馈。基础提交 b27bcdf494bbae10d6d8ee119dd9842d5badb79b，开始工作树干净，工作目录已用 git rev-parse 核实。照片可辨 D0107/E0002/H0330/F8002/B49，C46500/R38400/I38400/L02D0/Y02D0/G0000；N 分别 4403、3F69，附件顺序不能视作拍摄时序。先定位 I2C 错误标志语义，复现后修复并生成独立候选，保留真实配置错误拒绝能力。软件和构建通过不替代实物复测。所有新交付位于 E:/juan/FPGA，本轮不使用 C 盘输出目录，已有外部历史导出不搬动。主仓库和本 Worktree 总文档仍早于最新 SC520 证据，冲突仅记录供主对话审核。
+
+2026-10-13 19:26 进展：i2c_root_cause 已独立核对 E0002、sticky 配置错误和写完成仍推进的代码路径，未找到正常读末尾 NACK 被当错的证据；开始仅在本任务 overlay 新建事务重试配置模块。i2c_bus_tests 以真实外部 SCL/SDA 从机模型跑通旧版全 165 初始化及 8 AE 写入，700 个写向字节全 ACK 时 error=0；init/AE 单 NACK 则仍完成但永久 error=1，符合故障机制，实物首次 NACK 位置尚未知。root 接入独立 32 位配置诊断 mailbox 与 Q 字段，重用原 256 位帧诊断的填充位，保留像素/行数全部有效位；AE 更新期间 cfg_done 资格暂停，成功后下个完整帧恢复。i2c_build_audit 负责新增 mailbox/同步链的 SDC 和逐位物理审计，并保留 107 审计器原字节快照。
+
+root 实际运行 bundled Python -B -X utf8 fpga/scripts/sc520-card-recognition/simulate-pixel14.py --test diag，及 --negative、--watchdog-probe：正常 7 场景/745 检查/0 错；真实 active 注错 1 错/native1；500ns 结束 done0/native2。三个运行目录为 p14-diag-normal-20261013-192610-04f33cc8、p14-diag-negative-20261013-192642-afd4b82b、p14-diag-watchdog-20261013-192642-9d92de92。新增 Q 八位逐像素与帧内保持检查通过；完整配置候选/TD 构建尚待进行。
+
+2026-10-13 19:29 构建启动：新配置 overlay 语法检查无错误，root 完整审读状态机；真实总线模型已通过正常、ID/init/AE 单 NACK 恢复、三类永久 NACK 终止等首轮测试，最终结果以独立 manifest 为准。新配置文件 SHA256 851363FA8C2F4940CE60FF80A0A90204D85DB5D2DF92816F14BFD26668DF9B2A，冻结后运行 prepare-pixel14.py，75 个工程引用中只有一份 uicfgcs520，确认为本任务 overlay。随后执行 pwsh -NoProfile -File fpga/scripts/sc520-card-recognition/build-pixel14.ps1 -RunId 6a50b108，296 项构建输入已快照，syn_1 启动 PID63700。构建中、未验收；源文件冻结，独立审计工具及说明可继续更新。旧前置工作树未改动。
 
 用户授权在等待DFR0534快递与四键实物验证期间继续下一步，推进五类卡片识别独立软件开发。基于现有prep-v1图稿构建32x32二值模板、带全帧健康检查的固定方形ROI取样、串行像素距离匹配、unknown拒识和稳定滤波。只声明固定摆位下的软件模型验证，不把原图或人工变换当相机实测准确率。
 
@@ -18,6 +26,14 @@
 共享AGENTS/README/FILE_INDEX、最新DFR0534及四键交付记录；主仓库和本工作树AGENTS、总记忆/计划/任务/决策/接口，架构/素材约定，future-assets和prep-v1卡片说明，实际hdmi_quiz/detection_adapter/quiz_control/quiz_content。旧主文档仍有SC500/DFPlayer等历史状态，留主对话维护。原new-task-worktree脚本要求改动并清理主仓库，当前主仓库有他人未提交工作且无此任务日志，因此用git worktree add创建隔离新分支并在本工作树建立日志；没有修改主仓库文件。
 
 ## 修改文件
+
+2026-10-13 最终候选调整：108 已完成两阶段 exit0，建立/保持余量 0.132/0.020 ns，17 同步链及 80/204/28 位业务/帧诊断/I2C mailbox 逐位审计通过。首次审计错误地要求原始 clock_summary 列出派生时钟，但它只列两个根时钟组；改为精确校验根组集合，并保留 final_timing 与新报告的全部派生周期逐项比对，第二次通过。原108审计器已按 SHA256 323F2912...6566C 归档，未改旧审计。
+
+交付前发现108的Q借道采集域，配置失败无MIPI时钟时可能失去排障信息。109把32位I2C mailbox直接送HDMI域，OSD单独锁存Q；D0109由显示域常量给出。源码再次冻结并启动6a50b109。本轮显示测试8场景885检查0错、注错native1/提前结束native2均通过；v6软件回读为123场景1917919检查，27轮I2C汇总中25功能轮19712检查0错。物理资格待109新报告，不挪用108数值。
+
+并发核查：2026-10-13 19:45主对话01a13319-8623-7201-8b08-0e27f34437f7更新五份主统筹文档，使旧保护检查准确报错；本对话重新读取AGENTS/总记忆/决策/活动协调表及20261013-194557-sc520-main-coordination-start-d281cc。已登记各文件旧/新哈希及该记录的哈希，只允许该五个确切文档版本作为外部变化；其余1279项和870项历史仍严格验哈希。未回滚或修改主文件。协调表的“0108”指本次排障任务，交付版已演进到0109；建议主对话从最终记录更新版本指向，不合并显示分支祖先代码。原0107外部C盘导出留作历史，本次交付仅E盘。
+
+2026-10-13 19:56：6a50b109两阶段exit0，但基础STA为SWNS -0.274/STNS -4.556/HWNS 0.020 ns，candidate审计按预期拒绝。逐条原始负路径均为新I2C mailbox跨pll_clk_24m与HDMI_PIXEL_CLK的held_data或req/ack，预算仅0.653/0.674 ns；两源同PLL导致原有MIPI异步分组没有覆盖这条新通道。新增三条限定源/目标时钟且through本mailbox确切网络的false_path；同域meta->sync继续2ns时序检查，无例外物理数据传播继续逐位<10ns审计。未改RTL或仿真输入，再生成6a50b10a独立构建，D0109版号不变。旧109负结果保留，最终资格待本次报告。root独立回读I2C最终27轮：189输入原件/189快照/216输出均哈希一致，25功能轮19712检查0错。
 
 仅本任务fpga/rtl、sim、scripts下sc520-card-recognition目录，assets/templates/sc520-card-recognition、evidence/sc520-card-recognition、hardware/sc520-card-recognition、本日志和共享learning/sc520-card-recognition。已有打印图稿只读，派生物记录源哈希。
 
@@ -54,6 +70,10 @@
 先审核独立模块与模型证据；确认固定ROI协议、默认关输出、最短帧间隔及超时责任。实际卡片采集、模板校准、仲裁、字库题序及新的整机TD构建完成后再更新主状态。不可将本次616场景通过改写为实物识别通过。
 
 ## 下一分支交接
+
+2026-10-13 本轮最终交接优先：0109/6a50b10a软件及构建资格通过；用户从 evidence/sc520-card-recognition/delivery-0109/sc520-pixel14-0109.bit 临时加载后拍 D0109/E/Q/G/B 两张间隔画面。配置错误根因机制已仿真复现，实物首次NACK事务/电气原因仍待Q确认；未操作下载、Flash、真实COM、Git推送或合并。原0107与两个中间构建均保留。主对话请审核本次增量，再按实际照片决定后续集成，不将处理显示分支的107祖先重新当新成果合并。
+
+实际终审：6a50b10a两个阶段exit0，bit SHA256 3A7CD3912C0C72FC6553382E2FB00B61F3A432B251C1C236A35BDFE1FAC7D3F8，1789539字节；SWNS0.112/HWNS0.020/TNS0；15934slice/16159reg/43ERAM/17DSP，4ROM/4键通过。17同步链2ns及hold通过，80/175/28位三mailbox逐位Q/D，最长1.317/1.500/1.381ns；原ignored报告对应I2C req/ack/payload恰1/1/28路径。10a首次总审因主对话TASKS再次变动拒绝，重新读195120调度记录并按精确SHA补v2外部文档映射后成功，不忽略任何HDL变化。软件v7为18轮123场景1917919检查0错；I2C27轮含25功能19712检查0错。主统筹五文档外部变化明确列出，其余1279保护项及870历史项一致。raw result中的TimingQualified=false是构建脚本写入的待验初值，最终资格只看独立candidate-audit.json，不改历史result。
 
 本轮交付独立代码和软件证据；当前四键826966ea及音频b982a64保持原状，用户继续各自验证。无新整机bit、下载、Flash、推送、合并或快递自动监控。
 

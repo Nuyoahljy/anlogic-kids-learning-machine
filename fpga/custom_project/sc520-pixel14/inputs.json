@@ -1,5 +1,5 @@
 {
-  "CreatedAt": "2026-10-12T20:19:12.113693+08:00",
+  "CreatedAt": "2026-10-13T19:56:32.761006+08:00",
   "Owner": "SC520 recovery /root/build_impl",
   "SourceProject": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys",
   "Project": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14",
@@ -7,7 +7,7 @@
   "Files": [
     {
       "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\design_top_wrapper.v",
-      "SHA256": "8176BA3FA7A579ED5A7A1124747C364FDDB55CEB11FD62EC2DDF39038C09DBC0"
+      "SHA256": "16BB8ECE26D3337A14B71CF7F240E2540484E09489A0F8803636B26741FA0204"
     },
     {
       "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\isp_top.v",
@@ -19,7 +19,11 @@
     },
     {
       "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\pixel14.sdc",
-      "SHA256": "9E450FD494926361C3F1D037E0B6E3388D1F76DB7C46206210A56378A4474203"
+      "SHA256": "6D32C1AE0E49014A52D7E54AE8E88E3948758E3034905B6F2232EFD8E975E963"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\uicfgcs520.v",
+      "SHA256": "851363FA8C2F4940CE60FF80A0A90204D85DB5D2DF92816F14BFD26668DF9B2A"
     },
     {
       "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\card_result_filter.v",
@@ -75,7 +79,7 @@
     },
     {
       "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_diag_osd.v",
-      "SHA256": "787C9E179233FF506140CF11EA2329CB785498410A76FC67A7C7BCAFB1584B1C"
+      "SHA256": "CBC2D7A288737F73700EA18A9D366A29A00EFA8E49EB16C7D629C32FCB7A9417"
     },
     {
       "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_pipeline.v",
@@ -1087,6 +1091,7 @@
     "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\isp_top.v",
     "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\pin.adc",
     "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\pixel14.sdc",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\uicfgcs520.v",
     "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\card_result_filter.v",
     "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\card_template_rom.v",
     "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_content.v",
@@ -1144,7 +1149,6 @@
     "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics500_cfg\\uics500regAE.v",
     "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics500_cfg\\uii2c.v",
     "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics520_cfg\\SC520GainTbl.v",
-    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics520_cfg\\uicfgcs520.v",
     "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics520_cfg\\uics520reg.v",
     "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics520_cfg\\uics520reg_720p60.v",
     "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics520_cfg\\uics520reg_full_2560x1920_30.v",

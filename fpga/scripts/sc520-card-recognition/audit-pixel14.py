@@ -18,13 +18,41 @@ def require(condition, message):
         raise RuntimeError(message)
 
 
+def check_protected(items):
+    reviewed_path = EVIDENCE / 'external-document-updates-20261013-v2.json'
+    reviewed = json.loads(reviewed_path.read_text(encoding='utf-8'))
+    require(sha(reviewed['RecordPath']) == reviewed['RecordSHA256'], 'external record changed')
+    record = json.loads(Path(reviewed['RecordPath']).read_text(encoding='utf-8-sig'))
+    main = ROOT.parents[2] / 'anlogic-kids-learning-machine'
+    allowed = {main / n for n in ('AGENTS.md', 'DECISIONS.md', 'PLAN.md', 'PROJECT_MEMORY.md', 'TASKS.md')}
+    exceptions = {Path(x['Path']): x for x in reviewed['Changes']}
+    require(len(exceptions) == len(reviewed['Changes']) and set(exceptions) <= allowed,
+            'external review must name only the five main coordination documents')
+    observed = []
+    for item in items:
+        path = Path(item['Path'])
+        actual = sha(path)
+        if actual == item['SHA256'].upper():
+            continue
+        change = exceptions.get(path)
+        require(change is not None and change['BaselineSHA256'].upper() == item['SHA256'].upper()
+                and change['ObservedSHA256'] == actual, 'protected file changed: ' + str(path))
+        change_record = record
+        if 'RecordPath' in change:
+            require(sha(change['RecordPath']) == change['RecordSHA256'], 'external follow-up record changed')
+            change_record = json.loads(Path(change['RecordPath']).read_text(encoding='utf-8-sig'))
+        require(any(Path(x['Path']) == path and x.get('SHA256') == actual for x in change_record['Changes']),
+                'external change not bound to main coordination record: ' + str(path))
+        observed.append(change)
+    return observed
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, default=EVIDENCE / 'pixel14-validation-v3.json')
     args = parser.parse_args()
     baselines = json.loads((EVIDENCE / 'pixel14-baseline.json').read_text(encoding='utf-8'))
-    for item in baselines['Protected']:
-        require(sha(item['Path']) == item['SHA256'].upper(), 'protected file changed: '+item['Path'])
+    external_changes = check_protected(baselines['Protected'])
     history = json.loads((EVIDENCE / 'pixel14-boardfix-baseline.json').read_text(encoding='utf-8'))
     for item in [history['OldBit'], *history['ProtectedHistory']]:
         require(sha(item['Path']) == item['SHA256'].upper(), 'historical evidence changed: '+item['Path'])
@@ -69,6 +97,9 @@ def main():
         'Task': 'sc520-card-recognition', 'Stage': 'pixel14',
         'VerifiedAt': datetime.now(timezone(timedelta(hours=8))).isoformat(timespec='seconds'),
         'ProtectedFiles': len(baselines['Protected']), 'ProtectedHistoryFiles': len(history['ProtectedHistory']), 'Runs': selected,
+        'ProtectedFilesUnchanged': len(baselines['Protected']) - len(external_changes),
+        'ReviewedExternalDocumentationChanges': external_changes,
+        'ExternalReviewSHA256': sha(EVIDENCE / 'external-document-updates-20261013-v2.json'),
         'NormalScenarios': sum(x['Summary']['scenarios'] for x in positive),
         'NormalChecks': sum(x['Summary']['checks'] for x in positive), 'NormalErrors': 0,
         'Scope': 'Synthetic RGB96 and CSI/RAW/ISP framing; input snapshots, outputs and protected files verified. This does not certify physical camera recognition, DDR frame alignment, hardware CDC or board operation.'

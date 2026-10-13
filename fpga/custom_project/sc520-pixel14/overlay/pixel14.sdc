@@ -50,3 +50,18 @@ set_max_delay -from [get_regs {u_p14_diag_cdc/ack_meta}] -to [get_regs {u_p14_di
 set_max_delay -from [get_regs {u_p14_pipeline/staging_fault_meta}] -to [get_regs {u_p14_pipeline/staging_fault_sync}] 2.000
 set_max_delay -from [get_regs {S_p14_cfg_done[0]}] -to [get_regs {S_p14_cfg_done[1]}] 2.000
 set_max_delay -from [get_regs {S_p14_cfg_error[0]}] -to [get_regs {S_p14_cfg_error[1]}] 2.000
+
+# I2C completion crosses into the configuration clock before use. The atomic
+# diagnostic mailbox then transfers the held word from 24 MHz to MIPI.
+set_max_delay -from [get_regs {u_uicfgcs520/busy_meta}] -to [get_regs {u_uicfgcs520/busy_sync}] 2.000
+set_max_delay -from [get_regs {u_uicfgcs520/error_meta}] -to [get_regs {u_uicfgcs520/error_sync}] 2.000
+
+# The diagnostic mailbox deliberately uses a handshake between these PLL outputs.
+# Exempt only its crossing nets; keep both same-clock synchronizer stages timed.
+# The held payload remains unchanged until acknowledgement; routed propagation
+# is checked per physical bit in the independent unconstrained mailbox report.
+set_false_path -from [get_clocks {pll_clk_24m}] -through [get_nets {u_p14_i2c_cdc/request}] -to [get_clocks {HDMI_PIXEL_CLK}]
+set_false_path -from [get_clocks {HDMI_PIXEL_CLK}] -through [get_nets {u_p14_i2c_cdc/acknowledge}] -to [get_clocks {pll_clk_24m}]
+set_false_path -from [get_clocks {pll_clk_24m}] -through [get_nets {u_p14_i2c_cdc/held_data*}] -to [get_clocks {HDMI_PIXEL_CLK}]
+set_max_delay -from [get_regs {u_p14_i2c_cdc/req_meta}] -to [get_regs {u_p14_i2c_cdc/req_sync}] 2.000
+set_max_delay -from [get_regs {u_p14_i2c_cdc/ack_meta}] -to [get_regs {u_p14_i2c_cdc/ack_sync}] 2.000

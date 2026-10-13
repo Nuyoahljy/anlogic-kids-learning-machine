@@ -53,6 +53,7 @@ module design_top_wrapper (
 	(* keep = "true" *) wire [15:0] S_cam_sensor_id;
 	(* keep = "true" *) wire        S_cam_sensor_id_ok;
 	(* keep = "true" *) wire        S_cam_i2c_error;
+    wire [31:0] S_cam_i2c_diagnostic;
 	localparam integer CAM_PWDNB_LOW_CYCLES = 23810;  // >= 1 ms at 23.809524 MHz
 	localparam integer CAM_I2C_START_CYCLES = 142857; // release + >= 5 ms
 	
@@ -571,7 +572,8 @@ module design_top_wrapper (
       .O_ae_cfg_done(S_ae_cfg_done),  //AE配置完成
       .O_sensor_id(S_cam_sensor_id),
       .O_sensor_id_ok(S_cam_sensor_id_ok),
-      .O_iic_error(S_cam_i2c_error)
+      .O_iic_error(S_cam_i2c_error),
+      .O_iic_diagnostic(S_cam_i2c_diagnostic)
   );
 	
     mipi_dphy_rx_ph1p_mipiio_wrapper#(
@@ -904,11 +906,22 @@ isp_top u_isp_top (
     wire S_p14_start,S_p14_done,S_p14_good,S_p14_revoke;
     wire [31:0] S_p14_id,S_p14_done_id;
     wire [255:0] S_p14_diag_capture,S_p14_diag_display;
+    wire [31:0] S_p14_i2c_display;
+    wire S_p14_i2c_ready;
+    reg [15:0] S_p14_i2c_divider;
+    always @(posedge S_24m_clk or negedge S_rst_n)
+        if(!S_rst_n) S_p14_i2c_divider<=0;
+        else S_p14_i2c_divider<=S_p14_i2c_divider+1'b1;
+    pixel14_result_cdc #(.WIDTH(32)) u_p14_i2c_cdc(
+        .rst_n(S_rst_n && S_hdmi_rst_n),.src_clk(S_24m_clk),
+        .src_valid(S_p14_i2c_divider==0 && S_p14_i2c_ready),.src_data(S_cam_i2c_diagnostic),
+        .src_ready(S_p14_i2c_ready),.src_fault(),.dst_clk(S_hdmi_pixel_clk),
+        .dst_valid(),.dst_data(S_p14_i2c_display),.dst_fault());
     reg [1:0] S_p14_cfg_done,S_p14_cfg_error;
     always @(posedge S_csi_rx_clk or negedge S_rst_n)
         if(!S_rst_n) begin S_p14_cfg_done<=0;S_p14_cfg_error<=0;end
         else begin
-            S_p14_cfg_done<={S_p14_cfg_done[0],S_cam_cfg_done};
+            S_p14_cfg_done<={S_p14_cfg_done[0],S_cam_cfg_done && S_ae_cfg_done};
             S_p14_cfg_error<={S_p14_cfg_error[0],S_cam_i2c_error};
         end
     pixel14_capture_provenance u_p14_provenance(
@@ -963,7 +976,8 @@ isp_top u_isp_top (
         end
     pixel14_diag_osd u_p14_diag_osd(
         .clk(S_hdmi_pixel_clk),.rst_n(S_hdmi_rst_n),.frame_start(S_p14_display_sof),
-        .pixel_x(S_p14_x),.pixel_y(S_p14_y),.diagnostic(S_p14_diag_display),
+        .pixel_x(S_p14_x),.pixel_y(S_p14_y),.diagnostic({16'h0109,S_p14_diag_display[239:0]}),
+        .i2c_diagnostic(S_p14_i2c_display),
         .business_flags({S_p14_diag_fault,S_p14_diag_received,S_p14_link_fault,S_p14_quarantined,
             S_p14_timeout,S_p14_conflict_seen,S_p14_obs_healthy,S_p14_event_seen}),
         .active(S_p14_diag_active),.rgb(S_p14_diag_rgb));

@@ -1,0 +1,72 @@
+{
+  "Version": "0109",
+  "Build": "6a50b10a",
+  "CreatedAt": "2026-10-13T20:05:33.3491303+08:00",
+  "Status": "Software and routed candidate qualified; physical board retest pending",
+  "HardwareValidated": false,
+  "BaseCommit": "b27bcdf494bbae10d6d8ee119dd9842d5badb79b",
+  "CommitBinding": "Final local commit is recorded in the shared workspace batch after commit.",
+  "Bit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\delivery-0109\\sc520-pixel14-0109.bit",
+    "Bytes": 1789539,
+    "SHA256": "3A7CD3912C0C72FC6553382E2FB00B61F3A432B251C1C236A35BDFE1FAC7D3F8"
+  },
+  "OriginalBit": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b10a/td_project/camera_to_dsi_display_Runs/phy_1/camera_to_dsi_display.bit",
+  "Guide": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\hardware\\sc520-card-recognition\\pixel14-boardfix109.md",
+    "Bytes": 6384,
+    "SHA256": "B48722F1ACA5797164996B592847E11EA2FB64499852B492AFDC6DC5869586FE"
+  },
+  "BuildAudit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b10a\\candidate-audit.json",
+    "Bytes": 719486,
+    "SHA256": "24E4889C9073797CA28C203D19CA28477BD2D2C7F27744AA3D43CA4A85F13F6F"
+  },
+  "PixelValidation": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\pixel14-validation-v7.json",
+    "Bytes": 44661,
+    "SHA256": "3B5B74FAC94CFABC370A4C32BD54BBB1BDDE6170575CD05D7021F3BFAE1410A0"
+  },
+  "I2CValidation": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\i2c-runs\\verification-20261013-v2.json",
+    "Bytes": 33668,
+    "SHA256": "C24596091817714753652618090B36752276F90F44DE987AFC9E8DC7AABB511D"
+  },
+  "TimingNs": {
+    "SWNS": 0.112,
+    "STNS": 0,
+    "HWNS": 0.02,
+    "HTNS": 0
+  },
+  "Resources": {
+    "slice": 15934,
+    "eram": 43,
+    "dsp": 17,
+    "reg": 16159
+  },
+  "Synchronizers": 17,
+  "Mailboxes": [
+    {
+      "Name": "business",
+      "Bits": 80,
+      "MaximumDataPathNs": 1.317
+    },
+    {
+      "Name": "diagnostic",
+      "Bits": 175,
+      "MaximumDataPathNs": 1.5
+    },
+    {
+      "Name": "i2c",
+      "Bits": 28,
+      "MaximumDataPathNs": 1.381
+    }
+  ],
+  "InputsChecked": 296,
+  "NormalPixelScenarios": 123,
+  "NormalPixelChecks": 1917919,
+  "I2CFunctionalRuns": 25,
+  "I2CFunctionalChecks": 19712,
+  "UserRetest": "PROGRAM_SRAM at 5 MHz; verify D0109, photograph E/Q/B and two N/G samples separated by about 2 seconds.",
+  "Limits": "Ideal digital I2C slave; real NACK cause and recognition recovery remain unverified. Current frame diagnostics do not prove CRC/ECC, DDR display identity, MTBF, audio or long-run operation. All current delivery files are inside E:/juan/FPGA."
+}
