@@ -1,0 +1,21 @@
+Reading D:/modeltech64_10.7/tcl/vsim/pref.tcl
+
+# 10.7
+
+# do {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/scene-negative-20261014-102327-8c54a65e/launch.do}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 10:23:29 on Oct 14,2026
+# vlog E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/scene-negative-20261014-102327-8c54a65e/inputs/pixel14_scene_preprocess.v 
+# -- Compiling module pixel14_scene_preprocess
+# 
+# Top level modules:
+# 	pixel14_scene_preprocess
+# End time: 10:23:29 on Oct 14,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 10:23:29 on Oct 14,2026
+# vlog -sv E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/scene-negative-20261014-102327-8c54a65e/inputs/tb_pixel14_scene.sv 
+# -- Compiling module tb_pixel14_scene
+# ** Error: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/scene-negative-20261014-102327-8c54a65e/inputs/tb_pixel14_scene.sv(234): (vlog-13008) Unsized literal value 10000000000 exceeds default size of literals which  is 32-bit. Either size the literal (i.e. 64'd10000000000) or reduce the literal value to fit in 32 bits.
+# End time: 10:23:29 on Oct 14,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

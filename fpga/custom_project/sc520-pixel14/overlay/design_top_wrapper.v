@@ -976,13 +976,13 @@ isp_top u_isp_top (
         end
     pixel14_diag_osd u_p14_diag_osd(
         .clk(S_hdmi_pixel_clk),.rst_n(S_hdmi_rst_n),.frame_start(S_p14_display_sof),
-        .pixel_x(S_p14_x),.pixel_y(S_p14_y),.diagnostic({16'h0109,S_p14_diag_display[239:0]}),
+        .pixel_x(S_p14_x),.pixel_y(S_p14_y),.diagnostic({16'h0112,S_p14_diag_display[239:0]}),
         .i2c_diagnostic(S_p14_i2c_display),
         .business_flags({S_p14_diag_fault,S_p14_diag_received,S_p14_link_fault,S_p14_quarantined,
             S_p14_timeout,S_p14_conflict_seen,S_p14_obs_healthy,S_p14_event_seen}),
         .active(S_p14_diag_active),.rgb(S_p14_diag_rgb));
     assign S_roi_data=S_roi_de && S_p14_diag_active ? S_p14_diag_rgb : S_p14_business_rgb;
-    pixel14_pipeline #(.ENABLE_OUTPUT(1),.TEMPLATE_FILE("E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/assets/templates/sc520-card-recognition/prep-v1-max40/templates.mem")) u_p14_pipeline(
+    pixel14_pipeline #(.ENABLE_OUTPUT(1),.USE_SCENE_ANALYSIS(1),.ROTATION_VARIANTS(256),.TEMPLATE_FILE("E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/assets/templates/sc520-card-recognition/rotation-v1/templates.mem")) u_p14_pipeline(
         .rst_n(S_rst_n && S_hdmi_rst_n),.capture_clk(S_csi_rx_clk),.display_clk(S_hdmi_pixel_clk),
         .in_frame_start(S_p14_start),.in_frame_id(S_p14_id),.in_source_test(1'b0),
         .in_valid(S_p14_rgb_valid),.in_eol(S_p14_rgb_eol),.in_rgb96(S_p14_rgb_data),

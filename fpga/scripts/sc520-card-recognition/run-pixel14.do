@@ -10,6 +10,8 @@ if {[catch {
     vlog -sv +incdir+$card_assets $card_tb
     set geometry_args [list]
     if {$card_full} {lappend geometry_args -gFULL=1}
+    if {[info exists card_rotation] && $card_rotation>0} {lappend geometry_args -gROTATIONS=$card_rotation}
+    if {[info exists card_matrix_only] && $card_matrix_only} {lappend geometry_args -gMATRIX_ONLY=1}
     vsim -voptargs=+acc -wlf wave.wlf work.$card_top {*}$geometry_args +ASSET_ROOT=$card_assets +INJECT_FAULT=$card_negative
     onfinish stop
     if {$card_probe} {run 500 ns} else {run -all}

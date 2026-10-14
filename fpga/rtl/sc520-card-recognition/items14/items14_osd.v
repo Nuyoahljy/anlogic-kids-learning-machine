@@ -1,7 +1,9 @@
 // Candidate two-panel OSD; central x320..959,y120..599 stays unobscured.
 // Parent snapshots status atomically at frame start. One clock of ROM latency.
 // Derived from the four-key quiz_osd.v; provenance is in font-manifest.json.
-module items14_osd(
+module items14_osd #(
+    parameter integer SCENE_UI=0
+) (
     input wire clk,
     input wire rst_n,
     input wire [10:0] pixel_x,
@@ -30,7 +32,7 @@ module items14_osd(
     reg [1:0] tone_d;
     wire [23:0] ink=tone_d==1 ? 24'hABE8F2 : tone_d==2 ? 24'hFFE3A3 :
                           tone_d==3 ? 24'h9EF0CC : 24'hF5F7FA;
-    items14_content content(.line_index(line_index),.char_index(local_x[10:5]),
+    items14_content #(.SCENE_UI(SCENE_UI)) content(.line_index(line_index),.char_index(local_x[10:5]),
         .mode(mode),.phase(phase),.score(score),.question_index(question_index),
         .target_item(target_item),.display_item(display_item),.feedback(feedback),
         .source_test(source_test),.armed(armed),.audio_fault(audio_fault),.audio_busy(audio_busy),

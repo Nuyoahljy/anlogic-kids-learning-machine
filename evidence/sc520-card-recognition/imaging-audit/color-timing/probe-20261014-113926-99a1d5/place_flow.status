@@ -1,0 +1,56 @@
+Location         : U:\
+Running with     : Tang Dynasty v6.2.168116
+                   Copyright (c) 2012-2025 Anlogic Inc.
+Top Model        : color_timing_top
+Device           : PH1P35MDG324
+Speed            : 3
+
+Timing Mode      : manhattan
+Setup            : WNS  2396ps  TNS        0ps  NUM_FEPS     0
+Hold             : WNS  -198ps  TNS   -11904ps  NUM_FEPS    85
+
+Flow Statistics  :
+--------------------------------------------------------------------------------------------------
+     command     |  #calls  |  wall time  |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
+--------------------------------------------------------------------------------------------------
+      place      |    1     |  1m1s(61%)  |   118(79%)    |        538        |        538        
+  optimize_gate  |    1     |  29s(29%)   |    23(15%)    |        443        |        443        
+  optimize_rtl   |    1     |   8s(8%)    |     7(4%)     |        379        |        387        
+  import_device  |    1     |   2s(2%)    |     1(0%)     |        342        |        342        
+    read_sdc     |    1     |   0s(0%)    |     0(0%)     |        343        |        343        
+--------------------------------------------------------------------------------------------------
+      total      |    5     |    1m40s    |      149      |        538        |        538        
+--------------------------------------------------------------------------------------------------
+-----------------------------------------------------------
+| QoR metrics               |         value               |
+-----------------------------------------------------------
+| Timing                    |                             |
+|     Setup WNS             |         2396                |
+|     Setup TNS             |            0                |
+|     Num of violated S-EP  |            0                |
+|     FMAX                  |   137.665MHz                |
+|     SWNS path clock period |       9660ps                |
+|     Hold WNS              |         -198                |
+|     Hold TNS              |       -11904                |
+|     Num of violated H-EP  |           85                |
+-----------------------------------------------------------
+| Routing Resource          |                             |
+|     Wire length           |       199576                |
+|     Route Net Num         |         2820                |
+|     DontRoute Net Num     |         2802                |
+|     RouteSinks Num        |         9810                |
+-----------------------------------------------------------
+| Utilization               |                             |
+|     #slices               |         1877                |
+|     slices percentage     |        8.85%                |
+|     #RAMs                 |           10                |
+|     #DSPs                 |           12                |
+|     #DRAMHARDCON          |            0                |
+-----------------------------------------------------------
+| Congestion                |                             |
+|     Top 1% tile util      |           40                |
+|     Top 1% tile avg util  |       50.05%                |
+|     Over 100% util #tile  |            0                |
+-----------------------------------------------------------
+Report place stage QoR done.
+

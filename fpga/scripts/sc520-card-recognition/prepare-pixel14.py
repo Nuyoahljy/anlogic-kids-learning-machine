@@ -91,6 +91,7 @@ def create_overlay():
 def make(destination,snapshot=False):
     destination=destination.resolve()
     sources=sorted((RTL/'pixel14').glob('*.v'))+sorted((RTL/'items14').glob('*.v'))+[RTL/n for n in ('card_template_rom.v','card_result_filter.v')]
+    sources += [PROJECT/'overlay/pixel14_color_pipeline.v']
     mapping={}
     records=[]
     if snapshot:
@@ -106,13 +107,20 @@ def make(destination,snapshot=False):
             records.append({'Path':str(p),'Snapshot':str(q),'SHA256':sha(p)})
     else: mapping={p.resolve():p.resolve() for p in sources}
     overlay=destination/'overlay'
-    template=REPO/'assets/templates/sc520-card-recognition/prep-v1-max40/templates.mem'
+    # The owned top selects the exact template generation. Never silently use
+    # the legacy five-bit bank for a multi-variant scene candidate.
+    top_text=(PROJECT/'overlay/design_top_wrapper.v').read_text(encoding='utf-8')
+    template_paths=re.findall(r'\.TEMPLATE_FILE\("([^"]+)"\)',top_text)
+    assert len(template_paths)==1,template_paths
+    template=Path(template_paths[0]).resolve()
+    template.relative_to(REPO/'assets/templates/sc520-card-recognition')
+    assert template.is_file(),template
     if snapshot:
         target=destination/'templates.mem';shutil.copyfile(template,target)
         records.append({'Path':str(template),'Snapshot':str(target),'SHA256':sha(template)})
         template=target
         p=overlay/'design_top_wrapper.v'
-        original_template=(REPO/'assets/templates/sc520-card-recognition/prep-v1-max40/templates.mem').as_posix()
+        original_template=template_paths[0]
         write(p,p.read_text(encoding='utf-8').replace(original_template,template.as_posix()))
     replacement={
         (OLD/'user_source/hdl_source/design_top_wrapper.v').resolve():overlay/'design_top_wrapper.v',

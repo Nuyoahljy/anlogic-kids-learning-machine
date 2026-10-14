@@ -1,0 +1,2027 @@
+{
+  "created_at": "2026-10-14T10:53:29.234856+08:00",
+  "command": [
+    "fpga\\scripts\\sc520-card-recognition\\generate-rotation-fixtures.py"
+  ],
+  "sources": [
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\prep-v1-max40\\rendered\\card_10_apple_256.png",
+      "sha256": "89535C32FB53B09760CB0D4E16C4CDAE3ABC8F64B3D2CED637880D3404E0A9E6"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\prep-v1-max40\\rendered\\card_11_banana_256.png",
+      "sha256": "DDD76AC93B963A52E826F2CFA44A0A0A298B7CD41EA420A5206B90AC468DD6AB"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\prep-v1-max40\\rendered\\card_12_car_256.png",
+      "sha256": "A5451992081ED5B08786BCA5966D162138F76A0F644AF540BBE10A1D349A285C"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\prep-v1-max40\\rendered\\card_13_star_256.png",
+      "sha256": "8E21A52FF4EF92EFD655A486AAC7D64CA23BA28CC70CACCD5AB5BFBA74731ED0"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\prep-v1-max40\\rendered\\card_14_umbrella_256.png",
+      "sha256": "C922A74D93872162B9E14374AFEC489AAE43A753A4B68C0D2E8694E79794548A"
+    }
+  ],
+  "scripts": [
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\generate-rotation-fixtures.py",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\inputs\\generate-rotation-fixtures.py",
+      "sha256": "A35C7E3B88C5B585B00EE758D5A8CA806775F9DE72D25DFEA8AE39978951384A"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\scene-rotation-model.py",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\inputs\\scene-rotation-model.py",
+      "sha256": "10C9D44764FCAF6090A1C4BF9D4B707A26933F026C1E81719837D349A0D7993A"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\scene-model.py",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\inputs\\scene-model.py",
+      "sha256": "4696B16F3086E2FA6B027A17A144DC917BFEE9D7C0C20F74E00E5BF87F6E28A7"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\experiment-scene-rotation.py",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\inputs\\experiment-scene-rotation.py",
+      "sha256": "B1375658FFBE03C1581B013AA476EEAC16CF023951ECD9BD98BBD57B20B1E205"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\generate-scene-fixtures.py",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\inputs\\generate-scene-fixtures.py",
+      "sha256": "29AC56776228962E54E6E2C8841313A24EE800E4F72553FAC30F051CAF17B89E"
+    }
+  ],
+  "selected_design": {
+    "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-design-dense-20261014\\step5-variants2.json",
+    "sha256": "C5BDF21DA2AD2C9DE123F227DD58052DBDA2893DB9214F0755498B3AA981754A"
+  },
+  "bank": {
+    "variants_per_class": 256,
+    "word_bits": 5,
+    "depth": 102400,
+    "templates_sha256": "731EC1B57D12F2EF305C35A055169BCD6733A4F76836AD1FA278BEE5BD9E8341"
+  },
+  "outputs": [
+    {
+      "path": "angle-evaluation.json",
+      "sha256": "E7E6EE041592F3AFE4686CB14A2DB973D5542A83D732A4237594CB5F2A27E1ED"
+    },
+    {
+      "path": "bank-contract.json",
+      "sha256": "3595B5082464719F705816E12221272555B7723B74EDFF7BA09BB088FAC896A9"
+    },
+    {
+      "path": "business-cases.txt",
+      "sha256": "15BD8F396929C1A272325E895D7D56DF95191F3D4B4D81CA95360D408BB2BE26"
+    },
+    {
+      "path": "fixtures.json",
+      "sha256": "1C2E77D46EA21445DF171DA35D9C714584C453C5678F2C4CE53EADFD9C1FAA62"
+    },
+    {
+      "path": "inputs\\experiment-scene-rotation.py",
+      "sha256": "B1375658FFBE03C1581B013AA476EEAC16CF023951ECD9BD98BBD57B20B1E205"
+    },
+    {
+      "path": "inputs\\generate-rotation-fixtures.py",
+      "sha256": "A35C7E3B88C5B585B00EE758D5A8CA806775F9DE72D25DFEA8AE39978951384A"
+    },
+    {
+      "path": "inputs\\generate-scene-fixtures.py",
+      "sha256": "29AC56776228962E54E6E2C8841313A24EE800E4F72553FAC30F051CAF17B89E"
+    },
+    {
+      "path": "inputs\\scene-model.py",
+      "sha256": "4696B16F3086E2FA6B027A17A144DC917BFEE9D7C0C20F74E00E5BF87F6E28A7"
+    },
+    {
+      "path": "inputs\\scene-rotation-model.py",
+      "sha256": "10C9D44764FCAF6090A1C4BF9D4B707A26933F026C1E81719837D349A0D7993A"
+    },
+    {
+      "path": "legacy-joint-comparison.json",
+      "sha256": "2AB281F3798480EE49D4AB414C7462A60D1C5D23894334AF3B606EF753579E50"
+    },
+    {
+      "path": "README.md",
+      "sha256": "872441402854289FBA295C271CD7282D245A0D326F2CD218CCED1FF0D61D824E"
+    },
+    {
+      "path": "refusal-cases.txt",
+      "sha256": "8A0F20B76BE03AA2131BD37E557DD8A2AA8D0B68AA5738B3D9DFE4B55E67F804"
+    },
+    {
+      "path": "roc.json",
+      "sha256": "A7D3B026A1735FCE3985F29261758BB21BCF8D38D87B3099F6FBDF27C09037C4"
+    },
+    {
+      "path": "summary.json",
+      "sha256": "499DC348481822563628AF65C61E7303BD4C0205F0A87C0B14F349882D628667"
+    },
+    {
+      "path": "system-cases.txt",
+      "sha256": "75898F56DDD69A52D8A904F34119A49B87E5FA874A035A1E61B1D10C31F98C41"
+    },
+    {
+      "path": "templates.mem",
+      "sha256": "731EC1B57D12F2EF305C35A055169BCD6733A4F76836AD1FA278BEE5BD9E8341"
+    },
+    {
+      "path": "training.json",
+      "sha256": "C7D07D4CCD4814195722B1BDBB3A182D5F29DC58E95868C86FF24A995266084E"
+    },
+    {
+      "path": "vectors\\r000_empty_dark.mask.mem",
+      "sha256": "2BCA579F59378B7E7B25BD50AE3E1D45BDAC174A5A0026D72ACCC479FCD1BAAA"
+    },
+    {
+      "path": "vectors\\r000_empty_dark.png",
+      "sha256": "97BD653C369899E4D5913B622544FC23F209EC4DED0554D6323A1EAD979DAE22"
+    },
+    {
+      "path": "vectors\\r000_empty_dark.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r000_empty_dark.rgb.mem",
+      "sha256": "AEBF6EA10DB0C8F4591F331C29A15589D7751857E12195B2EDC5D6C9BE2F029F"
+    },
+    {
+      "path": "vectors\\r001_empty_white.mask.mem",
+      "sha256": "2BCA579F59378B7E7B25BD50AE3E1D45BDAC174A5A0026D72ACCC479FCD1BAAA"
+    },
+    {
+      "path": "vectors\\r001_empty_white.png",
+      "sha256": "E6C1B77F53191625CB96289940E11361F943997AD26799F95900659278D34A45"
+    },
+    {
+      "path": "vectors\\r001_empty_white.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r001_empty_white.rgb.mem",
+      "sha256": "14101DA0E169B457C026EDBD83FC0CCFD891B56510CD8B4F231D953F18CD8583"
+    },
+    {
+      "path": "vectors\\r002_empty_red.mask.mem",
+      "sha256": "2BCA579F59378B7E7B25BD50AE3E1D45BDAC174A5A0026D72ACCC479FCD1BAAA"
+    },
+    {
+      "path": "vectors\\r002_empty_red.png",
+      "sha256": "FF1570ACD69E6E17980C541C753F8D9E30B70BF9166A23675F92A8853B4C8FE9"
+    },
+    {
+      "path": "vectors\\r002_empty_red.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r002_empty_red.rgb.mem",
+      "sha256": "D8FFC427A8F9930AC4A98B1BB5359582A55B4C13FA0B5A58EBAA2F89C9B26413"
+    },
+    {
+      "path": "vectors\\r003_card_10_angle_0.mask.mem",
+      "sha256": "497259439441E34300200336958E3DEDB3AA9439D905875677EBCD68107B2BA5"
+    },
+    {
+      "path": "vectors\\r003_card_10_angle_0.png",
+      "sha256": "07460697F3D8FB8642C017A0810C15BB7F81ED523F94DB973FB893E1490573BF"
+    },
+    {
+      "path": "vectors\\r003_card_10_angle_0.replay.mem",
+      "sha256": "91705BA516B4796A6BBEE7CF671BAE6955B237A3FC436B33C8BD59E908687214"
+    },
+    {
+      "path": "vectors\\r003_card_10_angle_0.rgb.mem",
+      "sha256": "FD5E0BC129948BBB06EB0B2843C9A1801D3437DEC6F28665AA725193F1053AFA"
+    },
+    {
+      "path": "vectors\\r004_card_10_angle_90.mask.mem",
+      "sha256": "07A9070B821EE3F30DEFE5AC1A93288DB1EC73B114CCA584CCCAD4F19C3A707E"
+    },
+    {
+      "path": "vectors\\r004_card_10_angle_90.png",
+      "sha256": "328264835E9EC393D9161B9B38EEAB6CBAC7B1B399A1CAD27DC87E89419C17EF"
+    },
+    {
+      "path": "vectors\\r004_card_10_angle_90.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r004_card_10_angle_90.rgb.mem",
+      "sha256": "BA8766C0E5A351AD76451C2AB87AF64DCA8E4497913DA441399E341CE31C695C"
+    },
+    {
+      "path": "vectors\\r005_card_10_angle_180.mask.mem",
+      "sha256": "6ADDDBC32019B6566C7CBB54CF4E30C615EF4234E966F1C5A86310BA2FDD1139"
+    },
+    {
+      "path": "vectors\\r005_card_10_angle_180.png",
+      "sha256": "F90DDAEF9ECDE8D67F6468C2C93ABCA1B66E2012CBAB51A14B1FBDD629525755"
+    },
+    {
+      "path": "vectors\\r005_card_10_angle_180.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r005_card_10_angle_180.rgb.mem",
+      "sha256": "695CB668B27003C3AFBDB477FA8ED64174C9396620BC9802F601FBB3439701F9"
+    },
+    {
+      "path": "vectors\\r006_card_10_angle_270.mask.mem",
+      "sha256": "942B811A8AA794168DCAB927F2D3AEA460D210C4C4249DBA76597638A3E43A2D"
+    },
+    {
+      "path": "vectors\\r006_card_10_angle_270.png",
+      "sha256": "D830E208D03544235C337E83D6CE8946138A057A455C1E953E977F39CB49F564"
+    },
+    {
+      "path": "vectors\\r006_card_10_angle_270.replay.mem",
+      "sha256": "290B63109A9B658CE4FCFDB52DA99754BD164650719B2D1AC44B6F0309B27BD2"
+    },
+    {
+      "path": "vectors\\r006_card_10_angle_270.rgb.mem",
+      "sha256": "FD9A8F16AF13CFF6430960D3F0AEC2134DAA9AE8782D9473D899BFBF975905B9"
+    },
+    {
+      "path": "vectors\\r007_card_10_angle_2p5.mask.mem",
+      "sha256": "335E8FCC0E5014C8B1423F4FCD2EE9D7A25620C1DBAE2E6124ABBC146BDB515C"
+    },
+    {
+      "path": "vectors\\r007_card_10_angle_2p5.png",
+      "sha256": "3425F3BC9EAA91143281610AB2A896C7068DC3040527EBC56F615E33C7A26B38"
+    },
+    {
+      "path": "vectors\\r007_card_10_angle_2p5.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r007_card_10_angle_2p5.rgb.mem",
+      "sha256": "FF4772B8E2BE3238A6FEC9C5838A0594C9307168D350879A2F498B00A98D5FF1"
+    },
+    {
+      "path": "vectors\\r008_card_10_angle_87p5.mask.mem",
+      "sha256": "F14A16887628EF482F83550868EDAF62B0BA5BE9B434E123DFB82039007F420A"
+    },
+    {
+      "path": "vectors\\r008_card_10_angle_87p5.png",
+      "sha256": "0797FBC5DDF6F535EE1DAB822E8F5284EEA0F1AC4DF75C45DE9684D09F13E95C"
+    },
+    {
+      "path": "vectors\\r008_card_10_angle_87p5.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r008_card_10_angle_87p5.rgb.mem",
+      "sha256": "46C0903761BFC7F7C0B6708754038D835EA67ADE627775F837031455F9350754"
+    },
+    {
+      "path": "vectors\\r009_card_10_angle_177p5.mask.mem",
+      "sha256": "2D12861FC87043B796F970179B566532F7FD54CA7637864E328C39F57C0031C6"
+    },
+    {
+      "path": "vectors\\r009_card_10_angle_177p5.png",
+      "sha256": "21A5F573EC7CA16DACAF3CF8DE9E68AE8780EC9D6A13A5D42BC02495656A0667"
+    },
+    {
+      "path": "vectors\\r009_card_10_angle_177p5.replay.mem",
+      "sha256": "B1501F1DEEBD6B5852924ACEC5248D9AB76D5F1C9E3965AC7EE111EF5766BE62"
+    },
+    {
+      "path": "vectors\\r009_card_10_angle_177p5.rgb.mem",
+      "sha256": "D05F2E8332F4688E878617837853EB8D65B5D6D6397539B6C034A9070D670B29"
+    },
+    {
+      "path": "vectors\\r010_card_10_angle_267p5.mask.mem",
+      "sha256": "77ACCF49BAA28F3C0804CDBFE8D092B96DDD83E3D5BD80057F47EF9FECB51630"
+    },
+    {
+      "path": "vectors\\r010_card_10_angle_267p5.png",
+      "sha256": "946D223C9F1C4047826099DCD1734FE00883AA7A9F06C57EDE73A5D0BB4EB44D"
+    },
+    {
+      "path": "vectors\\r010_card_10_angle_267p5.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r010_card_10_angle_267p5.rgb.mem",
+      "sha256": "B5CD18F435F87257B4E4126ABEC0B9B05594577AF35D4F29389C77B5C1380F55"
+    },
+    {
+      "path": "vectors\\r011_card_10_size_53_angle_17p5.png",
+      "sha256": "29D60962037976B73CBE9A0337C4312A64944CA74BEFD8B70C40AD2F37717888"
+    },
+    {
+      "path": "vectors\\r012_card_10_size_53_angle_62p5.png",
+      "sha256": "1CC874AAC0D61350961E8342D91C7711637C951F408411CC698A9B7F4C19C17A"
+    },
+    {
+      "path": "vectors\\r013_card_10_size_53_angle_152p5.png",
+      "sha256": "0FFC72C38E88A38D3CA43212BD21008508C1FC4898287075C879A677A03D6B8B"
+    },
+    {
+      "path": "vectors\\r014_card_10_size_53_angle_242p5.png",
+      "sha256": "FFE6328D03532EB617D85F7BC8EEBF0987E0E079A74BF833E6A22A67349A73CF"
+    },
+    {
+      "path": "vectors\\r015_card_10_size_53_angle_332p5.png",
+      "sha256": "69E25F0C72842B450AA5BB97B22BC0BC1479200B483FED2D67DEA26C1E582D9B"
+    },
+    {
+      "path": "vectors\\r016_card_10_size_69_angle_17p5.png",
+      "sha256": "A67FA6D04C2098E016213E30A81B908D9E16CD01749C63E4F64809383C33E952"
+    },
+    {
+      "path": "vectors\\r017_card_10_size_69_angle_62p5.png",
+      "sha256": "BC81E134230BF9F22E94D3311BCE5BBFE83DEA8AD62FA2222F7605E0541E0EAA"
+    },
+    {
+      "path": "vectors\\r018_card_10_size_69_angle_152p5.png",
+      "sha256": "0B89991E02D7131EA494AA8FD3447210B1C79E2258F8E82755183E75FAE123DD"
+    },
+    {
+      "path": "vectors\\r019_card_10_size_69_angle_242p5.png",
+      "sha256": "B1EB67FB030DB873F10062109D14DBDF92D19E42EAAEA68DE4C7574B28006857"
+    },
+    {
+      "path": "vectors\\r020_card_10_size_69_angle_332p5.png",
+      "sha256": "72124146DBA27EEB2AC573C924F2C6DE31F1B874F80236508119E8932DC7E4FB"
+    },
+    {
+      "path": "vectors\\r021_card_10_size_77_angle_17p5.png",
+      "sha256": "1CDCE4E7EABBB06965C7B9103C56226D5BBC07D8F3DFC9A80BA50C1F4DA5ED03"
+    },
+    {
+      "path": "vectors\\r022_card_10_size_77_angle_62p5.png",
+      "sha256": "34148F9802E0BAA240944D4C5AE8DBD35048CA85AA0EF0A8131568C93A4B74F1"
+    },
+    {
+      "path": "vectors\\r023_card_10_size_77_angle_152p5.png",
+      "sha256": "0B72BF348EF5FA3074BC69C26A852C76FE7FB81CD29FE0CEF7477033A1C3B9DE"
+    },
+    {
+      "path": "vectors\\r024_card_10_size_77_angle_242p5.png",
+      "sha256": "5D84A1D1B14075FB1A36C4C926D51F942FA0440B6EF02FD954DDB8D80D7B0A05"
+    },
+    {
+      "path": "vectors\\r025_card_10_size_77_angle_332p5.png",
+      "sha256": "6A5BF8AC021E0D3F412806D814069BABC5E6BFCAEB1E70B28BD7F687A7EC0A52"
+    },
+    {
+      "path": "vectors\\r026_card_10_soft_paper_edge.png",
+      "sha256": "85830FD6853C14DD3A7B58D13B6FBE9F1884F59A226AC28673FCB1D296287B4F"
+    },
+    {
+      "path": "vectors\\r027_card_11_angle_0.mask.mem",
+      "sha256": "E193FB27CA895C12DBA59E68AAC56AF04B51C5851E8FA74C6DAC1AC3B3C43EAD"
+    },
+    {
+      "path": "vectors\\r027_card_11_angle_0.png",
+      "sha256": "DBF7DC6BC5D3F639FDBE7B119AF456C639ACAF58B24CEA3615E0C07E371C74B7"
+    },
+    {
+      "path": "vectors\\r027_card_11_angle_0.replay.mem",
+      "sha256": "00D06C8666B72EB844EA6D115C77E3C6AAAE340342EDC119AE3FB551EB41601E"
+    },
+    {
+      "path": "vectors\\r027_card_11_angle_0.rgb.mem",
+      "sha256": "3C43E401D551E012C0B498D986C4CE4143CD3461B16ABD6760C1EB5AFB0472C0"
+    },
+    {
+      "path": "vectors\\r028_card_11_angle_90.mask.mem",
+      "sha256": "48EE03D97B227ABC6D9B6652D8CDFBBDECB08D875376802B61C847C9A048807F"
+    },
+    {
+      "path": "vectors\\r028_card_11_angle_90.png",
+      "sha256": "42BB14CE9182814DC75049A6F1F5AF649435CDDBF10BB319EDB2DCF78CF1CC57"
+    },
+    {
+      "path": "vectors\\r028_card_11_angle_90.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r028_card_11_angle_90.rgb.mem",
+      "sha256": "7941A9397EBFF1CA8C65F41D9138C3C058D93572793F7AB02A0DEC7A32DD8C23"
+    },
+    {
+      "path": "vectors\\r029_card_11_angle_180.mask.mem",
+      "sha256": "49AF3E2656C999EF90179B3DA20355585E4705D5AAD1FD921154B3DCF738A4C0"
+    },
+    {
+      "path": "vectors\\r029_card_11_angle_180.png",
+      "sha256": "92B1E07617D76E755673421A4A52934692FB2B31400BBEB2AF2B1E87E4A18726"
+    },
+    {
+      "path": "vectors\\r029_card_11_angle_180.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r029_card_11_angle_180.rgb.mem",
+      "sha256": "9BAC6B9F000410AE4BFF3C8E4A6CB5D2847A1C8E679C28A911687C7373A02748"
+    },
+    {
+      "path": "vectors\\r030_card_11_angle_270.mask.mem",
+      "sha256": "47CB92E80C8E909D738F4E8E6F0C183F857DAFA3238B3E29B0FD9BA9B3C74900"
+    },
+    {
+      "path": "vectors\\r030_card_11_angle_270.png",
+      "sha256": "39224270468BD27FB1FC6650D40E21084DC73E02C1A7E9DB6F322440C352ED32"
+    },
+    {
+      "path": "vectors\\r030_card_11_angle_270.replay.mem",
+      "sha256": "C54808C99EC0408279F388F94376853625BB296A7BFF38B901C52931AABE9327"
+    },
+    {
+      "path": "vectors\\r030_card_11_angle_270.rgb.mem",
+      "sha256": "0120A3B84FB587379E6DC2CF91FC89EEA49FEF41A0514BC40135B9A9E00DC733"
+    },
+    {
+      "path": "vectors\\r031_card_11_angle_2p5.mask.mem",
+      "sha256": "04EC2C9617183F130024A0F03F103844F47C5CAAD95A70B5DD160751EAF37B17"
+    },
+    {
+      "path": "vectors\\r031_card_11_angle_2p5.png",
+      "sha256": "CC2A5D76F0FD4C041B6DF780D84C0F28D5247EC4D49AC3DD95D88130D776E9BB"
+    },
+    {
+      "path": "vectors\\r031_card_11_angle_2p5.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r031_card_11_angle_2p5.rgb.mem",
+      "sha256": "61CEB6F5D8BC7153BD060BA0846782BEEFB03B754FD8394AB4CD5BA767216E9B"
+    },
+    {
+      "path": "vectors\\r032_card_11_angle_87p5.mask.mem",
+      "sha256": "FD42AA0CB386D056F79CC7727D7B4300FF294697EBF0BD061ABF3E356087D752"
+    },
+    {
+      "path": "vectors\\r032_card_11_angle_87p5.png",
+      "sha256": "D89C16D4B275B964A81C6C2D80598DFB76663ADF061AFB47CD42ECB107F274CE"
+    },
+    {
+      "path": "vectors\\r032_card_11_angle_87p5.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r032_card_11_angle_87p5.rgb.mem",
+      "sha256": "B4B4CD8A7C2D7310A6E64D234CCE9070C9D2E380886B92750FCB76CD3C444428"
+    },
+    {
+      "path": "vectors\\r033_card_11_angle_177p5.mask.mem",
+      "sha256": "932A8537C58A9869021B8AA21DCA419B6AB0510148715D85A496BEE4EF5EF402"
+    },
+    {
+      "path": "vectors\\r033_card_11_angle_177p5.png",
+      "sha256": "5FD73F2BEFFDA30E4AB63E73AE7C6D7F58113BC07804F400BB6F73C54DD3AAE4"
+    },
+    {
+      "path": "vectors\\r033_card_11_angle_177p5.replay.mem",
+      "sha256": "DF27555A7D6D0F12D8CD2C799FFF46CCF6BDAD7DE3BD16C194967926F0B2D765"
+    },
+    {
+      "path": "vectors\\r033_card_11_angle_177p5.rgb.mem",
+      "sha256": "DB0EBEAAC1D16DC5AE544C51539149F156DF022543C5136B89DF66476707B8C8"
+    },
+    {
+      "path": "vectors\\r034_card_11_angle_267p5.mask.mem",
+      "sha256": "625F00C399E8ACB511C42A07273202899B6751930C0F0DEE5FB1905FD3716665"
+    },
+    {
+      "path": "vectors\\r034_card_11_angle_267p5.png",
+      "sha256": "B75E47D06BBBAC38E6BC4F4F62A1BD24C8B2FA2AB5924B6106EE6066D5D5BC8D"
+    },
+    {
+      "path": "vectors\\r034_card_11_angle_267p5.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r034_card_11_angle_267p5.rgb.mem",
+      "sha256": "AFF3956F35F9E0F51342B94794DEEC8879C1DC0BFCB81A332AFFD2D7A9D1BBDA"
+    },
+    {
+      "path": "vectors\\r035_card_11_size_53_angle_17p5.png",
+      "sha256": "948ADADA28532741AB5BFC34BC3F49E426335CD32A8CF0E52DC584B8E5F61A39"
+    },
+    {
+      "path": "vectors\\r036_card_11_size_53_angle_62p5.png",
+      "sha256": "DD18191BE7DE814E3D318D3666DC6FA6036E047588C99E0BB42BCA5D661788EC"
+    },
+    {
+      "path": "vectors\\r037_card_11_size_53_angle_152p5.png",
+      "sha256": "88836C45614E4201C3AF0E024084C8CE5AB385A4F0F3AA1A71C57BA3F0257574"
+    },
+    {
+      "path": "vectors\\r038_card_11_size_53_angle_242p5.png",
+      "sha256": "28F4B2E543846B2044CD2738C973BDC97CCCAA7ACF5FAE07F83A160189C99477"
+    },
+    {
+      "path": "vectors\\r039_card_11_size_53_angle_332p5.png",
+      "sha256": "1AB7BB4D841EF3574B7626CAC817D2DD65CB2D6E11FC149DB5E0679D9807884C"
+    },
+    {
+      "path": "vectors\\r040_card_11_size_69_angle_17p5.png",
+      "sha256": "1B30489B23805F39AAFB8EADF02D866530D221EA76F208A5875F9CBA3C19DAF2"
+    },
+    {
+      "path": "vectors\\r041_card_11_size_69_angle_62p5.png",
+      "sha256": "30E5294E901842E7296A630741285F6D6EA4202769332867A372ABA6289D3155"
+    },
+    {
+      "path": "vectors\\r042_card_11_size_69_angle_152p5.png",
+      "sha256": "FAEBA2E668CA91AC0E0504136779E5511E5046BDF840A9937DBC6DD612BDD870"
+    },
+    {
+      "path": "vectors\\r043_card_11_size_69_angle_242p5.png",
+      "sha256": "DC4FE487780F57E1A327AB8A360FB236C9F31F86DAAF6327151D34286DBB62F7"
+    },
+    {
+      "path": "vectors\\r044_card_11_size_69_angle_332p5.png",
+      "sha256": "AF44D7F34C73B28AD8D1925FE56F652FEA91DBA14C9DE3D12F5EDEFACC3D41EA"
+    },
+    {
+      "path": "vectors\\r045_card_11_size_77_angle_17p5.png",
+      "sha256": "192CD6140D10B70B692637ACC5EB1989FC323165B2EFF864768FC4B08CFDE978"
+    },
+    {
+      "path": "vectors\\r046_card_11_size_77_angle_62p5.png",
+      "sha256": "798D8F4CB1307BE88BC9112726CCEC5682B255BEBE4DBF972EFA6A9D2E045C6B"
+    },
+    {
+      "path": "vectors\\r047_card_11_size_77_angle_152p5.png",
+      "sha256": "809BD42E1E0B6E3F5E8A0D3C2E0E61AC3A0161FAC8CF9840772EA9EEC83EDEA6"
+    },
+    {
+      "path": "vectors\\r048_card_11_size_77_angle_242p5.png",
+      "sha256": "479D573ACD3C6C20770B61A0D4E1F1328A54D43CD495B875DE0C66BD7BBF3FB0"
+    },
+    {
+      "path": "vectors\\r049_card_11_size_77_angle_332p5.png",
+      "sha256": "C121913E7F9CD23D030E5FB4C366BEC89ECCD40A2ABBB3A3395C2FDD37FEC739"
+    },
+    {
+      "path": "vectors\\r050_card_11_soft_paper_edge.png",
+      "sha256": "76A11383355FBB79D141F79AD54D797A6524E53A90BE2FB3FE78539A9DB08CFD"
+    },
+    {
+      "path": "vectors\\r051_card_12_angle_0.mask.mem",
+      "sha256": "38756840217E0C1E3ABE5F8602E6D31E9E3C7EAAA525F313B376AAACCD45A9B6"
+    },
+    {
+      "path": "vectors\\r051_card_12_angle_0.png",
+      "sha256": "70624A7982A760001588AE4CDE85FC9D10F14B2DDF50BBB86639CF6E4F750D3C"
+    },
+    {
+      "path": "vectors\\r051_card_12_angle_0.replay.mem",
+      "sha256": "A7D430F5F9E2864D07DA193B13F6AD1C4F12E572FAB5F1E94427C3EBB48A2477"
+    },
+    {
+      "path": "vectors\\r051_card_12_angle_0.rgb.mem",
+      "sha256": "59D3A0E70E3B060231C1E7B43BB2D765F98BAEE39D2D54E413EDB01ECFC4D7B8"
+    },
+    {
+      "path": "vectors\\r052_card_12_angle_90.mask.mem",
+      "sha256": "6F022A52A89423C9A4D6E4381853B94741DE0370C8D8C36D44C6A0F0539667F5"
+    },
+    {
+      "path": "vectors\\r052_card_12_angle_90.png",
+      "sha256": "0B3B81BCEB2EEA18BB45A1490899854A13822605B87F63C0B0656BC416F80765"
+    },
+    {
+      "path": "vectors\\r052_card_12_angle_90.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r052_card_12_angle_90.rgb.mem",
+      "sha256": "4897F2F44EF8FE6D4E1447A2F4C46148EBE5413172FBDE3FD54C900547FB2B3A"
+    },
+    {
+      "path": "vectors\\r053_card_12_angle_180.mask.mem",
+      "sha256": "B118857F72A48912F3C89C8D3D12720FFC015FD2205F27C623C65E8807243CC2"
+    },
+    {
+      "path": "vectors\\r053_card_12_angle_180.png",
+      "sha256": "6F6D1398611BB76F0B2C5E59D303ED293CFA86191E729DFF55A55F0BB05C2909"
+    },
+    {
+      "path": "vectors\\r053_card_12_angle_180.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r053_card_12_angle_180.rgb.mem",
+      "sha256": "024A8EA74C7C994C3EDE6556EE7E325CEBDDE9692020286D4F989E2FFEF466B4"
+    },
+    {
+      "path": "vectors\\r054_card_12_angle_270.mask.mem",
+      "sha256": "146CDA3BF3D12BCB261366F26B62EBE408EDDC7BBFA717FA7E5BD0EE4E1BDF36"
+    },
+    {
+      "path": "vectors\\r054_card_12_angle_270.png",
+      "sha256": "328600419AD1781F6E8ED815A100F4D1B07C96A152C516A18ABA394D95236307"
+    },
+    {
+      "path": "vectors\\r054_card_12_angle_270.replay.mem",
+      "sha256": "3736E9C47EB87D860284E4ED2ECC1865DF76083409452CE1DFB7EA56F06AD572"
+    },
+    {
+      "path": "vectors\\r054_card_12_angle_270.rgb.mem",
+      "sha256": "26047F831EFC1E21B5D1412254213841817C0C6FA76E2540F434F638457A218E"
+    },
+    {
+      "path": "vectors\\r055_card_12_angle_2p5.mask.mem",
+      "sha256": "DC6C38B9218F08F7278CF6C110040CF6B91A0AD5BC66C53E2B96409D81E1DE54"
+    },
+    {
+      "path": "vectors\\r055_card_12_angle_2p5.png",
+      "sha256": "BD396AEB4CB55ACF1FFB65EB3001F6C2B80B41F98F58B94D35750DE5123A1E3A"
+    },
+    {
+      "path": "vectors\\r055_card_12_angle_2p5.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r055_card_12_angle_2p5.rgb.mem",
+      "sha256": "E5B598C9379689164AEDD07A9FA08D8E8DA7E02D6E9097C149B1DDB168F1D7D2"
+    },
+    {
+      "path": "vectors\\r056_card_12_angle_87p5.mask.mem",
+      "sha256": "DAAFEE608A3C872AA911E05F9ECA3E5B3F492448B9BB312A9E40CEB199F14C59"
+    },
+    {
+      "path": "vectors\\r056_card_12_angle_87p5.png",
+      "sha256": "76CD792A220D38574B737E8903547E33F700F47B7DB2AA35EA5C1C626F1E416B"
+    },
+    {
+      "path": "vectors\\r056_card_12_angle_87p5.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r056_card_12_angle_87p5.rgb.mem",
+      "sha256": "4D0260513312A2E73C3764B17784E15C674561E34D10AF5AFB265F95B995A801"
+    },
+    {
+      "path": "vectors\\r057_card_12_angle_177p5.mask.mem",
+      "sha256": "B56E2C19A9713C41F432168CA09E7681067624B85B7FC8DDDCA23A75F479336A"
+    },
+    {
+      "path": "vectors\\r057_card_12_angle_177p5.png",
+      "sha256": "5C67A473630723847DE917729A2B990227131A77EACD08DF3572D2FDF8B362CB"
+    },
+    {
+      "path": "vectors\\r057_card_12_angle_177p5.replay.mem",
+      "sha256": "CC5EDDF63E1548340B3B6DA895DF5044BE147512BB61514810FA94C0487B3ADD"
+    },
+    {
+      "path": "vectors\\r057_card_12_angle_177p5.rgb.mem",
+      "sha256": "69F1F6816692B704CB379E1CFB1B1CC1EF4F4EA6C58AAAD84959573D31D05DCA"
+    },
+    {
+      "path": "vectors\\r058_card_12_angle_267p5.mask.mem",
+      "sha256": "2AA621678EADBBDA8ED51B20D25097FC9DC759149311020043CE0B7DFD02B7CD"
+    },
+    {
+      "path": "vectors\\r058_card_12_angle_267p5.png",
+      "sha256": "BC9D3D8C0977FA15AA0F36914B766B748DDB1D2E76365664BB6C173475FDFEC6"
+    },
+    {
+      "path": "vectors\\r058_card_12_angle_267p5.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r058_card_12_angle_267p5.rgb.mem",
+      "sha256": "DCA6C47B58FE2F80E21C4E8073D7C97846A47F8BB7CA186B2B6FB6CDF92A20CD"
+    },
+    {
+      "path": "vectors\\r059_card_12_size_53_angle_17p5.png",
+      "sha256": "7DD5A2FC476908623302F5A092A937D81EB724BF8387B129B14608C767111D38"
+    },
+    {
+      "path": "vectors\\r060_card_12_size_53_angle_62p5.png",
+      "sha256": "447DC09812E6D35028DCE959D7C27D0E68A6ED7724F8E9DB407DC41C12438773"
+    },
+    {
+      "path": "vectors\\r061_card_12_size_53_angle_152p5.png",
+      "sha256": "C09D901C10EADFAD70E90F4E0ED1174BCAFBF4E0CE739106E0CC726EF8D4F413"
+    },
+    {
+      "path": "vectors\\r062_card_12_size_53_angle_242p5.png",
+      "sha256": "1898234DAA52163FA5BADE4EDD991F621E797E19505127585CF8C254E2AFB901"
+    },
+    {
+      "path": "vectors\\r063_card_12_size_53_angle_332p5.png",
+      "sha256": "B9DC71E83F3F30748BD797C7C6B6A1D619292D53182CDEC68CF045A4F64A27EA"
+    },
+    {
+      "path": "vectors\\r064_card_12_size_69_angle_17p5.png",
+      "sha256": "42BEC72F4A3B2CA91AB65C7E0E4AEB539E441741E45C99C3311CE43976521186"
+    },
+    {
+      "path": "vectors\\r065_card_12_size_69_angle_62p5.png",
+      "sha256": "5BE4BAE3667AA042A46D899188AD625E605235BE726D64E1004E28265C347945"
+    },
+    {
+      "path": "vectors\\r066_card_12_size_69_angle_152p5.png",
+      "sha256": "247CEADDB23D676DFBC978E3F2BEFDAE32A0390C9EB63E4F16F0F31AD824F2DC"
+    },
+    {
+      "path": "vectors\\r067_card_12_size_69_angle_242p5.png",
+      "sha256": "438A1F2B20B478C58179F030EE98C6610E31CE91935786A23698F5DBFC9523F3"
+    },
+    {
+      "path": "vectors\\r068_card_12_size_69_angle_332p5.png",
+      "sha256": "A310793BE6E5D41C78B5CBD6A8AC9A6BFCB40BEB4844AC6B2D8BC22E0BDDD943"
+    },
+    {
+      "path": "vectors\\r069_card_12_size_77_angle_17p5.png",
+      "sha256": "D6923445B7647C1B37E3F668B8F50997F4A4FA78D277A24BFE47E89F7CF94996"
+    },
+    {
+      "path": "vectors\\r070_card_12_size_77_angle_62p5.png",
+      "sha256": "479E2E0283547E178FB3EDAB8CFE8045BD37F99634CA70155054ED3B8E309A87"
+    },
+    {
+      "path": "vectors\\r071_card_12_size_77_angle_152p5.png",
+      "sha256": "CA6AD225C1618E7AF43A72F328B5F6EDB181E7915A6B0F231CF847692FDB54A8"
+    },
+    {
+      "path": "vectors\\r072_card_12_size_77_angle_242p5.png",
+      "sha256": "22B8FACF50EF10DB003A1190D22ED26B3AB379341384EE7743EB3693063FAF44"
+    },
+    {
+      "path": "vectors\\r073_card_12_size_77_angle_332p5.png",
+      "sha256": "5FB748413C0B8F8AAF3F337261B8D26F7F28DEC0FDEF4F7BEB04DB632D442F38"
+    },
+    {
+      "path": "vectors\\r074_card_12_soft_paper_edge.png",
+      "sha256": "2BFFA8CCFBE9BBE23435B499D540568431D3F9F847126C374177FCBB28C5E9E5"
+    },
+    {
+      "path": "vectors\\r075_card_13_angle_0.mask.mem",
+      "sha256": "5317A76FC3986F32619F72ECA49B18DB26DD7AFBA598166F1A0332B8A5FC0D07"
+    },
+    {
+      "path": "vectors\\r075_card_13_angle_0.png",
+      "sha256": "2E3DCF238F2AE25555E0BABE40EDFD6EC28B60D76F27228D9FEFE55D87CADE92"
+    },
+    {
+      "path": "vectors\\r075_card_13_angle_0.replay.mem",
+      "sha256": "7A3D7D7C9D64E8BBD54E04C2B3A2900C26DE68A412B2D50ABFF0C7A32E91C3A0"
+    },
+    {
+      "path": "vectors\\r075_card_13_angle_0.rgb.mem",
+      "sha256": "FEF7C269E615CF7391ED56C7674782E69A38E83B0EEFF463BEADE32644DE4BE5"
+    },
+    {
+      "path": "vectors\\r076_card_13_angle_90.mask.mem",
+      "sha256": "2EA0EB53A8EB974FA093EA286BE93589A3FB525BFFB6967B344646CE2EF0650C"
+    },
+    {
+      "path": "vectors\\r076_card_13_angle_90.png",
+      "sha256": "6E7D2AFF7DD364AAB008BB57C68AD4626A88BD1C1A5C28CD4408B05EA5D1441A"
+    },
+    {
+      "path": "vectors\\r076_card_13_angle_90.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r076_card_13_angle_90.rgb.mem",
+      "sha256": "024219E7638812B8C3960795474607C58B3E27E469EB8E4EBB0AAE612C595D7B"
+    },
+    {
+      "path": "vectors\\r077_card_13_angle_180.mask.mem",
+      "sha256": "A18EEE00E2A9097359E7F5CEB8CCEC057491908A6DCA935D43C393E5AB8F5078"
+    },
+    {
+      "path": "vectors\\r077_card_13_angle_180.png",
+      "sha256": "E7DA400AB226B6FC54FF1A2D3130208A4AE407946F583331E840E21A33F382D1"
+    },
+    {
+      "path": "vectors\\r077_card_13_angle_180.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r077_card_13_angle_180.rgb.mem",
+      "sha256": "E02164E88C51C9B507A0D69EF28DF610D7379CFAD6A005FC89A5662A9C8AC9AE"
+    },
+    {
+      "path": "vectors\\r078_card_13_angle_270.mask.mem",
+      "sha256": "81A884006F9B9335BF4EB1DE493A831D5D3C231EDC3F7559ECF404C93C1AA048"
+    },
+    {
+      "path": "vectors\\r078_card_13_angle_270.png",
+      "sha256": "395A5E95897D96F5733888F3FDA2EEC28360DE7946F7F12F6799ABC6A706DB40"
+    },
+    {
+      "path": "vectors\\r078_card_13_angle_270.replay.mem",
+      "sha256": "E850C0282CEB4EFFB25CF57C39183A8667C540B750F47ADEBF63D440B0B23095"
+    },
+    {
+      "path": "vectors\\r078_card_13_angle_270.rgb.mem",
+      "sha256": "A17D154C1F5B524A8929D9A33BB9595308BF8A8E229AB4448C7E3F4DD3CFAA86"
+    },
+    {
+      "path": "vectors\\r079_card_13_angle_2p5.mask.mem",
+      "sha256": "64FC142FCF39B39F5D998EB1DE3E9CD008923EFFB82D3E9C26763A0A347EFE72"
+    },
+    {
+      "path": "vectors\\r079_card_13_angle_2p5.png",
+      "sha256": "D37B1EABFED417FEC92476C2BDB35CC148DB7E33B2617B83049E64EB94BD2AA0"
+    },
+    {
+      "path": "vectors\\r079_card_13_angle_2p5.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r079_card_13_angle_2p5.rgb.mem",
+      "sha256": "48EB3F69F69A66FEF55934AF23BE7950C2B7C7B9E7F9B7BB78970FE71AAD4370"
+    },
+    {
+      "path": "vectors\\r080_card_13_angle_87p5.mask.mem",
+      "sha256": "5AA2A927C359AF8F3B00BB0BA80E6405EFB44C5095A95C8181737CFBBDF5F826"
+    },
+    {
+      "path": "vectors\\r080_card_13_angle_87p5.png",
+      "sha256": "20AE0F5D1EDE8A8F44F0342F5521A1FE216453AD3E6A7D07DA166992CA4CAA17"
+    },
+    {
+      "path": "vectors\\r080_card_13_angle_87p5.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r080_card_13_angle_87p5.rgb.mem",
+      "sha256": "CEF50D45F827A154EA08330F92AE9B2D22B073E5B9EF9FC5881C73F95EB13E0C"
+    },
+    {
+      "path": "vectors\\r081_card_13_angle_177p5.mask.mem",
+      "sha256": "5073E2D2D4F8DD553818E0F4EB4D3E464D6DC46BEAE5B7DE6E3225748200FBD7"
+    },
+    {
+      "path": "vectors\\r081_card_13_angle_177p5.png",
+      "sha256": "5320A4992BE8D952CF04C9DDC1B7130544B05F930E2B2584DDAC3F126B4E3260"
+    },
+    {
+      "path": "vectors\\r081_card_13_angle_177p5.replay.mem",
+      "sha256": "B7FDEABC2C373EF8AA4599625D13AE3E869489A38B5EE71B60202AE50F0455CB"
+    },
+    {
+      "path": "vectors\\r081_card_13_angle_177p5.rgb.mem",
+      "sha256": "98280C85F0E9C69ECE6B4FEB3C40F7AE84BE7DA631716AE9C61F3D2B72CEADE5"
+    },
+    {
+      "path": "vectors\\r082_card_13_angle_267p5.mask.mem",
+      "sha256": "21BE2EBA39818C60BECE13D666118993E0D189A5CB93C8015ACDC8711DE34282"
+    },
+    {
+      "path": "vectors\\r082_card_13_angle_267p5.png",
+      "sha256": "E82D0BD05F67B287EEA72C727ED3B3B08A3D5F9CD6DA34543261E4D8FC050269"
+    },
+    {
+      "path": "vectors\\r082_card_13_angle_267p5.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r082_card_13_angle_267p5.rgb.mem",
+      "sha256": "FAC0051C55BB32F4105B32EE5768C841754D04A37D557E47176F44DD116498E7"
+    },
+    {
+      "path": "vectors\\r083_card_13_size_53_angle_17p5.png",
+      "sha256": "CAABE516876C560C7737E632DFA4D9EE48FC96A7C7D2A2D4E9B20C1233F2B767"
+    },
+    {
+      "path": "vectors\\r084_card_13_size_53_angle_62p5.png",
+      "sha256": "2ED083309DCDB9F3B36FDD4BB6B6186F0130A7C2F2147C6FD3D2CC3E92EB7793"
+    },
+    {
+      "path": "vectors\\r085_card_13_size_53_angle_152p5.png",
+      "sha256": "76FE7249259E6845B4AE97CF2902765FA18E6A24C0480B1F46E5768377DF33FB"
+    },
+    {
+      "path": "vectors\\r086_card_13_size_53_angle_242p5.png",
+      "sha256": "C621412842C0D1F771085F5864CE608EBF8DDD9C5A9B5BD024883BBC10BE842B"
+    },
+    {
+      "path": "vectors\\r087_card_13_size_53_angle_332p5.png",
+      "sha256": "7A99591659BCB1E40EFCEC030FC803972F6428909DB94A0CE012DA0AD862836B"
+    },
+    {
+      "path": "vectors\\r088_card_13_size_69_angle_17p5.png",
+      "sha256": "31814902EC0F3ECA65EC64F1211660B6F35835AE1DB702E4D9B72B0671ED3146"
+    },
+    {
+      "path": "vectors\\r089_card_13_size_69_angle_62p5.png",
+      "sha256": "E347110189F52096F01992628F38689BF4CBD1F6CD584C5DAA8C89FB7AEB470A"
+    },
+    {
+      "path": "vectors\\r090_card_13_size_69_angle_152p5.png",
+      "sha256": "98E9CF800E56941BFD8AA33BE09355308624E31E8819CD00A8E66AEA1BF6708A"
+    },
+    {
+      "path": "vectors\\r091_card_13_size_69_angle_242p5.png",
+      "sha256": "16C3BA1EFD990A953DC5AC96E8F2B57C7DE84EA2BC9BEECC7B38D49F4567E154"
+    },
+    {
+      "path": "vectors\\r092_card_13_size_69_angle_332p5.png",
+      "sha256": "F866D83043885E37C554CFE1D67FB322A9FCC5AEF57D924134A3524713E1222E"
+    },
+    {
+      "path": "vectors\\r093_card_13_size_77_angle_17p5.png",
+      "sha256": "2E637AA631743772419114B871C4DAA30555FABED384317E239E1A4F0CD38A5D"
+    },
+    {
+      "path": "vectors\\r094_card_13_size_77_angle_62p5.png",
+      "sha256": "9389109E1865209CA115E147066DB7F11C1BE465C6C583F9F2ACE2749DC61532"
+    },
+    {
+      "path": "vectors\\r095_card_13_size_77_angle_152p5.png",
+      "sha256": "9B0DACD158CD557F75029E9A69862B8E91E5AFB15E58A16D8F8A58FB6B9D9BE4"
+    },
+    {
+      "path": "vectors\\r096_card_13_size_77_angle_242p5.png",
+      "sha256": "90B4619021B5FBA2BEF2329CFDC06C82D574757AF1E3527C2E1E31716838B1C8"
+    },
+    {
+      "path": "vectors\\r097_card_13_size_77_angle_332p5.png",
+      "sha256": "262D1D237792A5C3F1020874C4B19D527F9C2CD13647E9FAD34A18E2EBE9BB93"
+    },
+    {
+      "path": "vectors\\r098_card_13_soft_paper_edge.png",
+      "sha256": "FE0F7031C87D3846C49FB83D32060830219FA3FFB53B6C0B078C969D7D90C44E"
+    },
+    {
+      "path": "vectors\\r099_card_14_angle_0.mask.mem",
+      "sha256": "F11D53C806DE178243CFB1C3A3F07E5EF2D4C175B26E896608D8FA8D807CDCE7"
+    },
+    {
+      "path": "vectors\\r099_card_14_angle_0.png",
+      "sha256": "A3FA46853B2DEEF0BFD75AB3B98077B330424BA0DD79E41728E807306C6A2342"
+    },
+    {
+      "path": "vectors\\r099_card_14_angle_0.replay.mem",
+      "sha256": "A05BA01F34C58482A019D3FA14C0EC8D2A19CDA8809B807D65BBF07DACF5BF54"
+    },
+    {
+      "path": "vectors\\r099_card_14_angle_0.rgb.mem",
+      "sha256": "18BDD50F8CC0E24899EB0EA6384F532DB99F2773B3B7546285912F5751F9D574"
+    },
+    {
+      "path": "vectors\\r100_card_14_angle_90.mask.mem",
+      "sha256": "5F4B0730D37AFA51316DB9D239C0F764FB6F38080F0CB08A6673CB82E85354C9"
+    },
+    {
+      "path": "vectors\\r100_card_14_angle_90.png",
+      "sha256": "0AB255FE5D6AB78AF1F9E5378685B122F1443E5DAE441974443852BB3457C9FB"
+    },
+    {
+      "path": "vectors\\r100_card_14_angle_90.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r100_card_14_angle_90.rgb.mem",
+      "sha256": "AD0EE07367990BDB10FF8281E65F72EC6F459E640E4D6BAE059681D644559EF2"
+    },
+    {
+      "path": "vectors\\r101_card_14_angle_180.mask.mem",
+      "sha256": "1B9F6D86782438B5C9DDD80A16EF7CEB053300252B17B63BDECD29F11EC3692F"
+    },
+    {
+      "path": "vectors\\r101_card_14_angle_180.png",
+      "sha256": "7BA6C7131B8678D6BAE9F25F0E379B4F56039F6CC3CA327BA8D3C49E73A2F5D1"
+    },
+    {
+      "path": "vectors\\r101_card_14_angle_180.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r101_card_14_angle_180.rgb.mem",
+      "sha256": "964DD173A3D6DE9664CA83CF3605824EC9E632B3ADDD5CA36B973DF505B7D3DB"
+    },
+    {
+      "path": "vectors\\r102_card_14_angle_270.mask.mem",
+      "sha256": "1ABF2649B4BB7DD0449041294BCE46AE38480B63CB0DFE7B8F9DA775D4A2CF43"
+    },
+    {
+      "path": "vectors\\r102_card_14_angle_270.png",
+      "sha256": "500E58AAC7249D2A57E500F4C5B07F67D98823289F55B8A981BCD50556CFA8F8"
+    },
+    {
+      "path": "vectors\\r102_card_14_angle_270.replay.mem",
+      "sha256": "3A19E4F8604662C7580B3BB27969F2CF29E553BC95183103B94CA8FF8F2D612D"
+    },
+    {
+      "path": "vectors\\r102_card_14_angle_270.rgb.mem",
+      "sha256": "E067CB1A33DD73451243CE6DE233FE7459FE7CB2949CEDFBAD0A72155673B17E"
+    },
+    {
+      "path": "vectors\\r103_card_14_angle_2p5.mask.mem",
+      "sha256": "EE1C5BB899A14AAF0CBE0F8A7A602A745C1D5644C3B8865851422149AA0D39DD"
+    },
+    {
+      "path": "vectors\\r103_card_14_angle_2p5.png",
+      "sha256": "1D1662BF9A1D7DE43C2053284D740F010E16287A6896A74A59545E1D7AED62D6"
+    },
+    {
+      "path": "vectors\\r103_card_14_angle_2p5.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r103_card_14_angle_2p5.rgb.mem",
+      "sha256": "9E7243B303774C86D78D79CF0D2AE3E62444C4A041129E69BA4676C045EE64B4"
+    },
+    {
+      "path": "vectors\\r104_card_14_angle_87p5.mask.mem",
+      "sha256": "8FC9AA7160663ABB5CB3C0B4C656D34118AABE00F4882F0FE4654708B4519237"
+    },
+    {
+      "path": "vectors\\r104_card_14_angle_87p5.png",
+      "sha256": "AF63FA02FB705CDAFD272D457D5EE83E5DF4AF2978C01321AD27B2998511A334"
+    },
+    {
+      "path": "vectors\\r104_card_14_angle_87p5.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r104_card_14_angle_87p5.rgb.mem",
+      "sha256": "E1D74927C7B8CA42C8336AD61EFB822FFDE7D632ED9075B6CDD6C5915EF51D4B"
+    },
+    {
+      "path": "vectors\\r105_card_14_angle_177p5.mask.mem",
+      "sha256": "4317B5C9B3F8B147110106D8367C94147FFBE12A69926685ED30B278D880D390"
+    },
+    {
+      "path": "vectors\\r105_card_14_angle_177p5.png",
+      "sha256": "CA8E0092E40697132B5ED1531980748D8E9920692D5BC0DFB3171ECB5E53467E"
+    },
+    {
+      "path": "vectors\\r105_card_14_angle_177p5.replay.mem",
+      "sha256": "7C95A45D5ABF8D21370C5E9DDAE6D882093BD8C598CFFF273C132069533F5FD0"
+    },
+    {
+      "path": "vectors\\r105_card_14_angle_177p5.rgb.mem",
+      "sha256": "7E1731BFF9ECEE3DE452589E68F844F2E3E3EA532AC060DA14EB7076273FC2E4"
+    },
+    {
+      "path": "vectors\\r106_card_14_angle_267p5.mask.mem",
+      "sha256": "978C9865946355A9A0A3E9258F98DFED6E443C35168FCD6EC11F61EEC59B4B96"
+    },
+    {
+      "path": "vectors\\r106_card_14_angle_267p5.png",
+      "sha256": "7ECEDAF2F800D79F04D40B27B8C780A7F7E658352386B7A27FF38EBF65E6FE92"
+    },
+    {
+      "path": "vectors\\r106_card_14_angle_267p5.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r106_card_14_angle_267p5.rgb.mem",
+      "sha256": "ED25BB5813FE000E3265CA42B34A007EC9155E078F3E6653D8BE4C4C8DFFA8EE"
+    },
+    {
+      "path": "vectors\\r107_card_14_size_53_angle_17p5.png",
+      "sha256": "96CF4FC630AA4A35EAE7C5562D25EA60BC3FF645191DAF4BA583FF0E4479CBE7"
+    },
+    {
+      "path": "vectors\\r108_card_14_size_53_angle_62p5.png",
+      "sha256": "E3DA8FA8767C3506B48AB0369CC3BA5E2761A7FFEC5988B2842F27A454B30ACC"
+    },
+    {
+      "path": "vectors\\r109_card_14_size_53_angle_152p5.png",
+      "sha256": "40024380A12D63368128227AC8E4C6CF1A4781D28E669DE2DD3073E6B024A668"
+    },
+    {
+      "path": "vectors\\r110_card_14_size_53_angle_242p5.png",
+      "sha256": "55DD01C8368383D6CB4AFB061A953739248B02AD4123BC06E3B85CBBB5C3CD77"
+    },
+    {
+      "path": "vectors\\r111_card_14_size_53_angle_332p5.png",
+      "sha256": "E2AE36CA96289503BED003B2C1C7898714D10CA19E7630F4F18A7342B89B5277"
+    },
+    {
+      "path": "vectors\\r112_card_14_size_69_angle_17p5.png",
+      "sha256": "D9B33B0B2C00866AF328A6616A4B9D6D65A0D00665E261EF085F4471DE291B5B"
+    },
+    {
+      "path": "vectors\\r113_card_14_size_69_angle_62p5.png",
+      "sha256": "F475EE01E5438F40C1EE665C98A7509A412DAE43B380C46773491E23B4D0649C"
+    },
+    {
+      "path": "vectors\\r114_card_14_size_69_angle_152p5.png",
+      "sha256": "965139BAB282BB5EB66DFC1818DB9D7CF1212BD5523B328F13A17DF81C24C96A"
+    },
+    {
+      "path": "vectors\\r115_card_14_size_69_angle_242p5.png",
+      "sha256": "DBE074C2C06950FBDE9947357F3B9A05200FBAA07D5AA95E2CC5EFD7C70B45C9"
+    },
+    {
+      "path": "vectors\\r116_card_14_size_69_angle_332p5.png",
+      "sha256": "A5D44A77449FCDB61D3E18B815B1D5D95CEEC9282271125CD3BDFE40C4B883D5"
+    },
+    {
+      "path": "vectors\\r117_card_14_size_77_angle_17p5.png",
+      "sha256": "75C9D345549C3101E1A4145590072BA0A6655958CE63F9F73DA9358EDF476B56"
+    },
+    {
+      "path": "vectors\\r118_card_14_size_77_angle_62p5.png",
+      "sha256": "4D97C2AF623A6512016FC5935D276B9A00483AA80A486C0AF6D92439B5329741"
+    },
+    {
+      "path": "vectors\\r119_card_14_size_77_angle_152p5.png",
+      "sha256": "187E6190100AB8C55F6381DAD6CA33800C3D6B8AEC259319064E23305DD66260"
+    },
+    {
+      "path": "vectors\\r120_card_14_size_77_angle_242p5.png",
+      "sha256": "76E433784EA1A98D99FB4907711D5DD6100F6A85A74F87B88D7B5D84641F9D36"
+    },
+    {
+      "path": "vectors\\r121_card_14_size_77_angle_332p5.png",
+      "sha256": "367B13609A4AB830FF132544BE1D161B8E7BADB7BEE1AB6F29D920CBF50303F0"
+    },
+    {
+      "path": "vectors\\r122_card_14_soft_paper_edge.png",
+      "sha256": "7FDC20D0948676314BD207A98941C022F336441E622E4B5C4F5553818BF6E424"
+    },
+    {
+      "path": "vectors\\r123_legacy_008_empty_dark_soft_shadow.mask.mem",
+      "sha256": "2BCA579F59378B7E7B25BD50AE3E1D45BDAC174A5A0026D72ACCC479FCD1BAAA"
+    },
+    {
+      "path": "vectors\\r123_legacy_008_empty_dark_soft_shadow.png",
+      "sha256": "A049E6D03EAC65A44775518B0318462916D85AB8B5D0EDC6C7555CEBCCA2B847"
+    },
+    {
+      "path": "vectors\\r123_legacy_008_empty_dark_soft_shadow.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r123_legacy_008_empty_dark_soft_shadow.rgb.mem",
+      "sha256": "6B6E1E0DFF9B5B8CC3396305472E0540CF0887A4114231EF966754FE62427BB2"
+    },
+    {
+      "path": "vectors\\r124_legacy_013_empty_wood_noise.mask.mem",
+      "sha256": "2BCA579F59378B7E7B25BD50AE3E1D45BDAC174A5A0026D72ACCC479FCD1BAAA"
+    },
+    {
+      "path": "vectors\\r124_legacy_013_empty_wood_noise.png",
+      "sha256": "9EBA2D6F76091D28274B650A1C02D13325FFB974F8B108509837E34AD99BF6E7"
+    },
+    {
+      "path": "vectors\\r124_legacy_013_empty_wood_noise.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r124_legacy_013_empty_wood_noise.rgb.mem",
+      "sha256": "179D384A369F261D4D0233970FA54FAEE4C2382A113F44CD4F2B7CC66C5DE447"
+    },
+    {
+      "path": "vectors\\r125_legacy_122_card_10_cut_right.mask.mem",
+      "sha256": "2BCA579F59378B7E7B25BD50AE3E1D45BDAC174A5A0026D72ACCC479FCD1BAAA"
+    },
+    {
+      "path": "vectors\\r125_legacy_122_card_10_cut_right.png",
+      "sha256": "7B1F9D9AF6A532EB3B6385D3AE72E784858AC86DDEA223372BF3806D34400A5A"
+    },
+    {
+      "path": "vectors\\r125_legacy_122_card_10_cut_right.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r125_legacy_122_card_10_cut_right.rgb.mem",
+      "sha256": "BC11CF69EC3B9701B24F6725C463C9BEBD7E305E946D2C0B9389907CEAC0486F"
+    },
+    {
+      "path": "vectors\\r126_legacy_596_block_red_circle_white_36.mask.mem",
+      "sha256": "23ED4A9191A503A71126F6954B63B0E9E122567120DA2665E085209F8C3D159B"
+    },
+    {
+      "path": "vectors\\r126_legacy_596_block_red_circle_white_36.png",
+      "sha256": "184D73F013BAC578A452F1B069DF877BEC49FD0ED6B94FC29C9530894FEAC5D0"
+    },
+    {
+      "path": "vectors\\r126_legacy_596_block_red_circle_white_36.replay.mem",
+      "sha256": "223E23919177857EEF05BBE0C92C4D94B5396BDE990264C9AEE37905C3FBDC60"
+    },
+    {
+      "path": "vectors\\r126_legacy_596_block_red_circle_white_36.rgb.mem",
+      "sha256": "A865ED06EEC17BB7A669B0B048CCAB9A2293D6157A9FF8225D486EAAAC70EF0B"
+    },
+    {
+      "path": "vectors\\r127_legacy_608_block_red_square_dark_36.mask.mem",
+      "sha256": "7563FB2C9BD1C33E2C71F48DB7B29B599779D8E560AB9D6A9DED6EB165F9560C"
+    },
+    {
+      "path": "vectors\\r127_legacy_608_block_red_square_dark_36.png",
+      "sha256": "4324FE1E90D220DE8EDCEFD8F82265AB4C19A3253C53859B2B9BA0C079C59067"
+    },
+    {
+      "path": "vectors\\r127_legacy_608_block_red_square_dark_36.replay.mem",
+      "sha256": "EA40B48A3FE790BA69D12F1B8B0371DFA6049AE46AE0EE5D1C1189AFACED0C79"
+    },
+    {
+      "path": "vectors\\r127_legacy_608_block_red_square_dark_36.rgb.mem",
+      "sha256": "BBE2B13DFD1A8382A8D3AC3A41682AC5F73C7507BA25DF21A46E2F033CD971B2"
+    },
+    {
+      "path": "vectors\\r128_legacy_620_block_red_triangle_wood_36.mask.mem",
+      "sha256": "37961150312B4E30900B1FE6B624574AE268CB5476B99D5D8DED8FF824DAB378"
+    },
+    {
+      "path": "vectors\\r128_legacy_620_block_red_triangle_wood_36.png",
+      "sha256": "9A7A8BEA1238533FC8D54135476F1B1CC5110EB11419600DDF5E78A6B8653FB4"
+    },
+    {
+      "path": "vectors\\r128_legacy_620_block_red_triangle_wood_36.replay.mem",
+      "sha256": "5B85D842C68A92D3AF1EE9E202E0D8B08182A80729D2BFBCFE8C7A0A98970356"
+    },
+    {
+      "path": "vectors\\r128_legacy_620_block_red_triangle_wood_36.rgb.mem",
+      "sha256": "D91DF85ACFF911FB986C63F3AFA91EE4AFA9EE0631923273BA87BFDDC391258E"
+    },
+    {
+      "path": "vectors\\r129_legacy_624_block_yellow_circle_white_52.mask.mem",
+      "sha256": "8DFDEF5BDC8E0D7C1FA2695E717F59BE98889EAE10BAA8FE6801DFC9D7E6D901"
+    },
+    {
+      "path": "vectors\\r129_legacy_624_block_yellow_circle_white_52.png",
+      "sha256": "490A587CD57AFC6BCDE292818D61B188ED0C8A21811CB8ADE27FCA2DEC5E8BAA"
+    },
+    {
+      "path": "vectors\\r129_legacy_624_block_yellow_circle_white_52.replay.mem",
+      "sha256": "2D3C5B3187DDB8DBC5A05178B9105996056BEDDF40815CA1CD9F04AF655E2F32"
+    },
+    {
+      "path": "vectors\\r129_legacy_624_block_yellow_circle_white_52.rgb.mem",
+      "sha256": "374313B186838A5845614B29C9F788099B74BCC0D343CF59D948AB189B72B9B5"
+    },
+    {
+      "path": "vectors\\r130_legacy_636_block_yellow_square_dark_52.mask.mem",
+      "sha256": "7563FB2C9BD1C33E2C71F48DB7B29B599779D8E560AB9D6A9DED6EB165F9560C"
+    },
+    {
+      "path": "vectors\\r130_legacy_636_block_yellow_square_dark_52.png",
+      "sha256": "BF698B0A8BE639DF6C5116D62E3679087D6327A8DA2D69CC3E5E70B7291B4E6B"
+    },
+    {
+      "path": "vectors\\r130_legacy_636_block_yellow_square_dark_52.replay.mem",
+      "sha256": "398765495CBF7543F8111610C267DA40747FEEE53DEF9AECCC90FD06DBE39B40"
+    },
+    {
+      "path": "vectors\\r130_legacy_636_block_yellow_square_dark_52.rgb.mem",
+      "sha256": "3D9E020607F0D57FF543A59F5879A082222DC8ABEC066519E599BBDCE6D5D704"
+    },
+    {
+      "path": "vectors\\r131_legacy_648_block_yellow_triangle_wood_52.mask.mem",
+      "sha256": "14A6088077AF39194639DD76D3C0DC4A7485B60420A9A1ADF1D3171D054DE33D"
+    },
+    {
+      "path": "vectors\\r131_legacy_648_block_yellow_triangle_wood_52.png",
+      "sha256": "47D301D04AEAF8B55FD96A9CA4AAEE759F534B6E131AE0B898C079C0E81E4017"
+    },
+    {
+      "path": "vectors\\r131_legacy_648_block_yellow_triangle_wood_52.replay.mem",
+      "sha256": "F8093DDD6C5B513A7E1B5B4C6AEF66BD63CDF6A9143E2ED4ED5600FACD4495E5"
+    },
+    {
+      "path": "vectors\\r131_legacy_648_block_yellow_triangle_wood_52.rgb.mem",
+      "sha256": "573EC895F13949A3D9BDA6A48608505F5AC5D4BAA8891E1A0892325797907AE8"
+    },
+    {
+      "path": "vectors\\r132_legacy_652_block_blue_circle_white_68.mask.mem",
+      "sha256": "56BB470B84F3CD7390CDEB4A71004AB439C88FDC1C5129193F39BA7487417330"
+    },
+    {
+      "path": "vectors\\r132_legacy_652_block_blue_circle_white_68.png",
+      "sha256": "77A5563E9E677E9D751F497D7B0E37B48EF8F99016AE82C0692EFB3B827ABADD"
+    },
+    {
+      "path": "vectors\\r132_legacy_652_block_blue_circle_white_68.replay.mem",
+      "sha256": "7C49E80A9BBB3A4A50DF7A9157483278124EA7B589917C54D54CC82D57F9F23B"
+    },
+    {
+      "path": "vectors\\r132_legacy_652_block_blue_circle_white_68.rgb.mem",
+      "sha256": "7405F95A8780898903365ED58CAF010B8846D338AD59D2D9AC25C2CC19742176"
+    },
+    {
+      "path": "vectors\\r133_legacy_664_block_blue_square_dark_68.mask.mem",
+      "sha256": "7563FB2C9BD1C33E2C71F48DB7B29B599779D8E560AB9D6A9DED6EB165F9560C"
+    },
+    {
+      "path": "vectors\\r133_legacy_664_block_blue_square_dark_68.png",
+      "sha256": "9C3336AA65569208B5A187DE78AB1D70C6A95DB5A82212C840DEC5AF81631055"
+    },
+    {
+      "path": "vectors\\r133_legacy_664_block_blue_square_dark_68.replay.mem",
+      "sha256": "7BBE68F00AED40F81E265AD824F88086D722EF7DC6F83C52C74A9196CBF62B1A"
+    },
+    {
+      "path": "vectors\\r133_legacy_664_block_blue_square_dark_68.rgb.mem",
+      "sha256": "12FBF98505AB47BA5792A51689AEBC0CCF46E1A752CD50847843E10FCD76C2D5"
+    },
+    {
+      "path": "vectors\\r134_legacy_676_block_blue_triangle_wood_68.mask.mem",
+      "sha256": "59FD9898DD05F89035C63AE959C2C54BB26A2B437B7458B32DB36BC24A2C1E31"
+    },
+    {
+      "path": "vectors\\r134_legacy_676_block_blue_triangle_wood_68.png",
+      "sha256": "63F5B739BE7651689230A7A3AAD06F62BBC180AD5B06EEF80BC5B40C801534A6"
+    },
+    {
+      "path": "vectors\\r134_legacy_676_block_blue_triangle_wood_68.replay.mem",
+      "sha256": "9D3655CF36FF450EEF3DC0434BA546578128A3AFA86CCC0A275A3B0DFB67A5ED"
+    },
+    {
+      "path": "vectors\\r134_legacy_676_block_blue_triangle_wood_68.rgb.mem",
+      "sha256": "D0034D436DF0C8A82540CB38FD0EDFABF6BE842358AC0E0098CF9B5D3913537C"
+    },
+    {
+      "path": "vectors\\r135_legacy_686_unknown_ring_white.mask.mem",
+      "sha256": "4A1480398EB11AF5138B7348C65D97C2DC3198CC60F61840E147FAD66207593F"
+    },
+    {
+      "path": "vectors\\r135_legacy_686_unknown_ring_white.png",
+      "sha256": "5DEFFE8EB8E0896DE46A9E87B7C35FFF37A6E5BB5E706EAF3168EF0EA2CE9A0A"
+    },
+    {
+      "path": "vectors\\r135_legacy_686_unknown_ring_white.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r135_legacy_686_unknown_ring_white.rgb.mem",
+      "sha256": "179E6AED2CC3092BC1B09D9F42F2CA4DED8D9D9FAD8400A7A5FB1093F28F1C85"
+    },
+    {
+      "path": "vectors\\r136_legacy_696_unknown_checker_dark.mask.mem",
+      "sha256": "530A536A30DB8AA6472F2C8463398BD28CF15B1814440524AF830B956BE484B8"
+    },
+    {
+      "path": "vectors\\r136_legacy_696_unknown_checker_dark.png",
+      "sha256": "C364F3D7477CD1F5E62F160043630A0E4BE751E47D02B1AE22BF22895BCF29D5"
+    },
+    {
+      "path": "vectors\\r136_legacy_696_unknown_checker_dark.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r136_legacy_696_unknown_checker_dark.rgb.mem",
+      "sha256": "52ED173FC1B61D5CC55E915E0C4057F491FD60035F562BD9C5C512EE160AF20C"
+    },
+    {
+      "path": "vectors\\r137_legacy_704_different_apple_outline.mask.mem",
+      "sha256": "B4D7C934490F6BB64C8E26AC148589C37AA2EC099F09F17900581585B62986EA"
+    },
+    {
+      "path": "vectors\\r137_legacy_704_different_apple_outline.png",
+      "sha256": "ECD845778186009F97201789E8F15E24439D34C5AE61CF8D6E3A093928133FEC"
+    },
+    {
+      "path": "vectors\\r137_legacy_704_different_apple_outline.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r137_legacy_704_different_apple_outline.rgb.mem",
+      "sha256": "701001E0932EE95E8F1D2DD01E98D921E81C108FE563D939DB5DB40FF6F7B4FF"
+    },
+    {
+      "path": "vectors\\r138_legacy_705_different_apple_striped.mask.mem",
+      "sha256": "33475CF36D3D34DB263A989C03D5723FACCDFD227F50B57BB947077B06AF6504"
+    },
+    {
+      "path": "vectors\\r138_legacy_705_different_apple_striped.png",
+      "sha256": "08C139422B3569563409CAE08313D4EA2EEC89B449ECE3E6738B4E28D80187EE"
+    },
+    {
+      "path": "vectors\\r138_legacy_705_different_apple_striped.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r138_legacy_705_different_apple_striped.rgb.mem",
+      "sha256": "98E817766950D4A2F91A910212BB22B83D37F7D5A59C022F4DA00A0E8887D317"
+    },
+    {
+      "path": "vectors\\r139_legacy_706_outside_roi_interference.mask.mem",
+      "sha256": "2BCA579F59378B7E7B25BD50AE3E1D45BDAC174A5A0026D72ACCC479FCD1BAAA"
+    },
+    {
+      "path": "vectors\\r139_legacy_706_outside_roi_interference.png",
+      "sha256": "778AB488959F5D456E6632AF46FCD7FF9BFADCDE264092AC2044FBCF22B7EDCD"
+    },
+    {
+      "path": "vectors\\r139_legacy_706_outside_roi_interference.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r139_legacy_706_outside_roi_interference.rgb.mem",
+      "sha256": "B955BA231B077A073EA4738E70E9CAFE44E21DAAB37D88CB3EFDCC7E0170299B"
+    },
+    {
+      "path": "vectors\\r140_legacy_707_block_touching_left.mask.mem",
+      "sha256": "2BCA579F59378B7E7B25BD50AE3E1D45BDAC174A5A0026D72ACCC479FCD1BAAA"
+    },
+    {
+      "path": "vectors\\r140_legacy_707_block_touching_left.png",
+      "sha256": "CD9D19C3E838F52D5BC16DF0AA96DA9734AEB704A32FCF65BA24C374017BF95A"
+    },
+    {
+      "path": "vectors\\r140_legacy_707_block_touching_left.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r140_legacy_707_block_touching_left.rgb.mem",
+      "sha256": "ECCE7ABF8E69BF22185909B3793AFBD6BA1B60FE5E39CD28BE33404E029C4189"
+    },
+    {
+      "path": "vectors\\r141_legacy_711_unqualified_border_red_blue.mask.mem",
+      "sha256": "2BCA579F59378B7E7B25BD50AE3E1D45BDAC174A5A0026D72ACCC479FCD1BAAA"
+    },
+    {
+      "path": "vectors\\r141_legacy_711_unqualified_border_red_blue.png",
+      "sha256": "036F1C6AC99511DA6164350C30517132B765550FE43BAB352ECB45A5D62D8593"
+    },
+    {
+      "path": "vectors\\r141_legacy_711_unqualified_border_red_blue.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r141_legacy_711_unqualified_border_red_blue.rgb.mem",
+      "sha256": "0DF79469D1531D2FF195CD4DC195A5649A581251991EC3F444BD9C5C99C54CC4"
+    },
+    {
+      "path": "vectors\\r142_legacy_712_unqualified_border_light_dark.mask.mem",
+      "sha256": "2BCA579F59378B7E7B25BD50AE3E1D45BDAC174A5A0026D72ACCC479FCD1BAAA"
+    },
+    {
+      "path": "vectors\\r142_legacy_712_unqualified_border_light_dark.png",
+      "sha256": "6C8193B14D24F01E33CCB44685A5FA78ABD427953A53D3BB2606AF0B487653F3"
+    },
+    {
+      "path": "vectors\\r142_legacy_712_unqualified_border_light_dark.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r142_legacy_712_unqualified_border_light_dark.rgb.mem",
+      "sha256": "EFAB62A3837B2752FA7644DC3F268DBBE56E4E318A8DCCB2DD397A5E9BB3478D"
+    },
+    {
+      "path": "vectors\\r143_card_10_gain65_before.png",
+      "sha256": "EC3B9BEC848AD7C6820292B45F027E72B0765662B978D3E3710DB3B545D2EB80"
+    },
+    {
+      "path": "vectors\\r144_card_10_gain65_after.mask.mem",
+      "sha256": "31D3AECC3B78B6FD63541F39725A195FF6566E5FBF74EABE01F1EAF8ABEAD23D"
+    },
+    {
+      "path": "vectors\\r144_card_10_gain65_after.png",
+      "sha256": "CB33AADCB5EBE2A8D21D4AF4BD9D144E61D1D18E7AF937340C725BF5952D161C"
+    },
+    {
+      "path": "vectors\\r144_card_10_gain65_after.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r144_card_10_gain65_after.rgb.mem",
+      "sha256": "C9B9D9B17DDBA61048D312FC03210B1BC59537483581BDBEF39C576590DCFEC6"
+    },
+    {
+      "path": "vectors\\r145_card_11_gain65_before.png",
+      "sha256": "9F33FF4D2C6F9DAC9456532F361C16514A9C69B1D7CF7D6F55306941E3D92679"
+    },
+    {
+      "path": "vectors\\r146_card_11_gain65_after.mask.mem",
+      "sha256": "593B985E112AE01E9C668C4B04B963951A86C6BBA9E8A2490576288CB1A0B269"
+    },
+    {
+      "path": "vectors\\r146_card_11_gain65_after.png",
+      "sha256": "7B43A5789A9C3858414DAECD103240BD58AB361648DE616FB447A02C69CB40FE"
+    },
+    {
+      "path": "vectors\\r146_card_11_gain65_after.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r146_card_11_gain65_after.rgb.mem",
+      "sha256": "19EEC1A3277F81B51731367B17E0C4CDA67B332C4427291D0610FF975E94D82B"
+    },
+    {
+      "path": "vectors\\r147_card_12_gain65_before.png",
+      "sha256": "BE384E1E6082FD1BCB726BF65588960D01ACCEEC309D703DC408207DC84DE6CB"
+    },
+    {
+      "path": "vectors\\r148_card_12_gain65_after.mask.mem",
+      "sha256": "998C21224DB9284FD2E7620924F1B03913B9A3F06468C4F771357DE0DBC3D337"
+    },
+    {
+      "path": "vectors\\r148_card_12_gain65_after.png",
+      "sha256": "F39A4AFEF636510FAA4F6B019DB4C25C727C7FF125510806CCD1F83DD52C749B"
+    },
+    {
+      "path": "vectors\\r148_card_12_gain65_after.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r148_card_12_gain65_after.rgb.mem",
+      "sha256": "1A8DB94E9C708BE184C0AFBBB1A1DBB7AE1DBEC4041B2075CD62D767386DF0F3"
+    },
+    {
+      "path": "vectors\\r149_card_13_gain65_before.png",
+      "sha256": "001BF0ABCAB0FD6E7ADC884CBCA86909E102E1498C97D6D51FBE7F664F88DC72"
+    },
+    {
+      "path": "vectors\\r150_card_13_gain65_after.mask.mem",
+      "sha256": "75B3612D742880BA63BE9E3B9F66D720FAC0FE080AB1E9866E148EC77CB1D863"
+    },
+    {
+      "path": "vectors\\r150_card_13_gain65_after.png",
+      "sha256": "C294F0C5926E2CEC2E0A38D73164B6751136309CEF2B9762B5CC494C1FF893F3"
+    },
+    {
+      "path": "vectors\\r150_card_13_gain65_after.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r150_card_13_gain65_after.rgb.mem",
+      "sha256": "989E32F736C793E97DB1F8531E067E0BC3F97EF19E6733AE963F4070AA33AC2E"
+    },
+    {
+      "path": "vectors\\r151_card_14_gain65_before.png",
+      "sha256": "2C68C999D1627632B1DA906F2999B001B36ABB3C224ECC999B26D665AB08DABF"
+    },
+    {
+      "path": "vectors\\r152_card_14_gain65_after.mask.mem",
+      "sha256": "8C5B573F7D2841BF0BE46CE7B383C9FD109A0B57F2FD1C6D30D7EDFF29216F32"
+    },
+    {
+      "path": "vectors\\r152_card_14_gain65_after.png",
+      "sha256": "6E4630B65AE3AF0A468D8B1F7AB3F893D232031AA74B2C08035468696C98F902"
+    },
+    {
+      "path": "vectors\\r152_card_14_gain65_after.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r152_card_14_gain65_after.rgb.mem",
+      "sha256": "647CEDF55B87C7BFEA3C4A2C224C638B85F5F483E38E0011AD9BC77B2D5F532A"
+    },
+    {
+      "path": "vectors\\r153_unknown_gray_circle.mask.mem",
+      "sha256": "7D8B8663A48ADB326CE3B6C5D5E5B8D08D6F0989ADBC53F080F29ED46706A1BD"
+    },
+    {
+      "path": "vectors\\r153_unknown_gray_circle.png",
+      "sha256": "03871974D66EEB29EDD26BBC195E5C0FAC8B534AD6B951A75F5552079E7DE820"
+    },
+    {
+      "path": "vectors\\r153_unknown_gray_circle.replay.mem",
+      "sha256": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "vectors\\r153_unknown_gray_circle.rgb.mem",
+      "sha256": "83B9680524C84A121100633C31339038921CFDF0A47F89EBBB6CFE03F26FFF32"
+    },
+    {
+      "path": "vectors\\r154_refusal_10_67_67p5_10.mask.mem",
+      "sha256": "4FE70ED58EC52346E7A6BB63EEB61E4E25E0E7C4610C05907C9473DA4D87CDF8"
+    },
+    {
+      "path": "vectors\\r154_refusal_10_67_67p5_10.png",
+      "sha256": "8B4A65EF3AC3016A774E18772C8B86CD0C39E9EE9B7695D07330B6194BB42198"
+    },
+    {
+      "path": "vectors\\r154_refusal_10_67_67p5_10.replay.mem",
+      "sha256": "884836FA4323F739054E57380AFC5D82DBD642CEB535E83FE4BF8F3E5048965A"
+    },
+    {
+      "path": "vectors\\r154_refusal_10_67_67p5_10.rgb.mem",
+      "sha256": "9B097EAC106E86C51735B49EF1EA69B456151183A585AC067069BA038DAA9550"
+    },
+    {
+      "path": "vectors\\r155_refusal_10_67_157p5_01.mask.mem",
+      "sha256": "AF43988FF0B76FB94CB4AE33B9E41C33D2E65C189BF949D3237FF39BAC9E747B"
+    },
+    {
+      "path": "vectors\\r155_refusal_10_67_157p5_01.png",
+      "sha256": "FA33B063B6D7A68D4C5AF0EDDF86AFD78EFB2F3B3EE8FA04424D38038135A115"
+    },
+    {
+      "path": "vectors\\r155_refusal_10_67_157p5_01.replay.mem",
+      "sha256": "396E5AB1C1ECB36AE8E53E7305F1DE78FD4D276374647F989AA9DB7758594CBE"
+    },
+    {
+      "path": "vectors\\r155_refusal_10_67_157p5_01.rgb.mem",
+      "sha256": "7EF4892CA750CCB2838681FB8688E5C31FEECB6E1DDC564EF1382E070826C62B"
+    },
+    {
+      "path": "vectors\\r156_refusal_12_51_47p5_10.mask.mem",
+      "sha256": "1479904B7B5816C43176A674D519E9C680B4CCBD972640EFAE250CA94D8DB85C"
+    },
+    {
+      "path": "vectors\\r156_refusal_12_51_47p5_10.png",
+      "sha256": "FF497E285A428DDCBFDF12457CD3FBA3E718FF34561A23B41EB399AD984802A5"
+    },
+    {
+      "path": "vectors\\r156_refusal_12_51_47p5_10.replay.mem",
+      "sha256": "3F6F1D00609864CF206605821E04E7884261CFC47DAF2F12D2657FC9B2AB346D"
+    },
+    {
+      "path": "vectors\\r156_refusal_12_51_47p5_10.rgb.mem",
+      "sha256": "7CD85F1DAC41023578A642DECFACBAE8C27735DD0775DF2F8A70BA2D08C37E80"
+    },
+    {
+      "path": "vectors\\r157_refusal_12_51_52p5_00.mask.mem",
+      "sha256": "9A5F634084836A57C81BD06AF7AEEC2D74C3D634A0789C76B063E8BAA95F9D28"
+    },
+    {
+      "path": "vectors\\r157_refusal_12_51_52p5_00.png",
+      "sha256": "F5F0A9146D66AE3C86B4B813D728896984E2EBDBE74B1DD942208261E1F33346"
+    },
+    {
+      "path": "vectors\\r157_refusal_12_51_52p5_00.replay.mem",
+      "sha256": "6412EBDEF550D0202AB5D10C0BB7A2F56EE669B3C9B8BE8CDE7B2296F3EC59D2"
+    },
+    {
+      "path": "vectors\\r157_refusal_12_51_52p5_00.rgb.mem",
+      "sha256": "7A744F71A48BC58ADB37418EB0A55776E3B1CDEF965F8F3A7DA41E207E8E0090"
+    },
+    {
+      "path": "vectors\\r158_refusal_12_51_57p5_11.mask.mem",
+      "sha256": "CF5E5A909E1A7446E8AC4933975BB5A41C3E1140AEB421B2FAC3A84754020A1F"
+    },
+    {
+      "path": "vectors\\r158_refusal_12_51_57p5_11.png",
+      "sha256": "153A2DA98786BE90EEBDAE3053DF599117367F383A1D3C1908F5DB5900AE30BB"
+    },
+    {
+      "path": "vectors\\r158_refusal_12_51_57p5_11.replay.mem",
+      "sha256": "C1AE09F696C3B5517C1C5F59164E67C5593F463155FE15543EDDBC579626B8ED"
+    },
+    {
+      "path": "vectors\\r158_refusal_12_51_57p5_11.rgb.mem",
+      "sha256": "1971A648AF14DA52D81DDA32AA640691E94AED32D24DD0F737EFD72287B00B3D"
+    },
+    {
+      "path": "vectors\\r159_refusal_12_51_127p5_10.mask.mem",
+      "sha256": "27D42742B504508C2F1E02FB2ABCCABAA0D7AC52B6137D71F74308E5B27D4D21"
+    },
+    {
+      "path": "vectors\\r159_refusal_12_51_127p5_10.png",
+      "sha256": "05BB67F3F1376166464A6237D8AF67B70C709A1E34CEA5372B7A8A0E98ECE2BC"
+    },
+    {
+      "path": "vectors\\r159_refusal_12_51_127p5_10.replay.mem",
+      "sha256": "15AC058E6878249F724161DA288BA00D8EFB8639C66A62D0BDFCE751CD71C081"
+    },
+    {
+      "path": "vectors\\r159_refusal_12_51_127p5_10.rgb.mem",
+      "sha256": "ABD286EE70533534A45C3E7051299E227149A0EBF6AA1E349BB322B7B5D21086"
+    },
+    {
+      "path": "vectors\\r160_refusal_12_51_137p5_01.mask.mem",
+      "sha256": "4D764A231E72166A8F56CEDDEE1D3821266B94CD4487D74AF537714EDF61D074"
+    },
+    {
+      "path": "vectors\\r160_refusal_12_51_137p5_01.png",
+      "sha256": "7DCABC419F226405AB0E979E6E6339546B147F287DECA1EACA3619E0A6499C22"
+    },
+    {
+      "path": "vectors\\r160_refusal_12_51_137p5_01.replay.mem",
+      "sha256": "A75B56B33E0A2078F511B2BA2AA16879BA6BA973C976F62F93D2487A3A9B5BF7"
+    },
+    {
+      "path": "vectors\\r160_refusal_12_51_137p5_01.rgb.mem",
+      "sha256": "8EFF5AE23CCD5768F908444EF94DDD0753137D06B5E58F2816D31B8C349CDE4C"
+    },
+    {
+      "path": "vectors\\r161_refusal_12_51_142p5_00.mask.mem",
+      "sha256": "0334C0DA70B0869C87E8749FD239FAAC9363697D4D4396F4B6930B7BB292280C"
+    },
+    {
+      "path": "vectors\\r161_refusal_12_51_142p5_00.png",
+      "sha256": "6CCC8B24EAC22D0D50397EE347745840F932E056C2E79DA3C5B526C975458B28"
+    },
+    {
+      "path": "vectors\\r161_refusal_12_51_142p5_00.replay.mem",
+      "sha256": "92C334D59BD7147E28E1A471D4B7AA562245C6A976D49C380FC048B84B72D1A0"
+    },
+    {
+      "path": "vectors\\r161_refusal_12_51_142p5_00.rgb.mem",
+      "sha256": "E69CDE4434B734FEE410C778DED545D7ADA0ED607DBAE5266095B3EC4A93CE9F"
+    },
+    {
+      "path": "vectors\\r162_refusal_12_51_147p5_11.mask.mem",
+      "sha256": "07E60332BFBF01A3FAF0CFC2732588AC89D6EF735262559EEC12E73DA771BB09"
+    },
+    {
+      "path": "vectors\\r162_refusal_12_51_147p5_11.png",
+      "sha256": "3D2473A428674786B2089218D31C0C7D9C4D6C8AF6414794AC14F26A0297BB07"
+    },
+    {
+      "path": "vectors\\r162_refusal_12_51_147p5_11.replay.mem",
+      "sha256": "58E216C361BBDC179DDF4DCD1042235FDA9E181072552247B6EE4D0B34DBB4C2"
+    },
+    {
+      "path": "vectors\\r162_refusal_12_51_147p5_11.rgb.mem",
+      "sha256": "FD93D3EACBF36B4976A5076F96D68F6E6BAF605ACCAD3D511B74A2E7373F395C"
+    },
+    {
+      "path": "vectors\\r163_refusal_12_51_207p5_10.mask.mem",
+      "sha256": "D1C56BEC9E08B3E98B2C46854A434D7E6702152F0ABE29B2EF0F92F2AC8F16A0"
+    },
+    {
+      "path": "vectors\\r163_refusal_12_51_207p5_10.png",
+      "sha256": "917EF0BFECC988F04E0D4D580E1DB0661750A4EFBD1D16FB5551FCB437F7B73A"
+    },
+    {
+      "path": "vectors\\r163_refusal_12_51_207p5_10.replay.mem",
+      "sha256": "94C52326A8071A703E4A036EB460ACFCE14793B87CA13DB38B4966D2D41280EF"
+    },
+    {
+      "path": "vectors\\r163_refusal_12_51_207p5_10.rgb.mem",
+      "sha256": "735994A27D18975DFE4ABD922ED8BFF538EFA9330FE3295C4D61CF56CCCC6E83"
+    },
+    {
+      "path": "vectors\\r164_refusal_12_51_217p5_00.mask.mem",
+      "sha256": "FBDED637FE0988FA1ED39C78F6E31B11A548411DC83631F5848825605599D7F0"
+    },
+    {
+      "path": "vectors\\r164_refusal_12_51_217p5_00.png",
+      "sha256": "F898535DF1F9A4227327FDADA5E41D0E458C03D2BBB2C7D2A7B803F5A380F4CB"
+    },
+    {
+      "path": "vectors\\r164_refusal_12_51_217p5_00.replay.mem",
+      "sha256": "015E63F2018F9773C3A975ABA8BFC181229A3897E6B155C5AF426A9E81B8F55A"
+    },
+    {
+      "path": "vectors\\r164_refusal_12_51_217p5_00.rgb.mem",
+      "sha256": "978396D8C063DB279621227E0F23D85D9255820A4DB1EDB4EF1418FD0C6FD41B"
+    },
+    {
+      "path": "vectors\\r165_refusal_12_51_227p5_10.mask.mem",
+      "sha256": "8F0D332E6B656A677BCA933309EA0DDE0E92C1FFC1933FD7A5444159B548CD79"
+    },
+    {
+      "path": "vectors\\r165_refusal_12_51_227p5_10.png",
+      "sha256": "1ACD2DAFF8C1048ACC30DCDB8B402CE2FB30FE091072ECE8CC3DBF6A3C3B0F85"
+    },
+    {
+      "path": "vectors\\r165_refusal_12_51_227p5_10.replay.mem",
+      "sha256": "EA0E46DFEEB701C60BEF47B0D9C623B2FD3C85B65A42E70FB4DEEB5EA0DEAD85"
+    },
+    {
+      "path": "vectors\\r165_refusal_12_51_227p5_10.rgb.mem",
+      "sha256": "E600F0953659B64B48CBF1A2572273FE39D4D885E33FC9C399B501CBDDB4A0BB"
+    },
+    {
+      "path": "vectors\\r166_refusal_12_51_237p5_00.mask.mem",
+      "sha256": "038D527AF02F78D3EEAF2129ADA570A2A20163937BA8795019BF9AAD9542E452"
+    },
+    {
+      "path": "vectors\\r166_refusal_12_51_237p5_00.png",
+      "sha256": "03E90519BCA868B62F3887A2FB5A6F8FD0ABE2C1B168972E01512D17821BD84F"
+    },
+    {
+      "path": "vectors\\r166_refusal_12_51_237p5_00.replay.mem",
+      "sha256": "6E2A95FF41D0D38F7C1E52C6355D34E1A6C6C702B7D2C62BC67C1A5BE7401BA3"
+    },
+    {
+      "path": "vectors\\r166_refusal_12_51_237p5_00.rgb.mem",
+      "sha256": "36FE76CE17C39C5FB00D85E0786D9CCBAADDD5E3DFB5FD9DCB3A12B8359AD7BB"
+    },
+    {
+      "path": "vectors\\r167_refusal_12_51_292p5_00.mask.mem",
+      "sha256": "ACDF5C73D509FAE66150AB705F97BB4E6D80BCD4CB23902BEC3DE23697E000FD"
+    },
+    {
+      "path": "vectors\\r167_refusal_12_51_292p5_00.png",
+      "sha256": "3CF232317AB6262B0B6CDAB33B9407BD4DC542D4570CDFD8F6A15FF4A6A63A75"
+    },
+    {
+      "path": "vectors\\r167_refusal_12_51_292p5_00.replay.mem",
+      "sha256": "DC86B2144AC5EEC443014406502558FAF2075D84B882F0F842A85A444A382115"
+    },
+    {
+      "path": "vectors\\r167_refusal_12_51_292p5_00.rgb.mem",
+      "sha256": "961E1161EC55109DE17898CC3BB9303886AAF406EE3FBFCD44CD5A97BC7DE287"
+    },
+    {
+      "path": "vectors\\r168_refusal_12_51_317p5_01.mask.mem",
+      "sha256": "CC807B688F9C4938A7D0D5669C6725B187664A3E96A578593B996467958D403A"
+    },
+    {
+      "path": "vectors\\r168_refusal_12_51_317p5_01.png",
+      "sha256": "DFA294A7643134390C71CCA0C53C0D0A5C165DDED5F233282D58553F59CE4E18"
+    },
+    {
+      "path": "vectors\\r168_refusal_12_51_317p5_01.replay.mem",
+      "sha256": "92B23C748DB43FA8B9291C58A7ECFFF384788C62B369260A266C022390C38545"
+    },
+    {
+      "path": "vectors\\r168_refusal_12_51_317p5_01.rgb.mem",
+      "sha256": "66F6C9B78E0CFB3D068D661D90A55F33FD0932FD375A5647B0C5A93BC69D0A5F"
+    },
+    {
+      "path": "vectors\\r169_refusal_12_67_132p5_10.mask.mem",
+      "sha256": "4366815FAB79989C60EDAD92FCE3F35E91AF8AA6DADCADAFA9AE870402A91AB3"
+    },
+    {
+      "path": "vectors\\r169_refusal_12_67_132p5_10.png",
+      "sha256": "4D7D9039AD15EDBEA46865F83C50595C2E600DB8C7225D2A3C7564E906163EB4"
+    },
+    {
+      "path": "vectors\\r169_refusal_12_67_132p5_10.replay.mem",
+      "sha256": "94E16FB330DC56F2A22A3BF68693A4EB6BCF8A9001DEBFE26EA0C736CA206889"
+    },
+    {
+      "path": "vectors\\r169_refusal_12_67_132p5_10.rgb.mem",
+      "sha256": "D3D312250C8587C493B76548E061CB1AA776EC87EE9AFBAD4CDB28BDDA9CE804"
+    },
+    {
+      "path": "vectors\\r170_refusal_12_67_312p5_10.mask.mem",
+      "sha256": "2165500CD4C587594593795FC8E891C2FC4AE95E16AAC1FB4F9066BB7DF2B56C"
+    },
+    {
+      "path": "vectors\\r170_refusal_12_67_312p5_10.png",
+      "sha256": "67FC81C3354BCCB8D86417F6FD2B80C8BF2BD686DAABB0D67111B3F22F40A6F7"
+    },
+    {
+      "path": "vectors\\r170_refusal_12_67_312p5_10.replay.mem",
+      "sha256": "5ACC4E65EB5BA393ED2D7F240BBFD3928CFAA69B07A3B65494AE5FF7AAAE0D6A"
+    },
+    {
+      "path": "vectors\\r170_refusal_12_67_312p5_10.rgb.mem",
+      "sha256": "F762C58AED46D1542E83B1F1AACB085396A6D72136A98924ABD4BDA876E792B7"
+    },
+    {
+      "path": "vectors\\r171_refusal_14_51_27p5_11.mask.mem",
+      "sha256": "407ECCF8C6DAB9A4646C61884C5F3AADB8397670C9089E823EF07AE1B81A7F62"
+    },
+    {
+      "path": "vectors\\r171_refusal_14_51_27p5_11.png",
+      "sha256": "DFAE05A8BAE805CEB805506BC25E8F27F139D1E468DC48F78C85E0DE007051C5"
+    },
+    {
+      "path": "vectors\\r171_refusal_14_51_27p5_11.replay.mem",
+      "sha256": "E3B803D327B22C96781FD8E32085E835062F766D03DC2FE6E6CDD70D0696D34A"
+    },
+    {
+      "path": "vectors\\r171_refusal_14_51_27p5_11.rgb.mem",
+      "sha256": "5CF29FF2B9B63EF0649967EB732752BDBDDEC856B68DDAD6E59F63A2E9EF4E7D"
+    },
+    {
+      "path": "vectors\\r172_refusal_14_51_37p5_10.mask.mem",
+      "sha256": "CB8634777B74FF234A68F7E618ABACD5333F7294CEBFB685D4888625E82541E9"
+    },
+    {
+      "path": "vectors\\r172_refusal_14_51_37p5_10.png",
+      "sha256": "AD53A88B27ABEDFDD89AE719182D593DF24BA07930CC0CF024E81EBE84814867"
+    },
+    {
+      "path": "vectors\\r172_refusal_14_51_37p5_10.replay.mem",
+      "sha256": "D544D39BE23F43432F18CED10B0026A25F137E46E067D6CB01E6B0C8D06344D4"
+    },
+    {
+      "path": "vectors\\r172_refusal_14_51_37p5_10.rgb.mem",
+      "sha256": "5F2A4A8F669BD70BFA51C74BFE6A716820D4DD8B4EF0DA3F00317DE27C841CA4"
+    },
+    {
+      "path": "vectors\\r173_refusal_14_51_117p5_11.mask.mem",
+      "sha256": "21407407A7C5ACCA6153E805352EB383DE053B1525333C716F00127DF21B568D"
+    },
+    {
+      "path": "vectors\\r173_refusal_14_51_117p5_11.png",
+      "sha256": "36C081A0C478CAC0E874A4FFDC69366D6699CFBB370D841633AEE98B61F9D5FB"
+    },
+    {
+      "path": "vectors\\r173_refusal_14_51_117p5_11.replay.mem",
+      "sha256": "1E7D604285EA78D72CC2E978DBEDDE382A6B55BEC051ED81FFB95B05C54BD8E0"
+    },
+    {
+      "path": "vectors\\r173_refusal_14_51_117p5_11.rgb.mem",
+      "sha256": "D7A7CDEF50ACD690FE72CD903E187855906E15979D1EDB217569125DE7649859"
+    },
+    {
+      "path": "vectors\\r174_refusal_14_51_127p5_01.mask.mem",
+      "sha256": "479E16BAF06D25D5854AC066CB0F958F2C5BD18E590A43F1145F6C09DA4476F7"
+    },
+    {
+      "path": "vectors\\r174_refusal_14_51_127p5_01.png",
+      "sha256": "8A0EC9ECA251BBB49055E31E23C1A8E69D6D4D30F05CDA0650A54C97ADDF511C"
+    },
+    {
+      "path": "vectors\\r174_refusal_14_51_127p5_01.replay.mem",
+      "sha256": "C24ACD0624D5F8BFB2D8A8794E1D86B219FCCE4BE0BFF2D4F5B01BDE760BAE45"
+    },
+    {
+      "path": "vectors\\r174_refusal_14_51_127p5_01.rgb.mem",
+      "sha256": "3652FEB47F84877A4A439108F11C84ECBDCC6D04610B01D7810726A205E89A31"
+    },
+    {
+      "path": "vectors\\r175_refusal_14_51_207p5_11.mask.mem",
+      "sha256": "8C2AD029A2C5A83C2EE45C8C29092E3687B964AAEADFB4EB355AB28E9F874917"
+    },
+    {
+      "path": "vectors\\r175_refusal_14_51_207p5_11.png",
+      "sha256": "F7526223E81D4F04DD48BED2779A02C77160D46150FC27360767B2AEC996748D"
+    },
+    {
+      "path": "vectors\\r175_refusal_14_51_207p5_11.replay.mem",
+      "sha256": "85CD31E525EDFA38C328AEE96CA9DDE4BE2CE602EE7B999E3749C045CE4E2C51"
+    },
+    {
+      "path": "vectors\\r175_refusal_14_51_207p5_11.rgb.mem",
+      "sha256": "AAFD4909F267CFD2BCD0C21EC98893351FA386B43B062CB0A6F371BDC1C5DD61"
+    },
+    {
+      "path": "vectors\\r176_refusal_14_51_217p5_11.mask.mem",
+      "sha256": "EB17A1340499C98D46CBDA41D3628ADC40E913BBC398FBCF266A1003F3571390"
+    },
+    {
+      "path": "vectors\\r176_refusal_14_51_217p5_11.png",
+      "sha256": "A1CECDC2926FC95FA8B0EA84D40AB547562F3561AC8B0A5D961AC489C6790932"
+    },
+    {
+      "path": "vectors\\r176_refusal_14_51_217p5_11.replay.mem",
+      "sha256": "F237900F90B70A869AE6009FD5CCF1F5AA9DA73F3B12CB475748188BC3A72EFA"
+    },
+    {
+      "path": "vectors\\r176_refusal_14_51_217p5_11.rgb.mem",
+      "sha256": "C3F7C9816820BC06E542388A966D378452EA7EB72120417C8C7164B45B1E5A9D"
+    },
+    {
+      "path": "vectors\\r177_refusal_14_51_297p5_11.mask.mem",
+      "sha256": "BFFE885A68E4CD6C73A0F565E4E8AC413AAC3423688D0D5541E8E99894AAE4CE"
+    },
+    {
+      "path": "vectors\\r177_refusal_14_51_297p5_11.png",
+      "sha256": "89D53C3350019A3E654102DAF31CB4FB2C9C353AF297C043A607FC1C0A230473"
+    },
+    {
+      "path": "vectors\\r177_refusal_14_51_297p5_11.replay.mem",
+      "sha256": "B246D21288501C7390E562721F1920B6D070273DAFCF756DB9750FFC9EF3AFF3"
+    },
+    {
+      "path": "vectors\\r177_refusal_14_51_297p5_11.rgb.mem",
+      "sha256": "05D855C708E2F0AC2CB3F9EA5DC73B106CB0C87A701AA040DACB0B4C1A6F3E57"
+    },
+    {
+      "path": "vectors\\r178_refusal_14_51_307p5_11.mask.mem",
+      "sha256": "C963CFE586320D3BBA5E5D09C2538D9466B08DF49AFFB6C3B0A97EF502CF9AC5"
+    },
+    {
+      "path": "vectors\\r178_refusal_14_51_307p5_11.png",
+      "sha256": "17CB7DAA06A06FECF8BC50335E8E7DE84E7D229E8ECC958FA5AF512749EE95F7"
+    },
+    {
+      "path": "vectors\\r178_refusal_14_51_307p5_11.replay.mem",
+      "sha256": "7692310E645E271EE975C06FE4DB362E701D01620BE2BB6E2CD3341470DCA449"
+    },
+    {
+      "path": "vectors\\r178_refusal_14_51_307p5_11.rgb.mem",
+      "sha256": "C349BB00E5A5DC009ED8F27A8BAA9996BF3692E8F34BB626B85C94F666C3AA9E"
+    },
+    {
+      "path": "vectors\\r179_refusal_14_51_322p5_10.mask.mem",
+      "sha256": "39A041ABD58E4A164A075052C4517B6CBDD5513E97382EFDDB96BEF0ACBAE24A"
+    },
+    {
+      "path": "vectors\\r179_refusal_14_51_322p5_10.png",
+      "sha256": "2100E9C521EEE39C87DD3BDE72E8A8F460ABD097047EDE25D90DA412B53A77E7"
+    },
+    {
+      "path": "vectors\\r179_refusal_14_51_322p5_10.replay.mem",
+      "sha256": "BA762E6446AA56623401D174FD0D1269DC663382551705F61649C962DC748FD9"
+    },
+    {
+      "path": "vectors\\r179_refusal_14_51_322p5_10.rgb.mem",
+      "sha256": "0A898B96DEEC29255BDC81CEFD9547B2D2ABF3D31DD64E562E0731ACABE5E708"
+    },
+    {
+      "path": "vectors\\r180_refusal_14_51_347p5_01.mask.mem",
+      "sha256": "AD86912F6D1675CC347BEC8D56EAB41F2BA9C601E2EAB8B07DDAAE6181819D24"
+    },
+    {
+      "path": "vectors\\r180_refusal_14_51_347p5_01.png",
+      "sha256": "C187C56243D3BE71B03440AE973B081A0B495E7C1DE9A9CC9176F7603CEF12E6"
+    },
+    {
+      "path": "vectors\\r180_refusal_14_51_347p5_01.replay.mem",
+      "sha256": "40BADE950F706923F63EA1BA8D01EE5250E35BEBC9BB97870349ED5DBFDF4C06"
+    },
+    {
+      "path": "vectors\\r180_refusal_14_51_347p5_01.rgb.mem",
+      "sha256": "8DCFCE35C55CBBCAFAD220807E3EE890ECC65D49D1DA35A06731DE0EF378B96E"
+    },
+    {
+      "path": "vectors\\r181_refusal_14_83_297p5_10.mask.mem",
+      "sha256": "8740589FE641D4ABDF10010AED15B8FA17F83B956ADC8CD957E74B3F2D092125"
+    },
+    {
+      "path": "vectors\\r181_refusal_14_83_297p5_10.png",
+      "sha256": "B77107E57D6BD16F1163746AD417098783EF688005734B9B3AEA6E4E568550F9"
+    },
+    {
+      "path": "vectors\\r181_refusal_14_83_297p5_10.replay.mem",
+      "sha256": "55937010CC13CA93137BA8BE237E09CCF95A6CD132CB6B77EBE492530793B7BC"
+    },
+    {
+      "path": "vectors\\r181_refusal_14_83_297p5_10.rgb.mem",
+      "sha256": "01A60C0D461404D95E3B028D36E5C1492104A340C4E8F9C58959798206D5416D"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "CreatedAt": "2026-10-14T11:50:55.402820+08:00",
+  "Passed": 44,
+  "Checks": [
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_101",
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_107",
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_113",
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_119",
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_125",
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_131",
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_137",
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_143",
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_149",
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_155",
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_161",
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_167",
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_23",
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_29",
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_35",
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_41",
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_47",
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_53",
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_59",
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_65",
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_71",
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_77",
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_83",
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_89",
+    "actual_routed_control_u_p14_pipeline/rotation_mode$matcher/ramread0_syn_95",
+    "actual_routed_control_u_p14_pipeline/system/panel/font/ramread0_syn_24",
+    "actual_routed_control_u_p14_pipeline/system/panel/font/ramread0_syn_30",
+    "actual_routed_control_u_p14_pipeline/system/panel/font/ramread0_syn_36",
+    "actual_routed_control_u_p14_pipeline/shape_mode$shape_guard/templates/ramread0_syn_23",
+    "wrong_read_width_rejected",
+    "write_enable_rejected",
+    "chip_select_polarity_rejected",
+    "read_register_mode_rejected",
+    "new_unknown_functional_parameter_rejected",
+    "readback_mode_rejected",
+    "wrong_clock_source_rejected",
+    "wrong_chip_select_net_rejected",
+    "wrong_word_address_rejected",
+    "wrong_output_mapping_rejected",
+    "unconnected_pin_labels_may_rename",
+    "clock_alias_cycle_rejected",
+    "asterisk_slice_capacity_is_not_skipped",
+    "real_110_slice_and_dsp_overflow_rejected",
+    "real_111_resource_limits_all_counted"
+  ],
+  "CandidateQualified": false,
+  "HardwareValidated": false,
+  "Scope": "Audit guards only. Actual 111 remains STA-negative; corruption is in-memory and no original source/report is modified.",
+  "111Resources": {
+    "Used": {
+      "IO": 62,
+      "input": 6,
+      "output": 31,
+      "inout": 25,
+      "lut6": 14887,
+      "reg": 13540,
+      "slice reg": 13540,
+      "pad reg": 0,
+      "slice": 15622,
+      "used ram": 312,
+      "dram lut": 296,
+      "shifter lut": 16,
+      "used logic": 15310,
+      "with luts": 12482,
+      "with adder": 2093,
+      "reg only": 735,
+      "feedthrough": 3275,
+      "f7mux": 386,
+      "f8mux": 192,
+      "eram": 97,
+      "eram20k": 97,
+      "fifo20k": 0,
+      "dsp": 22,
+      "ddr_byte": 6,
+      "mipi_tx": 0,
+      "mipi_rx": 1,
+      "pad": 21,
+      "pll": 3,
+      "gclk": 9,
+      "lclk": 0,
+      "sclk": 20,
+      "mlclk": 2,
+      "ioclk": 4,
+      "1          1": 23554,
+      "2          2": 5400,
+      "3          3": 1891,
+      "4          4": 822
+    },
+    "Available": {
+      "IO": 160,
+      "lut6": 21216,
+      "slice reg": 42432,
+      "slice": 21216,
+      "f7mux": 10608,
+      "f8mux": 5304,
+      "eram": 108,
+      "dsp": 40,
+      "ddr_byte": 12,
+      "mipi_tx": 2,
+      "mipi_rx": 2,
+      "pad": 160,
+      "pll": 6,
+      "gclk": 32,
+      "lclk": 12,
+      "sclk": 48,
+      "mlclk": 6,
+      "ioclk": 18
+    },
+    "OverCapacity": {}
+  },
+  "110RejectedCapacity": {
+    "slice*": {
+      "Used": 44101,
+      "Available": 21216
+    },
+    "dsp": {
+      "Used": 41,
+      "Available": 40
+    }
+  },
+  "Evidence": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b111\\td_project\\camera_to_dsi_display_Runs\\syn_1\\pixel14-syn_1-netlist.v",
+      "Bytes": 32538796,
+      "SHA256": "E23B0F0E43FDCB34116A0EA81636BE448A46BE453554A1B9DC520A1405CB4486"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b111\\td_project\\camera_to_dsi_display_Runs\\phy_1\\pixel14-phy_1-netlist.v",
+      "Bytes": 28625403,
+      "SHA256": "0EE103C7DE3C18D4236679CFAF9B58835F485BF0BB0628A21AB5221C4FF38400"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b110\\td_project\\camera_to_dsi_display_Runs\\syn_1\\camera_to_dsi_display_gate.area",
+      "Bytes": 39783,
+      "SHA256": "B84CB3238D9ECD252928B77F6635F4AE6FE30931C8E5B9F23E9C24CF75FD5489"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b111\\td_project\\camera_to_dsi_display_Runs\\phy_1\\camera_to_dsi_display_phy.area",
+      "Bytes": 54208,
+      "SHA256": "A067D2351F87EF1D403E88218CC631C4DE56AC8F0372C7C5812F59DB1181EED7"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-bindings-111-v1.json",
+      "Bytes": 51852,
+      "SHA256": "7009D219FB58F17AE055DF03A9D6CBDC439F1DF0B2D52711A10B3ED449E8455B"
+    }
+  ],
+  "Programs": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\test_candidate_guards.py",
+      "Bytes": 4588,
+      "SHA256": "BAFB515FE82BD1D2A668B8D8A066320AB6FAC69077BFF48B76517588A6833CC3"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\tools\\audit-scene-build.py",
+      "Bytes": 21640,
+      "SHA256": "2B2BF65591D565B44D2730C3FFA67B029969B8BA7CFD4D7C5940EEE0A0FEC70A"
+    }
+  ]
+}

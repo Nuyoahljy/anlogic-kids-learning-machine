@@ -1,0 +1,90 @@
+{
+  "created_at": "2026-10-14T10:37:04.452055+08:00",
+  "command": [
+    "fpga\\scripts\\sc520-card-recognition\\experiment-scene-rotation.py",
+    "--output",
+    "evidence\\sc520-card-recognition\\rotation-design-20261014"
+  ],
+  "sources": [
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\prep-v1-max40\\rendered\\card_10_apple_256.png",
+      "sha256": "89535C32FB53B09760CB0D4E16C4CDAE3ABC8F64B3D2CED637880D3404E0A9E6"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\prep-v1-max40\\rendered\\card_11_banana_256.png",
+      "sha256": "DDD76AC93B963A52E826F2CFA44A0A0A298B7CD41EA420A5206B90AC468DD6AB"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\prep-v1-max40\\rendered\\card_12_car_256.png",
+      "sha256": "A5451992081ED5B08786BCA5966D162138F76A0F644AF540BBE10A1D349A285C"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\prep-v1-max40\\rendered\\card_13_star_256.png",
+      "sha256": "8E21A52FF4EF92EFD655A486AAC7D64CA23BA28CC70CACCD5AB5BFBA74731ED0"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\prep-v1-max40\\rendered\\card_14_umbrella_256.png",
+      "sha256": "C922A74D93872162B9E14374AFEC489AAE43A753A4B68C0D2E8694E79794548A"
+    }
+  ],
+  "scripts": [
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\experiment-scene-rotation.py",
+      "sha256": "28042809E93D5C5FDF904DEC9D82B4CC5C8447F9E1C167797DD261E0D8B32191"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\scene-model.py",
+      "sha256": "4696B16F3086E2FA6B027A17A144DC917BFEE9D7C0C20F74E00E5BF87F6E28A7"
+    }
+  ],
+  "train_sizes": [
+    48,
+    64,
+    80,
+    96
+  ],
+  "evaluation_sizes": [
+    51,
+    67,
+    83
+  ],
+  "boundary": "Intermediate angles are disjoint from template angles; synthetic development data, not camera validation.",
+  "outputs": [
+    {
+      "path": "step10-variants2.json",
+      "sha256": "CFBEE3918E5B094FAA8B17F4BF18778B750B9A35D334045FC37AFDB076B3F1B8"
+    },
+    {
+      "path": "step10-variants3.json",
+      "sha256": "588AD3CD4AD83B503728DF7ABF7510025CA9A58281171D8581676AEEB0EE4D3E"
+    },
+    {
+      "path": "step15-variants2.json",
+      "sha256": "2B48D681D065F4124F9A970E2FDA89BE39572EF045E43B0561107413BBDCB9FD"
+    },
+    {
+      "path": "step15-variants3.json",
+      "sha256": "1B391F51AA1E2DBB473B21606D0C4825F29AF115CF574C7725D7BD5E18082073"
+    },
+    {
+      "path": "step20-variants2.json",
+      "sha256": "C333931EA1F93B3EE75FD5CB38EA91716B082532555FA52D011261F333BACD7A"
+    },
+    {
+      "path": "step20-variants3.json",
+      "sha256": "F0990B74BFDDDC79DAF4F00EFED6247AF45C4CED60B63589BE0F79B37BB2F6F0"
+    },
+    {
+      "path": "step5-variants2.json",
+      "sha256": "452A6EF75FB8A59120159085EE255247F298B20AF90B46922543B97AEE148001"
+    },
+    {
+      "path": "step5-variants3.json",
+      "sha256": "7CA900F36C396CBCE41F44ED539027284DA4E2D665E97F19C79ED30DA6D81F7E"
+    },
+    {
+      "path": "summary.json",
+      "sha256": "DD7862C66CCE2AAB0508E052831BE47EFF32EA88F78364A4760433410FA13E2E"
+    }
+  ]
+}

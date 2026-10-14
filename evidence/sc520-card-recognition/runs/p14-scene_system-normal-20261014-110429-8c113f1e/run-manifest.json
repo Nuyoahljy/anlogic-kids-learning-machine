@@ -1,0 +1,497 @@
+{
+  "Task": "sc520-card-recognition",
+  "Owner": "2026-10-11 continuation /root",
+  "StartedAt": "2026-10-14T11:04:31.195+08:00",
+  "Mode": "normal",
+  "Test": "scene_system",
+  "FullResolution": true,
+  "RotationVariants": 256,
+  "Command": [
+    "D:\\modeltech64_10.7\\win64\\vsim.exe",
+    "-modelsimini",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\modelsim.ini",
+    "-c",
+    "-l",
+    "transcript.log",
+    "-do",
+    "set card_top tb_pixel14_scene_system; set card_sources [list {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261014-110429-8c113f1e/inputs/capture_rgb96.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261014-110429-8c113f1e/inputs/block_frame_recognizer.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261014-110429-8c113f1e/inputs/pixel14_card_matcher.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261014-110429-8c113f1e/inputs/pixel14_result_cdc.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261014-110429-8c113f1e/inputs/pixel14_pipeline.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261014-110429-8c113f1e/inputs/pixel14_card_template_rom.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261014-110429-8c113f1e/inputs/pixel14_scene_preprocess.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261014-110429-8c113f1e/inputs/pixel14_rotation_matcher.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261014-110429-8c113f1e/inputs/pixel14_block_shape_guard.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261014-110429-8c113f1e/inputs/pixel14_block_filter.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261014-110429-8c113f1e/inputs/card_matcher.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261014-110429-8c113f1e/inputs/card_template_rom.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261014-110429-8c113f1e/inputs/card_result_filter.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261014-110429-8c113f1e/inputs/items14_content.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261014-110429-8c113f1e/inputs/items14_font_rom.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261014-110429-8c113f1e/inputs/items14_osd.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261014-110429-8c113f1e/inputs/items14_question_bank.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261014-110429-8c113f1e/inputs/items14_quiz_control.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261014-110429-8c113f1e/inputs/items14_result_join.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261014-110429-8c113f1e/inputs/items14_system.v}]; set card_tb {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261014-110429-8c113f1e/inputs/tb_pixel14_scene_system.sv}; set card_assets {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261014-110429-8c113f1e/inputs}; set card_negative 0; set card_probe 0; set card_full 0; set card_rotation 256; set card_matrix_only 1; source {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261014-110429-8c113f1e/inputs/run-pixel14.do}"
+  ],
+  "WorkingDirectory": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e",
+  "Inputs": [
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\capture_rgb96.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\capture_rgb96.v",
+      "sha256_before": "805150EE3996FBB345C52BA3580205FEDC4FFA7C76C64213E198B65B31FDD9DF",
+      "sha256_after": "805150EE3996FBB345C52BA3580205FEDC4FFA7C76C64213E198B65B31FDD9DF",
+      "snapshot_sha256": "805150EE3996FBB345C52BA3580205FEDC4FFA7C76C64213E198B65B31FDD9DF"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\block_frame_recognizer.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\block_frame_recognizer.v",
+      "sha256_before": "B6AAEE99C269753E1B1C49A6DBD2F00439F415F9890F141A9A709B587EC835E9",
+      "sha256_after": "B6AAEE99C269753E1B1C49A6DBD2F00439F415F9890F141A9A709B587EC835E9",
+      "snapshot_sha256": "B6AAEE99C269753E1B1C49A6DBD2F00439F415F9890F141A9A709B587EC835E9"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_card_matcher.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\pixel14_card_matcher.v",
+      "sha256_before": "2F0A62B003B3633FD529870C63420B105F4FB00CD63DDC9F17F2F7E1EF708F87",
+      "sha256_after": "2F0A62B003B3633FD529870C63420B105F4FB00CD63DDC9F17F2F7E1EF708F87",
+      "snapshot_sha256": "2F0A62B003B3633FD529870C63420B105F4FB00CD63DDC9F17F2F7E1EF708F87"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_result_cdc.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\pixel14_result_cdc.v",
+      "sha256_before": "C13D3A688352EE3C5486DB5A2E979E2A7F50F3830B251EC5A3096C3152940053",
+      "sha256_after": "C13D3A688352EE3C5486DB5A2E979E2A7F50F3830B251EC5A3096C3152940053",
+      "snapshot_sha256": "C13D3A688352EE3C5486DB5A2E979E2A7F50F3830B251EC5A3096C3152940053"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_pipeline.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\pixel14_pipeline.v",
+      "sha256_before": "DA5868C2AA009D94436264BE39493DD8FBDB18EA645ADBC8F5DF4882BC65B473",
+      "sha256_after": "DA5868C2AA009D94436264BE39493DD8FBDB18EA645ADBC8F5DF4882BC65B473",
+      "snapshot_sha256": "DA5868C2AA009D94436264BE39493DD8FBDB18EA645ADBC8F5DF4882BC65B473"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_card_template_rom.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\pixel14_card_template_rom.v",
+      "sha256_before": "548EE01C8D003F9D76B8879ABBDB1B65A67CF54CCA63D7C2B0F6651BCE96E26A",
+      "sha256_after": "548EE01C8D003F9D76B8879ABBDB1B65A67CF54CCA63D7C2B0F6651BCE96E26A",
+      "snapshot_sha256": "548EE01C8D003F9D76B8879ABBDB1B65A67CF54CCA63D7C2B0F6651BCE96E26A"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_scene_preprocess.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\pixel14_scene_preprocess.v",
+      "sha256_before": "283152D97021C551FC6F3E2182088EFDE869BB042FBFD03ADF907453D3C7EE8A",
+      "sha256_after": "283152D97021C551FC6F3E2182088EFDE869BB042FBFD03ADF907453D3C7EE8A",
+      "snapshot_sha256": "283152D97021C551FC6F3E2182088EFDE869BB042FBFD03ADF907453D3C7EE8A"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_rotation_matcher.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\pixel14_rotation_matcher.v",
+      "sha256_before": "D92B0CE7F6E14A6734EB2D8F706FC7F23B4CB28BEAC704DEF5A89D1D18DCCFC8",
+      "sha256_after": "D92B0CE7F6E14A6734EB2D8F706FC7F23B4CB28BEAC704DEF5A89D1D18DCCFC8",
+      "snapshot_sha256": "D92B0CE7F6E14A6734EB2D8F706FC7F23B4CB28BEAC704DEF5A89D1D18DCCFC8"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_block_shape_guard.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\pixel14_block_shape_guard.v",
+      "sha256_before": "2BCB1AABD82168E05CC5E17C026D70A3FBC2B605444BF9050E244BF0AB4BD58B",
+      "sha256_after": "2BCB1AABD82168E05CC5E17C026D70A3FBC2B605444BF9050E244BF0AB4BD58B",
+      "snapshot_sha256": "2BCB1AABD82168E05CC5E17C026D70A3FBC2B605444BF9050E244BF0AB4BD58B"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_block_filter.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\pixel14_block_filter.v",
+      "sha256_before": "6B012CD311F7ED254548D8515B1B6E707DC0DAF890464D4B0F1CD88FEB5F4873",
+      "sha256_after": "6B012CD311F7ED254548D8515B1B6E707DC0DAF890464D4B0F1CD88FEB5F4873",
+      "snapshot_sha256": "6B012CD311F7ED254548D8515B1B6E707DC0DAF890464D4B0F1CD88FEB5F4873"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\card_matcher.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\card_matcher.v",
+      "sha256_before": "9AE50526BEF9DDB9D874C931FE13C4C392B85A9628F1660E253C0D33A0A89B09",
+      "sha256_after": "9AE50526BEF9DDB9D874C931FE13C4C392B85A9628F1660E253C0D33A0A89B09",
+      "snapshot_sha256": "9AE50526BEF9DDB9D874C931FE13C4C392B85A9628F1660E253C0D33A0A89B09"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\card_template_rom.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\card_template_rom.v",
+      "sha256_before": "36BAF5B6B3E85F96D11C47CD480D7C28B9C3248D2AFEC1F59522234C9A102C63",
+      "sha256_after": "36BAF5B6B3E85F96D11C47CD480D7C28B9C3248D2AFEC1F59522234C9A102C63",
+      "snapshot_sha256": "36BAF5B6B3E85F96D11C47CD480D7C28B9C3248D2AFEC1F59522234C9A102C63"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\card_result_filter.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\card_result_filter.v",
+      "sha256_before": "2496768096E8CDB243D477021CDD9C681F804182F46DBACE30C0AC7076C63B98",
+      "sha256_after": "2496768096E8CDB243D477021CDD9C681F804182F46DBACE30C0AC7076C63B98",
+      "snapshot_sha256": "2496768096E8CDB243D477021CDD9C681F804182F46DBACE30C0AC7076C63B98"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_content.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\items14_content.v",
+      "sha256_before": "5B89F9DB9AB6572986FF20943A2573164DB885E4575F9BD105D5E1CD7173C421",
+      "sha256_after": "5B89F9DB9AB6572986FF20943A2573164DB885E4575F9BD105D5E1CD7173C421",
+      "snapshot_sha256": "5B89F9DB9AB6572986FF20943A2573164DB885E4575F9BD105D5E1CD7173C421"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_font_rom.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\items14_font_rom.v",
+      "sha256_before": "0662D2C97D8442BB3053FA3F97F37F48C752C225A35747E2AF87646F904307D3",
+      "sha256_after": "0662D2C97D8442BB3053FA3F97F37F48C752C225A35747E2AF87646F904307D3",
+      "snapshot_sha256": "0662D2C97D8442BB3053FA3F97F37F48C752C225A35747E2AF87646F904307D3"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_osd.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\items14_osd.v",
+      "sha256_before": "62B7AD31BDA1AD73FF7846CEE39566E158DC336936CA5E8576D1C73C7D299875",
+      "sha256_after": "62B7AD31BDA1AD73FF7846CEE39566E158DC336936CA5E8576D1C73C7D299875",
+      "snapshot_sha256": "62B7AD31BDA1AD73FF7846CEE39566E158DC336936CA5E8576D1C73C7D299875"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_question_bank.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\items14_question_bank.v",
+      "sha256_before": "D48A28CB887A3045C6839696612AD3E446C9E691D32298E3240C6A3A0F45CB54",
+      "sha256_after": "D48A28CB887A3045C6839696612AD3E446C9E691D32298E3240C6A3A0F45CB54",
+      "snapshot_sha256": "D48A28CB887A3045C6839696612AD3E446C9E691D32298E3240C6A3A0F45CB54"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_quiz_control.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\items14_quiz_control.v",
+      "sha256_before": "4DB2B8A9ECBFB9F087C298A5ADE2164BFAB39AEA5A52A361D8626F68F46D6E97",
+      "sha256_after": "4DB2B8A9ECBFB9F087C298A5ADE2164BFAB39AEA5A52A361D8626F68F46D6E97",
+      "snapshot_sha256": "4DB2B8A9ECBFB9F087C298A5ADE2164BFAB39AEA5A52A361D8626F68F46D6E97"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_result_join.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\items14_result_join.v",
+      "sha256_before": "62426C8ECF8E25BD36F96DB93672301A5877E9817E87F55BC9E9C2E1C4CFCC59",
+      "sha256_after": "62426C8ECF8E25BD36F96DB93672301A5877E9817E87F55BC9E9C2E1C4CFCC59",
+      "snapshot_sha256": "62426C8ECF8E25BD36F96DB93672301A5877E9817E87F55BC9E9C2E1C4CFCC59"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_system.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\items14_system.v",
+      "sha256_before": "1C996FCEDE10147105A23846B8D10AAFFB0DDF718C6645BD8B54B779E8035314",
+      "sha256_after": "1C996FCEDE10147105A23846B8D10AAFFB0DDF718C6645BD8B54B779E8035314",
+      "snapshot_sha256": "1C996FCEDE10147105A23846B8D10AAFFB0DDF718C6645BD8B54B779E8035314"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\sim\\sc520-card-recognition\\tb_pixel14_scene_system.sv",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\tb_pixel14_scene_system.sv",
+      "sha256_before": "86325C7AE7EC363B0B00F53A3952D64026CCF84D708B53630C1E108ACECA8BC9",
+      "sha256_after": "86325C7AE7EC363B0B00F53A3952D64026CCF84D708B53630C1E108ACECA8BC9",
+      "snapshot_sha256": "86325C7AE7EC363B0B00F53A3952D64026CCF84D708B53630C1E108ACECA8BC9"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\simulate-pixel14.py",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\simulate-pixel14.py",
+      "sha256_before": "22686E6A81BB91CF9EC1FC87F4B649B59F4B696E15C3E15031BE9E89B28BEAFA",
+      "sha256_after": "22686E6A81BB91CF9EC1FC87F4B649B59F4B696E15C3E15031BE9E89B28BEAFA",
+      "snapshot_sha256": "22686E6A81BB91CF9EC1FC87F4B649B59F4B696E15C3E15031BE9E89B28BEAFA"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\simulate.py",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\simulate.py",
+      "sha256_before": "8F3C58AD1E4D9DB1DCB7018BD45C8123BA232068DC90B2DA5610B12C19E3CF17",
+      "sha256_after": "8F3C58AD1E4D9DB1DCB7018BD45C8123BA232068DC90B2DA5610B12C19E3CF17",
+      "snapshot_sha256": "8F3C58AD1E4D9DB1DCB7018BD45C8123BA232068DC90B2DA5610B12C19E3CF17"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\run-pixel14.do",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\run-pixel14.do",
+      "sha256_before": "789A87AF595B89C3E5FA963DFF530B385B893061BCA4135F64E72A2863E80F7F",
+      "sha256_after": "789A87AF595B89C3E5FA963DFF530B385B893061BCA4135F64E72A2863E80F7F",
+      "snapshot_sha256": "789A87AF595B89C3E5FA963DFF530B385B893061BCA4135F64E72A2863E80F7F"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\templates.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\templates.mem",
+      "sha256_before": "731EC1B57D12F2EF305C35A055169BCD6733A4F76836AD1FA278BEE5BD9E8341",
+      "sha256_after": "731EC1B57D12F2EF305C35A055169BCD6733A4F76836AD1FA278BEE5BD9E8341",
+      "snapshot_sha256": "731EC1B57D12F2EF305C35A055169BCD6733A4F76836AD1FA278BEE5BD9E8341"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\system-cases.txt",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\system-cases.txt",
+      "sha256_before": "2A7B71510BDAAA58CFB84B59ED974CE07CB1ED54A61BA4924228C9B0435D8D71",
+      "sha256_after": "2A7B71510BDAAA58CFB84B59ED974CE07CB1ED54A61BA4924228C9B0435D8D71",
+      "snapshot_sha256": "2A7B71510BDAAA58CFB84B59ED974CE07CB1ED54A61BA4924228C9B0435D8D71"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\manifest.json",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\manifest.json",
+      "sha256_before": "30DA3BC70E4876C5DF3AB7289A0E7C764C5FE0B2AD0607883ACD4812464ABC51",
+      "sha256_after": "30DA3BC70E4876C5DF3AB7289A0E7C764C5FE0B2AD0607883ACD4812464ABC51",
+      "snapshot_sha256": "30DA3BC70E4876C5DF3AB7289A0E7C764C5FE0B2AD0607883ACD4812464ABC51"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\fixtures.json",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\fixtures.json",
+      "sha256_before": "14657E4FBB2727471898BB313622EDBFABA55ED66DBB580614D9AD18D783B61D",
+      "sha256_after": "14657E4FBB2727471898BB313622EDBFABA55ED66DBB580614D9AD18D783B61D",
+      "snapshot_sha256": "14657E4FBB2727471898BB313622EDBFABA55ED66DBB580614D9AD18D783B61D"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\business-cases.txt",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\business-cases.txt",
+      "sha256_before": "15BD8F396929C1A272325E895D7D56DF95191F3D4B4D81CA95360D408BB2BE26",
+      "sha256_after": "15BD8F396929C1A272325E895D7D56DF95191F3D4B4D81CA95360D408BB2BE26",
+      "snapshot_sha256": "15BD8F396929C1A272325E895D7D56DF95191F3D4B4D81CA95360D408BB2BE26"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\bank-contract.json",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\bank-contract.json",
+      "sha256_before": "3595B5082464719F705816E12221272555B7723B74EDFF7BA09BB088FAC896A9",
+      "sha256_after": "3595B5082464719F705816E12221272555B7723B74EDFF7BA09BB088FAC896A9",
+      "snapshot_sha256": "3595B5082464719F705816E12221272555B7723B74EDFF7BA09BB088FAC896A9"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q000_card_10_67_67p5_10.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q000_card_10_67_67p5_10.rgb.mem",
+      "sha256_before": "083A21B3A0ED1FCEE927094609E3630C8347E5912DF643C6164F8AA3E9144804",
+      "sha256_after": "083A21B3A0ED1FCEE927094609E3630C8347E5912DF643C6164F8AA3E9144804",
+      "snapshot_sha256": "083A21B3A0ED1FCEE927094609E3630C8347E5912DF643C6164F8AA3E9144804"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q001_card_10_67_157p5_01.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q001_card_10_67_157p5_01.rgb.mem",
+      "sha256_before": "69DBB78C726F47AE6F3B57A33AEC4C78D7DFA5CBBB27F6C12FC2FBCF0F531095",
+      "sha256_after": "69DBB78C726F47AE6F3B57A33AEC4C78D7DFA5CBBB27F6C12FC2FBCF0F531095",
+      "snapshot_sha256": "69DBB78C726F47AE6F3B57A33AEC4C78D7DFA5CBBB27F6C12FC2FBCF0F531095"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q002_card_12_51_47p5_10.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q002_card_12_51_47p5_10.rgb.mem",
+      "sha256_before": "E994EFD4792C9C98770F9F1E0CFEBC7F5F391133EE6B0518EC703B92535BFF9B",
+      "sha256_after": "E994EFD4792C9C98770F9F1E0CFEBC7F5F391133EE6B0518EC703B92535BFF9B",
+      "snapshot_sha256": "E994EFD4792C9C98770F9F1E0CFEBC7F5F391133EE6B0518EC703B92535BFF9B"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q003_card_12_51_52p5_00.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q003_card_12_51_52p5_00.rgb.mem",
+      "sha256_before": "D3ECACCF93604A1BF13A3BE963EBE3BD93CC0E8E1029A86E55450B19BE704526",
+      "sha256_after": "D3ECACCF93604A1BF13A3BE963EBE3BD93CC0E8E1029A86E55450B19BE704526",
+      "snapshot_sha256": "D3ECACCF93604A1BF13A3BE963EBE3BD93CC0E8E1029A86E55450B19BE704526"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q004_card_12_51_57p5_11.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q004_card_12_51_57p5_11.rgb.mem",
+      "sha256_before": "EF4045433689F4487F8D0517DAA355F4A21140FAB31789972A83A41706192448",
+      "sha256_after": "EF4045433689F4487F8D0517DAA355F4A21140FAB31789972A83A41706192448",
+      "snapshot_sha256": "EF4045433689F4487F8D0517DAA355F4A21140FAB31789972A83A41706192448"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q005_card_12_51_127p5_10.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q005_card_12_51_127p5_10.rgb.mem",
+      "sha256_before": "C8E26DCDA9867E821D32F78F8E1BC17708A912D0CE011E39E5305D09F08E7304",
+      "sha256_after": "C8E26DCDA9867E821D32F78F8E1BC17708A912D0CE011E39E5305D09F08E7304",
+      "snapshot_sha256": "C8E26DCDA9867E821D32F78F8E1BC17708A912D0CE011E39E5305D09F08E7304"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q006_card_12_51_137p5_01.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q006_card_12_51_137p5_01.rgb.mem",
+      "sha256_before": "68A7FA2AB4E5170AD21ED344DEADAF50035C526BB1A0B7EB62317104BA8D547F",
+      "sha256_after": "68A7FA2AB4E5170AD21ED344DEADAF50035C526BB1A0B7EB62317104BA8D547F",
+      "snapshot_sha256": "68A7FA2AB4E5170AD21ED344DEADAF50035C526BB1A0B7EB62317104BA8D547F"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q007_card_12_51_142p5_00.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q007_card_12_51_142p5_00.rgb.mem",
+      "sha256_before": "D345EA504227E16A9A50807127A6BD78BA42331D7BD99C18DE49E1E8E3588CD4",
+      "sha256_after": "D345EA504227E16A9A50807127A6BD78BA42331D7BD99C18DE49E1E8E3588CD4",
+      "snapshot_sha256": "D345EA504227E16A9A50807127A6BD78BA42331D7BD99C18DE49E1E8E3588CD4"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q008_card_12_51_147p5_11.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q008_card_12_51_147p5_11.rgb.mem",
+      "sha256_before": "F7B53E740A5CE03BC124102FEC6CE474A921F4316343FAC3A8422221ED7E2BC8",
+      "sha256_after": "F7B53E740A5CE03BC124102FEC6CE474A921F4316343FAC3A8422221ED7E2BC8",
+      "snapshot_sha256": "F7B53E740A5CE03BC124102FEC6CE474A921F4316343FAC3A8422221ED7E2BC8"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q009_card_12_51_207p5_10.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q009_card_12_51_207p5_10.rgb.mem",
+      "sha256_before": "57DE38E1F4C642DDD21B06AD990DC59C974796D77154C7E282FA2BA84E963B16",
+      "sha256_after": "57DE38E1F4C642DDD21B06AD990DC59C974796D77154C7E282FA2BA84E963B16",
+      "snapshot_sha256": "57DE38E1F4C642DDD21B06AD990DC59C974796D77154C7E282FA2BA84E963B16"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q010_card_12_51_217p5_00.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q010_card_12_51_217p5_00.rgb.mem",
+      "sha256_before": "2A212F379FDB8297C743AB9F6F620E3E800D6EC8E00F53BEFB64109F655380BE",
+      "sha256_after": "2A212F379FDB8297C743AB9F6F620E3E800D6EC8E00F53BEFB64109F655380BE",
+      "snapshot_sha256": "2A212F379FDB8297C743AB9F6F620E3E800D6EC8E00F53BEFB64109F655380BE"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q011_card_12_51_227p5_10.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q011_card_12_51_227p5_10.rgb.mem",
+      "sha256_before": "01F1DF5835BAC8E9B9197F7BD0C43E275CC1653D524362BF2BF69A0BFB2F2D6E",
+      "sha256_after": "01F1DF5835BAC8E9B9197F7BD0C43E275CC1653D524362BF2BF69A0BFB2F2D6E",
+      "snapshot_sha256": "01F1DF5835BAC8E9B9197F7BD0C43E275CC1653D524362BF2BF69A0BFB2F2D6E"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q012_card_12_51_237p5_00.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q012_card_12_51_237p5_00.rgb.mem",
+      "sha256_before": "8620BF38977819EE5E3F0DC0D6C313A8A119B4C7768341B63ADDED5879343691",
+      "sha256_after": "8620BF38977819EE5E3F0DC0D6C313A8A119B4C7768341B63ADDED5879343691",
+      "snapshot_sha256": "8620BF38977819EE5E3F0DC0D6C313A8A119B4C7768341B63ADDED5879343691"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q013_card_12_51_292p5_00.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q013_card_12_51_292p5_00.rgb.mem",
+      "sha256_before": "45812F3A88C81BEEA5B59828414997196C088D026DFAE9C4E931F91280FA7182",
+      "sha256_after": "45812F3A88C81BEEA5B59828414997196C088D026DFAE9C4E931F91280FA7182",
+      "snapshot_sha256": "45812F3A88C81BEEA5B59828414997196C088D026DFAE9C4E931F91280FA7182"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q014_card_12_51_317p5_01.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q014_card_12_51_317p5_01.rgb.mem",
+      "sha256_before": "2AAFD667A0D21D250502C2C4AA460819AB6944E56BE75198D733CF64676572D1",
+      "sha256_after": "2AAFD667A0D21D250502C2C4AA460819AB6944E56BE75198D733CF64676572D1",
+      "snapshot_sha256": "2AAFD667A0D21D250502C2C4AA460819AB6944E56BE75198D733CF64676572D1"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q015_card_12_67_132p5_10.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q015_card_12_67_132p5_10.rgb.mem",
+      "sha256_before": "3154BE01DE0B418463BC391B3FA6A61992829EE1A2FB081A8C8AD48C1D5F3B20",
+      "sha256_after": "3154BE01DE0B418463BC391B3FA6A61992829EE1A2FB081A8C8AD48C1D5F3B20",
+      "snapshot_sha256": "3154BE01DE0B418463BC391B3FA6A61992829EE1A2FB081A8C8AD48C1D5F3B20"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q016_card_12_67_312p5_10.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q016_card_12_67_312p5_10.rgb.mem",
+      "sha256_before": "79390B2BC174B577BFC5DA9553BA9CEED8563397DFC5FFE22CD54AFDCA551F60",
+      "sha256_after": "79390B2BC174B577BFC5DA9553BA9CEED8563397DFC5FFE22CD54AFDCA551F60",
+      "snapshot_sha256": "79390B2BC174B577BFC5DA9553BA9CEED8563397DFC5FFE22CD54AFDCA551F60"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q017_card_14_51_27p5_11.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q017_card_14_51_27p5_11.rgb.mem",
+      "sha256_before": "8C8B721860D807311068B3EB70E51C7477F4BB1667A1A7E84C59BF2DE413F29B",
+      "sha256_after": "8C8B721860D807311068B3EB70E51C7477F4BB1667A1A7E84C59BF2DE413F29B",
+      "snapshot_sha256": "8C8B721860D807311068B3EB70E51C7477F4BB1667A1A7E84C59BF2DE413F29B"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q018_card_14_51_37p5_10.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q018_card_14_51_37p5_10.rgb.mem",
+      "sha256_before": "F1F776CB731F91DBA1193686DD3E703C2DE0B63026F0DC0C9C9032997537088E",
+      "sha256_after": "F1F776CB731F91DBA1193686DD3E703C2DE0B63026F0DC0C9C9032997537088E",
+      "snapshot_sha256": "F1F776CB731F91DBA1193686DD3E703C2DE0B63026F0DC0C9C9032997537088E"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q019_card_14_51_117p5_11.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q019_card_14_51_117p5_11.rgb.mem",
+      "sha256_before": "5EA3C4A52FB36C49D2994FF86EE0DF3DE48CED8A15E3F508238ED6626BE16B11",
+      "sha256_after": "5EA3C4A52FB36C49D2994FF86EE0DF3DE48CED8A15E3F508238ED6626BE16B11",
+      "snapshot_sha256": "5EA3C4A52FB36C49D2994FF86EE0DF3DE48CED8A15E3F508238ED6626BE16B11"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q020_card_14_51_127p5_01.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q020_card_14_51_127p5_01.rgb.mem",
+      "sha256_before": "B040A3E3E127CF4ED14E9F1417AB68308A340EC76D61518CFAE569A6E163ACAA",
+      "sha256_after": "B040A3E3E127CF4ED14E9F1417AB68308A340EC76D61518CFAE569A6E163ACAA",
+      "snapshot_sha256": "B040A3E3E127CF4ED14E9F1417AB68308A340EC76D61518CFAE569A6E163ACAA"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q021_card_14_51_207p5_11.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q021_card_14_51_207p5_11.rgb.mem",
+      "sha256_before": "138689944B8E8986CD470B39F70E6ED23777B1E33CEDF7981ED1F4BB468E4040",
+      "sha256_after": "138689944B8E8986CD470B39F70E6ED23777B1E33CEDF7981ED1F4BB468E4040",
+      "snapshot_sha256": "138689944B8E8986CD470B39F70E6ED23777B1E33CEDF7981ED1F4BB468E4040"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q022_card_14_51_217p5_11.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q022_card_14_51_217p5_11.rgb.mem",
+      "sha256_before": "E69F3631D38E04D0AA81AD8822995C3333F5092E8B483D1C55DE2F10F3B4E027",
+      "sha256_after": "E69F3631D38E04D0AA81AD8822995C3333F5092E8B483D1C55DE2F10F3B4E027",
+      "snapshot_sha256": "E69F3631D38E04D0AA81AD8822995C3333F5092E8B483D1C55DE2F10F3B4E027"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q023_card_14_51_297p5_11.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q023_card_14_51_297p5_11.rgb.mem",
+      "sha256_before": "92FBF934CE06CE5C3BBBA3E4B8512E93242863DA1513B4DAF1DF9B45FE570E46",
+      "sha256_after": "92FBF934CE06CE5C3BBBA3E4B8512E93242863DA1513B4DAF1DF9B45FE570E46",
+      "snapshot_sha256": "92FBF934CE06CE5C3BBBA3E4B8512E93242863DA1513B4DAF1DF9B45FE570E46"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q024_card_14_51_307p5_11.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q024_card_14_51_307p5_11.rgb.mem",
+      "sha256_before": "799631FA975ED31C22E4EB75D705990E87F761F3879B2F7BDE58C1FA560EA856",
+      "sha256_after": "799631FA975ED31C22E4EB75D705990E87F761F3879B2F7BDE58C1FA560EA856",
+      "snapshot_sha256": "799631FA975ED31C22E4EB75D705990E87F761F3879B2F7BDE58C1FA560EA856"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q025_card_14_51_322p5_10.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q025_card_14_51_322p5_10.rgb.mem",
+      "sha256_before": "46B85D058543ECF56F0D2FC2D24BD39A6197A0F786B43E974A9DE80014849A9D",
+      "sha256_after": "46B85D058543ECF56F0D2FC2D24BD39A6197A0F786B43E974A9DE80014849A9D",
+      "snapshot_sha256": "46B85D058543ECF56F0D2FC2D24BD39A6197A0F786B43E974A9DE80014849A9D"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q026_card_14_51_347p5_01.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q026_card_14_51_347p5_01.rgb.mem",
+      "sha256_before": "69B73CE1861120C7A173EC4250D31D22F1E26429D0E00029ABA2726A1E799058",
+      "sha256_after": "69B73CE1861120C7A173EC4250D31D22F1E26429D0E00029ABA2726A1E799058",
+      "snapshot_sha256": "69B73CE1861120C7A173EC4250D31D22F1E26429D0E00029ABA2726A1E799058"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014\\vectors\\q027_card_14_83_297p5_10.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\q027_card_14_83_297p5_10.rgb.mem",
+      "sha256_before": "0F6AA95D9588E323C1F4A335A1BE3330E6ADB262D512604116DFF4173F866637",
+      "sha256_after": "0F6AA95D9588E323C1F4A335A1BE3330E6ADB262D512604116DFF4173F866637",
+      "snapshot_sha256": "0F6AA95D9588E323C1F4A335A1BE3330E6ADB262D512604116DFF4173F866637"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r000_empty_dark.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\r000_empty_dark.rgb.mem",
+      "sha256_before": "AEBF6EA10DB0C8F4591F331C29A15589D7751857E12195B2EDC5D6C9BE2F029F",
+      "sha256_after": "AEBF6EA10DB0C8F4591F331C29A15589D7751857E12195B2EDC5D6C9BE2F029F",
+      "snapshot_sha256": "AEBF6EA10DB0C8F4591F331C29A15589D7751857E12195B2EDC5D6C9BE2F029F"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r003_card_10_angle_0.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\r003_card_10_angle_0.rgb.mem",
+      "sha256_before": "FD5E0BC129948BBB06EB0B2843C9A1801D3437DEC6F28665AA725193F1053AFA",
+      "sha256_after": "FD5E0BC129948BBB06EB0B2843C9A1801D3437DEC6F28665AA725193F1053AFA",
+      "snapshot_sha256": "FD5E0BC129948BBB06EB0B2843C9A1801D3437DEC6F28665AA725193F1053AFA"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r153_unknown_gray_circle.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\inputs\\vectors\\r153_unknown_gray_circle.rgb.mem",
+      "sha256_before": "83B9680524C84A121100633C31339038921CFDF0A47F89EBBB6CFE03F26FFF32",
+      "sha256_after": "83B9680524C84A121100633C31339038921CFDF0A47F89EBBB6CFE03F26FFF32",
+      "snapshot_sha256": "83B9680524C84A121100633C31339038921CFDF0A47F89EBBB6CFE03F26FFF32"
+    }
+  ],
+  "TimeoutSeconds": 900,
+  "CaseAssets": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-refusals-20261014",
+  "MatrixOnly": true,
+  "SimulatorIni": {
+    "path": "D:\\modeltech64_10.7\\modelsim.ini",
+    "sha256": "BC3F7544DD7D525A105A2CF08B4A33AF6B8529EBA49C3F58C415D2E37B47FC14"
+  },
+  "Scope": "Synthetic RGB96 capture groups, per-frame classification and dual-clock result transport; upstream EOF qualification supplied by testbench; no physical camera or board validation",
+  "PID": 63200,
+  "FinishedAt": "2026-10-14T11:07:22.301+08:00",
+  "ElapsedSeconds": 171.09399999998277,
+  "NativeExitCode": 0,
+  "TimedOut": false,
+  "InputsUnchanged": true,
+  "Summary": {
+    "errors": 0,
+    "checks": 449,
+    "scenarios": 29,
+    "done": 1,
+    "injected": 0
+  },
+  "Qualified": true,
+  "Outputs": [
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\run-start.json",
+      "sha256": "B377F3263B0D8A2C890DC78122EB492DDBAF44C05B158C4108B320593466F968"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\stdout.log",
+      "sha256": "6B548DCE08CE99E90EEECDEA10EFE4D9BE52F76F622EF8A6BDAE2CF5BB9BCBE6"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\summary.json",
+      "sha256": "B2B0922335DDA90D5A41AF9CF61CBDC6F0BCC033529789CF18909D9D479FE81F"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\templates.mem",
+      "sha256": "731EC1B57D12F2EF305C35A055169BCD6733A4F76836AD1FA278BEE5BD9E8341"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-scene_system-normal-20261014-110429-8c113f1e\\transcript.log",
+      "sha256": "F73861DAF38989CD294E97D796CB88F32517823874DE79C43EA927590DC9B2FA"
+    }
+  ]
+}

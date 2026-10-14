@@ -1,0 +1,202 @@
+{
+  "ROMs": [
+    {
+      "Kind": "font",
+      "GateInstance": "u_p14_pipeline/system/panel/font/ramread0_syn_24",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 0,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 1,
+        "1": 2,
+        "2": 3,
+        "3": 4,
+        "4": 5
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/system/panel/font_bits[1]",
+        "u_p14_pipeline/system/panel/font_bits[2]",
+        "u_p14_pipeline/system/panel/font_bits[3]",
+        "u_p14_pipeline/system/panel/font_bits[4]",
+        "u_p14_pipeline/system/panel/font_bits[5]"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_diag_osd/pixel_y[1]",
+        "u_p14_diag_osd/pixel_y[2]_syn_2",
+        "u_p14_pipeline/system/panel/font/row[2]",
+        "u_p14_pipeline/system/panel/font/row[3]",
+        "u_p14_pipeline/system/panel/font/glyph[0]",
+        "u_p14_pipeline/system/panel/font/glyph[1]",
+        "u_p14_pipeline/system/panel/font/glyph[2]",
+        "u_p14_pipeline/system/panel/font/glyph[3]",
+        "u_p14_pipeline/system/panel/font/glyph[4]",
+        "u_p14_pipeline/system/panel/font/glyph[5]",
+        "u_p14_pipeline/system/panel/font/glyph[6]",
+        "u_p14_pipeline/system/panel/font/glyph[7]"
+      ],
+      "Signature": "2285CD3E1745E665FAB28EB56BB80A52789A96A1831F55BCBD281C502593715D",
+      "RoutedSignatureCount": 0,
+      "AddressAndSelectReviewed": false,
+      "Evidence": []
+    },
+    {
+      "Kind": "font",
+      "GateInstance": "u_p14_pipeline/system/panel/font/ramread0_syn_30",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 0,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 6,
+        "1": 7,
+        "2": 8,
+        "3": 9,
+        "4": 10
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/system/panel/font_bits[6]",
+        "u_p14_pipeline/system/panel/font_bits[7]",
+        "u_p14_pipeline/system/panel/font_bits[8]",
+        "u_p14_pipeline/system/panel/font_bits[9]",
+        "u_p14_pipeline/system/panel/font_bits[10]"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_diag_osd/pixel_y[1]",
+        "u_p14_diag_osd/pixel_y[2]_syn_2",
+        "u_p14_pipeline/system/panel/font/row[2]",
+        "u_p14_pipeline/system/panel/font/row[3]",
+        "u_p14_pipeline/system/panel/font/glyph[0]",
+        "u_p14_pipeline/system/panel/font/glyph[1]",
+        "u_p14_pipeline/system/panel/font/glyph[2]",
+        "u_p14_pipeline/system/panel/font/glyph[3]",
+        "u_p14_pipeline/system/panel/font/glyph[4]",
+        "u_p14_pipeline/system/panel/font/glyph[5]",
+        "u_p14_pipeline/system/panel/font/glyph[6]",
+        "u_p14_pipeline/system/panel/font/glyph[7]"
+      ],
+      "Signature": "3099EE3CE75C2B27338B78F20701BCBE3636587ED549B804D87E6CA1587320EB",
+      "RoutedSignatureCount": 0,
+      "AddressAndSelectReviewed": false,
+      "Evidence": []
+    },
+    {
+      "Kind": "font",
+      "GateInstance": "u_p14_pipeline/system/panel/font/ramread0_syn_36",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 0,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 11,
+        "1": 12,
+        "2": 13,
+        "3": 14,
+        "4": 15
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/system/panel/font_bits[11]",
+        "u_p14_pipeline/system/panel/font_bits[12]",
+        "u_p14_pipeline/system/panel/font_bits[13]",
+        "u_p14_pipeline/system/panel/font_bits[14]",
+        "u_p14_pipeline/system/panel/font_bits[15]"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_diag_osd/pixel_y[1]",
+        "u_p14_diag_osd/pixel_y[2]_syn_2",
+        "u_p14_pipeline/system/panel/font/row[2]",
+        "u_p14_pipeline/system/panel/font/row[3]",
+        "u_p14_pipeline/system/panel/font/glyph[0]",
+        "u_p14_pipeline/system/panel/font/glyph[1]",
+        "u_p14_pipeline/system/panel/font/glyph[2]",
+        "u_p14_pipeline/system/panel/font/glyph[3]",
+        "u_p14_pipeline/system/panel/font/glyph[4]",
+        "u_p14_pipeline/system/panel/font/glyph[5]",
+        "u_p14_pipeline/system/panel/font/glyph[6]",
+        "u_p14_pipeline/system/panel/font/glyph[7]"
+      ],
+      "Signature": "7541EB34DA1EDF388FFCD3BECFAC1CDA3790647F1B2EAEA01AC9DC31EC208F0F",
+      "RoutedSignatureCount": 0,
+      "AddressAndSelectReviewed": false,
+      "Evidence": []
+    },
+    {
+      "Kind": "template",
+      "GateInstance": "u_p14_pipeline/matcher/templates/ramread0_syn_23",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 20,
+      "LogicalBase": 0,
+      "WordsChecked": 1024,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5,
+        "6": 6,
+        "7": 7,
+        "8": 8,
+        "9": 9,
+        "10": 10,
+        "11": 11,
+        "12": 12,
+        "13": 13,
+        "14": 14
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/matcher/templates/data[0]",
+        "u_p14_pipeline/matcher/templates/data[1]",
+        "u_p14_pipeline/matcher/templates/data[2]",
+        "u_p14_pipeline/matcher/templates/data[3]",
+        "u_p14_pipeline/matcher/templates/data[4]",
+        "u_p14_pipeline/matcher/templates/data[5]",
+        "u_p14_pipeline/matcher/templates/data[6]",
+        "u_p14_pipeline/matcher/templates/data[7]",
+        "u_p14_pipeline/matcher/templates/data[8]",
+        "u_p14_pipeline/matcher/templates/data[9]",
+        "u_p14_pipeline/matcher/templates/data[10]",
+        "u_p14_pipeline/matcher/templates/data[11]",
+        "u_p14_pipeline/matcher/templates/data[12]",
+        "u_p14_pipeline/matcher/templates/data[13]",
+        "u_p14_pipeline/matcher/templates/data[14]",
+        "open_n98454",
+        "open_n98453",
+        "open_n98452",
+        "open_n98451",
+        "open_n98455"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/scene_mode$scene/card_index[0]",
+        "u_p14_pipeline/scene_mode$scene/card_index[1]",
+        "u_p14_pipeline/scene_mode$scene/card_index[2]",
+        "u_p14_pipeline/scene_mode$scene/card_index[3]",
+        "u_p14_pipeline/scene_mode$scene/card_index[4]",
+        "u_p14_pipeline/scene_mode$scene/card_index[5]",
+        "u_p14_pipeline/scene_mode$scene/card_index[6]",
+        "u_p14_pipeline/scene_mode$scene/card_index[7]",
+        "u_p14_pipeline/scene_mode$scene/card_index[8]",
+        "u_p14_pipeline/scene_mode$scene/card_index[9]"
+      ],
+      "Signature": "65DF83A6D79084F4E186EBBCA212E7940964EBF16D93D41AA1A4DC5E23540558",
+      "RoutedSignatureCount": 0,
+      "AddressAndSelectReviewed": false,
+      "Evidence": []
+    }
+  ],
+  "UnreviewedAddressOrSelectMappings": [],
+  "LogicalWords": {
+    "font": 4096,
+    "template": 1024
+  },
+  "SynNetlist": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b110\\td_project\\camera_to_dsi_display_Runs\\syn_1\\pixel14-syn_1-netlist.v",
+    "Bytes": 84980361,
+    "SHA256": "DA56000D28924FAED57E2C7037AB133D79583CAE34C6E986E1FE4ADA2D4C57B0"
+  },
+  "RoutedNetlist": null,
+  "RoutedSignaturesChecked": false,
+  "CandidateQualified": false,
+  "HardwareValidated": false,
+  "DecoderExerciseOnly": true
+}

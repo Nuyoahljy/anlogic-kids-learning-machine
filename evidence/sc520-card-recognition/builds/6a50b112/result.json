@@ -1,0 +1,31 @@
+{
+  "FinishedAtUtc": "2026-10-14T03:57:54.7896221Z",
+  "Bit": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b112\\td_project\\camera_to_dsi_display_Runs\\phy_1\\camera_to_dsi_display.bit",
+  "SHA256": "4C336D57C7D56DA5C132FCA38B75944C898F4D90EBE80D24842AE4DD4F2ADD47",
+  "Bytes": 1789539,
+  "Stages": [
+    {
+      "Stage": "syn_1",
+      "PID": 55356,
+      "ExitCode": 0,
+      "StartedAtUtc": "2026-10-14T03:37:36.5978074Z",
+      "FinishedAtUtc": "2026-10-14T03:44:33.2413922Z",
+      "MarkerFresh": true,
+      "Stdout": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b112\\syn_1.stdout.log",
+      "Stderr": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b112\\syn_1.stderr.log"
+    },
+    {
+      "Stage": "phy_1",
+      "PID": 31056,
+      "ExitCode": 0,
+      "StartedAtUtc": "2026-10-14T03:44:33.3013736Z",
+      "FinishedAtUtc": "2026-10-14T03:57:54.3055247Z",
+      "MarkerFresh": true,
+      "Stdout": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b112\\phy_1.stdout.log",
+      "Stderr": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b112\\phy_1.stderr.log"
+    }
+  ],
+  "ChangedInputs": [],
+  "HardwareValidated": false,
+  "TimingQualified": false
+}

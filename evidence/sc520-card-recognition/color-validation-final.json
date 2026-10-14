@@ -1,0 +1,226 @@
+{
+  "CreatedAt": "2026-10-14T11:58:08.086285+08:00",
+  "Qualified": true,
+  "Scope": "Functional verification only; the standalone timing probe retains external input hold/removal failures. Full board timing is a separate candidate audit.",
+  "CurrentRTL": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\pixel14_color_pipeline.v",
+    "SHA256": "5020B23A8126103E0D1D5C9BB67DC8C93F55ED1C95B775FC1894B4D813420F31",
+    "Bytes": 14797
+  },
+  "StatisticsAudit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\stats-pipeline-audit.json",
+    "SHA256": "54CDACD7CF3232B5F403037D414AF531A30FE33FBBFCE0FFF9C71DFFEB6D27EC",
+    "Bytes": 8447
+  },
+  "StandaloneRuns": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\normal-20261014-114124-e263ba\\run-manifest.json",
+      "SHA256": "33695AF18CB4D890BAE26D5F2EAA23653024AC58FE46AAB3CA0705FB0FAFF567",
+      "Bytes": 7292,
+      "Mode": "normal",
+      "Summary": {
+        "errors": 0,
+        "checks": 111857,
+        "scenarios": 19,
+        "done": 1,
+        "injected": 0
+      },
+      "NativeExitCode": 0,
+      "InputsChecked": 6,
+      "OutputsChecked": 7,
+      "Command": [
+        "D:\\modeltech64_10.7\\win64\\vsim.exe",
+        "-modelsimini",
+        "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\normal-20261014-114124-e263ba\\modelsim.ini",
+        "-c",
+        "-l",
+        "transcript.log",
+        "-do",
+        "do run.do"
+      ]
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\normal-720p-20261014-114124-768d85\\run-manifest.json",
+      "SHA256": "7418BE5EF3F8BE03EFC3F2E0272D288819494C38210ADB74E9D6A15612AC8F2C",
+      "Bytes": 7373,
+      "Mode": "normal-720p",
+      "Summary": {
+        "errors": 0,
+        "checks": 4724694,
+        "scenarios": 1,
+        "done": 1,
+        "injected": 0
+      },
+      "NativeExitCode": 0,
+      "InputsChecked": 6,
+      "OutputsChecked": 7,
+      "Command": [
+        "D:\\modeltech64_10.7\\win64\\vsim.exe",
+        "-modelsimini",
+        "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\normal-720p-20261014-114124-768d85\\modelsim.ini",
+        "-c",
+        "-l",
+        "transcript.log",
+        "-do",
+        "do run.do"
+      ]
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\negative-20261014-114511-1290b3\\run-manifest.json",
+      "SHA256": "D0C8F67B618E74493A8D6F1C6A20C5C560A416F49FF5B98D4C3A87727F301A0F",
+      "Bytes": 7325,
+      "Mode": "negative",
+      "Summary": {
+        "errors": 1,
+        "checks": 111858,
+        "scenarios": 19,
+        "done": 1,
+        "injected": 1
+      },
+      "NativeExitCode": 1,
+      "InputsChecked": 6,
+      "OutputsChecked": 7,
+      "Command": [
+        "D:\\modeltech64_10.7\\win64\\vsim.exe",
+        "-modelsimini",
+        "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\negative-20261014-114511-1290b3\\modelsim.ini",
+        "-c",
+        "-l",
+        "transcript.log",
+        "-do",
+        "do run.do"
+      ]
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\watchdog-20261014-114511-abd86a\\run-manifest.json",
+      "SHA256": "DF78C5341CE77178359649FCAF5A261AFCADA8587903247A959E97F2EA9DE6FF",
+      "Bytes": 7321,
+      "Mode": "watchdog",
+      "Summary": {
+        "errors": 0,
+        "checks": 88,
+        "scenarios": 1,
+        "done": 0,
+        "injected": 0
+      },
+      "NativeExitCode": 2,
+      "InputsChecked": 6,
+      "OutputsChecked": 7,
+      "Command": [
+        "D:\\modeltech64_10.7\\win64\\vsim.exe",
+        "-modelsimini",
+        "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\watchdog-20261014-114511-abd86a\\modelsim.ini",
+        "-c",
+        "-l",
+        "transcript.log",
+        "-do",
+        "do run.do"
+      ]
+    }
+  ],
+  "ActualColorSceneRuns": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-114411-5f03fc85\\run-manifest.json",
+      "SHA256": "6BF5D0F3444E72058E5BA808BDCF06FFEB65A741C22E71158435C1A0E6CC7611",
+      "Bytes": 41517,
+      "Mode": "normal",
+      "Summary": {
+        "errors": 0,
+        "checks": 27648252,
+        "scenarios": 8,
+        "done": 1,
+        "injected": 0,
+        "frames": 24
+      },
+      "NativeExitCode": 0,
+      "InputsChecked": 38,
+      "OutputsChecked": 20,
+      "Command": [
+        "D:\\modeltech64_10.7\\win64\\vsim.exe",
+        "-modelsimini",
+        "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-114411-5f03fc85\\modelsim.ini",
+        "-c",
+        "-l",
+        "transcript.log",
+        "-do",
+        "do run.do"
+      ]
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-negative-20261014-114411-54c49e19\\run-manifest.json",
+      "SHA256": "1DBFFF0A4C27B3FA79186AF53EA2D782F7C7EE39D59524D4B4E11EE1B7478F62",
+      "Bytes": 41639,
+      "Mode": "negative",
+      "Summary": {
+        "errors": 1,
+        "checks": 92,
+        "scenarios": 1,
+        "done": 1,
+        "injected": 1,
+        "frames": 1
+      },
+      "NativeExitCode": 1,
+      "InputsChecked": 38,
+      "OutputsChecked": 20,
+      "Command": [
+        "D:\\modeltech64_10.7\\win64\\vsim.exe",
+        "-modelsimini",
+        "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-negative-20261014-114411-54c49e19\\modelsim.ini",
+        "-c",
+        "-l",
+        "transcript.log",
+        "-do",
+        "do run.do"
+      ]
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-watchdog-20261014-114411-ac343808\\run-manifest.json",
+      "SHA256": "9ED82A84BD3223A9FAAD1ECEC26671D6A299BF0B17AF45165178585929C79BE0",
+      "Bytes": 41650,
+      "Mode": "watchdog",
+      "Summary": {
+        "errors": 0,
+        "checks": 0,
+        "scenarios": 1,
+        "done": 0,
+        "injected": 0,
+        "frames": 0
+      },
+      "NativeExitCode": 2,
+      "InputsChecked": 38,
+      "OutputsChecked": 20,
+      "Command": [
+        "D:\\modeltech64_10.7\\win64\\vsim.exe",
+        "-modelsimini",
+        "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-watchdog-20261014-114411-ac343808\\modelsim.ini",
+        "-c",
+        "-l",
+        "transcript.log",
+        "-do",
+        "do run.do"
+      ]
+    }
+  ],
+  "Observations": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-114411-5f03fc85\\observations.csv",
+    "SHA256": "9D043AAE135C3D4B69A9DBC16908081C1006FF162B45409B504EA2C339BE6228",
+    "Bytes": 1494
+  },
+  "Baseline111Observations": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\observations.csv",
+    "SHA256": "9D043AAE135C3D4B69A9DBC16908081C1006FF162B45409B504EA2C339BE6228",
+    "Bytes": 1494
+  },
+  "PixelObservationsByteIdentical": true,
+  "Full720pFrames": 24,
+  "AllFiveDarkCardsConfirmedOnThirdFrame": true,
+  "RetainedObjectAnswers": 1,
+  "StatisticsPipelineCycles": 4,
+  "PixelPipelineCycles": 54,
+  "HardwareValidated": false,
+  "AuditTool": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\audit-color-final.py",
+    "SHA256": "5EB61FB1355FBCC507C7A4E75807A2FD166D52C8730AFE0C750027AE569A85B2",
+    "Bytes": 4841
+  }
+}

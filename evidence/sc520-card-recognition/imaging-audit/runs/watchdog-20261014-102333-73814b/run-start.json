@@ -1,0 +1,54 @@
+{
+  "started_at": "2026-10-14T10:23:33.456949+08:00",
+  "mode": "watchdog",
+  "command": [
+    "D:\\modeltech64_10.7\\win64\\vsim.exe",
+    "-modelsimini",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\watchdog-20261014-102333-73814b\\modelsim.ini",
+    "-c",
+    "-l",
+    "transcript.log",
+    "-do",
+    "do run.do"
+  ],
+  "workdir": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\watchdog-20261014-102333-73814b",
+  "inputs": [
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\awb.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\watchdog-20261014-102333-73814b\\inputs\\awb.v",
+      "sha256_before": "FFA95657DFE125F8F7432D9319E25336AE33C97384D5DB80F1EE1F50C65D0EB4",
+      "snapshot_sha256": "FFA95657DFE125F8F7432D9319E25336AE33C97384D5DB80F1EE1F50C65D0EB4"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\signal_delay.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\watchdog-20261014-102333-73814b\\inputs\\signal_delay.v",
+      "sha256_before": "B7A8156BC59BEE5DE2C1AF20CB31079388ACE1F4E767A18288A7DFF8BAE3D5FD",
+      "snapshot_sha256": "B7A8156BC59BEE5DE2C1AF20CB31079388ACE1F4E767A18288A7DFF8BAE3D5FD"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\pixel14_color_pipeline.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\watchdog-20261014-102333-73814b\\inputs\\pixel14_color_pipeline.v",
+      "sha256_before": "86E8E1F5A9422B509141AFB5502F535EA70CD04DD941900B97E4F95639077F8C",
+      "snapshot_sha256": "86E8E1F5A9422B509141AFB5502F535EA70CD04DD941900B97E4F95639077F8C"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\ip_behavioral_models.sv",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\watchdog-20261014-102333-73814b\\inputs\\ip_behavioral_models.sv",
+      "sha256_before": "B807F681301091F4211C86BA6D59BD67F3A5C11D7A9E3FB76E9635BEACC2067C",
+      "snapshot_sha256": "B807F681301091F4211C86BA6D59BD67F3A5C11D7A9E3FB76E9635BEACC2067C"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\tb_color_pipeline.sv",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\watchdog-20261014-102333-73814b\\inputs\\tb_color_pipeline.sv",
+      "sha256_before": "C4789D8561CF68E1FAC6B7BC72E25FC07DFB91AD5928435915438891E09A3C91",
+      "snapshot_sha256": "C4789D8561CF68E1FAC6B7BC72E25FC07DFB91AD5928435915438891E09A3C91"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\simulate_color.py",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\watchdog-20261014-102333-73814b\\inputs\\simulate_color.py",
+      "sha256_before": "669A66616387B324C65E51A64162DE1439824DAF3899BCDA43FBF2759DBDCA50",
+      "snapshot_sha256": "669A66616387B324C65E51A64162DE1439824DAF3899BCDA43FBF2759DBDCA50"
+    }
+  ],
+  "scope": "Actual unchanged awb.v and signal_delay.v with explicitly behavioral divider and dual-port memory boundaries; no vendor IP timing qualification, camera, DDR, PHY or hardware evidence."
+}

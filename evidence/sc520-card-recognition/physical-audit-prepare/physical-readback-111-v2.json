@@ -1,0 +1,46 @@
+{
+  "AuditedAt": "2026-10-14T11:55:48.822541+08:00",
+  "Run": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b111",
+  "HistoricalReviewOnly": true,
+  "CandidateQualified": false,
+  "ExpectedRejection": "Negative original routed STA",
+  "ObservedTimingNs": {
+    "SWNS": -3.084,
+    "STNS": -399.69,
+    "HWNS": 0.02,
+    "HTNS": 0.0
+  },
+  "CDC": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\candidate111-cdc-check-v2.json",
+    "Bytes": 652201,
+    "SHA256": "645C85FEE3CAC029DCABDDBDA67CBCDFF270EA22A4D1522EE7DEF9FC1E7D0D08"
+  },
+  "ROM": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\candidate111-rom-controls-v2.json",
+    "Bytes": 192693,
+    "SHA256": "30FD6C14CAC931EE0AAA3057485A1B5F0C130D89B74DDC39000BA098A1C71516"
+  },
+  "GuardTests": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\candidate-guard-tests-v1.json",
+    "Bytes": 6941,
+    "SHA256": "5446B3629D3173FDBD16D5B9F502945443A33C09FA5B217578782A88B3642D1A"
+  },
+  "ClockModelTest": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\vendor-clock-runs\\check-20261014-114705-4846ff\\vendor-clock-audit.json",
+    "Bytes": 4821,
+    "SHA256": "2F6C63E37FF091C2E882215B7DF7075E3ECCC5358184A99889C3401DA7210ACB"
+  },
+  "Programs": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\tools\\audit-scene-build.py",
+      "Bytes": 21640,
+      "SHA256": "2B2BF65591D565B44D2730C3FFA67B029969B8BA7CFD4D7C5940EEE0A0FEC70A"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\tools\\audit-scene-candidate.py",
+      "Bytes": 10622,
+      "SHA256": "D694755D9D931EDA2DF8AC704D2C2CEACC544BF95330968F28E73BCE99825D5A"
+    }
+  ],
+  "Limits": "111 cannot qualify from ROM/CDC successes. report-pixel14-cdc.tcl and all original111 reports remain unchanged."
+}

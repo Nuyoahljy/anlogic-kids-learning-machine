@@ -1,7 +1,8 @@
 // Result-level integration candidate. No camera, physical pins or UART binding.
 // OSD coordinates/status snapshot share clk; osd_active/rgb have one-cycle latency.
 module items14_system #(
-    parameter integer TIMEOUT_MS=100,ABSENT_SAMPLES=3,FEEDBACK_TICKS=1500,MAX_WRONG=2
+    parameter integer TIMEOUT_MS=100,ABSENT_SAMPLES=3,FEEDBACK_TICKS=1500,MAX_WRONG=2,
+    parameter integer SCENE_UI=0
 ) (
     input wire clk,rst_n,tick_1ms,flush,block_revoke,card_revoke,
     input wire block_event,block_healthy,block_present,block_valid,
@@ -81,7 +82,7 @@ module items14_system #(
             end
         end
     end
-    items14_osd panel(.clk(clk),.rst_n(rst_n),.pixel_x(pixel_x),.pixel_y(pixel_y),
+    items14_osd #(.SCENE_UI(SCENE_UI)) panel(.clk(clk),.rst_n(rst_n),.pixel_x(pixel_x),.pixel_y(pixel_y),
         .mode(osd_mode),.phase(osd_phase),.score(osd_score),.question_index(osd_question),
         .target_item(osd_target),.display_item(osd_item),.feedback(osd_feedback),
         .source_test(osd_source),.armed(osd_armed),.audio_fault(osd_audio_fault),.audio_busy(osd_audio_busy),

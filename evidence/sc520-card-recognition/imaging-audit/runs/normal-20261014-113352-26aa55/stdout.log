@@ -1,0 +1,22 @@
+Reading D:/modeltech64_10.7/tcl/vsim/pref.tcl
+
+# 10.7
+
+# do run.do
+# Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+# vmap work work 
+# Modifying E:\juan\FPGA\worktrees\anlogic-kids-learning-machine\sc520-card-recognition\evidence\sc520-card-recognition\imaging-audit\runs\normal-20261014-113352-26aa55\modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 11:33:54 on Oct 14,2026
+# vlog -sv inputs/awb.v inputs/signal_delay.v inputs/pixel14_color_pipeline.v inputs/ip_behavioral_models.sv inputs/tb_color_pipeline.sv 
+# -- Compiling module awb
+# -- Compiling module signal_delay
+# -- Compiling module pixel14_color_pipeline
+# ** Error: inputs/pixel14_color_pipeline.v(77): (vlog-2730) Undefined variable: 'interrupted_tail'.
+# -- Compiling module divider
+# -- Compiling module blk_mem_gen_awb_delay_signal
+# -- Compiling module tb_color_pipeline
+# End time: 11:33:55 on Oct 14,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# ** Error: D:/modeltech64_10.7/win64/vlog failed.
+# Executing ONERROR command at macro ./run.do line 4

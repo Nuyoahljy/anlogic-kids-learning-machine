@@ -1,0 +1,97 @@
+{
+  "Task": "sc520-card-recognition",
+  "Owner": "01a13561-2629-7fa2-86a0-4087ad34cc7c /root/scene_rtl",
+  "StartedAt": "2026-10-14T10:25:06.264+08:00",
+  "Mode": "negative",
+  "Command": [
+    "D:\\modeltech64_10.7\\win64\\vsim.exe",
+    "-modelsimini",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\scene-negative-20261014-102506-661fcf4d\\modelsim.ini",
+    "-c",
+    "-l",
+    "transcript.log",
+    "-do",
+    "do {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/scene-negative-20261014-102506-661fcf4d/launch.do}"
+  ],
+  "WorkingDirectory": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\scene-negative-20261014-102506-661fcf4d",
+  "Inputs": [
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_scene_preprocess.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\scene-negative-20261014-102506-661fcf4d\\inputs\\pixel14_scene_preprocess.v",
+      "sha256_before": "9536B815899E977DF80F0DDE50951D562B41E8822ABC16902B8B236361B4E31C"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\sim\\sc520-card-recognition\\tb_pixel14_scene.sv",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\scene-negative-20261014-102506-661fcf4d\\inputs\\tb_pixel14_scene.sv",
+      "sha256_before": "9C78CF9CE0F93F5280A935606CF6078313B690A36916B5A68737C35E377B1B59"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\simulate-scene.py",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\scene-negative-20261014-102506-661fcf4d\\inputs\\simulate-scene.py",
+      "sha256_before": "05871A17791B87C71F40E989113D3C23713066E72130AC0CF93C38A235563276"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\simulate.py",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\scene-negative-20261014-102506-661fcf4d\\inputs\\simulate.py",
+      "sha256_before": "8F3C58AD1E4D9DB1DCB7018BD45C8123BA232068DC90B2DA5610B12C19E3CF17"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\scene-model.py",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\scene-negative-20261014-102506-661fcf4d\\inputs\\scene-model.py",
+      "sha256_before": "4696B16F3086E2FA6B027A17A144DC917BFEE9D7C0C20F74E00E5BF87F6E28A7"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\scene-v2\\fixtures.json",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\scene-negative-20261014-102506-661fcf4d\\inputs\\fixtures.json",
+      "sha256_before": "92FF120E177C044865FB4995297F95890854A8BED64ADA54818844C318B1BC46"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\scene-v2\\manifest.json",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\scene-negative-20261014-102506-661fcf4d\\inputs\\manifest.json",
+      "sha256_before": "7DD265F71E4E867CE86B68DD1328489A69928B2800679C10792C256978705EFB"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\scene-v2\\vectors\\000_empty_white.rgb.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\scene-negative-20261014-102506-661fcf4d\\inputs\\000_empty_white.rgb.mem",
+      "sha256_before": "14101DA0E169B457C026EDBD83FC0CCFD891B56510CD8B4F231D953F18CD8583"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\scene-v2\\vectors\\000_empty_white.replay.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\scene-negative-20261014-102506-661fcf4d\\inputs\\000_empty_white.replay.mem",
+      "sha256_before": "78001C68E153D6557B2BB259D201EEB96574706A2EB4872EE5473606178F1030"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\scene-v2\\vectors\\000_empty_white.mask.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\scene-negative-20261014-102506-661fcf4d\\inputs\\000_empty_white.mask.mem",
+      "sha256_before": "2BCA579F59378B7E7B25BD50AE3E1D45BDAC174A5A0026D72ACCC479FCD1BAAA"
+    }
+  ],
+  "Fixtures": [
+    {
+      "prefix": "000_empty_white",
+      "category": "empty",
+      "truth_satisfied": true,
+      "expected": {
+        "background_rgb": [
+          248,
+          248,
+          248
+        ],
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "scene_bbox": null,
+        "glyph_bbox": null,
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false,
+        "recognition_admitted": true
+      }
+    }
+  ],
+  "NormalSize": 20,
+  "AllFixtures": false,
+  "TimeoutSeconds": 900,
+  "Scope": "Task-local RGB raster extraction, integer model equivalence and fail-closed capture sequencing; synthetic fixtures only; no board or camera accuracy claim"
+}

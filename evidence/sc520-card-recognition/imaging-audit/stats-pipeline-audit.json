@@ -1,0 +1,170 @@
+{
+  "CreatedAt": "2026-10-14T11:48:10.566147+08:00",
+  "FunctionalQualified": true,
+  "CurrentRTL": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\pixel14_color_pipeline.v",
+    "SHA256": "5020B23A8126103E0D1D5C9BB67DC8C93F55ED1C95B775FC1894B4D813420F31",
+    "Bytes": 14797
+  },
+  "Baseline111RTL": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b111\\rtl\\pixel14_color_pipeline.v",
+    "SHA256": "3A2CEB5F9289A3B23D1CC8120B8375A385FB1D2E284933CAE68FFA2107FFC26F",
+    "Bytes": 11198
+  },
+  "PixelSectionByteIdentical": true,
+  "ToneFunctionByteIdentical": true,
+  "Tone256CodeEquivalenceRetained": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\tone-shift-audit.json",
+    "SHA256": "E2B060A378D37AF5C32C4C2804A52060D80F8B0CC727580293C76BCC342F8470",
+    "Bytes": 22851
+  },
+  "StatisticsStages": [
+    "per-lane min/max",
+    "neutral selection",
+    "two-lane sums",
+    "four-lane sums"
+  ],
+  "StatisticsCompleteCyclesAfterFinalInputEOL": 4,
+  "StatisticsPendingCyclesAfterFinalInputEOL": 6,
+  "GainCommitCyclesAfterRawSOF": 4,
+  "InputToPixelOutputCycles": 54,
+  "Runs": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\normal-20261014-114124-e263ba\\run-manifest.json",
+      "SHA256": "33695AF18CB4D890BAE26D5F2EAA23653024AC58FE46AAB3CA0705FB0FAFF567",
+      "Bytes": 7292,
+      "Summary": {
+        "errors": 0,
+        "checks": 111857,
+        "scenarios": 19,
+        "done": 1,
+        "injected": 0
+      },
+      "NativeExit": 0
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\normal-720p-20261014-114124-768d85\\run-manifest.json",
+      "SHA256": "7418BE5EF3F8BE03EFC3F2E0272D288819494C38210ADB74E9D6A15612AC8F2C",
+      "Bytes": 7373,
+      "Summary": {
+        "errors": 0,
+        "checks": 4724694,
+        "scenarios": 1,
+        "done": 1,
+        "injected": 0
+      },
+      "NativeExit": 0
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\negative-20261014-114511-1290b3\\run-manifest.json",
+      "SHA256": "D0C8F67B618E74493A8D6F1C6A20C5C560A416F49FF5B98D4C3A87727F301A0F",
+      "Bytes": 7325,
+      "Summary": {
+        "errors": 1,
+        "checks": 111858,
+        "scenarios": 19,
+        "done": 1,
+        "injected": 1
+      },
+      "NativeExit": 1
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\watchdog-20261014-114511-abd86a\\run-manifest.json",
+      "SHA256": "DF78C5341CE77178359649FCAF5A261AFCADA8587903247A959E97F2EA9DE6FF",
+      "Bytes": 7321,
+      "Summary": {
+        "errors": 0,
+        "checks": 88,
+        "scenarios": 1,
+        "done": 0,
+        "injected": 0
+      },
+      "NativeExit": 2
+    }
+  ],
+  "NormalScenarios": 20,
+  "NormalChecks": 4836551,
+  "NormalErrors": 0,
+  "IndependentCoreTiming": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\color-timing\\probe-20261014-113926-99a1d5\\timing-audit.json",
+    "SHA256": "B33E52CE28328BFE48487870B61D99B4CF040FCF357EB42CFA284CC56925D2E5",
+    "Bytes": 13992
+  },
+  "IndependentCoreSetupWNSNs": 1.035,
+  "IndependentCoreOverallTimingQualified": false,
+  "ReportedNegativeHoldRemovalPaths": [
+    {
+      "SlackNs": -1.232,
+      "Begin Point": "pixel_byte[3] (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })",
+      "End Point": "pixels_reg[3]_syn_2.ima (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })",
+      "Check Type": "hold"
+    },
+    {
+      "SlackNs": -1.116,
+      "Begin Point": "rst_n (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })",
+      "End Point": "u_color/delay_pixels/addra_reg[2]_syn_2.asr (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })",
+      "Check Type": "removal"
+    },
+    {
+      "SlackNs": -1.002,
+      "Begin Point": "rst_n (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })",
+      "End Point": "u_color/delay_pixels/addra_reg[3]_syn_2.asr (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })",
+      "Check Type": "removal"
+    },
+    {
+      "SlackNs": -0.899,
+      "Begin Point": "pixel_byte[4] (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })",
+      "End Point": "pixels_reg[4]_syn_2.ima (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })",
+      "Check Type": "hold"
+    },
+    {
+      "SlackNs": -0.889,
+      "Begin Point": "pixel_byte[6] (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })",
+      "End Point": "pixels_reg[56]_syn_2.imb (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })",
+      "Check Type": "hold"
+    },
+    {
+      "SlackNs": -0.857,
+      "Begin Point": "rst_n (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })",
+      "End Point": "u_color/sum_g_reg[27]_syn_2.asr (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })",
+      "Check Type": "removal"
+    },
+    {
+      "SlackNs": -0.857,
+      "Begin Point": "rst_n (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })",
+      "End Point": "u_color/sum_g_reg[22]_syn_2.asr (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })",
+      "Check Type": "removal"
+    },
+    {
+      "SlackNs": -0.84,
+      "Begin Point": "rst_n (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })",
+      "End Point": "u_color/mult5_syn_165.rst[0] (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })",
+      "Check Type": "removal"
+    },
+    {
+      "SlackNs": -0.825,
+      "Begin Point": "rst_n (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })",
+      "End Point": "u_color/mult5_syn_165.rst[0] (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })",
+      "Check Type": "hold"
+    },
+    {
+      "SlackNs": -0.804,
+      "Begin Point": "pixel_byte[5] (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })",
+      "End Point": "pixels_reg[5]_syn_2.ima (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })",
+      "Check Type": "hold"
+    }
+  ],
+  "CDCEchoCorrectionEvidence": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\candidate111-cdc-check-v2.json",
+    "SHA256": "645C85FEE3CAC029DCABDDBDA67CBCDFF270EA22A4D1522EE7DEF9FC1E7D0D08",
+    "Bytes": 652201
+  },
+  "ReportedNegativePathLimit": "The ten printed worst hold/removal checks start at external bench pixel_byte/rst_n. This is not proof that every unreported internal hold path passes. Full112 has separate final qualification.",
+  "CandidateQualified": false,
+  "HardwareValidated": false,
+  "Limits": [
+    "Statistics qualification still checks RGB geometry only, not CSI content CRC/ECC.",
+    "111 negative-timing bit/DB remain historical.",
+    "The old physical-audit handoff inference from an empty echo -from/-to was corrected by scene_rtl: actual111 CDC reports contain all17 chains and80/175/28 payload bits."
+  ]
+}

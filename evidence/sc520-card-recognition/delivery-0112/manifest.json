@@ -1,0 +1,97 @@
+{
+  "CreatedAt": "2026-10-14T19:14:03.160165+08:00",
+  "Owner": "01a13561-2629-7fa2-86a0-4087ad34cc7c /root",
+  "Version": "D0112",
+  "BuildId": "6a50b112",
+  "BaselineCommit": "3089ae8ee0daa6ffdbb581179eb2453d6c4fef5a",
+  "Workdir": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition",
+  "Status": "等待主对话审核；受约束图像路径/ROM/已测CDC阶段候选，未上板",
+  "Bit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\delivery-0112\\sc520-pixel14-0112.bit",
+    "SHA256": "4C336D57C7D56DA5C132FCA38B75944C898F4D90EBE80D24842AE4DD4F2ADD47",
+    "Bytes": 1789539
+  },
+  "OriginalBit": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b112\\td_project\\camera_to_dsi_display_Runs\\phy_1\\camera_to_dsi_display.bit",
+  "Guide": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\hardware\\sc520-card-recognition\\pixel14-rotation112.md",
+    "SHA256": "CDFE0126815E9CC57387A87A48347074257539B57D1E05B05BB74112A5C6907E",
+    "Bytes": 5755
+  },
+  "BuildAudit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b112\\scene-candidate-audit-final.json",
+    "SHA256": "99FA3EAB5E2DECD638F3717341456340FD9840B8ECC73636883D1D68AFE981E9",
+    "Bytes": 887251
+  },
+  "SoftwareAudit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\rotation-software-validation-v2.json",
+    "SHA256": "1AC556F1FBFFF2F46C75D8278FF304AF3E52D697317B7A157F0F896536B7CD02",
+    "Bytes": 37525
+  },
+  "ColorAudit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\color-validation-final.json",
+    "SHA256": "3D3ABAB1DD5AA1FABC246085D320ED7243F5AD26497EEDA8034879C9A6E621D8",
+    "Bytes": 9045
+  },
+  "WarningReview": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\candidate112-warnings-final.json",
+    "SHA256": "3DC47B7F8716A538E18DD42AFA852FCF5D7A67EBEE3B031EA9B77E5F17CC55D6",
+    "Bytes": 9122
+  },
+  "BuildInputManifest": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b112\\inputs.json",
+    "SHA256": "BC7B3563079461570F17137F47A5809F8D897DAD4F9048135DE33A299D1C0AC0",
+    "Bytes": 113083
+  },
+  "ActiveProject": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\td_project\\camera_to_dsi_display.al",
+    "SHA256": "8C965361769A42EF21907C0B5099F83EB48C81658DF3692FAA1ED2878357607C",
+    "Bytes": 36458
+  },
+  "ConstrainedTimingNs": {
+    "SWNS": 0.123,
+    "STNS": 0.0,
+    "HWNS": 0.02,
+    "HTNS": 0.0
+  },
+  "STACoveragePercent": 95.83,
+  "Resources": {
+    "LUT6": 14779,
+    "Registers": 13939,
+    "Slices": 15498,
+    "ERAM20K": 97,
+    "DSP": 22
+  },
+  "ROI": {
+    "X": 160,
+    "Y": 120,
+    "Width": 960,
+    "Height": 480
+  },
+  "RotationModel": {
+    "VariantsPerClass": 256,
+    "Cases": 4320,
+    "Correct": 4292,
+    "Rejected": 28,
+    "WrongClass": 0,
+    "HardwareAccuracy": null
+  },
+  "InheritedSCLCoverageGap": {
+    "Clock": "u_uicfgcs520/u_i2c/scl_clk",
+    "CurrentRow": "| gclk_7     | src_7      | PH1P_PHY_GCLK | u_uicfgcs520/u_i2c/scl_clk_created_gclkinst.clkout                                                                                 | None       | B    | x23y39z1  |                 1 |          25 |          25 |              |                                         | u_uicfgcs520/u_i2c/scl_clk_syn_105                                                                               |",
+    "BaselineRow": "| gclk_7     | src_7      | PH1P_PHY_GCLK | u_uicfgcs520/u_i2c/scl_clk_created_gclkinst.clkout                                                                                 | None       | B    | x23y39z1  |                 1 |          27 |          27 |              |                                         | u_uicfgcs520/u_i2c/scl_clk_syn_105                                                                               |",
+    "Source": {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics500_cfg\\uii2c.v",
+      "Bytes": 10792,
+      "SHA256": "032DF05881F9BD7C7CF86CC1381ADCB739A18F8A8744ED06B1160AC294A6DC0D"
+    },
+    "ClockAndPeriodColumnsBlank": true,
+    "CompleteSTAClaimed": false,
+    "CurrentPhysicalClockLoads": 25,
+    "BaselinePhysicalClockLoads": 27,
+    "CountMeaning": "Clock loads in route_clock_utilization, not a logical flip-flop count."
+  },
+  "FullSystemTimingSignoff": false,
+  "HardwareValidated": false,
+  "FlashValidated": false,
+  "Next": "主对话审核并决定受限SRAM实拍；SCL时序覆盖及显示T-017整机集成另验，不以该候选声明最终整机完成。"
+}

@@ -1,0 +1,1353 @@
+{
+  "created_at": "2026-10-14T10:49:11.055739+08:00",
+  "qualified": true,
+  "before": {
+    "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\normal-20261014-102256-5d04a3\\inputs\\pixel14_color_pipeline.v",
+    "sha256": "86E8E1F5A9422B509141AFB5502F535EA70CD04DD941900B97E4F95639077F8C"
+  },
+  "after": {
+    "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\pixel14_color_pipeline.v",
+    "sha256": "3A2CEB5F9289A3B23D1CC8120B8375A385FB1D2E284933CAE68FFA2107FFC26F"
+  },
+  "unchanged_outside_tone_function": true,
+  "equivalent_byte_values": 256,
+  "exact_values": [
+    {
+      "input": 0,
+      "before": 0,
+      "after": 0
+    },
+    {
+      "input": 1,
+      "before": 2,
+      "after": 2
+    },
+    {
+      "input": 2,
+      "before": 5,
+      "after": 5
+    },
+    {
+      "input": 3,
+      "before": 7,
+      "after": 7
+    },
+    {
+      "input": 4,
+      "before": 9,
+      "after": 9
+    },
+    {
+      "input": 5,
+      "before": 12,
+      "after": 12
+    },
+    {
+      "input": 6,
+      "before": 14,
+      "after": 14
+    },
+    {
+      "input": 7,
+      "before": 16,
+      "after": 16
+    },
+    {
+      "input": 8,
+      "before": 19,
+      "after": 19
+    },
+    {
+      "input": 9,
+      "before": 21,
+      "after": 21
+    },
+    {
+      "input": 10,
+      "before": 23,
+      "after": 23
+    },
+    {
+      "input": 11,
+      "before": 25,
+      "after": 25
+    },
+    {
+      "input": 12,
+      "before": 28,
+      "after": 28
+    },
+    {
+      "input": 13,
+      "before": 30,
+      "after": 30
+    },
+    {
+      "input": 14,
+      "before": 32,
+      "after": 32
+    },
+    {
+      "input": 15,
+      "before": 35,
+      "after": 35
+    },
+    {
+      "input": 16,
+      "before": 37,
+      "after": 37
+    },
+    {
+      "input": 17,
+      "before": 38,
+      "after": 38
+    },
+    {
+      "input": 18,
+      "before": 40,
+      "after": 40
+    },
+    {
+      "input": 19,
+      "before": 41,
+      "after": 41
+    },
+    {
+      "input": 20,
+      "before": 43,
+      "after": 43
+    },
+    {
+      "input": 21,
+      "before": 44,
+      "after": 44
+    },
+    {
+      "input": 22,
+      "before": 46,
+      "after": 46
+    },
+    {
+      "input": 23,
+      "before": 47,
+      "after": 47
+    },
+    {
+      "input": 24,
+      "before": 49,
+      "after": 49
+    },
+    {
+      "input": 25,
+      "before": 50,
+      "after": 50
+    },
+    {
+      "input": 26,
+      "before": 51,
+      "after": 51
+    },
+    {
+      "input": 27,
+      "before": 53,
+      "after": 53
+    },
+    {
+      "input": 28,
+      "before": 54,
+      "after": 54
+    },
+    {
+      "input": 29,
+      "before": 56,
+      "after": 56
+    },
+    {
+      "input": 30,
+      "before": 57,
+      "after": 57
+    },
+    {
+      "input": 31,
+      "before": 59,
+      "after": 59
+    },
+    {
+      "input": 32,
+      "before": 60,
+      "after": 60
+    },
+    {
+      "input": 33,
+      "before": 61,
+      "after": 61
+    },
+    {
+      "input": 34,
+      "before": 62,
+      "after": 62
+    },
+    {
+      "input": 35,
+      "before": 64,
+      "after": 64
+    },
+    {
+      "input": 36,
+      "before": 65,
+      "after": 65
+    },
+    {
+      "input": 37,
+      "before": 66,
+      "after": 66
+    },
+    {
+      "input": 38,
+      "before": 67,
+      "after": 67
+    },
+    {
+      "input": 39,
+      "before": 68,
+      "after": 68
+    },
+    {
+      "input": 40,
+      "before": 70,
+      "after": 70
+    },
+    {
+      "input": 41,
+      "before": 71,
+      "after": 71
+    },
+    {
+      "input": 42,
+      "before": 72,
+      "after": 72
+    },
+    {
+      "input": 43,
+      "before": 73,
+      "after": 73
+    },
+    {
+      "input": 44,
+      "before": 74,
+      "after": 74
+    },
+    {
+      "input": 45,
+      "before": 75,
+      "after": 75
+    },
+    {
+      "input": 46,
+      "before": 77,
+      "after": 77
+    },
+    {
+      "input": 47,
+      "before": 78,
+      "after": 78
+    },
+    {
+      "input": 48,
+      "before": 79,
+      "after": 79
+    },
+    {
+      "input": 49,
+      "before": 80,
+      "after": 80
+    },
+    {
+      "input": 50,
+      "before": 81,
+      "after": 81
+    },
+    {
+      "input": 51,
+      "before": 82,
+      "after": 82
+    },
+    {
+      "input": 52,
+      "before": 84,
+      "after": 84
+    },
+    {
+      "input": 53,
+      "before": 85,
+      "after": 85
+    },
+    {
+      "input": 54,
+      "before": 86,
+      "after": 86
+    },
+    {
+      "input": 55,
+      "before": 87,
+      "after": 87
+    },
+    {
+      "input": 56,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "input": 57,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "input": 58,
+      "before": 90,
+      "after": 90
+    },
+    {
+      "input": 59,
+      "before": 91,
+      "after": 91
+    },
+    {
+      "input": 60,
+      "before": 93,
+      "after": 93
+    },
+    {
+      "input": 61,
+      "before": 94,
+      "after": 94
+    },
+    {
+      "input": 62,
+      "before": 95,
+      "after": 95
+    },
+    {
+      "input": 63,
+      "before": 96,
+      "after": 96
+    },
+    {
+      "input": 64,
+      "before": 97,
+      "after": 97
+    },
+    {
+      "input": 65,
+      "before": 98,
+      "after": 98
+    },
+    {
+      "input": 66,
+      "before": 99,
+      "after": 99
+    },
+    {
+      "input": 67,
+      "before": 100,
+      "after": 100
+    },
+    {
+      "input": 68,
+      "before": 101,
+      "after": 101
+    },
+    {
+      "input": 69,
+      "before": 102,
+      "after": 102
+    },
+    {
+      "input": 70,
+      "before": 103,
+      "after": 103
+    },
+    {
+      "input": 71,
+      "before": 104,
+      "after": 104
+    },
+    {
+      "input": 72,
+      "before": 105,
+      "after": 105
+    },
+    {
+      "input": 73,
+      "before": 106,
+      "after": 106
+    },
+    {
+      "input": 74,
+      "before": 107,
+      "after": 107
+    },
+    {
+      "input": 75,
+      "before": 108,
+      "after": 108
+    },
+    {
+      "input": 76,
+      "before": 109,
+      "after": 109
+    },
+    {
+      "input": 77,
+      "before": 110,
+      "after": 110
+    },
+    {
+      "input": 78,
+      "before": 111,
+      "after": 111
+    },
+    {
+      "input": 79,
+      "before": 112,
+      "after": 112
+    },
+    {
+      "input": 80,
+      "before": 113,
+      "after": 113
+    },
+    {
+      "input": 81,
+      "before": 114,
+      "after": 114
+    },
+    {
+      "input": 82,
+      "before": 115,
+      "after": 115
+    },
+    {
+      "input": 83,
+      "before": 116,
+      "after": 116
+    },
+    {
+      "input": 84,
+      "before": 117,
+      "after": 117
+    },
+    {
+      "input": 85,
+      "before": 118,
+      "after": 118
+    },
+    {
+      "input": 86,
+      "before": 119,
+      "after": 119
+    },
+    {
+      "input": 87,
+      "before": 120,
+      "after": 120
+    },
+    {
+      "input": 88,
+      "before": 121,
+      "after": 121
+    },
+    {
+      "input": 89,
+      "before": 122,
+      "after": 122
+    },
+    {
+      "input": 90,
+      "before": 123,
+      "after": 123
+    },
+    {
+      "input": 91,
+      "before": 124,
+      "after": 124
+    },
+    {
+      "input": 92,
+      "before": 125,
+      "after": 125
+    },
+    {
+      "input": 93,
+      "before": 126,
+      "after": 126
+    },
+    {
+      "input": 94,
+      "before": 127,
+      "after": 127
+    },
+    {
+      "input": 95,
+      "before": 128,
+      "after": 128
+    },
+    {
+      "input": 96,
+      "before": 129,
+      "after": 129
+    },
+    {
+      "input": 97,
+      "before": 130,
+      "after": 130
+    },
+    {
+      "input": 98,
+      "before": 131,
+      "after": 131
+    },
+    {
+      "input": 99,
+      "before": 132,
+      "after": 132
+    },
+    {
+      "input": 100,
+      "before": 133,
+      "after": 133
+    },
+    {
+      "input": 101,
+      "before": 133,
+      "after": 133
+    },
+    {
+      "input": 102,
+      "before": 134,
+      "after": 134
+    },
+    {
+      "input": 103,
+      "before": 135,
+      "after": 135
+    },
+    {
+      "input": 104,
+      "before": 136,
+      "after": 136
+    },
+    {
+      "input": 105,
+      "before": 137,
+      "after": 137
+    },
+    {
+      "input": 106,
+      "before": 138,
+      "after": 138
+    },
+    {
+      "input": 107,
+      "before": 139,
+      "after": 139
+    },
+    {
+      "input": 108,
+      "before": 140,
+      "after": 140
+    },
+    {
+      "input": 109,
+      "before": 140,
+      "after": 140
+    },
+    {
+      "input": 110,
+      "before": 141,
+      "after": 141
+    },
+    {
+      "input": 111,
+      "before": 142,
+      "after": 142
+    },
+    {
+      "input": 112,
+      "before": 143,
+      "after": 143
+    },
+    {
+      "input": 113,
+      "before": 144,
+      "after": 144
+    },
+    {
+      "input": 114,
+      "before": 145,
+      "after": 145
+    },
+    {
+      "input": 115,
+      "before": 146,
+      "after": 146
+    },
+    {
+      "input": 116,
+      "before": 147,
+      "after": 147
+    },
+    {
+      "input": 117,
+      "before": 147,
+      "after": 147
+    },
+    {
+      "input": 118,
+      "before": 148,
+      "after": 148
+    },
+    {
+      "input": 119,
+      "before": 149,
+      "after": 149
+    },
+    {
+      "input": 120,
+      "before": 150,
+      "after": 150
+    },
+    {
+      "input": 121,
+      "before": 151,
+      "after": 151
+    },
+    {
+      "input": 122,
+      "before": 152,
+      "after": 152
+    },
+    {
+      "input": 123,
+      "before": 153,
+      "after": 153
+    },
+    {
+      "input": 124,
+      "before": 154,
+      "after": 154
+    },
+    {
+      "input": 125,
+      "before": 154,
+      "after": 154
+    },
+    {
+      "input": 126,
+      "before": 155,
+      "after": 155
+    },
+    {
+      "input": 127,
+      "before": 156,
+      "after": 156
+    },
+    {
+      "input": 128,
+      "before": 157,
+      "after": 157
+    },
+    {
+      "input": 129,
+      "before": 158,
+      "after": 158
+    },
+    {
+      "input": 130,
+      "before": 159,
+      "after": 159
+    },
+    {
+      "input": 131,
+      "before": 160,
+      "after": 160
+    },
+    {
+      "input": 132,
+      "before": 161,
+      "after": 161
+    },
+    {
+      "input": 133,
+      "before": 161,
+      "after": 161
+    },
+    {
+      "input": 134,
+      "before": 162,
+      "after": 162
+    },
+    {
+      "input": 135,
+      "before": 163,
+      "after": 163
+    },
+    {
+      "input": 136,
+      "before": 164,
+      "after": 164
+    },
+    {
+      "input": 137,
+      "before": 165,
+      "after": 165
+    },
+    {
+      "input": 138,
+      "before": 166,
+      "after": 166
+    },
+    {
+      "input": 139,
+      "before": 167,
+      "after": 167
+    },
+    {
+      "input": 140,
+      "before": 168,
+      "after": 168
+    },
+    {
+      "input": 141,
+      "before": 168,
+      "after": 168
+    },
+    {
+      "input": 142,
+      "before": 169,
+      "after": 169
+    },
+    {
+      "input": 143,
+      "before": 170,
+      "after": 170
+    },
+    {
+      "input": 144,
+      "before": 171,
+      "after": 171
+    },
+    {
+      "input": 145,
+      "before": 172,
+      "after": 172
+    },
+    {
+      "input": 146,
+      "before": 173,
+      "after": 173
+    },
+    {
+      "input": 147,
+      "before": 173,
+      "after": 173
+    },
+    {
+      "input": 148,
+      "before": 174,
+      "after": 174
+    },
+    {
+      "input": 149,
+      "before": 175,
+      "after": 175
+    },
+    {
+      "input": 150,
+      "before": 176,
+      "after": 176
+    },
+    {
+      "input": 151,
+      "before": 177,
+      "after": 177
+    },
+    {
+      "input": 152,
+      "before": 178,
+      "after": 178
+    },
+    {
+      "input": 153,
+      "before": 178,
+      "after": 178
+    },
+    {
+      "input": 154,
+      "before": 179,
+      "after": 179
+    },
+    {
+      "input": 155,
+      "before": 180,
+      "after": 180
+    },
+    {
+      "input": 156,
+      "before": 181,
+      "after": 181
+    },
+    {
+      "input": 157,
+      "before": 182,
+      "after": 182
+    },
+    {
+      "input": 158,
+      "before": 182,
+      "after": 182
+    },
+    {
+      "input": 159,
+      "before": 183,
+      "after": 183
+    },
+    {
+      "input": 160,
+      "before": 184,
+      "after": 184
+    },
+    {
+      "input": 161,
+      "before": 185,
+      "after": 185
+    },
+    {
+      "input": 162,
+      "before": 186,
+      "after": 186
+    },
+    {
+      "input": 163,
+      "before": 186,
+      "after": 186
+    },
+    {
+      "input": 164,
+      "before": 187,
+      "after": 187
+    },
+    {
+      "input": 165,
+      "before": 188,
+      "after": 188
+    },
+    {
+      "input": 166,
+      "before": 189,
+      "after": 189
+    },
+    {
+      "input": 167,
+      "before": 190,
+      "after": 190
+    },
+    {
+      "input": 168,
+      "before": 191,
+      "after": 191
+    },
+    {
+      "input": 169,
+      "before": 191,
+      "after": 191
+    },
+    {
+      "input": 170,
+      "before": 192,
+      "after": 192
+    },
+    {
+      "input": 171,
+      "before": 193,
+      "after": 193
+    },
+    {
+      "input": 172,
+      "before": 194,
+      "after": 194
+    },
+    {
+      "input": 173,
+      "before": 195,
+      "after": 195
+    },
+    {
+      "input": 174,
+      "before": 195,
+      "after": 195
+    },
+    {
+      "input": 175,
+      "before": 196,
+      "after": 196
+    },
+    {
+      "input": 176,
+      "before": 197,
+      "after": 197
+    },
+    {
+      "input": 177,
+      "before": 198,
+      "after": 198
+    },
+    {
+      "input": 178,
+      "before": 199,
+      "after": 199
+    },
+    {
+      "input": 179,
+      "before": 199,
+      "after": 199
+    },
+    {
+      "input": 180,
+      "before": 200,
+      "after": 200
+    },
+    {
+      "input": 181,
+      "before": 201,
+      "after": 201
+    },
+    {
+      "input": 182,
+      "before": 202,
+      "after": 202
+    },
+    {
+      "input": 183,
+      "before": 202,
+      "after": 202
+    },
+    {
+      "input": 184,
+      "before": 203,
+      "after": 203
+    },
+    {
+      "input": 185,
+      "before": 204,
+      "after": 204
+    },
+    {
+      "input": 186,
+      "before": 205,
+      "after": 205
+    },
+    {
+      "input": 187,
+      "before": 205,
+      "after": 205
+    },
+    {
+      "input": 188,
+      "before": 206,
+      "after": 206
+    },
+    {
+      "input": 189,
+      "before": 207,
+      "after": 207
+    },
+    {
+      "input": 190,
+      "before": 208,
+      "after": 208
+    },
+    {
+      "input": 191,
+      "before": 208,
+      "after": 208
+    },
+    {
+      "input": 192,
+      "before": 209,
+      "after": 209
+    },
+    {
+      "input": 193,
+      "before": 210,
+      "after": 210
+    },
+    {
+      "input": 194,
+      "before": 211,
+      "after": 211
+    },
+    {
+      "input": 195,
+      "before": 211,
+      "after": 211
+    },
+    {
+      "input": 196,
+      "before": 212,
+      "after": 212
+    },
+    {
+      "input": 197,
+      "before": 213,
+      "after": 213
+    },
+    {
+      "input": 198,
+      "before": 214,
+      "after": 214
+    },
+    {
+      "input": 199,
+      "before": 214,
+      "after": 214
+    },
+    {
+      "input": 200,
+      "before": 215,
+      "after": 215
+    },
+    {
+      "input": 201,
+      "before": 216,
+      "after": 216
+    },
+    {
+      "input": 202,
+      "before": 217,
+      "after": 217
+    },
+    {
+      "input": 203,
+      "before": 217,
+      "after": 217
+    },
+    {
+      "input": 204,
+      "before": 218,
+      "after": 218
+    },
+    {
+      "input": 205,
+      "before": 219,
+      "after": 219
+    },
+    {
+      "input": 206,
+      "before": 220,
+      "after": 220
+    },
+    {
+      "input": 207,
+      "before": 220,
+      "after": 220
+    },
+    {
+      "input": 208,
+      "before": 221,
+      "after": 221
+    },
+    {
+      "input": 209,
+      "before": 222,
+      "after": 222
+    },
+    {
+      "input": 210,
+      "before": 223,
+      "after": 223
+    },
+    {
+      "input": 211,
+      "before": 223,
+      "after": 223
+    },
+    {
+      "input": 212,
+      "before": 224,
+      "after": 224
+    },
+    {
+      "input": 213,
+      "before": 225,
+      "after": 225
+    },
+    {
+      "input": 214,
+      "before": 226,
+      "after": 226
+    },
+    {
+      "input": 215,
+      "before": 226,
+      "after": 226
+    },
+    {
+      "input": 216,
+      "before": 227,
+      "after": 227
+    },
+    {
+      "input": 217,
+      "before": 228,
+      "after": 228
+    },
+    {
+      "input": 218,
+      "before": 229,
+      "after": 229
+    },
+    {
+      "input": 219,
+      "before": 229,
+      "after": 229
+    },
+    {
+      "input": 220,
+      "before": 230,
+      "after": 230
+    },
+    {
+      "input": 221,
+      "before": 231,
+      "after": 231
+    },
+    {
+      "input": 222,
+      "before": 232,
+      "after": 232
+    },
+    {
+      "input": 223,
+      "before": 232,
+      "after": 232
+    },
+    {
+      "input": 224,
+      "before": 233,
+      "after": 233
+    },
+    {
+      "input": 225,
+      "before": 234,
+      "after": 234
+    },
+    {
+      "input": 226,
+      "before": 234,
+      "after": 234
+    },
+    {
+      "input": 227,
+      "before": 235,
+      "after": 235
+    },
+    {
+      "input": 228,
+      "before": 236,
+      "after": 236
+    },
+    {
+      "input": 229,
+      "before": 236,
+      "after": 236
+    },
+    {
+      "input": 230,
+      "before": 237,
+      "after": 237
+    },
+    {
+      "input": 231,
+      "before": 238,
+      "after": 238
+    },
+    {
+      "input": 232,
+      "before": 239,
+      "after": 239
+    },
+    {
+      "input": 233,
+      "before": 239,
+      "after": 239
+    },
+    {
+      "input": 234,
+      "before": 240,
+      "after": 240
+    },
+    {
+      "input": 235,
+      "before": 241,
+      "after": 241
+    },
+    {
+      "input": 236,
+      "before": 241,
+      "after": 241
+    },
+    {
+      "input": 237,
+      "before": 242,
+      "after": 242
+    },
+    {
+      "input": 238,
+      "before": 243,
+      "after": 243
+    },
+    {
+      "input": 239,
+      "before": 243,
+      "after": 243
+    },
+    {
+      "input": 240,
+      "before": 244,
+      "after": 244
+    },
+    {
+      "input": 241,
+      "before": 245,
+      "after": 245
+    },
+    {
+      "input": 242,
+      "before": 245,
+      "after": 245
+    },
+    {
+      "input": 243,
+      "before": 246,
+      "after": 246
+    },
+    {
+      "input": 244,
+      "before": 247,
+      "after": 247
+    },
+    {
+      "input": 245,
+      "before": 247,
+      "after": 247
+    },
+    {
+      "input": 246,
+      "before": 248,
+      "after": 248
+    },
+    {
+      "input": 247,
+      "before": 249,
+      "after": 249
+    },
+    {
+      "input": 248,
+      "before": 250,
+      "after": 250
+    },
+    {
+      "input": 249,
+      "before": 250,
+      "after": 250
+    },
+    {
+      "input": 250,
+      "before": 251,
+      "after": 251
+    },
+    {
+      "input": 251,
+      "before": 252,
+      "after": 252
+    },
+    {
+      "input": 252,
+      "before": 252,
+      "after": 252
+    },
+    {
+      "input": 253,
+      "before": 253,
+      "after": 253
+    },
+    {
+      "input": 254,
+      "before": 254,
+      "after": 254
+    },
+    {
+      "input": 255,
+      "before": 255,
+      "after": 255
+    }
+  ],
+  "runs": [
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\normal-20261014-104730-8f968b\\run-manifest.json",
+      "sha256": "1C3226A4C6C3D6B9AEB9D7BE4DB9C854A0C56E703F2C45099F3A482904EBDB47",
+      "summary": {
+        "errors": 0,
+        "checks": 111832,
+        "scenarios": 19,
+        "done": 1,
+        "injected": 0
+      },
+      "native_exit": 0
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\normal-720p-20261014-104730-f4bcca\\run-manifest.json",
+      "sha256": "91F443C65AA16968BB5192FB0F39374E75AA9FB455EB4A5B223066A29A6C4F25",
+      "summary": {
+        "errors": 0,
+        "checks": 4724683,
+        "scenarios": 1,
+        "done": 1,
+        "injected": 0
+      },
+      "native_exit": 0
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\negative-20261014-104759-8d8a64\\run-manifest.json",
+      "sha256": "CB115576A5516434D21344C08EDBA4D3D6C1CBCA11028F63FE87D04C340CB2C0",
+      "summary": {
+        "errors": 1,
+        "checks": 111833,
+        "scenarios": 19,
+        "done": 1,
+        "injected": 1
+      },
+      "native_exit": 1
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\runs\\watchdog-20261014-104759-7bfd15\\run-manifest.json",
+      "sha256": "438F2C55D3E77F08F8DB237FA9B841EF31E1F358DA18DE6A532F5831F0D19BCA",
+      "summary": {
+        "errors": 0,
+        "checks": 88,
+        "scenarios": 1,
+        "done": 0,
+        "injected": 0
+      },
+      "native_exit": 2
+    }
+  ],
+  "normal_scenarios": 20,
+  "normal_checks": 4836515,
+  "observations_csv_byte_identical": true,
+  "latency_input_to_output_cycles": 54,
+  "resource_claim": "12 tone channel expressions now use constant shifts/additions; no claim about DSP reduction until TD maps the new source.",
+  "unchanged_multipliers": "Eight pixel R/B gain multipliers and two frame-statistic weighted products unchanged.",
+  "hardware_validated": false
+}

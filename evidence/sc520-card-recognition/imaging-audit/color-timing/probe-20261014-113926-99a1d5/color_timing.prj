@@ -1,0 +1,78 @@
+<Project Version="3" Minor="2" RunTime="2026-09-11T15:44:08">
+  <Project_Created_Time />
+  <TD_Encoding>UTF-8</TD_Encoding>
+  <TD_Version>6.2.168116</TD_Version>
+  <Name>color_timing</Name>
+  <HardWare>
+    <Family>PH1</Family>
+    <Device>PH1P35MDG324</Device>
+    <Speed>-3</Speed>
+  </HardWare>
+  <Source_Files>
+    <Verilog>
+      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v">
+        <FileInfo>
+          <Attr Name="UsedInSyn" Val="true" />
+          <Attr Name="UsedInP&R" Val="true" />
+          <Attr Name="BelongTo" Val="design_1" />
+          <Attr Name="CompileOrder" Val="1" />
+        </FileInfo>
+      </File>
+      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v">
+        <FileInfo>
+          <Attr Name="UsedInSyn" Val="true" />
+          <Attr Name="UsedInP&R" Val="true" />
+          <Attr Name="BelongTo" Val="design_1" />
+          <Attr Name="CompileOrder" Val="2" />
+        </FileInfo>
+      </File>
+      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/signal_delay.v">
+        <FileInfo>
+          <Attr Name="UsedInSyn" Val="true" />
+          <Attr Name="UsedInP&R" Val="true" />
+          <Attr Name="BelongTo" Val="design_1" />
+          <Attr Name="CompileOrder" Val="3" />
+        </FileInfo>
+      </File>
+      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/blk_mem_gen_awb_delay_signal.v">
+        <FileInfo>
+          <Attr Name="UsedInSyn" Val="true" />
+          <Attr Name="UsedInP&R" Val="true" />
+          <Attr Name="BelongTo" Val="design_1" />
+          <Attr Name="CompileOrder" Val="4" />
+        </FileInfo>
+      </File>
+      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/ram_f84573da5ab5.v">
+        <FileInfo>
+          <Attr Name="UsedInSyn" Val="true" />
+          <Attr Name="UsedInP&R" Val="true" />
+          <Attr Name="BelongTo" Val="design_1" />
+          <Attr Name="CompileOrder" Val="5" />
+        </FileInfo>
+      </File>
+    </Verilog>
+  </Source_Files>
+  <FileSets>
+    <FileSet Name="design_1" Type="DesignFiles">
+        </FileSet>
+    <FileSet Name="constraint_1" Type="ConstrainFiles">
+        </FileSet>
+  </FileSets>
+  <TOP_MODULE>
+    <LABEL>color_timing_top</LABEL>
+    <MODULE>color_timing_top</MODULE>
+    <CREATEINDEX>user</CREATEINDEX>
+  </TOP_MODULE>
+  <Property>
+    </Property>
+  <Device_Settings>
+    </Device_Settings>
+  <Configurations>
+    <Control0>
+      <mclk_freq>33MHz</mclk_freq>
+    </Control0>
+    <FeatureRow>
+      <boot_mode>mspix4</boot_mode>
+    </FeatureRow>
+  </Configurations>
+</Project>

@@ -1,0 +1,1414 @@
+Created by          : Tang Dynasty v6.2.168116
+                    : Copyright (c) 2012-2025 Anlogic Inc.
+Generated           : Wed Oct 14 11:41:13 2026
+
+Top Model           : color_timing_top
+Device              : PH1P35MDG324
+Speed               : 3
+STA coverage        : 100.00%
+Constraint File     : U:/color.sdc;
+Confidence          : Placed
+Check Corner        : Both (Slow and Fast)
+CRPR Enabled        : Yes
+Report Scheme       : 10 end point(s) per path group, 1 path(s) per end point
+
+
+Check Status
+-------------
+
+Corner   | Max      Min     
+------------------------------------
+Slow     | yes      yes     
+Fast     | yes      yes     
+
+
+Timing Status
+--------------------
+	SWNS: 2.396ns, STNS: 0.000ns
+	HWNS: -0.198ns, HTNS: -11.904ns
+	Period Check WNS: 0.000ns
+
+
+Clock Summary
+--------------------
+
+       Clock-Id:       C-Freq       Fanout   Clock-Name
+--------------------------------------------------------------------------------
+           clk0:      103.520          858   CORE_CLK
+--------------------------------------------------------------------------------
+
+       Name            Type         Rise(ns)   Fall(ns)          C-Period(ns)     C-Freq(MHz)          R-Period(ns)     R-Freq(MHz)         SWNS(ns)   STNS(ns)         HWNS(ns)   HTNS(ns)         Skew(ns)           Fanout        Max-Level        CC-From    CC-To
+       clk0   Inferred GCLK            0.000      4.830                 9.660         103.520                 7.264         137.665            2.396      0.000           -0.198    -11.904            0.000              858                8             no       no
+
+Notes
+----------
+C-Period  :  constraint period
+C-Freq    :  constraint freq
+R-Period  :  report min period
+R-Freq    :  report fmax
+CC-From   :  has path(s) from cross-domain clock
+CC-To     :  has path(s) to cross-domain clock
+
+
+*   Clock R-Period data only takes intra-clock timing. SWNS/STNS/HWNS/HTNS take both intra-clock and inter-clock timing.
+*   If there is mismatch between R-Period and SWNS, check inter-clock timing of this clock as capture clock.
+*   SWNS/STNS/HWNS/HTNS of timing exception (SMCP/SMD) only counted in global Timing Status, not counted in Clock Summary.
+
+Intra clock domain timing
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     CORE_CLK -> CORE_CLK
+Type           :     Self
+From Clock     :     CORE_CLK
+To Clock       :     CORE_CLK
+Min Period     :     7.264ns
+Fmax           :     137.665MHz
+
+Statistics:
+Max            : SWNS      2.396ns, STNS      0.000ns,         0 Viol Endpoints,      3760 Total Endpoints,     48917 Paths Analyzed
+Min            : HWNS     -0.198ns, HTNS    -11.904ns,        85 Viol Endpoints,      3760 Total Endpoints,     48917 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 2.396ns
+Begin Point         : sof (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+End Point           : o_sof (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+Check Type          : setup
+Process             : slow_125c
+Budget              : 9.660ns { CORE_CLK rising@9.660ns - CORE_CLK rising@0.000ns }
+Data Path Delay     : 7.154ns (cell 3.119ns (43%), net 4.035ns (57%))
+Clock Skew          : 0.000ns
+Logic Level         : 4 ( PAD=2  HDIO=2 )
+Max Fanout          : 146
+Clock Uncertainty   : 0.110ns (sdc uncertainty: 0.000ns, default uncertainty: 0.110ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+input                                   0.000          0.000          pin: sof
+net (fo=1)                              0.000          0.000          net: sof,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: sof_syn_1.ipad
+PAD                 x043y064            0.849    f     0.849       1  pin: sof_syn_1.sg09_di
+PAD                 x043y064            0.410    r     1.259       2  pin: sof_syn_1.di
+net (fo=146)                            4.035          5.294          net: o_sof_dup_25,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(2)
+                                                                      pin: o_sof_syn_26.doq[0]
+HDIO                x006y000            0.000    f     5.294       3  pin: o_sof_syn_26.sg09_do
+HDIO                x006y000            1.860    f     7.154       4  pin: o_sof_syn_26.opad
+net (fo=1)                              0.000          7.154          net: o_sof,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(2)
+                                                                      pin: o_sof
+--------------------------------------------------------------------  ---------------
+Arrival                                                7.154               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+capture edge                            9.660    r     9.660               
+--------------------------------------------------------------------  ---------------
+output                                  0.000          9.660               
+clock uncertainty                      -0.110          9.550               
+clock pessimism                         0.000          9.550               
+--------------------------------------------------------------------  ---------------
+Required                                               9.550               
+--------------------------------------------------------------------  ---------------
+Slack                                                  2.396               
+
+Slack               : 3.426ns
+Begin Point         : u_color/add_count_reg[0]_syn_2.clk (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+End Point           : u_color/mult2_syn_404.ce[1] (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 9.660ns { CORE_CLK rising@9.660ns - CORE_CLK rising@0.000ns }
+Data Path Delay     : 5.298ns (cell 2.323ns (43%), net 2.975ns (57%))
+Clock Skew          : 0.000ns
+Logic Level         : 6 ( LUT5=2  ADDER=2  LUT4=1  LUT2=1 )
+Max Fanout          : 32
+Clock Uncertainty   : 0.110ns (sdc uncertainty: 0.000ns, default uncertainty: 0.110ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/add_count_reg[0]_syn_2.clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x014y032z5          0.126    f     0.126          pin: u_color/add_count_reg[0]_syn_2.oqa
+net (fo=3)                              0.424          0.550          net: u_color/add_count[0],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(32)
+                                                                      pin: u_color/add153_syn_129.ic
+ADDER               x009y032z4          0.540    r     1.090       1  pin: u_color/add153_syn_129.fco
+net (fo=1)                              0.000          1.090          net: u_color/add153_syn_107,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_130.fci
+ADDER               x009y032z5          0.059    r     1.149          pin: u_color/add153_syn_130.fco
+net (fo=1)                              0.000          1.149          net: u_color/add153_syn_108,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_131.fci
+ADDER               x009y032z6          0.059    r     1.208          pin: u_color/add153_syn_131.fco
+net (fo=1)                              0.000          1.208          net: u_color/add153_syn_109,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_132.fci
+ADDER               x009y032z7          0.059    r     1.267          pin: u_color/add153_syn_132.fco
+net (fo=1)                              0.000          1.267          net: u_color/add153_syn_110,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_133.fci
+ADDER               x009y033z0          0.000    f     1.267          pin: u_color/add153_syn_133.fco_f
+net (fo=1)                              0.000          1.267          net: u_color/add153_syn_155,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_134.fci_f
+ADDER               x009y033z1          0.000    f     1.267          pin: u_color/add153_syn_134.fco_f
+net (fo=1)                              0.000          1.267          net: u_color/add153_syn_156,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_135.fci_f
+ADDER               x009y033z2          0.000    f     1.267          pin: u_color/add153_syn_135.fco_f
+net (fo=1)                              0.000          1.267          net: u_color/add153_syn_157,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_136.fci_f
+ADDER               x009y033z3          0.000    f     1.267          pin: u_color/add153_syn_136.fco_f
+net (fo=1)                              0.090          1.357          net: u_color/add153_syn_158,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_137.fci_f
+ADDER               x009y033z4          0.000    f     1.357          pin: u_color/add153_syn_137.fco_f
+net (fo=1)                              0.000          1.357          net: u_color/add153_syn_159,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_138.fci_f
+ADDER               x009y033z5          0.000    f     1.357          pin: u_color/add153_syn_138.fco_f
+net (fo=1)                              0.000          1.357          net: u_color/add153_syn_160,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_139.fci_f
+ADDER               x009y033z6          0.000    f     1.357          pin: u_color/add153_syn_139.fco_f
+net (fo=1)                              0.000          1.357          net: u_color/add153_syn_161,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_140.fci_f
+ADDER               x009y033z7          0.000    f     1.357          pin: u_color/add153_syn_140.fco_f
+net (fo=1)                              0.090          1.447          net: u_color/add153_syn_162,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_141.fci_f
+ADDER               x009y034z0          0.295    f     1.742       2  pin: u_color/add153_syn_141.ofb
+net (fo=1)                              0.336          2.078          net: u_color/saved_b6[12],  NOFILE(0)
+                                                                      pin: u_color/update_stage_reg[2]_syn_15.ia
+LUT4                x011y034z3          0.399    f     2.477       3  pin: u_color/update_stage_reg[2]_syn_15.ofb
+net (fo=1)                              0.317          2.794          net: u_color/update_stage_reg[2]_syn_4,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(135)
+                                                                      pin: u_color/update_stage_reg[2]_syn_23.ie
+LUT5                x010y035z3          0.189    r     2.983       4  pin: u_color/update_stage_reg[2]_syn_23.ofb
+net (fo=1)                              0.261          3.244          net: u_color/update_stage_reg[2]_syn_6,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(135)
+                                                                      pin: u_color/update_stage_reg[2]_syn_17.ie
+LUT5                x009y035z4          0.189    r     3.433       5  pin: u_color/update_stage_reg[2]_syn_17.ofb
+net (fo=2)                              0.999          4.432          net: u_color/update_stage_reg[2]_syn_8,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(135)
+                                                                      pin: u_color/update_stage_reg[1]_syn_5.ib
+LUT2                x026y040z1          0.408    f     4.840       6  pin: u_color/update_stage_reg[1]_syn_5.ofb
+net (fo=32)                             0.458          5.298          net: u_color/mux136_syn_2[0],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(168)
+                                                                      pin: u_color/mult2_syn_404.ce[1]
+DSPSIOU (reg)       x027y032            0.000    f     5.298               
+--------------------------------------------------------------------  ---------------
+Arrival                                                5.298               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/mult2_syn_404.clk
+capture edge                            9.660    r     9.660               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.826          8.834               
+clock uncertainty                      -0.110          8.724               
+clock pessimism                         0.000          8.724               
+--------------------------------------------------------------------  ---------------
+Required                                               8.724               
+--------------------------------------------------------------------  ---------------
+Slack                                                  3.426               
+
+Slack               : 3.452ns
+Begin Point         : u_color/add_count_reg[0]_syn_2.clk (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+End Point           : u_color/mult3_syn_404.ce[1] (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 9.660ns { CORE_CLK rising@9.660ns - CORE_CLK rising@0.000ns }
+Data Path Delay     : 5.272ns (cell 2.323ns (44%), net 2.949ns (56%))
+Clock Skew          : 0.000ns
+Logic Level         : 6 ( LUT5=2  ADDER=2  LUT4=1  LUT2=1 )
+Max Fanout          : 32
+Clock Uncertainty   : 0.110ns (sdc uncertainty: 0.000ns, default uncertainty: 0.110ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/add_count_reg[0]_syn_2.clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x014y032z5          0.126    f     0.126          pin: u_color/add_count_reg[0]_syn_2.oqa
+net (fo=3)                              0.424          0.550          net: u_color/add_count[0],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(32)
+                                                                      pin: u_color/add153_syn_129.ic
+ADDER               x009y032z4          0.540    r     1.090       1  pin: u_color/add153_syn_129.fco
+net (fo=1)                              0.000          1.090          net: u_color/add153_syn_107,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_130.fci
+ADDER               x009y032z5          0.059    r     1.149          pin: u_color/add153_syn_130.fco
+net (fo=1)                              0.000          1.149          net: u_color/add153_syn_108,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_131.fci
+ADDER               x009y032z6          0.059    r     1.208          pin: u_color/add153_syn_131.fco
+net (fo=1)                              0.000          1.208          net: u_color/add153_syn_109,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_132.fci
+ADDER               x009y032z7          0.059    r     1.267          pin: u_color/add153_syn_132.fco
+net (fo=1)                              0.000          1.267          net: u_color/add153_syn_110,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_133.fci
+ADDER               x009y033z0          0.000    f     1.267          pin: u_color/add153_syn_133.fco_f
+net (fo=1)                              0.000          1.267          net: u_color/add153_syn_155,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_134.fci_f
+ADDER               x009y033z1          0.000    f     1.267          pin: u_color/add153_syn_134.fco_f
+net (fo=1)                              0.000          1.267          net: u_color/add153_syn_156,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_135.fci_f
+ADDER               x009y033z2          0.000    f     1.267          pin: u_color/add153_syn_135.fco_f
+net (fo=1)                              0.000          1.267          net: u_color/add153_syn_157,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_136.fci_f
+ADDER               x009y033z3          0.000    f     1.267          pin: u_color/add153_syn_136.fco_f
+net (fo=1)                              0.090          1.357          net: u_color/add153_syn_158,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_137.fci_f
+ADDER               x009y033z4          0.000    f     1.357          pin: u_color/add153_syn_137.fco_f
+net (fo=1)                              0.000          1.357          net: u_color/add153_syn_159,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_138.fci_f
+ADDER               x009y033z5          0.000    f     1.357          pin: u_color/add153_syn_138.fco_f
+net (fo=1)                              0.000          1.357          net: u_color/add153_syn_160,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_139.fci_f
+ADDER               x009y033z6          0.000    f     1.357          pin: u_color/add153_syn_139.fco_f
+net (fo=1)                              0.000          1.357          net: u_color/add153_syn_161,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_140.fci_f
+ADDER               x009y033z7          0.000    f     1.357          pin: u_color/add153_syn_140.fco_f
+net (fo=1)                              0.090          1.447          net: u_color/add153_syn_162,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_141.fci_f
+ADDER               x009y034z0          0.295    f     1.742       2  pin: u_color/add153_syn_141.ofb
+net (fo=1)                              0.336          2.078          net: u_color/saved_b6[12],  NOFILE(0)
+                                                                      pin: u_color/update_stage_reg[2]_syn_15.ia
+LUT4                x011y034z3          0.399    f     2.477       3  pin: u_color/update_stage_reg[2]_syn_15.ofb
+net (fo=1)                              0.317          2.794          net: u_color/update_stage_reg[2]_syn_4,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(135)
+                                                                      pin: u_color/update_stage_reg[2]_syn_23.ie
+LUT5                x010y035z3          0.189    r     2.983       4  pin: u_color/update_stage_reg[2]_syn_23.ofb
+net (fo=1)                              0.261          3.244          net: u_color/update_stage_reg[2]_syn_6,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(135)
+                                                                      pin: u_color/update_stage_reg[2]_syn_17.ie
+LUT5                x009y035z4          0.189    r     3.433       5  pin: u_color/update_stage_reg[2]_syn_17.ofb
+net (fo=2)                              0.999          4.432          net: u_color/update_stage_reg[2]_syn_8,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(135)
+                                                                      pin: u_color/update_stage_reg[1]_syn_5.ib
+LUT2                x026y040z1          0.408    f     4.840       6  pin: u_color/update_stage_reg[1]_syn_5.ofb
+net (fo=32)                             0.432          5.272          net: u_color/mux136_syn_2[0],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(168)
+                                                                      pin: u_color/mult3_syn_404.ce[1]
+DSPSIOU (reg)       x027y036            0.000    f     5.272               
+--------------------------------------------------------------------  ---------------
+Arrival                                                5.272               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/mult3_syn_404.clk
+capture edge                            9.660    r     9.660               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.826          8.834               
+clock uncertainty                      -0.110          8.724               
+clock pessimism                         0.000          8.724               
+--------------------------------------------------------------------  ---------------
+Required                                               8.724               
+--------------------------------------------------------------------  ---------------
+Slack                                                  3.452               
+
+Slack               : 3.522ns
+Begin Point         : sof (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+End Point           : u_color/mult7_syn_165.ce[0] (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 9.660ns { CORE_CLK rising@9.660ns - CORE_CLK rising@0.000ns }
+Data Path Delay     : 5.332ns (cell 1.984ns (37%), net 3.348ns (63%))
+Clock Skew          : 0.000ns
+Logic Level         : 3 ( PAD=2  LUT3=1 )
+Max Fanout          : 146
+Clock Uncertainty   : 0.110ns (sdc uncertainty: 0.000ns, default uncertainty: 0.110ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+input                                   0.000          0.000          pin: sof
+net (fo=1)                              0.000          0.000          net: sof,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: sof_syn_1.ipad
+PAD                 x043y064            1.009    f     1.009       1  pin: sof_syn_1.sg09_di
+PAD                 x043y064            0.488    r     1.497       2  pin: sof_syn_1.di
+net (fo=146)                            2.269          3.766          net: o_sof_dup_25,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(2)
+                                                                      pin: u_color/valid_m_reg_syn_3.ib
+LUT3                x019y033z1          0.487    r     4.253       3  pin: u_color/valid_m_reg_syn_3.ofa
+net (fo=40)                             1.079          5.332          net: u_color/valid_m_n,  NOFILE(0)
+                                                                      pin: u_color/mult7_syn_165.ce[0]
+DSPSIOU (reg)       x027y048            0.000    f     5.332               
+--------------------------------------------------------------------  ---------------
+Arrival                                                5.332               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/mult7_syn_165.clk
+capture edge                            9.660    r     9.660               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.696          8.964               
+clock uncertainty                      -0.110          8.854               
+clock pessimism                         0.000          8.854               
+--------------------------------------------------------------------  ---------------
+Required                                               8.854               
+--------------------------------------------------------------------  ---------------
+Slack                                                  3.522               
+
+Slack               : 3.609ns
+Begin Point         : u_color/add_count_reg[0]_syn_2.clk (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+End Point           : u_color/mult2_syn_309.ce[0] (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 9.660ns { CORE_CLK rising@9.660ns - CORE_CLK rising@0.000ns }
+Data Path Delay     : 5.298ns (cell 2.323ns (43%), net 2.975ns (57%))
+Clock Skew          : 0.000ns
+Logic Level         : 6 ( LUT5=2  ADDER=2  LUT4=1  LUT2=1 )
+Max Fanout          : 32
+Clock Uncertainty   : 0.110ns (sdc uncertainty: 0.000ns, default uncertainty: 0.110ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/add_count_reg[0]_syn_2.clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x014y032z5          0.126    f     0.126          pin: u_color/add_count_reg[0]_syn_2.oqa
+net (fo=3)                              0.424          0.550          net: u_color/add_count[0],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(32)
+                                                                      pin: u_color/add153_syn_129.ic
+ADDER               x009y032z4          0.540    r     1.090       1  pin: u_color/add153_syn_129.fco
+net (fo=1)                              0.000          1.090          net: u_color/add153_syn_107,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_130.fci
+ADDER               x009y032z5          0.059    r     1.149          pin: u_color/add153_syn_130.fco
+net (fo=1)                              0.000          1.149          net: u_color/add153_syn_108,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_131.fci
+ADDER               x009y032z6          0.059    r     1.208          pin: u_color/add153_syn_131.fco
+net (fo=1)                              0.000          1.208          net: u_color/add153_syn_109,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_132.fci
+ADDER               x009y032z7          0.059    r     1.267          pin: u_color/add153_syn_132.fco
+net (fo=1)                              0.000          1.267          net: u_color/add153_syn_110,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_133.fci
+ADDER               x009y033z0          0.000    f     1.267          pin: u_color/add153_syn_133.fco_f
+net (fo=1)                              0.000          1.267          net: u_color/add153_syn_155,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_134.fci_f
+ADDER               x009y033z1          0.000    f     1.267          pin: u_color/add153_syn_134.fco_f
+net (fo=1)                              0.000          1.267          net: u_color/add153_syn_156,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_135.fci_f
+ADDER               x009y033z2          0.000    f     1.267          pin: u_color/add153_syn_135.fco_f
+net (fo=1)                              0.000          1.267          net: u_color/add153_syn_157,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_136.fci_f
+ADDER               x009y033z3          0.000    f     1.267          pin: u_color/add153_syn_136.fco_f
+net (fo=1)                              0.090          1.357          net: u_color/add153_syn_158,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_137.fci_f
+ADDER               x009y033z4          0.000    f     1.357          pin: u_color/add153_syn_137.fco_f
+net (fo=1)                              0.000          1.357          net: u_color/add153_syn_159,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_138.fci_f
+ADDER               x009y033z5          0.000    f     1.357          pin: u_color/add153_syn_138.fco_f
+net (fo=1)                              0.000          1.357          net: u_color/add153_syn_160,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_139.fci_f
+ADDER               x009y033z6          0.000    f     1.357          pin: u_color/add153_syn_139.fco_f
+net (fo=1)                              0.000          1.357          net: u_color/add153_syn_161,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_140.fci_f
+ADDER               x009y033z7          0.000    f     1.357          pin: u_color/add153_syn_140.fco_f
+net (fo=1)                              0.090          1.447          net: u_color/add153_syn_162,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_141.fci_f
+ADDER               x009y034z0          0.295    f     1.742       2  pin: u_color/add153_syn_141.ofb
+net (fo=1)                              0.336          2.078          net: u_color/saved_b6[12],  NOFILE(0)
+                                                                      pin: u_color/update_stage_reg[2]_syn_15.ia
+LUT4                x011y034z3          0.399    f     2.477       3  pin: u_color/update_stage_reg[2]_syn_15.ofb
+net (fo=1)                              0.317          2.794          net: u_color/update_stage_reg[2]_syn_4,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(135)
+                                                                      pin: u_color/update_stage_reg[2]_syn_23.ie
+LUT5                x010y035z3          0.189    r     2.983       4  pin: u_color/update_stage_reg[2]_syn_23.ofb
+net (fo=1)                              0.261          3.244          net: u_color/update_stage_reg[2]_syn_6,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(135)
+                                                                      pin: u_color/update_stage_reg[2]_syn_17.ie
+LUT5                x009y035z4          0.189    r     3.433       5  pin: u_color/update_stage_reg[2]_syn_17.ofb
+net (fo=2)                              0.999          4.432          net: u_color/update_stage_reg[2]_syn_8,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(135)
+                                                                      pin: u_color/update_stage_reg[1]_syn_5.ib
+LUT2                x026y040z1          0.408    f     4.840       6  pin: u_color/update_stage_reg[1]_syn_5.ofb
+net (fo=32)                             0.458          5.298          net: u_color/mux136_syn_2[0],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(168)
+                                                                      pin: u_color/mult2_syn_309.ce[0]
+DSPSIOU (reg)       x027y032            0.000    f     5.298               
+--------------------------------------------------------------------  ---------------
+Arrival                                                5.298               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/mult2_syn_309.clk
+capture edge                            9.660    r     9.660               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.643          9.017               
+clock uncertainty                      -0.110          8.907               
+clock pessimism                         0.000          8.907               
+--------------------------------------------------------------------  ---------------
+Required                                               8.907               
+--------------------------------------------------------------------  ---------------
+Slack                                                  3.609               
+
+Slack               : 3.626ns
+Begin Point         : sof (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+End Point           : u_color/mult5_syn_165.ce[0] (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 9.660ns { CORE_CLK rising@9.660ns - CORE_CLK rising@0.000ns }
+Data Path Delay     : 5.228ns (cell 1.984ns (37%), net 3.244ns (63%))
+Clock Skew          : 0.000ns
+Logic Level         : 3 ( PAD=2  LUT3=1 )
+Max Fanout          : 146
+Clock Uncertainty   : 0.110ns (sdc uncertainty: 0.000ns, default uncertainty: 0.110ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+input                                   0.000          0.000          pin: sof
+net (fo=1)                              0.000          0.000          net: sof,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: sof_syn_1.ipad
+PAD                 x043y064            1.009    f     1.009       1  pin: sof_syn_1.sg09_di
+PAD                 x043y064            0.488    r     1.497       2  pin: sof_syn_1.di
+net (fo=146)                            2.269          3.766          net: o_sof_dup_25,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(2)
+                                                                      pin: u_color/valid_m_reg_syn_3.ib
+LUT3                x019y033z1          0.487    r     4.253       3  pin: u_color/valid_m_reg_syn_3.ofa
+net (fo=40)                             0.975          5.228          net: u_color/valid_m_n,  NOFILE(0)
+                                                                      pin: u_color/mult5_syn_165.ce[0]
+DSPSIOU (reg)       x027y044            0.000    f     5.228               
+--------------------------------------------------------------------  ---------------
+Arrival                                                5.228               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/mult5_syn_165.clk
+capture edge                            9.660    r     9.660               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.696          8.964               
+clock uncertainty                      -0.110          8.854               
+clock pessimism                         0.000          8.854               
+--------------------------------------------------------------------  ---------------
+Required                                               8.854               
+--------------------------------------------------------------------  ---------------
+Slack                                                  3.626               
+
+Slack               : 3.626ns
+Begin Point         : sof (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+End Point           : u_color/mult9_syn_165.ce[0] (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 9.660ns { CORE_CLK rising@9.660ns - CORE_CLK rising@0.000ns }
+Data Path Delay     : 5.228ns (cell 1.984ns (37%), net 3.244ns (63%))
+Clock Skew          : 0.000ns
+Logic Level         : 3 ( PAD=2  LUT3=1 )
+Max Fanout          : 146
+Clock Uncertainty   : 0.110ns (sdc uncertainty: 0.000ns, default uncertainty: 0.110ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+input                                   0.000          0.000          pin: sof
+net (fo=1)                              0.000          0.000          net: sof,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: sof_syn_1.ipad
+PAD                 x043y064            1.009    f     1.009       1  pin: sof_syn_1.sg09_di
+PAD                 x043y064            0.488    r     1.497       2  pin: sof_syn_1.di
+net (fo=146)                            2.269          3.766          net: o_sof_dup_25,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(2)
+                                                                      pin: u_color/valid_m_reg_syn_3.ib
+LUT3                x019y033z1          0.487    r     4.253       3  pin: u_color/valid_m_reg_syn_3.ofa
+net (fo=40)                             0.975          5.228          net: u_color/valid_m_n,  NOFILE(0)
+                                                                      pin: u_color/mult9_syn_165.ce[0]
+DSPSIOU (reg)       x027y044            0.000    f     5.228               
+--------------------------------------------------------------------  ---------------
+Arrival                                                5.228               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/mult9_syn_165.clk
+capture edge                            9.660    r     9.660               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.696          8.964               
+clock uncertainty                      -0.110          8.854               
+clock pessimism                         0.000          8.854               
+--------------------------------------------------------------------  ---------------
+Required                                               8.854               
+--------------------------------------------------------------------  ---------------
+Slack                                                  3.626               
+
+Slack               : 3.635ns
+Begin Point         : u_color/add_count_reg[0]_syn_2.clk (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+End Point           : u_color/mult3_syn_309.ce[0] (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 9.660ns { CORE_CLK rising@9.660ns - CORE_CLK rising@0.000ns }
+Data Path Delay     : 5.272ns (cell 2.323ns (44%), net 2.949ns (56%))
+Clock Skew          : 0.000ns
+Logic Level         : 6 ( LUT5=2  ADDER=2  LUT4=1  LUT2=1 )
+Max Fanout          : 32
+Clock Uncertainty   : 0.110ns (sdc uncertainty: 0.000ns, default uncertainty: 0.110ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/add_count_reg[0]_syn_2.clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x014y032z5          0.126    f     0.126          pin: u_color/add_count_reg[0]_syn_2.oqa
+net (fo=3)                              0.424          0.550          net: u_color/add_count[0],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(32)
+                                                                      pin: u_color/add153_syn_129.ic
+ADDER               x009y032z4          0.540    r     1.090       1  pin: u_color/add153_syn_129.fco
+net (fo=1)                              0.000          1.090          net: u_color/add153_syn_107,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_130.fci
+ADDER               x009y032z5          0.059    r     1.149          pin: u_color/add153_syn_130.fco
+net (fo=1)                              0.000          1.149          net: u_color/add153_syn_108,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_131.fci
+ADDER               x009y032z6          0.059    r     1.208          pin: u_color/add153_syn_131.fco
+net (fo=1)                              0.000          1.208          net: u_color/add153_syn_109,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_132.fci
+ADDER               x009y032z7          0.059    r     1.267          pin: u_color/add153_syn_132.fco
+net (fo=1)                              0.000          1.267          net: u_color/add153_syn_110,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_133.fci
+ADDER               x009y033z0          0.000    f     1.267          pin: u_color/add153_syn_133.fco_f
+net (fo=1)                              0.000          1.267          net: u_color/add153_syn_155,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_134.fci_f
+ADDER               x009y033z1          0.000    f     1.267          pin: u_color/add153_syn_134.fco_f
+net (fo=1)                              0.000          1.267          net: u_color/add153_syn_156,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_135.fci_f
+ADDER               x009y033z2          0.000    f     1.267          pin: u_color/add153_syn_135.fco_f
+net (fo=1)                              0.000          1.267          net: u_color/add153_syn_157,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_136.fci_f
+ADDER               x009y033z3          0.000    f     1.267          pin: u_color/add153_syn_136.fco_f
+net (fo=1)                              0.090          1.357          net: u_color/add153_syn_158,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_137.fci_f
+ADDER               x009y033z4          0.000    f     1.357          pin: u_color/add153_syn_137.fco_f
+net (fo=1)                              0.000          1.357          net: u_color/add153_syn_159,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_138.fci_f
+ADDER               x009y033z5          0.000    f     1.357          pin: u_color/add153_syn_138.fco_f
+net (fo=1)                              0.000          1.357          net: u_color/add153_syn_160,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_139.fci_f
+ADDER               x009y033z6          0.000    f     1.357          pin: u_color/add153_syn_139.fco_f
+net (fo=1)                              0.000          1.357          net: u_color/add153_syn_161,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_140.fci_f
+ADDER               x009y033z7          0.000    f     1.357          pin: u_color/add153_syn_140.fco_f
+net (fo=1)                              0.090          1.447          net: u_color/add153_syn_162,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(170)
+                                                                      pin: u_color/add153_syn_141.fci_f
+ADDER               x009y034z0          0.295    f     1.742       2  pin: u_color/add153_syn_141.ofb
+net (fo=1)                              0.336          2.078          net: u_color/saved_b6[12],  NOFILE(0)
+                                                                      pin: u_color/update_stage_reg[2]_syn_15.ia
+LUT4                x011y034z3          0.399    f     2.477       3  pin: u_color/update_stage_reg[2]_syn_15.ofb
+net (fo=1)                              0.317          2.794          net: u_color/update_stage_reg[2]_syn_4,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(135)
+                                                                      pin: u_color/update_stage_reg[2]_syn_23.ie
+LUT5                x010y035z3          0.189    r     2.983       4  pin: u_color/update_stage_reg[2]_syn_23.ofb
+net (fo=1)                              0.261          3.244          net: u_color/update_stage_reg[2]_syn_6,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(135)
+                                                                      pin: u_color/update_stage_reg[2]_syn_17.ie
+LUT5                x009y035z4          0.189    r     3.433       5  pin: u_color/update_stage_reg[2]_syn_17.ofb
+net (fo=2)                              0.999          4.432          net: u_color/update_stage_reg[2]_syn_8,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(135)
+                                                                      pin: u_color/update_stage_reg[1]_syn_5.ib
+LUT2                x026y040z1          0.408    f     4.840       6  pin: u_color/update_stage_reg[1]_syn_5.ofb
+net (fo=32)                             0.432          5.272          net: u_color/mux136_syn_2[0],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(168)
+                                                                      pin: u_color/mult3_syn_309.ce[0]
+DSPSIOU (reg)       x027y036            0.000    f     5.272               
+--------------------------------------------------------------------  ---------------
+Arrival                                                5.272               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/mult3_syn_309.clk
+capture edge                            9.660    r     9.660               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.643          9.017               
+clock uncertainty                      -0.110          8.907               
+clock pessimism                         0.000          8.907               
+--------------------------------------------------------------------  ---------------
+Required                                               8.907               
+--------------------------------------------------------------------  ---------------
+Slack                                                  3.635               
+
+Slack               : 3.731ns
+Begin Point         : u_color/mult3_syn_404.clk (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+End Point           : u_color/next_gain_b_reg[7]_syn_2.id (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 9.660ns { CORE_CLK rising@9.660ns - CORE_CLK rising@0.000ns }
+Data Path Delay     : 5.755ns (cell 2.943ns (51%), net 2.812ns (49%))
+Clock Skew          : 0.000ns
+Logic Level         : 7 ( LUT6=3  ADDER=2  LUT5=1  LUT4=1 )
+Max Fanout          : 9
+Clock Uncertainty   : 0.110ns (sdc uncertainty: 0.000ns, default uncertainty: 0.110ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/mult3_syn_404.clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+DSPSIOU (clk2q)     x027y036            0.661    f     0.661          pin: u_color/mult3_syn_404.p[0]
+net (fo=3)                              0.612          1.273          net: u_color/mult3_syn_113[0],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(177)
+                                                                      pin: u_color/add160_syn_236.id
+ADDER               x034y035z7          0.364    f     1.637       1  pin: u_color/add160_syn_236.fco_f
+net (fo=1)                              0.090          1.727          net: u_color/add160_syn_271,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(185)
+                                                                      pin: u_color/add160_syn_237.fci_f
+ADDER               x034y036z0          0.000    f     1.727          pin: u_color/add160_syn_237.fco_f
+net (fo=1)                              0.000          1.727          net: u_color/add160_syn_272,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(185)
+                                                                      pin: u_color/add160_syn_238.fci_f
+ADDER               x034y036z1          0.000    f     1.727          pin: u_color/add160_syn_238.fco_f
+net (fo=1)                              0.000          1.727          net: u_color/add160_syn_273,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(185)
+                                                                      pin: u_color/add160_syn_239.fci_f
+ADDER               x034y036z2          0.000    f     1.727          pin: u_color/add160_syn_239.fco_f
+net (fo=1)                              0.000          1.727          net: u_color/add160_syn_274,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(185)
+                                                                      pin: u_color/add160_syn_240.fci_f
+ADDER               x034y036z3          0.000    f     1.727          pin: u_color/add160_syn_240.fco_f
+net (fo=1)                              0.090          1.817          net: u_color/add160_syn_275,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(185)
+                                                                      pin: u_color/add160_syn_241.fci_f
+ADDER               x034y036z4          0.059    r     1.876          pin: u_color/add160_syn_241.fco
+net (fo=1)                              0.000          1.876          net: u_color/add160_syn_206,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(185)
+                                                                      pin: u_color/add160_syn_242.fci
+ADDER               x034y036z5          0.059    r     1.935          pin: u_color/add160_syn_242.fco
+net (fo=1)                              0.000          1.935          net: u_color/add160_syn_207,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(185)
+                                                                      pin: u_color/add160_syn_243.fci
+ADDER               x034y036z6          0.059    r     1.994          pin: u_color/add160_syn_243.fco
+net (fo=1)                              0.000          1.994          net: u_color/add160_syn_208,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(185)
+                                                                      pin: u_color/add160_syn_244.fci
+ADDER               x034y036z7          0.295    f     2.289       2  pin: u_color/add160_syn_244.ofb
+net (fo=1)                              0.351          2.640          net: u_color/add160_syn_2[23],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(185)
+                                                                      pin: pixels_reg[3]_syn_2.ic
+LUT4                x034y038z3          0.283    r     2.923       3  pin: pixels_reg[3]_syn_2.ofb
+net (fo=2)                              0.442          3.365          net: u_color/next_gain_b5[0]_syn_98,  NOFILE(0)
+                                                                      pin: u_color/next_gain_b5[0]_syn_191.ie
+LUT5                x036y035z4          0.189    r     3.554       4  pin: u_color/next_gain_b5[0]_syn_191.ofb
+net (fo=1)                              0.238          3.792          net: u_color/next_gain_b5[0]_syn_104,  NOFILE(0)
+                                                                      pin: u_color/next_gain_b5[0]_syn_192.ib
+LUT6                x036y035z1          0.427    f     4.219       5  pin: u_color/next_gain_b5[0]_syn_192.ofb
+net (fo=2)                              0.561          4.780          net: u_color/next_gain_b5[0]_syn_125,  NOFILE(0)
+                                                                      pin: u_color/next_gain_b5[0]_syn_173.imf
+LUT6                x033y040z3          0.168    r     4.948       6  pin: u_color/next_gain_b5[0]_syn_173.ofb
+net (fo=9)                              0.428          5.376          net: u_color/next_gain_b5[0]_syn_143,  NOFILE(0)
+                                                                      pin: u_color/next_gain_b_reg[7]_syn_2.id
+LUT6 (reg)          x029y041z4          0.379    f     5.755       7  net: u_color/next_gain_b[7],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(23)
+--------------------------------------------------------------------  ---------------
+Arrival                                                5.755               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/next_gain_b_reg[7]_syn_2.clk
+capture edge                            9.660    r     9.660               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.064          9.596               
+clock uncertainty                      -0.110          9.486               
+clock pessimism                         0.000          9.486               
+--------------------------------------------------------------------  ---------------
+Required                                               9.486               
+--------------------------------------------------------------------  ---------------
+Slack                                                  3.731               
+
+Slack               : 3.755ns
+Begin Point         : u_color/mult3_syn_404.clk (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+End Point           : u_color/next_gain_b_reg[6]_syn_2.ima (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 9.660ns { CORE_CLK rising@9.660ns - CORE_CLK rising@0.000ns }
+Data Path Delay     : 5.731ns (cell 2.919ns (50%), net 2.812ns (50%))
+Clock Skew          : 0.000ns
+Logic Level         : 7 ( LUT6=2  LUT5=2  ADDER=2  LUT4=1 )
+Max Fanout          : 9
+Clock Uncertainty   : 0.110ns (sdc uncertainty: 0.000ns, default uncertainty: 0.110ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/mult3_syn_404.clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+DSPSIOU (clk2q)     x027y036            0.661    f     0.661          pin: u_color/mult3_syn_404.p[0]
+net (fo=3)                              0.612          1.273          net: u_color/mult3_syn_113[0],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(177)
+                                                                      pin: u_color/add160_syn_236.id
+ADDER               x034y035z7          0.364    f     1.637       1  pin: u_color/add160_syn_236.fco_f
+net (fo=1)                              0.090          1.727          net: u_color/add160_syn_271,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(185)
+                                                                      pin: u_color/add160_syn_237.fci_f
+ADDER               x034y036z0          0.000    f     1.727          pin: u_color/add160_syn_237.fco_f
+net (fo=1)                              0.000          1.727          net: u_color/add160_syn_272,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(185)
+                                                                      pin: u_color/add160_syn_238.fci_f
+ADDER               x034y036z1          0.000    f     1.727          pin: u_color/add160_syn_238.fco_f
+net (fo=1)                              0.000          1.727          net: u_color/add160_syn_273,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(185)
+                                                                      pin: u_color/add160_syn_239.fci_f
+ADDER               x034y036z2          0.000    f     1.727          pin: u_color/add160_syn_239.fco_f
+net (fo=1)                              0.000          1.727          net: u_color/add160_syn_274,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(185)
+                                                                      pin: u_color/add160_syn_240.fci_f
+ADDER               x034y036z3          0.000    f     1.727          pin: u_color/add160_syn_240.fco_f
+net (fo=1)                              0.090          1.817          net: u_color/add160_syn_275,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(185)
+                                                                      pin: u_color/add160_syn_241.fci_f
+ADDER               x034y036z4          0.059    r     1.876          pin: u_color/add160_syn_241.fco
+net (fo=1)                              0.000          1.876          net: u_color/add160_syn_206,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(185)
+                                                                      pin: u_color/add160_syn_242.fci
+ADDER               x034y036z5          0.059    r     1.935          pin: u_color/add160_syn_242.fco
+net (fo=1)                              0.000          1.935          net: u_color/add160_syn_207,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(185)
+                                                                      pin: u_color/add160_syn_243.fci
+ADDER               x034y036z6          0.059    r     1.994          pin: u_color/add160_syn_243.fco
+net (fo=1)                              0.000          1.994          net: u_color/add160_syn_208,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(185)
+                                                                      pin: u_color/add160_syn_244.fci
+ADDER               x034y036z7          0.295    f     2.289       2  pin: u_color/add160_syn_244.ofb
+net (fo=1)                              0.351          2.640          net: u_color/add160_syn_2[23],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(185)
+                                                                      pin: pixels_reg[3]_syn_2.ic
+LUT4                x034y038z3          0.283    r     2.923       3  pin: pixels_reg[3]_syn_2.ofb
+net (fo=2)                              0.442          3.365          net: u_color/next_gain_b5[0]_syn_98,  NOFILE(0)
+                                                                      pin: u_color/next_gain_b5[0]_syn_191.ie
+LUT5                x036y035z4          0.189    r     3.554       4  pin: u_color/next_gain_b5[0]_syn_191.ofb
+net (fo=1)                              0.238          3.792          net: u_color/next_gain_b5[0]_syn_104,  NOFILE(0)
+                                                                      pin: u_color/next_gain_b5[0]_syn_192.ib
+LUT6                x036y035z1          0.427    f     4.219       5  pin: u_color/next_gain_b5[0]_syn_192.ofb
+net (fo=2)                              0.561          4.780          net: u_color/next_gain_b5[0]_syn_125,  NOFILE(0)
+                                                                      pin: u_color/next_gain_b5[0]_syn_173.imf
+LUT6                x033y040z3          0.168    r     4.948       6  pin: u_color/next_gain_b5[0]_syn_173.ofb
+net (fo=9)                              0.428          5.376          net: u_color/next_gain_b5[0]_syn_143,  NOFILE(0)
+                                                                      pin: u_color/next_gain_b_reg[6]_syn_2.ima
+LUT5 (reg)          x029y041z2          0.355    f     5.731       7  net: u_color/next_gain_b[6],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/pixel14_color_pipeline.v(23)
+--------------------------------------------------------------------  ---------------
+Arrival                                                5.731               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/next_gain_b_reg[6]_syn_2.clk
+capture edge                            9.660    r     9.660               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.064          9.596               
+clock uncertainty                      -0.110          9.486               
+clock pessimism                         0.000          9.486               
+--------------------------------------------------------------------  ---------------
+Required                                               9.486               
+--------------------------------------------------------------------  ---------------
+Slack                                                  3.755               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+Slack               : -0.198ns
+Begin Point         : u_color/delay_pixels/I_data_r_reg[22]_syn_2.clk (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+End Point           : u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_23.dia[2] (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+Check Type          : hold
+Process             : slow_m40c
+Budget              : 0.000ns { CORE_CLK rising@0.000ns - CORE_CLK rising@0.000ns }
+Data Path Delay     : 0.189ns (cell 0.112ns (59%), net 0.077ns (41%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( ERAM=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.060ns (sdc uncertainty: 0.000ns, default uncertainty: 0.060ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/delay_pixels/I_data_r_reg[22]_syn_2.clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x022y048z0          0.112    r     0.112          pin: u_color/delay_pixels/I_data_r_reg[22]_syn_2.oqa
+net (fo=1)                              0.077          0.189          net: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/dia[22],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/ram_f84573da5ab5.v(29)
+                                                                      pin: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_23.dia[2]
+ERAM (reg)          x023y048            0.000    f     0.189       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.189               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_23.clka
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.327          0.327               
+clock uncertainty                       0.060          0.387               
+clock pessimism                         0.000          0.387               
+--------------------------------------------------------------------  ---------------
+Required                                               0.387               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.198               
+
+Slack               : -0.198ns
+Begin Point         : u_color/delay_pixels/I_data_r_reg[23]_syn_2.clk (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+End Point           : u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_23.dia[3] (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+Check Type          : hold
+Process             : slow_m40c
+Budget              : 0.000ns { CORE_CLK rising@0.000ns - CORE_CLK rising@0.000ns }
+Data Path Delay     : 0.189ns (cell 0.112ns (59%), net 0.077ns (41%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( ERAM=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.060ns (sdc uncertainty: 0.000ns, default uncertainty: 0.060ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/delay_pixels/I_data_r_reg[23]_syn_2.clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x022y048z3          0.112    r     0.112          pin: u_color/delay_pixels/I_data_r_reg[23]_syn_2.oqa
+net (fo=1)                              0.077          0.189          net: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/dia[23],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/ram_f84573da5ab5.v(29)
+                                                                      pin: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_23.dia[3]
+ERAM (reg)          x023y048            0.000    f     0.189       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.189               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_23.clka
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.327          0.327               
+clock uncertainty                       0.060          0.387               
+clock pessimism                         0.000          0.387               
+--------------------------------------------------------------------  ---------------
+Required                                               0.387               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.198               
+
+Slack               : -0.198ns
+Begin Point         : u_color/delay_pixels/I_data_r_reg[26]_syn_2.clk (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+End Point           : u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_23.dia[5] (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+Check Type          : hold
+Process             : slow_m40c
+Budget              : 0.000ns { CORE_CLK rising@0.000ns - CORE_CLK rising@0.000ns }
+Data Path Delay     : 0.189ns (cell 0.112ns (59%), net 0.077ns (41%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( ERAM=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.060ns (sdc uncertainty: 0.000ns, default uncertainty: 0.060ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/delay_pixels/I_data_r_reg[26]_syn_2.clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x022y048z7          0.112    r     0.112          pin: u_color/delay_pixels/I_data_r_reg[26]_syn_2.oqa
+net (fo=1)                              0.077          0.189          net: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/dia[26],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/ram_f84573da5ab5.v(29)
+                                                                      pin: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_23.dia[5]
+ERAM (reg)          x023y048            0.000    f     0.189       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.189               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_23.clka
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.327          0.327               
+clock uncertainty                       0.060          0.387               
+clock pessimism                         0.000          0.387               
+--------------------------------------------------------------------  ---------------
+Required                                               0.387               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.198               
+
+Slack               : -0.198ns
+Begin Point         : u_color/delay_pixels/I_data_r_reg[40]_syn_2.clk (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+End Point           : u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_45.dia[0] (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+Check Type          : hold
+Process             : slow_m40c
+Budget              : 0.000ns { CORE_CLK rising@0.000ns - CORE_CLK rising@0.000ns }
+Data Path Delay     : 0.189ns (cell 0.112ns (59%), net 0.077ns (41%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( ERAM=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.060ns (sdc uncertainty: 0.000ns, default uncertainty: 0.060ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/delay_pixels/I_data_r_reg[40]_syn_2.clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x022y024z4          0.112    r     0.112          pin: u_color/delay_pixels/I_data_r_reg[40]_syn_2.oqa
+net (fo=1)                              0.077          0.189          net: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/dia[40],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/ram_f84573da5ab5.v(29)
+                                                                      pin: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_45.dia[0]
+ERAM (reg)          x023y024            0.000    f     0.189       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.189               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_45.clka
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.327          0.327               
+clock uncertainty                       0.060          0.387               
+clock pessimism                         0.000          0.387               
+--------------------------------------------------------------------  ---------------
+Required                                               0.387               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.198               
+
+Slack               : -0.198ns
+Begin Point         : u_color/delay_pixels/I_data_r_reg[48]_syn_2.clk (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+End Point           : u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_45.dia[7] (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+Check Type          : hold
+Process             : slow_m40c
+Budget              : 0.000ns { CORE_CLK rising@0.000ns - CORE_CLK rising@0.000ns }
+Data Path Delay     : 0.189ns (cell 0.112ns (59%), net 0.077ns (41%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( ERAM=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.060ns (sdc uncertainty: 0.000ns, default uncertainty: 0.060ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/delay_pixels/I_data_r_reg[48]_syn_2.clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x022y024z7          0.112    r     0.112          pin: u_color/delay_pixels/I_data_r_reg[48]_syn_2.oqa
+net (fo=1)                              0.077          0.189          net: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/dia[48],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/ram_f84573da5ab5.v(29)
+                                                                      pin: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_45.dia[7]
+ERAM (reg)          x023y024            0.000    f     0.189       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.189               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_45.clka
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.327          0.327               
+clock uncertainty                       0.060          0.387               
+clock pessimism                         0.000          0.387               
+--------------------------------------------------------------------  ---------------
+Required                                               0.387               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.198               
+
+Slack               : -0.196ns
+Begin Point         : u_color/delay_pixels/I_data_r_reg[5]_syn_2.clk (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+End Point           : u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_1.dia[4] (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+Check Type          : hold
+Process             : slow_m40c
+Budget              : 0.000ns { CORE_CLK rising@0.000ns - CORE_CLK rising@0.000ns }
+Data Path Delay     : 0.191ns (cell 0.112ns (58%), net 0.079ns (42%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( ERAM=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.060ns (sdc uncertainty: 0.000ns, default uncertainty: 0.060ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/delay_pixels/I_data_r_reg[5]_syn_2.clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x022y045z0          0.112    r     0.112          pin: u_color/delay_pixels/I_data_r_reg[5]_syn_2.oqa
+net (fo=1)                              0.079          0.191          net: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/dia[5],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/ram_f84573da5ab5.v(29)
+                                                                      pin: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_1.dia[4]
+ERAM (reg)          x023y044            0.000    f     0.191       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.191               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_1.clka
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.327          0.327               
+clock uncertainty                       0.060          0.387               
+clock pessimism                         0.000          0.387               
+--------------------------------------------------------------------  ---------------
+Required                                               0.387               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.196               
+
+Slack               : -0.196ns
+Begin Point         : u_color/delay_pixels/I_data_r_reg[12]_syn_2.clk (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+End Point           : u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_12.dia[2] (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+Check Type          : hold
+Process             : slow_m40c
+Budget              : 0.000ns { CORE_CLK rising@0.000ns - CORE_CLK rising@0.000ns }
+Data Path Delay     : 0.191ns (cell 0.112ns (58%), net 0.079ns (42%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( ERAM=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.060ns (sdc uncertainty: 0.000ns, default uncertainty: 0.060ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/delay_pixels/I_data_r_reg[12]_syn_2.clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x022y033z0          0.112    r     0.112          pin: u_color/delay_pixels/I_data_r_reg[12]_syn_2.oqa
+net (fo=1)                              0.079          0.191          net: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/dia[12],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/ram_f84573da5ab5.v(29)
+                                                                      pin: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_12.dia[2]
+ERAM (reg)          x023y032            0.000    f     0.191       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.191               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_12.clka
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.327          0.327               
+clock uncertainty                       0.060          0.387               
+clock pessimism                         0.000          0.387               
+--------------------------------------------------------------------  ---------------
+Required                                               0.387               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.196               
+
+Slack               : -0.196ns
+Begin Point         : u_color/delay_pixels/I_data_r_reg[16]_syn_2.clk (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+End Point           : u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_12.dia[5] (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+Check Type          : hold
+Process             : slow_m40c
+Budget              : 0.000ns { CORE_CLK rising@0.000ns - CORE_CLK rising@0.000ns }
+Data Path Delay     : 0.191ns (cell 0.112ns (58%), net 0.079ns (42%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( ERAM=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.060ns (sdc uncertainty: 0.000ns, default uncertainty: 0.060ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/delay_pixels/I_data_r_reg[16]_syn_2.clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x022y033z1          0.112    r     0.112          pin: u_color/delay_pixels/I_data_r_reg[16]_syn_2.oqa
+net (fo=1)                              0.079          0.191          net: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/dia[16],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/ram_f84573da5ab5.v(29)
+                                                                      pin: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_12.dia[5]
+ERAM (reg)          x023y032            0.000    f     0.191       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.191               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_12.clka
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.327          0.327               
+clock uncertainty                       0.060          0.387               
+clock pessimism                         0.000          0.387               
+--------------------------------------------------------------------  ---------------
+Required                                               0.387               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.196               
+
+Slack               : -0.196ns
+Begin Point         : u_color/delay_pixels/I_data_r_reg[65]_syn_2.clk (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+End Point           : u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_67.dia[4] (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+Check Type          : hold
+Process             : slow_m40c
+Budget              : 0.000ns { CORE_CLK rising@0.000ns - CORE_CLK rising@0.000ns }
+Data Path Delay     : 0.191ns (cell 0.112ns (58%), net 0.079ns (42%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( ERAM=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.060ns (sdc uncertainty: 0.000ns, default uncertainty: 0.060ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/delay_pixels/I_data_r_reg[65]_syn_2.clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x036y029z0          0.112    r     0.112          pin: u_color/delay_pixels/I_data_r_reg[65]_syn_2.oqa
+net (fo=1)                              0.079          0.191          net: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/dia[65],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/ram_f84573da5ab5.v(29)
+                                                                      pin: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_67.dia[4]
+ERAM (reg)          x037y028            0.000    f     0.191       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.191               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_67.clka
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.327          0.327               
+clock uncertainty                       0.060          0.387               
+clock pessimism                         0.000          0.387               
+--------------------------------------------------------------------  ---------------
+Required                                               0.387               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.196               
+
+Slack               : -0.190ns
+Begin Point         : u_color/delay_pixels/I_data_r_reg[20]_syn_2.clk (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+End Point           : u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_23.dia[0] (rising edge triggered by clock CORE_CLK  { rise@0.000000ns  fall@4.830000ns  period=9.660000 })
+Check Type          : hold
+Process             : slow_m40c
+Budget              : 0.000ns { CORE_CLK rising@0.000ns - CORE_CLK rising@0.000ns }
+Data Path Delay     : 0.197ns (cell 0.112ns (56%), net 0.085ns (44%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( ERAM=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.060ns (sdc uncertainty: 0.000ns, default uncertainty: 0.060ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/delay_pixels/I_data_r_reg[20]_syn_2.clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x022y047z2          0.112    r     0.112          pin: u_color/delay_pixels/I_data_r_reg[20]_syn_2.oqa
+net (fo=1)                              0.085          0.197          net: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/dia[20],  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/ram_f84573da5ab5.v(29)
+                                                                      pin: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_23.dia[0]
+ERAM (reg)          x023y048            0.000    f     0.197       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.197               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_4.ipad
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.sg09_di
+PAD                 x000y021            0.000          0.000          pin: clk_syn_4.di
+net (fo=1)                              0.000          0.000          net: clk_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: clk_dup_3_created_gclkinst.clkin[0]
+GCLK                x023y039z0          0.000          0.000          pin: clk_dup_3_created_gclkinst.clkout
+net (fo=858)                            0.000          0.000          net: clk_syn_5,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/imaging-audit/color-timing/probe-20261014-113926-99a1d5/color_timing_top.v(1)
+                                                                      pin: u_color/delay_pixels/blk_mem_gen_awb_delay_signal_d/ram_f84573da5ab5_Inst/username_inst_syn_23.clka
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.327          0.327               
+clock uncertainty                       0.060          0.387               
+clock pessimism                         0.000          0.387               
+--------------------------------------------------------------------  ---------------
+Required                                               0.387               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.190               
+
+
+Inter clock domain timing
+--------------------------------------------------
+
+IP timing
+--------------------------------------------------

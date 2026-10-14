@@ -1,0 +1,472 @@
+{
+  "Verified": true,
+  "SynNetlistSHA256": "E23B0F0E43FDCB34116A0EA81636BE448A46BE453554A1B9DC520A1405CB4486",
+  "BankCount": 25,
+  "WordsCompared": 102400,
+  "ClassBits": 5,
+  "BankSelectTruthRows": 3200,
+  "MuxTruthRows": 2000,
+  "RegisteredSelectTruthRows": 40,
+  "Banks": [
+    {
+      "Bank": 0,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_23",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_24",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_25",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_26",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_27",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_28"
+      ],
+      "SelectedHighAddress": [
+        0
+      ]
+    },
+    {
+      "Bank": 1,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_29",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_30",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_31",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_32",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_33",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_34"
+      ],
+      "SelectedHighAddress": [
+        1
+      ]
+    },
+    {
+      "Bank": 2,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_35",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_36",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_37",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_38",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_39",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_40"
+      ],
+      "SelectedHighAddress": [
+        2
+      ]
+    },
+    {
+      "Bank": 3,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_41",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_42",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_43",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_44",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_45",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_46"
+      ],
+      "SelectedHighAddress": [
+        3
+      ]
+    },
+    {
+      "Bank": 4,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_47",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_48",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_49",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_50",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_51",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_52"
+      ],
+      "SelectedHighAddress": [
+        4
+      ]
+    },
+    {
+      "Bank": 5,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_53",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_54",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_55",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_56",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_57",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_58"
+      ],
+      "SelectedHighAddress": [
+        5
+      ]
+    },
+    {
+      "Bank": 6,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_59",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_60",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_61",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_62",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_63",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_64"
+      ],
+      "SelectedHighAddress": [
+        6
+      ]
+    },
+    {
+      "Bank": 7,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_65",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_66",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_67",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_68",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_69",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_70"
+      ],
+      "SelectedHighAddress": [
+        7
+      ]
+    },
+    {
+      "Bank": 8,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_71",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_72",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_73",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_74",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_75",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_76"
+      ],
+      "SelectedHighAddress": [
+        8
+      ]
+    },
+    {
+      "Bank": 9,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_77",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_78",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_79",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_80",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_81",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_82"
+      ],
+      "SelectedHighAddress": [
+        9
+      ]
+    },
+    {
+      "Bank": 10,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_83",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_84",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_85",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_86",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_87",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_88"
+      ],
+      "SelectedHighAddress": [
+        10
+      ]
+    },
+    {
+      "Bank": 11,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_89",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_90",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_91",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_92",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_93",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_94"
+      ],
+      "SelectedHighAddress": [
+        11
+      ]
+    },
+    {
+      "Bank": 12,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_95",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_96",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_97",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_98",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_99",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_100"
+      ],
+      "SelectedHighAddress": [
+        12
+      ]
+    },
+    {
+      "Bank": 13,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_101",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_102",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_103",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_104",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_105",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_106"
+      ],
+      "SelectedHighAddress": [
+        13
+      ]
+    },
+    {
+      "Bank": 14,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_107",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_108",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_109",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_110",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_111",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_112"
+      ],
+      "SelectedHighAddress": [
+        14
+      ]
+    },
+    {
+      "Bank": 15,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_113",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_114",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_115",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_116",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_117",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_118"
+      ],
+      "SelectedHighAddress": [
+        15
+      ]
+    },
+    {
+      "Bank": 16,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_119",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_120",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_121",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_122",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_123",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_124"
+      ],
+      "SelectedHighAddress": [
+        16
+      ]
+    },
+    {
+      "Bank": 17,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_125",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_126",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_127",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_128",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_129",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_130"
+      ],
+      "SelectedHighAddress": [
+        17
+      ]
+    },
+    {
+      "Bank": 18,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_131",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_132",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_133",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_134",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_135",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_136"
+      ],
+      "SelectedHighAddress": [
+        18
+      ]
+    },
+    {
+      "Bank": 19,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_137",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_138",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_139",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_140",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_141",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_142"
+      ],
+      "SelectedHighAddress": [
+        19
+      ]
+    },
+    {
+      "Bank": 20,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_143",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_144",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_145",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_146",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_147",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_148"
+      ],
+      "SelectedHighAddress": [
+        20
+      ]
+    },
+    {
+      "Bank": 21,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_149",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_150",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_151",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_152",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_153",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_154"
+      ],
+      "SelectedHighAddress": [
+        21
+      ]
+    },
+    {
+      "Bank": 22,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_155",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_156",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_157",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_158",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_159",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_160"
+      ],
+      "SelectedHighAddress": [
+        22
+      ]
+    },
+    {
+      "Bank": 23,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_161",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_162",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_163",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_164",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_165",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_166"
+      ],
+      "SelectedHighAddress": [
+        23
+      ]
+    },
+    {
+      "Bank": 24,
+      "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_167",
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_168",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_169",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_170",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_171",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_172"
+      ],
+      "SelectedHighAddress": [
+        24
+      ]
+    }
+  ],
+  "Proofs": [
+    {
+      "RegisteredSelect": "u_p14_pipeline/rotation_mode$matcher/rom_address[12]_syn_55[0]",
+      "Cell": "u_p14_pipeline/rotation_mode$matcher/rom_address[12][0]",
+      "SourceBit": 12,
+      "TruthRows": 8
+    },
+    {
+      "RegisteredSelect": "u_p14_pipeline/rotation_mode$matcher/rom_address[12]_syn_55[1]",
+      "Cell": "u_p14_pipeline/rotation_mode$matcher/rom_address[12][1]",
+      "SourceBit": 13,
+      "TruthRows": 8
+    },
+    {
+      "RegisteredSelect": "u_p14_pipeline/rotation_mode$matcher/rom_address[12]_syn_55[2]",
+      "Cell": "u_p14_pipeline/rotation_mode$matcher/rom_address[12][2]",
+      "SourceBit": 14,
+      "TruthRows": 8
+    },
+    {
+      "RegisteredSelect": "u_p14_pipeline/rotation_mode$matcher/rom_address[12]_syn_55[3]",
+      "Cell": "u_p14_pipeline/rotation_mode$matcher/rom_address[12][3]",
+      "SourceBit": 15,
+      "TruthRows": 8
+    },
+    {
+      "RegisteredSelect": "u_p14_pipeline/rotation_mode$matcher/rom_address[12]_syn_55[4]",
+      "Cell": "u_p14_pipeline/rotation_mode$matcher/rom_address[12][4]",
+      "SourceBit": 16,
+      "TruthRows": 8
+    },
+    {
+      "ClassBit": 0,
+      "FinalAdderCell": "u_p14_pipeline/rotation_mode$matcher/add5_syn_68",
+      "INIT_LUT5B": 4111114335,
+      "Output": "u_p14_pipeline/rotation_mode$matcher/class_best[0]_b22[0]",
+      "Operation": "distance LSB + (mask XOR same class template bit)"
+    },
+    {
+      "ClassBit": 1,
+      "FinalAdderCell": "u_p14_pipeline/rotation_mode$matcher/add6_syn_68",
+      "INIT_LUT5B": 4111114335,
+      "Output": "u_p14_pipeline/rotation_mode$matcher/class_best[0]_b23[0]",
+      "Operation": "distance LSB + (mask XOR same class template bit)"
+    },
+    {
+      "ClassBit": 2,
+      "FinalAdderCell": "u_p14_pipeline/rotation_mode$matcher/add7_syn_68",
+      "INIT_LUT5B": 4111114335,
+      "Output": "u_p14_pipeline/rotation_mode$matcher/class_best[0]_b24[0]",
+      "Operation": "distance LSB + (mask XOR same class template bit)"
+    },
+    {
+      "ClassBit": 3,
+      "FinalAdderCell": "u_p14_pipeline/rotation_mode$matcher/add8_syn_68",
+      "INIT_LUT5B": 4111114335,
+      "Output": "u_p14_pipeline/rotation_mode$matcher/class_best[0]_b25[0]",
+      "Operation": "distance LSB + (mask XOR same class template bit)"
+    },
+    {
+      "ClassBit": 4,
+      "FinalAdderCell": "u_p14_pipeline/rotation_mode$matcher/add9_syn_68",
+      "INIT_LUT5B": 4111114335,
+      "Output": "u_p14_pipeline/rotation_mode$matcher/class_best[0]_b26[0]",
+      "Operation": "distance LSB + (mask XOR same class template bit)"
+    }
+  ],
+  "FontAddressBaseline": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b10a\\td_project\\camera_to_dsi_display_Runs\\syn_1\\pixel14-syn_1-netlist.v",
+    "Bytes": 32806935,
+    "SHA256": "CA47933EAA8E739679795EB8605719E272C2380B8C44D539D1CEEEDF2DB555D9"
+  },
+  "Sources": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b111\\td_project\\camera_to_dsi_display_Runs\\syn_1\\pixel14-syn_1-netlist.v",
+      "Bytes": 32538796,
+      "SHA256": "E23B0F0E43FDCB34116A0EA81636BE448A46BE453554A1B9DC520A1405CB4486"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b111\\templates.mem",
+      "Bytes": 409600,
+      "SHA256": "731EC1B57D12F2EF305C35A055169BCD6733A4F76836AD1FA278BEE5BD9E8341"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b111\\rtl\\pixel14_rotation_matcher.v",
+      "Bytes": 7542,
+      "SHA256": "D92B0CE7F6E14A6734EB2D8F706FC7F23B4CB28BEAC704DEF5A89D1D18DCCFC8"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b111\\rtl\\pixel14_block_shape_guard.v",
+      "Bytes": 5344,
+      "SHA256": "2BCB1AABD82168E05CC5E17C026D70A3FBC2B605444BF9050E244BF0AB4BD58B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\binding-inputs-111-v2\\derive_scene_rom_bindings_v2.py",
+      "Bytes": 11170,
+      "SHA256": "F20A015840E3A04962512A76370AE5C179EE2C3ABAF5200669BF2881773CA1F3",
+      "RuntimeSourcePath": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\derive_scene_rom_bindings_v2.py",
+      "RuntimeSourceSHA256": "F20A015840E3A04962512A76370AE5C179EE2C3ABAF5200669BF2881773CA1F3"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\binding-inputs-111-v2\\audit-scene-build.py",
+      "Bytes": 21640,
+      "SHA256": "2B2BF65591D565B44D2730C3FFA67B029969B8BA7CFD4D7C5940EEE0A0FEC70A",
+      "RuntimeSourcePath": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\tools\\audit-scene-build.py",
+      "RuntimeSourceSHA256": "2B2BF65591D565B44D2730C3FFA67B029969B8BA7CFD4D7C5940EEE0A0FEC70A"
+    }
+  ],
+  "DependencyPolicy": "Build-owned sources are immutable; live program and decoder inputs are verified byte-for-byte and sealed with this proof.",
+  "Scope": "Syn-netlist exact INIT words, physical address order, read bank chip selects, high-address selector registration and five class-bit mux/arithmetic LUT tables. Routed signatures and timing remain separate."
+}

@@ -1,0 +1,1356 @@
+{
+  "ROMs": [
+    {
+      "Kind": "font",
+      "GateInstance": "u_p14_pipeline/system/panel/font/ramread0_syn_24",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 0,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 1,
+        "1": 2,
+        "2": 3,
+        "3": 4,
+        "4": 5
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/system/panel/font_bits[1]",
+        "u_p14_pipeline/system/panel/font_bits[2]",
+        "u_p14_pipeline/system/panel/font_bits[3]",
+        "u_p14_pipeline/system/panel/font_bits[4]",
+        "u_p14_pipeline/system/panel/font_bits[5]"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_diag_osd/pixel_y[1]",
+        "u_p14_diag_osd/pixel_y[2]_syn_2",
+        "u_p14_pipeline/system/panel/font/row[2]",
+        "u_p14_pipeline/system/panel/font/row[3]",
+        "u_p14_pipeline/system/panel/font/glyph[0]",
+        "u_p14_pipeline/system/panel/font/glyph[1]",
+        "u_p14_pipeline/system/panel/font/glyph[2]",
+        "u_p14_pipeline/system/panel/font/glyph[3]",
+        "u_p14_pipeline/system/panel/font/glyph[4]",
+        "u_p14_pipeline/system/panel/font/glyph[5]",
+        "u_p14_pipeline/system/panel/font/glyph[6]",
+        "u_p14_pipeline/system/panel/font/glyph[7]"
+      ],
+      "Signature": "2285CD3E1745E665FAB28EB56BB80A52789A96A1831F55BCBD281C502593715D",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "font",
+      "GateInstance": "u_p14_pipeline/system/panel/font/ramread0_syn_30",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 0,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 6,
+        "1": 7,
+        "2": 8,
+        "3": 9,
+        "4": 10
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/system/panel/font_bits[6]",
+        "u_p14_pipeline/system/panel/font_bits[7]",
+        "u_p14_pipeline/system/panel/font_bits[8]",
+        "u_p14_pipeline/system/panel/font_bits[9]",
+        "u_p14_pipeline/system/panel/font_bits[10]"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_diag_osd/pixel_y[1]",
+        "u_p14_diag_osd/pixel_y[2]_syn_2",
+        "u_p14_pipeline/system/panel/font/row[2]",
+        "u_p14_pipeline/system/panel/font/row[3]",
+        "u_p14_pipeline/system/panel/font/glyph[0]",
+        "u_p14_pipeline/system/panel/font/glyph[1]",
+        "u_p14_pipeline/system/panel/font/glyph[2]",
+        "u_p14_pipeline/system/panel/font/glyph[3]",
+        "u_p14_pipeline/system/panel/font/glyph[4]",
+        "u_p14_pipeline/system/panel/font/glyph[5]",
+        "u_p14_pipeline/system/panel/font/glyph[6]",
+        "u_p14_pipeline/system/panel/font/glyph[7]"
+      ],
+      "Signature": "3099EE3CE75C2B27338B78F20701BCBE3636587ED549B804D87E6CA1587320EB",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "font",
+      "GateInstance": "u_p14_pipeline/system/panel/font/ramread0_syn_36",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 0,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 11,
+        "1": 12,
+        "2": 13,
+        "3": 14,
+        "4": 15
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/system/panel/font_bits[11]",
+        "u_p14_pipeline/system/panel/font_bits[12]",
+        "u_p14_pipeline/system/panel/font_bits[13]",
+        "u_p14_pipeline/system/panel/font_bits[14]",
+        "u_p14_pipeline/system/panel/font_bits[15]"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_diag_osd/pixel_y[1]",
+        "u_p14_diag_osd/pixel_y[2]_syn_2",
+        "u_p14_pipeline/system/panel/font/row[2]",
+        "u_p14_pipeline/system/panel/font/row[3]",
+        "u_p14_pipeline/system/panel/font/glyph[0]",
+        "u_p14_pipeline/system/panel/font/glyph[1]",
+        "u_p14_pipeline/system/panel/font/glyph[2]",
+        "u_p14_pipeline/system/panel/font/glyph[3]",
+        "u_p14_pipeline/system/panel/font/glyph[4]",
+        "u_p14_pipeline/system/panel/font/glyph[5]",
+        "u_p14_pipeline/system/panel/font/glyph[6]",
+        "u_p14_pipeline/system/panel/font/glyph[7]"
+      ],
+      "Signature": "7541EB34DA1EDF388FFCD3BECFAC1CDA3790647F1B2EAEA01AC9DC31EC208F0F",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_101",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 53248,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_102",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_103",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_104",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_105",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_106"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "8D9D0D1A35D5BD99308C564457369D676D118A02F8764314CFC14AD230EB81E5",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_107",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 57344,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_108",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_109",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_110",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_111",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_112"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "064147352F8E461181E26EAF0A44245EAF82F87F10ECE7A02A5C4B9B3DF0A86C",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_113",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 61440,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_114",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_115",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_116",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_117",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_118"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "B5B3D76F6CD4AFABE498073DF1BB8482871BE485AF976B65A741635D74EE980C",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_119",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 65536,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_120",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_121",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_122",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_123",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_124"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "D0C81336168A0542FE68FAAABC051A2B420E7C8AFE0C1DC09C886015B5D5178F",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_125",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 69632,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_126",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_127",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_128",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_129",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_130"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "0481434DF187DE533D2614487344CAAB051EC62218B000C8318B39309EBD9207",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_131",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 73728,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_132",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_133",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_134",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_135",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_136"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "3B147E68195443DC7F6E1857CFCD45B4BBDFBB301810F22B38ACAF92585989C7",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_137",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 77824,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_138",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_139",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_140",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_141",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_142"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "5CFB99F4014ACEE0731217C6620077AA24AB41CB4567748F83C99237654727D6",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_143",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 81920,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_144",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_145",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_146",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_147",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_148"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "A14CD46A86079862DD9FDB1EC81E25405B41A51F0FD2111A01966ACF177E3DBE",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_149",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 86016,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_150",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_151",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_152",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_153",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_154"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "D89BE42878DA68B2925BD13F2E3C261F4DCBDD7A8358385D8F2396345E519282",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_155",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 90112,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_156",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_157",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_158",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_159",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_160"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "DA0FF124F4B2FCB6F2FED1FC94B842C177B071CC7354760CB1B9130C4B85464B",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_161",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 94208,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_162",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_163",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_164",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_165",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_166"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "8215876E388A6C3172A48FBAA6FD920D8AA8DC35E8914E1734CA1ADC007D7A7F",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_167",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 98304,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_168",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_169",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_170",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_171",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_172"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "93FE5CBCB36D0572D3E94C1AA59A5212153616327E51F07E45BE77E9717B3D7D",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_23",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 0,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_24",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_25",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_26",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_27",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_28"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "1AAA8CBACDAC5A64544180CD9A11CD22170E3F244CDBE92BF5032A291022E29F",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_29",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 4096,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_30",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_31",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_32",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_33",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_34"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "943B21EF3E047525B4E71F274C1DDDAEA1DE285E5C815417090E37BD90782FEB",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_35",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 8192,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_36",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_37",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_38",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_39",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_40"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "1E7CA316D5FB244A5BAD202C8474DC956D2B72F95F332CA417386083182CACDE",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_41",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 12288,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_42",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_43",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_44",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_45",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_46"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "5DCC434FB671D588DEA65F742CE7ED6E21EC6CFCBCD41E46A04AFC0A42F3F138",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_47",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 16384,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_48",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_49",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_50",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_51",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_52"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "74760B1DC292805B6AC5F9359EF2580CF011424D751FC4636D219D34EA9B70FE",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_53",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 20480,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_54",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_55",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_56",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_57",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_58"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "E10465EA843A4A58C1E8BA90B7FB5466B2D3E1566DFA02E380C99C1F04B7B12B",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_59",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 24576,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_60",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_61",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_62",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_63",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_64"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "2628E7DB80814B9765BA645DEE582FAC5A19D6DF8AA04A058A6487F42C9D7ECC",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_65",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 28672,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_66",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_67",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_68",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_69",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_70"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "1D82E70864DFCB4B52E3D338B6520D827E550F6CB2AB30F1A6BCD6A7811C1DC1",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_71",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 32768,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_72",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_73",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_74",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_75",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_76"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "CCB5E70D42C7732FE7E18FF0D62A077F3AE1AA8B54899D5EA710CD5FFA92EA57",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_77",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 36864,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_78",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_79",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_80",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_81",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_82"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "BE5F93C18BDA53C085F93BDAE3850C1F1AE2907013B7E6497CA353E5B6AE1141",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_83",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 40960,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_84",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_85",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_86",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_87",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_88"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "4A824252E2C62F932C9AAAAEA066A16D80756C76658F43FE6DF7C3E730EA2D28",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_89",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 45056,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_90",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_91",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_92",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_93",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_94"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "7EEDF61BABC17CB205843BF369AC6E63098A422C7DCEA44BD54306265B09E6A6",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "rotation",
+      "GateInstance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_95",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 49152,
+      "WordsChecked": 4096,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_96",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_97",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_98",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_99",
+        "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_100"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[0]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[1]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[2]",
+        "u_p14_pipeline/rotation_mode$matcher/mask_address[3]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[4]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[5]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[6]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[7]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[8]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[9]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[10]",
+        "u_p14_pipeline/rotation_mode$matcher/rom_address[11]"
+      ],
+      "Signature": "C86D57CC6B64D450433545E64C7175E6DBA88690A1885F80FE5761D54D5CF173",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    },
+    {
+      "Kind": "shape",
+      "GateInstance": "u_p14_pipeline/shape_mode$shape_guard/templates/ramread0_syn_23",
+      "Primitive": "PH1P_PHY_ERAM_V2",
+      "Width": 5,
+      "LogicalBase": 0,
+      "WordsChecked": 1024,
+      "LogicalOutputBits": {
+        "0": 0,
+        "1": 1,
+        "2": 2
+      },
+      "OutputPinsLSB": [
+        "u_p14_pipeline/shape_mode$shape_guard/templates/data[0]",
+        "u_p14_pipeline/shape_mode$shape_guard/templates/data[1]",
+        "u_p14_pipeline/shape_mode$shape_guard/templates/data[2]",
+        "open_n139236",
+        "0"
+      ],
+      "WordAddressPinsLSB": [
+        "u_p14_pipeline/scene_mode$scene/card_index[0]",
+        "u_p14_pipeline/scene_mode$scene/card_index[1]",
+        "u_p14_pipeline/scene_mode$scene/card_index[2]",
+        "u_p14_pipeline/scene_mode$scene/card_index[3]",
+        "u_p14_pipeline/scene_mode$scene/card_index[4]",
+        "u_p14_pipeline/scene_mode$scene/card_index[5]",
+        "u_p14_pipeline/scene_mode$scene/card_index[6]",
+        "u_p14_pipeline/scene_mode$scene/card_index[7]",
+        "u_p14_pipeline/scene_mode$scene/card_index[8]",
+        "u_p14_pipeline/scene_mode$scene/card_index[9]",
+        "0",
+        "0"
+      ],
+      "Signature": "2278BE43632BA44B2768B0FEB78FF971FD7795A391118BF559419929A0E3CF77",
+      "RoutedSignatureCount": 1,
+      "AddressAndSelectReviewed": true,
+      "Evidence": [
+        {
+          "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\rom-binding-proof-111-v1.json",
+          "Bytes": 17741,
+          "SHA256": "AFC5D25C951568243EE57DE246611CB2F1EAEAA8D40B711B3C4C0002178D1A2D"
+        }
+      ]
+    }
+  ],
+  "UnreviewedAddressOrSelectMappings": [],
+  "LogicalWords": {
+    "font": 4096,
+    "rotation": 102400,
+    "shape": 1024
+  },
+  "SynNetlist": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b111\\td_project\\camera_to_dsi_display_Runs\\syn_1\\pixel14-syn_1-netlist.v",
+    "Bytes": 32538796,
+    "SHA256": "E23B0F0E43FDCB34116A0EA81636BE448A46BE453554A1B9DC520A1405CB4486"
+  },
+  "RoutedNetlist": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b111\\td_project\\camera_to_dsi_display_Runs\\phy_1\\pixel14-phy_1-netlist.v",
+    "Bytes": 28625403,
+    "SHA256": "0EE103C7DE3C18D4236679CFAF9B58835F485BF0BB0628A21AB5221C4FF38400"
+  },
+  "RoutedSignaturesChecked": true,
+  "CandidateQualified": false,
+  "HardwareValidated": false,
+  "DecoderExerciseOnly": true
+}

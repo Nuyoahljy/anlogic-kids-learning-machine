@@ -1,0 +1,3026 @@
+[
+  {
+    "prefix": "q000_card_10_67_67p5_10",
+    "truth_item": 10,
+    "truth_present": true,
+    "recipe": {
+      "angle": 67.5,
+      "size_bp": 67,
+      "background": "white",
+      "left": 116,
+      "top": 47,
+      "phase": 2,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        89,
+        89
+      ]
+    },
+    "local_phase": [
+      1,
+      0
+    ],
+    "dense_original": {
+      "truth_item": 10,
+      "size_bp": 67,
+      "angle": 67.5,
+      "phase_x": 1,
+      "phase_y": 0,
+      "item": 0,
+      "best": 45,
+      "second": 110,
+      "foreground": 286,
+      "distances": [
+        45,
+        139,
+        119,
+        110,
+        141
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          52,
+          114,
+          170
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 295,
+      "glyph_count": 286,
+      "scene_bbox": [
+        50,
+        20,
+        70,
+        39
+      ],
+      "glyph_bbox": [
+        50,
+        21,
+        69,
+        39
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 9,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          45,
+          139,
+          119,
+          110,
+          141
+        ],
+        "best": 45,
+        "second": 110,
+        "foreground": 286,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 1,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          52,
+          114,
+          170
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q001_card_10_67_157p5_01",
+    "truth_item": 10,
+    "truth_present": true,
+    "recipe": {
+      "angle": 157.5,
+      "size_bp": 67,
+      "background": "white",
+      "left": 117,
+      "top": 46,
+      "phase": 1,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        89,
+        89
+      ]
+    },
+    "local_phase": [
+      0,
+      1
+    ],
+    "dense_original": {
+      "truth_item": 10,
+      "size_bp": 67,
+      "angle": 157.5,
+      "phase_x": 0,
+      "phase_y": 1,
+      "item": 0,
+      "best": 41,
+      "second": 110,
+      "foreground": 286,
+      "distances": [
+        41,
+        139,
+        121,
+        110,
+        141
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          52,
+          114,
+          182
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 295,
+      "glyph_count": 286,
+      "scene_bbox": [
+        50,
+        19,
+        69,
+        39
+      ],
+      "glyph_bbox": [
+        51,
+        20,
+        69,
+        39
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 9,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          41,
+          139,
+          121,
+          110,
+          141
+        ],
+        "best": 41,
+        "second": 110,
+        "foreground": 286,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 1,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          52,
+          114,
+          182
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q002_card_12_51_47p5_10",
+    "truth_item": 12,
+    "truth_present": true,
+    "recipe": {
+      "angle": 47.5,
+      "size_bp": 51,
+      "background": "white",
+      "left": 124,
+      "top": 55,
+      "phase": 2,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        73,
+        73
+      ]
+    },
+    "local_phase": [
+      1,
+      0
+    ],
+    "dense_original": {
+      "truth_item": 12,
+      "size_bp": 51,
+      "angle": 47.5,
+      "phase_x": 1,
+      "phase_y": 0,
+      "item": 0,
+      "best": 44,
+      "second": 113,
+      "foreground": 245,
+      "distances": [
+        113,
+        114,
+        44,
+        169,
+        137
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          151,
+          155,
+          223
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 126,
+      "glyph_count": 114,
+      "scene_bbox": [
+        55,
+        25,
+        68,
+        38
+      ],
+      "glyph_bbox": [
+        55,
+        25,
+        68,
+        38
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 12,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          113,
+          114,
+          44,
+          169,
+          137
+        ],
+        "best": 44,
+        "second": 113,
+        "foreground": 245,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          151,
+          155,
+          223
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q003_card_12_51_52p5_00",
+    "truth_item": 12,
+    "truth_present": true,
+    "recipe": {
+      "angle": 52.5,
+      "size_bp": 51,
+      "background": "white",
+      "left": 125,
+      "top": 55,
+      "phase": 3,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        73,
+        73
+      ]
+    },
+    "local_phase": [
+      0,
+      0
+    ],
+    "dense_original": {
+      "truth_item": 12,
+      "size_bp": 51,
+      "angle": 52.5,
+      "phase_x": 0,
+      "phase_y": 0,
+      "item": 0,
+      "best": 43,
+      "second": 100,
+      "foreground": 171,
+      "distances": [
+        106,
+        100,
+        43,
+        110,
+        113
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          161,
+          229,
+          181
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 127,
+      "glyph_count": 109,
+      "scene_bbox": [
+        55,
+        24,
+        68,
+        39
+      ],
+      "glyph_bbox": [
+        55,
+        24,
+        68,
+        39
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 18,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          106,
+          100,
+          43,
+          110,
+          113
+        ],
+        "best": 43,
+        "second": 100,
+        "foreground": 171,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          161,
+          229,
+          181
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q004_card_12_51_57p5_11",
+    "truth_item": 12,
+    "truth_present": true,
+    "recipe": {
+      "angle": 57.5,
+      "size_bp": 51,
+      "background": "white",
+      "left": 124,
+      "top": 54,
+      "phase": 0,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        71,
+        71
+      ]
+    },
+    "local_phase": [
+      1,
+      1
+    ],
+    "dense_original": {
+      "truth_item": 12,
+      "size_bp": 51,
+      "angle": 57.5,
+      "phase_x": 1,
+      "phase_y": 1,
+      "item": 0,
+      "best": 45,
+      "second": 99,
+      "foreground": 175,
+      "distances": [
+        104,
+        99,
+        45,
+        112,
+        118
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          161,
+          225,
+          161
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 127,
+      "glyph_count": 113,
+      "scene_bbox": [
+        54,
+        23,
+        66,
+        38
+      ],
+      "glyph_bbox": [
+        54,
+        23,
+        66,
+        38
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 14,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          104,
+          99,
+          45,
+          112,
+          118
+        ],
+        "best": 45,
+        "second": 99,
+        "foreground": 175,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          161,
+          225,
+          161
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q005_card_12_51_127p5_10",
+    "truth_item": 12,
+    "truth_present": true,
+    "recipe": {
+      "angle": 127.5,
+      "size_bp": 51,
+      "background": "white",
+      "left": 124,
+      "top": 55,
+      "phase": 2,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        73,
+        73
+      ]
+    },
+    "local_phase": [
+      1,
+      0
+    ],
+    "dense_original": {
+      "truth_item": 12,
+      "size_bp": 51,
+      "angle": 127.5,
+      "phase_x": 1,
+      "phase_y": 0,
+      "item": 0,
+      "best": 42,
+      "second": 108,
+      "foreground": 183,
+      "distances": [
+        113,
+        117,
+        42,
+        108,
+        120
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          155,
+          217,
+          139
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 130,
+      "glyph_count": 112,
+      "scene_bbox": [
+        54,
+        21,
+        67,
+        36
+      ],
+      "glyph_bbox": [
+        54,
+        21,
+        67,
+        36
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 18,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          113,
+          117,
+          42,
+          108,
+          120
+        ],
+        "best": 42,
+        "second": 108,
+        "foreground": 183,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          155,
+          217,
+          139
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q006_card_12_51_137p5_01",
+    "truth_item": 12,
+    "truth_present": true,
+    "recipe": {
+      "angle": 137.5,
+      "size_bp": 51,
+      "background": "white",
+      "left": 125,
+      "top": 54,
+      "phase": 1,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        73,
+        73
+      ]
+    },
+    "local_phase": [
+      0,
+      1
+    ],
+    "dense_original": {
+      "truth_item": 12,
+      "size_bp": 51,
+      "angle": 137.5,
+      "phase_x": 0,
+      "phase_y": 1,
+      "item": 0,
+      "best": 42,
+      "second": 111,
+      "foreground": 245,
+      "distances": [
+        111,
+        114,
+        42,
+        169,
+        139
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          151,
+          155,
+          151
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 126,
+      "glyph_count": 114,
+      "scene_bbox": [
+        55,
+        21,
+        68,
+        34
+      ],
+      "glyph_bbox": [
+        55,
+        21,
+        68,
+        34
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 12,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          111,
+          114,
+          42,
+          169,
+          139
+        ],
+        "best": 42,
+        "second": 111,
+        "foreground": 245,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          151,
+          155,
+          151
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q007_card_12_51_142p5_00",
+    "truth_item": 12,
+    "truth_present": true,
+    "recipe": {
+      "angle": 142.5,
+      "size_bp": 51,
+      "background": "white",
+      "left": 125,
+      "top": 55,
+      "phase": 3,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        73,
+        73
+      ]
+    },
+    "local_phase": [
+      0,
+      0
+    ],
+    "dense_original": {
+      "truth_item": 12,
+      "size_bp": 51,
+      "angle": 142.5,
+      "phase_x": 0,
+      "phase_y": 0,
+      "item": 0,
+      "best": 43,
+      "second": 94,
+      "foreground": 171,
+      "distances": [
+        94,
+        99,
+        43,
+        114,
+        106
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          163,
+          229,
+          173
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 127,
+      "glyph_count": 109,
+      "scene_bbox": [
+        54,
+        22,
+        69,
+        35
+      ],
+      "glyph_bbox": [
+        54,
+        22,
+        69,
+        35
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 18,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          94,
+          99,
+          43,
+          114,
+          106
+        ],
+        "best": 43,
+        "second": 94,
+        "foreground": 171,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          163,
+          229,
+          173
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q008_card_12_51_147p5_11",
+    "truth_item": 12,
+    "truth_present": true,
+    "recipe": {
+      "angle": 147.5,
+      "size_bp": 51,
+      "background": "white",
+      "left": 124,
+      "top": 54,
+      "phase": 0,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        71,
+        71
+      ]
+    },
+    "local_phase": [
+      1,
+      1
+    ],
+    "dense_original": {
+      "truth_item": 12,
+      "size_bp": 51,
+      "angle": 147.5,
+      "phase_x": 1,
+      "phase_y": 1,
+      "item": 0,
+      "best": 44,
+      "second": 99,
+      "foreground": 175,
+      "distances": [
+        102,
+        99,
+        44,
+        111,
+        118
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          161,
+          225,
+          177
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 127,
+      "glyph_count": 113,
+      "scene_bbox": [
+        53,
+        22,
+        68,
+        34
+      ],
+      "glyph_bbox": [
+        53,
+        22,
+        68,
+        34
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 14,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          102,
+          99,
+          44,
+          111,
+          118
+        ],
+        "best": 44,
+        "second": 99,
+        "foreground": 175,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          161,
+          225,
+          177
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q009_card_12_51_207p5_10",
+    "truth_item": 12,
+    "truth_present": true,
+    "recipe": {
+      "angle": 207.5,
+      "size_bp": 51,
+      "background": "white",
+      "left": 126,
+      "top": 57,
+      "phase": 2,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        69,
+        69
+      ]
+    },
+    "local_phase": [
+      1,
+      0
+    ],
+    "dense_original": {
+      "truth_item": 12,
+      "size_bp": 51,
+      "angle": 207.5,
+      "phase_x": 1,
+      "phase_y": 0,
+      "item": 0,
+      "best": 44,
+      "second": 98,
+      "foreground": 173,
+      "distances": [
+        107,
+        98,
+        44,
+        110,
+        120
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          163,
+          227,
+          169
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 127,
+      "glyph_count": 113,
+      "scene_bbox": [
+        51,
+        23,
+        66,
+        35
+      ],
+      "glyph_bbox": [
+        51,
+        23,
+        66,
+        35
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 14,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          107,
+          98,
+          44,
+          110,
+          120
+        ],
+        "best": 44,
+        "second": 98,
+        "foreground": 173,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          163,
+          227,
+          169
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q010_card_12_51_217p5_00",
+    "truth_item": 12,
+    "truth_present": true,
+    "recipe": {
+      "angle": 217.5,
+      "size_bp": 51,
+      "background": "white",
+      "left": 125,
+      "top": 55,
+      "phase": 3,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        73,
+        73
+      ]
+    },
+    "local_phase": [
+      0,
+      0
+    ],
+    "dense_original": {
+      "truth_item": 12,
+      "size_bp": 51,
+      "angle": 217.5,
+      "phase_x": 0,
+      "phase_y": 0,
+      "item": 0,
+      "best": 43,
+      "second": 102,
+      "foreground": 174,
+      "distances": [
+        108,
+        102,
+        43,
+        107,
+        106
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          160,
+          226,
+          154
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 126,
+      "glyph_count": 109,
+      "scene_bbox": [
+        51,
+        22,
+        66,
+        35
+      ],
+      "glyph_bbox": [
+        51,
+        22,
+        66,
+        35
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 17,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          108,
+          102,
+          43,
+          107,
+          106
+        ],
+        "best": 43,
+        "second": 102,
+        "foreground": 174,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          160,
+          226,
+          154
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q011_card_12_51_227p5_10",
+    "truth_item": 12,
+    "truth_present": true,
+    "recipe": {
+      "angle": 227.5,
+      "size_bp": 51,
+      "background": "white",
+      "left": 124,
+      "top": 55,
+      "phase": 2,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        73,
+        73
+      ]
+    },
+    "local_phase": [
+      1,
+      0
+    ],
+    "dense_original": {
+      "truth_item": 12,
+      "size_bp": 51,
+      "angle": 227.5,
+      "phase_x": 1,
+      "phase_y": 0,
+      "item": 0,
+      "best": 44,
+      "second": 113,
+      "foreground": 245,
+      "distances": [
+        113,
+        114,
+        44,
+        169,
+        138
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          151,
+          155,
+          149
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 126,
+      "glyph_count": 114,
+      "scene_bbox": [
+        51,
+        22,
+        64,
+        35
+      ],
+      "glyph_bbox": [
+        51,
+        22,
+        64,
+        35
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 12,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          113,
+          114,
+          44,
+          169,
+          138
+        ],
+        "best": 44,
+        "second": 113,
+        "foreground": 245,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          151,
+          155,
+          149
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q012_card_12_51_237p5_00",
+    "truth_item": 12,
+    "truth_present": true,
+    "recipe": {
+      "angle": 237.5,
+      "size_bp": 51,
+      "background": "white",
+      "left": 125,
+      "top": 55,
+      "phase": 3,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        71,
+        71
+      ]
+    },
+    "local_phase": [
+      0,
+      0
+    ],
+    "dense_original": {
+      "truth_item": 12,
+      "size_bp": 51,
+      "angle": 237.5,
+      "phase_x": 0,
+      "phase_y": 0,
+      "item": 0,
+      "best": 41,
+      "second": 100,
+      "foreground": 178,
+      "distances": [
+        102,
+        100,
+        41,
+        109,
+        104
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          158,
+          222,
+          130
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 126,
+      "glyph_count": 111,
+      "scene_bbox": [
+        52,
+        21,
+        64,
+        36
+      ],
+      "glyph_bbox": [
+        52,
+        21,
+        64,
+        36
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 15,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          102,
+          100,
+          41,
+          109,
+          104
+        ],
+        "best": 41,
+        "second": 100,
+        "foreground": 178,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          158,
+          222,
+          130
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q013_card_12_51_292p5_00",
+    "truth_item": 12,
+    "truth_present": true,
+    "recipe": {
+      "angle": 292.5,
+      "size_bp": 51,
+      "background": "white",
+      "left": 127,
+      "top": 57,
+      "phase": 3,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        67,
+        67
+      ]
+    },
+    "local_phase": [
+      0,
+      0
+    ],
+    "dense_original": {
+      "truth_item": 12,
+      "size_bp": 51,
+      "angle": 292.5,
+      "phase_x": 0,
+      "phase_y": 0,
+      "item": 0,
+      "best": 42,
+      "second": 90,
+      "foreground": 183,
+      "distances": [
+        98,
+        90,
+        42,
+        107,
+        114
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          151,
+          217,
+          145
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 127,
+      "glyph_count": 112,
+      "scene_bbox": [
+        53,
+        22,
+        64,
+        38
+      ],
+      "glyph_bbox": [
+        53,
+        23,
+        64,
+        38
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 15,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          98,
+          90,
+          42,
+          107,
+          114
+        ],
+        "best": 42,
+        "second": 90,
+        "foreground": 183,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          151,
+          217,
+          145
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q014_card_12_51_317p5_01",
+    "truth_item": 12,
+    "truth_present": true,
+    "recipe": {
+      "angle": 317.5,
+      "size_bp": 51,
+      "background": "white",
+      "left": 125,
+      "top": 54,
+      "phase": 1,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        73,
+        73
+      ]
+    },
+    "local_phase": [
+      0,
+      1
+    ],
+    "dense_original": {
+      "truth_item": 12,
+      "size_bp": 51,
+      "angle": 317.5,
+      "phase_x": 0,
+      "phase_y": 1,
+      "item": 0,
+      "best": 42,
+      "second": 111,
+      "foreground": 245,
+      "distances": [
+        111,
+        114,
+        42,
+        169,
+        137
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          151,
+          155,
+          229
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 126,
+      "glyph_count": 114,
+      "scene_bbox": [
+        52,
+        25,
+        65,
+        38
+      ],
+      "glyph_bbox": [
+        52,
+        25,
+        65,
+        38
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 12,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          111,
+          114,
+          42,
+          169,
+          137
+        ],
+        "best": 42,
+        "second": 111,
+        "foreground": 245,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          151,
+          155,
+          229
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q015_card_12_67_132p5_10",
+    "truth_item": 12,
+    "truth_present": true,
+    "recipe": {
+      "angle": 132.5,
+      "size_bp": 67,
+      "background": "white",
+      "left": 112,
+      "top": 43,
+      "phase": 2,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        95,
+        95
+      ]
+    },
+    "local_phase": [
+      1,
+      0
+    ],
+    "dense_original": {
+      "truth_item": 12,
+      "size_bp": 67,
+      "angle": 132.5,
+      "phase_x": 1,
+      "phase_y": 0,
+      "item": 0,
+      "best": 45,
+      "second": 116,
+      "foreground": 206,
+      "distances": [
+        119,
+        116,
+        45,
+        143,
+        119
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          162,
+          194,
+          134
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 216,
+      "glyph_count": 183,
+      "scene_bbox": [
+        52,
+        18,
+        70,
+        37
+      ],
+      "glyph_bbox": [
+        52,
+        18,
+        70,
+        36
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 33,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          119,
+          116,
+          45,
+          143,
+          119
+        ],
+        "best": 45,
+        "second": 116,
+        "foreground": 206,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          162,
+          194,
+          134
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q016_card_12_67_312p5_10",
+    "truth_item": 12,
+    "truth_present": true,
+    "recipe": {
+      "angle": 312.5,
+      "size_bp": 67,
+      "background": "white",
+      "left": 112,
+      "top": 43,
+      "phase": 2,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        95,
+        95
+      ]
+    },
+    "local_phase": [
+      1,
+      0
+    ],
+    "dense_original": {
+      "truth_item": 12,
+      "size_bp": 67,
+      "angle": 312.5,
+      "phase_x": 1,
+      "phase_y": 0,
+      "item": 0,
+      "best": 45,
+      "second": 119,
+      "foreground": 206,
+      "distances": [
+        119,
+        119,
+        45,
+        143,
+        119
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          162,
+          194,
+          194
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 216,
+      "glyph_count": 183,
+      "scene_bbox": [
+        48,
+        22,
+        66,
+        41
+      ],
+      "glyph_bbox": [
+        48,
+        23,
+        66,
+        41
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 33,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          119,
+          119,
+          45,
+          143,
+          119
+        ],
+        "best": 45,
+        "second": 119,
+        "foreground": 206,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          162,
+          194,
+          194
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q017_card_14_51_27p5_11",
+    "truth_item": 14,
+    "truth_present": true,
+    "recipe": {
+      "angle": 27.5,
+      "size_bp": 51,
+      "background": "white",
+      "left": 126,
+      "top": 56,
+      "phase": 0,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        69,
+        69
+      ]
+    },
+    "local_phase": [
+      1,
+      1
+    ],
+    "dense_original": {
+      "truth_item": 14,
+      "size_bp": 51,
+      "angle": 27.5,
+      "phase_x": 1,
+      "phase_y": 1,
+      "item": 0,
+      "best": 47,
+      "second": 83,
+      "foreground": 155,
+      "distances": [
+        113,
+        83,
+        109,
+        114,
+        47
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          173,
+          245,
+          203
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 101,
+      "glyph_count": 98,
+      "scene_bbox": [
+        52,
+        23,
+        67,
+        36
+      ],
+      "glyph_bbox": [
+        52,
+        23,
+        67,
+        35
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 3,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          113,
+          83,
+          109,
+          114,
+          47
+        ],
+        "best": 47,
+        "second": 83,
+        "foreground": 155,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          173,
+          245,
+          203
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q018_card_14_51_37p5_10",
+    "truth_item": 14,
+    "truth_present": true,
+    "recipe": {
+      "angle": 37.5,
+      "size_bp": 51,
+      "background": "white",
+      "left": 124,
+      "top": 55,
+      "phase": 2,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        73,
+        73
+      ]
+    },
+    "local_phase": [
+      1,
+      0
+    ],
+    "dense_original": {
+      "truth_item": 14,
+      "size_bp": 51,
+      "angle": 37.5,
+      "phase_x": 1,
+      "phase_y": 0,
+      "item": 0,
+      "best": 42,
+      "second": 74,
+      "foreground": 169,
+      "distances": [
+        126,
+        74,
+        117,
+        124,
+        42
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          181,
+          231,
+          207
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 100,
+      "glyph_count": 95,
+      "scene_bbox": [
+        53,
+        23,
+        67,
+        35
+      ],
+      "glyph_bbox": [
+        53,
+        23,
+        67,
+        35
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 4,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          126,
+          74,
+          117,
+          124,
+          42
+        ],
+        "best": 42,
+        "second": 74,
+        "foreground": 169,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          181,
+          231,
+          207
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q019_card_14_51_117p5_11",
+    "truth_item": 14,
+    "truth_present": true,
+    "recipe": {
+      "angle": 117.5,
+      "size_bp": 51,
+      "background": "white",
+      "left": 126,
+      "top": 56,
+      "phase": 0,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        69,
+        69
+      ]
+    },
+    "local_phase": [
+      1,
+      1
+    ],
+    "dense_original": {
+      "truth_item": 14,
+      "size_bp": 51,
+      "angle": 117.5,
+      "phase_x": 1,
+      "phase_y": 1,
+      "item": 0,
+      "best": 42,
+      "second": 87,
+      "foreground": 155,
+      "distances": [
+        110,
+        87,
+        104,
+        108,
+        42
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          173,
+          245,
+          165
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 101,
+      "glyph_count": 98,
+      "scene_bbox": [
+        53,
+        22,
+        66,
+        37
+      ],
+      "glyph_bbox": [
+        53,
+        22,
+        65,
+        37
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 3,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          110,
+          87,
+          104,
+          108,
+          42
+        ],
+        "best": 42,
+        "second": 87,
+        "foreground": 155,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          173,
+          245,
+          165
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q020_card_14_51_127p5_01",
+    "truth_item": 14,
+    "truth_present": true,
+    "recipe": {
+      "angle": 127.5,
+      "size_bp": 51,
+      "background": "white",
+      "left": 125,
+      "top": 54,
+      "phase": 1,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        73,
+        73
+      ]
+    },
+    "local_phase": [
+      0,
+      1
+    ],
+    "dense_original": {
+      "truth_item": 14,
+      "size_bp": 51,
+      "angle": 127.5,
+      "phase_x": 0,
+      "phase_y": 1,
+      "item": 0,
+      "best": 42,
+      "second": 75,
+      "foreground": 169,
+      "distances": [
+        126,
+        75,
+        118,
+        124,
+        42
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          181,
+          231,
+          143
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 100,
+      "glyph_count": 95,
+      "scene_bbox": [
+        53,
+        22,
+        65,
+        36
+      ],
+      "glyph_bbox": [
+        53,
+        22,
+        65,
+        36
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 4,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          126,
+          75,
+          118,
+          124,
+          42
+        ],
+        "best": 42,
+        "second": 75,
+        "foreground": 169,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          181,
+          231,
+          143
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q021_card_14_51_207p5_11",
+    "truth_item": 14,
+    "truth_present": true,
+    "recipe": {
+      "angle": 207.5,
+      "size_bp": 51,
+      "background": "white",
+      "left": 126,
+      "top": 56,
+      "phase": 0,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        69,
+        69
+      ]
+    },
+    "local_phase": [
+      1,
+      1
+    ],
+    "dense_original": {
+      "truth_item": 14,
+      "size_bp": 51,
+      "angle": 207.5,
+      "phase_x": 1,
+      "phase_y": 1,
+      "item": 0,
+      "best": 42,
+      "second": 89,
+      "foreground": 155,
+      "distances": [
+        111,
+        89,
+        103,
+        108,
+        42
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          173,
+          245,
+          135
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 101,
+      "glyph_count": 98,
+      "scene_bbox": [
+        52,
+        23,
+        67,
+        36
+      ],
+      "glyph_bbox": [
+        52,
+        24,
+        67,
+        36
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 3,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          111,
+          89,
+          103,
+          108,
+          42
+        ],
+        "best": 42,
+        "second": 89,
+        "foreground": 155,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          173,
+          245,
+          135
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q022_card_14_51_217p5_11",
+    "truth_item": 14,
+    "truth_present": true,
+    "recipe": {
+      "angle": 217.5,
+      "size_bp": 51,
+      "background": "white",
+      "left": 124,
+      "top": 54,
+      "phase": 0,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        73,
+        73
+      ]
+    },
+    "local_phase": [
+      1,
+      1
+    ],
+    "dense_original": {
+      "truth_item": 14,
+      "size_bp": 51,
+      "angle": 217.5,
+      "phase_x": 1,
+      "phase_y": 1,
+      "item": 0,
+      "best": 42,
+      "second": 86,
+      "foreground": 171,
+      "distances": [
+        121,
+        86,
+        111,
+        129,
+        42
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          169,
+          229,
+          151
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 103,
+      "glyph_count": 97,
+      "scene_bbox": [
+        52,
+        24,
+        67,
+        36
+      ],
+      "glyph_bbox": [
+        52,
+        24,
+        66,
+        36
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 6,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          121,
+          86,
+          111,
+          129,
+          42
+        ],
+        "best": 42,
+        "second": 86,
+        "foreground": 171,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          169,
+          229,
+          151
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q023_card_14_51_297p5_11",
+    "truth_item": 14,
+    "truth_present": true,
+    "recipe": {
+      "angle": 297.5,
+      "size_bp": 51,
+      "background": "white",
+      "left": 126,
+      "top": 56,
+      "phase": 0,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        69,
+        69
+      ]
+    },
+    "local_phase": [
+      1,
+      1
+    ],
+    "dense_original": {
+      "truth_item": 14,
+      "size_bp": 51,
+      "angle": 297.5,
+      "phase_x": 1,
+      "phase_y": 1,
+      "item": 0,
+      "best": 41,
+      "second": 85,
+      "foreground": 155,
+      "distances": [
+        113,
+        85,
+        105,
+        114,
+        41
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          173,
+          245,
+          147
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 101,
+      "glyph_count": 98,
+      "scene_bbox": [
+        53,
+        22,
+        66,
+        37
+      ],
+      "glyph_bbox": [
+        54,
+        22,
+        66,
+        37
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 3,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          113,
+          85,
+          105,
+          114,
+          41
+        ],
+        "best": 41,
+        "second": 85,
+        "foreground": 155,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          173,
+          245,
+          147
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q024_card_14_51_307p5_11",
+    "truth_item": 14,
+    "truth_present": true,
+    "recipe": {
+      "angle": 307.5,
+      "size_bp": 51,
+      "background": "white",
+      "left": 124,
+      "top": 54,
+      "phase": 0,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        73,
+        73
+      ]
+    },
+    "local_phase": [
+      1,
+      1
+    ],
+    "dense_original": {
+      "truth_item": 14,
+      "size_bp": 51,
+      "angle": 307.5,
+      "phase_x": 1,
+      "phase_y": 1,
+      "item": 0,
+      "best": 42,
+      "second": 86,
+      "foreground": 171,
+      "distances": [
+        118,
+        86,
+        111,
+        129,
+        42
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          169,
+          229,
+          199
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 103,
+      "glyph_count": 97,
+      "scene_bbox": [
+        54,
+        22,
+        66,
+        37
+      ],
+      "glyph_bbox": [
+        54,
+        23,
+        66,
+        37
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 6,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          118,
+          86,
+          111,
+          129,
+          42
+        ],
+        "best": 42,
+        "second": 86,
+        "foreground": 171,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          169,
+          229,
+          199
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q025_card_14_51_322p5_10",
+    "truth_item": 14,
+    "truth_present": true,
+    "recipe": {
+      "angle": 322.5,
+      "size_bp": 51,
+      "background": "white",
+      "left": 124,
+      "top": 55,
+      "phase": 2,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        73,
+        73
+      ]
+    },
+    "local_phase": [
+      1,
+      0
+    ],
+    "dense_original": {
+      "truth_item": 14,
+      "size_bp": 51,
+      "angle": 322.5,
+      "phase_x": 1,
+      "phase_y": 0,
+      "item": 0,
+      "best": 42,
+      "second": 75,
+      "foreground": 152,
+      "distances": [
+        123,
+        75,
+        110,
+        115,
+        42
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          186,
+          248,
+          194
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 101,
+      "glyph_count": 97,
+      "scene_bbox": [
+        54,
+        23,
+        67,
+        38
+      ],
+      "glyph_bbox": [
+        54,
+        23,
+        67,
+        38
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 4,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          123,
+          75,
+          110,
+          115,
+          42
+        ],
+        "best": 42,
+        "second": 75,
+        "foreground": 152,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          186,
+          248,
+          194
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q026_card_14_51_347p5_01",
+    "truth_item": 14,
+    "truth_present": true,
+    "recipe": {
+      "angle": 347.5,
+      "size_bp": 51,
+      "background": "white",
+      "left": 131,
+      "top": 60,
+      "phase": 1,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        61,
+        61
+      ]
+    },
+    "local_phase": [
+      0,
+      1
+    ],
+    "dense_original": {
+      "truth_item": 14,
+      "size_bp": 51,
+      "angle": 347.5,
+      "phase_x": 0,
+      "phase_y": 1,
+      "item": 0,
+      "best": 41,
+      "second": 80,
+      "foreground": 160,
+      "distances": [
+        121,
+        80,
+        102,
+        147,
+        41
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          178,
+          240,
+          226
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 102,
+      "glyph_count": 98,
+      "scene_bbox": [
+        53,
+        23,
+        68,
+        38
+      ],
+      "glyph_bbox": [
+        53,
+        23,
+        68,
+        38
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 4,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          121,
+          80,
+          102,
+          147,
+          41
+        ],
+        "best": 41,
+        "second": 80,
+        "foreground": 160,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          178,
+          240,
+          226
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  },
+  {
+    "prefix": "q027_card_14_83_297p5_10",
+    "truth_item": 14,
+    "truth_present": true,
+    "recipe": {
+      "angle": 297.5,
+      "size_bp": 83,
+      "background": "white",
+      "left": 104,
+      "top": 35,
+      "phase": 2,
+      "soft_paper_edge": false,
+      "paper_bbox_size": [
+        113,
+        113
+      ]
+    },
+    "local_phase": [
+      1,
+      0
+    ],
+    "dense_original": {
+      "truth_item": 14,
+      "size_bp": 83,
+      "angle": 297.5,
+      "phase_x": 1,
+      "phase_y": 0,
+      "item": 0,
+      "best": 42,
+      "second": 85,
+      "foreground": 157,
+      "distances": [
+        114,
+        85,
+        107,
+        122,
+        42
+      ],
+      "truth_satisfied": false,
+      "shape": {
+        "distances": [
+          179,
+          243,
+          167
+        ],
+        "shape_bits": 0
+      },
+      "joint_card_item": 0
+    },
+    "expected": {
+      "background_rgb": [
+        248,
+        248,
+        248
+      ],
+      "present": true,
+      "scene_count": 256,
+      "glyph_count": 252,
+      "scene_bbox": [
+        50,
+        18,
+        71,
+        42
+      ],
+      "glyph_bbox": [
+        50,
+        18,
+        71,
+        42
+      ],
+      "border_similar": 356,
+      "border_count": 356,
+      "background_qualified": true,
+      "edge_contact": false,
+      "recognition_admitted": true,
+      "paper_count": 4,
+      "paper_route": false,
+      "card_raw": {
+        "distances": [
+          114,
+          85,
+          107,
+          122,
+          42
+        ],
+        "best": 42,
+        "second": 85,
+        "foreground": 157,
+        "valid": false,
+        "item": 0
+      },
+      "card_item": 0,
+      "block_raw": 0,
+      "block_item": 0,
+      "shape": {
+        "distances": [
+          179,
+          243,
+          167
+        ],
+        "shape_bits": 0
+      },
+      "conflict": false,
+      "item": 0
+    },
+    "truth_satisfied": false,
+    "same_distances_as_dense": true
+  }
+]

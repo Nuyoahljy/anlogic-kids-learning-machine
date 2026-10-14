@@ -1,0 +1,88 @@
+Location         : U:\
+Running with     : Tang Dynasty v6.2.168116
+                   Copyright (c) 2012-2025 Anlogic Inc.
+Top Model        : color_timing_top
+Device           : PH1P35MDG324
+Speed            : 3
+
+Timing Mode      : basic
+Setup            : WNS  2490ps  TNS        0ps  NUM_FEPS     0
+Hold             : WNS   220ps  TNS        0ps  NUM_FEPS     0
+
+Flow Statistics  :
+--------------------------------------------------------------------------------------------------
+     command     |  #calls  |  wall time  |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
+--------------------------------------------------------------------------------------------------
+  optimize_gate  |    1     |  29s(74%)   |    23(74%)    |        443        |        443        
+  optimize_rtl   |    1     |   8s(20%)   |    7(22%)     |        379        |        387        
+  import_device  |    1     |   2s(5%)    |     1(3%)     |        342        |        342        
+    read_sdc     |    1     |   0s(0%)    |     0(0%)     |        343        |        343        
+--------------------------------------------------------------------------------------------------
+      total      |    4     |     39s     |      31       |        443        |        443        
+--------------------------------------------------------------------------------------------------
+-----------------------------------------------------------
+| QoR metrics               |         value               |
+-----------------------------------------------------------
+| Timing                    |                             |
+|     Setup WNS             |         2490                |
+|     Setup TNS             |            0                |
+|     Num of violated S-EP  |            0                |
+|     Hold WNS              |          220                |
+|     Hold TNS              |            0                |
+|     Num of violated H-EP  |            0                |
+-----------------------------------------------------------
+| Utilization               |                             |
+|     #registers            |         1330                |
+|     #luts                 |         1640                |
+|     #lut1                 |            0                |
+|     #lut1(~A)             |            0                |
+|     #slices               |          597                |
+|     slices percentage     |        2.81%                |
+|     #RAMs                 |           10                |
+|     #DSPs                 |           12                |
+|     #f7mux                |        0.00%                |
+|     #MACROs               |           51                |
+|     #insts in MACRO       |          623                |
+-----------------------------------------------------------
+| kept_net                  |                             |
+|     #syn_keep             |          218                |
+|     #keep_hier            |            0                |
+|     #dont_touch           |            0                |
+|     #mark_debug           |            0                |
+|     #max_fanout_keep      |            0                |
+|     #async_reg            |            0                |
+-----------------------------------------------------------
+| Top 10% datanet fanout#   |        34.90                |
+| dff(single fanout)->dff   |           55                |
+| dff(single fanout)->dram  |            0                |
+-----------------------------------------------------------
+| Over-quota path num*      |                             |
+|     Total                 |            0                |
+-----------------------------------------------------------
+| Rent**                    |                             |
+-----------------------------------------------------------
+Note*: Over-quota path shows the over-path-level-threshold path number of each clock.
+       The clock will not be shown if no path is with path level over the threshold.
+       The threshold is defined as worst path_margin / 800ps.
+Note**: Rent shows the rent exponent value of the modules whose rent value exceeds the threshold.
+        Only modules under top are reported, and the threshold is defined as 0.7.
+
+Logic Level Distribution
+-------------------------------------------------------------------------------------------------------
+  Clock     |  Period            |  0    |  1    |  2     |  3    |  4   |  5    |  6    |  7   |  8
+-------------------------------------------------------------------------------------------------------
+  CORE_CLK  |  9.660ns (103MHz)  |  669  |  757  |  1729  |  649  |  55  |  117  |  178  |  64  |  30
+-------------------------------------------------------------------------------------------------------
+Hierarchical Rent Exponent Report
++---------------------------------------------------------------------------+
+|Inst      |Model                    |Rent     |Cell     |Pin     |Term     |
++---------------------------------------------------------------------------+
+|top       |color_timing_top         |0.08     |4063     |21554   |10       |
+|  u_color |pixel14_color_pipeline_1 |0.44     |3911     |21154   |199      |
++---------------------------------------------------------------------------+
+Note: Cell represents total number of cells inside module; Pin represents total number of pins
+      which have net connection inside module; Term represents total number of PIs and POs of module.
+      Rent represents the relationship between number of terms and number of cells in module.
+      A module with higher rent corresponds to highly connected logic and strong connectivity with others.
+Report gate stage QoR done.
+

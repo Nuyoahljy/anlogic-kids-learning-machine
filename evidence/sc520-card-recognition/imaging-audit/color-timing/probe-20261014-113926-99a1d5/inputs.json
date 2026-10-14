@@ -1,0 +1,33 @@
+{
+  "Inputs": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\pixel14_color_pipeline.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\color-timing\\probe-20261014-113926-99a1d5\\pixel14_color_pipeline.v",
+      "SHA256": "5020B23A8126103E0D1D5C9BB67DC8C93F55ED1C95B775FC1894B4D813420F31",
+      "SnapshotSHA256": "5020B23A8126103E0D1D5C9BB67DC8C93F55ED1C95B775FC1894B4D813420F31"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\signal_delay.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\color-timing\\probe-20261014-113926-99a1d5\\signal_delay.v",
+      "SHA256": "B7A8156BC59BEE5DE2C1AF20CB31079388ACE1F4E767A18288A7DFF8BAE3D5FD",
+      "SnapshotSHA256": "B7A8156BC59BEE5DE2C1AF20CB31079388ACE1F4E767A18288A7DFF8BAE3D5FD"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\blk_mem_gen_awb_delay_signal\\blk_mem_gen_awb_delay_signal.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\color-timing\\probe-20261014-113926-99a1d5\\blk_mem_gen_awb_delay_signal.v",
+      "SHA256": "7CAB7914392384BCC93A3DAEFE1DC038FC5CD88AC8F4306532FABB71740DA93E",
+      "SnapshotSHA256": "7CAB7914392384BCC93A3DAEFE1DC038FC5CD88AC8F4306532FABB71740DA93E"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\blk_mem_gen_awb_delay_signal\\ram_f84573da5ab5.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\color-timing\\probe-20261014-113926-99a1d5\\ram_f84573da5ab5.v",
+      "SHA256": "2DCDA5EDBC2764E38137BF47B9AA0ED601DCAD32B150E5F135036AE92308A94B",
+      "SnapshotSHA256": "2DCDA5EDBC2764E38137BF47B9AA0ED601DCAD32B150E5F135036AE92308A94B"
+    }
+  ],
+  "Tool": {
+    "Path": "D:\\Anlogic\\TD_6.2.1_Engineer_6.2.168.116\\bin\\td_commands_prompt.exe",
+    "SHA256": "E2E04ADA5E256DCCD017240C0F4DCFACE7F96DCA67CDE0E56E606AC0E02F827A"
+  },
+  "Scope": "Isolated color core with registered serial pixel source and XOR observation,9.660ns, no bitgen. Full integration placement remains separate."
+}

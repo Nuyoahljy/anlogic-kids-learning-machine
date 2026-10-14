@@ -1,0 +1,755 @@
+{
+  "variants_per_class": 256,
+  "templates_sha256": "731EC1B57D12F2EF305C35A055169BCD6733A4F76836AD1FA278BEE5BD9E8341",
+  "dense_count": 4320,
+  "dense_passed": 4292,
+  "classes": {
+    "apple": {
+      "count": 864,
+      "passed": 862,
+      "rejected": 2,
+      "misclassified": 0,
+      "maximum_best": 45,
+      "minimum_margin": 35,
+      "worst_cases": [
+        {
+          "truth_item": 10,
+          "size_bp": 67,
+          "angle": 67.5,
+          "phase_x": 1,
+          "phase_y": 0,
+          "item": 0,
+          "best": 45,
+          "second": 110,
+          "foreground": 286,
+          "distances": [
+            45,
+            139,
+            119,
+            110,
+            141
+          ],
+          "truth_satisfied": false,
+          "shape": {
+            "distances": [
+              52,
+              114,
+              170
+            ],
+            "shape_bits": 0
+          },
+          "joint_card_item": 0
+        },
+        {
+          "truth_item": 10,
+          "size_bp": 67,
+          "angle": 157.5,
+          "phase_x": 0,
+          "phase_y": 1,
+          "item": 0,
+          "best": 41,
+          "second": 110,
+          "foreground": 286,
+          "distances": [
+            41,
+            139,
+            121,
+            110,
+            141
+          ],
+          "truth_satisfied": false,
+          "shape": {
+            "distances": [
+              52,
+              114,
+              182
+            ],
+            "shape_bits": 0
+          },
+          "joint_card_item": 0
+        },
+        {
+          "truth_item": 10,
+          "size_bp": 67,
+          "angle": 72.5,
+          "phase_x": 1,
+          "phase_y": 0,
+          "item": 10,
+          "best": 38,
+          "second": 113,
+          "foreground": 287,
+          "distances": [
+            38,
+            142,
+            116,
+            113,
+            140
+          ],
+          "truth_satisfied": true,
+          "shape": {
+            "distances": [
+              49,
+              113,
+              169
+            ],
+            "shape_bits": 0
+          },
+          "joint_card_item": 10
+        },
+        {
+          "truth_item": 10,
+          "size_bp": 67,
+          "angle": 262.5,
+          "phase_x": 0,
+          "phase_y": 1,
+          "item": 10,
+          "best": 37,
+          "second": 102,
+          "foreground": 282,
+          "distances": [
+            37,
+            135,
+            118,
+            102,
+            140
+          ],
+          "truth_satisfied": true,
+          "shape": {
+            "distances": [
+              58,
+              118,
+              186
+            ],
+            "shape_bits": 0
+          },
+          "joint_card_item": 10
+        }
+      ]
+    },
+    "banana": {
+      "count": 864,
+      "passed": 864,
+      "rejected": 0,
+      "misclassified": 0,
+      "maximum_best": 34,
+      "minimum_margin": 32,
+      "worst_cases": [
+        {
+          "truth_item": 11,
+          "size_bp": 51,
+          "angle": 127.5,
+          "phase_x": 1,
+          "phase_y": 1,
+          "item": 11,
+          "best": 34,
+          "second": 66,
+          "foreground": 152,
+          "distances": [
+            117,
+            34,
+            106,
+            127,
+            66
+          ],
+          "truth_satisfied": true,
+          "shape": {
+            "distances": [
+              168,
+              248,
+              210
+            ],
+            "shape_bits": 0
+          },
+          "joint_card_item": 11
+        },
+        {
+          "truth_item": 11,
+          "size_bp": 51,
+          "angle": 322.5,
+          "phase_x": 1,
+          "phase_y": 1,
+          "item": 11,
+          "best": 32,
+          "second": 76,
+          "foreground": 151,
+          "distances": [
+            120,
+            32,
+            100,
+            146,
+            76
+          ],
+          "truth_satisfied": true,
+          "shape": {
+            "distances": [
+              173,
+              249,
+              153
+            ],
+            "shape_bits": 0
+          },
+          "joint_card_item": 11
+        },
+        {
+          "truth_item": 11,
+          "size_bp": 51,
+          "angle": 167.5,
+          "phase_x": 0,
+          "phase_y": 1,
+          "item": 11,
+          "best": 32,
+          "second": 88,
+          "foreground": 157,
+          "distances": [
+            111,
+            32,
+            107,
+            116,
+            88
+          ],
+          "truth_satisfied": true,
+          "shape": {
+            "distances": [
+              173,
+              243,
+              229
+            ],
+            "shape_bits": 0
+          },
+          "joint_card_item": 11
+        },
+        {
+          "truth_item": 11,
+          "size_bp": 51,
+          "angle": 217.5,
+          "phase_x": 1,
+          "phase_y": 1,
+          "item": 11,
+          "best": 31,
+          "second": 66,
+          "foreground": 152,
+          "distances": [
+            115,
+            31,
+            102,
+            127,
+            66
+          ],
+          "truth_satisfied": true,
+          "shape": {
+            "distances": [
+              168,
+              248,
+              226
+            ],
+            "shape_bits": 0
+          },
+          "joint_card_item": 11
+        }
+      ]
+    },
+    "car": {
+      "count": 864,
+      "passed": 849,
+      "rejected": 15,
+      "misclassified": 0,
+      "maximum_best": 45,
+      "minimum_margin": 42,
+      "worst_cases": [
+        {
+          "truth_item": 12,
+          "size_bp": 51,
+          "angle": 57.5,
+          "phase_x": 1,
+          "phase_y": 1,
+          "item": 0,
+          "best": 45,
+          "second": 99,
+          "foreground": 175,
+          "distances": [
+            104,
+            99,
+            45,
+            112,
+            118
+          ],
+          "truth_satisfied": false,
+          "shape": {
+            "distances": [
+              161,
+              225,
+              161
+            ],
+            "shape_bits": 0
+          },
+          "joint_card_item": 0
+        },
+        {
+          "truth_item": 12,
+          "size_bp": 67,
+          "angle": 132.5,
+          "phase_x": 1,
+          "phase_y": 0,
+          "item": 0,
+          "best": 45,
+          "second": 116,
+          "foreground": 206,
+          "distances": [
+            119,
+            116,
+            45,
+            143,
+            119
+          ],
+          "truth_satisfied": false,
+          "shape": {
+            "distances": [
+              162,
+              194,
+              134
+            ],
+            "shape_bits": 0
+          },
+          "joint_card_item": 0
+        },
+        {
+          "truth_item": 12,
+          "size_bp": 67,
+          "angle": 312.5,
+          "phase_x": 1,
+          "phase_y": 0,
+          "item": 0,
+          "best": 45,
+          "second": 119,
+          "foreground": 206,
+          "distances": [
+            119,
+            119,
+            45,
+            143,
+            119
+          ],
+          "truth_satisfied": false,
+          "shape": {
+            "distances": [
+              162,
+              194,
+              194
+            ],
+            "shape_bits": 0
+          },
+          "joint_card_item": 0
+        },
+        {
+          "truth_item": 12,
+          "size_bp": 51,
+          "angle": 207.5,
+          "phase_x": 1,
+          "phase_y": 0,
+          "item": 0,
+          "best": 44,
+          "second": 98,
+          "foreground": 173,
+          "distances": [
+            107,
+            98,
+            44,
+            110,
+            120
+          ],
+          "truth_satisfied": false,
+          "shape": {
+            "distances": [
+              163,
+              227,
+              169
+            ],
+            "shape_bits": 0
+          },
+          "joint_card_item": 0
+        }
+      ]
+    },
+    "star": {
+      "count": 864,
+      "passed": 864,
+      "rejected": 0,
+      "misclassified": 0,
+      "maximum_best": 39,
+      "minimum_margin": 38,
+      "worst_cases": [
+        {
+          "truth_item": 13,
+          "size_bp": 51,
+          "angle": 282.5,
+          "phase_x": 0,
+          "phase_y": 0,
+          "item": 13,
+          "best": 39,
+          "second": 84,
+          "foreground": 191,
+          "distances": [
+            84,
+            108,
+            101,
+            39,
+            118
+          ],
+          "truth_satisfied": true,
+          "shape": {
+            "distances": [
+              139,
+              209,
+              117
+            ],
+            "shape_bits": 0
+          },
+          "joint_card_item": 13
+        },
+        {
+          "truth_item": 13,
+          "size_bp": 51,
+          "angle": 102.5,
+          "phase_x": 0,
+          "phase_y": 0,
+          "item": 13,
+          "best": 39,
+          "second": 85,
+          "foreground": 191,
+          "distances": [
+            85,
+            115,
+            101,
+            39,
+            118
+          ],
+          "truth_satisfied": true,
+          "shape": {
+            "distances": [
+              139,
+              209,
+              169
+            ],
+            "shape_bits": 0
+          },
+          "joint_card_item": 13
+        },
+        {
+          "truth_item": 13,
+          "size_bp": 51,
+          "angle": 77.5,
+          "phase_x": 0,
+          "phase_y": 0,
+          "item": 13,
+          "best": 38,
+          "second": 80,
+          "foreground": 191,
+          "distances": [
+            80,
+            107,
+            99,
+            38,
+            122
+          ],
+          "truth_satisfied": true,
+          "shape": {
+            "distances": [
+              139,
+              209,
+              117
+            ],
+            "shape_bits": 0
+          },
+          "joint_card_item": 13
+        },
+        {
+          "truth_item": 13,
+          "size_bp": 51,
+          "angle": 257.5,
+          "phase_x": 0,
+          "phase_y": 0,
+          "item": 13,
+          "best": 38,
+          "second": 80,
+          "foreground": 191,
+          "distances": [
+            80,
+            111,
+            97,
+            38,
+            122
+          ],
+          "truth_satisfied": true,
+          "shape": {
+            "distances": [
+              139,
+              209,
+              169
+            ],
+            "shape_bits": 0
+          },
+          "joint_card_item": 13
+        }
+      ]
+    },
+    "umbrella": {
+      "count": 864,
+      "passed": 853,
+      "rejected": 11,
+      "misclassified": 0,
+      "maximum_best": 47,
+      "minimum_margin": 29,
+      "worst_cases": [
+        {
+          "truth_item": 14,
+          "size_bp": 51,
+          "angle": 27.5,
+          "phase_x": 1,
+          "phase_y": 1,
+          "item": 0,
+          "best": 47,
+          "second": 83,
+          "foreground": 155,
+          "distances": [
+            113,
+            83,
+            109,
+            114,
+            47
+          ],
+          "truth_satisfied": false,
+          "shape": {
+            "distances": [
+              173,
+              245,
+              203
+            ],
+            "shape_bits": 0
+          },
+          "joint_card_item": 0
+        },
+        {
+          "truth_item": 14,
+          "size_bp": 51,
+          "angle": 37.5,
+          "phase_x": 1,
+          "phase_y": 0,
+          "item": 0,
+          "best": 42,
+          "second": 74,
+          "foreground": 169,
+          "distances": [
+            126,
+            74,
+            117,
+            124,
+            42
+          ],
+          "truth_satisfied": false,
+          "shape": {
+            "distances": [
+              181,
+              231,
+              207
+            ],
+            "shape_bits": 0
+          },
+          "joint_card_item": 0
+        },
+        {
+          "truth_item": 14,
+          "size_bp": 51,
+          "angle": 127.5,
+          "phase_x": 0,
+          "phase_y": 1,
+          "item": 0,
+          "best": 42,
+          "second": 75,
+          "foreground": 169,
+          "distances": [
+            126,
+            75,
+            118,
+            124,
+            42
+          ],
+          "truth_satisfied": false,
+          "shape": {
+            "distances": [
+              181,
+              231,
+              143
+            ],
+            "shape_bits": 0
+          },
+          "joint_card_item": 0
+        },
+        {
+          "truth_item": 14,
+          "size_bp": 51,
+          "angle": 322.5,
+          "phase_x": 1,
+          "phase_y": 0,
+          "item": 0,
+          "best": 42,
+          "second": 75,
+          "foreground": 152,
+          "distances": [
+            123,
+            75,
+            110,
+            115,
+            42
+          ],
+          "truth_satisfied": false,
+          "shape": {
+            "distances": [
+              186,
+              248,
+              194
+            ],
+            "shape_bits": 0
+          },
+          "joint_card_item": 0
+        }
+      ]
+    }
+  },
+  "minimum_simple_shape_distance": {
+    "10": 35,
+    "11": 105,
+    "12": 94,
+    "13": 84,
+    "14": 100
+  },
+  "legacy_joint_required_count": 653,
+  "legacy_joint_required_failed": [],
+  "system_count": 69,
+  "system_failures": [],
+  "physical_frame_failures": [
+    "r143_card_10_gain65_before",
+    "r145_card_11_gain65_before",
+    "r147_card_12_gain65_before",
+    "r149_card_13_gain65_before",
+    "r151_card_14_gain65_before"
+  ],
+  "roc": [
+    {
+      "max_distance": 40,
+      "positive_pass": 4292,
+      "positive_count": 4320,
+      "negative_count": 158,
+      "raw_false_accepts": [
+        "596_block_red_circle_white_36",
+        "597_block_red_circle_white_52",
+        "598_block_red_circle_white_68",
+        "599_block_red_circle_dark_36",
+        "600_block_red_circle_dark_52",
+        "601_block_red_circle_dark_68",
+        "602_block_red_circle_wood_36",
+        "603_block_red_circle_wood_52",
+        "604_block_red_circle_wood_68",
+        "623_block_yellow_circle_white_36",
+        "624_block_yellow_circle_white_52",
+        "625_block_yellow_circle_white_68",
+        "626_block_yellow_circle_dark_36",
+        "627_block_yellow_circle_dark_52",
+        "628_block_yellow_circle_dark_68",
+        "629_block_yellow_circle_wood_36",
+        "630_block_yellow_circle_wood_52",
+        "631_block_yellow_circle_wood_68",
+        "650_block_blue_circle_white_36",
+        "651_block_blue_circle_white_52",
+        "652_block_blue_circle_white_68",
+        "653_block_blue_circle_dark_36",
+        "654_block_blue_circle_dark_52",
+        "655_block_blue_circle_dark_68",
+        "656_block_blue_circle_wood_36",
+        "657_block_blue_circle_wood_52",
+        "658_block_blue_circle_wood_68",
+        "677_unknown_circle_white",
+        "678_unknown_circle_dark",
+        "679_unknown_circle_wood"
+      ],
+      "guarded_false_accepts": []
+    },
+    {
+      "max_distance": 44,
+      "positive_pass": 4315,
+      "positive_count": 4320,
+      "negative_count": 158,
+      "raw_false_accepts": [
+        "596_block_red_circle_white_36",
+        "597_block_red_circle_white_52",
+        "598_block_red_circle_white_68",
+        "599_block_red_circle_dark_36",
+        "600_block_red_circle_dark_52",
+        "601_block_red_circle_dark_68",
+        "602_block_red_circle_wood_36",
+        "603_block_red_circle_wood_52",
+        "604_block_red_circle_wood_68",
+        "623_block_yellow_circle_white_36",
+        "624_block_yellow_circle_white_52",
+        "625_block_yellow_circle_white_68",
+        "626_block_yellow_circle_dark_36",
+        "627_block_yellow_circle_dark_52",
+        "628_block_yellow_circle_dark_68",
+        "629_block_yellow_circle_wood_36",
+        "630_block_yellow_circle_wood_52",
+        "631_block_yellow_circle_wood_68",
+        "650_block_blue_circle_white_36",
+        "651_block_blue_circle_white_52",
+        "652_block_blue_circle_white_68",
+        "653_block_blue_circle_dark_36",
+        "654_block_blue_circle_dark_52",
+        "655_block_blue_circle_dark_68",
+        "656_block_blue_circle_wood_36",
+        "657_block_blue_circle_wood_52",
+        "658_block_blue_circle_wood_68",
+        "677_unknown_circle_white",
+        "678_unknown_circle_dark",
+        "679_unknown_circle_wood"
+      ],
+      "guarded_false_accepts": []
+    },
+    {
+      "max_distance": 48,
+      "positive_pass": 4320,
+      "positive_count": 4320,
+      "negative_count": 158,
+      "raw_false_accepts": [
+        "596_block_red_circle_white_36",
+        "597_block_red_circle_white_52",
+        "598_block_red_circle_white_68",
+        "599_block_red_circle_dark_36",
+        "600_block_red_circle_dark_52",
+        "601_block_red_circle_dark_68",
+        "602_block_red_circle_wood_36",
+        "603_block_red_circle_wood_52",
+        "604_block_red_circle_wood_68",
+        "623_block_yellow_circle_white_36",
+        "624_block_yellow_circle_white_52",
+        "625_block_yellow_circle_white_68",
+        "626_block_yellow_circle_dark_36",
+        "627_block_yellow_circle_dark_52",
+        "628_block_yellow_circle_dark_68",
+        "629_block_yellow_circle_wood_36",
+        "630_block_yellow_circle_wood_52",
+        "631_block_yellow_circle_wood_68",
+        "650_block_blue_circle_white_36",
+        "651_block_blue_circle_white_52",
+        "652_block_blue_circle_white_68",
+        "653_block_blue_circle_dark_36",
+        "654_block_blue_circle_dark_52",
+        "655_block_blue_circle_dark_68",
+        "656_block_blue_circle_wood_36",
+        "657_block_blue_circle_wood_52",
+        "658_block_blue_circle_wood_68",
+        "677_unknown_circle_white",
+        "678_unknown_circle_dark",
+        "679_unknown_circle_wood"
+      ],
+      "guarded_false_accepts": []
+    }
+  ]
+}

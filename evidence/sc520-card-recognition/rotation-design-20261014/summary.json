@@ -1,0 +1,3522 @@
+[
+  {
+    "angle_step": 20,
+    "variants_per_angle": 2,
+    "variants_per_class": 36,
+    "bits": 72000,
+    "count": 1080,
+    "passed": 462,
+    "classes": {
+      "apple": {
+        "count": 216,
+        "passed": 142,
+        "rejected": 74,
+        "misclassified": 0,
+        "maximum_best": 59,
+        "minimum_margin": 30,
+        "worst_cases": [
+          {
+            "truth_item": 10,
+            "size_bp": 51,
+            "angle": 70.0,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 59,
+            "second": 118,
+            "foreground": 298,
+            "distances": [
+              59,
+              157,
+              134,
+              118,
+              143
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 10,
+            "size_bp": 51,
+            "angle": 250.0,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 59,
+            "second": 129,
+            "foreground": 298,
+            "distances": [
+              59,
+              151,
+              134,
+              129,
+              143
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 10,
+            "size_bp": 51,
+            "angle": 90.0,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 57,
+            "second": 120,
+            "foreground": 300,
+            "distances": [
+              57,
+              151,
+              134,
+              120,
+              154
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 10,
+            "size_bp": 51,
+            "angle": 270.0,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 57,
+            "second": 131,
+            "foreground": 300,
+            "distances": [
+              57,
+              151,
+              134,
+              131,
+              155
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "banana": {
+        "count": 216,
+        "passed": 97,
+        "rejected": 119,
+        "misclassified": 0,
+        "maximum_best": 66,
+        "minimum_margin": 11,
+        "worst_cases": [
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 10.0,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 66,
+            "second": 91,
+            "foreground": 160,
+            "distances": [
+              118,
+              66,
+              91,
+              107,
+              94
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 230.0,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 65,
+            "second": 79,
+            "foreground": 149,
+            "distances": [
+              129,
+              65,
+              114,
+              145,
+              79
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 190.0,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 61,
+            "second": 72,
+            "foreground": 160,
+            "distances": [
+              118,
+              61,
+              72,
+              107,
+              88
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 330.0,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 60,
+            "second": 79,
+            "foreground": 146,
+            "distances": [
+              135,
+              60,
+              114,
+              156,
+              79
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "car": {
+        "count": 216,
+        "passed": 5,
+        "rejected": 211,
+        "misclassified": 0,
+        "maximum_best": 78,
+        "minimum_margin": 28,
+        "worst_cases": [
+          {
+            "truth_item": 12,
+            "size_bp": 67,
+            "angle": 130.0,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 78,
+            "second": 115,
+            "foreground": 213,
+            "distances": [
+              115,
+              137,
+              78,
+              142,
+              130
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 12,
+            "size_bp": 67,
+            "angle": 310.0,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 78,
+            "second": 118,
+            "foreground": 213,
+            "distances": [
+              118,
+              137,
+              78,
+              142,
+              129
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 12,
+            "size_bp": 51,
+            "angle": 330.0,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 75,
+            "second": 104,
+            "foreground": 178,
+            "distances": [
+              104,
+              112,
+              75,
+              118,
+              127
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 12,
+            "size_bp": 51,
+            "angle": 230.0,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 75,
+            "second": 116,
+            "foreground": 197,
+            "distances": [
+              119,
+              116,
+              75,
+              133,
+              124
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "star": {
+        "count": 216,
+        "passed": 207,
+        "rejected": 9,
+        "misclassified": 0,
+        "maximum_best": 54,
+        "minimum_margin": 34,
+        "worst_cases": [
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 30.0,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 54,
+            "second": 88,
+            "foreground": 168,
+            "distances": [
+              88,
+              105,
+              94,
+              54,
+              112
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 150.0,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 54,
+            "second": 90,
+            "foreground": 168,
+            "distances": [
+              90,
+              112,
+              93,
+              54,
+              112
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 210.0,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 54,
+            "second": 90,
+            "foreground": 168,
+            "distances": [
+              90,
+              114,
+              94,
+              54,
+              112
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 270.0,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 50,
+            "second": 84,
+            "foreground": 170,
+            "distances": [
+              84,
+              106,
+              90,
+              50,
+              109
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "umbrella": {
+        "count": 216,
+        "passed": 11,
+        "rejected": 205,
+        "misclassified": 0,
+        "maximum_best": 67,
+        "minimum_margin": 12,
+        "worst_cases": [
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 250.0,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 67,
+            "second": 79,
+            "foreground": 167,
+            "distances": [
+              149,
+              79,
+              137,
+              163,
+              67
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 14,
+            "size_bp": 67,
+            "angle": 310.0,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 67,
+            "second": 86,
+            "foreground": 169,
+            "distances": [
+              129,
+              86,
+              108,
+              121,
+              67
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 210.0,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 67,
+            "second": 90,
+            "foreground": 170,
+            "distances": [
+              121,
+              90,
+              116,
+              119,
+              67
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 14,
+            "size_bp": 83,
+            "angle": 250.0,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 65,
+            "second": 89,
+            "foreground": 161,
+            "distances": [
+              146,
+              89,
+              141,
+              160,
+              65
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "angle_step": 20,
+    "variants_per_angle": 3,
+    "variants_per_class": 54,
+    "bits": 108000,
+    "count": 1080,
+    "passed": 505,
+    "classes": {
+      "apple": {
+        "count": 216,
+        "passed": 147,
+        "rejected": 69,
+        "misclassified": 0,
+        "maximum_best": 53,
+        "minimum_margin": 34,
+        "worst_cases": [
+          {
+            "truth_item": 10,
+            "size_bp": 51,
+            "angle": 90.0,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 53,
+            "second": 120,
+            "foreground": 300,
+            "distances": [
+              53,
+              151,
+              133,
+              120,
+              154
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 10,
+            "size_bp": 51,
+            "angle": 270.0,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 53,
+            "second": 120,
+            "foreground": 300,
+            "distances": [
+              53,
+              151,
+              133,
+              120,
+              147
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 10,
+            "size_bp": 67,
+            "angle": 270.0,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 48,
+            "second": 103,
+            "foreground": 285,
+            "distances": [
+              48,
+              142,
+              129,
+              103,
+              148
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 10,
+            "size_bp": 83,
+            "angle": 90.0,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 48,
+            "second": 109,
+            "foreground": 279,
+            "distances": [
+              48,
+              144,
+              121,
+              109,
+              143
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "banana": {
+        "count": 216,
+        "passed": 123,
+        "rejected": 93,
+        "misclassified": 0,
+        "maximum_best": 61,
+        "minimum_margin": 11,
+        "worst_cases": [
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 190.0,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 61,
+            "second": 72,
+            "foreground": 160,
+            "distances": [
+              118,
+              61,
+              72,
+              107,
+              88
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 330.0,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 56,
+            "second": 68,
+            "foreground": 146,
+            "distances": [
+              135,
+              56,
+              114,
+              153,
+              68
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 150.0,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 56,
+            "second": 79,
+            "foreground": 146,
+            "distances": [
+              123,
+              56,
+              114,
+              153,
+              79
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 190.0,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 56,
+            "second": 83,
+            "foreground": 169,
+            "distances": [
+              113,
+              56,
+              83,
+              102,
+              87
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "car": {
+        "count": 216,
+        "passed": 7,
+        "rejected": 209,
+        "misclassified": 0,
+        "maximum_best": 76,
+        "minimum_margin": 26,
+        "worst_cases": [
+          {
+            "truth_item": 12,
+            "size_bp": 67,
+            "angle": 130.0,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 76,
+            "second": 115,
+            "foreground": 213,
+            "distances": [
+              115,
+              133,
+              76,
+              137,
+              130
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 12,
+            "size_bp": 67,
+            "angle": 310.0,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 76,
+            "second": 116,
+            "foreground": 213,
+            "distances": [
+              116,
+              133,
+              76,
+              137,
+              129
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 12,
+            "size_bp": 67,
+            "angle": 230.0,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 75,
+            "second": 120,
+            "foreground": 195,
+            "distances": [
+              123,
+              120,
+              75,
+              140,
+              132
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 12,
+            "size_bp": 67,
+            "angle": 50.0,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 75,
+            "second": 121,
+            "foreground": 195,
+            "distances": [
+              121,
+              125,
+              75,
+              134,
+              132
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "star": {
+        "count": 216,
+        "passed": 211,
+        "rejected": 5,
+        "misclassified": 0,
+        "maximum_best": 54,
+        "minimum_margin": 31,
+        "worst_cases": [
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 30.0,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 54,
+            "second": 85,
+            "foreground": 168,
+            "distances": [
+              85,
+              105,
+              94,
+              54,
+              112
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 150.0,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 54,
+            "second": 90,
+            "foreground": 168,
+            "distances": [
+              90,
+              108,
+              93,
+              54,
+              112
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 210.0,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 54,
+            "second": 90,
+            "foreground": 168,
+            "distances": [
+              90,
+              110,
+              94,
+              54,
+              112
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 330.0,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 49,
+            "second": 86,
+            "foreground": 168,
+            "distances": [
+              90,
+              112,
+              86,
+              49,
+              116
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "umbrella": {
+        "count": 216,
+        "passed": 17,
+        "rejected": 199,
+        "misclassified": 0,
+        "maximum_best": 66,
+        "minimum_margin": 13,
+        "worst_cases": [
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 250.0,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 66,
+            "second": 79,
+            "foreground": 167,
+            "distances": [
+              149,
+              79,
+              132,
+              146,
+              66
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 14,
+            "size_bp": 67,
+            "angle": 310.0,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 64,
+            "second": 86,
+            "foreground": 169,
+            "distances": [
+              129,
+              86,
+              108,
+              121,
+              64
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 14,
+            "size_bp": 67,
+            "angle": 310.0,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 63,
+            "second": 93,
+            "foreground": 169,
+            "distances": [
+              125,
+              93,
+              102,
+              118,
+              63
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 30.0,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 62,
+            "second": 93,
+            "foreground": 175,
+            "distances": [
+              124,
+              93,
+              119,
+              118,
+              62
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "angle_step": 15,
+    "variants_per_angle": 2,
+    "variants_per_class": 48,
+    "bits": 96000,
+    "count": 1440,
+    "passed": 1064,
+    "classes": {
+      "apple": {
+        "count": 288,
+        "passed": 275,
+        "rejected": 13,
+        "misclassified": 0,
+        "maximum_best": 45,
+        "minimum_margin": 38,
+        "worst_cases": [
+          {
+            "truth_item": 10,
+            "size_bp": 51,
+            "angle": 52.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 45,
+            "second": 83,
+            "foreground": 228,
+            "distances": [
+              45,
+              112,
+              98,
+              83,
+              122
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 10,
+            "size_bp": 67,
+            "angle": 67.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 45,
+            "second": 115,
+            "foreground": 286,
+            "distances": [
+              45,
+              146,
+              127,
+              115,
+              142
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 10,
+            "size_bp": 67,
+            "angle": 157.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 45,
+            "second": 115,
+            "foreground": 286,
+            "distances": [
+              45,
+              148,
+              127,
+              115,
+              142
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 10,
+            "size_bp": 67,
+            "angle": 262.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 45,
+            "second": 115,
+            "foreground": 282,
+            "distances": [
+              45,
+              136,
+              128,
+              115,
+              140
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "banana": {
+        "count": 288,
+        "passed": 256,
+        "rejected": 32,
+        "misclassified": 0,
+        "maximum_best": 46,
+        "minimum_margin": 25,
+        "worst_cases": [
+          {
+            "truth_item": 11,
+            "size_bp": 67,
+            "angle": 52.5,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 46,
+            "second": 87,
+            "foreground": 158,
+            "distances": [
+              129,
+              46,
+              131,
+              155,
+              87
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 11,
+            "size_bp": 67,
+            "angle": 142.5,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 46,
+            "second": 87,
+            "foreground": 158,
+            "distances": [
+              128,
+              46,
+              131,
+              155,
+              87
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 11,
+            "size_bp": 67,
+            "angle": 232.5,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 46,
+            "second": 87,
+            "foreground": 158,
+            "distances": [
+              123,
+              46,
+              131,
+              155,
+              87
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 11,
+            "size_bp": 67,
+            "angle": 322.5,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 46,
+            "second": 87,
+            "foreground": 158,
+            "distances": [
+              124,
+              46,
+              131,
+              155,
+              87
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "car": {
+        "count": 288,
+        "passed": 111,
+        "rejected": 177,
+        "misclassified": 0,
+        "maximum_best": 79,
+        "minimum_margin": 27,
+        "worst_cases": [
+          {
+            "truth_item": 12,
+            "size_bp": 51,
+            "angle": 217.5,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 79,
+            "second": 110,
+            "foreground": 197,
+            "distances": [
+              113,
+              119,
+              79,
+              134,
+              110
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 12,
+            "size_bp": 83,
+            "angle": 217.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 77,
+            "second": 116,
+            "foreground": 176,
+            "distances": [
+              119,
+              125,
+              77,
+              125,
+              116
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 12,
+            "size_bp": 83,
+            "angle": 217.5,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 76,
+            "second": 103,
+            "foreground": 188,
+            "distances": [
+              103,
+              120,
+              76,
+              119,
+              116
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 12,
+            "size_bp": 67,
+            "angle": 217.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 76,
+            "second": 115,
+            "foreground": 186,
+            "distances": [
+              115,
+              130,
+              76,
+              125,
+              115
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "star": {
+        "count": 288,
+        "passed": 280,
+        "rejected": 8,
+        "misclassified": 0,
+        "maximum_best": 43,
+        "minimum_margin": 40,
+        "worst_cases": [
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 262.5,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 43,
+            "second": 88,
+            "foreground": 194,
+            "distances": [
+              88,
+              117,
+              97,
+              43,
+              140
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 352.5,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 43,
+            "second": 88,
+            "foreground": 194,
+            "distances": [
+              88,
+              123,
+              97,
+              43,
+              138
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 82.5,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 43,
+            "second": 91,
+            "foreground": 194,
+            "distances": [
+              91,
+              116,
+              98,
+              43,
+              140
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 172.5,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 43,
+            "second": 91,
+            "foreground": 194,
+            "distances": [
+              91,
+              115,
+              101,
+              43,
+              140
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "umbrella": {
+        "count": 288,
+        "passed": 142,
+        "rejected": 146,
+        "misclassified": 0,
+        "maximum_best": 61,
+        "minimum_margin": 22,
+        "worst_cases": [
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 202.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 61,
+            "second": 84,
+            "foreground": 162,
+            "distances": [
+              113,
+              84,
+              109,
+              116,
+              61
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 292.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 56,
+            "second": 83,
+            "foreground": 157,
+            "distances": [
+              116,
+              83,
+              107,
+              116,
+              56
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 337.5,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 53,
+            "second": 75,
+            "foreground": 149,
+            "distances": [
+              131,
+              75,
+              103,
+              140,
+              53
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 14,
+            "size_bp": 67,
+            "angle": 82.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 52,
+            "second": 77,
+            "foreground": 147,
+            "distances": [
+              129,
+              77,
+              125,
+              156,
+              52
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "angle_step": 15,
+    "variants_per_angle": 3,
+    "variants_per_class": 72,
+    "bits": 144000,
+    "count": 1440,
+    "passed": 1105,
+    "classes": {
+      "apple": {
+        "count": 288,
+        "passed": 280,
+        "rejected": 8,
+        "misclassified": 0,
+        "maximum_best": 45,
+        "minimum_margin": 40,
+        "worst_cases": [
+          {
+            "truth_item": 10,
+            "size_bp": 67,
+            "angle": 262.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 45,
+            "second": 111,
+            "foreground": 282,
+            "distances": [
+              45,
+              136,
+              126,
+              111,
+              140
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 10,
+            "size_bp": 67,
+            "angle": 352.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 45,
+            "second": 111,
+            "foreground": 282,
+            "distances": [
+              45,
+              136,
+              126,
+              111,
+              140
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 10,
+            "size_bp": 67,
+            "angle": 67.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 45,
+            "second": 115,
+            "foreground": 286,
+            "distances": [
+              45,
+              141,
+              127,
+              115,
+              142
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 10,
+            "size_bp": 67,
+            "angle": 157.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 45,
+            "second": 115,
+            "foreground": 286,
+            "distances": [
+              45,
+              141,
+              127,
+              115,
+              142
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "banana": {
+        "count": 288,
+        "passed": 277,
+        "rejected": 11,
+        "misclassified": 0,
+        "maximum_best": 44,
+        "minimum_margin": 25,
+        "worst_cases": [
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 37.5,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 44,
+            "second": 69,
+            "foreground": 152,
+            "distances": [
+              125,
+              44,
+              117,
+              135,
+              69
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 217.5,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 44,
+            "second": 69,
+            "foreground": 152,
+            "distances": [
+              121,
+              44,
+              102,
+              135,
+              69
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 11,
+            "size_bp": 83,
+            "angle": 217.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 42,
+            "second": 67,
+            "foreground": 142,
+            "distances": [
+              127,
+              42,
+              106,
+              135,
+              67
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 11,
+            "size_bp": 83,
+            "angle": 67.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 41,
+            "second": 91,
+            "foreground": 160,
+            "distances": [
+              139,
+              41,
+              125,
+              166,
+              91
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "car": {
+        "count": 288,
+        "passed": 114,
+        "rejected": 174,
+        "misclassified": 0,
+        "maximum_best": 77,
+        "minimum_margin": 26,
+        "worst_cases": [
+          {
+            "truth_item": 12,
+            "size_bp": 83,
+            "angle": 217.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 77,
+            "second": 115,
+            "foreground": 176,
+            "distances": [
+              116,
+              125,
+              77,
+              125,
+              115
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 12,
+            "size_bp": 83,
+            "angle": 217.5,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 76,
+            "second": 102,
+            "foreground": 188,
+            "distances": [
+              102,
+              120,
+              76,
+              119,
+              116
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 12,
+            "size_bp": 67,
+            "angle": 217.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 76,
+            "second": 114,
+            "foreground": 186,
+            "distances": [
+              114,
+              130,
+              76,
+              125,
+              115
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 12,
+            "size_bp": 83,
+            "angle": 217.5,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 74,
+            "second": 112,
+            "foreground": 177,
+            "distances": [
+              117,
+              128,
+              74,
+              124,
+              112
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "star": {
+        "count": 288,
+        "passed": 280,
+        "rejected": 8,
+        "misclassified": 0,
+        "maximum_best": 43,
+        "minimum_margin": 37,
+        "worst_cases": [
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 172.5,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 43,
+            "second": 86,
+            "foreground": 194,
+            "distances": [
+              86,
+              115,
+              99,
+              43,
+              139
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 82.5,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 43,
+            "second": 87,
+            "foreground": 194,
+            "distances": [
+              87,
+              116,
+              98,
+              43,
+              139
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 262.5,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 43,
+            "second": 87,
+            "foreground": 194,
+            "distances": [
+              87,
+              112,
+              97,
+              43,
+              139
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 352.5,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 43,
+            "second": 88,
+            "foreground": 194,
+            "distances": [
+              88,
+              112,
+              97,
+              43,
+              138
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "umbrella": {
+        "count": 288,
+        "passed": 154,
+        "rejected": 134,
+        "misclassified": 0,
+        "maximum_best": 56,
+        "minimum_margin": 26,
+        "worst_cases": [
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 292.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 56,
+            "second": 83,
+            "foreground": 157,
+            "distances": [
+              110,
+              83,
+              107,
+              116,
+              56
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 202.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 55,
+            "second": 84,
+            "foreground": 162,
+            "distances": [
+              110,
+              84,
+              109,
+              116,
+              55
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 37.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 52,
+            "second": 78,
+            "foreground": 169,
+            "distances": [
+              136,
+              78,
+              123,
+              134,
+              52
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 127.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 52,
+            "second": 78,
+            "foreground": 169,
+            "distances": [
+              127,
+              78,
+              129,
+              134,
+              52
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "angle_step": 10,
+    "variants_per_angle": 2,
+    "variants_per_class": 72,
+    "bits": 144000,
+    "count": 2160,
+    "passed": 1999,
+    "classes": {
+      "apple": {
+        "count": 432,
+        "passed": 426,
+        "rejected": 6,
+        "misclassified": 0,
+        "maximum_best": 43,
+        "minimum_margin": 36,
+        "worst_cases": [
+          {
+            "truth_item": 10,
+            "size_bp": 67,
+            "angle": 85.0,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 43,
+            "second": 113,
+            "foreground": 285,
+            "distances": [
+              43,
+              142,
+              127,
+              113,
+              143
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 10,
+            "size_bp": 67,
+            "angle": 175.0,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 43,
+            "second": 115,
+            "foreground": 285,
+            "distances": [
+              43,
+              144,
+              127,
+              115,
+              143
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 10,
+            "size_bp": 51,
+            "angle": 75.0,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 42,
+            "second": 119,
+            "foreground": 303,
+            "distances": [
+              42,
+              150,
+              123,
+              119,
+              150
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 10,
+            "size_bp": 51,
+            "angle": 165.0,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 42,
+            "second": 119,
+            "foreground": 303,
+            "distances": [
+              42,
+              153,
+              123,
+              119,
+              152
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "banana": {
+        "count": 432,
+        "passed": 429,
+        "rejected": 3,
+        "misclassified": 0,
+        "maximum_best": 45,
+        "minimum_margin": 23,
+        "worst_cases": [
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 95.0,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 45,
+            "second": 82,
+            "foreground": 158,
+            "distances": [
+              110,
+              45,
+              82,
+              103,
+              92
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 215.0,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 40,
+            "second": 63,
+            "foreground": 158,
+            "distances": [
+              119,
+              40,
+              108,
+              135,
+              63
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 305.0,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 40,
+            "second": 63,
+            "foreground": 158,
+            "distances": [
+              121,
+              40,
+              114,
+              143,
+              63
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 125.0,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 11,
+            "best": 40,
+            "second": 68,
+            "foreground": 158,
+            "distances": [
+              129,
+              40,
+              114,
+              135,
+              68
+            ],
+            "truth_satisfied": true
+          }
+        ]
+      },
+      "car": {
+        "count": 432,
+        "passed": 319,
+        "rejected": 113,
+        "misclassified": 0,
+        "maximum_best": 76,
+        "minimum_margin": 41,
+        "worst_cases": [
+          {
+            "truth_item": 12,
+            "size_bp": 67,
+            "angle": 315.0,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 76,
+            "second": 117,
+            "foreground": 211,
+            "distances": [
+              126,
+              117,
+              76,
+              143,
+              118
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 12,
+            "size_bp": 67,
+            "angle": 225.0,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 69,
+            "second": 116,
+            "foreground": 211,
+            "distances": [
+              126,
+              117,
+              69,
+              141,
+              116
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 12,
+            "size_bp": 51,
+            "angle": 315.0,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 68,
+            "second": 110,
+            "foreground": 242,
+            "distances": [
+              110,
+              126,
+              68,
+              166,
+              139
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 12,
+            "size_bp": 51,
+            "angle": 45.0,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 61,
+            "second": 115,
+            "foreground": 241,
+            "distances": [
+              115,
+              138,
+              61,
+              163,
+              138
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "star": {
+        "count": 432,
+        "passed": 422,
+        "rejected": 10,
+        "misclassified": 0,
+        "maximum_best": 54,
+        "minimum_margin": 30,
+        "worst_cases": [
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 245.0,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 54,
+            "second": 86,
+            "foreground": 180,
+            "distances": [
+              86,
+              111,
+              102,
+              54,
+              124
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 335.0,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 54,
+            "second": 88,
+            "foreground": 180,
+            "distances": [
+              88,
+              119,
+              102,
+              54,
+              124
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 155.0,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 54,
+            "second": 91,
+            "foreground": 180,
+            "distances": [
+              91,
+              116,
+              102,
+              54,
+              124
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 25.0,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 54,
+            "second": 92,
+            "foreground": 180,
+            "distances": [
+              92,
+              119,
+              100,
+              54,
+              120
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "umbrella": {
+        "count": 432,
+        "passed": 403,
+        "rejected": 29,
+        "misclassified": 0,
+        "maximum_best": 58,
+        "minimum_margin": 35,
+        "worst_cases": [
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 145.0,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 58,
+            "second": 94,
+            "foreground": 184,
+            "distances": [
+              130,
+              94,
+              130,
+              139,
+              58
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 55.0,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 51,
+            "second": 94,
+            "foreground": 184,
+            "distances": [
+              124,
+              94,
+              130,
+              135,
+              51
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 315.0,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 47,
+            "second": 82,
+            "foreground": 149,
+            "distances": [
+              136,
+              82,
+              124,
+              130,
+              47
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 135.0,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 47,
+            "second": 103,
+            "foreground": 174,
+            "distances": [
+              123,
+              103,
+              115,
+              123,
+              47
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "angle_step": 10,
+    "variants_per_angle": 3,
+    "variants_per_class": 108,
+    "bits": 216000,
+    "count": 2160,
+    "passed": 2035,
+    "classes": {
+      "apple": {
+        "count": 432,
+        "passed": 430,
+        "rejected": 2,
+        "misclassified": 0,
+        "maximum_best": 43,
+        "minimum_margin": 36,
+        "worst_cases": [
+          {
+            "truth_item": 10,
+            "size_bp": 67,
+            "angle": 85.0,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 43,
+            "second": 111,
+            "foreground": 285,
+            "distances": [
+              43,
+              142,
+              127,
+              111,
+              143
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 10,
+            "size_bp": 67,
+            "angle": 175.0,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 43,
+            "second": 111,
+            "foreground": 285,
+            "distances": [
+              43,
+              141,
+              127,
+              111,
+              143
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 10,
+            "size_bp": 51,
+            "angle": 125.0,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 10,
+            "best": 36,
+            "second": 77,
+            "foreground": 229,
+            "distances": [
+              36,
+              117,
+              98,
+              77,
+              110
+            ],
+            "truth_satisfied": true
+          },
+          {
+            "truth_item": 10,
+            "size_bp": 51,
+            "angle": 205.0,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 10,
+            "best": 36,
+            "second": 85,
+            "foreground": 253,
+            "distances": [
+              36,
+              123,
+              111,
+              85,
+              123
+            ],
+            "truth_satisfied": true
+          }
+        ]
+      },
+      "banana": {
+        "count": 432,
+        "passed": 431,
+        "rejected": 1,
+        "misclassified": 0,
+        "maximum_best": 40,
+        "minimum_margin": 23,
+        "worst_cases": [
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 215.0,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 40,
+            "second": 63,
+            "foreground": 158,
+            "distances": [
+              114,
+              40,
+              108,
+              131,
+              63
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 55.0,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 11,
+            "best": 38,
+            "second": 73,
+            "foreground": 152,
+            "distances": [
+              133,
+              38,
+              114,
+              147,
+              73
+            ],
+            "truth_satisfied": true
+          },
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 325.0,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 11,
+            "best": 38,
+            "second": 74,
+            "foreground": 152,
+            "distances": [
+              133,
+              38,
+              114,
+              151,
+              74
+            ],
+            "truth_satisfied": true
+          },
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 145.0,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 11,
+            "best": 36,
+            "second": 81,
+            "foreground": 152,
+            "distances": [
+              123,
+              36,
+              114,
+              151,
+              81
+            ],
+            "truth_satisfied": true
+          }
+        ]
+      },
+      "car": {
+        "count": 432,
+        "passed": 333,
+        "rejected": 99,
+        "misclassified": 0,
+        "maximum_best": 61,
+        "minimum_margin": 42,
+        "worst_cases": [
+          {
+            "truth_item": 12,
+            "size_bp": 51,
+            "angle": 45.0,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 61,
+            "second": 115,
+            "foreground": 241,
+            "distances": [
+              115,
+              138,
+              61,
+              157,
+              138
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 12,
+            "size_bp": 51,
+            "angle": 135.0,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 61,
+            "second": 117,
+            "foreground": 241,
+            "distances": [
+              117,
+              133,
+              61,
+              157,
+              138
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 12,
+            "size_bp": 51,
+            "angle": 315.0,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 0,
+            "best": 61,
+            "second": 117,
+            "foreground": 241,
+            "distances": [
+              117,
+              137,
+              61,
+              157,
+              138
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 12,
+            "size_bp": 51,
+            "angle": 135.0,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 57,
+            "second": 110,
+            "foreground": 242,
+            "distances": [
+              110,
+              121,
+              57,
+              166,
+              139
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "star": {
+        "count": 432,
+        "passed": 424,
+        "rejected": 8,
+        "misclassified": 0,
+        "maximum_best": 54,
+        "minimum_margin": 30,
+        "worst_cases": [
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 245.0,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 54,
+            "second": 85,
+            "foreground": 180,
+            "distances": [
+              85,
+              111,
+              102,
+              54,
+              122
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 335.0,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 54,
+            "second": 88,
+            "foreground": 180,
+            "distances": [
+              88,
+              116,
+              102,
+              54,
+              122
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 155.0,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 54,
+            "second": 91,
+            "foreground": 180,
+            "distances": [
+              91,
+              116,
+              102,
+              54,
+              122
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 25.0,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 54,
+            "second": 92,
+            "foreground": 180,
+            "distances": [
+              92,
+              119,
+              100,
+              54,
+              120
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "umbrella": {
+        "count": 432,
+        "passed": 417,
+        "rejected": 15,
+        "misclassified": 0,
+        "maximum_best": 47,
+        "minimum_margin": 35,
+        "worst_cases": [
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 315.0,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 47,
+            "second": 82,
+            "foreground": 149,
+            "distances": [
+              136,
+              82,
+              124,
+              122,
+              47
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 55.0,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 45,
+            "second": 93,
+            "foreground": 184,
+            "distances": [
+              124,
+              93,
+              130,
+              129,
+              45
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 145.0,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 45,
+            "second": 94,
+            "foreground": 184,
+            "distances": [
+              126,
+              94,
+              130,
+              129,
+              45
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 325.0,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 44,
+            "second": 88,
+            "foreground": 184,
+            "distances": [
+              119,
+              88,
+              130,
+              129,
+              44
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "angle_step": 5,
+    "variants_per_angle": 2,
+    "variants_per_class": 144,
+    "bits": 288000,
+    "count": 4320,
+    "passed": 4240,
+    "classes": {
+      "apple": {
+        "count": 864,
+        "passed": 862,
+        "rejected": 2,
+        "misclassified": 0,
+        "maximum_best": 41,
+        "minimum_margin": 40,
+        "worst_cases": [
+          {
+            "truth_item": 10,
+            "size_bp": 67,
+            "angle": 262.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 41,
+            "second": 106,
+            "foreground": 282,
+            "distances": [
+              41,
+              136,
+              125,
+              106,
+              140
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 10,
+            "size_bp": 67,
+            "angle": 352.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 41,
+            "second": 115,
+            "foreground": 282,
+            "distances": [
+              41,
+              136,
+              128,
+              115,
+              140
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 10,
+            "size_bp": 67,
+            "angle": 267.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 10,
+            "best": 38,
+            "second": 113,
+            "foreground": 278,
+            "distances": [
+              38,
+              133,
+              122,
+              113,
+              138
+            ],
+            "truth_satisfied": true
+          },
+          {
+            "truth_item": 10,
+            "size_bp": 67,
+            "angle": 357.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 10,
+            "best": 38,
+            "second": 113,
+            "foreground": 278,
+            "distances": [
+              38,
+              137,
+              122,
+              113,
+              138
+            ],
+            "truth_satisfied": true
+          }
+        ]
+      },
+      "banana": {
+        "count": 864,
+        "passed": 864,
+        "rejected": 0,
+        "misclassified": 0,
+        "maximum_best": 36,
+        "minimum_margin": 33,
+        "worst_cases": [
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 167.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 11,
+            "best": 36,
+            "second": 88,
+            "foreground": 157,
+            "distances": [
+              111,
+              36,
+              113,
+              121,
+              88
+            ],
+            "truth_satisfied": true
+          },
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 127.5,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 11,
+            "best": 34,
+            "second": 72,
+            "foreground": 152,
+            "distances": [
+              117,
+              34,
+              108,
+              127,
+              72
+            ],
+            "truth_satisfied": true
+          },
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 217.5,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 11,
+            "best": 33,
+            "second": 69,
+            "foreground": 152,
+            "distances": [
+              118,
+              33,
+              102,
+              134,
+              69
+            ],
+            "truth_satisfied": true
+          },
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 267.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 11,
+            "best": 33,
+            "second": 88,
+            "foreground": 171,
+            "distances": [
+              105,
+              33,
+              97,
+              104,
+              88
+            ],
+            "truth_satisfied": true
+          }
+        ]
+      },
+      "car": {
+        "count": 864,
+        "passed": 820,
+        "rejected": 44,
+        "misclassified": 0,
+        "maximum_best": 48,
+        "minimum_margin": 47,
+        "worst_cases": [
+          {
+            "truth_item": 12,
+            "size_bp": 51,
+            "angle": 142.5,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 48,
+            "second": 110,
+            "foreground": 204,
+            "distances": [
+              110,
+              111,
+              48,
+              131,
+              119
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 12,
+            "size_bp": 51,
+            "angle": 322.5,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 48,
+            "second": 110,
+            "foreground": 204,
+            "distances": [
+              110,
+              114,
+              48,
+              131,
+              119
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 12,
+            "size_bp": 51,
+            "angle": 327.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 47,
+            "second": 103,
+            "foreground": 179,
+            "distances": [
+              103,
+              109,
+              47,
+              108,
+              116
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 12,
+            "size_bp": 51,
+            "angle": 237.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 47,
+            "second": 104,
+            "foreground": 179,
+            "distances": [
+              105,
+              108,
+              47,
+              104,
+              111
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "star": {
+        "count": 864,
+        "passed": 853,
+        "rejected": 11,
+        "misclassified": 0,
+        "maximum_best": 45,
+        "minimum_margin": 32,
+        "worst_cases": [
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 317.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 45,
+            "second": 77,
+            "foreground": 172,
+            "distances": [
+              77,
+              103,
+              90,
+              45,
+              113
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 137.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 45,
+            "second": 78,
+            "foreground": 172,
+            "distances": [
+              78,
+              109,
+              91,
+              45,
+              113
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 42.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 43,
+            "second": 86,
+            "foreground": 172,
+            "distances": [
+              86,
+              113,
+              88,
+              43,
+              116
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 222.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 43,
+            "second": 87,
+            "foreground": 172,
+            "distances": [
+              87,
+              113,
+              90,
+              43,
+              112
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "umbrella": {
+        "count": 864,
+        "passed": 841,
+        "rejected": 23,
+        "misclassified": 0,
+        "maximum_best": 50,
+        "minimum_margin": 26,
+        "worst_cases": [
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 217.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 50,
+            "second": 76,
+            "foreground": 169,
+            "distances": [
+              126,
+              76,
+              129,
+              128,
+              50
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 307.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 48,
+            "second": 74,
+            "foreground": 169,
+            "distances": [
+              126,
+              74,
+              117,
+              124,
+              48
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 127.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 48,
+            "second": 76,
+            "foreground": 169,
+            "distances": [
+              126,
+              76,
+              117,
+              124,
+              48
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 14,
+            "size_bp": 67,
+            "angle": 307.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 48,
+            "second": 79,
+            "foreground": 164,
+            "distances": [
+              122,
+              79,
+              105,
+              111,
+              48
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "angle_step": 5,
+    "variants_per_angle": 3,
+    "variants_per_class": 216,
+    "bits": 432000,
+    "count": 4320,
+    "passed": 4264,
+    "classes": {
+      "apple": {
+        "count": 864,
+        "passed": 863,
+        "rejected": 1,
+        "misclassified": 0,
+        "maximum_best": 41,
+        "minimum_margin": 36,
+        "worst_cases": [
+          {
+            "truth_item": 10,
+            "size_bp": 67,
+            "angle": 262.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 41,
+            "second": 102,
+            "foreground": 282,
+            "distances": [
+              41,
+              136,
+              118,
+              102,
+              140
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 10,
+            "size_bp": 67,
+            "angle": 67.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 10,
+            "best": 38,
+            "second": 115,
+            "foreground": 286,
+            "distances": [
+              38,
+              139,
+              119,
+              115,
+              137
+            ],
+            "truth_satisfied": true
+          },
+          {
+            "truth_item": 10,
+            "size_bp": 67,
+            "angle": 157.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 10,
+            "best": 38,
+            "second": 115,
+            "foreground": 286,
+            "distances": [
+              38,
+              139,
+              126,
+              115,
+              137
+            ],
+            "truth_satisfied": true
+          },
+          {
+            "truth_item": 10,
+            "size_bp": 67,
+            "angle": 272.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 10,
+            "best": 36,
+            "second": 99,
+            "foreground": 285,
+            "distances": [
+              36,
+              138,
+              123,
+              99,
+              141
+            ],
+            "truth_satisfied": true
+          }
+        ]
+      },
+      "banana": {
+        "count": 864,
+        "passed": 864,
+        "rejected": 0,
+        "misclassified": 0,
+        "maximum_best": 33,
+        "minimum_margin": 38,
+        "worst_cases": [
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 267.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 11,
+            "best": 33,
+            "second": 88,
+            "foreground": 171,
+            "distances": [
+              101,
+              33,
+              91,
+              104,
+              88
+            ],
+            "truth_satisfied": true
+          },
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 72.5,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 11,
+            "best": 32,
+            "second": 88,
+            "foreground": 196,
+            "distances": [
+              138,
+              32,
+              115,
+              161,
+              88
+            ],
+            "truth_satisfied": true
+          },
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 342.5,
+            "phase_x": 0,
+            "phase_y": 0,
+            "item": 11,
+            "best": 32,
+            "second": 88,
+            "foreground": 196,
+            "distances": [
+              132,
+              32,
+              115,
+              161,
+              88
+            ],
+            "truth_satisfied": true
+          },
+          {
+            "truth_item": 11,
+            "size_bp": 51,
+            "angle": 217.5,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 11,
+            "best": 31,
+            "second": 69,
+            "foreground": 152,
+            "distances": [
+              115,
+              31,
+              102,
+              127,
+              69
+            ],
+            "truth_satisfied": true
+          }
+        ]
+      },
+      "car": {
+        "count": 864,
+        "passed": 833,
+        "rejected": 31,
+        "misclassified": 0,
+        "maximum_best": 47,
+        "minimum_margin": 45,
+        "worst_cases": [
+          {
+            "truth_item": 12,
+            "size_bp": 51,
+            "angle": 327.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 47,
+            "second": 95,
+            "foreground": 179,
+            "distances": [
+              95,
+              109,
+              47,
+              104,
+              111
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 12,
+            "size_bp": 51,
+            "angle": 237.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 47,
+            "second": 103,
+            "foreground": 179,
+            "distances": [
+              103,
+              108,
+              47,
+              104,
+              111
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 12,
+            "size_bp": 51,
+            "angle": 57.5,
+            "phase_x": 1,
+            "phase_y": 1,
+            "item": 0,
+            "best": 46,
+            "second": 99,
+            "foreground": 175,
+            "distances": [
+              105,
+              99,
+              46,
+              112,
+              118
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 12,
+            "size_bp": 51,
+            "angle": 132.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 45,
+            "second": 126,
+            "foreground": 234,
+            "distances": [
+              126,
+              139,
+              45,
+              163,
+              134
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "star": {
+        "count": 864,
+        "passed": 856,
+        "rejected": 8,
+        "misclassified": 0,
+        "maximum_best": 45,
+        "minimum_margin": 32,
+        "worst_cases": [
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 317.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 45,
+            "second": 77,
+            "foreground": 172,
+            "distances": [
+              77,
+              103,
+              90,
+              45,
+              113
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 137.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 45,
+            "second": 78,
+            "foreground": 172,
+            "distances": [
+              78,
+              108,
+              91,
+              45,
+              113
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 42.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 43,
+            "second": 80,
+            "foreground": 172,
+            "distances": [
+              80,
+              110,
+              85,
+              43,
+              116
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 13,
+            "size_bp": 51,
+            "angle": 222.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 43,
+            "second": 86,
+            "foreground": 172,
+            "distances": [
+              86,
+              112,
+              90,
+              43,
+              112
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      },
+      "umbrella": {
+        "count": 864,
+        "passed": 848,
+        "rejected": 16,
+        "misclassified": 0,
+        "maximum_best": 48,
+        "minimum_margin": 26,
+        "worst_cases": [
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 307.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 48,
+            "second": 74,
+            "foreground": 169,
+            "distances": [
+              126,
+              74,
+              117,
+              124,
+              48
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 127.5,
+            "phase_x": 0,
+            "phase_y": 1,
+            "item": 0,
+            "best": 48,
+            "second": 76,
+            "foreground": 169,
+            "distances": [
+              126,
+              76,
+              117,
+              124,
+              48
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 217.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 47,
+            "second": 76,
+            "foreground": 169,
+            "distances": [
+              126,
+              76,
+              117,
+              124,
+              47
+            ],
+            "truth_satisfied": false
+          },
+          {
+            "truth_item": 14,
+            "size_bp": 51,
+            "angle": 37.5,
+            "phase_x": 1,
+            "phase_y": 0,
+            "item": 0,
+            "best": 45,
+            "second": 74,
+            "foreground": 169,
+            "distances": [
+              126,
+              74,
+              117,
+              124,
+              45
+            ],
+            "truth_satisfied": false
+          }
+        ]
+      }
+    }
+  }
+]

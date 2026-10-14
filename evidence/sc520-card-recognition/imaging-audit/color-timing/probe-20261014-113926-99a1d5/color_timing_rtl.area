@@ -1,0 +1,40 @@
+standard
+***Report Model: color_timing_top Device: PH1P35MDG324***
+
+IO Statistics
+#IO                        24
+  #input                   13
+  #output                  11
+  #inout                    0
+
+Gate Statistics
+#Basic gates             2605
+  #and                    101
+  #nand                     0
+  #or                      11
+  #nor                      0
+  #xor                     88
+  #xnor                     0
+  #buf                      0
+  #not                     81
+  #bufif1                   0
+  #MX21                   826
+  #FADD                     0
+  #DFF                   1498
+  #LATCH                    0
+#MACRO_ADD                217
+#MACRO_EQ                  24
+#MACRO_MULT                10
+#MACRO_MUX               1017
+#MACRO_OTHERS               1
+
+Report Hierarchy Area:
++-------------------------------------------------------------------------------------------+
+|Instance                             |Module                       |gates  |seq    |macros |
++-------------------------------------------------------------------------------------------+
+|top                                  |color_timing_top             |1107   |1498   |252    |
+|  u_color                            |pixel14_color_pipeline       |1018   |1394   |252    |
+|    delay_pixels                     |signal_delay                 |27     |163    |15     |
+|      blk_mem_gen_awb_delay_signal_d |blk_mem_gen_awb_delay_signal |2      |0      |1      |
+|        ram_f84573da5ab5_Inst        |ram_f84573da5ab5             |0      |0      |1      |
++-------------------------------------------------------------------------------------------+

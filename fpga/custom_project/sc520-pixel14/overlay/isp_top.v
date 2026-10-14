@@ -1,4 +1,7 @@
-module isp_top (
+module isp_top #(
+    parameter integer COLOR_CORRECTION=1,
+    parameter integer TONE_ENABLE=1
+) (
     output wire [95:0] O_rgb96_data,
     output wire O_rgb96_sof,O_rgb96_eol,O_rgb96_valid,
     input 			axi4s_video_aclk,
@@ -80,6 +83,15 @@ data128_96 u_data128_96 (
     .O_tdata(m_aixs_tdata_96)
 );
 
+generate if(COLOR_CORRECTION) begin : corrected_color
+pixel14_color_pipeline #(.IMG_HEIGHT(720),.IMG_WIDTH(1280),.WB_ENABLE(1),.TONE_ENABLE(TONE_ENABLE)) u_color (
+    .I_clk(axi4s_video_aclk),.I_rst_n(I_rst_n),
+    .I_tlast(m_aixs_tlast),.I_tuser(m_aixs_tuser),
+    .I_tdata(m_aixs_tdata_96),.I_tvalid(m_aixs_tvalid),.I_tready(m_aixs_tready),
+    .O_tlast(awb_O_tlast),.O_tuser(awb_O_tuser),.O_tdata(awb_O_tdata),
+    .O_tvalid(awb_O_tvalid),.O_tready(awb_O_tready)
+);
+end else begin : legacy_color
 awb #(
     .IMG_HEIGHT(720 ),
     .IMG_WIDTH (1280)
@@ -97,6 +109,7 @@ awb #(
     .O_tvalid(awb_O_tvalid),
     .O_tready(awb_O_tready)
 );
+end endgenerate
 
     data_96bit_to_128bit u_data_96bit_to_128bit(
         .I_clk              ( axi4s_video_aclk  ),

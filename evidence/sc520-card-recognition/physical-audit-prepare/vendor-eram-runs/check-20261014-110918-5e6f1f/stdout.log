@@ -1,0 +1,160 @@
+Reading D:/modeltech64_10.7/tcl/vsim/pref.tcl
+
+# 10.7
+
+# do run.do
+# Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+# vmap work work 
+# Modifying E:\juan\FPGA\worktrees\anlogic-kids-learning-machine\sc520-card-recognition\evidence\sc520-card-recognition\physical-audit-prepare\vendor-eram-runs\check-20261014-110918-5e6f1f\modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 11:09:20 on Oct 14,2026
+# vlog ph1p_phy_gsr.v ph1p_phy_eram_v2.v 
+# -- Compiling module PH1P_PHY_GSR
+# -- Compiling module PH1P_PHY_ERAM_V2
+# 
+# Top level modules:
+# 	PH1P_PHY_GSR
+# 	PH1P_PHY_ERAM_V2
+# End time: 11:09:21 on Oct 14,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 11:09:21 on Oct 14,2026
+# vlog -sv tb_vendor_eram.sv 
+# -- Compiling module tb_vendor_eram
+# 
+# Top level modules:
+# 	tb_vendor_eram
+# End time: 11:09:21 on Oct 14,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -wlf wave.wlf work.tb_vendor_eram work.PH1P_PHY_GSR 
+# Start time: 11:09:21 on Oct 14,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: tb_vendor_eram.sv(87): (vopt-2685) [TFMPC] - Too few port connections for 'ram1'.  Expected 35, found 20.
+# ** Warning: tb_vendor_eram.sv(87): (vopt-2718) [TFMPC] - Missing connection for port 'probe_redmeet_pb'.
+# ** Warning: tb_vendor_eram.sv(87): (vopt-2718) [TFMPC] - Missing connection for port 'probe_redmeet_pa'.
+# ** Warning: tb_vendor_eram.sv(87): (vopt-2718) [TFMPC] - Missing connection for port 'pib_rst_redmeet_n'.
+# ** Warning: tb_vendor_eram.sv(87): (vopt-2718) [TFMPC] - Missing connection for port 'addrb_casout'.
+# ** Warning: tb_vendor_eram.sv(87): (vopt-2718) [TFMPC] - Missing connection for port 'addra_casout'.
+# ** Warning: tb_vendor_eram.sv(87): (vopt-2718) [TFMPC] - Missing connection for port 'addrb_casin'.
+# ** Warning: tb_vendor_eram.sv(87): (vopt-2718) [TFMPC] - Missing connection for port 'addra_casin'.
+# ** Warning: tb_vendor_eram.sv(87): (vopt-2718) [TFMPC] - Missing connection for port 'fifoctrl_re'.
+# ** Warning: tb_vendor_eram.sv(87): (vopt-2718) [TFMPC] - Missing connection for port 'fifoctrl_we'.
+# ** Warning: tb_vendor_eram.sv(87): (vopt-2718) [TFMPC] - Missing connection for port 'fifoctrl_raddr'.
+# ** Warning: tb_vendor_eram.sv(87): (vopt-2718) [TFMPC] - Missing connection for port 'fifoctrl_waddr'.
+# ** Warning: tb_vendor_eram.sv(87): (vopt-2718) [TFMPC] - Missing connection for port 'ecc_dbiterrinj'.
+# ** Warning: tb_vendor_eram.sv(87): (vopt-2718) [TFMPC] - Missing connection for port 'ecc_sbiterrinj'.
+# ** Warning: tb_vendor_eram.sv(87): (vopt-2718) [TFMPC] - Missing connection for port 'ecc_dbiterr'.
+# ** Warning: tb_vendor_eram.sv(87): (vopt-2718) [TFMPC] - Missing connection for port 'ecc_sbiterr'.
+# ** Warning: tb_vendor_eram.sv(171): (vopt-2685) [TFMPC] - Too few port connections for 'ram2'.  Expected 35, found 20.
+# ** Warning: tb_vendor_eram.sv(171): (vopt-2718) [TFMPC] - Missing connection for port 'probe_redmeet_pb'.
+# ** Warning: tb_vendor_eram.sv(171): (vopt-2718) [TFMPC] - Missing connection for port 'probe_redmeet_pa'.
+# ** Warning: tb_vendor_eram.sv(171): (vopt-2718) [TFMPC] - Missing connection for port 'pib_rst_redmeet_n'.
+# ** Warning: tb_vendor_eram.sv(171): (vopt-2718) [TFMPC] - Missing connection for port 'addrb_casout'.
+# ** Warning: tb_vendor_eram.sv(171): (vopt-2718) [TFMPC] - Missing connection for port 'addra_casout'.
+# ** Warning: tb_vendor_eram.sv(171): (vopt-2718) [TFMPC] - Missing connection for port 'addrb_casin'.
+# ** Warning: tb_vendor_eram.sv(171): (vopt-2718) [TFMPC] - Missing connection for port 'addra_casin'.
+# ** Warning: tb_vendor_eram.sv(171): (vopt-2718) [TFMPC] - Missing connection for port 'fifoctrl_re'.
+# ** Warning: tb_vendor_eram.sv(171): (vopt-2718) [TFMPC] - Missing connection for port 'fifoctrl_we'.
+# ** Warning: tb_vendor_eram.sv(171): (vopt-2718) [TFMPC] - Missing connection for port 'fifoctrl_raddr'.
+# ** Warning: tb_vendor_eram.sv(171): (vopt-2718) [TFMPC] - Missing connection for port 'fifoctrl_waddr'.
+# ** Warning: tb_vendor_eram.sv(171): (vopt-2718) [TFMPC] - Missing connection for port 'ecc_dbiterrinj'.
+# ** Warning: tb_vendor_eram.sv(171): (vopt-2718) [TFMPC] - Missing connection for port 'ecc_sbiterrinj'.
+# ** Warning: tb_vendor_eram.sv(171): (vopt-2718) [TFMPC] - Missing connection for port 'ecc_dbiterr'.
+# ** Warning: tb_vendor_eram.sv(171): (vopt-2718) [TFMPC] - Missing connection for port 'ecc_sbiterr'.
+# ** Warning: tb_vendor_eram.sv(255): (vopt-2685) [TFMPC] - Too few port connections for 'ram5'.  Expected 35, found 20.
+# ** Warning: tb_vendor_eram.sv(255): (vopt-2718) [TFMPC] - Missing connection for port 'probe_redmeet_pb'.
+# ** Warning: tb_vendor_eram.sv(255): (vopt-2718) [TFMPC] - Missing connection for port 'probe_redmeet_pa'.
+# ** Warning: tb_vendor_eram.sv(255): (vopt-2718) [TFMPC] - Missing connection for port 'pib_rst_redmeet_n'.
+# ** Warning: tb_vendor_eram.sv(255): (vopt-2718) [TFMPC] - Missing connection for port 'addrb_casout'.
+# ** Warning: tb_vendor_eram.sv(255): (vopt-2718) [TFMPC] - Missing connection for port 'addra_casout'.
+# ** Warning: tb_vendor_eram.sv(255): (vopt-2718) [TFMPC] - Missing connection for port 'addrb_casin'.
+# ** Warning: tb_vendor_eram.sv(255): (vopt-2718) [TFMPC] - Missing connection for port 'addra_casin'.
+# ** Warning: tb_vendor_eram.sv(255): (vopt-2718) [TFMPC] - Missing connection for port 'fifoctrl_re'.
+# ** Warning: tb_vendor_eram.sv(255): (vopt-2718) [TFMPC] - Missing connection for port 'fifoctrl_we'.
+# ** Warning: tb_vendor_eram.sv(255): (vopt-2718) [TFMPC] - Missing connection for port 'fifoctrl_raddr'.
+# ** Warning: tb_vendor_eram.sv(255): (vopt-2718) [TFMPC] - Missing connection for port 'fifoctrl_waddr'.
+# ** Warning: tb_vendor_eram.sv(255): (vopt-2718) [TFMPC] - Missing connection for port 'ecc_dbiterrinj'.
+# ** Warning: tb_vendor_eram.sv(255): (vopt-2718) [TFMPC] - Missing connection for port 'ecc_sbiterrinj'.
+# ** Warning: tb_vendor_eram.sv(255): (vopt-2718) [TFMPC] - Missing connection for port 'ecc_dbiterr'.
+# ** Warning: tb_vendor_eram.sv(255): (vopt-2718) [TFMPC] - Missing connection for port 'ecc_sbiterr'.
+# ** Warning: tb_vendor_eram.sv(339): (vopt-2685) [TFMPC] - Too few port connections for 'ram10'.  Expected 35, found 20.
+# ** Warning: tb_vendor_eram.sv(339): (vopt-2718) [TFMPC] - Missing connection for port 'probe_redmeet_pb'.
+# ** Warning: tb_vendor_eram.sv(339): (vopt-2718) [TFMPC] - Missing connection for port 'probe_redmeet_pa'.
+# ** Warning: tb_vendor_eram.sv(339): (vopt-2718) [TFMPC] - Missing connection for port 'pib_rst_redmeet_n'.
+# ** Warning: tb_vendor_eram.sv(339): (vopt-2718) [TFMPC] - Missing connection for port 'addrb_casout'.
+# ** Warning: tb_vendor_eram.sv(339): (vopt-2718) [TFMPC] - Missing connection for port 'addra_casout'.
+# ** Warning: tb_vendor_eram.sv(339): (vopt-2718) [TFMPC] - Missing connection for port 'addrb_casin'.
+# ** Warning: tb_vendor_eram.sv(339): (vopt-2718) [TFMPC] - Missing connection for port 'addra_casin'.
+# ** Warning: tb_vendor_eram.sv(339): (vopt-2718) [TFMPC] - Missing connection for port 'fifoctrl_re'.
+# ** Warning: tb_vendor_eram.sv(339): (vopt-2718) [TFMPC] - Missing connection for port 'fifoctrl_we'.
+# ** Warning: tb_vendor_eram.sv(339): (vopt-2718) [TFMPC] - Missing connection for port 'fifoctrl_raddr'.
+# ** Warning: tb_vendor_eram.sv(339): (vopt-2718) [TFMPC] - Missing connection for port 'fifoctrl_waddr'.
+# ** Warning: tb_vendor_eram.sv(339): (vopt-2718) [TFMPC] - Missing connection for port 'ecc_dbiterrinj'.
+# ** Warning: tb_vendor_eram.sv(339): (vopt-2718) [TFMPC] - Missing connection for port 'ecc_sbiterrinj'.
+# ** Warning: tb_vendor_eram.sv(339): (vopt-2718) [TFMPC] - Missing connection for port 'ecc_dbiterr'.
+# ** Warning: tb_vendor_eram.sv(339): (vopt-2718) [TFMPC] - Missing connection for port 'ecc_sbiterr'.
+# ** Warning: tb_vendor_eram.sv(423): (vopt-2685) [TFMPC] - Too few port connections for 'ram20'.  Expected 35, found 20.
+# ** Warning: tb_vendor_eram.sv(423): (vopt-2718) [TFMPC] - Missing connection for port 'probe_redmeet_pb'.
+# ** Warning: tb_vendor_eram.sv(423): (vopt-2718) [TFMPC] - Missing connection for port 'probe_redmeet_pa'.
+# ** Warning: tb_vendor_eram.sv(423): (vopt-2718) [TFMPC] - Missing connection for port 'pib_rst_redmeet_n'.
+# ** Warning: tb_vendor_eram.sv(423): (vopt-2718) [TFMPC] - Missing connection for port 'addrb_casout'.
+# ** Warning: tb_vendor_eram.sv(423): (vopt-2718) [TFMPC] - Missing connection for port 'addra_casout'.
+# ** Warning: tb_vendor_eram.sv(423): (vopt-2718) [TFMPC] - Missing connection for port 'addrb_casin'.
+# ** Warning: tb_vendor_eram.sv(423): (vopt-2718) [TFMPC] - Missing connection for port 'addra_casin'.
+# ** Warning: tb_vendor_eram.sv(423): (vopt-2718) [TFMPC] - Missing connection for port 'fifoctrl_re'.
+# ** Warning: tb_vendor_eram.sv(423): (vopt-2718) [TFMPC] - Missing connection for port 'fifoctrl_we'.
+# ** Warning: tb_vendor_eram.sv(423): (vopt-2718) [TFMPC] - Missing connection for port 'fifoctrl_raddr'.
+# ** Warning: tb_vendor_eram.sv(423): (vopt-2718) [TFMPC] - Missing connection for port 'fifoctrl_waddr'.
+# ** Warning: tb_vendor_eram.sv(423): (vopt-2718) [TFMPC] - Missing connection for port 'ecc_dbiterrinj'.
+# ** Warning: tb_vendor_eram.sv(423): (vopt-2718) [TFMPC] - Missing connection for port 'ecc_sbiterrinj'.
+# ** Warning: tb_vendor_eram.sv(423): (vopt-2718) [TFMPC] - Missing connection for port 'ecc_dbiterr'.
+# ** Warning: tb_vendor_eram.sv(423): (vopt-2718) [TFMPC] - Missing connection for port 'ecc_sbiterr'.
+# ** Warning: tb_vendor_eram.sv(507): (vopt-2685) [TFMPC] - Too few port connections for 'ram40'.  Expected 35, found 20.
+# ** Warning: tb_vendor_eram.sv(507): (vopt-2718) [TFMPC] - Missing connection for port 'probe_redmeet_pb'.
+# ** Warning: tb_vendor_eram.sv(507): (vopt-2718) [TFMPC] - Missing connection for port 'probe_redmeet_pa'.
+# ** Warning: tb_vendor_eram.sv(507): (vopt-2718) [TFMPC] - Missing connection for port 'pib_rst_redmeet_n'.
+# ** Warning: tb_vendor_eram.sv(507): (vopt-2718) [TFMPC] - Missing connection for port 'addrb_casout'.
+# ** Warning: tb_vendor_eram.sv(507): (vopt-2718) [TFMPC] - Missing connection for port 'addra_casout'.
+# ** Warning: tb_vendor_eram.sv(507): (vopt-2718) [TFMPC] - Missing connection for port 'addrb_casin'.
+# ** Warning: tb_vendor_eram.sv(507): (vopt-2718) [TFMPC] - Missing connection for port 'addra_casin'.
+# ** Warning: tb_vendor_eram.sv(507): (vopt-2718) [TFMPC] - Missing connection for port 'fifoctrl_re'.
+# ** Warning: tb_vendor_eram.sv(507): (vopt-2718) [TFMPC] - Missing connection for port 'fifoctrl_we'.
+# ** Warning: tb_vendor_eram.sv(507): (vopt-2718) [TFMPC] - Missing connection for port 'fifoctrl_raddr'.
+# ** Warning: tb_vendor_eram.sv(507): (vopt-2718) [TFMPC] - Missing connection for port 'fifoctrl_waddr'.
+# ** Warning: tb_vendor_eram.sv(507): (vopt-2718) [TFMPC] - Missing connection for port 'ecc_dbiterrinj'.
+# ** Warning: tb_vendor_eram.sv(507): (vopt-2718) [TFMPC] - Missing connection for port 'ecc_sbiterrinj'.
+# ** Warning: tb_vendor_eram.sv(507): (vopt-2718) [TFMPC] - Missing connection for port 'ecc_dbiterr'.
+# ** Warning: tb_vendor_eram.sv(507): (vopt-2718) [TFMPC] - Missing connection for port 'ecc_sbiterr'.
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_vendor_eram(fast)
+# Loading work.PH1P_PHY_ERAM_V2(fast)
+# Loading work.PH1P_PHY_ERAM_V2(fast__1)
+# Loading work.PH1P_PHY_ERAM_V2(fast__2)
+# Loading work.PH1P_PHY_ERAM_V2(fast__3)
+# Loading work.PH1P_PHY_ERAM_V2(fast__4)
+# Loading work.PH1P_PHY_ERAM_V2(fast__5)
+# Loading work.PH1P_PHY_GSR(fast)
+# ERAM_DONE checks=32256 errors=0
+# ** Note: $finish    : tb_vendor_eram.sv(518)
+#    Time: 163946 ns  Iteration: 0  Instance: /tb_vendor_eram
+# Break in Module tb_vendor_eram at tb_vendor_eram.sv line 518
+# Stopped at tb_vendor_eram.sv line 518
+# 0
+# 32256
+# 1
+# fileb222ef0
+# End time: 11:09:25 on Oct 14,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 96

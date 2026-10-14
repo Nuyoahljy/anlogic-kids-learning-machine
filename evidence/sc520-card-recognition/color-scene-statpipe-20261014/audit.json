@@ -1,0 +1,990 @@
+{
+  "created_at": "2026-10-14T11:41:43.962966+08:00",
+  "checks": 232,
+  "failed": 0,
+  "baseline": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046",
+  "changed_inputs": [
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\pixel14_color_pipeline.v",
+      "before": "3A2CEB5F9289A3B23D1CC8120B8375A385FB1D2E284933CAE68FFA2107FFC26F",
+      "after": "5020B23A8126103E0D1D5C9BB67DC8C93F55ED1C95B775FC1894B4D813420F31"
+    }
+  ],
+  "runs": [
+    {
+      "run": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-113622-2fe1c13c",
+      "qualified": true,
+      "native_exit": 0,
+      "summary": {
+        "errors": 0,
+        "checks": 27648252,
+        "scenarios": 8,
+        "done": 1,
+        "injected": 0,
+        "frames": 24
+      },
+      "elapsed_seconds": 174.31199999997625,
+      "input_count": 38
+    },
+    {
+      "run": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-negative-20261014-113622-791a2fcf",
+      "qualified": true,
+      "native_exit": 1,
+      "summary": {
+        "errors": 1,
+        "checks": 92,
+        "scenarios": 1,
+        "done": 1,
+        "injected": 1,
+        "frames": 1
+      },
+      "elapsed_seconds": 6.2189999999827705,
+      "input_count": 38
+    },
+    {
+      "run": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-watchdog-20261014-113622-0564ebcd",
+      "qualified": true,
+      "native_exit": 2,
+      "summary": {
+        "errors": 0,
+        "checks": 0,
+        "scenarios": 1,
+        "done": 0,
+        "injected": 0,
+        "frames": 0
+      },
+      "elapsed_seconds": 6.10899999999674,
+      "input_count": 38
+    }
+  ],
+  "details": [
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\pixel14_color_pipeline.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\signal_delay.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\ip_behavioral_models.sv",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\capture_rgb96.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\block_frame_recognizer.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_card_matcher.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_result_cdc.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_pipeline.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_card_template_rom.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_scene_preprocess.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_rotation_matcher.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_block_shape_guard.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_block_filter.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\card_matcher.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\card_template_rom.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\card_result_filter.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_content.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_font_rom.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_osd.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_question_bank.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_quiz_control.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_result_join.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_system.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\sim\\sc520-card-recognition\\tb_pixel14_color_scene.sv",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\simulate-color-scene.py",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\templates.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\manifest.json",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\fixtures.json",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r143_card_10_gain65_before.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r144_card_10_gain65_after.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r145_card_11_gain65_before.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r146_card_11_gain65_after.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r147_card_12_gain65_before.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r148_card_12_gain65_after.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r149_card_13_gain65_before.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r150_card_13_gain65_after.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r151_card_14_gain65_before.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r152_card_14_gain65_after.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-113622-2fe1c13c\\inputs\\mem\\card10_after.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-113622-2fe1c13c\\inputs\\mem\\card10_before.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-113622-2fe1c13c\\inputs\\mem\\card11_after.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-113622-2fe1c13c\\inputs\\mem\\card11_before.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-113622-2fe1c13c\\inputs\\mem\\card12_after.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-113622-2fe1c13c\\inputs\\mem\\card12_before.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-113622-2fe1c13c\\inputs\\mem\\card13_after.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-113622-2fe1c13c\\inputs\\mem\\card13_before.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-113622-2fe1c13c\\inputs\\mem\\card14_after.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-113622-2fe1c13c\\inputs\\mem\\card14_before.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-113622-2fe1c13c\\inputs\\cards.txt",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-113622-2fe1c13c\\inputs\\conversions.json",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-113622-2fe1c13c\\observations.csv",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-113622-2fe1c13c\\run-start.json",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-113622-2fe1c13c\\run.do",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-113622-2fe1c13c\\stderr.log",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-113622-2fe1c13c\\stdout.log",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-113622-2fe1c13c\\summary.json",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-113622-2fe1c13c\\templates.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-normal-20261014-113622-2fe1c13c output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-113622-2fe1c13c\\transcript.log",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\pixel14_color_pipeline.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\signal_delay.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\ip_behavioral_models.sv",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\capture_rgb96.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\block_frame_recognizer.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_card_matcher.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_result_cdc.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_pipeline.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_card_template_rom.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_scene_preprocess.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_rotation_matcher.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_block_shape_guard.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_block_filter.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\card_matcher.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\card_template_rom.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\card_result_filter.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_content.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_font_rom.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_osd.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_question_bank.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_quiz_control.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_result_join.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_system.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\sim\\sc520-card-recognition\\tb_pixel14_color_scene.sv",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\simulate-color-scene.py",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\templates.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\manifest.json",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\fixtures.json",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r143_card_10_gain65_before.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r144_card_10_gain65_after.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r145_card_11_gain65_before.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r146_card_11_gain65_after.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r147_card_12_gain65_before.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r148_card_12_gain65_after.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r149_card_13_gain65_before.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r150_card_13_gain65_after.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r151_card_14_gain65_before.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r152_card_14_gain65_after.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-negative-20261014-113622-791a2fcf\\inputs\\mem\\card10_after.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-negative-20261014-113622-791a2fcf\\inputs\\mem\\card10_before.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-negative-20261014-113622-791a2fcf\\inputs\\mem\\card11_after.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-negative-20261014-113622-791a2fcf\\inputs\\mem\\card11_before.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-negative-20261014-113622-791a2fcf\\inputs\\mem\\card12_after.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-negative-20261014-113622-791a2fcf\\inputs\\mem\\card12_before.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-negative-20261014-113622-791a2fcf\\inputs\\mem\\card13_after.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-negative-20261014-113622-791a2fcf\\inputs\\mem\\card13_before.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-negative-20261014-113622-791a2fcf\\inputs\\mem\\card14_after.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-negative-20261014-113622-791a2fcf\\inputs\\mem\\card14_before.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-negative-20261014-113622-791a2fcf\\inputs\\cards.txt",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-negative-20261014-113622-791a2fcf\\inputs\\conversions.json",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-negative-20261014-113622-791a2fcf\\observations.csv",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-negative-20261014-113622-791a2fcf\\run-start.json",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-negative-20261014-113622-791a2fcf\\run.do",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-negative-20261014-113622-791a2fcf\\stderr.log",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-negative-20261014-113622-791a2fcf\\stdout.log",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-negative-20261014-113622-791a2fcf\\summary.json",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-negative-20261014-113622-791a2fcf\\templates.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-negative-20261014-113622-791a2fcf output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-negative-20261014-113622-791a2fcf\\transcript.log",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\pixel14_color_pipeline.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\signal_delay.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\ip_behavioral_models.sv",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\capture_rgb96.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\block_frame_recognizer.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_card_matcher.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_result_cdc.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_pipeline.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_card_template_rom.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_scene_preprocess.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_rotation_matcher.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_block_shape_guard.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_block_filter.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\card_matcher.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\card_template_rom.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\card_result_filter.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_content.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_font_rom.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_osd.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_question_bank.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_quiz_control.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_result_join.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_system.v",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\sim\\sc520-card-recognition\\tb_pixel14_color_scene.sv",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\simulate-color-scene.py",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\templates.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\manifest.json",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\fixtures.json",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r143_card_10_gain65_before.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r144_card_10_gain65_after.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r145_card_11_gain65_before.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r146_card_11_gain65_after.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r147_card_12_gain65_before.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r148_card_12_gain65_after.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r149_card_13_gain65_before.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r150_card_13_gain65_after.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r151_card_14_gain65_before.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r152_card_14_gain65_after.png",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-watchdog-20261014-113622-0564ebcd\\inputs\\mem\\card10_after.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-watchdog-20261014-113622-0564ebcd\\inputs\\mem\\card10_before.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-watchdog-20261014-113622-0564ebcd\\inputs\\mem\\card11_after.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-watchdog-20261014-113622-0564ebcd\\inputs\\mem\\card11_before.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-watchdog-20261014-113622-0564ebcd\\inputs\\mem\\card12_after.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-watchdog-20261014-113622-0564ebcd\\inputs\\mem\\card12_before.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-watchdog-20261014-113622-0564ebcd\\inputs\\mem\\card13_after.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-watchdog-20261014-113622-0564ebcd\\inputs\\mem\\card13_before.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-watchdog-20261014-113622-0564ebcd\\inputs\\mem\\card14_after.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-watchdog-20261014-113622-0564ebcd\\inputs\\mem\\card14_before.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-watchdog-20261014-113622-0564ebcd\\inputs\\cards.txt",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-watchdog-20261014-113622-0564ebcd\\inputs\\conversions.json",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-watchdog-20261014-113622-0564ebcd\\observations.csv",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-watchdog-20261014-113622-0564ebcd\\run-start.json",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-watchdog-20261014-113622-0564ebcd\\run.do",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-watchdog-20261014-113622-0564ebcd\\stderr.log",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-watchdog-20261014-113622-0564ebcd\\stdout.log",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-watchdog-20261014-113622-0564ebcd\\summary.json",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-watchdog-20261014-113622-0564ebcd\\templates.mem",
+      "passed": true
+    },
+    {
+      "check": "p14-color-scene-watchdog-20261014-113622-0564ebcd output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-watchdog-20261014-113622-0564ebcd\\transcript.log",
+      "passed": true
+    },
+    {
+      "check": "same38 source paths",
+      "passed": true
+    },
+    {
+      "check": "only frozen color statistics source changed",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\pixel14_color_pipeline.v",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\signal_delay.v",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\ip_behavioral_models.sv",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\capture_rgb96.v",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\block_frame_recognizer.v",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\pixel14_card_matcher.v",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\pixel14_result_cdc.v",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\pixel14_pipeline.v",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\pixel14_card_template_rom.v",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\pixel14_scene_preprocess.v",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\pixel14_rotation_matcher.v",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\pixel14_block_shape_guard.v",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\pixel14_block_filter.v",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\card_matcher.v",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\card_template_rom.v",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\card_result_filter.v",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\items14_content.v",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\items14_font_rom.v",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\items14_osd.v",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\items14_question_bank.v",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\items14_quiz_control.v",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\items14_result_join.v",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\items14_system.v",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\tb_pixel14_color_scene.sv",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\simulate-color-scene.py",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\templates.mem",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\manifest.json",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\fixtures.json",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\pictures\\r143_card_10_gain65_before.png",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\pictures\\r144_card_10_gain65_after.png",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\pictures\\r145_card_11_gain65_before.png",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\pictures\\r146_card_11_gain65_after.png",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\pictures\\r147_card_12_gain65_before.png",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\pictures\\r148_card_12_gain65_after.png",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\pictures\\r149_card_13_gain65_before.png",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\pictures\\r150_card_13_gain65_after.png",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\pictures\\r151_card_14_gain65_before.png",
+      "passed": true
+    },
+    {
+      "check": "111 original frozen input E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\inputs\\pictures\\r152_card_14_gain65_after.png",
+      "passed": true
+    },
+    {
+      "check": "111 original output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\observations.csv",
+      "passed": true
+    },
+    {
+      "check": "111 original output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\run-start.json",
+      "passed": true
+    },
+    {
+      "check": "111 original output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\run.do",
+      "passed": true
+    },
+    {
+      "check": "111 original output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\stderr.log",
+      "passed": true
+    },
+    {
+      "check": "111 original output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\stdout.log",
+      "passed": true
+    },
+    {
+      "check": "111 original output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\summary.json",
+      "passed": true
+    },
+    {
+      "check": "111 original output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\templates.mem",
+      "passed": true
+    },
+    {
+      "check": "111 original output E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color-scene-normal-20261014-112236-86c86046\\transcript.log",
+      "passed": true
+    },
+    {
+      "check": "card10 original and reference data unchanged",
+      "passed": true
+    },
+    {
+      "check": "card11 original and reference data unchanged",
+      "passed": true
+    },
+    {
+      "check": "card12 original and reference data unchanged",
+      "passed": true
+    },
+    {
+      "check": "card13 original and reference data unchanged",
+      "passed": true
+    },
+    {
+      "check": "card14 original and reference data unchanged",
+      "passed": true
+    },
+    {
+      "check": "24complete rasters",
+      "passed": true
+    },
+    {
+      "check": "54cycle pixel latency and unit full-frame WB",
+      "passed": true
+    },
+    {
+      "check": "five cards confirmed by third actual frame",
+      "passed": true
+    },
+    {
+      "check": "same card does not reanswer",
+      "passed": true
+    },
+    {
+      "check": "whole observation CSV byte-for-byte equals111",
+      "passed": true
+    }
+  ]
+}

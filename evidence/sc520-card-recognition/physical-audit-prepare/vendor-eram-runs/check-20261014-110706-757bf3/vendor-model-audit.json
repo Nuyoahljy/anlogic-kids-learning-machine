@@ -1,0 +1,111 @@
+{
+  "Command": [
+    "D:\\modeltech64_10.7\\win64\\vsim.exe",
+    "-modelsimini",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\vendor-eram-runs\\check-20261014-110706-757bf3\\modelsim.ini",
+    "-c",
+    "-l",
+    "transcript.log",
+    "-do",
+    "do run.do"
+  ],
+  "NativeExit": 1,
+  "Summary": {
+    "errors": 512,
+    "checks": 32256,
+    "done": 1
+  },
+  "Inputs": [
+    {
+      "Path": "D:\\Anlogic\\TD_6.2.1_Engineer_6.2.168.116\\sim_release\\ph1p\\ph1p_phy_eram_v2.v",
+      "Bytes": 170158,
+      "SHA256": "231C1D717574B308531666C6DB18C27900E54EF1EB00FAA8F253D2D07B1A905E"
+    },
+    {
+      "Path": "D:\\Anlogic\\TD_6.2.1_Engineer_6.2.168.116\\sim_release\\ph1p\\ph1p_phy_gsr.v",
+      "Bytes": 4536,
+      "SHA256": "787312A19B4007BEF3B76986BCE267966B2D04C1871290CE29905629E38F1524"
+    }
+  ],
+  "Parser": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\tools\\audit-scene-build.py",
+    "Bytes": 16166,
+    "SHA256": "99A5D828AD0432B546A6E8FFE15E6B56FEABCDF738FFAF8C75F0879ED93D7E76"
+  },
+  "PhysicalWidth40Order": "low20=dob/dob_extra; high20=doa/doa_extra",
+  "Qualified": false,
+  "HardwareValidated": false,
+  "Scope": "Unmodified TD vendor functional ERAM model, randomized INIT and INITP, every initialized address at widths1/2/5/10/20/40.",
+  "Artifacts": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\vendor-eram-runs\\check-20261014-110706-757bf3\\expected1.mem",
+      "Bytes": 196608,
+      "SHA256": "871C841C560720C6AD23A0285EAFE0FA969749E0AADC8216E7978E313B5D7963"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\vendor-eram-runs\\check-20261014-110706-757bf3\\expected10.mem",
+      "Bytes": 24576,
+      "SHA256": "E3BCBF4A24900279BB365D90039115571830B71C9488D18895391B3E954B75FB"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\vendor-eram-runs\\check-20261014-110706-757bf3\\expected2.mem",
+      "Bytes": 98304,
+      "SHA256": "15CF8D714127AD6E1056A2E7AA57674957B7B29D2DF2F28CA9375212EBC88C42"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\vendor-eram-runs\\check-20261014-110706-757bf3\\expected20.mem",
+      "Bytes": 12288,
+      "SHA256": "1E8F372592A942B407544AAAF171981CAA5256F72C00445E1EE284F8CDB9FC92"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\vendor-eram-runs\\check-20261014-110706-757bf3\\expected40.mem",
+      "Bytes": 6144,
+      "SHA256": "0B86E60D20FBF6EDA016F3DC4F7A6E1DEAADDF194F41C248DD0D7D603024EAA8"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\vendor-eram-runs\\check-20261014-110706-757bf3\\expected5.mem",
+      "Bytes": 49152,
+      "SHA256": "E8BF049DD4A4E9A331BF55B3867A42BC3CF121D7A8B5AFB0966DC3D1D87B851C"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\vendor-eram-runs\\check-20261014-110706-757bf3\\ph1p_phy_eram_v2.v",
+      "Bytes": 170158,
+      "SHA256": "231C1D717574B308531666C6DB18C27900E54EF1EB00FAA8F253D2D07B1A905E"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\vendor-eram-runs\\check-20261014-110706-757bf3\\ph1p_phy_gsr.v",
+      "Bytes": 4536,
+      "SHA256": "787312A19B4007BEF3B76986BCE267966B2D04C1871290CE29905629E38F1524"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\vendor-eram-runs\\check-20261014-110706-757bf3\\run.do",
+      "Bytes": 615,
+      "SHA256": "47EDDFDB94BCB684950EEDBA841341D2F301FA4AC8E604C15CB27E37F6339DBE"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\vendor-eram-runs\\check-20261014-110706-757bf3\\stderr.log",
+      "Bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\vendor-eram-runs\\check-20261014-110706-757bf3\\stdout.log",
+      "Bytes": 15963,
+      "SHA256": "B53F44B4283B3B39C6147B9A4BAD949844729196DD37A82FFC07E58B94198D92"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\vendor-eram-runs\\check-20261014-110706-757bf3\\summary.json",
+      "Bytes": 40,
+      "SHA256": "138426620E0140694B1E6606D537E9473716A56C9EC717CDFA2FF2583635D56B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\vendor-eram-runs\\check-20261014-110706-757bf3\\tb_vendor_eram.sv",
+      "Bytes": 45078,
+      "SHA256": "F22052077FE547B9DE62C8EBC1D5E40AA9C9FAE888D07CA8D9571450D33A2F27"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\vendor-eram-runs\\check-20261014-110706-757bf3\\transcript.log",
+      "Bytes": 15904,
+      "SHA256": "B4E61E497CF60E5425EC2F75D69A6CF8582362CE437EB1E6941C684130DA42ED"
+    }
+  ]
+}

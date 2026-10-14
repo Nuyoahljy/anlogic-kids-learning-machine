@@ -1,0 +1,7165 @@
+[
+  {
+    "index": 0,
+    "name": "analytic_shape_1",
+    "kind": "analytic",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      0,
+      84,
+      168
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 1,
+    "name": "analytic_shape_1_flip1",
+    "kind": "threshold_boundary",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      1,
+      85,
+      169
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 2,
+    "name": "analytic_shape_1_flip19",
+    "kind": "threshold_boundary",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      19,
+      103,
+      187
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 3,
+    "name": "analytic_shape_1_flip20",
+    "kind": "threshold_boundary",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      20,
+      104,
+      188
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 4,
+    "name": "analytic_shape_1_flip21",
+    "kind": "threshold_boundary",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      21,
+      105,
+      189
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 5,
+    "name": "analytic_shape_1_flip40",
+    "kind": "threshold_boundary",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      40,
+      124,
+      208
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 6,
+    "name": "analytic_shape_2",
+    "kind": "analytic",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 7,
+    "name": "analytic_shape_2_flip1",
+    "kind": "threshold_boundary",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      85,
+      1,
+      201
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 8,
+    "name": "analytic_shape_2_flip19",
+    "kind": "threshold_boundary",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      103,
+      19,
+      219
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 9,
+    "name": "analytic_shape_2_flip20",
+    "kind": "threshold_boundary",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      104,
+      20,
+      220
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 10,
+    "name": "analytic_shape_2_flip21",
+    "kind": "threshold_boundary",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      105,
+      21,
+      221
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 11,
+    "name": "analytic_shape_2_flip40",
+    "kind": "threshold_boundary",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      124,
+      40,
+      240
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 12,
+    "name": "analytic_shape_3",
+    "kind": "analytic",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      168,
+      200,
+      0
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 3
+  },
+  {
+    "index": 13,
+    "name": "analytic_shape_3_flip1",
+    "kind": "threshold_boundary",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      169,
+      201,
+      1
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 3
+  },
+  {
+    "index": 14,
+    "name": "analytic_shape_3_flip19",
+    "kind": "threshold_boundary",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      187,
+      219,
+      19
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 3
+  },
+  {
+    "index": 15,
+    "name": "analytic_shape_3_flip20",
+    "kind": "threshold_boundary",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      188,
+      220,
+      20
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 3
+  },
+  {
+    "index": 16,
+    "name": "analytic_shape_3_flip21",
+    "kind": "threshold_boundary",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      189,
+      221,
+      21
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 17,
+    "name": "analytic_shape_3_flip40",
+    "kind": "threshold_boundary",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      208,
+      240,
+      40
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 18,
+    "name": "empty",
+    "kind": "negative",
+    "block_item": 0,
+    "truth_item": 0,
+    "distance": [
+      316,
+      400,
+      200
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 19,
+    "name": "full1024",
+    "kind": "negative",
+    "block_item": 0,
+    "truth_item": 0,
+    "distance": [
+      708,
+      624,
+      824
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 20,
+    "name": "shape_1_hole8",
+    "kind": "hole_negative",
+    "block_item": 1,
+    "truth_item": 0,
+    "distance": [
+      64,
+      148,
+      228
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 21,
+    "name": "shape_2_hole8",
+    "kind": "hole_negative",
+    "block_item": 2,
+    "truth_item": 0,
+    "distance": [
+      148,
+      64,
+      260
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 22,
+    "name": "shape_3_hole8",
+    "kind": "hole_negative",
+    "block_item": 3,
+    "truth_item": 0,
+    "distance": [
+      230,
+      262,
+      62
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 23,
+    "name": "026_card_10_white_59_1",
+    "kind": "scene_card",
+    "block_item": 3,
+    "truth_item": 10,
+    "distance": [
+      68,
+      136,
+      114
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 24,
+    "name": "031_card_10_white_67_2",
+    "kind": "scene_card",
+    "block_item": 1,
+    "truth_item": 10,
+    "distance": [
+      68,
+      148,
+      124
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 25,
+    "name": "058_card_10_dark_59_1",
+    "kind": "scene_card",
+    "block_item": 3,
+    "truth_item": 10,
+    "distance": [
+      68,
+      136,
+      114
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 26,
+    "name": "063_card_10_dark_67_2",
+    "kind": "scene_card",
+    "block_item": 1,
+    "truth_item": 10,
+    "distance": [
+      68,
+      148,
+      124
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 27,
+    "name": "090_card_10_wood_59_1",
+    "kind": "scene_card",
+    "block_item": 3,
+    "truth_item": 10,
+    "distance": [
+      68,
+      136,
+      114
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 28,
+    "name": "095_card_10_wood_67_2",
+    "kind": "scene_card",
+    "block_item": 1,
+    "truth_item": 10,
+    "distance": [
+      68,
+      148,
+      124
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 29,
+    "name": "118_card_10_shadow",
+    "kind": "scene_card_perturbed",
+    "block_item": 1,
+    "truth_item": 10,
+    "distance": [
+      50,
+      118,
+      140
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 30,
+    "name": "137_card_11_white_51_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      179,
+      235,
+      183
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 31,
+    "name": "138_card_11_white_51_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      173,
+      243,
+      179
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 32,
+    "name": "139_card_11_white_51_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      173,
+      231,
+      169
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 33,
+    "name": "140_card_11_white_59_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      167,
+      229,
+      161
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 34,
+    "name": "141_card_11_white_59_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      167,
+      229,
+      155
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 35,
+    "name": "142_card_11_white_59_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      182,
+      250,
+      164
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 36,
+    "name": "143_card_11_white_59_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      186,
+      250,
+      168
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 37,
+    "name": "144_card_11_white_67_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      185,
+      243,
+      169
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 38,
+    "name": "151_card_11_white_75_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      180,
+      248,
+      162
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 39,
+    "name": "153_card_11_white_83_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      176,
+      244,
+      164
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 40,
+    "name": "155_card_11_white_83_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      180,
+      250,
+      164
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 41,
+    "name": "156_card_11_white_91_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      174,
+      242,
+      160
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 42,
+    "name": "162_card_11_white_99_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      180,
+      248,
+      162
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 43,
+    "name": "169_card_11_dark_51_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      179,
+      235,
+      183
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 44,
+    "name": "170_card_11_dark_51_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      173,
+      243,
+      179
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 45,
+    "name": "171_card_11_dark_51_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      173,
+      231,
+      169
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 46,
+    "name": "172_card_11_dark_59_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      167,
+      229,
+      161
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 47,
+    "name": "173_card_11_dark_59_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      167,
+      229,
+      155
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 48,
+    "name": "174_card_11_dark_59_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      182,
+      250,
+      164
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 49,
+    "name": "175_card_11_dark_59_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      186,
+      250,
+      168
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 50,
+    "name": "176_card_11_dark_67_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      185,
+      243,
+      169
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 51,
+    "name": "183_card_11_dark_75_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      180,
+      248,
+      162
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 52,
+    "name": "185_card_11_dark_83_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      176,
+      244,
+      164
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 53,
+    "name": "187_card_11_dark_83_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      180,
+      250,
+      164
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 54,
+    "name": "188_card_11_dark_91_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      174,
+      242,
+      160
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 55,
+    "name": "194_card_11_dark_99_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      180,
+      248,
+      162
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 56,
+    "name": "201_card_11_wood_51_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      179,
+      235,
+      183
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 57,
+    "name": "202_card_11_wood_51_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      173,
+      243,
+      179
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 58,
+    "name": "203_card_11_wood_51_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      173,
+      231,
+      169
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 59,
+    "name": "204_card_11_wood_59_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      167,
+      229,
+      161
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 60,
+    "name": "205_card_11_wood_59_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      167,
+      229,
+      155
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 61,
+    "name": "206_card_11_wood_59_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      182,
+      250,
+      164
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 62,
+    "name": "207_card_11_wood_59_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      186,
+      250,
+      168
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 63,
+    "name": "208_card_11_wood_67_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      185,
+      243,
+      169
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 64,
+    "name": "215_card_11_wood_75_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      180,
+      248,
+      162
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 65,
+    "name": "217_card_11_wood_83_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      176,
+      244,
+      164
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 66,
+    "name": "219_card_11_wood_83_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      180,
+      250,
+      164
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 67,
+    "name": "220_card_11_wood_91_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      174,
+      242,
+      160
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 68,
+    "name": "226_card_11_wood_99_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      180,
+      248,
+      162
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 69,
+    "name": "232_card_11_noise",
+    "kind": "scene_card_perturbed",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      180,
+      248,
+      162
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 70,
+    "name": "233_card_11_shadow",
+    "kind": "scene_card_perturbed",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      180,
+      246,
+      162
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 71,
+    "name": "234_card_11_gain90",
+    "kind": "scene_card_perturbed",
+    "block_item": 6,
+    "truth_item": 11,
+    "distance": [
+      180,
+      246,
+      162
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 72,
+    "name": "366_card_13_white_51_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      174,
+      254,
+      106
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 73,
+    "name": "367_card_13_white_51_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      150,
+      230,
+      90
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 74,
+    "name": "368_card_13_white_51_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      160,
+      240,
+      100
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 75,
+    "name": "369_card_13_white_51_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      136,
+      208,
+      104
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 76,
+    "name": "371_card_13_white_59_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      145,
+      217,
+      125
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 77,
+    "name": "372_card_13_white_59_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      160,
+      240,
+      112
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 78,
+    "name": "373_card_13_white_59_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      148,
+      228,
+      100
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 79,
+    "name": "374_card_13_white_67_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      144,
+      224,
+      100
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 80,
+    "name": "375_card_13_white_67_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      170,
+      250,
+      106
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 81,
+    "name": "377_card_13_white_67_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      140,
+      204,
+      84
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 82,
+    "name": "378_card_13_white_75_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      153,
+      229,
+      107
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 83,
+    "name": "379_card_13_white_75_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      142,
+      214,
+      106
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 84,
+    "name": "380_card_13_white_75_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      154,
+      230,
+      94
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 85,
+    "name": "381_card_13_white_75_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      167,
+      247,
+      111
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 86,
+    "name": "382_card_13_white_83_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      157,
+      229,
+      89
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 87,
+    "name": "383_card_13_white_83_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      152,
+      232,
+      102
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 88,
+    "name": "384_card_13_white_83_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      154,
+      222,
+      90
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 89,
+    "name": "385_card_13_white_83_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      158,
+      234,
+      102
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 90,
+    "name": "386_card_13_white_91_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      160,
+      240,
+      100
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 91,
+    "name": "387_card_13_white_91_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      168,
+      244,
+      108
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 92,
+    "name": "389_card_13_white_91_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      162,
+      242,
+      106
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 93,
+    "name": "391_card_13_white_99_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      156,
+      236,
+      104
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 94,
+    "name": "392_card_13_white_99_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      170,
+      250,
+      114
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 95,
+    "name": "393_card_13_white_99_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      156,
+      232,
+      104
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 96,
+    "name": "394_card_13_white_103_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      162,
+      230,
+      98
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 97,
+    "name": "395_card_13_white_103_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      164,
+      244,
+      108
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 98,
+    "name": "396_card_13_white_103_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      162,
+      234,
+      102
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 99,
+    "name": "397_card_13_white_103_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      166,
+      246,
+      106
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 100,
+    "name": "398_card_13_dark_51_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      174,
+      254,
+      106
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 101,
+    "name": "399_card_13_dark_51_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      150,
+      230,
+      90
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 102,
+    "name": "400_card_13_dark_51_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      160,
+      240,
+      100
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 103,
+    "name": "401_card_13_dark_51_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      136,
+      208,
+      104
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 104,
+    "name": "403_card_13_dark_59_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      145,
+      217,
+      125
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 105,
+    "name": "404_card_13_dark_59_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      160,
+      240,
+      112
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 106,
+    "name": "405_card_13_dark_59_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      148,
+      228,
+      100
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 107,
+    "name": "406_card_13_dark_67_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      144,
+      224,
+      100
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 108,
+    "name": "407_card_13_dark_67_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      170,
+      250,
+      106
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 109,
+    "name": "409_card_13_dark_67_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      140,
+      204,
+      84
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 110,
+    "name": "410_card_13_dark_75_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      153,
+      229,
+      107
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 111,
+    "name": "411_card_13_dark_75_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      142,
+      214,
+      106
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 112,
+    "name": "412_card_13_dark_75_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      154,
+      230,
+      94
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 113,
+    "name": "413_card_13_dark_75_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      167,
+      247,
+      111
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 114,
+    "name": "414_card_13_dark_83_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      157,
+      229,
+      89
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 115,
+    "name": "415_card_13_dark_83_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      152,
+      232,
+      102
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 116,
+    "name": "416_card_13_dark_83_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      154,
+      222,
+      90
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 117,
+    "name": "417_card_13_dark_83_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      158,
+      234,
+      102
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 118,
+    "name": "418_card_13_dark_91_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      160,
+      240,
+      100
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 119,
+    "name": "419_card_13_dark_91_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      168,
+      244,
+      108
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 120,
+    "name": "421_card_13_dark_91_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      162,
+      242,
+      106
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 121,
+    "name": "423_card_13_dark_99_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      156,
+      236,
+      104
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 122,
+    "name": "424_card_13_dark_99_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      170,
+      250,
+      114
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 123,
+    "name": "425_card_13_dark_99_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      156,
+      232,
+      104
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 124,
+    "name": "426_card_13_dark_103_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      162,
+      230,
+      98
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 125,
+    "name": "427_card_13_dark_103_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      164,
+      244,
+      108
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 126,
+    "name": "428_card_13_dark_103_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      162,
+      234,
+      102
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 127,
+    "name": "429_card_13_dark_103_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      166,
+      246,
+      106
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 128,
+    "name": "430_card_13_wood_51_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      174,
+      254,
+      106
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 129,
+    "name": "431_card_13_wood_51_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      150,
+      230,
+      90
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 130,
+    "name": "432_card_13_wood_51_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      160,
+      240,
+      100
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 131,
+    "name": "433_card_13_wood_51_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      136,
+      208,
+      104
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 132,
+    "name": "435_card_13_wood_59_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      145,
+      217,
+      125
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 133,
+    "name": "436_card_13_wood_59_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      160,
+      240,
+      112
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 134,
+    "name": "437_card_13_wood_59_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      148,
+      228,
+      100
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 135,
+    "name": "438_card_13_wood_67_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      144,
+      224,
+      100
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 136,
+    "name": "439_card_13_wood_67_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      170,
+      250,
+      106
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 137,
+    "name": "441_card_13_wood_67_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      140,
+      204,
+      84
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 138,
+    "name": "442_card_13_wood_75_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      153,
+      229,
+      107
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 139,
+    "name": "443_card_13_wood_75_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      142,
+      214,
+      106
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 140,
+    "name": "444_card_13_wood_75_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      154,
+      230,
+      94
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 141,
+    "name": "445_card_13_wood_75_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      167,
+      247,
+      111
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 142,
+    "name": "446_card_13_wood_83_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      157,
+      229,
+      89
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 143,
+    "name": "447_card_13_wood_83_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      152,
+      232,
+      102
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 144,
+    "name": "448_card_13_wood_83_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      154,
+      222,
+      90
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 145,
+    "name": "449_card_13_wood_83_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      158,
+      234,
+      102
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 146,
+    "name": "450_card_13_wood_91_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      160,
+      240,
+      100
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 147,
+    "name": "451_card_13_wood_91_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      168,
+      244,
+      108
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 148,
+    "name": "453_card_13_wood_91_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      162,
+      242,
+      106
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 149,
+    "name": "455_card_13_wood_99_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      156,
+      236,
+      104
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 150,
+    "name": "456_card_13_wood_99_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      170,
+      250,
+      114
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 151,
+    "name": "457_card_13_wood_99_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      156,
+      232,
+      104
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 152,
+    "name": "458_card_13_wood_103_0",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      162,
+      230,
+      98
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 153,
+    "name": "459_card_13_wood_103_1",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      164,
+      244,
+      108
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 154,
+    "name": "460_card_13_wood_103_2",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      162,
+      234,
+      102
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 155,
+    "name": "461_card_13_wood_103_3",
+    "kind": "scene_card",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      166,
+      246,
+      106
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 156,
+    "name": "462_card_13_noise",
+    "kind": "scene_card_perturbed",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      167,
+      247,
+      111
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 157,
+    "name": "463_card_13_shadow",
+    "kind": "scene_card_perturbed",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      166,
+      246,
+      110
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 158,
+    "name": "464_card_13_gain90",
+    "kind": "scene_card_perturbed",
+    "block_item": 6,
+    "truth_item": 13,
+    "distance": [
+      166,
+      246,
+      110
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 159,
+    "name": "596_block_red_circle_white_36",
+    "kind": "scene_block",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      15,
+      81,
+      175
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 160,
+    "name": "597_block_red_circle_white_52",
+    "kind": "scene_block",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      10,
+      90,
+      172
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 161,
+    "name": "598_block_red_circle_white_68",
+    "kind": "scene_block",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      10,
+      94,
+      170
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 162,
+    "name": "599_block_red_circle_dark_36",
+    "kind": "scene_block",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      15,
+      81,
+      175
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 163,
+    "name": "600_block_red_circle_dark_52",
+    "kind": "scene_block",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      10,
+      90,
+      172
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 164,
+    "name": "601_block_red_circle_dark_68",
+    "kind": "scene_block",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      10,
+      94,
+      170
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 165,
+    "name": "602_block_red_circle_wood_36",
+    "kind": "scene_block",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      15,
+      81,
+      175
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 166,
+    "name": "603_block_red_circle_wood_52",
+    "kind": "scene_block",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      10,
+      90,
+      172
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 167,
+    "name": "604_block_red_circle_wood_68",
+    "kind": "scene_block",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      10,
+      94,
+      170
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 168,
+    "name": "605_block_red_square_white_36",
+    "kind": "scene_block",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 169,
+    "name": "606_block_red_square_white_52",
+    "kind": "scene_block",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 170,
+    "name": "607_block_red_square_white_68",
+    "kind": "scene_block",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 171,
+    "name": "608_block_red_square_dark_36",
+    "kind": "scene_block",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 172,
+    "name": "609_block_red_square_dark_52",
+    "kind": "scene_block",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 173,
+    "name": "610_block_red_square_dark_68",
+    "kind": "scene_block",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 174,
+    "name": "611_block_red_square_wood_36",
+    "kind": "scene_block",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 175,
+    "name": "612_block_red_square_wood_52",
+    "kind": "scene_block",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 176,
+    "name": "613_block_red_square_wood_68",
+    "kind": "scene_block",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 177,
+    "name": "614_block_red_triangle_white_36",
+    "kind": "scene_block",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      161,
+      189,
+      17
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 3
+  },
+  {
+    "index": 178,
+    "name": "615_block_red_triangle_white_52",
+    "kind": "scene_block",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      161,
+      193,
+      11
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 3
+  },
+  {
+    "index": 179,
+    "name": "616_block_red_triangle_white_68",
+    "kind": "scene_block",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      164,
+      194,
+      8
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 3
+  },
+  {
+    "index": 180,
+    "name": "617_block_red_triangle_dark_36",
+    "kind": "scene_block",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      161,
+      189,
+      17
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 3
+  },
+  {
+    "index": 181,
+    "name": "618_block_red_triangle_dark_52",
+    "kind": "scene_block",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      161,
+      193,
+      11
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 3
+  },
+  {
+    "index": 182,
+    "name": "619_block_red_triangle_dark_68",
+    "kind": "scene_block",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      164,
+      194,
+      8
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 3
+  },
+  {
+    "index": 183,
+    "name": "620_block_red_triangle_wood_36",
+    "kind": "scene_block",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      161,
+      189,
+      17
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 3
+  },
+  {
+    "index": 184,
+    "name": "621_block_red_triangle_wood_52",
+    "kind": "scene_block",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      161,
+      193,
+      11
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 3
+  },
+  {
+    "index": 185,
+    "name": "622_block_red_triangle_wood_68",
+    "kind": "scene_block",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      164,
+      194,
+      8
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 3
+  },
+  {
+    "index": 186,
+    "name": "623_block_yellow_circle_white_36",
+    "kind": "scene_block",
+    "block_item": 4,
+    "truth_item": 4,
+    "distance": [
+      15,
+      81,
+      175
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 4
+  },
+  {
+    "index": 187,
+    "name": "624_block_yellow_circle_white_52",
+    "kind": "scene_block",
+    "block_item": 4,
+    "truth_item": 4,
+    "distance": [
+      10,
+      90,
+      172
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 4
+  },
+  {
+    "index": 188,
+    "name": "625_block_yellow_circle_white_68",
+    "kind": "scene_block",
+    "block_item": 4,
+    "truth_item": 4,
+    "distance": [
+      10,
+      94,
+      170
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 4
+  },
+  {
+    "index": 189,
+    "name": "626_block_yellow_circle_dark_36",
+    "kind": "scene_block",
+    "block_item": 4,
+    "truth_item": 4,
+    "distance": [
+      15,
+      81,
+      175
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 4
+  },
+  {
+    "index": 190,
+    "name": "627_block_yellow_circle_dark_52",
+    "kind": "scene_block",
+    "block_item": 4,
+    "truth_item": 4,
+    "distance": [
+      10,
+      90,
+      172
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 4
+  },
+  {
+    "index": 191,
+    "name": "628_block_yellow_circle_dark_68",
+    "kind": "scene_block",
+    "block_item": 4,
+    "truth_item": 4,
+    "distance": [
+      10,
+      94,
+      170
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 4
+  },
+  {
+    "index": 192,
+    "name": "629_block_yellow_circle_wood_36",
+    "kind": "scene_block",
+    "block_item": 4,
+    "truth_item": 4,
+    "distance": [
+      15,
+      81,
+      175
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 4
+  },
+  {
+    "index": 193,
+    "name": "630_block_yellow_circle_wood_52",
+    "kind": "scene_block",
+    "block_item": 4,
+    "truth_item": 4,
+    "distance": [
+      10,
+      90,
+      172
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 4
+  },
+  {
+    "index": 194,
+    "name": "631_block_yellow_circle_wood_68",
+    "kind": "scene_block",
+    "block_item": 4,
+    "truth_item": 4,
+    "distance": [
+      10,
+      94,
+      170
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 4
+  },
+  {
+    "index": 195,
+    "name": "632_block_yellow_square_white_36",
+    "kind": "scene_block",
+    "block_item": 5,
+    "truth_item": 5,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 5
+  },
+  {
+    "index": 196,
+    "name": "633_block_yellow_square_white_52",
+    "kind": "scene_block",
+    "block_item": 5,
+    "truth_item": 5,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 5
+  },
+  {
+    "index": 197,
+    "name": "634_block_yellow_square_white_68",
+    "kind": "scene_block",
+    "block_item": 5,
+    "truth_item": 5,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 5
+  },
+  {
+    "index": 198,
+    "name": "635_block_yellow_square_dark_36",
+    "kind": "scene_block",
+    "block_item": 5,
+    "truth_item": 5,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 5
+  },
+  {
+    "index": 199,
+    "name": "636_block_yellow_square_dark_52",
+    "kind": "scene_block",
+    "block_item": 5,
+    "truth_item": 5,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 5
+  },
+  {
+    "index": 200,
+    "name": "637_block_yellow_square_dark_68",
+    "kind": "scene_block",
+    "block_item": 5,
+    "truth_item": 5,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 5
+  },
+  {
+    "index": 201,
+    "name": "638_block_yellow_square_wood_36",
+    "kind": "scene_block",
+    "block_item": 5,
+    "truth_item": 5,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 5
+  },
+  {
+    "index": 202,
+    "name": "639_block_yellow_square_wood_52",
+    "kind": "scene_block",
+    "block_item": 5,
+    "truth_item": 5,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 5
+  },
+  {
+    "index": 203,
+    "name": "640_block_yellow_square_wood_68",
+    "kind": "scene_block",
+    "block_item": 5,
+    "truth_item": 5,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 5
+  },
+  {
+    "index": 204,
+    "name": "641_block_yellow_triangle_white_36",
+    "kind": "scene_block",
+    "block_item": 6,
+    "truth_item": 6,
+    "distance": [
+      161,
+      189,
+      17
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 6
+  },
+  {
+    "index": 205,
+    "name": "642_block_yellow_triangle_white_52",
+    "kind": "scene_block",
+    "block_item": 6,
+    "truth_item": 6,
+    "distance": [
+      161,
+      193,
+      11
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 6
+  },
+  {
+    "index": 206,
+    "name": "643_block_yellow_triangle_white_68",
+    "kind": "scene_block",
+    "block_item": 6,
+    "truth_item": 6,
+    "distance": [
+      164,
+      194,
+      8
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 6
+  },
+  {
+    "index": 207,
+    "name": "644_block_yellow_triangle_dark_36",
+    "kind": "scene_block",
+    "block_item": 6,
+    "truth_item": 6,
+    "distance": [
+      161,
+      189,
+      17
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 6
+  },
+  {
+    "index": 208,
+    "name": "645_block_yellow_triangle_dark_52",
+    "kind": "scene_block",
+    "block_item": 6,
+    "truth_item": 6,
+    "distance": [
+      161,
+      193,
+      11
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 6
+  },
+  {
+    "index": 209,
+    "name": "646_block_yellow_triangle_dark_68",
+    "kind": "scene_block",
+    "block_item": 6,
+    "truth_item": 6,
+    "distance": [
+      164,
+      194,
+      8
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 6
+  },
+  {
+    "index": 210,
+    "name": "647_block_yellow_triangle_wood_36",
+    "kind": "scene_block",
+    "block_item": 6,
+    "truth_item": 6,
+    "distance": [
+      161,
+      189,
+      17
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 6
+  },
+  {
+    "index": 211,
+    "name": "648_block_yellow_triangle_wood_52",
+    "kind": "scene_block",
+    "block_item": 6,
+    "truth_item": 6,
+    "distance": [
+      161,
+      193,
+      11
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 6
+  },
+  {
+    "index": 212,
+    "name": "649_block_yellow_triangle_wood_68",
+    "kind": "scene_block",
+    "block_item": 6,
+    "truth_item": 6,
+    "distance": [
+      164,
+      194,
+      8
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 6
+  },
+  {
+    "index": 213,
+    "name": "650_block_blue_circle_white_36",
+    "kind": "scene_block",
+    "block_item": 7,
+    "truth_item": 7,
+    "distance": [
+      15,
+      81,
+      175
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 7
+  },
+  {
+    "index": 214,
+    "name": "651_block_blue_circle_white_52",
+    "kind": "scene_block",
+    "block_item": 7,
+    "truth_item": 7,
+    "distance": [
+      10,
+      90,
+      172
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 7
+  },
+  {
+    "index": 215,
+    "name": "652_block_blue_circle_white_68",
+    "kind": "scene_block",
+    "block_item": 7,
+    "truth_item": 7,
+    "distance": [
+      10,
+      94,
+      170
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 7
+  },
+  {
+    "index": 216,
+    "name": "653_block_blue_circle_dark_36",
+    "kind": "scene_block",
+    "block_item": 7,
+    "truth_item": 7,
+    "distance": [
+      15,
+      81,
+      175
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 7
+  },
+  {
+    "index": 217,
+    "name": "654_block_blue_circle_dark_52",
+    "kind": "scene_block",
+    "block_item": 7,
+    "truth_item": 7,
+    "distance": [
+      10,
+      90,
+      172
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 7
+  },
+  {
+    "index": 218,
+    "name": "655_block_blue_circle_dark_68",
+    "kind": "scene_block",
+    "block_item": 7,
+    "truth_item": 7,
+    "distance": [
+      10,
+      94,
+      170
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 7
+  },
+  {
+    "index": 219,
+    "name": "656_block_blue_circle_wood_36",
+    "kind": "scene_block",
+    "block_item": 7,
+    "truth_item": 7,
+    "distance": [
+      15,
+      81,
+      175
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 7
+  },
+  {
+    "index": 220,
+    "name": "657_block_blue_circle_wood_52",
+    "kind": "scene_block",
+    "block_item": 7,
+    "truth_item": 7,
+    "distance": [
+      10,
+      90,
+      172
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 7
+  },
+  {
+    "index": 221,
+    "name": "658_block_blue_circle_wood_68",
+    "kind": "scene_block",
+    "block_item": 7,
+    "truth_item": 7,
+    "distance": [
+      10,
+      94,
+      170
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 7
+  },
+  {
+    "index": 222,
+    "name": "659_block_blue_square_white_36",
+    "kind": "scene_block",
+    "block_item": 8,
+    "truth_item": 8,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 8
+  },
+  {
+    "index": 223,
+    "name": "660_block_blue_square_white_52",
+    "kind": "scene_block",
+    "block_item": 8,
+    "truth_item": 8,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 8
+  },
+  {
+    "index": 224,
+    "name": "661_block_blue_square_white_68",
+    "kind": "scene_block",
+    "block_item": 8,
+    "truth_item": 8,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 8
+  },
+  {
+    "index": 225,
+    "name": "662_block_blue_square_dark_36",
+    "kind": "scene_block",
+    "block_item": 8,
+    "truth_item": 8,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 8
+  },
+  {
+    "index": 226,
+    "name": "663_block_blue_square_dark_52",
+    "kind": "scene_block",
+    "block_item": 8,
+    "truth_item": 8,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 8
+  },
+  {
+    "index": 227,
+    "name": "664_block_blue_square_dark_68",
+    "kind": "scene_block",
+    "block_item": 8,
+    "truth_item": 8,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 8
+  },
+  {
+    "index": 228,
+    "name": "665_block_blue_square_wood_36",
+    "kind": "scene_block",
+    "block_item": 8,
+    "truth_item": 8,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 8
+  },
+  {
+    "index": 229,
+    "name": "666_block_blue_square_wood_52",
+    "kind": "scene_block",
+    "block_item": 8,
+    "truth_item": 8,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 8
+  },
+  {
+    "index": 230,
+    "name": "667_block_blue_square_wood_68",
+    "kind": "scene_block",
+    "block_item": 8,
+    "truth_item": 8,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 8
+  },
+  {
+    "index": 231,
+    "name": "668_block_blue_triangle_white_36",
+    "kind": "scene_block",
+    "block_item": 9,
+    "truth_item": 9,
+    "distance": [
+      161,
+      189,
+      17
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 9
+  },
+  {
+    "index": 232,
+    "name": "669_block_blue_triangle_white_52",
+    "kind": "scene_block",
+    "block_item": 9,
+    "truth_item": 9,
+    "distance": [
+      161,
+      193,
+      11
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 9
+  },
+  {
+    "index": 233,
+    "name": "670_block_blue_triangle_white_68",
+    "kind": "scene_block",
+    "block_item": 9,
+    "truth_item": 9,
+    "distance": [
+      164,
+      194,
+      8
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 9
+  },
+  {
+    "index": 234,
+    "name": "671_block_blue_triangle_dark_36",
+    "kind": "scene_block",
+    "block_item": 9,
+    "truth_item": 9,
+    "distance": [
+      161,
+      189,
+      17
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 9
+  },
+  {
+    "index": 235,
+    "name": "672_block_blue_triangle_dark_52",
+    "kind": "scene_block",
+    "block_item": 9,
+    "truth_item": 9,
+    "distance": [
+      161,
+      193,
+      11
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 9
+  },
+  {
+    "index": 236,
+    "name": "673_block_blue_triangle_dark_68",
+    "kind": "scene_block",
+    "block_item": 9,
+    "truth_item": 9,
+    "distance": [
+      164,
+      194,
+      8
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 9
+  },
+  {
+    "index": 237,
+    "name": "674_block_blue_triangle_wood_36",
+    "kind": "scene_block",
+    "block_item": 9,
+    "truth_item": 9,
+    "distance": [
+      161,
+      189,
+      17
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 9
+  },
+  {
+    "index": 238,
+    "name": "675_block_blue_triangle_wood_52",
+    "kind": "scene_block",
+    "block_item": 9,
+    "truth_item": 9,
+    "distance": [
+      161,
+      193,
+      11
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 9
+  },
+  {
+    "index": 239,
+    "name": "676_block_blue_triangle_wood_68",
+    "kind": "scene_block",
+    "block_item": 9,
+    "truth_item": 9,
+    "distance": [
+      164,
+      194,
+      8
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 9
+  },
+  {
+    "index": 240,
+    "name": "704_different_apple_outline",
+    "kind": "scene_unknown_card_art",
+    "block_item": 3,
+    "truth_item": 0,
+    "distance": [
+      148,
+      228,
+      202
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 241,
+    "name": "705_different_apple_striped",
+    "kind": "scene_unknown_card_art",
+    "block_item": 3,
+    "truth_item": 0,
+    "distance": [
+      157,
+      235,
+      189
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 242,
+    "name": "ideal_s1_size16_angle-15",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      21,
+      71,
+      179
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 243,
+    "name": "ideal_s1_size16_angle-10",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      21,
+      71,
+      179
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 244,
+    "name": "ideal_s1_size16_angle-5",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      21,
+      71,
+      179
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 245,
+    "name": "ideal_s1_size16_angle-2",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      21,
+      71,
+      179
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 246,
+    "name": "ideal_s1_size16_angle+0",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      21,
+      71,
+      179
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 247,
+    "name": "ideal_s1_size16_angle+2",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      21,
+      71,
+      179
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 248,
+    "name": "ideal_s1_size16_angle+5",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      21,
+      71,
+      179
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 249,
+    "name": "ideal_s1_size16_angle+10",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      21,
+      71,
+      179
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 250,
+    "name": "ideal_s1_size16_angle+15",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      21,
+      71,
+      179
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 251,
+    "name": "ideal_s1_size20_angle-15",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      0,
+      84,
+      168
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 252,
+    "name": "ideal_s1_size20_angle-10",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      0,
+      84,
+      168
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 253,
+    "name": "ideal_s1_size20_angle-5",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      0,
+      84,
+      168
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 254,
+    "name": "ideal_s1_size20_angle-2",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      0,
+      84,
+      168
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 255,
+    "name": "ideal_s1_size20_angle+0",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      0,
+      84,
+      168
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 256,
+    "name": "ideal_s1_size20_angle+2",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      0,
+      84,
+      168
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 257,
+    "name": "ideal_s1_size20_angle+5",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      0,
+      84,
+      168
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 258,
+    "name": "ideal_s1_size20_angle+10",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      0,
+      84,
+      168
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 259,
+    "name": "ideal_s1_size20_angle+15",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      0,
+      84,
+      168
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 260,
+    "name": "ideal_s1_size28_angle-15",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      16,
+      84,
+      172
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 261,
+    "name": "ideal_s1_size28_angle-10",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      16,
+      84,
+      172
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 262,
+    "name": "ideal_s1_size28_angle-5",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      16,
+      84,
+      172
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 263,
+    "name": "ideal_s1_size28_angle-2",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      16,
+      84,
+      172
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 264,
+    "name": "ideal_s1_size28_angle+0",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      16,
+      84,
+      172
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 265,
+    "name": "ideal_s1_size28_angle+2",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      16,
+      84,
+      172
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 266,
+    "name": "ideal_s1_size28_angle+5",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      16,
+      84,
+      172
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 267,
+    "name": "ideal_s1_size28_angle+10",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      16,
+      84,
+      172
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 268,
+    "name": "ideal_s1_size28_angle+15",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      16,
+      84,
+      172
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 269,
+    "name": "ideal_s1_size40_angle-15",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      12,
+      84,
+      176
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 270,
+    "name": "ideal_s1_size40_angle-10",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      12,
+      84,
+      176
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 271,
+    "name": "ideal_s1_size40_angle-5",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      12,
+      84,
+      176
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 272,
+    "name": "ideal_s1_size40_angle-2",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      12,
+      84,
+      176
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 273,
+    "name": "ideal_s1_size40_angle+0",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      12,
+      84,
+      176
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 274,
+    "name": "ideal_s1_size40_angle+2",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      12,
+      84,
+      176
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 275,
+    "name": "ideal_s1_size40_angle+5",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      12,
+      84,
+      176
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 276,
+    "name": "ideal_s1_size40_angle+10",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      12,
+      84,
+      176
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 277,
+    "name": "ideal_s1_size40_angle+15",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      12,
+      84,
+      176
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 278,
+    "name": "ideal_s1_size56_angle-15",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      4,
+      88,
+      170
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 279,
+    "name": "ideal_s1_size56_angle-10",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      4,
+      88,
+      170
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 280,
+    "name": "ideal_s1_size56_angle-5",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      4,
+      88,
+      170
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 281,
+    "name": "ideal_s1_size56_angle-2",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      4,
+      88,
+      170
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 282,
+    "name": "ideal_s1_size56_angle+0",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      4,
+      88,
+      170
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 283,
+    "name": "ideal_s1_size56_angle+2",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      4,
+      88,
+      170
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 284,
+    "name": "ideal_s1_size56_angle+5",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      4,
+      88,
+      170
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 285,
+    "name": "ideal_s1_size56_angle+10",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      4,
+      88,
+      170
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 286,
+    "name": "ideal_s1_size56_angle+15",
+    "kind": "rotation_measurement",
+    "block_item": 1,
+    "truth_item": 1,
+    "distance": [
+      4,
+      88,
+      170
+    ],
+    "shape_ok": [
+      true,
+      false,
+      false
+    ],
+    "shape_bits": 1,
+    "gated_item": 1
+  },
+  {
+    "index": 287,
+    "name": "ideal_s2_size16_angle-15",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      76,
+      144,
+      148
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 288,
+    "name": "ideal_s2_size16_angle-10",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      60,
+      72,
+      170
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 289,
+    "name": "ideal_s2_size16_angle-5",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      56,
+      76,
+      168
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 290,
+    "name": "ideal_s2_size16_angle-2",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 291,
+    "name": "ideal_s2_size16_angle+0",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 292,
+    "name": "ideal_s2_size16_angle+2",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 293,
+    "name": "ideal_s2_size16_angle+5",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      56,
+      76,
+      168
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 294,
+    "name": "ideal_s2_size16_angle+10",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      60,
+      72,
+      170
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 295,
+    "name": "ideal_s2_size16_angle+15",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      76,
+      144,
+      148
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 296,
+    "name": "ideal_s2_size20_angle-15",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      79,
+      123,
+      159
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 297,
+    "name": "ideal_s2_size20_angle-10",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      52,
+      80,
+      168
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 298,
+    "name": "ideal_s2_size20_angle-5",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      52,
+      80,
+      166
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 299,
+    "name": "ideal_s2_size20_angle-2",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 300,
+    "name": "ideal_s2_size20_angle+0",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 301,
+    "name": "ideal_s2_size20_angle+2",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 302,
+    "name": "ideal_s2_size20_angle+5",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      52,
+      80,
+      166
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 303,
+    "name": "ideal_s2_size20_angle+10",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      52,
+      80,
+      168
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 304,
+    "name": "ideal_s2_size20_angle+15",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      79,
+      123,
+      159
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 305,
+    "name": "ideal_s2_size28_angle-15",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      76,
+      136,
+      152
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 306,
+    "name": "ideal_s2_size28_angle-10",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      60,
+      96,
+      162
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 307,
+    "name": "ideal_s2_size28_angle-5",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      80,
+      52,
+      176
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 308,
+    "name": "ideal_s2_size28_angle-2",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 309,
+    "name": "ideal_s2_size28_angle+0",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 310,
+    "name": "ideal_s2_size28_angle+2",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 311,
+    "name": "ideal_s2_size28_angle+5",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      80,
+      52,
+      176
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 312,
+    "name": "ideal_s2_size28_angle+10",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      60,
+      96,
+      166
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 313,
+    "name": "ideal_s2_size28_angle+15",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      76,
+      136,
+      152
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 314,
+    "name": "ideal_s2_size40_angle-15",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      72,
+      124,
+      156
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 315,
+    "name": "ideal_s2_size40_angle-10",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      60,
+      96,
+      162
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 316,
+    "name": "ideal_s2_size40_angle-5",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      68,
+      56,
+      176
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 317,
+    "name": "ideal_s2_size40_angle-2",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      72,
+      12,
+      196
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 318,
+    "name": "ideal_s2_size40_angle+0",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 319,
+    "name": "ideal_s2_size40_angle+2",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      72,
+      12,
+      196
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 320,
+    "name": "ideal_s2_size40_angle+5",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      68,
+      56,
+      176
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 321,
+    "name": "ideal_s2_size40_angle+10",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      60,
+      96,
+      162
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 322,
+    "name": "ideal_s2_size40_angle+15",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      72,
+      124,
+      156
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 323,
+    "name": "ideal_s2_size56_angle-15",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      68,
+      128,
+      152
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 324,
+    "name": "ideal_s2_size56_angle-10",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      60,
+      96,
+      160
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 325,
+    "name": "ideal_s2_size56_angle-5",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      72,
+      44,
+      180
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 326,
+    "name": "ideal_s2_size56_angle-2",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      64,
+      20,
+      192
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 327,
+    "name": "ideal_s2_size56_angle+0",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      84,
+      0,
+      200
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 328,
+    "name": "ideal_s2_size56_angle+2",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      64,
+      20,
+      192
+    ],
+    "shape_ok": [
+      false,
+      true,
+      false
+    ],
+    "shape_bits": 2,
+    "gated_item": 2
+  },
+  {
+    "index": 329,
+    "name": "ideal_s2_size56_angle+5",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      72,
+      44,
+      180
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 330,
+    "name": "ideal_s2_size56_angle+10",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      60,
+      96,
+      164
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 331,
+    "name": "ideal_s2_size56_angle+15",
+    "kind": "rotation_measurement",
+    "block_item": 2,
+    "truth_item": 2,
+    "distance": [
+      68,
+      128,
+      152
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 332,
+    "name": "ideal_s3_size16_angle-15",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      154,
+      224,
+      108
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 333,
+    "name": "ideal_s3_size16_angle-10",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      169,
+      219,
+      67
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 334,
+    "name": "ideal_s3_size16_angle-5",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      161,
+      219,
+      43
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 335,
+    "name": "ideal_s3_size16_angle-2",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      163,
+      199,
+      19
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 3
+  },
+  {
+    "index": 336,
+    "name": "ideal_s3_size16_angle+0",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      158,
+      210,
+      34
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 337,
+    "name": "ideal_s3_size16_angle+2",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      163,
+      199,
+      19
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 3
+  },
+  {
+    "index": 338,
+    "name": "ideal_s3_size16_angle+5",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      161,
+      219,
+      43
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 339,
+    "name": "ideal_s3_size16_angle+10",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      169,
+      219,
+      67
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 340,
+    "name": "ideal_s3_size16_angle+15",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      154,
+      224,
+      108
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 341,
+    "name": "ideal_s3_size20_angle-15",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      173,
+      237,
+      93
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 342,
+    "name": "ideal_s3_size20_angle-10",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      165,
+      227,
+      63
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 343,
+    "name": "ideal_s3_size20_angle-5",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      147,
+      201,
+      51
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 344,
+    "name": "ideal_s3_size20_angle-2",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      168,
+      200,
+      34
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 345,
+    "name": "ideal_s3_size20_angle+0",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      148,
+      200,
+      40
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 346,
+    "name": "ideal_s3_size20_angle+2",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      168,
+      200,
+      8
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 3
+  },
+  {
+    "index": 347,
+    "name": "ideal_s3_size20_angle+5",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      149,
+      201,
+      41
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 348,
+    "name": "ideal_s3_size20_angle+10",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      165,
+      227,
+      63
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 349,
+    "name": "ideal_s3_size20_angle+15",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      173,
+      237,
+      93
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 350,
+    "name": "ideal_s3_size28_angle-15",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      156,
+      226,
+      96
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 351,
+    "name": "ideal_s3_size28_angle-10",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      162,
+      226,
+      72
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 352,
+    "name": "ideal_s3_size28_angle-5",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      157,
+      199,
+      51
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 353,
+    "name": "ideal_s3_size28_angle-2",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      167,
+      199,
+      15
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 3
+  },
+  {
+    "index": 354,
+    "name": "ideal_s3_size28_angle+0",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      164,
+      192,
+      8
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 3
+  },
+  {
+    "index": 355,
+    "name": "ideal_s3_size28_angle+2",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      168,
+      200,
+      12
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 3
+  },
+  {
+    "index": 356,
+    "name": "ideal_s3_size28_angle+5",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      158,
+      200,
+      48
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 357,
+    "name": "ideal_s3_size28_angle+10",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      162,
+      226,
+      72
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 358,
+    "name": "ideal_s3_size28_angle+15",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      156,
+      226,
+      96
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 359,
+    "name": "ideal_s3_size40_angle-15",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      156,
+      224,
+      94
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 360,
+    "name": "ideal_s3_size40_angle-10",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      162,
+      224,
+      66
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 361,
+    "name": "ideal_s3_size40_angle-5",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      162,
+      214,
+      36
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 362,
+    "name": "ideal_s3_size40_angle-2",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      163,
+      197,
+      13
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 3
+  },
+  {
+    "index": 363,
+    "name": "ideal_s3_size40_angle+0",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      162,
+      190,
+      10
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 3
+  },
+  {
+    "index": 364,
+    "name": "ideal_s3_size40_angle+2",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      163,
+      197,
+      13
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 3
+  },
+  {
+    "index": 365,
+    "name": "ideal_s3_size40_angle+5",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      162,
+      214,
+      36
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 366,
+    "name": "ideal_s3_size40_angle+10",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      162,
+      224,
+      66
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 367,
+    "name": "ideal_s3_size40_angle+15",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      156,
+      224,
+      94
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 368,
+    "name": "ideal_s3_size56_angle-15",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      157,
+      225,
+      97
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 369,
+    "name": "ideal_s3_size56_angle-10",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      158,
+      224,
+      72
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 370,
+    "name": "ideal_s3_size56_angle-5",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      162,
+      212,
+      36
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 371,
+    "name": "ideal_s3_size56_angle-2",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      159,
+      195,
+      21
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 372,
+    "name": "ideal_s3_size56_angle+0",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      166,
+      198,
+      2
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 3
+  },
+  {
+    "index": 373,
+    "name": "ideal_s3_size56_angle+2",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      159,
+      195,
+      19
+    ],
+    "shape_ok": [
+      false,
+      false,
+      true
+    ],
+    "shape_bits": 4,
+    "gated_item": 3
+  },
+  {
+    "index": 374,
+    "name": "ideal_s3_size56_angle+5",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      162,
+      212,
+      36
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 375,
+    "name": "ideal_s3_size56_angle+10",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      158,
+      224,
+      72
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  },
+  {
+    "index": 376,
+    "name": "ideal_s3_size56_angle+15",
+    "kind": "rotation_measurement",
+    "block_item": 3,
+    "truth_item": 3,
+    "distance": [
+      157,
+      225,
+      97
+    ],
+    "shape_ok": [
+      false,
+      false,
+      false
+    ],
+    "shape_bits": 0,
+    "gated_item": 0
+  }
+]

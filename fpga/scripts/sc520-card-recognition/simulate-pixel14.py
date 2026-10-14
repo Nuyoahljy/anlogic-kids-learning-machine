@@ -18,13 +18,24 @@ REPO = common.REPO
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--test', choices=('capture', 'block', 'cdc', 'pipeline', 'provenance', 'diag'), required=True)
+    parser.add_argument('--test', choices=('capture', 'block', 'cdc', 'pipeline', 'provenance', 'diag', 'matcher', 'scene_system', 'rotation_matcher'), required=True)
     parser.add_argument('--full-resolution', action='store_true', help='Run the pipeline at its actual 1280x720 geometry')
+    parser.add_argument('--timeout-seconds', type=int, default=None)
+    parser.add_argument('--rotation-variants', type=int, default=0)
+    parser.add_argument('--scene-cases', type=Path)
+    parser.add_argument('--matrix-only', action='store_true')
     modes = parser.add_mutually_exclusive_group()
     modes.add_argument("--negative", action="store_true")
     modes.add_argument("--watchdog-probe", action="store_true")
     parser.add_argument("--simulator", type=Path, default=Path("D:/modeltech64_10.7/win64/vsim.exe"))
     args = parser.parse_args()
+    if args.rotation_variants not in (0,256) or (args.rotation_variants and args.test != 'scene_system'):
+        parser.error('the frozen rotation-v1 scene_system bank has 256 variants')
+    if (args.scene_cases or args.matrix_only) and args.test != 'scene_system':
+        parser.error('scene case options require scene_system')
+    timeout_seconds = args.timeout_seconds or (900 if args.test == 'scene_system' else 180)
+    if timeout_seconds < 1:
+        parser.error('positive timeout required')
     if args.full_resolution and args.test != 'pipeline':
         parser.error('--full-resolution applies only to pipeline')
     ini = args.simulator.resolve().parent.parent / "modelsim.ini"
@@ -35,22 +46,47 @@ def main():
     vendor_isp = REPO.parent / 'sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/isp'
     selected = {
         "capture": [pixel / "capture_rgb96.v"],
+        "matcher": [pixel / "pixel14_card_template_rom.v", pixel / "pixel14_card_matcher.v"],
+        "rotation_matcher": [pixel / "pixel14_rotation_matcher.v"],
         "block": sorted(pixel.glob("block*.v")),
         "cdc": [pixel / "pixel14_result_cdc.v"],
         "diag": [pixel / "pixel14_diag_osd.v"],
         "provenance": [pixel / "pixel14_capture_provenance.v", vendor_isp / 'csi_unpacket_2lane.v',
                        vendor_isp / 'raw10_unpacket_2lane.v'],
         "pipeline": [pixel / name for name in ("capture_rgb96.v", "block_frame_recognizer.v", "pixel14_card_matcher.v",
-                    "pixel14_result_cdc.v", "pixel14_pipeline.v")] +
+                    "pixel14_result_cdc.v", "pixel14_pipeline.v", "pixel14_card_template_rom.v", "pixel14_scene_preprocess.v",
+                    "pixel14_rotation_matcher.v", "pixel14_block_shape_guard.v", "pixel14_block_filter.v")] +
                     [base / name for name in ("card_matcher.v", "card_template_rom.v", "card_result_filter.v")] +
                     sorted((base / "items14").glob("*.v")),
     }
+    selected['scene_system'] = selected['pipeline']
     rtl = selected[args.test]
     top = "tb_pixel14_" + args.test
     tb = REPO / "fpga/sim/sc520-card-recognition" / (top + ".sv")
     macro = HERE / "run-pixel14.do"
     assets = REPO / "assets/templates/sc520-card-recognition/prep-v1-max40"
-    references = [assets / "templates.mem"] if args.test == "pipeline" else []
+    if args.test == 'matcher':
+        assets = REPO / "assets/templates/sc520-card-recognition/matcher-bank-test"
+    if args.test == 'rotation_matcher':
+        assets = REPO / "assets/templates/sc520-card-recognition/rotation-bank-test"
+    if args.test == 'scene_system':
+        assets = REPO / ("assets/templates/sc520-card-recognition/rotation-v1" if args.rotation_variants else "assets/templates/sc520-card-recognition/scene-v2")
+    references = [assets / "templates.mem"] if args.test in ("pipeline", "matcher", "rotation_matcher") else []
+    case_assets = args.scene_cases.resolve() if args.scene_cases else assets
+    if args.test == 'scene_system':
+        cases = case_assets / 'system-cases.txt'
+        if not cases.is_file():
+            parser.error('scene-v2 system-cases.txt is required')
+        lines = [line.split() for line in cases.read_text(encoding='utf-8').splitlines() if line.strip()]
+        prefixes = {row[0] for row in lines}
+        references = [assets / 'templates.mem', cases, assets / 'manifest.json', case_assets / 'fixtures.json']
+        if args.rotation_variants:
+            business = assets / 'business-cases.txt'
+            references += [business, assets / 'bank-contract.json']
+            prefixes.update(row.split()[1] for row in business.read_text(encoding='utf-8').splitlines() if row.strip())
+        for prefix in sorted(prefixes):
+            path = case_assets / 'vectors' / (prefix + '.rgb.mem')
+            references.append(path if path.is_file() else assets / 'vectors' / (prefix + '.rgb.mem'))
     sources = [*rtl, tb, Path(__file__).resolve(), HERE / "simulate.py", macro, *references]
     if not all(path.is_file() for path in sources):
         parser.error("pixel14 source, testbench or runner dependency is missing")
@@ -62,7 +98,11 @@ def main():
     snapshot.mkdir()
     inputs = []
     for path in sources:
-        dest = snapshot / path.name
+        if path.is_relative_to(case_assets):
+            dest = snapshot / path.relative_to(case_assets)
+        else:
+            dest = snapshot / path.relative_to(assets) if path.is_relative_to(assets) else snapshot / path.name
+        dest.parent.mkdir(parents=True, exist_ok=True)
         before = common.digest(path)
         dest.write_bytes(path.read_bytes())
         if common.digest(dest) != before:
@@ -76,11 +116,14 @@ def main():
                     f"set card_tb {quote(snapshot / tb.name)}; set card_assets {quote(snapshot)}; " +
                     f"set card_negative {int(args.negative)}; set card_probe {int(args.watchdog_probe)}; " +
                     f"set card_full {int(args.full_resolution)}; " +
+                    f"set card_rotation {args.rotation_variants}; " +
+                    f"set card_matrix_only {int(args.matrix_only)}; " +
                     f"source {quote(snapshot / macro.name)}")
     command = [str(args.simulator), "-modelsimini", str(local_ini), "-c", "-l", "transcript.log", "-do", command_text]
     report = {"Task": "sc520-card-recognition", "Owner": "2026-10-11 continuation /root",
-              "StartedAt": common.now(), "Mode": mode, "Test": args.test, "FullResolution": args.full_resolution, "Command": command,
-              "WorkingDirectory": str(run), "Inputs": inputs, "TimeoutSeconds": 180,
+              "StartedAt": common.now(), "Mode": mode, "Test": args.test, "FullResolution": args.full_resolution or args.test == 'scene_system', "RotationVariants": args.rotation_variants, "Command": command,
+              "WorkingDirectory": str(run), "Inputs": inputs, "TimeoutSeconds": timeout_seconds,
+              "CaseAssets": str(case_assets), "MatrixOnly": args.matrix_only,
               "SimulatorIni": {"path": str(ini), "sha256": common.digest(ini)},
               "Scope": "Synthetic RGB96 capture groups, per-frame classification and dual-clock result transport; upstream EOF qualification supplied by testbench; no physical camera or board validation"}
     common.save(run / "run-start.json", report)
@@ -91,7 +134,7 @@ def main():
             process = subprocess.Popen(command, cwd=run, stdout=stdout, stderr=stderr)
             report["PID"] = process.pid
             try:
-                code = process.wait(timeout=180)
+                code = process.wait(timeout=timeout_seconds)
             except subprocess.TimeoutExpired:
                 timed_out = True
                 if sys.platform == "win32":

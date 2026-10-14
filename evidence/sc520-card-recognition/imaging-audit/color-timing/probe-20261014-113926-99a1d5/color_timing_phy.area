@@ -1,0 +1,104 @@
+standard
+***Report Model: color_timing_top Device: PH1P35MDG324***
+
+Design Statistics
+#IO                        24   out of    160   15.00%
+  #input                   13
+  #output                  11
+  #inout                    0
+#lut6                    1693   out of  21216    7.98%
+#reg                     1328
+  #slice reg             1328   out of  42432    3.13%
+  #pad reg                  0
+
+Utilization Statistics
+#slice                   1877   out of  21216    8.85%
+  #used ram                 0
+    #dram lut               0
+    #shifter lut            0
+  #used logic            1877
+    #with luts           1175
+    #with adder           518
+    #reg only             184
+#feedthrough              366
+#f7mux                      0   out of  10608    0.00%
+#f8mux                      0   out of   5304    0.00%
+#eram                      10   out of    108    9.26%
+  #eram20k                 10
+  #fifo20k                  0
+#dsp                       12   out of     40   30.00%
+#ddr_byte                   0   out of     12    0.00%
+#mipi_tx                    0   out of      2    0.00%
+#mipi_rx                    0   out of      2    0.00%
+#pad                       24   out of    160   15.00%
+#pll                        0   out of      6    0.00%
+#gclk                       1   out of     32    3.12%
+#lclk                       0   out of     12    0.00%
+#sclk                       4   out of     48    8.33%
+#mlclk                      0   out of      6    0.00%
+#ioclk                      0   out of     18    0.00%
+
+
+Detailed IO Report
+
+      Name         Direction    Location    IOStandard    IOType    DriveStrength    PullType    PackReg  
+       clk           INPUT         K5        LVCMOS18      HRIO          N/A          PULLUP      NONE    
+       eol           INPUT         P3        LVCMOS33      HDIO          N/A          PULLUP      NONE    
+  pixel_byte[7]      INPUT         P6        LVCMOS33      HDIO          N/A          PULLUP      NONE    
+  pixel_byte[6]      INPUT         L4        LVCMOS33      HDIO          N/A          PULLUP      NONE    
+  pixel_byte[5]      INPUT         U2        LVCMOS33      HDIO          N/A          PULLUP      NONE    
+  pixel_byte[4]      INPUT         V1        LVCMOS33      HDIO          N/A          PULLUP      NONE    
+  pixel_byte[3]      INPUT        J14        LVCMOS33      HRIO          N/A          PULLUP      NONE    
+  pixel_byte[2]      INPUT        K17        LVCMOS33      HRIO          N/A          PULLUP      NONE    
+  pixel_byte[1]      INPUT        J16        LVCMOS33      HRIO          N/A          PULLUP      NONE    
+  pixel_byte[0]      INPUT        E18        LVCMOS33      HRIO          N/A          PULLUP      NONE    
+      rst_n          INPUT        G14        LVCMOS33      HRIO          N/A          PULLUP      NONE    
+       sof           INPUT        E16        LVCMOS33      HRIO          N/A          PULLUP      NONE    
+      valid          INPUT        D14        LVCMOS33      HRIO          N/A          PULLUP      NONE    
+      o_eol         OUTPUT         J1        LVCMOS33      HDIO           8            NONE       NONE    
+      o_sof         OUTPUT         K2        LVCMOS33      HDIO           8            NONE       NONE    
+     o_valid        OUTPUT         L3        LVCMOS33      HDIO           8            NONE       NONE    
+   observe[7]       OUTPUT         K3        LVCMOS33      HDIO           8            NONE       NONE    
+   observe[6]       OUTPUT         N4        LVCMOS33      HDIO           8            NONE       NONE    
+   observe[5]       OUTPUT         M2        LVCMOS33      HDIO           8            NONE       NONE    
+   observe[4]       OUTPUT         P1        LVCMOS33      HDIO           8            NONE       NONE    
+   observe[3]       OUTPUT         R2        LVCMOS33      HDIO           8            NONE       NONE    
+   observe[2]       OUTPUT         N2        LVCMOS33      HDIO           8            NONE       NONE    
+   observe[1]       OUTPUT         P5        LVCMOS33      HDIO           8            NONE       NONE    
+   observe[0]       OUTPUT         T3        LVCMOS33      HDIO           8            NONE       NONE    
+
+Report Clock Domain Luts:
+
+---------------------------------------------------------------------------------------------------------------
+  Index   |  Name      |  Frequency   |  LUT As Logic   |  LUT As Shifter   |  LUT As Dram   |  BRAM   |  DSP
+---------------------------------------------------------------------------------------------------------------
+  #1      |  CORE_CLK  |  103MHz      |  2053           |  0                |  0             |  10     |  12
+---------------------------------------------------------------------------------------------------------------
+
+Clock Resource Statistics
+Index     ClockNet     Type            DriverType         Driver          ClockFanout        GclkLocation
+#1        clk_dup_3    InferredGclk    io                 clk_syn_4.di    858                x23y39z0
+
+Report Hierarchy Area:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|Instance                             |Module                       |logic lut |ripple  |seq     |eram    |dsp     |dram lut |shifter lut |f7mux   |f8mux   |pll     |ddr     |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|top                                  |color_timing_top             |1175      |518     |1328    |10      |12      |0        |0           |0       |0       |0       |0       |
+|  u_color                            |pixel14_color_pipeline       |1113      |518     |1224    |10      |12      |0        |0           |0       |0       |0       |0       |
+|    delay_pixels                     |signal_delay                 |55        |28      |151     |10      |0       |0        |0           |0       |0       |0       |0       |
+|      blk_mem_gen_awb_delay_signal_d |blk_mem_gen_awb_delay_signal |0         |0       |0       |10      |0       |0        |0           |0       |0       |0       |0       |
+|        ram_f84573da5ab5_Inst        |ram_f84573da5ab5             |0         |0       |0       |10      |0       |0        |0           |0       |0       |0       |0       |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+DataNet Average Fanout:
+
+   Index     Fanout     Nets  
+    #1          1       4628  
+    #2          2       358   
+    #3          3       182   
+    #4          4        58   
+    #5        5-10      190   
+    #6        11-50     149   
+    #7       101-500     1    
+  Average     1.83            

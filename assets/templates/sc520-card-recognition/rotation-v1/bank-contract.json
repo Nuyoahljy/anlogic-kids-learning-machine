@@ -1,0 +1,15 @@
+{
+  "variants_per_class": 256,
+  "word_bits": 5,
+  "depth": 102400,
+  "active_side": 20,
+  "address": "variant*400+y*20+x",
+  "bit_order": "bit0..4=item10..14",
+  "normalized_source": "mask[6:26,6:26]",
+  "max_distance": 40,
+  "min_margin": 24,
+  "angle_step": 5,
+  "translation_search": false,
+  "templates_sha256": "731EC1B57D12F2EF305C35A055169BCD6733A4F76836AD1FA278BEE5BD9E8341",
+  "selected_design_sha256": "C5BDF21DA2AD2C9DE123F227DD58052DBDA2893DB9214F0755498B3AA981754A"
+}

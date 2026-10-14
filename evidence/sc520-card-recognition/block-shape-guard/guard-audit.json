@@ -1,0 +1,61 @@
+{
+  "created_at": "2026-10-14T10:46:12.426659+08:00",
+  "qualified": true,
+  "rtl": {
+    "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_block_shape_guard.v",
+    "sha256": "2BCB1AABD82168E05CC5E17C026D70A3FBC2B605444BF9050E244BF0AB4BD58B"
+  },
+  "model_report": {
+    "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\block-shape-guard\\model-report.json",
+    "sha256": "5AB6DC9EEB7A5314FB713763325BF8085F5186E7BFA5A15ADE0100D8BA4CB2D9"
+  },
+  "runs": [
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\block-shape-guard\\runs\\normal-20261014-104409-a8d6ef\\run-manifest.json",
+      "sha256": "311B11AA2FAC0C557E8F032D5A1001F8E05C73571B9527BFEFBDD2B9CE05AB72",
+      "summary": {
+        "errors": 0,
+        "checks": 389114,
+        "scenarios": 390,
+        "done": 1,
+        "injected": 0
+      },
+      "native_exit": 0
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\block-shape-guard\\runs\\negative-20261014-104433-1a1f5b\\run-manifest.json",
+      "sha256": "30916FF52800153EB20504EC29532B49EB4D98F49B3EF8E6FDD561D83E7DBD03",
+      "summary": {
+        "errors": 1,
+        "checks": 389115,
+        "scenarios": 390,
+        "done": 1,
+        "injected": 1
+      },
+      "native_exit": 1
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\block-shape-guard\\runs\\watchdog-20261014-104433-a57dea\\run-manifest.json",
+      "sha256": "0A20F82626487EEC0B3AA600EBDD4BED3E448ED5822632288F4B85C585BC0F53",
+      "summary": {
+        "errors": 0,
+        "checks": 1027,
+        "scenarios": 1,
+        "done": 0,
+        "injected": 0
+      },
+      "native_exit": 2
+    }
+  ],
+  "normal_scenarios": 390,
+  "normal_checks": 389114,
+  "normal_errors": 0,
+  "scope": "1024 normalized glyph bits, three analytic references, same-shape qualification only. End-to-end pair gating and TD are parent-task responsibilities.",
+  "limits": [
+    "Frozen v2 synthetic scene masks, not camera measurements.",
+    "Rotation measurements are separate from the 81 original block acceptance cases.",
+    "Small holes/contour noise up to the Hamming budget can pass by design; this is approximate shape evidence, not universal convexity proof.",
+    "MAX_DISTANCE20 rejects some small ideal blocks and most square/triangle rotations beyond +/-2 degrees; see rotation-measurements.json."
+  ],
+  "hardware_validated": false
+}

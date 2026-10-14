@@ -1,0 +1,53 @@
+{
+  "started_at": "2026-10-14T10:44:33.097079+08:00",
+  "mode": "negative",
+  "command": [
+    "D:\\modeltech64_10.7\\win64\\vsim.exe",
+    "-modelsimini",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\block-shape-guard\\runs\\negative-20261014-104433-1a1f5b\\modelsim.ini",
+    "-c",
+    "-l",
+    "transcript.log",
+    "-do",
+    "do run.do"
+  ],
+  "inputs": [
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_block_shape_guard.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\block-shape-guard\\runs\\negative-20261014-104433-1a1f5b\\inputs\\pixel14_block_shape_guard.v",
+      "sha256_before": "2BCB1AABD82168E05CC5E17C026D70A3FBC2B605444BF9050E244BF0AB4BD58B",
+      "snapshot_sha256": "2BCB1AABD82168E05CC5E17C026D70A3FBC2B605444BF9050E244BF0AB4BD58B"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\block-shape-guard\\tb_block_shape_guard.sv",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\block-shape-guard\\runs\\negative-20261014-104433-1a1f5b\\inputs\\tb_block_shape_guard.sv",
+      "sha256_before": "B76BDDCA48D3134B7258AB4B9BC2C767E1BEAEE18AAE720F66E9BDB14C854F4D",
+      "snapshot_sha256": "B76BDDCA48D3134B7258AB4B9BC2C767E1BEAEE18AAE720F66E9BDB14C854F4D"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\block-shape-guard\\cases.txt",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\block-shape-guard\\runs\\negative-20261014-104433-1a1f5b\\inputs\\cases.txt",
+      "sha256_before": "83088712D075924BC3EEA1D7462A7E625B6EC935E625D10571B634D4CA31B842",
+      "snapshot_sha256": "83088712D075924BC3EEA1D7462A7E625B6EC935E625D10571B634D4CA31B842"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\block-shape-guard\\model-report.json",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\block-shape-guard\\runs\\negative-20261014-104433-1a1f5b\\inputs\\model-report.json",
+      "sha256_before": "5AB6DC9EEB7A5314FB713763325BF8085F5186E7BFA5A15ADE0100D8BA4CB2D9",
+      "snapshot_sha256": "5AB6DC9EEB7A5314FB713763325BF8085F5186E7BFA5A15ADE0100D8BA4CB2D9"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\block-shape-guard\\block_shape_model.py",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\block-shape-guard\\runs\\negative-20261014-104433-1a1f5b\\inputs\\block_shape_model.py",
+      "sha256_before": "FC78CEDC0F9EE6869723EC2E01E54576E782A2F8F0DCDD3FFAA584EE25D9FB3F",
+      "snapshot_sha256": "FC78CEDC0F9EE6869723EC2E01E54576E782A2F8F0DCDD3FFAA584EE25D9FB3F"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\block-shape-guard\\simulate_guard.py",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\block-shape-guard\\runs\\negative-20261014-104433-1a1f5b\\inputs\\simulate_guard.py",
+      "sha256_before": "A6F8031FAFF9542C70F9254071757FDB4ACFF2305CDC56335D94E07CCC252D27",
+      "snapshot_sha256": "A6F8031FAFF9542C70F9254071757FDB4ACFF2305CDC56335D94E07CCC252D27"
+    }
+  ],
+  "scope": "Complete normalized glyph stream and protocol, no block/color replacement and no camera validation"
+}

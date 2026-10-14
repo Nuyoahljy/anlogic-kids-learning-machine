@@ -1,0 +1,2979 @@
+{
+  "created_at": "2026-10-14T11:00:46.660661+08:00",
+  "command": [
+    "fpga\\scripts\\sc520-card-recognition\\test-rotation-model.py",
+    "--report",
+    "evidence\\sc520-card-recognition\\scene-model-20261014\\rotation-checks.json"
+  ],
+  "checks": 741,
+  "failed": 0,
+  "details": [
+    {
+      "name": "rotation-v1 hash angle-evaluation.json",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash bank-contract.json",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash business-cases.txt",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash fixtures.json",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash inputs\\experiment-scene-rotation.py",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash inputs\\generate-rotation-fixtures.py",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash inputs\\generate-scene-fixtures.py",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash inputs\\scene-model.py",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash inputs\\scene-rotation-model.py",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash legacy-joint-comparison.json",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash README.md",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash refusal-cases.txt",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash roc.json",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash summary.json",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash system-cases.txt",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash templates.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash training.json",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r000_empty_dark.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r000_empty_dark.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r000_empty_dark.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r000_empty_dark.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r001_empty_white.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r001_empty_white.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r001_empty_white.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r001_empty_white.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r002_empty_red.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r002_empty_red.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r002_empty_red.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r002_empty_red.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r003_card_10_angle_0.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r003_card_10_angle_0.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r003_card_10_angle_0.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r003_card_10_angle_0.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r004_card_10_angle_90.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r004_card_10_angle_90.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r004_card_10_angle_90.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r004_card_10_angle_90.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r005_card_10_angle_180.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r005_card_10_angle_180.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r005_card_10_angle_180.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r005_card_10_angle_180.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r006_card_10_angle_270.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r006_card_10_angle_270.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r006_card_10_angle_270.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r006_card_10_angle_270.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r007_card_10_angle_2p5.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r007_card_10_angle_2p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r007_card_10_angle_2p5.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r007_card_10_angle_2p5.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r008_card_10_angle_87p5.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r008_card_10_angle_87p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r008_card_10_angle_87p5.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r008_card_10_angle_87p5.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r009_card_10_angle_177p5.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r009_card_10_angle_177p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r009_card_10_angle_177p5.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r009_card_10_angle_177p5.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r010_card_10_angle_267p5.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r010_card_10_angle_267p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r010_card_10_angle_267p5.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r010_card_10_angle_267p5.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r011_card_10_size_53_angle_17p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r012_card_10_size_53_angle_62p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r013_card_10_size_53_angle_152p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r014_card_10_size_53_angle_242p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r015_card_10_size_53_angle_332p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r016_card_10_size_69_angle_17p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r017_card_10_size_69_angle_62p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r018_card_10_size_69_angle_152p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r019_card_10_size_69_angle_242p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r020_card_10_size_69_angle_332p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r021_card_10_size_77_angle_17p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r022_card_10_size_77_angle_62p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r023_card_10_size_77_angle_152p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r024_card_10_size_77_angle_242p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r025_card_10_size_77_angle_332p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r026_card_10_soft_paper_edge.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r027_card_11_angle_0.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r027_card_11_angle_0.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r027_card_11_angle_0.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r027_card_11_angle_0.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r028_card_11_angle_90.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r028_card_11_angle_90.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r028_card_11_angle_90.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r028_card_11_angle_90.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r029_card_11_angle_180.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r029_card_11_angle_180.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r029_card_11_angle_180.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r029_card_11_angle_180.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r030_card_11_angle_270.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r030_card_11_angle_270.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r030_card_11_angle_270.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r030_card_11_angle_270.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r031_card_11_angle_2p5.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r031_card_11_angle_2p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r031_card_11_angle_2p5.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r031_card_11_angle_2p5.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r032_card_11_angle_87p5.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r032_card_11_angle_87p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r032_card_11_angle_87p5.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r032_card_11_angle_87p5.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r033_card_11_angle_177p5.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r033_card_11_angle_177p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r033_card_11_angle_177p5.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r033_card_11_angle_177p5.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r034_card_11_angle_267p5.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r034_card_11_angle_267p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r034_card_11_angle_267p5.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r034_card_11_angle_267p5.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r035_card_11_size_53_angle_17p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r036_card_11_size_53_angle_62p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r037_card_11_size_53_angle_152p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r038_card_11_size_53_angle_242p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r039_card_11_size_53_angle_332p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r040_card_11_size_69_angle_17p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r041_card_11_size_69_angle_62p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r042_card_11_size_69_angle_152p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r043_card_11_size_69_angle_242p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r044_card_11_size_69_angle_332p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r045_card_11_size_77_angle_17p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r046_card_11_size_77_angle_62p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r047_card_11_size_77_angle_152p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r048_card_11_size_77_angle_242p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r049_card_11_size_77_angle_332p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r050_card_11_soft_paper_edge.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r051_card_12_angle_0.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r051_card_12_angle_0.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r051_card_12_angle_0.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r051_card_12_angle_0.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r052_card_12_angle_90.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r052_card_12_angle_90.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r052_card_12_angle_90.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r052_card_12_angle_90.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r053_card_12_angle_180.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r053_card_12_angle_180.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r053_card_12_angle_180.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r053_card_12_angle_180.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r054_card_12_angle_270.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r054_card_12_angle_270.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r054_card_12_angle_270.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r054_card_12_angle_270.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r055_card_12_angle_2p5.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r055_card_12_angle_2p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r055_card_12_angle_2p5.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r055_card_12_angle_2p5.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r056_card_12_angle_87p5.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r056_card_12_angle_87p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r056_card_12_angle_87p5.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r056_card_12_angle_87p5.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r057_card_12_angle_177p5.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r057_card_12_angle_177p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r057_card_12_angle_177p5.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r057_card_12_angle_177p5.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r058_card_12_angle_267p5.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r058_card_12_angle_267p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r058_card_12_angle_267p5.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r058_card_12_angle_267p5.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r059_card_12_size_53_angle_17p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r060_card_12_size_53_angle_62p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r061_card_12_size_53_angle_152p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r062_card_12_size_53_angle_242p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r063_card_12_size_53_angle_332p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r064_card_12_size_69_angle_17p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r065_card_12_size_69_angle_62p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r066_card_12_size_69_angle_152p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r067_card_12_size_69_angle_242p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r068_card_12_size_69_angle_332p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r069_card_12_size_77_angle_17p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r070_card_12_size_77_angle_62p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r071_card_12_size_77_angle_152p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r072_card_12_size_77_angle_242p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r073_card_12_size_77_angle_332p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r074_card_12_soft_paper_edge.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r075_card_13_angle_0.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r075_card_13_angle_0.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r075_card_13_angle_0.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r075_card_13_angle_0.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r076_card_13_angle_90.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r076_card_13_angle_90.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r076_card_13_angle_90.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r076_card_13_angle_90.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r077_card_13_angle_180.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r077_card_13_angle_180.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r077_card_13_angle_180.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r077_card_13_angle_180.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r078_card_13_angle_270.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r078_card_13_angle_270.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r078_card_13_angle_270.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r078_card_13_angle_270.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r079_card_13_angle_2p5.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r079_card_13_angle_2p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r079_card_13_angle_2p5.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r079_card_13_angle_2p5.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r080_card_13_angle_87p5.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r080_card_13_angle_87p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r080_card_13_angle_87p5.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r080_card_13_angle_87p5.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r081_card_13_angle_177p5.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r081_card_13_angle_177p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r081_card_13_angle_177p5.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r081_card_13_angle_177p5.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r082_card_13_angle_267p5.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r082_card_13_angle_267p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r082_card_13_angle_267p5.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r082_card_13_angle_267p5.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r083_card_13_size_53_angle_17p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r084_card_13_size_53_angle_62p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r085_card_13_size_53_angle_152p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r086_card_13_size_53_angle_242p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r087_card_13_size_53_angle_332p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r088_card_13_size_69_angle_17p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r089_card_13_size_69_angle_62p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r090_card_13_size_69_angle_152p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r091_card_13_size_69_angle_242p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r092_card_13_size_69_angle_332p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r093_card_13_size_77_angle_17p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r094_card_13_size_77_angle_62p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r095_card_13_size_77_angle_152p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r096_card_13_size_77_angle_242p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r097_card_13_size_77_angle_332p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r098_card_13_soft_paper_edge.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r099_card_14_angle_0.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r099_card_14_angle_0.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r099_card_14_angle_0.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r099_card_14_angle_0.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r100_card_14_angle_90.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r100_card_14_angle_90.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r100_card_14_angle_90.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r100_card_14_angle_90.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r101_card_14_angle_180.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r101_card_14_angle_180.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r101_card_14_angle_180.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r101_card_14_angle_180.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r102_card_14_angle_270.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r102_card_14_angle_270.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r102_card_14_angle_270.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r102_card_14_angle_270.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r103_card_14_angle_2p5.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r103_card_14_angle_2p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r103_card_14_angle_2p5.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r103_card_14_angle_2p5.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r104_card_14_angle_87p5.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r104_card_14_angle_87p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r104_card_14_angle_87p5.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r104_card_14_angle_87p5.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r105_card_14_angle_177p5.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r105_card_14_angle_177p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r105_card_14_angle_177p5.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r105_card_14_angle_177p5.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r106_card_14_angle_267p5.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r106_card_14_angle_267p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r106_card_14_angle_267p5.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r106_card_14_angle_267p5.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r107_card_14_size_53_angle_17p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r108_card_14_size_53_angle_62p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r109_card_14_size_53_angle_152p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r110_card_14_size_53_angle_242p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r111_card_14_size_53_angle_332p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r112_card_14_size_69_angle_17p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r113_card_14_size_69_angle_62p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r114_card_14_size_69_angle_152p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r115_card_14_size_69_angle_242p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r116_card_14_size_69_angle_332p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r117_card_14_size_77_angle_17p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r118_card_14_size_77_angle_62p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r119_card_14_size_77_angle_152p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r120_card_14_size_77_angle_242p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r121_card_14_size_77_angle_332p5.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r122_card_14_soft_paper_edge.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r123_legacy_008_empty_dark_soft_shadow.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r123_legacy_008_empty_dark_soft_shadow.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r123_legacy_008_empty_dark_soft_shadow.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r123_legacy_008_empty_dark_soft_shadow.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r124_legacy_013_empty_wood_noise.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r124_legacy_013_empty_wood_noise.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r124_legacy_013_empty_wood_noise.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r124_legacy_013_empty_wood_noise.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r125_legacy_122_card_10_cut_right.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r125_legacy_122_card_10_cut_right.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r125_legacy_122_card_10_cut_right.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r125_legacy_122_card_10_cut_right.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r126_legacy_596_block_red_circle_white_36.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r126_legacy_596_block_red_circle_white_36.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r126_legacy_596_block_red_circle_white_36.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r126_legacy_596_block_red_circle_white_36.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r127_legacy_608_block_red_square_dark_36.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r127_legacy_608_block_red_square_dark_36.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r127_legacy_608_block_red_square_dark_36.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r127_legacy_608_block_red_square_dark_36.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r128_legacy_620_block_red_triangle_wood_36.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r128_legacy_620_block_red_triangle_wood_36.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r128_legacy_620_block_red_triangle_wood_36.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r128_legacy_620_block_red_triangle_wood_36.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r129_legacy_624_block_yellow_circle_white_52.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r129_legacy_624_block_yellow_circle_white_52.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r129_legacy_624_block_yellow_circle_white_52.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r129_legacy_624_block_yellow_circle_white_52.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r130_legacy_636_block_yellow_square_dark_52.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r130_legacy_636_block_yellow_square_dark_52.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r130_legacy_636_block_yellow_square_dark_52.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r130_legacy_636_block_yellow_square_dark_52.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r131_legacy_648_block_yellow_triangle_wood_52.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r131_legacy_648_block_yellow_triangle_wood_52.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r131_legacy_648_block_yellow_triangle_wood_52.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r131_legacy_648_block_yellow_triangle_wood_52.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r132_legacy_652_block_blue_circle_white_68.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r132_legacy_652_block_blue_circle_white_68.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r132_legacy_652_block_blue_circle_white_68.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r132_legacy_652_block_blue_circle_white_68.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r133_legacy_664_block_blue_square_dark_68.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r133_legacy_664_block_blue_square_dark_68.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r133_legacy_664_block_blue_square_dark_68.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r133_legacy_664_block_blue_square_dark_68.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r134_legacy_676_block_blue_triangle_wood_68.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r134_legacy_676_block_blue_triangle_wood_68.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r134_legacy_676_block_blue_triangle_wood_68.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r134_legacy_676_block_blue_triangle_wood_68.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r135_legacy_686_unknown_ring_white.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r135_legacy_686_unknown_ring_white.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r135_legacy_686_unknown_ring_white.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r135_legacy_686_unknown_ring_white.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r136_legacy_696_unknown_checker_dark.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r136_legacy_696_unknown_checker_dark.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r136_legacy_696_unknown_checker_dark.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r136_legacy_696_unknown_checker_dark.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r137_legacy_704_different_apple_outline.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r137_legacy_704_different_apple_outline.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r137_legacy_704_different_apple_outline.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r137_legacy_704_different_apple_outline.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r138_legacy_705_different_apple_striped.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r138_legacy_705_different_apple_striped.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r138_legacy_705_different_apple_striped.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r138_legacy_705_different_apple_striped.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r139_legacy_706_outside_roi_interference.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r139_legacy_706_outside_roi_interference.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r139_legacy_706_outside_roi_interference.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r139_legacy_706_outside_roi_interference.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r140_legacy_707_block_touching_left.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r140_legacy_707_block_touching_left.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r140_legacy_707_block_touching_left.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r140_legacy_707_block_touching_left.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r141_legacy_711_unqualified_border_red_blue.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r141_legacy_711_unqualified_border_red_blue.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r141_legacy_711_unqualified_border_red_blue.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r141_legacy_711_unqualified_border_red_blue.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r142_legacy_712_unqualified_border_light_dark.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r142_legacy_712_unqualified_border_light_dark.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r142_legacy_712_unqualified_border_light_dark.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r142_legacy_712_unqualified_border_light_dark.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r143_card_10_gain65_before.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r144_card_10_gain65_after.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r144_card_10_gain65_after.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r144_card_10_gain65_after.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r144_card_10_gain65_after.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r145_card_11_gain65_before.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r146_card_11_gain65_after.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r146_card_11_gain65_after.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r146_card_11_gain65_after.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r146_card_11_gain65_after.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r147_card_12_gain65_before.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r148_card_12_gain65_after.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r148_card_12_gain65_after.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r148_card_12_gain65_after.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r148_card_12_gain65_after.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r149_card_13_gain65_before.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r150_card_13_gain65_after.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r150_card_13_gain65_after.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r150_card_13_gain65_after.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r150_card_13_gain65_after.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r151_card_14_gain65_before.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r152_card_14_gain65_after.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r152_card_14_gain65_after.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r152_card_14_gain65_after.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r152_card_14_gain65_after.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r153_unknown_gray_circle.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r153_unknown_gray_circle.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r153_unknown_gray_circle.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r153_unknown_gray_circle.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r154_refusal_10_67_67p5_10.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r154_refusal_10_67_67p5_10.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r154_refusal_10_67_67p5_10.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r154_refusal_10_67_67p5_10.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r155_refusal_10_67_157p5_01.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r155_refusal_10_67_157p5_01.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r155_refusal_10_67_157p5_01.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r155_refusal_10_67_157p5_01.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r156_refusal_12_51_47p5_10.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r156_refusal_12_51_47p5_10.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r156_refusal_12_51_47p5_10.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r156_refusal_12_51_47p5_10.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r157_refusal_12_51_52p5_00.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r157_refusal_12_51_52p5_00.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r157_refusal_12_51_52p5_00.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r157_refusal_12_51_52p5_00.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r158_refusal_12_51_57p5_11.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r158_refusal_12_51_57p5_11.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r158_refusal_12_51_57p5_11.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r158_refusal_12_51_57p5_11.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r159_refusal_12_51_127p5_10.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r159_refusal_12_51_127p5_10.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r159_refusal_12_51_127p5_10.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r159_refusal_12_51_127p5_10.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r160_refusal_12_51_137p5_01.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r160_refusal_12_51_137p5_01.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r160_refusal_12_51_137p5_01.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r160_refusal_12_51_137p5_01.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r161_refusal_12_51_142p5_00.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r161_refusal_12_51_142p5_00.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r161_refusal_12_51_142p5_00.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r161_refusal_12_51_142p5_00.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r162_refusal_12_51_147p5_11.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r162_refusal_12_51_147p5_11.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r162_refusal_12_51_147p5_11.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r162_refusal_12_51_147p5_11.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r163_refusal_12_51_207p5_10.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r163_refusal_12_51_207p5_10.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r163_refusal_12_51_207p5_10.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r163_refusal_12_51_207p5_10.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r164_refusal_12_51_217p5_00.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r164_refusal_12_51_217p5_00.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r164_refusal_12_51_217p5_00.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r164_refusal_12_51_217p5_00.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r165_refusal_12_51_227p5_10.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r165_refusal_12_51_227p5_10.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r165_refusal_12_51_227p5_10.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r165_refusal_12_51_227p5_10.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r166_refusal_12_51_237p5_00.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r166_refusal_12_51_237p5_00.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r166_refusal_12_51_237p5_00.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r166_refusal_12_51_237p5_00.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r167_refusal_12_51_292p5_00.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r167_refusal_12_51_292p5_00.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r167_refusal_12_51_292p5_00.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r167_refusal_12_51_292p5_00.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r168_refusal_12_51_317p5_01.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r168_refusal_12_51_317p5_01.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r168_refusal_12_51_317p5_01.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r168_refusal_12_51_317p5_01.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r169_refusal_12_67_132p5_10.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r169_refusal_12_67_132p5_10.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r169_refusal_12_67_132p5_10.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r169_refusal_12_67_132p5_10.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r170_refusal_12_67_312p5_10.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r170_refusal_12_67_312p5_10.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r170_refusal_12_67_312p5_10.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r170_refusal_12_67_312p5_10.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r171_refusal_14_51_27p5_11.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r171_refusal_14_51_27p5_11.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r171_refusal_14_51_27p5_11.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r171_refusal_14_51_27p5_11.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r172_refusal_14_51_37p5_10.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r172_refusal_14_51_37p5_10.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r172_refusal_14_51_37p5_10.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r172_refusal_14_51_37p5_10.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r173_refusal_14_51_117p5_11.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r173_refusal_14_51_117p5_11.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r173_refusal_14_51_117p5_11.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r173_refusal_14_51_117p5_11.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r174_refusal_14_51_127p5_01.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r174_refusal_14_51_127p5_01.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r174_refusal_14_51_127p5_01.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r174_refusal_14_51_127p5_01.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r175_refusal_14_51_207p5_11.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r175_refusal_14_51_207p5_11.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r175_refusal_14_51_207p5_11.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r175_refusal_14_51_207p5_11.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r176_refusal_14_51_217p5_11.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r176_refusal_14_51_217p5_11.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r176_refusal_14_51_217p5_11.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r176_refusal_14_51_217p5_11.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r177_refusal_14_51_297p5_11.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r177_refusal_14_51_297p5_11.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r177_refusal_14_51_297p5_11.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r177_refusal_14_51_297p5_11.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r178_refusal_14_51_307p5_11.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r178_refusal_14_51_307p5_11.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r178_refusal_14_51_307p5_11.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r178_refusal_14_51_307p5_11.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r179_refusal_14_51_322p5_10.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r179_refusal_14_51_322p5_10.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r179_refusal_14_51_322p5_10.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r179_refusal_14_51_322p5_10.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r180_refusal_14_51_347p5_01.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r180_refusal_14_51_347p5_01.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r180_refusal_14_51_347p5_01.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r180_refusal_14_51_347p5_01.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r181_refusal_14_83_297p5_10.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r181_refusal_14_83_297p5_10.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r181_refusal_14_83_297p5_10.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 hash vectors\\r181_refusal_14_83_297p5_10.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\generate-rotation-fixtures.py",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 snapshot E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\generate-rotation-fixtures.py",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\scene-rotation-model.py",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 snapshot E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\scene-rotation-model.py",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\scene-model.py",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 snapshot E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\scene-model.py",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\experiment-scene-rotation.py",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 snapshot E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\experiment-scene-rotation.py",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 source E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\generate-scene-fixtures.py",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 snapshot E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\generate-scene-fixtures.py",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 artwork E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\prep-v1-max40\\rendered\\card_10_apple_256.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 artwork E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\prep-v1-max40\\rendered\\card_11_banana_256.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 artwork E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\prep-v1-max40\\rendered\\card_12_car_256.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 artwork E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\prep-v1-max40\\rendered\\card_13_star_256.png",
+      "passed": true
+    },
+    {
+      "name": "rotation-v1 artwork E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\prep-v1-max40\\rendered\\card_14_umbrella_256.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash fixtures.json",
+      "passed": true
+    },
+    {
+      "name": "refusals hash summary.json",
+      "passed": true
+    },
+    {
+      "name": "refusals hash system-cases.txt",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q000_card_10_67_67p5_10.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q000_card_10_67_67p5_10.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q000_card_10_67_67p5_10.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q000_card_10_67_67p5_10.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q001_card_10_67_157p5_01.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q001_card_10_67_157p5_01.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q001_card_10_67_157p5_01.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q001_card_10_67_157p5_01.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q002_card_12_51_47p5_10.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q002_card_12_51_47p5_10.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q002_card_12_51_47p5_10.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q002_card_12_51_47p5_10.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q003_card_12_51_52p5_00.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q003_card_12_51_52p5_00.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q003_card_12_51_52p5_00.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q003_card_12_51_52p5_00.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q004_card_12_51_57p5_11.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q004_card_12_51_57p5_11.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q004_card_12_51_57p5_11.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q004_card_12_51_57p5_11.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q005_card_12_51_127p5_10.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q005_card_12_51_127p5_10.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q005_card_12_51_127p5_10.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q005_card_12_51_127p5_10.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q006_card_12_51_137p5_01.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q006_card_12_51_137p5_01.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q006_card_12_51_137p5_01.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q006_card_12_51_137p5_01.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q007_card_12_51_142p5_00.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q007_card_12_51_142p5_00.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q007_card_12_51_142p5_00.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q007_card_12_51_142p5_00.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q008_card_12_51_147p5_11.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q008_card_12_51_147p5_11.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q008_card_12_51_147p5_11.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q008_card_12_51_147p5_11.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q009_card_12_51_207p5_10.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q009_card_12_51_207p5_10.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q009_card_12_51_207p5_10.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q009_card_12_51_207p5_10.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q010_card_12_51_217p5_00.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q010_card_12_51_217p5_00.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q010_card_12_51_217p5_00.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q010_card_12_51_217p5_00.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q011_card_12_51_227p5_10.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q011_card_12_51_227p5_10.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q011_card_12_51_227p5_10.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q011_card_12_51_227p5_10.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q012_card_12_51_237p5_00.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q012_card_12_51_237p5_00.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q012_card_12_51_237p5_00.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q012_card_12_51_237p5_00.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q013_card_12_51_292p5_00.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q013_card_12_51_292p5_00.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q013_card_12_51_292p5_00.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q013_card_12_51_292p5_00.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q014_card_12_51_317p5_01.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q014_card_12_51_317p5_01.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q014_card_12_51_317p5_01.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q014_card_12_51_317p5_01.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q015_card_12_67_132p5_10.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q015_card_12_67_132p5_10.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q015_card_12_67_132p5_10.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q015_card_12_67_132p5_10.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q016_card_12_67_312p5_10.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q016_card_12_67_312p5_10.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q016_card_12_67_312p5_10.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q016_card_12_67_312p5_10.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q017_card_14_51_27p5_11.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q017_card_14_51_27p5_11.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q017_card_14_51_27p5_11.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q017_card_14_51_27p5_11.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q018_card_14_51_37p5_10.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q018_card_14_51_37p5_10.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q018_card_14_51_37p5_10.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q018_card_14_51_37p5_10.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q019_card_14_51_117p5_11.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q019_card_14_51_117p5_11.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q019_card_14_51_117p5_11.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q019_card_14_51_117p5_11.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q020_card_14_51_127p5_01.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q020_card_14_51_127p5_01.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q020_card_14_51_127p5_01.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q020_card_14_51_127p5_01.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q021_card_14_51_207p5_11.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q021_card_14_51_207p5_11.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q021_card_14_51_207p5_11.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q021_card_14_51_207p5_11.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q022_card_14_51_217p5_11.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q022_card_14_51_217p5_11.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q022_card_14_51_217p5_11.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q022_card_14_51_217p5_11.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q023_card_14_51_297p5_11.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q023_card_14_51_297p5_11.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q023_card_14_51_297p5_11.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q023_card_14_51_297p5_11.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q024_card_14_51_307p5_11.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q024_card_14_51_307p5_11.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q024_card_14_51_307p5_11.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q024_card_14_51_307p5_11.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q025_card_14_51_322p5_10.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q025_card_14_51_322p5_10.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q025_card_14_51_322p5_10.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q025_card_14_51_322p5_10.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q026_card_14_51_347p5_01.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q026_card_14_51_347p5_01.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q026_card_14_51_347p5_01.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q026_card_14_51_347p5_01.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q027_card_14_83_297p5_10.mask.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q027_card_14_83_297p5_10.png",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q027_card_14_83_297p5_10.replay.mem",
+      "passed": true
+    },
+    {
+      "name": "refusals hash vectors\\q027_card_14_83_297p5_10.rgb.mem",
+      "passed": true
+    },
+    {
+      "name": "N256 fixed serial ROM",
+      "passed": true
+    },
+    {
+      "name": "class 10 bit ordering",
+      "passed": true
+    },
+    {
+      "name": "class 11 bit ordering",
+      "passed": true
+    },
+    {
+      "name": "class 12 bit ordering",
+      "passed": true
+    },
+    {
+      "name": "class 13 bit ordering",
+      "passed": true
+    },
+    {
+      "name": "class 14 bit ordering",
+      "passed": true
+    },
+    {
+      "name": "system truth r000_empty_dark",
+      "passed": true
+    },
+    {
+      "name": "system truth r001_empty_white",
+      "passed": true
+    },
+    {
+      "name": "system truth r002_empty_red",
+      "passed": true
+    },
+    {
+      "name": "system truth r003_card_10_angle_0",
+      "passed": true
+    },
+    {
+      "name": "system truth r004_card_10_angle_90",
+      "passed": true
+    },
+    {
+      "name": "system truth r005_card_10_angle_180",
+      "passed": true
+    },
+    {
+      "name": "system truth r006_card_10_angle_270",
+      "passed": true
+    },
+    {
+      "name": "system truth r007_card_10_angle_2p5",
+      "passed": true
+    },
+    {
+      "name": "system truth r008_card_10_angle_87p5",
+      "passed": true
+    },
+    {
+      "name": "system truth r009_card_10_angle_177p5",
+      "passed": true
+    },
+    {
+      "name": "system truth r010_card_10_angle_267p5",
+      "passed": true
+    },
+    {
+      "name": "system truth r027_card_11_angle_0",
+      "passed": true
+    },
+    {
+      "name": "system truth r028_card_11_angle_90",
+      "passed": true
+    },
+    {
+      "name": "system truth r029_card_11_angle_180",
+      "passed": true
+    },
+    {
+      "name": "system truth r030_card_11_angle_270",
+      "passed": true
+    },
+    {
+      "name": "system truth r031_card_11_angle_2p5",
+      "passed": true
+    },
+    {
+      "name": "system truth r032_card_11_angle_87p5",
+      "passed": true
+    },
+    {
+      "name": "system truth r033_card_11_angle_177p5",
+      "passed": true
+    },
+    {
+      "name": "system truth r034_card_11_angle_267p5",
+      "passed": true
+    },
+    {
+      "name": "system truth r051_card_12_angle_0",
+      "passed": true
+    },
+    {
+      "name": "system truth r052_card_12_angle_90",
+      "passed": true
+    },
+    {
+      "name": "system truth r053_card_12_angle_180",
+      "passed": true
+    },
+    {
+      "name": "system truth r054_card_12_angle_270",
+      "passed": true
+    },
+    {
+      "name": "system truth r055_card_12_angle_2p5",
+      "passed": true
+    },
+    {
+      "name": "system truth r056_card_12_angle_87p5",
+      "passed": true
+    },
+    {
+      "name": "system truth r057_card_12_angle_177p5",
+      "passed": true
+    },
+    {
+      "name": "system truth r058_card_12_angle_267p5",
+      "passed": true
+    },
+    {
+      "name": "system truth r075_card_13_angle_0",
+      "passed": true
+    },
+    {
+      "name": "system truth r076_card_13_angle_90",
+      "passed": true
+    },
+    {
+      "name": "system truth r077_card_13_angle_180",
+      "passed": true
+    },
+    {
+      "name": "system truth r078_card_13_angle_270",
+      "passed": true
+    },
+    {
+      "name": "system truth r079_card_13_angle_2p5",
+      "passed": true
+    },
+    {
+      "name": "system truth r080_card_13_angle_87p5",
+      "passed": true
+    },
+    {
+      "name": "system truth r081_card_13_angle_177p5",
+      "passed": true
+    },
+    {
+      "name": "system truth r082_card_13_angle_267p5",
+      "passed": true
+    },
+    {
+      "name": "system truth r099_card_14_angle_0",
+      "passed": true
+    },
+    {
+      "name": "system truth r100_card_14_angle_90",
+      "passed": true
+    },
+    {
+      "name": "system truth r101_card_14_angle_180",
+      "passed": true
+    },
+    {
+      "name": "system truth r102_card_14_angle_270",
+      "passed": true
+    },
+    {
+      "name": "system truth r103_card_14_angle_2p5",
+      "passed": true
+    },
+    {
+      "name": "system truth r104_card_14_angle_87p5",
+      "passed": true
+    },
+    {
+      "name": "system truth r105_card_14_angle_177p5",
+      "passed": true
+    },
+    {
+      "name": "system truth r106_card_14_angle_267p5",
+      "passed": true
+    },
+    {
+      "name": "system truth r123_legacy_008_empty_dark_soft_shadow",
+      "passed": true
+    },
+    {
+      "name": "system truth r124_legacy_013_empty_wood_noise",
+      "passed": true
+    },
+    {
+      "name": "system truth r125_legacy_122_card_10_cut_right",
+      "passed": true
+    },
+    {
+      "name": "system truth r126_legacy_596_block_red_circle_white_36",
+      "passed": true
+    },
+    {
+      "name": "system truth r127_legacy_608_block_red_square_dark_36",
+      "passed": true
+    },
+    {
+      "name": "system truth r128_legacy_620_block_red_triangle_wood_36",
+      "passed": true
+    },
+    {
+      "name": "system truth r129_legacy_624_block_yellow_circle_white_52",
+      "passed": true
+    },
+    {
+      "name": "system truth r130_legacy_636_block_yellow_square_dark_52",
+      "passed": true
+    },
+    {
+      "name": "system truth r131_legacy_648_block_yellow_triangle_wood_52",
+      "passed": true
+    },
+    {
+      "name": "system truth r132_legacy_652_block_blue_circle_white_68",
+      "passed": true
+    },
+    {
+      "name": "system truth r133_legacy_664_block_blue_square_dark_68",
+      "passed": true
+    },
+    {
+      "name": "system truth r134_legacy_676_block_blue_triangle_wood_68",
+      "passed": true
+    },
+    {
+      "name": "system truth r135_legacy_686_unknown_ring_white",
+      "passed": true
+    },
+    {
+      "name": "system truth r136_legacy_696_unknown_checker_dark",
+      "passed": true
+    },
+    {
+      "name": "system truth r137_legacy_704_different_apple_outline",
+      "passed": true
+    },
+    {
+      "name": "system truth r138_legacy_705_different_apple_striped",
+      "passed": true
+    },
+    {
+      "name": "system truth r139_legacy_706_outside_roi_interference",
+      "passed": true
+    },
+    {
+      "name": "system truth r140_legacy_707_block_touching_left",
+      "passed": true
+    },
+    {
+      "name": "system truth r141_legacy_711_unqualified_border_red_blue",
+      "passed": true
+    },
+    {
+      "name": "system truth r142_legacy_712_unqualified_border_light_dark",
+      "passed": true
+    },
+    {
+      "name": "system truth r144_card_10_gain65_after",
+      "passed": true
+    },
+    {
+      "name": "system truth r146_card_11_gain65_after",
+      "passed": true
+    },
+    {
+      "name": "system truth r148_card_12_gain65_after",
+      "passed": true
+    },
+    {
+      "name": "system truth r150_card_13_gain65_after",
+      "passed": true
+    },
+    {
+      "name": "system truth r152_card_14_gain65_after",
+      "passed": true
+    },
+    {
+      "name": "system truth r153_unknown_gray_circle",
+      "passed": true
+    },
+    {
+      "name": "system covers all 14 item IDs",
+      "passed": true
+    },
+    {
+      "name": "system count is fixed 69",
+      "passed": true
+    },
+    {
+      "name": "business names",
+      "passed": true
+    },
+    {
+      "name": "business empty",
+      "passed": true
+    },
+    {
+      "name": "business apple",
+      "passed": true
+    },
+    {
+      "name": "business unknown remains present",
+      "passed": true
+    },
+    {
+      "name": "4320 intermediate angles retain 28 rejects",
+      "passed": true
+    },
+    {
+      "name": "no cross-class error in intermediate angles",
+      "passed": true
+    },
+    {
+      "name": "no true-card simple shape hit",
+      "passed": true
+    },
+    {
+      "name": "MAX40 still enforced",
+      "passed": true
+    },
+    {
+      "name": "28 physical refusals exactly reproduce distances",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q000_card_10_67_67p5_10",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q001_card_10_67_157p5_01",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q002_card_12_51_47p5_10",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q003_card_12_51_52p5_00",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q004_card_12_51_57p5_11",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q005_card_12_51_127p5_10",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q006_card_12_51_137p5_01",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q007_card_12_51_142p5_00",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q008_card_12_51_147p5_11",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q009_card_12_51_207p5_10",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q010_card_12_51_217p5_00",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q011_card_12_51_227p5_10",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q012_card_12_51_237p5_00",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q013_card_12_51_292p5_00",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q014_card_12_51_317p5_01",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q015_card_12_67_132p5_10",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q016_card_12_67_312p5_10",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q017_card_14_51_27p5_11",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q018_card_14_51_37p5_10",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q019_card_14_51_117p5_11",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q020_card_14_51_127p5_01",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q021_card_14_51_207p5_11",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q022_card_14_51_217p5_11",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q023_card_14_51_297p5_11",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q024_card_14_51_307p5_11",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q025_card_14_51_322p5_10",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q026_card_14_51_347p5_01",
+      "passed": true
+    },
+    {
+      "name": "refusal phase q027_card_14_83_297p5_10",
+      "passed": true
+    },
+    {
+      "name": "legacy complete joint truth",
+      "passed": true
+    },
+    {
+      "name": "raw circles overlap card bank",
+      "passed": true
+    },
+    {
+      "name": "geometric gate rejects all raw negative overlaps",
+      "passed": true
+    },
+    {
+      "name": "dim source failures remain",
+      "passed": true
+    },
+    {
+      "name": "unit-WB tone joint five-card pass",
+      "passed": true
+    },
+    {
+      "name": "all 256 tone points match actual RTL",
+      "passed": true
+    },
+    {
+      "name": "paper white 165 maps to188",
+      "passed": true
+    }
+  ],
+  "tone_rtl_path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\pixel14_color_pipeline.v",
+  "tone_rtl_sha256": "3A2CEB5F9289A3B23D1CC8120B8375A385FB1D2E284933CAE68FFA2107FFC26F",
+  "boundary": "Software/evidence checks. No new RTL, timing, camera or board qualification is claimed."
+}

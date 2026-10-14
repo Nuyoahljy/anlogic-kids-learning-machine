@@ -1,0 +1,91 @@
+Reading D:/modeltech64_10.7/tcl/vsim/pref.tcl
+
+# 10.7
+
+# set card_top tb_pixel14_matcher
+# tb_pixel14_matcher
+#  set card_sources [list {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-matcher-normal-20261014-101311-4875922c/inputs/pixel14_card_template_rom.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-matcher-normal-20261014-101311-4875922c/inputs/pixel14_card_matcher.v}]
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-matcher-normal-20261014-101311-4875922c/inputs/pixel14_card_template_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-matcher-normal-20261014-101311-4875922c/inputs/pixel14_card_matcher.v
+#  set card_tb {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-matcher-normal-20261014-101311-4875922c/inputs/tb_pixel14_matcher.sv}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-matcher-normal-20261014-101311-4875922c/inputs/tb_pixel14_matcher.sv
+#  set card_assets {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-matcher-normal-20261014-101311-4875922c/inputs}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-matcher-normal-20261014-101311-4875922c/inputs
+#  set card_negative 0
+# 0
+#  set card_probe 0
+# 0
+#  set card_full 0
+# 0
+#  source {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-matcher-normal-20261014-101311-4875922c/inputs/run-pixel14.do}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 10:13:12 on Oct 14,2026
+# vlog E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-matcher-normal-20261014-101311-4875922c/inputs/pixel14_card_template_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-matcher-normal-20261014-101311-4875922c/inputs/pixel14_card_matcher.v 
+# -- Compiling module pixel14_card_template_rom
+# -- Compiling module pixel14_card_matcher
+# 
+# Top level modules:
+# 	pixel14_card_matcher
+# End time: 10:13:12 on Oct 14,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 10:13:12 on Oct 14,2026
+# vlog -sv "+incdir+E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-matcher-normal-20261014-101311-4875922c/inputs" E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-matcher-normal-20261014-101311-4875922c/inputs/tb_pixel14_matcher.sv 
+# -- Compiling module tb_pixel14_matcher
+# 
+# Top level modules:
+# 	tb_pixel14_matcher
+# End time: 10:13:12 on Oct 14,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -wlf wave.wlf work.tb_pixel14_matcher "+ASSET_ROOT=E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-matcher-normal-20261014-101311-4875922c/inputs" "+INJECT_FAULT=0" 
+# Start time: 10:13:13 on Oct 14,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "pixel14_card_matcher(fast)".
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_pixel14_matcher(fast)
+# Loading work.pixel14_card_matcher(fast)
+# Loading work.pixel14_card_template_rom(fast)
+# CASE matcher 1 class 0 variant 0 independent distance
+# CASE matcher 2 class 0 variant 1 independent distance
+# CASE matcher 3 class 0 variant 2 independent distance
+# CASE matcher 4 class 1 variant 0 independent distance
+# CASE matcher 5 class 1 variant 1 independent distance
+# CASE matcher 6 class 1 variant 2 independent distance
+# CASE matcher 7 class 2 variant 0 independent distance
+# CASE matcher 8 class 2 variant 1 independent distance
+# CASE matcher 9 class 2 variant 2 independent distance
+# CASE matcher 10 class 3 variant 0 independent distance
+# CASE matcher 11 class 3 variant 1 independent distance
+# CASE matcher 12 class 3 variant 2 independent distance
+# CASE matcher 13 class 4 variant 0 independent distance
+# CASE matcher 14 class 4 variant 1 independent distance
+# CASE matcher 15 class 4 variant 2 independent distance
+# CASE matcher 16 two extra noise pixels have known analytical distance
+# CASE matcher 17 empty remains healthy absent, never accepted
+# CASE matcher 18 equal distance between different classes is unknown present
+# CASE matcher 19 unrelated texture rejected
+# CASE matcher 20 bad source health cannot be rehabilitated by exact template
+# CASE matcher 21 missing sample rejected
+# CASE matcher 22 duplicate sample index rejected
+# CASE matcher 23 excess sample rejected
+# CASE matcher 24 flush cancels partial capture and new exact frame recovers
+# DONE matcher scenarios=24 checks=88 errors=0
+# ** Note: $finish    : E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-matcher-normal-20261014-101311-4875922c/inputs/tb_pixel14_matcher.sv(79)
+#    Time: 253130 ns  Iteration: 1  Instance: /tb_pixel14_matcher
+# Break in Module tb_pixel14_matcher at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-matcher-normal-20261014-101311-4875922c/inputs/tb_pixel14_matcher.sv line 79
+# Stopped at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-matcher-normal-20261014-101311-4875922c/inputs/tb_pixel14_matcher.sv line 79
+PIXEL14_SIM_FINISHED tb_pixel14_matcher errors=0 checks=88 scenarios=24 done=1 injected=0
+# End time: 10:13:14 on Oct 14,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

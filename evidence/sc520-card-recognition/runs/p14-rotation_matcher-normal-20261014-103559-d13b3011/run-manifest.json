@@ -1,0 +1,109 @@
+{
+  "Task": "sc520-card-recognition",
+  "Owner": "2026-10-11 continuation /root",
+  "StartedAt": "2026-10-14T10:35:59.538+08:00",
+  "Mode": "normal",
+  "Test": "rotation_matcher",
+  "FullResolution": false,
+  "Command": [
+    "D:\\modeltech64_10.7\\win64\\vsim.exe",
+    "-modelsimini",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-rotation_matcher-normal-20261014-103559-d13b3011\\modelsim.ini",
+    "-c",
+    "-l",
+    "transcript.log",
+    "-do",
+    "set card_top tb_pixel14_rotation_matcher; set card_sources [list {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-rotation_matcher-normal-20261014-103559-d13b3011/inputs/pixel14_rotation_matcher.v}]; set card_tb {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-rotation_matcher-normal-20261014-103559-d13b3011/inputs/tb_pixel14_rotation_matcher.sv}; set card_assets {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-rotation_matcher-normal-20261014-103559-d13b3011/inputs}; set card_negative 0; set card_probe 0; set card_full 0; source {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-rotation_matcher-normal-20261014-103559-d13b3011/inputs/run-pixel14.do}"
+  ],
+  "WorkingDirectory": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-rotation_matcher-normal-20261014-103559-d13b3011",
+  "Inputs": [
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_rotation_matcher.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-rotation_matcher-normal-20261014-103559-d13b3011\\inputs\\pixel14_rotation_matcher.v",
+      "sha256_before": "D92B0CE7F6E14A6734EB2D8F706FC7F23B4CB28BEAC704DEF5A89D1D18DCCFC8",
+      "sha256_after": "D92B0CE7F6E14A6734EB2D8F706FC7F23B4CB28BEAC704DEF5A89D1D18DCCFC8",
+      "snapshot_sha256": "D92B0CE7F6E14A6734EB2D8F706FC7F23B4CB28BEAC704DEF5A89D1D18DCCFC8"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\sim\\sc520-card-recognition\\tb_pixel14_rotation_matcher.sv",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-rotation_matcher-normal-20261014-103559-d13b3011\\inputs\\tb_pixel14_rotation_matcher.sv",
+      "sha256_before": "4BD2BC04907A5E65194054610A8A085AA3D79FF0DB97A7435D4074FDCBACE0FA",
+      "sha256_after": "4BD2BC04907A5E65194054610A8A085AA3D79FF0DB97A7435D4074FDCBACE0FA",
+      "snapshot_sha256": "4BD2BC04907A5E65194054610A8A085AA3D79FF0DB97A7435D4074FDCBACE0FA"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\simulate-pixel14.py",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-rotation_matcher-normal-20261014-103559-d13b3011\\inputs\\simulate-pixel14.py",
+      "sha256_before": "E22751C971DDE4117C48D16DC8892C8DB633BBBFD7F9086FE7F0E2183A54FD10",
+      "sha256_after": "E22751C971DDE4117C48D16DC8892C8DB633BBBFD7F9086FE7F0E2183A54FD10",
+      "snapshot_sha256": "E22751C971DDE4117C48D16DC8892C8DB633BBBFD7F9086FE7F0E2183A54FD10"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\simulate.py",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-rotation_matcher-normal-20261014-103559-d13b3011\\inputs\\simulate.py",
+      "sha256_before": "8F3C58AD1E4D9DB1DCB7018BD45C8123BA232068DC90B2DA5610B12C19E3CF17",
+      "sha256_after": "8F3C58AD1E4D9DB1DCB7018BD45C8123BA232068DC90B2DA5610B12C19E3CF17",
+      "snapshot_sha256": "8F3C58AD1E4D9DB1DCB7018BD45C8123BA232068DC90B2DA5610B12C19E3CF17"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\run-pixel14.do",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-rotation_matcher-normal-20261014-103559-d13b3011\\inputs\\run-pixel14.do",
+      "sha256_before": "57717AB0F8735ACB7239125642915CA65E75A9ABA3FD3D946FFB4668A272BAD9",
+      "sha256_after": "57717AB0F8735ACB7239125642915CA65E75A9ABA3FD3D946FFB4668A272BAD9",
+      "snapshot_sha256": "57717AB0F8735ACB7239125642915CA65E75A9ABA3FD3D946FFB4668A272BAD9"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\rotation-bank-test\\templates.mem",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-rotation_matcher-normal-20261014-103559-d13b3011\\inputs\\templates.mem",
+      "sha256_before": "A862050A620B8F0F6172BD3879F884150610FF47431EA76F4BD587A01D704D3B",
+      "sha256_after": "A862050A620B8F0F6172BD3879F884150610FF47431EA76F4BD587A01D704D3B",
+      "snapshot_sha256": "A862050A620B8F0F6172BD3879F884150610FF47431EA76F4BD587A01D704D3B"
+    }
+  ],
+  "TimeoutSeconds": 180,
+  "SimulatorIni": {
+    "path": "D:\\modeltech64_10.7\\modelsim.ini",
+    "sha256": "BC3F7544DD7D525A105A2CF08B4A33AF6B8529EBA49C3F58C415D2E37B47FC14"
+  },
+  "Scope": "Synthetic RGB96 capture groups, per-frame classification and dual-clock result transport; upstream EOF qualification supplied by testbench; no physical camera or board validation",
+  "PID": 66592,
+  "FinishedAt": "2026-10-14T10:36:05.710+08:00",
+  "ElapsedSeconds": 6.170999999972992,
+  "NativeExitCode": 0,
+  "TimedOut": false,
+  "InputsUnchanged": true,
+  "Summary": {
+    "errors": 0,
+    "checks": 88,
+    "scenarios": 24,
+    "done": 1,
+    "injected": 0
+  },
+  "Qualified": true,
+  "Outputs": [
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-rotation_matcher-normal-20261014-103559-d13b3011\\run-start.json",
+      "sha256": "99F31D604F8AF70688BAEEB7224D97FCC430D6F596460A41BADC12D1A2B04C18"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-rotation_matcher-normal-20261014-103559-d13b3011\\stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-rotation_matcher-normal-20261014-103559-d13b3011\\stdout.log",
+      "sha256": "993C3504D2FE17FFD1CD2408B08D37F206348360C5CBA4CE0E1D89A5099468FF"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-rotation_matcher-normal-20261014-103559-d13b3011\\summary.json",
+      "sha256": "1BA294E2544780FC1AD32A665D8A6A573D00A83170FCF1328F6ACA4A3FE977BA"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-rotation_matcher-normal-20261014-103559-d13b3011\\templates.mem",
+      "sha256": "A862050A620B8F0F6172BD3879F884150610FF47431EA76F4BD587A01D704D3B"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-rotation_matcher-normal-20261014-103559-d13b3011\\transcript.log",
+      "sha256": "D309AF65437A4EFE100735F4C0419E3EC047366365663FB17C94666EEB5AB73B"
+    }
+  ]
+}

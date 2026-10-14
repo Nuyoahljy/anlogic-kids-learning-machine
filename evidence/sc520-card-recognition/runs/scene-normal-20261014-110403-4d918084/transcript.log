@@ -1,0 +1,253 @@
+# do {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/scene-normal-20261014-110403-4d918084/launch.do}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 11:04:34 on Oct 14,2026
+# vlog E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/scene-normal-20261014-110403-4d918084/inputs/pixel14_scene_preprocess.v 
+# -- Compiling module pixel14_scene_preprocess
+# 
+# Top level modules:
+# 	pixel14_scene_preprocess
+# End time: 11:04:34 on Oct 14,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 11:04:34 on Oct 14,2026
+# vlog -sv E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/scene-normal-20261014-110403-4d918084/inputs/tb_pixel14_scene.sv 
+# -- Compiling module tb_pixel14_scene
+# 
+# Top level modules:
+# 	tb_pixel14_scene
+# End time: 11:04:34 on Oct 14,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -wlf wave.wlf work.tb_pixel14_scene "+ASSET_ROOT=E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/scene-normal-20261014-110403-4d918084/inputs" "+INJECT_FAULT=0" -gNORMAL_SIZE=20 
+# Start time: 11:04:34 on Oct 14,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "pixel14_scene_preprocess(fast)".
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_pixel14_scene(fast)
+# Loading work.pixel14_scene_preprocess(fast)
+# CASE scene 1 r000_empty_dark
+# CASE scene 2 r001_empty_white
+# CASE scene 3 r002_empty_red
+# CASE scene 4 r003_card_10_angle_0
+# CASE scene 5 r004_card_10_angle_90
+# CASE scene 6 r005_card_10_angle_180
+# CASE scene 7 r006_card_10_angle_270
+# CASE scene 8 r007_card_10_angle_2p5
+# CASE scene 9 r008_card_10_angle_87p5
+# CASE scene 10 r009_card_10_angle_177p5
+# CASE scene 11 r010_card_10_angle_267p5
+# CASE scene 12 r011_card_10_size_53_angle_17p5
+# CASE scene 13 r012_card_10_size_53_angle_62p5
+# CASE scene 14 r013_card_10_size_53_angle_152p5
+# CASE scene 15 r014_card_10_size_53_angle_242p5
+# CASE scene 16 r015_card_10_size_53_angle_332p5
+# CASE scene 17 r016_card_10_size_69_angle_17p5
+# CASE scene 18 r017_card_10_size_69_angle_62p5
+# CASE scene 19 r018_card_10_size_69_angle_152p5
+# CASE scene 20 r019_card_10_size_69_angle_242p5
+# CASE scene 21 r020_card_10_size_69_angle_332p5
+# CASE scene 22 r021_card_10_size_77_angle_17p5
+# CASE scene 23 r022_card_10_size_77_angle_62p5
+# CASE scene 24 r023_card_10_size_77_angle_152p5
+# CASE scene 25 r024_card_10_size_77_angle_242p5
+# CASE scene 26 r025_card_10_size_77_angle_332p5
+# CASE scene 27 r026_card_10_soft_paper_edge
+# CASE scene 28 r027_card_11_angle_0
+# CASE scene 29 r028_card_11_angle_90
+# CASE scene 30 r029_card_11_angle_180
+# CASE scene 31 r030_card_11_angle_270
+# CASE scene 32 r031_card_11_angle_2p5
+# CASE scene 33 r032_card_11_angle_87p5
+# CASE scene 34 r033_card_11_angle_177p5
+# CASE scene 35 r034_card_11_angle_267p5
+# CASE scene 36 r035_card_11_size_53_angle_17p5
+# CASE scene 37 r036_card_11_size_53_angle_62p5
+# CASE scene 38 r037_card_11_size_53_angle_152p5
+# CASE scene 39 r038_card_11_size_53_angle_242p5
+# CASE scene 40 r039_card_11_size_53_angle_332p5
+# CASE scene 41 r040_card_11_size_69_angle_17p5
+# CASE scene 42 r041_card_11_size_69_angle_62p5
+# CASE scene 43 r042_card_11_size_69_angle_152p5
+# CASE scene 44 r043_card_11_size_69_angle_242p5
+# CASE scene 45 r044_card_11_size_69_angle_332p5
+# CASE scene 46 r045_card_11_size_77_angle_17p5
+# CASE scene 47 r046_card_11_size_77_angle_62p5
+# CASE scene 48 r047_card_11_size_77_angle_152p5
+# CASE scene 49 r048_card_11_size_77_angle_242p5
+# CASE scene 50 r049_card_11_size_77_angle_332p5
+# CASE scene 51 r050_card_11_soft_paper_edge
+# CASE scene 52 r051_card_12_angle_0
+# CASE scene 53 r052_card_12_angle_90
+# CASE scene 54 r053_card_12_angle_180
+# CASE scene 55 r054_card_12_angle_270
+# CASE scene 56 r055_card_12_angle_2p5
+# CASE scene 57 r056_card_12_angle_87p5
+# CASE scene 58 r057_card_12_angle_177p5
+# CASE scene 59 r058_card_12_angle_267p5
+# CASE scene 60 r059_card_12_size_53_angle_17p5
+# CASE scene 61 r060_card_12_size_53_angle_62p5
+# CASE scene 62 r061_card_12_size_53_angle_152p5
+# CASE scene 63 r062_card_12_size_53_angle_242p5
+# CASE scene 64 r063_card_12_size_53_angle_332p5
+# CASE scene 65 r064_card_12_size_69_angle_17p5
+# CASE scene 66 r065_card_12_size_69_angle_62p5
+# CASE scene 67 r066_card_12_size_69_angle_152p5
+# CASE scene 68 r067_card_12_size_69_angle_242p5
+# CASE scene 69 r068_card_12_size_69_angle_332p5
+# CASE scene 70 r069_card_12_size_77_angle_17p5
+# CASE scene 71 r070_card_12_size_77_angle_62p5
+# CASE scene 72 r071_card_12_size_77_angle_152p5
+# CASE scene 73 r072_card_12_size_77_angle_242p5
+# CASE scene 74 r073_card_12_size_77_angle_332p5
+# CASE scene 75 r074_card_12_soft_paper_edge
+# CASE scene 76 r075_card_13_angle_0
+# CASE scene 77 r076_card_13_angle_90
+# CASE scene 78 r077_card_13_angle_180
+# CASE scene 79 r078_card_13_angle_270
+# CASE scene 80 r079_card_13_angle_2p5
+# CASE scene 81 r080_card_13_angle_87p5
+# CASE scene 82 r081_card_13_angle_177p5
+# CASE scene 83 r082_card_13_angle_267p5
+# CASE scene 84 r083_card_13_size_53_angle_17p5
+# CASE scene 85 r084_card_13_size_53_angle_62p5
+# CASE scene 86 r085_card_13_size_53_angle_152p5
+# CASE scene 87 r086_card_13_size_53_angle_242p5
+# CASE scene 88 r087_card_13_size_53_angle_332p5
+# CASE scene 89 r088_card_13_size_69_angle_17p5
+# CASE scene 90 r089_card_13_size_69_angle_62p5
+# CASE scene 91 r090_card_13_size_69_angle_152p5
+# CASE scene 92 r091_card_13_size_69_angle_242p5
+# CASE scene 93 r092_card_13_size_69_angle_332p5
+# CASE scene 94 r093_card_13_size_77_angle_17p5
+# CASE scene 95 r094_card_13_size_77_angle_62p5
+# CASE scene 96 r095_card_13_size_77_angle_152p5
+# CASE scene 97 r096_card_13_size_77_angle_242p5
+# CASE scene 98 r097_card_13_size_77_angle_332p5
+# CASE scene 99 r098_card_13_soft_paper_edge
+# CASE scene 100 r099_card_14_angle_0
+# CASE scene 101 r100_card_14_angle_90
+# CASE scene 102 r101_card_14_angle_180
+# CASE scene 103 r102_card_14_angle_270
+# CASE scene 104 r103_card_14_angle_2p5
+# CASE scene 105 r104_card_14_angle_87p5
+# CASE scene 106 r105_card_14_angle_177p5
+# CASE scene 107 r106_card_14_angle_267p5
+# CASE scene 108 r107_card_14_size_53_angle_17p5
+# CASE scene 109 r108_card_14_size_53_angle_62p5
+# CASE scene 110 r109_card_14_size_53_angle_152p5
+# CASE scene 111 r110_card_14_size_53_angle_242p5
+# CASE scene 112 r111_card_14_size_53_angle_332p5
+# CASE scene 113 r112_card_14_size_69_angle_17p5
+# CASE scene 114 r113_card_14_size_69_angle_62p5
+# CASE scene 115 r114_card_14_size_69_angle_152p5
+# CASE scene 116 r115_card_14_size_69_angle_242p5
+# CASE scene 117 r116_card_14_size_69_angle_332p5
+# CASE scene 118 r117_card_14_size_77_angle_17p5
+# CASE scene 119 r118_card_14_size_77_angle_62p5
+# CASE scene 120 r119_card_14_size_77_angle_152p5
+# CASE scene 121 r120_card_14_size_77_angle_242p5
+# CASE scene 122 r121_card_14_size_77_angle_332p5
+# CASE scene 123 r122_card_14_soft_paper_edge
+# CASE scene 124 r123_legacy_008_empty_dark_soft_shadow
+# CASE scene 125 r124_legacy_013_empty_wood_noise
+# CASE scene 126 r125_legacy_122_card_10_cut_right
+# CASE scene 127 r126_legacy_596_block_red_circle_white_36
+# CASE scene 128 r127_legacy_608_block_red_square_dark_36
+# CASE scene 129 r128_legacy_620_block_red_triangle_wood_36
+# CASE scene 130 r129_legacy_624_block_yellow_circle_white_52
+# CASE scene 131 r130_legacy_636_block_yellow_square_dark_52
+# CASE scene 132 r131_legacy_648_block_yellow_triangle_wood_52
+# CASE scene 133 r132_legacy_652_block_blue_circle_white_68
+# CASE scene 134 r133_legacy_664_block_blue_square_dark_68
+# CASE scene 135 r134_legacy_676_block_blue_triangle_wood_68
+# CASE scene 136 r135_legacy_686_unknown_ring_white
+# CASE scene 137 r136_legacy_696_unknown_checker_dark
+# CASE scene 138 r137_legacy_704_different_apple_outline
+# CASE scene 139 r138_legacy_705_different_apple_striped
+# CASE scene 140 r139_legacy_706_outside_roi_interference
+# CASE scene 141 r140_legacy_707_block_touching_left
+# CASE scene 142 r141_legacy_711_unqualified_border_red_blue
+# CASE scene 143 r142_legacy_712_unqualified_border_light_dark
+# CASE scene 144 r143_card_10_gain65_before
+# CASE scene 145 r144_card_10_gain65_after
+# CASE scene 146 r145_card_11_gain65_before
+# CASE scene 147 r146_card_11_gain65_after
+# CASE scene 148 r147_card_12_gain65_before
+# CASE scene 149 r148_card_12_gain65_after
+# CASE scene 150 r149_card_13_gain65_before
+# CASE scene 151 r150_card_13_gain65_after
+# CASE scene 152 r151_card_14_gain65_before
+# CASE scene 153 r152_card_14_gain65_after
+# CASE scene 154 r153_unknown_gray_circle
+# CASE scene 155 r154_refusal_10_67_67p5_10
+# CASE scene 156 r155_refusal_10_67_157p5_01
+# CASE scene 157 r156_refusal_12_51_47p5_10
+# CASE scene 158 r157_refusal_12_51_52p5_00
+# CASE scene 159 r158_refusal_12_51_57p5_11
+# CASE scene 160 r159_refusal_12_51_127p5_10
+# CASE scene 161 r160_refusal_12_51_137p5_01
+# CASE scene 162 r161_refusal_12_51_142p5_00
+# CASE scene 163 r162_refusal_12_51_147p5_11
+# CASE scene 164 r163_refusal_12_51_207p5_10
+# CASE scene 165 r164_refusal_12_51_217p5_00
+# CASE scene 166 r165_refusal_12_51_227p5_10
+# CASE scene 167 r166_refusal_12_51_237p5_00
+# CASE scene 168 r167_refusal_12_51_292p5_00
+# CASE scene 169 r168_refusal_12_51_317p5_01
+# CASE scene 170 r169_refusal_12_67_132p5_10
+# CASE scene 171 r170_refusal_12_67_312p5_10
+# CASE scene 172 r171_refusal_14_51_27p5_11
+# CASE scene 173 r172_refusal_14_51_37p5_10
+# CASE scene 174 r173_refusal_14_51_117p5_11
+# CASE scene 175 r174_refusal_14_51_127p5_01
+# CASE scene 176 r175_refusal_14_51_207p5_11
+# CASE scene 177 r176_refusal_14_51_217p5_11
+# CASE scene 178 r177_refusal_14_51_297p5_11
+# CASE scene 179 r178_refusal_14_51_307p5_11
+# CASE scene 180 r179_refusal_14_51_322p5_10
+# CASE scene 181 r180_refusal_14_51_347p5_01
+# CASE scene 182 r181_refusal_14_83_297p5_10
+# CASE scene 183 raster or identity defect 1
+# CASE scene 184 raster or identity defect 2
+# CASE scene 185 raster or identity defect 3
+# CASE scene 186 raster or identity defect 4
+# CASE scene 187 raster or identity defect 5
+# CASE scene 188 raster or identity defect 6
+# CASE scene 189 raster or identity defect 7
+# CASE scene 190 raster or identity defect 8
+# CASE scene 191 raster or identity defect 9
+# CASE scene 192 raster or identity defect 10
+# CASE scene 193 raster or identity defect 11
+# CASE scene 194 raster or identity defect 12
+# CASE scene 195 SOF without valid is revoked
+# CASE scene 196 EOL without valid is revoked
+# CASE scene 197 extra pixel after certified EOF cancels queued result
+# CASE scene 198 flush during queued extraction cancels both outputs
+# CASE scene 199 two banks retain two certified frames in input order
+# CASE scene 200 third compact capture overruns fail closed
+# CASE scene 201 lower median exact even split rejects uncertain boundary
+# CASE scene 202 75 percent border-support threshold with 89 isolated outliers
+# CASE scene 203 75 percent border-support threshold with 90 isolated outliers
+# CASE scene 204 bright paper suppresses block pixels while retaining normalized card data
+# CASE scene 205 tiny residual keeps normalized content but never claims presence
+# CASE scene 206 completed then stopped stream emits no repeated events
+# SCENE_LATENCY max_after_eof_clocks=660972 max_single_clocks=365242 fixtures=182
+# ** Note: $finish    : E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/scene-normal-20261014-110403-4d918084/inputs/tb_pixel14_scene.sv(256)
+#    Time: 905630080 ns  Iteration: 1  Instance: /tb_pixel14_scene
+# Break in Module tb_pixel14_scene at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/scene-normal-20261014-110403-4d918084/inputs/tb_pixel14_scene.sv line 256
+# Stopped at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/scene-normal-20261014-110403-4d918084/inputs/tb_pixel14_scene.sv line 256
+# file6ec49e0
+# End time: 11:07:41 on Oct 14,2026, Elapsed time: 0:03:07
+# Errors: 0, Warnings: 0
