@@ -2,12 +2,39 @@
 
 - 任务 ID：sc520-card-recognition
 - 状态：等待主对话审核
-- 负责人：接续板级开发聊天 01a13561-2629-7fa2-86a0-4087ad34cc7c /root；已授权接管旧聊天 01a134f7-79c0-7c41-ad38-c3d907583034 中断遗留
+- 负责人：接续 T017 显示集成审计与板级开发 01a14030-32d9-78f2-b274-91a370cc9ff0 /root；按D047接管01a13561-2629-7fa2-86a0-4087ad34cc7c中断遗留
 - 分支：task/sc520-card-recognition
 - 基础提交：f609426044982c986b54e999866be9f4c1af2682
 - 开始时间：2026-10-10T19:31:42+08:00
-- 结束时间：2026-10-15 D036/D0116同帧诊断软件与物理资格完成，等待主审；未上板
+- 结束时间：2026-10-15 T017/D0117显示集成离线资格及封存完成，等待主审核；未上板
 - 工作目录：E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition
+
+## T017/D0117最终交付（2026-10-15，优先于下方历史）
+
+状态：等待主对话审核。本轮接续负责人01a14030-32d9-78f2-b274-91a370cc9ff0，接管基线68e2b4d01485fa1b3049d81e98a09c2e3dc98a94；显示依赖edaced3542a4a056aa90397aefadb45e279e69e2。新compositor接当前业务28位状态单次帧首快照、六行诊断、唯一字体、同步Logo；全帧处理/原图同为六寄存层（N→N+5），统一SCENE=(160,120,960,480)。K3仅mode0/1切图，问答/结束页仍跳题语义，K4恢复原图、K1压同拍K3、K2保留。WB/tone/54拍、分类/256模板/计分/I2C及D0116 155保护文件保持；无音频或新GPIO接入。
+
+现有最终5轮软件资格107场景/11,342,730检查/0错；RGB注错native1/恰1错与500ns提前停止native2/done0均如期拒绝。本次未重跑ModelSim，独立回读244项输入/输出/图引用，四幅720p实际PPM与golden/预览逐像素一致，三幅重新目视核布局（四图均有原负责人目视记录）。系统Python缺PIL的只读复核尝试未完成图比较，改用原Codex bundled Python后完整通过；没有据失败尝试声明成功。
+
+物理原生syn/phy exit0，未重新综合/布局；335输入及76恢复复制文件一致。39ROM路由签名/地址/控制/输出、21组2ns同步链、4mailbox保留80/106/28/762位逐Q/D通过，最长传播1.909/1.684/1.418/2.974ns（独立10ns界限，非异步setup/hold或MTBF签核）。49个I2C寄存cell全回溯父PLL，1578路径setup/hold/recovery/removal最小1.383/0.075/39.296/0.109ns。原STA SWNS+0.104/HWNS+0.020ns、双TNS0、覆盖96.23%；18472LUT6/21164REG/19066slice/107ERAM/22DSP，相对116为-3/+203/+10/+10/0。保留混合扇出与局部时钟critical warnings。
+
+首次终审日志audit-attempt-1.log因coordinator117-v1已过期被准确拒绝；主233543-7658fc真实登记7文档SHA后，另建coordinator117-v2，通过audit-attempt-2.log。快照脚本仅增加必填owner记录真实执行者，不改物理审计或约束。原v1/旧主登记/原TD结果不回写；TimingQualified=false是原构建待审初值，最终资格看display17/candidate-audit-v1.json。
+
+已执行命令（cwd本worktree；Python路径C:/Users/33630/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe）：-B -X utf8 fpga/scripts/sc520-card-recognition/snapshot-display17-coordinator.py --tag coordinator117-v2 --owner '01a14030-32d9-78f2-b274-91a370cc9ff0 /root'；-B -X utf8 fpga/custom_project/sc520-pixel17/tools/audit-display17-candidate.py evidence/sc520-card-recognition/builds/phy117-v1 --bindings evidence/sc520-card-recognition/display17/rom-proofs/117-v1/bindings.json --coordinator-review evidence/sc520-card-recognition/display17/coordinator117-v2/review.json --software evidence/sc520-card-recognition/display17/software-validation-v1.json --output evidence/sc520-card-recognition/display17/candidate-audit-v1.json；-B -X utf8 fpga/scripts/sc520-card-recognition/seal-display17.py --audit evidence/sc520-card-recognition/display17/candidate-audit-v1.json。三命令均exit0。
+
+交付bit：evidence/sc520-card-recognition/delivery-0117/sc520-pixel17-0117.bit，1789539字节，SHA256 E907703E4563C4E6DB4FB4FC99C3CBB8C7BFAE52830265576460A1CA4B1F0F1C，与phy117-v1原件一致。manifest.json绑定指南/软件/物理审核及预览，指南hardware/sc520-card-recognition/display17-integration.md列最少用户步骤。本地提交号和提交后字节核查在随后独立共享批绑定。提交前528个递归审核/manifest引用哈希及25文件链接通过；常规git diff --check把冻结源码CRLF当行末空白，显式cr-at-eol检查通过。finish-task第一次将自身日志CRLF提示误作越权路径而拒绝，未提交；仅将本日志统一LF后重试，冻结RTL/测试/构建输入不改。
+
+建议主动作/下一分支：审核68e2b4d后的本任务增量及以上证据；通过后统一安排一次SRAM显示/按键验证（启动原图、0/1 K3、问答不切图、K4、Logo/六行/框），用户无需重做D0116原两图或全计分。颜色/IR问题未修复，无IR-cut为用户供应信息；外部SDA/RC/使能、CRC/ECC内容、精确DDR帧身份、实物长测和音频仍未验。ERAM仅余1块，下一整机接入重新核实际预算；HardwareValidated=false、FullSystemTimingSignoff=false。主文件由主更新，本轮未下载、Flash、COM、推送或合并。
+## D047接管与现有结果核验（2026-10-15T23:33:37.3527002+08:00）
+
+恢复快照206文件与D0116保护155文件逐SHA通过；当前task/sc520-card-recognition，HEAD68e2b4d，继承未提交内容，不reset/stash/切分支。phy117-v1已有21:47原生exit0及E907703E4563C4E6DB4FB4FC99C3CBB8C7BFAE52830265576460A1CA4B1F0F1C/1789539字节bit，不重新综合或布局。工作树总文档为旧历史，当前主库D047及随后归属记录优先。继续39路由ROM、21同步链、四mailbox、I2C复位及软件绑定审计；当前未交付。主恢复登记未带7主文档SHA已请求主在新批补登记，严格校验不放宽，coordinator117-v1原样保留。该请求已send成功；不等于主已完成补记。只改本任务文件，主文档/其他树不写，真实音频/硬件未接触。
+
+## 2026-10-15 D046/T017接手
+
+阶段进展：最终5轮软件资格通过，正常共107场景11,342,730检查0错；最终Logo RGB注错native1/恰1错、500ns提前停止native2/done0分别正确拒绝。四幅720p实际PPM与独立golden逐像素相同，155保护文件/9导入/152旧字形一致，汇总display17/software-validation-v1.json。D0117/build6a50b117的335输入/92引用综合exit0；21:14:32布局日志在start_timer中断，恢复时无进程/原生exit/最终result，不能归为资源或时序失败。新增resume-display17.ps1复制已冻结综合DB/源到独立phy117-v1续跑物理，不重新综合、不改原中断目录；源/复制SHA逐项检查。本版ROM和物理终审继续。针脚归属已由主PROJECT_MEMORY确认接回，不重复向用户确认。
+
+21:41进展：当前syn39ROM已完成新字体3072个y输入检查、8Logo index平面/2palette平面、640组Logo mux真值及125个bank/class独立BDD验证，内容逐字与冻结模板/字体/Logo资产相符；proof与bindings在display17/rom-proofs/117-v1，单综合内容审核rom-content-syn-v1.json明确CandidateQualified=false。初始直接沿用116全matcher cone被精确比较拒绝后改为本版独立BDD，未放宽匹配。4幅实际预览均已目视检查。布局实际19066slice/18472LUT6/21164REG/107ERAM/22DSP，综合21537slice估算不代表最终超限；最终布线/时序仍在途。新物理审计/交付/提交复核脚本已准备，7主文档按最新登记封存coordinator117-v1；没有写主文档或原116文件。
+
+从干净68e2b4d继续T017显示整机接入。D0116所有build/交付/两实拍共155文件逐SHA保护，接手3530任务源码/素材记录于evidence/sc520-card-recognition/display17/start.json。显示依赖9文件从edaced3 Git blob提取，不读活动副本，不导入frozen0109字体/诊断。新独立工程sc520-pixel17，拟定D0117/build6a50b117；当前实现中，未验证。只修改显示/业务状态导出兼容参数及必要测试，保持相机WB/tone/54拍、阈值、256模板、计分和I2C核心。K3上下文切图、K4原图、K1抑制同拍切图、K2保持；输入帧首生效。先取消旧renderer，再一次业务快照和当前六行诊断、共享字体、同步Logo组成六层链。所有先前完成段落为冻结历史。本批不接音频/新GPIO，不操作硬件、推送或合并。
 
 ## 目标与验收条件
 
@@ -246,7 +273,7 @@ root 实际运行 bundled Python -B -X utf8 fpga/scripts/sc520-card-recognition/
 
 ## 2026-10-13 断点恢复：107排障候选
 
-- 状态：进行中；阶段基础38552a5。当前对话根据用户连续“从断点继续运行/继续执行/继续”接手上一对话遗留boardfix源码、18轮v3证据和107构建；未重新编译或操作硬件。当前照片单独归档，拍摄时镜像未回读。
+- 状态：等待主对话审核；阶段基础38552a5。当前对话根据用户连续“从断点继续运行/继续执行/继续”接手上一对话遗留boardfix源码、18轮v3证据和107构建；未重新编译或操作硬件。当前照片单独归档，拍摄时镜像未回读。
 - 已查实107于2026-10-12 20:26完成syn/phy两阶段exit0。root实际运行audit-candidate.py，首次因同域打包CEA路径无法解析而退出1；保留audit.json，修新审计器后第二次exit0。294输入/快照、4ROM、4键、13同步链、业务80位/诊断176位核对通过。SWNS +0.117ns、HWNS +0.020ns，TNS均0；bit SHA256 3AC5E069788CA11EA2136D36AAE5993447C2A2C62B9109C821F7DE77C6834044。
 - 同域附带路径24/464条分别逐条保留，跨域160/352条无缺位；最大传播1.604/1.321ns，对比外部10ns限值，不宣称异步setup/hold或MTBF通过。旧106历史和bit保持原样。
 - review_provenance独立回读v3 provenance证据通过，并提出ISP先排空而EOF HS仍高的补测。因代理限流，tail_tests以独立上下文接手指定TB补测，audit_review只读复核物理审计。root负责验收、文档、索引与提交。最终软件结果以随后独立v4汇总为准。

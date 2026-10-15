@@ -2,7 +2,7 @@
 // OSD coordinates/status snapshot share clk; osd_active/rgb have one-cycle latency.
 module items14_system #(
     parameter integer TIMEOUT_MS=100,ABSENT_SAMPLES=3,FEEDBACK_TICKS=1500,MAX_WRONG=2,
-    parameter integer SCENE_UI=0
+    parameter integer SCENE_UI=0,RENDER_ENABLE=1
 ) (
     input wire clk,rst_n,tick_1ms,flush,block_revoke,card_revoke,
     input wire block_event,block_healthy,block_present,block_valid,
@@ -34,7 +34,8 @@ module items14_system #(
     output wire [2:0] audio_event_kind,
     output wire [3:0] audio_event_item,
     output wire osd_active,
-    output wire [23:0] osd_rgb
+    output wire [23:0] osd_rgb,
+    output wire [27:0] render_state
 );
     items14_result_join #(.TIMEOUT_MS(TIMEOUT_MS)) joiner(
         .clk(clk),.rst_n(rst_n),.tick_1ms(tick_1ms),.flush(flush),
@@ -62,18 +63,25 @@ module items14_system #(
         .audio_event_valid(audio_event_valid),.audio_event_kind(audio_event_kind),
         .audio_event_item(audio_event_item),.audio_cancel(audio_cancel));
     reg result_healthy;
+    always @(posedge clk or negedge rst_n)
+        if(!rst_n)result_healthy<=0;
+        else if(revoke_now)result_healthy<=0;
+        else if(obs_event)result_healthy<=obs_healthy;
+    // Live, revoke-gated business state. The external renderer snapshots once.
+    assign render_state={mode,phase,score,question_index,target_item,
+        revoke_now ? 4'd0:display_item,feedback,display_source_test,
+        !revoke_now && armed,audio_fault,!audio_idle,!revoke_now && result_healthy};
     reg [1:0] osd_mode,osd_phase;
     reg [3:0] osd_score,osd_question,osd_target,osd_item;
     reg [2:0] osd_feedback;
     reg osd_source,osd_armed,osd_audio_fault,osd_audio_busy,osd_healthy;
+    generate if(RENDER_ENABLE)begin: legacy_render
     always @(posedge clk or negedge rst_n) begin
         if(!rst_n) begin
-            result_healthy<=0;osd_mode<=0;osd_phase<=0;osd_score<=0;osd_question<=0;
+            osd_mode<=0;osd_phase<=0;osd_score<=0;osd_question<=0;
             osd_target<=0;osd_item<=0;osd_feedback<=0;osd_source<=0;osd_armed<=0;
             osd_audio_fault<=0;osd_audio_busy<=0;osd_healthy<=0;
         end else begin
-            if(revoke_now) result_healthy<=0;
-            else if(obs_event) result_healthy<=obs_healthy;
             if(video_frame_start) begin
                 osd_mode<=mode;osd_phase<=phase;osd_score<=score;osd_question<=question_index;
                 osd_target<=target_item;osd_item<=revoke_now ? 4'd0 : display_item;
@@ -87,4 +95,7 @@ module items14_system #(
         .target_item(osd_target),.display_item(osd_item),.feedback(osd_feedback),
         .source_test(osd_source),.armed(osd_armed),.audio_fault(osd_audio_fault),.audio_busy(osd_audio_busy),
         .result_healthy(osd_healthy),.active(osd_active),.rgb(osd_rgb));
+    end else begin: external_render
+        assign osd_active=1'b0;assign osd_rgb=24'd0;
+    end endgenerate
 endmodule

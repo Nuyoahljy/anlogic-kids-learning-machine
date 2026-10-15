@@ -1,0 +1,152 @@
+{
+  "CreatedAt": "2026-10-15T23:38:49.839069+08:00",
+  "Version": "D0117",
+  "Task": "D046/T017",
+  "BaselineCommit": "68e2b4d01485fa1b3049d81e98a09c2e3dc98a94",
+  "DisplaySourceCommit": "edaced3542a4a056aa90397aefadb45e279e69e2",
+  "SynthesisRun": "6a50b117",
+  "PhysicalRun": "phy117-v1",
+  "Status": "等待主审核；显示整机候选，未上板",
+  "Bit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\delivery-0117\\sc520-pixel17-0117.bit",
+    "SHA256": "E907703E4563C4E6DB4FB4FC99C3CBB8C7BFAE52830265576460A1CA4B1F0F1C",
+    "Bytes": 1789539
+  },
+  "OriginalBit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\phy117-v1\\td_project\\camera_to_dsi_display_Runs\\phy_1\\camera_to_dsi_display.bit",
+    "SHA256": "E907703E4563C4E6DB4FB4FC99C3CBB8C7BFAE52830265576460A1CA4B1F0F1C",
+    "Bytes": 1789539
+  },
+  "PhysicalAudit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\display17\\candidate-audit-v1.json",
+    "SHA256": "76F8C3834DD3CD43F8D4DF0135F549770A17C53020335EB6EA4BD4DDFF485241",
+    "Bytes": 3091344
+  },
+  "SoftwareAudit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\display17\\software-validation-v1.json",
+    "SHA256": "05EC7A656677B78290A1CD4C5CDB898B4091427B114EECAEC6BD253C4C4C5CE3",
+    "Bytes": 85020
+  },
+  "Guide": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\hardware\\sc520-card-recognition\\display17-integration.md",
+    "SHA256": "4F62A022C7D2BC123311E6B1B0FF348353FA718912ED37B964B4F314EC2EC72C",
+    "Bytes": 9648
+  },
+  "Resources": {
+    "Used": {
+      "IO": 62,
+      "input": 6,
+      "output": 31,
+      "inout": 25,
+      "lut6": 18472,
+      "reg": 21164,
+      "slice reg": 21164,
+      "pad reg": 0,
+      "slice": 19066,
+      "used ram": 312,
+      "dram lut": 296,
+      "shifter lut": 16,
+      "used logic": 18754,
+      "with luts": 15543,
+      "with adder": 2617,
+      "reg only": 594,
+      "feedthrough": 3736,
+      "f7mux": 384,
+      "f8mux": 192,
+      "eram": 107,
+      "eram20k": 107,
+      "fifo20k": 0,
+      "dsp": 22,
+      "ddr_byte": 6,
+      "mipi_tx": 0,
+      "mipi_rx": 1,
+      "pad": 21,
+      "pll": 3,
+      "gclk": 8,
+      "lclk": 0,
+      "sclk": 19,
+      "mlclk": 2,
+      "ioclk": 4,
+      "1          1": 32980,
+      "2          2": 6178,
+      "3          3": 2993,
+      "4          4": 1265
+    },
+    "Available": {
+      "IO": 160,
+      "lut6": 21216,
+      "slice reg": 42432,
+      "slice": 21216,
+      "f7mux": 10608,
+      "f8mux": 5304,
+      "eram": 108,
+      "dsp": 40,
+      "ddr_byte": 12,
+      "mipi_tx": 2,
+      "mipi_rx": 2,
+      "pad": 160,
+      "pll": 6,
+      "gclk": 32,
+      "lclk": 12,
+      "sclk": 48,
+      "mlclk": 6,
+      "ioclk": 18
+    },
+    "OverCapacity": {}
+  },
+  "ResourceDeltaFrom0116": {
+    "lut6": -3,
+    "reg": 203,
+    "slice": 10,
+    "eram": 10,
+    "dsp": 0
+  },
+  "GlobalTimingNs": {
+    "SWNS": 0.104,
+    "STNS": 0.0,
+    "HWNS": 0.02,
+    "HTNS": 0.0
+  },
+  "ROMCount": 39,
+  "TotalSynchronizerPairs": 21,
+  "MailboxBits": {
+    "business": 80,
+    "diagnostic": 106,
+    "i2c": 28,
+    "color": 762
+  },
+  "DisplayLayers": 6,
+  "SampleToOutputEdges": 5,
+  "Baseline0116Preserved": true,
+  "AudioIntegrated": false,
+  "HardwareValidated": false,
+  "FullSystemTimingSignoff": false,
+  "Preview": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\display17\\preview\\actual-0-0117.png",
+      "SHA256": "7E5BD42FBC572F0B16DF03F2B8D0677338DADFFC052562384FF72A258C2C492D",
+      "Bytes": 18606
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\display17\\preview\\actual-1-0117.png",
+      "SHA256": "3693F605E40E7A2549F1B7631F437C6802505B1F8BD6790DBB7B139FBE17CECC",
+      "Bytes": 18445
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\display17\\preview\\actual-2-0117.png",
+      "SHA256": "D3EFC45F6E0690ED444E8F1626A8923F55528F7DB9ED4308CCD4201082C2A5F4",
+      "Bytes": 17842
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\display17\\preview\\actual-3-0117.png",
+      "SHA256": "A3499077B37498B6125CA313873EA5C107442C106E8D7D38227C5F27F5679478",
+      "Bytes": 17975
+    }
+  ],
+  "Program": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\seal-display17.py",
+    "SHA256": "EEF515FE9A5717E30A090D8D684EBD896BFB721327AEB0F78BD4AD27FF4C32F6",
+    "Bytes": 3463
+  },
+  "Limits": "ROM/bit/frozen-input/routed timing,21 synchronizer pairs,4 retained mailboxes and parent-clock I2C qualification; optical baseline preserved. No board, audio, new GPIO, CRC/ECC-content, exact DDR frame identity, external electrical or MTBF qualification."
+}

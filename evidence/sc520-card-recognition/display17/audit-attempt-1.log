@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "E:\juan\FPGA\worktrees\anlogic-kids-learning-machine\sc520-card-recognition\fpga\custom_project\sc520-pixel17\tools\audit-display17-candidate.py", line 129, in <module>
+    result = audit(args.run.resolve(), json.loads(base.read(args.bindings)), args.coordinator_review, args.software)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\juan\FPGA\worktrees\anlogic-kids-learning-machine\sc520-card-recognition\fpga\custom_project\sc520-pixel17\tools\audit-display17-candidate.py", line 86, in audit
+    report = observation.audit(run, bindings, coordinator)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\juan\FPGA\worktrees\anlogic-kids-learning-machine\sc520-card-recognition\fpga\custom_project\sc520-pixel14\tools\audit-observation-candidate.py", line 128, in audit
+    result.update(preservation_review(coordinator))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\juan\FPGA\worktrees\anlogic-kids-learning-machine\sc520-card-recognition\fpga\custom_project\sc520-pixel14\tools\audit-observation-candidate.py", line 28, in preservation_review
+    assert base.sha(x['Path'])==x['SHA256'].upper() and base.sha(x['RecordPath'])==x['RecordSHA256'].upper(),x
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'Path': 'E:\\juan\\FPGA\\anlogic-kids-learning-machine\\AGENTS.md', 'Snapshot': 'E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\display17\\coordinator117-v1\\0-AGENTS.md', 'SHA256': '99ECDF0A1F7E4D913E75DE683838BEBF70575DC57F7B8E8E7E935C7778C77289', 'RecordPath': 'E:\\juan\\FPGA\\workspace-records\\20261015-203833-sc520-main-t017-scope-8ab17d.json', 'RecordSHA256': '9E9FD1E98F77364FD469A13BB307EDC8928FF6CA18A96EC6502B667DF24B5320', 'RegisteredAt': '2026-10-15T20:38:33.380084+08:00'}

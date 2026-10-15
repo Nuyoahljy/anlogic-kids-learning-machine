@@ -3,6 +3,7 @@
 // qualified EOF is supplied after the observed color-output tail has drained.
 // This does not exercise CSI, RAW decoding, DDR, HDMI PHY or physical RAM.
 module tb_pixel14_color_scene;
+  wire [27:0] render_state;
   localparam integer GROUPS=320,HEIGHT=720,TOTAL=230400,HBLANK=80;
   reg capture_clk=0,display_clk=0;
   always #4.83 capture_clk=~capture_clk;

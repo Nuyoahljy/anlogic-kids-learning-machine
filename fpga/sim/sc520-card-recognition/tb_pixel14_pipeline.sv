@@ -1,5 +1,6 @@
 `timescale 1ns/1ps
 module tb_pixel14_pipeline #(parameter integer FULL=0);
+  wire [27:0] render_state;
   localparam FW=FULL?1280:256,FH=FULL?720:256,CX=FULL?400:64,CY=FULL?120:64,CS=FULL?480:128;
   reg capture_clk=0,display_clk=0,cap_run=1;
   integer cap_half=5,display_half=7;

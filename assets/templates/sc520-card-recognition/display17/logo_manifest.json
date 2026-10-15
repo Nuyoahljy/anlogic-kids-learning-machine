@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "task_id": "sc520-processing-display",
+  "review_date": "2026-10-13",
+  "source_kind": "user-provided official contest SC520 Lab3 archive; local source examined",
+  "archive": {
+    "path": "E:/juan/FPGA/Data/HX1P35A_Contest_202606/SC520CS摄像头资料/lab_ex3_osd_SC520.zip",
+    "sha256": "bf2ad0691d6172083d9724f0f2d02201fcacce0e289b272c3c092db68395243c"
+  },
+  "source_entries": [
+    {
+      "path": "lab_ex3_osd_SC520/lab_ex3_osd/user_source/hdl_source/anlogic_logo_rom.v",
+      "sha256": "37c76680345f17a85632b7835e46a3a197cf75fdd91ca6a970b75f5346e7a9f8",
+      "bytes": 298506,
+      "purpose": "original RGB888 and binary-alpha source pixels"
+    },
+    {
+      "path": "lab_ex3_osd_SC520/lab_ex3_osd/user_source/hdl_source/hdmi_mixer.v",
+      "sha256": "e0b3fa961da8bd91d58175ad57eec38e90cc9295215c854154bc0bf2f2f987c7",
+      "bytes": 41314,
+      "purpose": "160x160 row-major mapping and bit24 alpha contract"
+    },
+    {
+      "path": "lab_ex3_osd_SC520/lab_ex3_osd/td_project/camera_to_dsi_display.al",
+      "sha256": "0b90d9f54ab4694ee52cea6cb796e397199a8589f82dc7f8000a31382ef93e8f",
+      "bytes": 22849,
+      "purpose": "confirms the source ROM is used by the official project"
+    }
+  ],
+  "geometry": {
+    "source_width": 160,
+    "source_height": 160,
+    "crop_xyxy_exclusive": [
+      7,
+      34,
+      153,
+      128
+    ],
+    "width": 146,
+    "height": 94,
+    "default_origin_xy": [
+      1008,
+      32
+    ]
+  },
+  "pixel_format": {
+    "reference_mem": "row-major 25-bit word, bit24=opaque, bits23:0=RRGGBB, 0=transparent",
+    "png": "RGBA8888, alpha 0 or 255",
+    "opaque_pixels": 6387,
+    "transparent_pixels": 7337,
+    "opaque_rgb_colors": 579
+  },
+  "transform": "crop transparent margin only; no resampling, recoloring, alpha blending or palette quantization",
+  "rtl": {
+    "module": "sc520_logo_overlay",
+    "pipeline_registers": 0,
+    "runtime_asset_dependency": false,
+    "index_bits": 10,
+    "row_table_bits": 137240,
+    "palette_table_bits_including_transparent": 13920,
+    "logical_table_bits": 151160,
+    "physical_resources": "not synthesized; asynchronous ROM may map to LUTs and muxes, not a promise of ERAM inference"
+  },
+  "verification": {
+    "encode_decode_pixels": 13724,
+    "source_contract_assertions": "passed by generator",
+    "rtl_simulation": "separate task regression required"
+  },
+  "attribution": "Anlogic logo reproduced from the supplied contest example. No separate redistribution/trademark license found in the three inspected entries. Keep attribution; broader publication permission and contest acceptance remain for project review.",
+  "outputs": [
+    {
+      "path": "assets/sc520-processing-display/anlogic_logo_source.png",
+      "bytes": 3663,
+      "sha256": "57a89fca6723d08d8907139a5199bb77c45662f38c1565b54245af08b3a86a4d"
+    },
+    {
+      "path": "assets/sc520-processing-display/anlogic_logo_rgba.png",
+      "bytes": 3483,
+      "sha256": "cb209f7ea4a1b3e22e623d25001aa62674a6f3348f48ec24fc7f7820a90ef586"
+    },
+    {
+      "path": "assets/sc520-processing-display/anlogic_logo_preview.png",
+      "bytes": 6566,
+      "sha256": "6ca23c1b911c0300fe697aca0493efb7f503cc7c66f7466cab14672c84c4e0cd"
+    },
+    {
+      "path": "assets/sc520-processing-display/anlogic_logo_reference.mem",
+      "bytes": 109792,
+      "sha256": "db3163596b242146bc88cad41ba5dba3e398b8aa002a72ad53bc00183f484dd8"
+    },
+    {
+      "path": "fpga/rtl/sc520-processing-display/sc520_logo_overlay.v",
+      "bytes": 66710,
+      "sha256": "f02cad226ec9485bcfc78c7974005f887d8e84bc66a739a5c50894e3eeeeaba6"
+    }
+  ]
+}

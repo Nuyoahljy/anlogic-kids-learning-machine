@@ -2,6 +2,7 @@
 // Complete 1280x720 RGB96 rasters, scene preprocessing, both classifiers,
 // asynchronous mailbox, real business controller and its existing OSD.
 module tb_pixel14_scene_system #(parameter integer ROTATIONS=0,MATRIX_ONLY=0);
+  wire [27:0] render_state;
   reg capture_clk=0,display_clk=0,cap_run=1;
   always #4.83 if(cap_run)capture_clk=~capture_clk;
   always #6.6665 display_clk=~display_clk;

@@ -12,6 +12,7 @@ module pixel14_pipeline #(
     parameter integer USE_SCENE_ANALYSIS=0,
     parameter integer ROTATION_VARIANTS=0,
     parameter integer COLOR_DIAGNOSTICS=0,
+    parameter integer RENDER_ENABLE=1,
     parameter integer SCENE_X=160,SCENE_Y=120,SCENE_WIDTH=960,SCENE_HEIGHT=480,
     parameter integer SCENE_SAMPLE_STEP=8,
     parameter integer TIMEOUT_MS=100, FEEDBACK_TICKS=1500,
@@ -56,7 +57,8 @@ module pixel14_pipeline #(
     input wire [20:0] diag_neutral_count,
     output wire [799:0] color_diag_packet,
     output wire color_diag_fresh,color_diag_fault,
-    output wire [7:0] color_diag_age
+    output wire [7:0] color_diag_age,
+    output wire [27:0] render_state
 );
     reg [1:0] capture_reset,display_reset;
     always @(posedge capture_clk or negedge rst_n)
@@ -443,7 +445,7 @@ module pixel14_pipeline #(
     wire c_event=accepted && packet[48] && !packet[98];
     wire osd_active;
     wire [23:0] osd_rgb;
-    items14_system #(.TIMEOUT_MS(TIMEOUT_MS),.FEEDBACK_TICKS(FEEDBACK_TICKS),.SCENE_UI(USE_SCENE_ANALYSIS)) system (
+    items14_system #(.TIMEOUT_MS(TIMEOUT_MS),.FEEDBACK_TICKS(FEEDBACK_TICKS),.SCENE_UI(USE_SCENE_ANALYSIS),.RENDER_ENABLE(RENDER_ENABLE)) system (
         .clk(display_clk),.rst_n(drst),.tick_1ms(tick_1ms),.flush(flush),
         .block_revoke(packet_revoke),.card_revoke(1'b0),
         .block_event(b_event),.block_healthy(packet[96]),.block_present(packet[95]),.block_valid(packet[94]),
@@ -460,7 +462,7 @@ module pixel14_pipeline #(
         .display_item(display_item),.quiz_active(quiz_active),.answer_valid(answer_valid),.answer_correct(answer_correct),
         .display_source_test(display_source_test),.armed(armed),.feedback(feedback),
         .audio_event_valid(audio_event_valid),.audio_event_kind(audio_event_kind),.audio_event_item(audio_event_item),
-        .audio_cancel(audio_cancel),.osd_active(osd_active),.osd_rgb(osd_rgb));
+        .audio_cancel(audio_cancel),.osd_active(osd_active),.osd_rgb(osd_rgb),.render_state(render_state));
     reg [23:0] rgb_delay;
     reg roi_border;
     always @(posedge display_clk or negedge rst_n) begin
@@ -487,5 +489,5 @@ module pixel14_pipeline #(
             end
         end
     end
-    assign out_rgb=!out_de ? 24'd0 : osd_active ? osd_rgb : roi_border ? 24'hff0000 : rgb_delay;
+    assign out_rgb=!out_de ? 24'd0 : (RENDER_ENABLE && osd_active) ? osd_rgb : (RENDER_ENABLE && roi_border) ? 24'hff0000 : rgb_delay;
 endmodule

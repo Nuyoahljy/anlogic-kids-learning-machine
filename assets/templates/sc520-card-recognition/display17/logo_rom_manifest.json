@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "source_png": {
+    "path": "assets/sc520-processing-display/anlogic_logo_rgba.png",
+    "sha256": "cb209f7ea4a1b3e22e623d25001aa62674a6f3348f48ec24fc7f7820a90ef586"
+  },
+  "upstream_official_rom_sha256": "37c76680345f17a85632b7835e46a3a197cf75fdd91ca6a970b75f5346e7a9f8",
+  "upstream_manifest": "assets/sc520-processing-display/logo_manifest.json",
+  "geometry": {
+    "width": 146,
+    "height": 94,
+    "address": "146*y+x",
+    "origin": [
+      1008,
+      32
+    ]
+  },
+  "format": {
+    "index_bits": 10,
+    "index_depth": 16384,
+    "palette_bits": 24,
+    "palette_depth": 1024,
+    "transparent_index": 0,
+    "opaque_colors": 579,
+    "padding": "all zero"
+  },
+  "verification": {
+    "roundtrip_pixels": 13724,
+    "opaque_pixels": 6387,
+    "transparent_pixels": 7337
+  },
+  "pipeline": {
+    "register_layers": 4,
+    "stages": [
+      "address",
+      "index ROM",
+      "palette ROM",
+      "mix"
+    ],
+    "state": "RGB, coordinates, DE, HS, VS, frame_start and mode travel together",
+    "reset": "asynchronous video/valid reset; unreset ROM read registers masked until valid"
+  },
+  "td_style_source": "D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/template/verilog/Synthesis-Structure/Directive/ROM-Inference-Styles/rom_style.v",
+  "physical_resources": "Requires actual TD 6.2.1 report; logical table size is not a resource measurement",
+  "outputs": [
+    {
+      "path": "assets/sc520-processing-display/anlogic_logo_index.mem",
+      "bytes": 65536,
+      "sha256": "c2d435002ba873f92555373d156f85452cbd354931c20295638834f32a532d82"
+    },
+    {
+      "path": "assets/sc520-processing-display/anlogic_logo_palette.mem",
+      "bytes": 7168,
+      "sha256": "05ccb51fec4feaa91d1993af012d6d9589fea3b1fe3756c13f632658bf91132b"
+    }
+  ]
+}

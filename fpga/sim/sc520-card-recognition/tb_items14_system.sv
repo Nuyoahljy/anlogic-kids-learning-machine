@@ -1,6 +1,7 @@
 `timescale 1ns/1ps
 // Result-record integration: the classifier and camera are deliberately upstream.
 module tb_items14_system;
+  wire [27:0] render_state;
   reg clk=0;
   always #5 clk=~clk;
   reg rst_n=0,tick_1ms=0,flush=0,block_revoke=0,card_revoke=0;
@@ -92,7 +93,7 @@ module tb_items14_system;
   task object_glyph(input integer which);
     begin
       @(negedge clk);pixel_x=48+32*5;pixel_y=676;#1;
-      ck(dut.panel.content.glyph===items14_ref_text(which>=1&&which<=14?27+which:27,0),"display first glyph follows snapshotted detected object");
+      ck(dut.legacy_render.panel.content.glyph===items14_ref_text(which>=1&&which<=14?27+which:27,0),"display first glyph follows snapshotted detected object");
       @(posedge clk);#1;ck(osd_active,"detected-name pixel belongs to lower panel");
     end
   endtask
@@ -168,13 +169,13 @@ module tb_items14_system;
     object_glyph(12); // Display remains on its previous whole-frame snapshot.
     snapshot();
     @(negedge clk);pixel_x=48;pixel_y=44;#1;
-    ck(dut.panel.content.glyph===items14_ref_text(7,0),"new OSD source line remains TEST after timeout");
+    ck(dut.legacy_render.panel.content.glyph===items14_ref_text(7,0),"new OSD source line remains TEST after timeout");
     @(posedge clk);#1;
     @(negedge clk);pixel_x=48;pixel_y=644;#1;
-    ck(dut.panel.content.glyph===items14_ref_text(42,0),"new OSD snapshot includes unhealthy warning");
+    ck(dut.legacy_render.panel.content.glyph===items14_ref_text(42,0),"new OSD snapshot includes unhealthy warning");
     @(posedge clk);#1;
     @(negedge clk);pixel_x=48+32*5;pixel_y=676;#1;
-    ck(dut.panel.content.glyph===items14_ref_text(43,5),"unhealthy name field differs from stale car name");
+    ck(dut.legacy_render.panel.content.glyph===items14_ref_text(43,5),"unhealthy name field differs from stale car name");
     @(posedge clk);#1;flush_epoch();
 
     start_case("queued correct quiz answer and simultaneous replay lose to new fault");
@@ -215,7 +216,7 @@ module tb_items14_system;
     recognized(14,0);ck(target_item==1 && display_item==14 && score==0,"target is not fabricated from observation");
     snapshot();object_glyph(14);
     @(negedge clk);pixel_x=48+32*4;pixel_y=612;#1;
-    ck(dut.panel.content.glyph===items14_ref_text(28,0),"question line still names target red circle");
+    ck(dut.legacy_render.panel.content.glyph===items14_ref_text(28,0),"question line still names target red circle");
     @(posedge clk);#1;
     ck(!inject_fault || injected==1,"negative mode injected exactly one actual output error");
     test_done=1;$display("RESULT tb_items14_system errors=%0d checks=%0d scenarios=%0d injected=%0d",errors,checks,scenarios,injected);$finish;

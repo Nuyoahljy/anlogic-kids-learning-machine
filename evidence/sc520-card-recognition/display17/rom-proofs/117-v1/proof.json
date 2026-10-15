@@ -1,0 +1,1494 @@
+{
+  "Verified": true,
+  "SynNetlistSHA256": "54375BD38DD7912BC97D508E83C628015E5C5D5509F0D18BD9E7099E52B1F77F",
+  "Sources": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\phy117-v1\\td_project\\camera_to_dsi_display_Runs\\syn_1\\pixel14-syn_1-netlist.v",
+      "Bytes": 44864844,
+      "SHA256": "54375BD38DD7912BC97D508E83C628015E5C5D5509F0D18BD9E7099E52B1F77F"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\phy117-v1\\templates.mem",
+      "Bytes": 409600,
+      "SHA256": "731EC1B57D12F2EF305C35A055169BCD6733A4F76836AD1FA278BEE5BD9E8341"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\phy117-v1\\rtl\\pixel14_rotation_matcher.v",
+      "Bytes": 7542,
+      "SHA256": "D92B0CE7F6E14A6734EB2D8F706FC7F23B4CB28BEAC704DEF5A89D1D18DCCFC8"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\phy117-v1\\rtl\\pixel14_block_shape_guard.v",
+      "Bytes": 5344,
+      "SHA256": "2BCB1AABD82168E05CC5E17C026D70A3FBC2B605444BF9050E244BF0AB4BD58B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\phy117-v1\\rtl\\pixel17_panel.v",
+      "Bytes": 2004,
+      "SHA256": "AD8EACD2D11B4EC33DD66AEC2E5F074C5F9EA4AE0593BBAE1700F9CCE2A4C846"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\phy117-v1\\rtl\\sc520_logo_pipeline.v",
+      "Bytes": 4774,
+      "SHA256": "94463647C403615F99FC80C3CC70456C416EF2809DDD23BD09467A144CB2B640"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\phy117-v1\\rtl\\items14_font_rom.v",
+      "Bytes": 117979,
+      "SHA256": "E9F823F73499A6371503C753C02FE0DB7AF94B48CE972FF3389A4AB701E7AA53"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\phy117-v1\\anlogic_logo_index.mem",
+      "Bytes": 65536,
+      "SHA256": "C2D435002BA873F92555373D156F85452CBD354931C20295638834F32A532D82"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\phy117-v1\\anlogic_logo_palette.mem",
+      "Bytes": 7168,
+      "SHA256": "05CCB51FEC4FEAA91D1993AF012D6D9589FEA3B1FE3756C13F632658BF91132B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\display17\\rom-proofs\\117-v1\\inputs\\derive-display17-rom-bindings.py",
+      "Bytes": 18807,
+      "SHA256": "36E3A7423D9EDB959BF8991E1617AB724EC194280FB93FA0266EF8E977156177",
+      "RuntimeSourcePath": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\derive-display17-rom-bindings.py"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\display17\\rom-proofs\\117-v1\\inputs\\derive_scene_rom_bindings_v3.py",
+      "Bytes": 13576,
+      "SHA256": "E7AF7D679907ED1C5E5FA02B5AE1C418574B94F5073510C91277EF537DB8CFAB",
+      "RuntimeSourcePath": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\physical-audit-prepare\\derive_scene_rom_bindings_v3.py"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\display17\\rom-proofs\\117-v1\\inputs\\audit-scene-build.py",
+      "Bytes": 21640,
+      "SHA256": "2B2BF65591D565B44D2730C3FFA67B029969B8BA7CFD4D7C5940EEE0A0FEC70A",
+      "RuntimeSourcePath": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\tools\\audit-scene-build.py"
+    }
+  ],
+  "RotationProof": {
+    "BankCount": 25,
+    "WordsCompared": 102400,
+    "BankSelectTruthRows": 3200,
+    "RegisteredSelectTruthRows": 40,
+    "Banks": [
+      {
+        "Bank": 13,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_101",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_102",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_103",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_104",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_105",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_106"
+        ]
+      },
+      {
+        "Bank": 14,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_107",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_108",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_109",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_110",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_111",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_112"
+        ]
+      },
+      {
+        "Bank": 15,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_113",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_114",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_115",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_116",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_117",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_118"
+        ]
+      },
+      {
+        "Bank": 16,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_119",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_120",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_121",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_122",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_123",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_124"
+        ]
+      },
+      {
+        "Bank": 17,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_125",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_126",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_127",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_128",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_129",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_130"
+        ]
+      },
+      {
+        "Bank": 18,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_131",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_132",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_133",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_134",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_135",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_136"
+        ]
+      },
+      {
+        "Bank": 19,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_137",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_138",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_139",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_140",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_141",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_142"
+        ]
+      },
+      {
+        "Bank": 20,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_143",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_144",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_145",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_146",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_147",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_148"
+        ]
+      },
+      {
+        "Bank": 21,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_149",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_150",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_151",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_152",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_153",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_154"
+        ]
+      },
+      {
+        "Bank": 22,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_155",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_156",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_157",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_158",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_159",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_160"
+        ]
+      },
+      {
+        "Bank": 23,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_161",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_162",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_163",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_164",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_165",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_166"
+        ]
+      },
+      {
+        "Bank": 24,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_167",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_168",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_169",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_170",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_171",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_172"
+        ]
+      },
+      {
+        "Bank": 0,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_23",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_24",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_25",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_26",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_27",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_28"
+        ]
+      },
+      {
+        "Bank": 1,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_29",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_30",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_31",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_32",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_33",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_34"
+        ]
+      },
+      {
+        "Bank": 2,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_35",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_36",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_37",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_38",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_39",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_40"
+        ]
+      },
+      {
+        "Bank": 3,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_41",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_42",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_43",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_44",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_45",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_46"
+        ]
+      },
+      {
+        "Bank": 4,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_47",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_48",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_49",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_50",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_51",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_52"
+        ]
+      },
+      {
+        "Bank": 5,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_53",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_54",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_55",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_56",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_57",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_58"
+        ]
+      },
+      {
+        "Bank": 6,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_59",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_60",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_61",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_62",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_63",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_64"
+        ]
+      },
+      {
+        "Bank": 7,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_65",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_66",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_67",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_68",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_69",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_70"
+        ]
+      },
+      {
+        "Bank": 8,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_71",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_72",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_73",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_74",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_75",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_76"
+        ]
+      },
+      {
+        "Bank": 9,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_77",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_78",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_79",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_80",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_81",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_82"
+        ]
+      },
+      {
+        "Bank": 10,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_83",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_84",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_85",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_86",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_87",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_88"
+        ]
+      },
+      {
+        "Bank": 11,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_89",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_90",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_91",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_92",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_93",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_94"
+        ]
+      },
+      {
+        "Bank": 12,
+        "Instance": "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_95",
+        "OutputPinsLSB": [
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_96",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_97",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_98",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_99",
+          "u_p14_pipeline/rotation_mode$matcher/ramread0_syn_100"
+        ]
+      }
+    ],
+    "Proofs": [
+      {
+        "RegisteredSelect": "u_p14_pipeline/rotation_mode$matcher/rom_address[12]_syn_55[0]",
+        "Cell": "u_p14_pipeline/rotation_mode$matcher/rom_address[12][0]",
+        "SourceBit": 12,
+        "TruthRows": 8
+      },
+      {
+        "RegisteredSelect": "u_p14_pipeline/rotation_mode$matcher/rom_address[12]_syn_55[1]",
+        "Cell": "u_p14_pipeline/rotation_mode$matcher/rom_address[12][1]",
+        "SourceBit": 13,
+        "TruthRows": 8
+      },
+      {
+        "RegisteredSelect": "u_p14_pipeline/rotation_mode$matcher/rom_address[12]_syn_55[2]",
+        "Cell": "u_p14_pipeline/rotation_mode$matcher/rom_address[12][2]",
+        "SourceBit": 14,
+        "TruthRows": 8
+      },
+      {
+        "RegisteredSelect": "u_p14_pipeline/rotation_mode$matcher/rom_address[12]_syn_55[3]",
+        "Cell": "u_p14_pipeline/rotation_mode$matcher/rom_address[12][3]",
+        "SourceBit": 15,
+        "TruthRows": 8
+      },
+      {
+        "RegisteredSelect": "u_p14_pipeline/rotation_mode$matcher/rom_address[12]_syn_55[4]",
+        "Cell": "u_p14_pipeline/rotation_mode$matcher/rom_address[12][4]",
+        "SourceBit": 16,
+        "TruthRows": 8
+      },
+      {
+        "ClassBit": 0,
+        "FinalAdderCell": "u_p14_pipeline/rotation_mode$matcher/add5_syn_68",
+        "INIT_LUT5B": 4111114335,
+        "Output": "u_p14_pipeline/rotation_mode$matcher/class_best[0]_b22[0]",
+        "Operation": "mask XOR selected independent class bit"
+      },
+      {
+        "ClassBit": 1,
+        "FinalAdderCell": "u_p14_pipeline/rotation_mode$matcher/add6_syn_68",
+        "INIT_LUT5B": 4111114335,
+        "Output": "u_p14_pipeline/rotation_mode$matcher/class_best[0]_b23[0]",
+        "Operation": "mask XOR selected independent class bit"
+      },
+      {
+        "ClassBit": 2,
+        "FinalAdderCell": "u_p14_pipeline/rotation_mode$matcher/add7_syn_68",
+        "INIT_LUT5B": 4111114335,
+        "Output": "u_p14_pipeline/rotation_mode$matcher/class_best[0]_b24[0]",
+        "Operation": "mask XOR selected independent class bit"
+      },
+      {
+        "ClassBit": 3,
+        "FinalAdderCell": "u_p14_pipeline/rotation_mode$matcher/add8_syn_68",
+        "INIT_LUT5B": 4111114335,
+        "Output": "u_p14_pipeline/rotation_mode$matcher/class_best[0]_b25[0]",
+        "Operation": "mask XOR selected independent class bit"
+      },
+      {
+        "ClassBit": 4,
+        "FinalAdderCell": "u_p14_pipeline/rotation_mode$matcher/add9_syn_68",
+        "INIT_LUT5B": 4111114335,
+        "Output": "u_p14_pipeline/rotation_mode$matcher/class_best[0]_b26[0]",
+        "Operation": "mask XOR selected independent class bit"
+      }
+    ],
+    "IndependentBankBitBDDProofs": [
+      {
+        "ClassBit": 0,
+        "Bank": 0,
+        "Root": 155,
+        "ExpectedRoot": 155
+      },
+      {
+        "ClassBit": 0,
+        "Bank": 1,
+        "Root": 156,
+        "ExpectedRoot": 156
+      },
+      {
+        "ClassBit": 0,
+        "Bank": 2,
+        "Root": 157,
+        "ExpectedRoot": 157
+      },
+      {
+        "ClassBit": 0,
+        "Bank": 3,
+        "Root": 158,
+        "ExpectedRoot": 158
+      },
+      {
+        "ClassBit": 0,
+        "Bank": 4,
+        "Root": 159,
+        "ExpectedRoot": 159
+      },
+      {
+        "ClassBit": 0,
+        "Bank": 5,
+        "Root": 160,
+        "ExpectedRoot": 160
+      },
+      {
+        "ClassBit": 0,
+        "Bank": 6,
+        "Root": 161,
+        "ExpectedRoot": 161
+      },
+      {
+        "ClassBit": 0,
+        "Bank": 7,
+        "Root": 162,
+        "ExpectedRoot": 162
+      },
+      {
+        "ClassBit": 0,
+        "Bank": 8,
+        "Root": 163,
+        "ExpectedRoot": 163
+      },
+      {
+        "ClassBit": 0,
+        "Bank": 9,
+        "Root": 164,
+        "ExpectedRoot": 164
+      },
+      {
+        "ClassBit": 0,
+        "Bank": 10,
+        "Root": 165,
+        "ExpectedRoot": 165
+      },
+      {
+        "ClassBit": 0,
+        "Bank": 11,
+        "Root": 166,
+        "ExpectedRoot": 166
+      },
+      {
+        "ClassBit": 0,
+        "Bank": 12,
+        "Root": 167,
+        "ExpectedRoot": 167
+      },
+      {
+        "ClassBit": 0,
+        "Bank": 13,
+        "Root": 168,
+        "ExpectedRoot": 168
+      },
+      {
+        "ClassBit": 0,
+        "Bank": 14,
+        "Root": 169,
+        "ExpectedRoot": 169
+      },
+      {
+        "ClassBit": 0,
+        "Bank": 15,
+        "Root": 170,
+        "ExpectedRoot": 170
+      },
+      {
+        "ClassBit": 0,
+        "Bank": 16,
+        "Root": 171,
+        "ExpectedRoot": 171
+      },
+      {
+        "ClassBit": 0,
+        "Bank": 17,
+        "Root": 172,
+        "ExpectedRoot": 172
+      },
+      {
+        "ClassBit": 0,
+        "Bank": 18,
+        "Root": 173,
+        "ExpectedRoot": 173
+      },
+      {
+        "ClassBit": 0,
+        "Bank": 19,
+        "Root": 174,
+        "ExpectedRoot": 174
+      },
+      {
+        "ClassBit": 0,
+        "Bank": 20,
+        "Root": 175,
+        "ExpectedRoot": 175
+      },
+      {
+        "ClassBit": 0,
+        "Bank": 21,
+        "Root": 176,
+        "ExpectedRoot": 176
+      },
+      {
+        "ClassBit": 0,
+        "Bank": 22,
+        "Root": 177,
+        "ExpectedRoot": 177
+      },
+      {
+        "ClassBit": 0,
+        "Bank": 23,
+        "Root": 178,
+        "ExpectedRoot": 178
+      },
+      {
+        "ClassBit": 0,
+        "Bank": 24,
+        "Root": 179,
+        "ExpectedRoot": 179
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 0,
+        "Root": 205,
+        "ExpectedRoot": 205
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 1,
+        "Root": 206,
+        "ExpectedRoot": 206
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 2,
+        "Root": 207,
+        "ExpectedRoot": 207
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 3,
+        "Root": 208,
+        "ExpectedRoot": 208
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 4,
+        "Root": 209,
+        "ExpectedRoot": 209
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 5,
+        "Root": 210,
+        "ExpectedRoot": 210
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 6,
+        "Root": 211,
+        "ExpectedRoot": 211
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 7,
+        "Root": 212,
+        "ExpectedRoot": 212
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 8,
+        "Root": 213,
+        "ExpectedRoot": 213
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 9,
+        "Root": 214,
+        "ExpectedRoot": 214
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 10,
+        "Root": 215,
+        "ExpectedRoot": 215
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 11,
+        "Root": 216,
+        "ExpectedRoot": 216
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 12,
+        "Root": 217,
+        "ExpectedRoot": 217
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 13,
+        "Root": 218,
+        "ExpectedRoot": 218
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 14,
+        "Root": 219,
+        "ExpectedRoot": 219
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 15,
+        "Root": 220,
+        "ExpectedRoot": 220
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 16,
+        "Root": 221,
+        "ExpectedRoot": 221
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 17,
+        "Root": 222,
+        "ExpectedRoot": 222
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 18,
+        "Root": 223,
+        "ExpectedRoot": 223
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 19,
+        "Root": 224,
+        "ExpectedRoot": 224
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 20,
+        "Root": 225,
+        "ExpectedRoot": 225
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 21,
+        "Root": 226,
+        "ExpectedRoot": 226
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 22,
+        "Root": 227,
+        "ExpectedRoot": 227
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 23,
+        "Root": 228,
+        "ExpectedRoot": 228
+      },
+      {
+        "ClassBit": 1,
+        "Bank": 24,
+        "Root": 229,
+        "ExpectedRoot": 229
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 0,
+        "Root": 255,
+        "ExpectedRoot": 255
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 1,
+        "Root": 256,
+        "ExpectedRoot": 256
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 2,
+        "Root": 257,
+        "ExpectedRoot": 257
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 3,
+        "Root": 258,
+        "ExpectedRoot": 258
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 4,
+        "Root": 259,
+        "ExpectedRoot": 259
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 5,
+        "Root": 260,
+        "ExpectedRoot": 260
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 6,
+        "Root": 261,
+        "ExpectedRoot": 261
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 7,
+        "Root": 262,
+        "ExpectedRoot": 262
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 8,
+        "Root": 263,
+        "ExpectedRoot": 263
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 9,
+        "Root": 264,
+        "ExpectedRoot": 264
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 10,
+        "Root": 265,
+        "ExpectedRoot": 265
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 11,
+        "Root": 266,
+        "ExpectedRoot": 266
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 12,
+        "Root": 267,
+        "ExpectedRoot": 267
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 13,
+        "Root": 268,
+        "ExpectedRoot": 268
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 14,
+        "Root": 269,
+        "ExpectedRoot": 269
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 15,
+        "Root": 270,
+        "ExpectedRoot": 270
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 16,
+        "Root": 271,
+        "ExpectedRoot": 271
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 17,
+        "Root": 272,
+        "ExpectedRoot": 272
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 18,
+        "Root": 273,
+        "ExpectedRoot": 273
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 19,
+        "Root": 274,
+        "ExpectedRoot": 274
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 20,
+        "Root": 275,
+        "ExpectedRoot": 275
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 21,
+        "Root": 276,
+        "ExpectedRoot": 276
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 22,
+        "Root": 277,
+        "ExpectedRoot": 277
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 23,
+        "Root": 278,
+        "ExpectedRoot": 278
+      },
+      {
+        "ClassBit": 2,
+        "Bank": 24,
+        "Root": 279,
+        "ExpectedRoot": 279
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 0,
+        "Root": 305,
+        "ExpectedRoot": 305
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 1,
+        "Root": 306,
+        "ExpectedRoot": 306
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 2,
+        "Root": 307,
+        "ExpectedRoot": 307
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 3,
+        "Root": 308,
+        "ExpectedRoot": 308
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 4,
+        "Root": 309,
+        "ExpectedRoot": 309
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 5,
+        "Root": 310,
+        "ExpectedRoot": 310
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 6,
+        "Root": 311,
+        "ExpectedRoot": 311
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 7,
+        "Root": 312,
+        "ExpectedRoot": 312
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 8,
+        "Root": 313,
+        "ExpectedRoot": 313
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 9,
+        "Root": 314,
+        "ExpectedRoot": 314
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 10,
+        "Root": 315,
+        "ExpectedRoot": 315
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 11,
+        "Root": 316,
+        "ExpectedRoot": 316
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 12,
+        "Root": 317,
+        "ExpectedRoot": 317
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 13,
+        "Root": 318,
+        "ExpectedRoot": 318
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 14,
+        "Root": 319,
+        "ExpectedRoot": 319
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 15,
+        "Root": 320,
+        "ExpectedRoot": 320
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 16,
+        "Root": 321,
+        "ExpectedRoot": 321
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 17,
+        "Root": 322,
+        "ExpectedRoot": 322
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 18,
+        "Root": 323,
+        "ExpectedRoot": 323
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 19,
+        "Root": 324,
+        "ExpectedRoot": 324
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 20,
+        "Root": 325,
+        "ExpectedRoot": 325
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 21,
+        "Root": 326,
+        "ExpectedRoot": 326
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 22,
+        "Root": 327,
+        "ExpectedRoot": 327
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 23,
+        "Root": 328,
+        "ExpectedRoot": 328
+      },
+      {
+        "ClassBit": 3,
+        "Bank": 24,
+        "Root": 329,
+        "ExpectedRoot": 329
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 0,
+        "Root": 355,
+        "ExpectedRoot": 355
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 1,
+        "Root": 356,
+        "ExpectedRoot": 356
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 2,
+        "Root": 357,
+        "ExpectedRoot": 357
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 3,
+        "Root": 358,
+        "ExpectedRoot": 358
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 4,
+        "Root": 359,
+        "ExpectedRoot": 359
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 5,
+        "Root": 360,
+        "ExpectedRoot": 360
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 6,
+        "Root": 361,
+        "ExpectedRoot": 361
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 7,
+        "Root": 362,
+        "ExpectedRoot": 362
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 8,
+        "Root": 363,
+        "ExpectedRoot": 363
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 9,
+        "Root": 364,
+        "ExpectedRoot": 364
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 10,
+        "Root": 365,
+        "ExpectedRoot": 365
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 11,
+        "Root": 366,
+        "ExpectedRoot": 366
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 12,
+        "Root": 367,
+        "ExpectedRoot": 367
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 13,
+        "Root": 368,
+        "ExpectedRoot": 368
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 14,
+        "Root": 369,
+        "ExpectedRoot": 369
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 15,
+        "Root": 370,
+        "ExpectedRoot": 370
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 16,
+        "Root": 371,
+        "ExpectedRoot": 371
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 17,
+        "Root": 372,
+        "ExpectedRoot": 372
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 18,
+        "Root": 373,
+        "ExpectedRoot": 373
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 19,
+        "Root": 374,
+        "ExpectedRoot": 374
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 20,
+        "Root": 375,
+        "ExpectedRoot": 375
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 21,
+        "Root": 376,
+        "ExpectedRoot": 376
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 22,
+        "Root": 377,
+        "ExpectedRoot": 377
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 23,
+        "Root": 378,
+        "ExpectedRoot": 378
+      },
+      {
+        "ClassBit": 4,
+        "Bank": 24,
+        "Root": 379,
+        "ExpectedRoot": 379
+      }
+    ],
+    "BDDNodes": 378
+  },
+  "FontRowProofs": [
+    {
+      "Instance": "u_p17_display/panel/font/ramread0_syn_24",
+      "YInputsChecked": 1024,
+      "GlyphAddressDirect": true
+    },
+    {
+      "Instance": "u_p17_display/panel/font/ramread0_syn_30",
+      "YInputsChecked": 1024,
+      "GlyphAddressDirect": true
+    },
+    {
+      "Instance": "u_p17_display/panel/font/ramread0_syn_36",
+      "YInputsChecked": 1024,
+      "GlyphAddressDirect": true
+    }
+  ],
+  "LogoIndexBanks": [
+    {
+      "Bank": 0,
+      "Half": 0,
+      "Instance": "u_p17_display/logo/ramread0_syn_23",
+      "Outputs": [
+        "u_p17_display/logo/ramread0_syn_24",
+        "u_p17_display/logo/ramread0_syn_25",
+        "u_p17_display/logo/ramread0_syn_26",
+        "u_p17_display/logo/ramread0_syn_27",
+        "u_p17_display/logo/ramread0_syn_28"
+      ]
+    },
+    {
+      "Bank": 0,
+      "Half": 1,
+      "Instance": "u_p17_display/logo/ramread0_syn_29",
+      "Outputs": [
+        "u_p17_display/logo/ramread0_syn_30",
+        "u_p17_display/logo/ramread0_syn_31",
+        "u_p17_display/logo/ramread0_syn_32",
+        "u_p17_display/logo/ramread0_syn_33",
+        "u_p17_display/logo/ramread0_syn_34"
+      ]
+    },
+    {
+      "Bank": 1,
+      "Half": 0,
+      "Instance": "u_p17_display/logo/ramread0_syn_35",
+      "Outputs": [
+        "u_p17_display/logo/ramread0_syn_36",
+        "u_p17_display/logo/ramread0_syn_37",
+        "u_p17_display/logo/ramread0_syn_38",
+        "u_p17_display/logo/ramread0_syn_39",
+        "u_p17_display/logo/ramread0_syn_40"
+      ]
+    },
+    {
+      "Bank": 1,
+      "Half": 1,
+      "Instance": "u_p17_display/logo/ramread0_syn_41",
+      "Outputs": [
+        "u_p17_display/logo/ramread0_syn_42",
+        "u_p17_display/logo/ramread0_syn_43",
+        "u_p17_display/logo/ramread0_syn_44",
+        "u_p17_display/logo/ramread0_syn_45",
+        "u_p17_display/logo/ramread0_syn_46"
+      ]
+    },
+    {
+      "Bank": 2,
+      "Half": 0,
+      "Instance": "u_p17_display/logo/ramread0_syn_47",
+      "Outputs": [
+        "u_p17_display/logo/ramread0_syn_48",
+        "u_p17_display/logo/ramread0_syn_49",
+        "u_p17_display/logo/ramread0_syn_50",
+        "u_p17_display/logo/ramread0_syn_51",
+        "u_p17_display/logo/ramread0_syn_52"
+      ]
+    },
+    {
+      "Bank": 2,
+      "Half": 1,
+      "Instance": "u_p17_display/logo/ramread0_syn_53",
+      "Outputs": [
+        "u_p17_display/logo/ramread0_syn_54",
+        "u_p17_display/logo/ramread0_syn_55",
+        "u_p17_display/logo/ramread0_syn_56",
+        "u_p17_display/logo/ramread0_syn_57",
+        "u_p17_display/logo/ramread0_syn_58"
+      ]
+    },
+    {
+      "Bank": 3,
+      "Half": 0,
+      "Instance": "u_p17_display/logo/ramread0_syn_59",
+      "Outputs": [
+        "u_p17_display/logo/ramread0_syn_60",
+        "u_p17_display/logo/ramread0_syn_61",
+        "u_p17_display/logo/ramread0_syn_62",
+        "u_p17_display/logo/ramread0_syn_63",
+        "u_p17_display/logo/ramread0_syn_64"
+      ]
+    },
+    {
+      "Bank": 3,
+      "Half": 1,
+      "Instance": "u_p17_display/logo/ramread0_syn_65",
+      "Outputs": [
+        "u_p17_display/logo/ramread0_syn_66",
+        "u_p17_display/logo/ramread0_syn_67",
+        "u_p17_display/logo/ramread0_syn_68",
+        "u_p17_display/logo/ramread0_syn_69",
+        "u_p17_display/logo/ramread0_syn_70"
+      ]
+    }
+  ],
+  "LogoMuxTruthRows": 640,
+  "LogoRegisteredSelectorsAndIndex": [
+    {
+      "Cell": "u_p17_display/logo/s1_address_reg[12][0]",
+      "Parameters": {
+        "CEMUX": "1",
+        "CLKMUX": "SIG",
+        "DFFMODE": "FF",
+        "REGSET": "RESET",
+        "SRMODE": "ASYNC",
+        "SRMUX": "0"
+      },
+      "Ports": {
+        "clk": "S_hdmi_pixel_clk",
+        "d": "u_p17_display/logo/s1_address_reg[12]_syn_2",
+        "q": "u_p17_display/logo/s1_address_reg[12]_syn_19[0]"
+      }
+    },
+    {
+      "Cell": "u_p17_display/logo/s1_address_reg[12][1]",
+      "Parameters": {
+        "CEMUX": "1",
+        "CLKMUX": "SIG",
+        "DFFMODE": "FF",
+        "REGSET": "RESET",
+        "SRMODE": "ASYNC",
+        "SRMUX": "0"
+      },
+      "Ports": {
+        "clk": "S_hdmi_pixel_clk",
+        "d": "u_p17_display/logo/s1_address_reg[13]_syn_2",
+        "q": "u_p17_display/logo/s1_address_reg[12]_syn_19[1]"
+      }
+    },
+    {
+      "Cell": "u_p17_display/logo/s2_index_reg[0]",
+      "Parameters": {
+        "CEMUX": "1",
+        "CLKMUX": "SIG",
+        "DFFMODE": "FF",
+        "REGSET": "RESET",
+        "SRMODE": "ASYNC",
+        "SRMUX": "0",
+        "INIT": 0
+      },
+      "Ports": {
+        "clk": "S_hdmi_pixel_clk",
+        "d": "u_p17_display/logo/s2_index_b[0]",
+        "q": "u_p17_display/logo/s2_index[0]"
+      }
+    },
+    {
+      "Cell": "u_p17_display/logo/s2_index_reg[1]",
+      "Parameters": {
+        "CEMUX": "1",
+        "CLKMUX": "SIG",
+        "DFFMODE": "FF",
+        "REGSET": "RESET",
+        "SRMODE": "ASYNC",
+        "SRMUX": "0",
+        "INIT": 0
+      },
+      "Ports": {
+        "clk": "S_hdmi_pixel_clk",
+        "d": "u_p17_display/logo/s2_index_b[1]",
+        "q": "u_p17_display/logo/s2_index[1]"
+      }
+    },
+    {
+      "Cell": "u_p17_display/logo/s2_index_reg[2]",
+      "Parameters": {
+        "CEMUX": "1",
+        "CLKMUX": "SIG",
+        "DFFMODE": "FF",
+        "REGSET": "RESET",
+        "SRMODE": "ASYNC",
+        "SRMUX": "0",
+        "INIT": 0
+      },
+      "Ports": {
+        "clk": "S_hdmi_pixel_clk",
+        "d": "u_p17_display/logo/s2_index_b[2]",
+        "q": "u_p17_display/logo/s2_index[2]"
+      }
+    },
+    {
+      "Cell": "u_p17_display/logo/s2_index_reg[3]",
+      "Parameters": {
+        "CEMUX": "1",
+        "CLKMUX": "SIG",
+        "DFFMODE": "FF",
+        "REGSET": "RESET",
+        "SRMODE": "ASYNC",
+        "SRMUX": "0",
+        "INIT": 0
+      },
+      "Ports": {
+        "clk": "S_hdmi_pixel_clk",
+        "d": "u_p17_display/logo/s2_index_b[3]",
+        "q": "u_p17_display/logo/s2_index[3]"
+      }
+    },
+    {
+      "Cell": "u_p17_display/logo/s2_index_reg[4]",
+      "Parameters": {
+        "CEMUX": "1",
+        "CLKMUX": "SIG",
+        "DFFMODE": "FF",
+        "REGSET": "RESET",
+        "SRMODE": "ASYNC",
+        "SRMUX": "0",
+        "INIT": 0
+      },
+      "Ports": {
+        "clk": "S_hdmi_pixel_clk",
+        "d": "u_p17_display/logo/s2_index_b[4]",
+        "q": "u_p17_display/logo/s2_index[4]"
+      }
+    },
+    {
+      "Cell": "u_p17_display/logo/s2_index_reg[5]",
+      "Parameters": {
+        "CEMUX": "1",
+        "CLKMUX": "SIG",
+        "DFFMODE": "FF",
+        "REGSET": "RESET",
+        "SRMODE": "ASYNC",
+        "SRMUX": "0",
+        "INIT": 0
+      },
+      "Ports": {
+        "clk": "S_hdmi_pixel_clk",
+        "d": "u_p17_display/logo/s2_index_b[5]",
+        "q": "u_p17_display/logo/s2_index[5]"
+      }
+    },
+    {
+      "Cell": "u_p17_display/logo/s2_index_reg[6]",
+      "Parameters": {
+        "CEMUX": "1",
+        "CLKMUX": "SIG",
+        "DFFMODE": "FF",
+        "REGSET": "RESET",
+        "SRMODE": "ASYNC",
+        "SRMUX": "0",
+        "INIT": 0
+      },
+      "Ports": {
+        "clk": "S_hdmi_pixel_clk",
+        "d": "u_p17_display/logo/s2_index_b[6]",
+        "q": "u_p17_display/logo/s2_index[6]"
+      }
+    },
+    {
+      "Cell": "u_p17_display/logo/s2_index_reg[7]",
+      "Parameters": {
+        "CEMUX": "1",
+        "CLKMUX": "SIG",
+        "DFFMODE": "FF",
+        "REGSET": "RESET",
+        "SRMODE": "ASYNC",
+        "SRMUX": "0",
+        "INIT": 0
+      },
+      "Ports": {
+        "clk": "S_hdmi_pixel_clk",
+        "d": "u_p17_display/logo/s2_index_b[7]",
+        "q": "u_p17_display/logo/s2_index[7]"
+      }
+    },
+    {
+      "Cell": "u_p17_display/logo/s2_index_reg[8]",
+      "Parameters": {
+        "CEMUX": "1",
+        "CLKMUX": "SIG",
+        "DFFMODE": "FF",
+        "REGSET": "RESET",
+        "SRMODE": "ASYNC",
+        "SRMUX": "0",
+        "INIT": 0
+      },
+      "Ports": {
+        "clk": "S_hdmi_pixel_clk",
+        "d": "u_p17_display/logo/s2_index_b[8]",
+        "q": "u_p17_display/logo/s2_index[8]"
+      }
+    },
+    {
+      "Cell": "u_p17_display/logo/s2_index_reg[9]",
+      "Parameters": {
+        "CEMUX": "1",
+        "CLKMUX": "SIG",
+        "DFFMODE": "FF",
+        "REGSET": "RESET",
+        "SRMODE": "ASYNC",
+        "SRMUX": "0",
+        "INIT": 0
+      },
+      "Ports": {
+        "clk": "S_hdmi_pixel_clk",
+        "d": "u_p17_display/logo/s2_index_b[9]",
+        "q": "u_p17_display/logo/s2_index[9]"
+      }
+    }
+  ],
+  "LogoPaletteOUTREGAddressAbsorptionReviewed": true,
+  "Scope": "Current netlist: rotation INIT/address/bank selects/registered selectors/125 independent bank-class BDDs; shape address/enable; font row address truth table; Logo INIT/bank selects/registered selectors/mux/palette address and output mode. Routed connections and timing require separate audit."
+}
