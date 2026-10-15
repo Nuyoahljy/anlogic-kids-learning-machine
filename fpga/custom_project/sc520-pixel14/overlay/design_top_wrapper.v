@@ -704,6 +704,13 @@ assign S_raw_tuser  = S_axis_tuser;
 //ISP算法顶层模块
 wire [95:0] S_p14_rgb_data;
 wire S_p14_rgb_sof,S_p14_rgb_eol,S_p14_rgb_valid;
+wire S_p14_start,S_p14_done,S_p14_good,S_p14_revoke;
+wire [31:0] S_p14_id,S_p14_done_id;
+wire [95:0] S_p14_pre_wb,S_p14_post_wb;
+wire [8:0] S_p14_gain_r,S_p14_gain_b;
+wire [31:0] S_p14_pixel_id,S_p14_stats_id;
+wire S_p14_stats_event,S_p14_stats_good;
+wire [20:0] S_p14_neutral;
 isp_top u_isp_top (
 .axi4s_video_aclk(S_csi_rx_clk),
 .I_rst_n         (S_rst_n),
@@ -716,6 +723,9 @@ isp_top u_isp_top (
 .O_tdata         (S_ISP_O_tdata ),
 .O_rgb96_data(S_p14_rgb_data),.O_rgb96_sof(S_p14_rgb_sof),
 .O_rgb96_eol(S_p14_rgb_eol),.O_rgb96_valid(S_p14_rgb_valid),
+.I_diag_frame_id(S_p14_id),.O_diag_pre_wb(S_p14_pre_wb),.O_diag_post_wb(S_p14_post_wb),
+.O_diag_gain_r(S_p14_gain_r),.O_diag_gain_b(S_p14_gain_b),.O_diag_pixel_id(S_p14_pixel_id),
+.O_diag_stats_id(S_p14_stats_id),.O_diag_stats_done(S_p14_stats_event),.O_diag_stats_good(S_p14_stats_good),.O_diag_neutral_count(S_p14_neutral),
 .O_tlast         (S_ISP_O_tlast ),
 .O_tuser         (S_ISP_O_tuser ),
 .O_tvalid        (S_ISP_O_tvalid),
@@ -904,8 +914,6 @@ isp_top u_isp_top (
         .key_skip_pulse(S_quiz_key_skip),.key_reset_pulse(S_quiz_key_reset));
 
     // Real acquisition provenance is independent of DDR/display refresh.
-    wire S_p14_start,S_p14_done,S_p14_good,S_p14_revoke;
-    wire [31:0] S_p14_id,S_p14_done_id;
     wire [255:0] S_p14_diag_capture,S_p14_diag_display;
     wire [31:0] S_p14_i2c_display;
     wire S_p14_i2c_ready;
@@ -975,15 +983,19 @@ isp_top u_isp_top (
             if(S_p14_diag_valid) S_p14_diag_received<=1;
             if(S_p14_obs_event) begin S_p14_event_seen<=1;S_p14_conflict_seen<=S_p14_obs_conflict;end
         end
-    pixel14_diag_osd u_p14_diag_osd(
+    wire [799:0] S_p14_color_packet;
+    wire S_p14_color_fresh,S_p14_color_fault;
+    wire [7:0] S_p14_color_age;
+    pixel14_color_diag_osd #(.VERSION(16'h0116)) u_p14_diag_osd(
         .clk(S_hdmi_pixel_clk),.rst_n(S_hdmi_rst_n),.frame_start(S_p14_display_sof),
-        .pixel_x(S_p14_x),.pixel_y(S_p14_y),.diagnostic({16'h0113,S_p14_diag_display[239:0]}),
+        .pixel_x(S_p14_x),.pixel_y(S_p14_y),.diagnostic({16'h0116,S_p14_diag_display[239:0]}),
+        .packet(S_p14_color_packet),.fresh(S_p14_color_fresh && !S_p14_color_fault),.age_ms(S_p14_color_age),
         .i2c_diagnostic(S_p14_i2c_display),
         .business_flags({S_p14_diag_fault,S_p14_diag_received,S_p14_link_fault,S_p14_quarantined,
             S_p14_timeout,S_p14_conflict_seen,S_p14_obs_healthy,S_p14_event_seen}),
         .active(S_p14_diag_active),.rgb(S_p14_diag_rgb));
     assign S_roi_data=S_roi_de && S_p14_diag_active ? S_p14_diag_rgb : S_p14_business_rgb;
-    pixel14_pipeline #(.ENABLE_OUTPUT(1),.USE_SCENE_ANALYSIS(1),.ROTATION_VARIANTS(256),.TEMPLATE_FILE("E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/assets/templates/sc520-card-recognition/rotation-v1/templates.mem")) u_p14_pipeline(
+    pixel14_pipeline #(.ENABLE_OUTPUT(1),.USE_SCENE_ANALYSIS(1),.ROTATION_VARIANTS(256),.COLOR_DIAGNOSTICS(1),.TEMPLATE_FILE("E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/assets/templates/sc520-card-recognition/rotation-v1/templates.mem")) u_p14_pipeline(
         .rst_n(S_rst_n && S_hdmi_rst_n),.capture_clk(S_csi_rx_clk),.display_clk(S_hdmi_pixel_clk),
         .in_frame_start(S_p14_start),.in_frame_id(S_p14_id),.in_source_test(1'b0),
         .in_valid(S_p14_rgb_valid),.in_eol(S_p14_rgb_eol),.in_rgb96(S_p14_rgb_data),
@@ -997,7 +1009,11 @@ isp_top u_isp_top (
         .video_rgb(S_hdmi_out_data),.out_vsync(S_roi_vsync),.out_hsync(S_roi_hsync),
         .out_de(S_roi_de),.out_rgb(S_p14_business_rgb),
         .obs_event(S_p14_obs_event),.obs_healthy(S_p14_obs_healthy),.obs_conflict(S_p14_obs_conflict),
-        .timed_out(S_p14_timeout),.link_fault(S_p14_link_fault),.quarantined(S_p14_quarantined));
+        .timed_out(S_p14_timeout),.link_fault(S_p14_link_fault),.quarantined(S_p14_quarantined),
+        .diag_pre_wb(S_p14_pre_wb),.diag_post_wb(S_p14_post_wb),.diag_gain_r(S_p14_gain_r),.diag_gain_b(S_p14_gain_b),
+        .diag_pixel_id(S_p14_pixel_id),.diag_stats_id(S_p14_stats_id),.diag_stats_event(S_p14_stats_event),
+        .diag_stats_good(S_p14_stats_good),.diag_neutral_count(S_p14_neutral),.color_diag_packet(S_p14_color_packet),
+        .color_diag_fresh(S_p14_color_fresh),.color_diag_fault(S_p14_color_fault),.color_diag_age(S_p14_color_age));
 
     hdmi_tx u_hdmi_tx(
         .I_pixel_clk        ( S_hdmi_pixel_clk  ),

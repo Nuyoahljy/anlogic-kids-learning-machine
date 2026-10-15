@@ -1,0 +1,136 @@
+{
+  "Task": "sc520-card-recognition",
+  "Owner": "2026-10-11 continuation /root",
+  "StartedAt": "2026-10-15T11:35:49.613+08:00",
+  "Mode": "negative",
+  "Test": "color_taps",
+  "FullResolution": false,
+  "RotationVariants": 0,
+  "Command": [
+    "D:\\modeltech64_10.7\\win64\\vsim.exe",
+    "-modelsimini",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color_taps-negative-20261015-113549-fbe8fdf5\\modelsim.ini",
+    "-c",
+    "-l",
+    "transcript.log",
+    "-do",
+    "set card_top tb_pixel14_color_taps; set card_sources [list {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-113549-fbe8fdf5/inputs/pixel14_color_pipeline.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-113549-fbe8fdf5/inputs/signal_delay.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-113549-fbe8fdf5/inputs/ip_behavioral_models.sv} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-113549-fbe8fdf5/inputs/pixel14_color_observer.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-113549-fbe8fdf5/inputs/pixel14_color_diagnostics.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-113549-fbe8fdf5/inputs/pixel14_observation_join.v}]; set card_tb {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-113549-fbe8fdf5/inputs/tb_pixel14_color_taps.sv}; set card_assets {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-113549-fbe8fdf5/inputs}; set card_negative 1; set card_probe 0; set card_full 0; set card_rotation 0; set card_matrix_only 0; source {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-113549-fbe8fdf5/inputs/run-pixel14.do}"
+  ],
+  "WorkingDirectory": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color_taps-negative-20261015-113549-fbe8fdf5",
+  "Inputs": [
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\pixel14_color_pipeline.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color_taps-negative-20261015-113549-fbe8fdf5\\inputs\\pixel14_color_pipeline.v",
+      "sha256_before": "1E21ECED464E8D4E03B153F7F0E7F94FAF78D8BF1D7B172D05789C654B617E93",
+      "sha256_after": "1E21ECED464E8D4E03B153F7F0E7F94FAF78D8BF1D7B172D05789C654B617E93",
+      "snapshot_sha256": "1E21ECED464E8D4E03B153F7F0E7F94FAF78D8BF1D7B172D05789C654B617E93"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\signal_delay.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color_taps-negative-20261015-113549-fbe8fdf5\\inputs\\signal_delay.v",
+      "sha256_before": "B7A8156BC59BEE5DE2C1AF20CB31079388ACE1F4E767A18288A7DFF8BAE3D5FD",
+      "sha256_after": "B7A8156BC59BEE5DE2C1AF20CB31079388ACE1F4E767A18288A7DFF8BAE3D5FD",
+      "snapshot_sha256": "B7A8156BC59BEE5DE2C1AF20CB31079388ACE1F4E767A18288A7DFF8BAE3D5FD"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\imaging-audit\\ip_behavioral_models.sv",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color_taps-negative-20261015-113549-fbe8fdf5\\inputs\\ip_behavioral_models.sv",
+      "sha256_before": "B807F681301091F4211C86BA6D59BD67F3A5C11D7A9E3FB76E9635BEACC2067C",
+      "sha256_after": "B807F681301091F4211C86BA6D59BD67F3A5C11D7A9E3FB76E9635BEACC2067C",
+      "snapshot_sha256": "B807F681301091F4211C86BA6D59BD67F3A5C11D7A9E3FB76E9635BEACC2067C"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\color_diag\\pixel14_color_observer.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color_taps-negative-20261015-113549-fbe8fdf5\\inputs\\pixel14_color_observer.v",
+      "sha256_before": "B24C373EE5C2AE896682FF53A837823C50AC1FD75CBC2937C0CC105524E35302",
+      "sha256_after": "B24C373EE5C2AE896682FF53A837823C50AC1FD75CBC2937C0CC105524E35302",
+      "snapshot_sha256": "B24C373EE5C2AE896682FF53A837823C50AC1FD75CBC2937C0CC105524E35302"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\color_diag\\pixel14_color_diagnostics.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color_taps-negative-20261015-113549-fbe8fdf5\\inputs\\pixel14_color_diagnostics.v",
+      "sha256_before": "9B15228BDF69212689DC20B6BA761CA9A201E30F36A4E64B91F9C817CC9324FE",
+      "sha256_after": "9B15228BDF69212689DC20B6BA761CA9A201E30F36A4E64B91F9C817CC9324FE",
+      "snapshot_sha256": "9B15228BDF69212689DC20B6BA761CA9A201E30F36A4E64B91F9C817CC9324FE"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\color_diag\\pixel14_observation_join.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color_taps-negative-20261015-113549-fbe8fdf5\\inputs\\pixel14_observation_join.v",
+      "sha256_before": "6F5CFEF8762374DA7145E675E7ACB9B7BB9EDE2E464338BC5785081D27BDA453",
+      "sha256_after": "6F5CFEF8762374DA7145E675E7ACB9B7BB9EDE2E464338BC5785081D27BDA453",
+      "snapshot_sha256": "6F5CFEF8762374DA7145E675E7ACB9B7BB9EDE2E464338BC5785081D27BDA453"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\sim\\sc520-card-recognition\\tb_pixel14_color_taps.sv",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color_taps-negative-20261015-113549-fbe8fdf5\\inputs\\tb_pixel14_color_taps.sv",
+      "sha256_before": "5ABFE930AD8463DEF3A15A1C87EA725B228D64CEC3C1AEBC8A67D21A473A15AC",
+      "sha256_after": "5ABFE930AD8463DEF3A15A1C87EA725B228D64CEC3C1AEBC8A67D21A473A15AC",
+      "snapshot_sha256": "5ABFE930AD8463DEF3A15A1C87EA725B228D64CEC3C1AEBC8A67D21A473A15AC"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\simulate-pixel14.py",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color_taps-negative-20261015-113549-fbe8fdf5\\inputs\\simulate-pixel14.py",
+      "sha256_before": "80EF9D9B404B9EF7E777FC6151EE3696E3AD26612CC581609D9D0FAEC0B7E595",
+      "sha256_after": "80EF9D9B404B9EF7E777FC6151EE3696E3AD26612CC581609D9D0FAEC0B7E595",
+      "snapshot_sha256": "80EF9D9B404B9EF7E777FC6151EE3696E3AD26612CC581609D9D0FAEC0B7E595"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\simulate.py",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color_taps-negative-20261015-113549-fbe8fdf5\\inputs\\simulate.py",
+      "sha256_before": "8F3C58AD1E4D9DB1DCB7018BD45C8123BA232068DC90B2DA5610B12C19E3CF17",
+      "sha256_after": "8F3C58AD1E4D9DB1DCB7018BD45C8123BA232068DC90B2DA5610B12C19E3CF17",
+      "snapshot_sha256": "8F3C58AD1E4D9DB1DCB7018BD45C8123BA232068DC90B2DA5610B12C19E3CF17"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\run-pixel14.do",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color_taps-negative-20261015-113549-fbe8fdf5\\inputs\\run-pixel14.do",
+      "sha256_before": "789A87AF595B89C3E5FA963DFF530B385B893061BCA4135F64E72A2863E80F7F",
+      "sha256_after": "789A87AF595B89C3E5FA963DFF530B385B893061BCA4135F64E72A2863E80F7F",
+      "snapshot_sha256": "789A87AF595B89C3E5FA963DFF530B385B893061BCA4135F64E72A2863E80F7F"
+    }
+  ],
+  "TimeoutSeconds": 180,
+  "CaseAssets": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\prep-v1-max40",
+  "MatrixOnly": false,
+  "SimulatorIni": {
+    "path": "D:\\modeltech64_10.7\\modelsim.ini",
+    "sha256": "BC3F7544DD7D525A105A2CF08B4A33AF6B8529EBA49C3F58C415D2E37B47FC14"
+  },
+  "Scope": "Synthetic RGB96 capture groups, per-frame classification and dual-clock result transport; upstream EOF qualification supplied by testbench; no physical camera or board validation",
+  "PID": 58272,
+  "FinishedAt": "2026-10-15T11:35:54.656+08:00",
+  "ElapsedSeconds": 5.031000000075437,
+  "NativeExitCode": 1,
+  "TimedOut": false,
+  "InputsUnchanged": true,
+  "Summary": {
+    "errors": 1,
+    "checks": 174504,
+    "scenarios": 8,
+    "done": 1,
+    "injected": 1
+  },
+  "Qualified": true,
+  "Outputs": [
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color_taps-negative-20261015-113549-fbe8fdf5\\run-start.json",
+      "sha256": "C5602BA2D963C4F8C5998AFB7F9730EA8A0BE259315872C8C0A95391BFEE9D03"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color_taps-negative-20261015-113549-fbe8fdf5\\stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color_taps-negative-20261015-113549-fbe8fdf5\\stdout.log",
+      "sha256": "92C4467BC836F4F571995B0AFD1E7D8FFEECF45AC97680395AECD4FF608A195D"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color_taps-negative-20261015-113549-fbe8fdf5\\summary.json",
+      "sha256": "EADD2E37A1F7BAD37E77BA4643F7804A460CE90457FBB94FB35473F0BBF14746"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\runs\\p14-color_taps-negative-20261015-113549-fbe8fdf5\\transcript.log",
+      "sha256": "6B86426C6FE64C287553DEB0A3FFF8A5F64A6F74FF32CEA479F2E541DBBD84BB"
+    }
+  ]
+}

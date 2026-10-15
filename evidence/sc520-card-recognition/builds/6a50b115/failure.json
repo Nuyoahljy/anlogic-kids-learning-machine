@@ -1,0 +1,26 @@
+{
+  "FailedAtUtc": "2026-10-15T04:02:41.7142784Z",
+  "Message": "TD phy_1 failed",
+  "Stages": [
+    {
+      "Stage": "syn_1",
+      "PID": 19300,
+      "ExitCode": 0,
+      "StartedAtUtc": "2026-10-15T03:48:27.0114730Z",
+      "FinishedAtUtc": "2026-10-15T03:52:43.1517497Z",
+      "MarkerFresh": true,
+      "Stdout": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b115\\syn_1.stdout.log",
+      "Stderr": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b115\\syn_1.stderr.log"
+    },
+    {
+      "Stage": "phy_1",
+      "PID": 19268,
+      "ExitCode": -1,
+      "StartedAtUtc": "2026-10-15T03:52:43.1973076Z",
+      "FinishedAtUtc": "2026-10-15T04:02:41.6830950Z",
+      "MarkerFresh": false,
+      "Stdout": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b115\\phy_1.stdout.log",
+      "Stderr": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b115\\phy_1.stderr.log"
+    }
+  ]
+}

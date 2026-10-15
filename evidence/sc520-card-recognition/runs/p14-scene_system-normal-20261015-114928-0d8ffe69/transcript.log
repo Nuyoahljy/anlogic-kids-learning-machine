@@ -1,0 +1,195 @@
+# set card_top tb_pixel14_scene_system
+# tb_pixel14_scene_system
+#  set card_sources [list {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/capture_rgb96.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/block_frame_recognizer.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_card_matcher.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_result_cdc.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_pipeline.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_card_template_rom.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_scene_preprocess.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_rotation_matcher.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_block_shape_guard.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_block_filter.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/card_matcher.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/card_template_rom.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/card_result_filter.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/items14_content.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/items14_font_rom.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/items14_osd.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/items14_question_bank.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/items14_quiz_control.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/items14_result_join.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/items14_system.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_color_diag_osd.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_color_diagnostics.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_color_observer.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_observation_bridge.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_observation_join.v}]
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/capture_rgb96.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/block_frame_recognizer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_card_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_result_cdc.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_card_template_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_scene_preprocess.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_rotation_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_block_shape_guard.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_block_filter.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/card_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/card_template_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/card_result_filter.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/items14_content.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/items14_font_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/items14_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/items14_question_bank.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/items14_quiz_control.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/items14_result_join.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/items14_system.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_color_diag_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_color_diagnostics.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_color_observer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_observation_bridge.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_observation_join.v
+#  set card_tb {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/tb_pixel14_scene_system.sv}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/tb_pixel14_scene_system.sv
+#  set card_assets {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs
+#  set card_negative 0
+# 0
+#  set card_probe 0
+# 0
+#  set card_full 0
+# 0
+#  set card_rotation 256
+# 256
+#  set card_matrix_only 0
+# 0
+#  source {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/run-pixel14.do}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 11:49:34 on Oct 15,2026
+# vlog E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/capture_rgb96.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/block_frame_recognizer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_card_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_result_cdc.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_card_template_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_scene_preprocess.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_rotation_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_block_shape_guard.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_block_filter.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/card_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/card_template_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/card_result_filter.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/items14_content.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/items14_font_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/items14_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/items14_question_bank.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/items14_quiz_control.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/items14_result_join.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/items14_system.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_color_diag_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_color_diagnostics.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_color_observer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_observation_bridge.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_observation_join.v 
+# -- Compiling module capture_rgb96
+# -- Compiling module block_frame_recognizer
+# -- Compiling module pixel14_card_matcher
+# -- Compiling module pixel14_result_cdc
+# -- Compiling module pixel14_pipeline
+# -- Compiling module pixel14_card_template_rom
+# -- Compiling module pixel14_scene_preprocess
+# -- Compiling module pixel14_rotation_matcher
+# -- Compiling module pixel14_block_shape_guard
+# -- Compiling module pixel14_block_shape_rom
+# -- Compiling module pixel14_block_filter
+# -- Compiling module card_matcher
+# -- Compiling module card_template_rom
+# -- Compiling module card_result_filter
+# -- Compiling module items14_content
+# -- Compiling module items14_font_rom
+# -- Compiling module items14_osd
+# -- Compiling module items14_question_bank
+# -- Compiling module items14_quiz_control
+# -- Compiling module items14_result_join
+# -- Compiling module items14_system
+# -- Compiling module pixel14_color_diag_osd
+# -- Compiling module pixel14_color_diagnostics
+# -- Compiling module pixel14_color_observer
+# -- Compiling module pixel14_observation_bridge
+# -- Compiling module pixel14_observation_join
+# 
+# Top level modules:
+# 	pixel14_pipeline
+# 	card_matcher
+# 	pixel14_color_diag_osd
+# End time: 11:49:35 on Oct 15,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 11:49:35 on Oct 15,2026
+# vlog -sv "+incdir+E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs" E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/tb_pixel14_scene_system.sv 
+# -- Compiling module tb_pixel14_scene_system
+# ** Warning: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/tb_pixel14_scene_system.sv(201): (vlog-2597) '2500000000' is being treated as 32-bit signed integer and will overflow.
+# 
+# Top level modules:
+# 	tb_pixel14_scene_system
+# End time: 11:49:35 on Oct 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim -voptargs="+acc" -wlf wave.wlf work.tb_pixel14_scene_system "+ASSET_ROOT=E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs" "+INJECT_FAULT=0" -gROTATIONS=256 
+# Start time: 11:49:35 on Oct 15,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "pixel14_scene_preprocess(fast)".
+# ** Warning: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_pipeline.v(155): (vopt-2685) [TFMPC] - Too few port connections for 'capture'.  Expected 37, found 36.
+# ** Warning: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/pixel14_pipeline.v(155): (vopt-2718) [TFMPC] - Missing connection for port 'block_roi_fg_count'.
+# ** Note: (vopt-143) Recognized 1 FSM in module "block_frame_recognizer(fast)".
+# ** Note: (vopt-143) Recognized 3 FSMs in module "items14_quiz_control(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "pixel14_rotation_matcher(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "pixel14_block_shape_guard(fast)".
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_pixel14_scene_system(fast)
+# Loading work.pixel14_pipeline(fast)
+# Loading work.capture_rgb96(fast)
+# Loading work.pixel14_scene_preprocess(fast)
+# Loading work.block_frame_recognizer(fast)
+# Loading work.pixel14_block_shape_guard(fast)
+# Loading work.pixel14_block_shape_rom(fast)
+# Loading work.pixel14_block_filter(fast)
+# Loading work.pixel14_rotation_matcher(fast)
+# Loading work.card_result_filter(fast)
+# Loading work.pixel14_result_cdc(fast)
+# Loading work.pixel14_result_cdc(fast__1)
+# Loading work.items14_system(fast)
+# Loading work.items14_result_join(fast)
+# Loading work.items14_quiz_control(fast)
+# Loading work.items14_question_bank(fast)
+# Loading work.items14_osd(fast)
+# Loading work.items14_content(fast)
+# Loading work.items14_font_rom(fast)
+# CASE scene-system 1 reset and K1 exploration
+# CASE scene-system 2 r000_empty_dark
+# CASE scene-system 3 r001_empty_white
+# CASE scene-system 4 r002_empty_red
+# CASE scene-system 5 r003_card_10_angle_0
+# CASE scene-system 6 r004_card_10_angle_90
+# CASE scene-system 7 r005_card_10_angle_180
+# CASE scene-system 8 r006_card_10_angle_270
+# CASE scene-system 9 r007_card_10_angle_2p5
+# CASE scene-system 10 r008_card_10_angle_87p5
+# CASE scene-system 11 r009_card_10_angle_177p5
+# CASE scene-system 12 r010_card_10_angle_267p5
+# CASE scene-system 13 r027_card_11_angle_0
+# CASE scene-system 14 r028_card_11_angle_90
+# CASE scene-system 15 r029_card_11_angle_180
+# CASE scene-system 16 r030_card_11_angle_270
+# CASE scene-system 17 r031_card_11_angle_2p5
+# CASE scene-system 18 r032_card_11_angle_87p5
+# CASE scene-system 19 r033_card_11_angle_177p5
+# CASE scene-system 20 r034_card_11_angle_267p5
+# CASE scene-system 21 r051_card_12_angle_0
+# CASE scene-system 22 r052_card_12_angle_90
+# CASE scene-system 23 r053_card_12_angle_180
+# CASE scene-system 24 r054_card_12_angle_270
+# CASE scene-system 25 r055_card_12_angle_2p5
+# CASE scene-system 26 r056_card_12_angle_87p5
+# CASE scene-system 27 r057_card_12_angle_177p5
+# CASE scene-system 28 r058_card_12_angle_267p5
+# CASE scene-system 29 r075_card_13_angle_0
+# CASE scene-system 30 r076_card_13_angle_90
+# CASE scene-system 31 r077_card_13_angle_180
+# CASE scene-system 32 r078_card_13_angle_270
+# CASE scene-system 33 r079_card_13_angle_2p5
+# CASE scene-system 34 r080_card_13_angle_87p5
+# CASE scene-system 35 r081_card_13_angle_177p5
+# CASE scene-system 36 r082_card_13_angle_267p5
+# CASE scene-system 37 r099_card_14_angle_0
+# CASE scene-system 38 r100_card_14_angle_90
+# CASE scene-system 39 r101_card_14_angle_180
+# CASE scene-system 40 r102_card_14_angle_270
+# CASE scene-system 41 r103_card_14_angle_2p5
+# CASE scene-system 42 r104_card_14_angle_87p5
+# CASE scene-system 43 r105_card_14_angle_177p5
+# CASE scene-system 44 r106_card_14_angle_267p5
+# CASE scene-system 45 r123_legacy_008_empty_dark_soft_shadow
+# CASE scene-system 46 r124_legacy_013_empty_wood_noise
+# CASE scene-system 47 r125_legacy_122_card_10_cut_right
+# CASE scene-system 48 r126_legacy_596_block_red_circle_white_36
+# CASE scene-system 49 r127_legacy_608_block_red_square_dark_36
+# CASE scene-system 50 r128_legacy_620_block_red_triangle_wood_36
+# CASE scene-system 51 r129_legacy_624_block_yellow_circle_white_52
+# CASE scene-system 52 r130_legacy_636_block_yellow_square_dark_52
+# CASE scene-system 53 r131_legacy_648_block_yellow_triangle_wood_52
+# CASE scene-system 54 r132_legacy_652_block_blue_circle_white_68
+# CASE scene-system 55 r133_legacy_664_block_blue_square_dark_68
+# CASE scene-system 56 r134_legacy_676_block_blue_triangle_wood_68
+# CASE scene-system 57 r135_legacy_686_unknown_ring_white
+# CASE scene-system 58 r136_legacy_696_unknown_checker_dark
+# CASE scene-system 59 r137_legacy_704_different_apple_outline
+# CASE scene-system 60 r138_legacy_705_different_apple_striped
+# CASE scene-system 61 r139_legacy_706_outside_roi_interference
+# CASE scene-system 62 r140_legacy_707_block_touching_left
+# CASE scene-system 63 r141_legacy_711_unqualified_border_red_blue
+# CASE scene-system 64 r142_legacy_712_unqualified_border_light_dark
+# CASE scene-system 65 r144_card_10_gain65_after
+# CASE scene-system 66 r146_card_11_gain65_after
+# CASE scene-system 67 r148_card_12_gain65_after
+# CASE scene-system 68 r150_card_13_gain65_after
+# CASE scene-system 69 r152_card_14_gain65_after
+# CASE scene-system 70 r153_unknown_gray_circle
+# CASE scene-system 71 K2 replays a stable real card in exploration
+# CASE scene-system 72 K1 enters quiz and K3 selects apple without scoring
+# CASE scene-system 73 dark empty scene rearms, apple scores once while retained
+# CASE scene-system 74 unknown occupancy cannot rearm after an answer
+# CASE scene-system 75 bad frame cancels a two-empty-frame rearm sequence
+# CASE scene-system 76 capture clock stop revokes in display domain
+# CASE scene-system 77 held flush and partial restart cannot publish old empty frame
+# CASE scene-system 78 replayed acquisition tag cannot create empty evidence
+# CASE scene-system 79 K4 clears score and returns idle
+# CASE scene-system 80 visible ROI border is exactly 960x480 and RGB/sync delay is one cycle
+# DONE scene-system scenarios=80 checks=12813 errors=0
+# ** Note: $finish    : E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/tb_pixel14_scene_system.sv(199)
+#    Time: 1544756708307 ps  Iteration: 0  Instance: /tb_pixel14_scene_system
+# Break in Module tb_pixel14_scene_system at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/tb_pixel14_scene_system.sv line 199
+# Stopped at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-scene_system-normal-20261015-114928-0d8ffe69/inputs/tb_pixel14_scene_system.sv line 199
+# End time: 11:53:27 on Oct 15,2026, Elapsed time: 0:03:52
+# Errors: 0, Warnings: 2

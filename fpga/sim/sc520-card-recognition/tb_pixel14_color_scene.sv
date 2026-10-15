@@ -36,6 +36,16 @@ module tb_pixel14_color_scene;
   wire audio_event_valid,audio_cancel,link_fault,quarantined;
   wire [3:0] audio_event_item;
   wire [10:0] diag_best,diag_second,diag_sample_fg;
+  // Unused diagnostics in this retained baseline test. New observers have
+  // their own enabled test, while the image/business expectations stay fixed.
+  wire [95:0] diag_pre_wb=0,diag_post_wb=0;
+  wire [8:0] diag_gain_r=0,diag_gain_b=0;
+  wire [31:0] diag_pixel_id=0,diag_stats_id=0;
+  wire diag_stats_event=0,diag_stats_good=0;
+  wire [20:0] diag_neutral_count=0;
+  wire [799:0] color_diag_packet;
+  wire color_diag_fresh,color_diag_fault;
+  wire [7:0] color_diag_age;
   pixel14_pipeline #(.ENABLE_OUTPUT(1),.USE_SCENE_ANALYSIS(1),.ROTATION_VARIANTS(256),
     .TIMEOUT_MS(5),.FEEDBACK_TICKS(2)) dut(.*);
 

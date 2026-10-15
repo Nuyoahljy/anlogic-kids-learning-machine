@@ -1,0 +1,149 @@
+{
+  "CreatedAt": "2026-10-15T12:27:30.335641+08:00",
+  "Version": "D0116",
+  "BuildId": "6a50b116",
+  "BaselineCommit": "c74a4300abd1c65ab49ff9ba3be739434379a8f6",
+  "Task": "D036/C-002",
+  "Owner": "01a13561-2629-7fa2-86a0-4087ad34cc7c /root",
+  "Workdir": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition",
+  "Status": "等待主审核；默认WB/tone同帧颜色诊断候选，未上板，不是颜色修复",
+  "Bit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\delivery-0116\\sc520-pixel14-0116.bit",
+    "SHA256": "8FE5D3A5DA18278CF5C42E7B78B687F17B4A4B4DE1A4ACD21E77CABEDCB82F23",
+    "Bytes": 1789539
+  },
+  "OriginalBit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b116\\td_project\\camera_to_dsi_display_Runs\\phy_1\\camera_to_dsi_display.bit",
+    "SHA256": "8FE5D3A5DA18278CF5C42E7B78B687F17B4A4B4DE1A4ACD21E77CABEDCB82F23",
+    "Bytes": 1789539
+  },
+  "Guide": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\hardware\\sc520-card-recognition\\pixel14-observation116.md",
+    "SHA256": "CA68FD94179CBFC2AE10AE1F0AD6752DB5DBBC1BB917323F82BBF88D12579387",
+    "Bytes": 7580
+  },
+  "PhysicalAudit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b116\\observation-candidate-audit-v1.json",
+    "SHA256": "2A97ED454863DFDF4BD6493DB63938F54B4BDD5190D8EA863525026DE111D2EE",
+    "Bytes": 2567400
+  },
+  "SoftwareAudit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\observation-validation-v2.json",
+    "SHA256": "D07FD71CBD364A3D8C43CAC416CF083F965FBF09AA36600B8137FB20B7E3B12A",
+    "Bytes": 33605
+  },
+  "Layout": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\hardware\\sc520-card-recognition\\color-observation-layout.json",
+    "SHA256": "E015FC083B2870B4D08C607D4E6B7E9142E07887998AEF97B7E9589D4FA9B60C",
+    "Bytes": 19142
+  },
+  "Preview": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\observation-preview\\panel-0116.png",
+    "SHA256": "A35CE8CCA0663B4CA2750F47C7CD40C3C3FD8723D23369074F2089BA9AAB2E12",
+    "Bytes": 8708
+  },
+  "GlobalTimingNs": {
+    "SWNS": 0.108,
+    "STNS": 0.0,
+    "HWNS": 0.02,
+    "HTNS": 0.0
+  },
+  "Resources": {
+    "Used": {
+      "IO": 62,
+      "input": 6,
+      "output": 31,
+      "inout": 25,
+      "lut6": 18475,
+      "reg": 20961,
+      "slice reg": 20961,
+      "pad reg": 0,
+      "slice": 19056,
+      "used ram": 312,
+      "dram lut": 296,
+      "shifter lut": 16,
+      "used logic": 18744,
+      "with luts": 15509,
+      "with adder": 2654,
+      "reg only": 581,
+      "feedthrough": 3600,
+      "f7mux": 384,
+      "f8mux": 192,
+      "eram": 97,
+      "eram20k": 97,
+      "fifo20k": 0,
+      "dsp": 22,
+      "ddr_byte": 6,
+      "mipi_tx": 0,
+      "mipi_rx": 1,
+      "pad": 21,
+      "pll": 3,
+      "gclk": 8,
+      "lclk": 0,
+      "sclk": 20,
+      "mlclk": 2,
+      "ioclk": 4,
+      "1          1": 32818,
+      "2          2": 6218,
+      "3          3": 3034,
+      "4          4": 1237
+    },
+    "Available": {
+      "IO": 160,
+      "lut6": 21216,
+      "slice reg": 42432,
+      "slice": 21216,
+      "f7mux": 10608,
+      "f8mux": 5304,
+      "eram": 108,
+      "dsp": 40,
+      "ddr_byte": 12,
+      "mipi_tx": 2,
+      "mipi_rx": 2,
+      "pad": 160,
+      "pll": 6,
+      "gclk": 32,
+      "lclk": 12,
+      "sclk": 48,
+      "mlclk": 6,
+      "ioclk": 18
+    },
+    "OverCapacity": {}
+  },
+  "PositiveScenarios": 115,
+  "PositiveChecks": 47435158,
+  "I2CCheckMinimumSlackNs": {
+    "setup": 1.298,
+    "hold": 0.073,
+    "recovery": 35.707,
+    "removal": 0.107
+  },
+  "I2CCellCount": 49,
+  "SynchronizerPairs": 21,
+  "MailboxRetainedBits": [
+    80,
+    106,
+    28,
+    762
+  ],
+  "MailboxMaximumDelayNs": [
+    1.42,
+    1.303,
+    1.837,
+    2.459
+  ],
+  "PixelLatencyCycles": 54,
+  "WB_ENABLE": 1,
+  "TONE_ENABLE": 1,
+  "HardwareValidated": false,
+  "FullSystemTimingSignoff": false,
+  "ColorRepairClaimed": false,
+  "Excluded": [
+    "T017 display/Logo integration",
+    "audio player integration",
+    "physical downloads or Flash",
+    "real COM access",
+    "Git push or merge"
+  ],
+  "Next": "主审核后，固定光照、单红圆覆盖青窗、同张白纸覆盖紫窗，稳定2秒拍完整诊断；移走红圆保留纸拍对照。"
+}

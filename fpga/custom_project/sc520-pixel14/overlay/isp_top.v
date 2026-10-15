@@ -1,9 +1,16 @@
 module isp_top #(
     parameter integer COLOR_CORRECTION=1,
-    parameter integer TONE_ENABLE=1
+    parameter integer TONE_ENABLE=1,
+    parameter integer COLOR_DIAGNOSTICS=1
 ) (
     output wire [95:0] O_rgb96_data,
     output wire O_rgb96_sof,O_rgb96_eol,O_rgb96_valid,
+    input wire [31:0] I_diag_frame_id,
+    output wire [95:0] O_diag_pre_wb,O_diag_post_wb,
+    output wire [8:0] O_diag_gain_r,O_diag_gain_b,
+    output wire [31:0] O_diag_pixel_id,O_diag_stats_id,
+    output wire O_diag_stats_done,O_diag_stats_good,
+    output wire [20:0] O_diag_neutral_count,
     input 			axi4s_video_aclk,
     input 			I_rst_n			,
     input 			I_tlast			,
@@ -84,14 +91,19 @@ data128_96 u_data128_96 (
 );
 
 generate if(COLOR_CORRECTION) begin : corrected_color
-pixel14_color_pipeline #(.IMG_HEIGHT(720),.IMG_WIDTH(1280),.WB_ENABLE(1),.TONE_ENABLE(TONE_ENABLE)) u_color (
+pixel14_color_pipeline #(.IMG_HEIGHT(720),.IMG_WIDTH(1280),.WB_ENABLE(1),.TONE_ENABLE(TONE_ENABLE),.DIAGNOSTICS(COLOR_DIAGNOSTICS)) u_color (
     .I_clk(axi4s_video_aclk),.I_rst_n(I_rst_n),
     .I_tlast(m_aixs_tlast),.I_tuser(m_aixs_tuser),
     .I_tdata(m_aixs_tdata_96),.I_tvalid(m_aixs_tvalid),.I_tready(m_aixs_tready),
     .O_tlast(awb_O_tlast),.O_tuser(awb_O_tuser),.O_tdata(awb_O_tdata),
-    .O_tvalid(awb_O_tvalid),.O_tready(awb_O_tready)
+    .O_tvalid(awb_O_tvalid),.O_tready(awb_O_tready),.I_diag_frame_id(I_diag_frame_id),
+    .O_diag_pre_wb(O_diag_pre_wb),.O_diag_post_wb(O_diag_post_wb),.O_diag_gain_r(O_diag_gain_r),.O_diag_gain_b(O_diag_gain_b),
+    .O_diag_pixel_id(O_diag_pixel_id),.O_diag_stats_done(O_diag_stats_done),.O_diag_stats_good(O_diag_stats_good),
+    .O_diag_stats_id(O_diag_stats_id),.O_diag_neutral_count(O_diag_neutral_count)
 );
 end else begin : legacy_color
+assign O_diag_pre_wb=0;assign O_diag_post_wb=0;assign O_diag_gain_r=0;assign O_diag_gain_b=0;
+assign O_diag_pixel_id=0;assign O_diag_stats_id=0;assign O_diag_stats_done=0;assign O_diag_stats_good=0;assign O_diag_neutral_count=0;
 awb #(
     .IMG_HEIGHT(720 ),
     .IMG_WIDTH (1280)

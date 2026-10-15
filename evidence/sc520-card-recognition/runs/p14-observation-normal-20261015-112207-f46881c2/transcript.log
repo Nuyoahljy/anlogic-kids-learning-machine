@@ -1,0 +1,79 @@
+# set card_top tb_pixel14_observation
+# tb_pixel14_observation
+#  set card_sources [list {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-observation-normal-20261015-112207-f46881c2/inputs/pixel14_observation_join.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-observation-normal-20261015-112207-f46881c2/inputs/pixel14_observation_bridge.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-observation-normal-20261015-112207-f46881c2/inputs/pixel14_result_cdc.v}]
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-observation-normal-20261015-112207-f46881c2/inputs/pixel14_observation_join.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-observation-normal-20261015-112207-f46881c2/inputs/pixel14_observation_bridge.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-observation-normal-20261015-112207-f46881c2/inputs/pixel14_result_cdc.v
+#  set card_tb {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-observation-normal-20261015-112207-f46881c2/inputs/tb_pixel14_observation.sv}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-observation-normal-20261015-112207-f46881c2/inputs/tb_pixel14_observation.sv
+#  set card_assets {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-observation-normal-20261015-112207-f46881c2/inputs}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-observation-normal-20261015-112207-f46881c2/inputs
+#  set card_negative 0
+# 0
+#  set card_probe 0
+# 0
+#  set card_full 0
+# 0
+#  set card_rotation 0
+# 0
+#  set card_matrix_only 0
+# 0
+#  source {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-observation-normal-20261015-112207-f46881c2/inputs/run-pixel14.do}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 11:22:08 on Oct 15,2026
+# vlog E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-observation-normal-20261015-112207-f46881c2/inputs/pixel14_observation_join.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-observation-normal-20261015-112207-f46881c2/inputs/pixel14_observation_bridge.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-observation-normal-20261015-112207-f46881c2/inputs/pixel14_result_cdc.v 
+# -- Compiling module pixel14_observation_join
+# -- Compiling module pixel14_observation_bridge
+# -- Compiling module pixel14_result_cdc
+# 
+# Top level modules:
+# 	pixel14_observation_join
+# 	pixel14_observation_bridge
+# End time: 11:22:09 on Oct 15,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 11:22:09 on Oct 15,2026
+# vlog -sv "+incdir+E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-observation-normal-20261015-112207-f46881c2/inputs" E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-observation-normal-20261015-112207-f46881c2/inputs/tb_pixel14_observation.sv 
+# -- Compiling module tb_pixel14_observation
+# 
+# Top level modules:
+# 	tb_pixel14_observation
+# End time: 11:22:09 on Oct 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -wlf wave.wlf work.tb_pixel14_observation "+ASSET_ROOT=E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-observation-normal-20261015-112207-f46881c2/inputs" "+INJECT_FAULT=0" 
+# Start time: 11:22:09 on Oct 15,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_pixel14_observation(fast)
+# Loading work.pixel14_observation_join(fast)
+# Loading work.pixel14_observation_bridge(fast)
+# Loading work.pixel14_result_cdc(fast)
+# CASE observation 1 reset starts without trusted data
+# CASE observation 2 two capture banks join by exact identity in reversed completion order
+# CASE observation 3 unknown analysis cannot reuse earlier color
+# CASE observation 4 same-cycle complete pair includes current data
+# CASE observation 5 duplicate color and missing/full buffer are rejected
+# CASE observation 6 bad raster and bad semantic snapshot remain incomplete
+# CASE observation 7 flush drops pending identity and emits one invalidation
+# CASE observation 8 all800 payload bits cross the actual asynchronous mailbox atomically
+# CASE observation 9 replayed complete tags are rejected but incomplete tags remain visible
+# CASE observation 10 new complete tag recovers and five ticks expire even with stopped capture
+# CASE observation 11 display revoke invalidates data immediately
+# DONE observation checks=22 errors=0
+# ** Note: $finish    : E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-observation-normal-20261015-112207-f46881c2/inputs/tb_pixel14_observation.sv(65)
+#    Time: 2912 ns  Iteration: 1  Instance: /tb_pixel14_observation
+# Break in Module tb_pixel14_observation at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-observation-normal-20261015-112207-f46881c2/inputs/tb_pixel14_observation.sv line 65
+# Stopped at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-observation-normal-20261015-112207-f46881c2/inputs/tb_pixel14_observation.sv line 65
+# End time: 11:22:10 on Oct 15,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

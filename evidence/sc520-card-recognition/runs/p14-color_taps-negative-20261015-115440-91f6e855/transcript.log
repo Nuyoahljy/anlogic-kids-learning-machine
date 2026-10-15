@@ -1,0 +1,91 @@
+# set card_top tb_pixel14_color_taps
+# tb_pixel14_color_taps
+#  set card_sources [list {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/pixel14_color_pipeline.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/signal_delay.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/ip_behavioral_models.sv} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/pixel14_color_observer.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/pixel14_color_diagnostics.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/pixel14_observation_join.v}]
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/pixel14_color_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/signal_delay.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/ip_behavioral_models.sv E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/pixel14_color_observer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/pixel14_color_diagnostics.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/pixel14_observation_join.v
+#  set card_tb {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/tb_pixel14_color_taps.sv}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/tb_pixel14_color_taps.sv
+#  set card_assets {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs
+#  set card_negative 1
+# 1
+#  set card_probe 0
+# 0
+#  set card_full 0
+# 0
+#  set card_rotation 0
+# 0
+#  set card_matrix_only 0
+# 0
+#  source {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/run-pixel14.do}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 11:54:43 on Oct 15,2026
+# vlog E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/pixel14_color_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/signal_delay.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/ip_behavioral_models.sv E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/pixel14_color_observer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/pixel14_color_diagnostics.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/pixel14_observation_join.v 
+# -- Compiling module pixel14_color_pipeline
+# -- Compiling module signal_delay
+# -- Compiling module divider
+# -- Compiling module blk_mem_gen_awb_delay_signal
+# -- Compiling module pixel14_color_observer
+# -- Compiling module pixel14_color_diagnostics
+# -- Compiling module pixel14_observation_join
+# 
+# Top level modules:
+# 	pixel14_color_pipeline
+# 	divider
+# 	pixel14_color_observer
+# End time: 11:54:43 on Oct 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 11:54:43 on Oct 15,2026
+# vlog -sv "+incdir+E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs" E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/tb_pixel14_color_taps.sv 
+# -- Compiling module tb_pixel14_color_taps
+# 
+# Top level modules:
+# 	tb_pixel14_color_taps
+# End time: 11:54:43 on Oct 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -wlf wave.wlf work.tb_pixel14_color_taps "+ASSET_ROOT=E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs" "+INJECT_FAULT=1" 
+# Start time: 11:54:43 on Oct 15,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "pixel14_color_pipeline(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "pixel14_color_pipeline(fast__1)".
+# ** Warning: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/tb_pixel14_color_taps.sv(27): (vopt-2685) [TFMPC] - Too few port connections for 'baseline'.  Expected 22, found 12.
+# ** Warning: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/tb_pixel14_color_taps.sv(27): (vopt-2718) [TFMPC] - Missing connection for port 'O_diag_neutral_count'.
+# ** Warning: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/tb_pixel14_color_taps.sv(27): (vopt-2718) [TFMPC] - Missing connection for port 'O_diag_stats_good'.
+# ** Warning: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/tb_pixel14_color_taps.sv(27): (vopt-2718) [TFMPC] - Missing connection for port 'O_diag_stats_done'.
+# ** Warning: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/tb_pixel14_color_taps.sv(27): (vopt-2718) [TFMPC] - Missing connection for port 'O_diag_stats_id'.
+# ** Warning: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/tb_pixel14_color_taps.sv(27): (vopt-2718) [TFMPC] - Missing connection for port 'O_diag_pixel_id'.
+# ** Warning: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/tb_pixel14_color_taps.sv(27): (vopt-2718) [TFMPC] - Missing connection for port 'O_diag_gain_b'.
+# ** Warning: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/tb_pixel14_color_taps.sv(27): (vopt-2718) [TFMPC] - Missing connection for port 'O_diag_gain_r'.
+# ** Warning: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/tb_pixel14_color_taps.sv(27): (vopt-2718) [TFMPC] - Missing connection for port 'O_diag_post_wb'.
+# ** Warning: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/tb_pixel14_color_taps.sv(27): (vopt-2718) [TFMPC] - Missing connection for port 'O_diag_pre_wb'.
+# ** Warning: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/tb_pixel14_color_taps.sv(27): (vopt-2718) [TFMPC] - Missing connection for port 'I_diag_frame_id'.
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_pixel14_color_taps(fast)
+# Loading work.pixel14_color_observer(fast)
+# Loading work.pixel14_color_diagnostics(fast)
+# Loading work.pixel14_observation_join(fast)
+# Loading work.pixel14_color_pipeline(fast)
+# Loading work.signal_delay(fast)
+# Loading work.blk_mem_gen_awb_delay_signal(fast)
+# Loading work.pixel14_color_pipeline(fast__1)
+# FAIL taps preWB retains exact four input pixels frame=100 rx=12
+# DONE taps scenarios=8 checks=174511 errors=1
+# ** Note: $finish    : E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/tb_pixel14_color_taps.sv(124)
+#    Time: 188300 ns  Iteration: 1  Instance: /tb_pixel14_color_taps
+# Break in Module tb_pixel14_color_taps at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/tb_pixel14_color_taps.sv line 124
+# Stopped at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color_taps-negative-20261015-115440-91f6e855/inputs/tb_pixel14_color_taps.sv line 124
+# End time: 11:54:48 on Oct 15,2026, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 11

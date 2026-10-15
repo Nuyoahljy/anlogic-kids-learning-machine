@@ -46,6 +46,12 @@ if {[llength $i2c_regs]<20} {error "I2C register enumeration unexpectedly empty"
 set fd [open i2c-core-objects.txt w];puts $fd $i2c_regs;close $fd
 report_timing_path -to $i2c_regs -ep_num 400 -path_num 2 -file i2c-core-inbound.rpt
 report_timing_path -from $i2c_regs -ep_num 400 -path_num 2 -file i2c-core-outbound.rpt
+foreach signal {req ack} {
+    set a [get_regs "u_p14_pipeline/*transport/link/${signal}_meta"]
+    set b [get_regs "u_p14_pipeline/*transport/link/${signal}_sync"]
+    if {[llength $a]!=1 || [llength $b]!=1} {error "Observation synchronizer missing: $signal"}
+    report_timing_path -from $a -to $b -ep_num 1 -path_num 1 -file "color-${signal}.rpt"
+}
 report_timing_exception -file original-exceptions.rpt
 report_timing_ignored -file original-ignored.rpt
 report_clock_summary -file original-clocks.rpt
@@ -93,6 +99,11 @@ puts $fd "FROM [llength $i2c_from] $i2c_from"
 puts $fd "TO [llength $i2c_to] $i2c_to"
 close $fd
 report_timing_path -from $i2c_from -to $i2c_to -ep_num 200 -path_num 1 -file i2c-routing.rpt
+set color_from [get_regs {u_p14_pipeline/*transport/link/held_data*}]
+set color_to [get_regs {u_p14_pipeline/*transport/link/dst_data*}]
+if {[llength $color_from]<100 || [llength $color_to]<100} {error "Color observation mailbox unexpectedly missing"}
+set fd [open color-objects.txt w];puts $fd "FROM [llength $color_from] $color_from";puts $fd "TO [llength $color_to] $color_to";close $fd
+report_timing_path -from $color_from -to $color_to -ep_num 2400 -path_num 1 -file color-routing.rpt
 report_timing_exception -file analysis-exceptions.rpt
 report_timing_ignored -file analysis-ignored.rpt
 puts "PIXEL14_CDC_PHYSICAL_REPORTS_OK"

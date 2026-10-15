@@ -18,7 +18,7 @@ REPO = common.REPO
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--test', choices=('capture', 'block', 'cdc', 'pipeline', 'provenance', 'diag', 'matcher', 'scene_system', 'rotation_matcher'), required=True)
+    parser.add_argument('--test', choices=('capture', 'block', 'cdc', 'pipeline', 'provenance', 'diag', 'matcher', 'scene_system', 'rotation_matcher', 'observation', 'color_taps', 'observation_display'), required=True)
     parser.add_argument('--full-resolution', action='store_true', help='Run the pipeline at its actual 1280x720 geometry')
     parser.add_argument('--timeout-seconds', type=int, default=None)
     parser.add_argument('--rotation-variants', type=int, default=0)
@@ -48,6 +48,10 @@ def main():
         "capture": [pixel / "capture_rgb96.v"],
         "matcher": [pixel / "pixel14_card_template_rom.v", pixel / "pixel14_card_matcher.v"],
         "rotation_matcher": [pixel / "pixel14_rotation_matcher.v"],
+        "observation": [base / 'color_diag/pixel14_observation_join.v',base / 'color_diag/pixel14_observation_bridge.v',pixel / 'pixel14_result_cdc.v'],
+        "observation_display": [base / 'color_diag/pixel14_color_diag_osd.v'],
+        "color_taps": [REPO/'fpga/custom_project/sc520-pixel14/overlay/pixel14_color_pipeline.v',vendor_isp.parent/'signal_delay.v',REPO/'evidence/sc520-card-recognition/imaging-audit/ip_behavioral_models.sv']+
+            [base/'color_diag'/n for n in ['pixel14_color_observer.v','pixel14_color_diagnostics.v','pixel14_observation_join.v']],
         "block": sorted(pixel.glob("block*.v")),
         "cdc": [pixel / "pixel14_result_cdc.v"],
         "diag": [pixel / "pixel14_diag_osd.v"],
@@ -57,7 +61,7 @@ def main():
                     "pixel14_result_cdc.v", "pixel14_pipeline.v", "pixel14_card_template_rom.v", "pixel14_scene_preprocess.v",
                     "pixel14_rotation_matcher.v", "pixel14_block_shape_guard.v", "pixel14_block_filter.v")] +
                     [base / name for name in ("card_matcher.v", "card_template_rom.v", "card_result_filter.v")] +
-                    sorted((base / "items14").glob("*.v")),
+                    sorted((base / "items14").glob("*.v")) + sorted((base / "color_diag").glob("*.v")),
     }
     selected['scene_system'] = selected['pipeline']
     rtl = selected[args.test]

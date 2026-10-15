@@ -70,3 +70,8 @@ set_max_delay -from [get_regs {u_p14_i2c_cdc/ack_meta}] -to [get_regs {u_p14_i2c
 set_false_path -from [get_ports {IO_cam_sda}] -to [get_regs {u_uicfgcs520/u_i2c/sda_meta}]
 set_max_delay -from [get_regs {u_uicfgcs520/u_i2c/sda_meta}] -to [get_regs {u_uicfgcs520/u_i2c/sda_sync}] 2.000
 set_max_delay -from [get_regs {u_uicfgcs520/u_i2c/reset_pipe[0]}] -to [get_regs {u_uicfgcs520/u_i2c/reset_pipe[1]}] 2.000
+
+# D036 diagnostic payload handshake; the wildcard covers TD's generated-scope
+# separator only. Each exact logical suffix must resolve uniquely in the audit.
+set_max_delay -from [get_regs {u_p14_pipeline/*transport/link/req_meta}] -to [get_regs {u_p14_pipeline/*transport/link/req_sync}] 2.000
+set_max_delay -from [get_regs {u_p14_pipeline/*transport/link/ack_meta}] -to [get_regs {u_p14_pipeline/*transport/link/ack_sync}] 2.000

@@ -29,7 +29,9 @@ module pixel14_scene_preprocess #(
     output reg [31:0] card_id,
     output reg card_source,
     output reg out_revoke,
-    output reg [15:0] dbg_scene_count,dbg_glyph_count
+    output reg [15:0] dbg_scene_count,dbg_glyph_count,dbg_paper_count,
+    output reg dbg_scene_event,
+    output reg [3:0] dbg_scene_flags
 );
     localparam integer N=GRID_WIDTH*GRID_HEIGHT;
     localparam integer AW=$clog2(N), CW=$clog2(N+1);
@@ -291,12 +293,13 @@ module pixel14_scene_preprocess #(
             replay_end<=0;replay_good<=0;replay_present<=1;replay_id<=0;replay_source<=0;
             card_start<=0;card_valid<=0;card_index<=0;card_fg<=0;card_end<=0;
             card_good<=0;card_present<=1;card_id<=0;card_source<=0;
-            out_revoke<=0;dbg_scene_count<=0;dbg_glyph_count<=0;
+            out_revoke<=0;dbg_scene_count<=0;dbg_glyph_count<=0;dbg_paper_count<=0;dbg_scene_event<=0;dbg_scene_flags<=0;
             for(k=0;k<16;k=k+1) begin
                 hist_r0[k]<=0;hist_g0[k]<=0;hist_b0[k]<=0;
                 hist_r1[k]<=0;hist_g1[k]<=0;hist_b1[k]<=0;
             end
         end else begin
+            dbg_scene_event<=0;
             replay_valid<=0;replay_sof<=0;replay_eol<=0;replay_end<=0;
             card_start<=0;card_valid<=0;card_end<=0;out_revoke<=0;
             if(flush || raster_fault || engine_fault) begin
@@ -470,7 +473,12 @@ module pixel14_scene_preprocess #(
                         scene_present<=has_object || border_uncertain;
                         replay_present<=has_object || border_uncertain;
                         card_present<=has_object || border_uncertain;
-                        dbg_scene_count<=scene_count;dbg_glyph_count<=glyph_count;
+                        dbg_scene_count<=scene_count;dbg_glyph_count<=glyph_count;dbg_paper_count<=paper_count;
+                        dbg_scene_event<=1;
+                        dbg_scene_flags<={border_uncertain,
+                          has_object && glyph_count>=MIN_COMPONENT_PIXELS && {paper_count,2'b00}>{2'b00,scene_count},
+                          border_uncertain || (has_object && (scene_left==0 || scene_top==0 || scene_right==GRID_WIDTH-1 || scene_bottom==GRID_HEIGHT-1)),
+                          has_object || border_uncertain};
                         glyph_width<=glyph_count==0 ? 0 : glyph_right-glyph_left+1;
                         glyph_height<=glyph_count==0 ? 0 : glyph_bottom-glyph_top+1;
                         glyph_side<=glyph_count==0 ? 0 :

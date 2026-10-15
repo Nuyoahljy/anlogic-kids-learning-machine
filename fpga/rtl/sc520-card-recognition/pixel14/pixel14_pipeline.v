@@ -11,6 +11,7 @@ module pixel14_pipeline #(
     parameter integer CONFIRM_FRAMES=3, ENABLE_OUTPUT=0,
     parameter integer USE_SCENE_ANALYSIS=0,
     parameter integer ROTATION_VARIANTS=0,
+    parameter integer COLOR_DIAGNOSTICS=0,
     parameter integer SCENE_X=160,SCENE_Y=120,SCENE_WIDTH=960,SCENE_HEIGHT=480,
     parameter integer SCENE_SAMPLE_STEP=8,
     parameter integer TIMEOUT_MS=100, FEEDBACK_TICKS=1500,
@@ -47,7 +48,15 @@ module pixel14_pipeline #(
     output wire [2:0] audio_event_kind,
     output wire [3:0] audio_event_item,
     output wire link_fault,quarantined,
-    output reg [10:0] diag_best,diag_second,diag_sample_fg
+    output reg [10:0] diag_best,diag_second,diag_sample_fg,
+    input wire [95:0] diag_pre_wb,diag_post_wb,
+    input wire [8:0] diag_gain_r,diag_gain_b,
+    input wire [31:0] diag_pixel_id,diag_stats_id,
+    input wire diag_stats_event,diag_stats_good,
+    input wire [20:0] diag_neutral_count,
+    output wire [799:0] color_diag_packet,
+    output wire color_diag_fresh,color_diag_fault,
+    output wire [7:0] color_diag_age
 );
     reg [1:0] capture_reset,display_reset;
     always @(posedge capture_clk or negedge rst_n)
@@ -80,6 +89,10 @@ module pixel14_pipeline #(
     localparam integer SCENE_COLUMNS=SCENE_WIDTH/SCENE_SAMPLE_STEP;
     localparam integer SCENE_ROWS=SCENE_HEIGHT/SCENE_SAMPLE_STEP;
     wire scene_revoke;
+    wire scene_diag_event;
+    wire [15:0] scene_pixels,glyph_pixels,paper_pixels;
+    wire [3:0] scene_flags;
+    wire [10:0] shape_circle,shape_square,shape_triangle;
     wire sp_valid,sp_sof,sp_eol,sp_end,sp_good,sp_present,sp_source;
     wire [10:0] sp_x;
     wire [9:0] sp_y;
@@ -164,9 +177,11 @@ module pixel14_pipeline #(
             .replay_id(sp_id),.replay_source(sp_source),
             .card_start(sc_start),.card_valid(sc_valid),.card_index(sc_index),.card_fg(sc_fg),
             .card_end(sc_end),.card_good(sc_good),.card_present(sc_present),.card_id(sc_id),.card_source(sc_source),
-            .out_revoke(scene_revoke),.dbg_scene_count(),.dbg_glyph_count());
+            .out_revoke(scene_revoke),.dbg_scene_count(scene_pixels),.dbg_glyph_count(glyph_pixels),
+            .dbg_paper_count(paper_pixels),.dbg_scene_event(scene_diag_event),.dbg_scene_flags(scene_flags));
     end else begin : legacy_mode
         assign scene_revoke=1'b0;
+        assign scene_diag_event=0;assign scene_pixels=0;assign glyph_pixels=0;assign paper_pixels=0;assign scene_flags=0;
         assign {sp_valid,sp_sof,sp_eol,sp_end,sp_good,sp_present,sp_source}=
                {bp_valid,bp_sof,bp_eol,bp_end,bp_good,bp_present,bp_source};
         assign sp_x=bp_x;assign sp_y=bp_y;assign sp_rgb=bp_rgb;assign sp_id=bp_id;
@@ -194,10 +209,11 @@ module pixel14_pipeline #(
             .frame_end(sc_end),.frame_good(sc_good),.frame_present(sc_present),
             .frame_id(sc_id),.frame_source_test(sc_source),.out_frame(shape_event),
             .out_healthy(shape_healthy),.shape_ok(shape_ok),.out_frame_id(shape_id),.out_source_test(shape_source),
-            .distance_circle(),.distance_square(),.distance_triangle());
+            .distance_circle(shape_circle),.distance_square(shape_square),.distance_triangle(shape_triangle));
     end else begin : no_shape_mode
         assign shape_event=0;assign shape_healthy=1;assign shape_ok=3'b111;
         assign shape_id=0;assign shape_source=0;
+        assign shape_circle=0;assign shape_square=0;assign shape_triangle=0;
     end endgenerate
     generate if(USE_SCENE_ANALYSIS) begin : guarded_block_confirmation
         reg raw_pending;
@@ -336,6 +352,62 @@ module pixel14_pipeline #(
         .rst_n(rst_n),.src_clk(capture_clk),.src_valid(send_event),.src_data(send_data),
         .src_ready(forward_ready),.src_fault(forward_fault),.dst_clk(display_clk),
         .dst_valid(packet_event),.dst_data(packet),.dst_fault(forward_dst_fault));
+
+    generate if(COLOR_DIAGNOSTICS)begin: color_observation
+        reg have_scene,have_raw,have_shape;
+        reg [31:0] scene_tag,raw_tag,shape_tag;
+        reg [51:0] scene_record;
+        reg [3:0] raw_item;
+        reg raw_good,raw_source;
+        reg [32:0] shape_distances;
+        reg [2:0] shape_bits;
+        always @(posedge capture_clk or negedge rst_n)begin
+            if(!rst_n)begin
+                have_scene<=0;have_raw<=0;have_shape<=0;scene_tag<=0;raw_tag<=0;shape_tag<=0;
+                scene_record<=0;raw_item<=0;raw_good<=0;raw_source<=0;shape_distances<=0;shape_bits<=0;
+            end else if(!crst || detector_flush)begin have_scene<=0;have_raw<=0;have_shape<=0;end
+            else begin
+                if(scene_diag_event)begin have_scene<=1;scene_tag<=sc_id;scene_record<={scene_flags,paper_pixels,glyph_pixels,scene_pixels};end
+                if(block_event)begin have_raw<=1;raw_tag<=block_id;raw_item<=block_item;raw_good<=block_healthy;raw_source<=block_source;end
+                if(shape_event)begin have_shape<=1;shape_tag<=shape_id;shape_distances<={shape_triangle,shape_square,shape_circle};shape_bits<=shape_ok;end
+                if(send_event && !send_revoke)begin have_scene<=0;have_raw<=0;have_shape<=0;end
+            end
+        end
+        wire analysis_ok=have_scene && have_raw && have_shape && raw_good &&
+            scene_tag==block_record[40:9] && raw_tag==block_record[40:9] && shape_tag==block_record[40:9] &&
+            card_record[40:9]==block_record[40:9] && raw_source==block_record[8] && card_record[8]==block_record[8] &&
+            qualified_block_record[47] && card_record[47];
+        wire both=qualified_block_record[45] && card_record[45];
+        wire [3:0] final_item=both ? 4'd0:qualified_block_record[45] ? qualified_block_record[44:41]:card_record[45] ? card_record[44:41]:4'd0;
+        wire [148:0] analysis_record;
+        assign analysis_record[47:0]=scene_record[47:0];
+        assign analysis_record[55:48]={both,block_record[8],card_record[45],qualified_block_record[45],scene_record[51:48]};
+        assign analysis_record[59:56]=raw_item;
+        assign analysis_record[62:60]=shape_bits;
+        assign analysis_record[95:63]=shape_distances;
+        assign analysis_record[103:96]=qualified_block_record[7:0];
+        assign analysis_record[111:104]=card_record[7:0];
+        assign analysis_record[115:112]=final_item;
+        assign analysis_record[148:116]={card_diagnostics[10:0],card_diagnostics[21:11],card_diagnostics[32:22]};
+        wire observation_event;
+        wire [799:0] observation_packet;
+        pixel14_color_observer #(.FRAME_WIDTH(FRAME_WIDTH),.FRAME_HEIGHT(FRAME_HEIGHT),
+          .CLASS_X(SCENE_X),.CLASS_Y(SCENE_Y),.CLASS_W(SCENE_WIDTH),.CLASS_H(SCENE_HEIGHT),
+          .CENTER_X(FRAME_WIDTH/2-4),.CENTER_Y(FRAME_HEIGHT/2-4),.PAPER_X(SCENE_X+32),.PAPER_Y(SCENE_Y+24)) observer (
+            .clk(capture_clk),.rst_n(crst),.flush(detector_flush),.frame_start(in_frame_start),.frame_id(in_frame_id),
+            .valid(in_valid),.eol(in_eol),.pre_wb(diag_pre_wb),.post_wb(diag_post_wb),.post_tone(in_rgb96),
+            .pixel_id(diag_pixel_id),.gain_r(diag_gain_r),.gain_b(diag_gain_b),
+            .stats_event(diag_stats_event),.stats_good(diag_stats_good),.stats_id(diag_stats_id),.neutral_count(diag_neutral_count),
+            .frame_done(in_frame_done),.frame_good(in_frame_good),.done_id(in_done_id),
+            .analysis_event(send_event && !send_revoke),.analysis_good(analysis_ok),.analysis_id(block_record[40:9]),
+            .analysis_data(analysis_record),.out_event(observation_event),.out_packet(observation_packet));
+        pixel14_observation_bridge #(.TIMEOUT_MS(TIMEOUT_MS)) transport (
+            .rst_n(rst_n),.capture_clk(capture_clk),.display_clk(display_clk),.src_event(observation_event),.src_packet(observation_packet),
+            .tick_1ms(tick_1ms),.display_revoke(flush || obs_revoke || timed_out || link_fault || quarantined),
+            .display_packet(color_diag_packet),.fresh(color_diag_fresh),.fault(color_diag_fault),.age_ms(color_diag_age));
+    end else begin:no_color_observation
+        assign color_diag_packet=0;assign color_diag_fresh=0;assign color_diag_fault=0;assign color_diag_age=255;
+    end endgenerate
 
     wire system_flush;
     reg flush_seen,external_flush_seen,reverse_pending;

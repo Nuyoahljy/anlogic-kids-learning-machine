@@ -6,10 +6,26 @@
 - 分支：task/sc520-card-recognition
 - 基础提交：f609426044982c986b54e999866be9f4c1af2682
 - 开始时间：2026-10-10T19:31:42+08:00
-- 结束时间：2026-10-15 T-018候选封存；C-002独立诊断已准备，尚未板级集成
+- 结束时间：2026-10-15 D036/D0116同帧诊断软件与物理资格完成，等待主审；未上板
 - 工作目录：E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition
 
 ## 目标与验收条件
+
+### 2026-10-15 D036：同帧颜色观测接入
+
+最终交付：D0116/build6a50b116，基础c74a430。新增三阶段实际tap、gain/neutral结算、同tag场景/形状/稳定快照、800位握手传输和六行诊断渲染；原WB=1/TONE=1、54拍视频、分类/模板/四键及I2C源码保持。最终软件13轮资格通过，正常115场景/47,435,158检查零错，4负向/4早停均如期拒绝。完整TD6.2.1两阶段exit0，SWNS +0.108ns、HWNS +0.020ns、双TNS0；321输入/39冻结快照、29ROM及125组bank/class BDD选择核验通过。
+
+21组同步链逐一2ns预算/hold通过；四mailbox保留位80/106/28/762，最大传播1.420/1.303/1.837/2.459ns。新诊断32位帧号目标Q采用精确display_packet[31:0]别名，按冻结RTL直连及实际Q/D确认；本版ROM未出现113复制地址例外。49个I2C寄存器cell全部回溯父PLLclk1；1596路径的setup/hold/recovery/removal最小1.298/0.073/35.707/0.107ns。资源18475LUT6/20961REG/19056slice/97ERAM/22DSP；相比113净增3676LUT6/6994REG/3519slice，ERAM/DSP无新增。原诊断保留位减少来自六行渲染仅消费其上下文，未把106写成原175全部保留。
+
+交付bit为[sc520-pixel14-0116.bit](../../evidence/sc520-card-recognition/delivery-0116/sc520-pixel14-0116.bit)，1789539字节，SHA256 8FE5D3A5DA18278CF5C42E7B78B687F17B4A4B4DE1A4ACD21E77CABEDCB82F23，与构建原件一致；见[交付清单](../../evidence/sc520-card-recognition/delivery-0116/manifest.json)、[用户采样与范围](../../hardware/sc520-card-recognition/pixel14-observation116.md)、[软件](../../evidence/sc520-card-recognition/observation-validation-v2.json)、[物理审核](../../evidence/sc520-card-recognition/builds/6a50b116/observation-candidate-audit-v1.json)。总审初次因主文档D039建模分工更新拒绝，已读取121929/122024真实记录并另存coordinator116-v2快照；v1历史保留，未忽略HDL或主文档变化。主记录SHA采用小写十六进制，只规范比较表示，原字节严格相等。
+
+实际命令均在本工作树：bundled Python -B -X utf8执行simulate-pixel14.py --test color_taps/observation/observation_display以及各--negative/--watchdog-probe；simulate-color-scene.py --observation三模式；simulate-pixel14.py --test scene_system --rotation-variants 256；audit-observation-validation.py --output evidence/sc520-card-recognition/observation-validation-v2.json。构建命令pwsh -NoProfile -File fpga/scripts/sc520-card-recognition/build-pixel14.ps1 -RunId 6a50b116；ROM证明derive_scene_rom_bindings_v3.py evidence/sc520-card-recognition/builds/6a50b116 --tag 116-v1；audit-observation-candidate.py使用116-v1 bindings和coordinator116-v2/review.json，输出observation-candidate-audit-v1.json。全部运行完整argv/输入输出SHA存于各run-manifest，不为收尾重复RTL或TD。
+
+待决策与建议主更新：请审核D036单诊断候选，之后只安排固定照明下单红圆覆盖青窗、白纸覆盖紫窗的一组实拍，再移走圆拍纸面对照。颜色尚未修复、HardwareValidated=false、FullSystemTimingSignoff=false；外部SDA/RC/使能传播、CRC/ECC、DDR帧身份和整机长测未验。保留混合扇出/局部时钟两告警；当前资源需在T017/音频接入前重新预算，本版未集成这些功能。用户针脚问题已按直接授权交当前主处理；本任务未确认针位或操作下载、Flash、真实COM、推送、合并。提交号及共享索引复核由最终提交批次绑定。
+
+恢复更新：最终候选已改为D0116/build6a50b116；114/115探索版本因均值字节序及新包交付同拍age修复主动停止，全部旧结果保留。当前冻结RTL的13轮软件资格已通过，正常合计115场景/47,435,158检查/0错，包括28幅720p真实观测链路和80场景原识别回归；注错/提前停止各4轮按预期拒绝。116综合完成，29份ROM绑定、102400模板字及125个bank/class独立BDD选择通过；布局布线及物理总审仍在进行。已把用户针脚图问题按其直接要求发送当前主01a13d4f处理，本任务只继续颜色诊断，未确认实物接线。
+
+主D035已接受T018 5026edc和C002局部c74a430；本轮从干净c74a4300abd1c65ab49ff9ba3be739434379a8f6继续。按D036保持WB=1、TONE=1、54拍视频、阈值、四键映射及原识别流程；对齐真实preWB/postWB/postTone像素和本帧增益、中性结算，按同采集tag合并scene/glyph/paper/presence、rawblock、shape、稳定计数，握手CDC和显示帧冻结。缺失/错tag/坏帧/停流只给不完整标志，不能拼旧帧。当前预定D0114单诊断候选，先不切旁路、不调曝光或饱和度，不接T017/音频RTL。所有旧镜像及23轮已审证据保留，新增输入/仿真/TD单独冻结。
 
 ### 2026-10-15 当前交付：T-018与C-002隔离诊断
 

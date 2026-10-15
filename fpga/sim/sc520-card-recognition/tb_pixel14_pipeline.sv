@@ -28,6 +28,16 @@ module tb_pixel14_pipeline #(parameter integer FULL=0);
   wire audio_event_valid,audio_cancel,link_fault,quarantined;
   wire [3:0] audio_event_item;
   wire [10:0] diag_best,diag_second,diag_sample_fg;
+  // Unused diagnostics in this retained baseline test. New observers have
+  // their own enabled test, while the image/business expectations stay fixed.
+  wire [95:0] diag_pre_wb=0,diag_post_wb=0;
+  wire [8:0] diag_gain_r=0,diag_gain_b=0;
+  wire [31:0] diag_pixel_id=0,diag_stats_id=0;
+  wire diag_stats_event=0,diag_stats_good=0;
+  wire [20:0] diag_neutral_count=0;
+  wire [799:0] color_diag_packet;
+  wire color_diag_fresh,color_diag_fault;
+  wire [7:0] color_diag_age;
   pixel14_pipeline #(.FRAME_WIDTH(FW),.FRAME_HEIGHT(FH),.CARD_X(CX),.CARD_Y(CY),.CARD_SIZE(CS),
     .BLOCK_X_MIN(FULL?80:8),.BLOCK_X_MAX(FULL?239:55),.BLOCK_Y_MIN(FULL?30:8),.BLOCK_Y_MAX(FULL?149:55),
     .BLOCK_MIN_AREA(16),.ENABLE_OUTPUT(1),.TIMEOUT_MS(5),.FEEDBACK_TICKS(2)) dut(.*);

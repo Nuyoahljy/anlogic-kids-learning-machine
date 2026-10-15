@@ -519,6 +519,46 @@
           <Attr Name="CompileOrder" Val="221" />
         </FileInfo>
       </File>
+      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/color_diag/pixel14_color_diag_osd.v">
+        <FileInfo>
+          <Attr Name="UsedInSyn" Val="true" />
+          <Attr Name="UsedInP&R" Val="true" />
+          <Attr Name="BelongTo" Val="design_1" />
+          <Attr Name="CompileOrder" Val="222" />
+        </FileInfo>
+      </File>
+      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/color_diag/pixel14_color_diagnostics.v">
+        <FileInfo>
+          <Attr Name="UsedInSyn" Val="true" />
+          <Attr Name="UsedInP&R" Val="true" />
+          <Attr Name="BelongTo" Val="design_1" />
+          <Attr Name="CompileOrder" Val="223" />
+        </FileInfo>
+      </File>
+      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/color_diag/pixel14_color_observer.v">
+        <FileInfo>
+          <Attr Name="UsedInSyn" Val="true" />
+          <Attr Name="UsedInP&R" Val="true" />
+          <Attr Name="BelongTo" Val="design_1" />
+          <Attr Name="CompileOrder" Val="224" />
+        </FileInfo>
+      </File>
+      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/color_diag/pixel14_observation_bridge.v">
+        <FileInfo>
+          <Attr Name="UsedInSyn" Val="true" />
+          <Attr Name="UsedInP&R" Val="true" />
+          <Attr Name="BelongTo" Val="design_1" />
+          <Attr Name="CompileOrder" Val="225" />
+        </FileInfo>
+      </File>
+      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/rtl/sc520-card-recognition/color_diag/pixel14_observation_join.v">
+        <FileInfo>
+          <Attr Name="UsedInSyn" Val="true" />
+          <Attr Name="UsedInP&R" Val="true" />
+          <Attr Name="BelongTo" Val="design_1" />
+          <Attr Name="CompileOrder" Val="226" />
+        </FileInfo>
+      </File>
     </Verilog>
     <System_Verilog>
       <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/mipi_dphy_rx/mipi_dphy_rx_ph1p_mipiio_wrapper.sv">

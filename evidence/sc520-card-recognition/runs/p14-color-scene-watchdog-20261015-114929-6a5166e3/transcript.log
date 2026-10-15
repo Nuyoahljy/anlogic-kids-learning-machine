@@ -1,0 +1,108 @@
+# do run.do
+# Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+# vmap work work 
+# Modifying E:\juan\FPGA\worktrees\anlogic-kids-learning-machine\sc520-card-recognition\evidence\sc520-card-recognition\runs\p14-color-scene-watchdog-20261015-114929-6a5166e3\modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 11:49:32 on Oct 15,2026
+# vlog -sv E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/pixel14_color_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/signal_delay.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/ip_behavioral_models.sv E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/capture_rgb96.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/block_frame_recognizer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/pixel14_card_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/pixel14_result_cdc.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/pixel14_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/pixel14_card_template_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/pixel14_scene_preprocess.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/pixel14_rotation_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/pixel14_block_shape_guard.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/pixel14_block_filter.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/card_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/card_template_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/card_result_filter.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/items14_content.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/items14_font_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/items14_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/items14_question_bank.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/items14_quiz_control.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/items14_result_join.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/items14_system.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/pixel14_color_diag_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/pixel14_color_diagnostics.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/pixel14_color_observer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/pixel14_observation_bridge.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/pixel14_observation_join.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/tb_pixel14_observation_system.sv 
+# -- Compiling module pixel14_color_pipeline
+# -- Compiling module signal_delay
+# -- Compiling module divider
+# -- Compiling module blk_mem_gen_awb_delay_signal
+# -- Compiling module capture_rgb96
+# -- Compiling module block_frame_recognizer
+# -- Compiling module pixel14_card_matcher
+# -- Compiling module pixel14_result_cdc
+# -- Compiling module pixel14_pipeline
+# -- Compiling module pixel14_card_template_rom
+# -- Compiling module pixel14_scene_preprocess
+# -- Compiling module pixel14_rotation_matcher
+# -- Compiling module pixel14_block_shape_guard
+# -- Compiling module pixel14_block_shape_rom
+# -- Compiling module pixel14_block_filter
+# -- Compiling module card_matcher
+# -- Compiling module card_template_rom
+# -- Compiling module card_result_filter
+# -- Compiling module items14_content
+# -- Compiling module items14_font_rom
+# -- Compiling module items14_osd
+# -- Compiling module items14_question_bank
+# -- Compiling module items14_quiz_control
+# -- Compiling module items14_result_join
+# -- Compiling module items14_system
+# -- Compiling module pixel14_color_diag_osd
+# -- Compiling module pixel14_color_diagnostics
+# -- Compiling module pixel14_color_observer
+# -- Compiling module pixel14_observation_bridge
+# -- Compiling module pixel14_observation_join
+# -- Compiling module tb_pixel14_observation_system
+# 
+# Top level modules:
+# 	divider
+# 	card_matcher
+# 	pixel14_color_diag_osd
+# 	tb_pixel14_observation_system
+# End time: 11:49:32 on Oct 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -wlf wave.wlf work.tb_pixel14_observation_system "+ASSET_ROOT=E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs" "+INJECT_FAULT=0" 
+# Start time: 11:49:32 on Oct 15,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "pixel14_scene_preprocess(fast)".
+# ** Warning: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/pixel14_pipeline.v(155): (vopt-2685) [TFMPC] - Too few port connections for 'capture'.  Expected 37, found 36.
+# ** Warning: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/p14-color-scene-watchdog-20261015-114929-6a5166e3/inputs/pixel14_pipeline.v(155): (vopt-2718) [TFMPC] - Missing connection for port 'block_roi_fg_count'.
+# ** Note: (vopt-143) Recognized 1 FSM in module "pixel14_color_pipeline(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "block_frame_recognizer(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "pixel14_rotation_matcher(fast)".
+# ** Note: (vopt-143) Recognized 3 FSMs in module "items14_quiz_control(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "pixel14_block_shape_guard(fast)".
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_pixel14_observation_system(fast)
+# Loading work.pixel14_color_pipeline(fast)
+# Loading work.signal_delay(fast)
+# Loading work.blk_mem_gen_awb_delay_signal(fast)
+# Loading work.pixel14_pipeline(fast)
+# Loading work.capture_rgb96(fast)
+# Loading work.pixel14_scene_preprocess(fast)
+# Loading work.block_frame_recognizer(fast)
+# Loading work.pixel14_block_shape_guard(fast)
+# Loading work.pixel14_block_shape_rom(fast)
+# Loading work.pixel14_block_filter(fast)
+# Loading work.pixel14_rotation_matcher(fast)
+# Loading work.card_result_filter(fast)
+# Loading work.pixel14_result_cdc(fast)
+# Loading work.pixel14_color_observer(fast)
+# Loading work.pixel14_color_diagnostics(fast)
+# Loading work.pixel14_observation_join(fast)
+# Loading work.pixel14_observation_bridge(fast)
+# Loading work.pixel14_result_cdc(fast__2)
+# Loading work.pixel14_result_cdc(fast__1)
+# Loading work.items14_system(fast)
+# Loading work.items14_result_join(fast)
+# Loading work.items14_quiz_control(fast)
+# Loading work.items14_question_bank(fast)
+# Loading work.items14_osd(fast)
+# Loading work.items14_content(fast)
+# Loading work.items14_font_rom(fast)
+# CASE color-scene 1 actual720p four-lane color output and black/white endpoints
+# 0
+# 0
+# 1
+# 0
+# 0
+# 0
+# file6d96650
+# End time: 11:49:35 on Oct 15,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 2

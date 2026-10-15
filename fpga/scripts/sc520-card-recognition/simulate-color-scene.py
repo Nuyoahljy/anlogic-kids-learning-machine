@@ -27,6 +27,7 @@ def main():
     modes=parser.add_mutually_exclusive_group()
     modes.add_argument("--negative",action="store_true");modes.add_argument("--watchdog-probe",action="store_true")
     parser.add_argument("--timeout-seconds",type=int,default=1200)
+    parser.add_argument("--observation",action="store_true")
     parser.add_argument("--simulator",type=Path,default=Path("D:/modeltech64_10.7/win64/vsim.exe"))
     args=parser.parse_args()
     mode="negative" if args.negative else "watchdog" if args.watchdog_probe else "normal"
@@ -40,7 +41,9 @@ def main():
         "pixel14_rotation_matcher.v","pixel14_block_shape_guard.v","pixel14_block_filter.v")]
     rtl += [base/name for name in ("card_matcher.v","card_template_rom.v","card_result_filter.v")]
     rtl += sorted((base/"items14").glob("*.v"))
-    tb=REPO/"fpga/sim/sc520-card-recognition/tb_pixel14_color_scene.sv"
+    rtl += sorted((base/"color_diag").glob("*.v"))
+    top="tb_pixel14_observation_system" if args.observation else "tb_pixel14_color_scene"
+    tb=REPO/"fpga/sim/sc520-card-recognition"/(top+".sv")
     assets=REPO/"assets/templates/sc520-card-recognition/rotation-v1"
     fixtures=json.loads((assets/"fixtures.json").read_text(encoding="utf-8"))
     card_pairs=[]
@@ -81,7 +84,6 @@ def main():
     (snapshot/"cards.txt").write_text("".join(case_lines),encoding="ascii")
     save(snapshot/"conversions.json",conversions)
     (run/"modelsim.ini").write_bytes(ini.read_bytes());(run/"templates.mem").write_bytes((assets/"templates.mem").read_bytes())
-    top="tb_pixel14_color_scene"
     command_text="""onerror {quit -force -code 2}
 onbreak {resume}
 vlib work
@@ -131,8 +133,8 @@ quit -force -code 0
     expected=(2,0,0,0) if args.watchdog_probe else (int(args.negative),1,int(args.negative),int(args.negative))
     observed=(native,summary.get("done"),summary.get("errors"),summary.get("injected")) if summary else None
     qualified=unchanged and clean and not timed_out and expected==observed and (args.watchdog_probe or summary.get("checks",0)>0)
-    if qualified and mode=="normal":qualified=summary["frames"]==24
-    report.update(FinishedAt=now(),ElapsedSeconds=time.monotonic()-start,NativeExitCode=native,TimedOut=timed_out,
+    if qualified and mode=="normal":qualified=summary["frames"]==(28 if args.observation else 24)
+    report.update(ObservationEnabled=args.observation,FinishedAt=now(),ElapsedSeconds=time.monotonic()-start,NativeExitCode=native,TimedOut=timed_out,
         InputsUnchanged=unchanged,Summary=summary,Qualified=bool(qualified))
     report["GeneratedInputs"]=[{"path":str(p),"sha256":digest(p)} for p in sorted((snapshot/"mem").iterdir())]+[
         {"path":str(snapshot/name),"sha256":digest(snapshot/name)} for name in ("cards.txt","conversions.json")]

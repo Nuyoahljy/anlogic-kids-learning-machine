@@ -92,6 +92,7 @@ def make(destination,snapshot=False):
     destination=destination.resolve()
     sources=sorted((RTL/'pixel14').glob('*.v'))+sorted((RTL/'items14').glob('*.v'))+[RTL/n for n in ('card_template_rom.v','card_result_filter.v')]
     sources += [PROJECT/'overlay/pixel14_color_pipeline.v']
+    sources += sorted((RTL/'color_diag').glob('*.v'))
     mapping={}
     records=[]
     if snapshot:

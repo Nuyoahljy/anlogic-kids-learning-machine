@@ -8,7 +8,8 @@ module pixel14_color_pipeline #(
     parameter integer WB_ENABLE=1, TONE_ENABLE=1,
     parameter integer MIN_NEUTRAL=1024,
     parameter integer MIN_NEUTRAL_VALUE=64, MAX_NEUTRAL_VALUE=247,
-    parameter integer GAIN_MIN=192, GAIN_MAX=384
+    parameter integer GAIN_MIN=192, GAIN_MAX=384,
+    parameter integer DIAGNOSTICS=0
 ) (
     input wire I_clk,I_rst_n,I_tlast,I_tuser,
     input wire [95:0] I_tdata,
@@ -17,7 +18,13 @@ module pixel14_color_pipeline #(
     output wire O_tlast,O_tuser,
     output wire [95:0] O_tdata,
     output wire O_tvalid,
-    input wire O_tready
+    input wire O_tready,
+    input wire [31:0] I_diag_frame_id,
+    output wire [95:0] O_diag_pre_wb,O_diag_post_wb,
+    output wire [8:0] O_diag_gain_r,O_diag_gain_b,
+    output wire [31:0] O_diag_pixel_id,O_diag_stats_id,
+    output wire O_diag_stats_done,O_diag_stats_good,
+    output wire [20:0] O_diag_neutral_count
 );
     localparam integer GROUPS=IMG_WIDTH/4, TOTAL=GROUPS*IMG_HEIGHT;
     reg [8:0] gain_r,gain_b,next_gain_r,next_gain_b;
@@ -270,6 +277,55 @@ module pixel14_color_pipeline #(
     assign O_tvalid=valid_o;
     assign O_tlast=last_o;
     assign O_tdata=valid_o ? output_data : 96'd0;
+    // Diagnostic taps are parallel registers; they do not enter the video path.
+    // delayed_data is the pre-WB value of the same pixel as product_r/b.
+    generate if(DIAGNOSTICS) begin : observation
+        reg [95:0] pre_m,pre_s,pre_o,post_o;
+        reg [8:0] gr_m,gr_s,gr_o,gb_m,gb_s,gb_o;
+        reg [31:0] raw_id,stats_id0,stats_id1,stats_id2,stats_id3;
+        reg [31:0] id_m,id_s,id_o,stats_result_id;
+        reg stats_event,stats_good;
+        reg diag_id_bad;
+        reg [20:0] final_neutral;
+        always @(posedge I_clk or negedge I_rst_n)begin
+            if(!I_rst_n)begin
+                pre_m<=0;pre_s<=0;pre_o<=0;post_o<=0;
+                gr_m<=0;gr_s<=0;gr_o<=0;gb_m<=0;gb_s<=0;gb_o<=0;
+                raw_id<=0;stats_id0<=0;stats_id1<=0;stats_id2<=0;stats_id3<=0;
+                id_m<=0;id_s<=0;id_o<=0;stats_result_id<=0;
+                stats_event<=0;stats_good<=0;final_neutral<=0;diag_id_bad<=0;
+            end else begin
+                stats_id0<=I_diag_frame_id;stats_id1<=stats_id0;stats_id2<=stats_id1;stats_id3<=stats_id2;
+                if(I_tuser)begin raw_id<=I_diag_frame_id;diag_id_bad<=0;end
+                else if(I_tvalid && I_diag_frame_id!=raw_id)diag_id_bad<=1;
+                stats_event<=0;
+                if(ending)begin
+                    stats_event<=1;stats_good<=!bad && !geometry_bad && !stats_bad_sof && !diag_id_bad && stats_id3==raw_id;
+                    stats_result_id<=stats_id3;
+                    final_neutral<=neutral_count+(stats_valid ? add_count : 0);
+                end
+                if(I_tuser || drop_frame)begin
+                    pre_m<=0;pre_s<=0;pre_o<=0;post_o<=0;
+                    id_m<=0;id_s<=0;id_o<=0;
+                end else begin
+                    if(delayed_valid)begin
+                        pre_m<=delayed_data;gr_m<=WB_ENABLE ? gain_r:9'd256;gb_m<=WB_ENABLE ? gain_b:9'd256;id_m<=raw_id;
+                    end
+                    if(valid_m)begin pre_s<=pre_m;gr_s<=gr_m;gb_s<=gb_m;id_s<=id_m;end
+                    if(valid_s)begin pre_o<=pre_s;post_o<=saturated_data;gr_o<=gr_s;gb_o<=gb_s;id_o<=id_s;end
+                end
+            end
+        end
+        assign O_diag_pre_wb=valid_o ? pre_o:96'd0;
+        assign O_diag_post_wb=valid_o ? post_o:96'd0;
+        assign O_diag_gain_r=gr_o;assign O_diag_gain_b=gb_o;assign O_diag_pixel_id=id_o;
+        assign O_diag_stats_done=stats_event;assign O_diag_stats_good=stats_good;
+        assign O_diag_stats_id=stats_result_id;assign O_diag_neutral_count=final_neutral;
+    end else begin : no_observation
+        assign O_diag_pre_wb=0;assign O_diag_post_wb=0;assign O_diag_gain_r=0;assign O_diag_gain_b=0;
+        assign O_diag_pixel_id=0;assign O_diag_stats_done=0;assign O_diag_stats_good=0;
+        assign O_diag_stats_id=0;assign O_diag_neutral_count=0;
+    end endgenerate
     initial begin
         if(IMG_WIDTH%4!=0 || GROUPS<64 || IMG_HEIGHT<1 || IMG_WIDTH>8192 || IMG_HEIGHT>1024 ||
            TOTAL>262144 || MIN_NEUTRAL<1 || MIN_NEUTRAL_VALUE<0 || MAX_NEUTRAL_VALUE>255 ||
