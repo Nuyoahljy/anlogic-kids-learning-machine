@@ -1,0 +1,56 @@
+{
+  "Task": "sc520-card-recognition",
+  "Owner": "/root/ce_protocol_tests",
+  "StartedAt": "2026-10-14T20:39:26+08:00",
+  "Mode": "negative",
+  "ClockDivider": 239,
+  "ParentPeriodNs": 42,
+  "Command": [
+    "D:\\modeltech64_10.7\\win64\\vsim.exe",
+    "-modelsimini",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\scl-coverage\\ce-tests-negative-20261014-203926-072d7d3a\\modelsim.ini",
+    "-c",
+    "-l",
+    "transcript.log",
+    "-do",
+    "source {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/scl-coverage/ce-tests-negative-20261014-203926-072d7d3a/run.do}"
+  ],
+  "RunnerCommand": [
+    "C:\\Users\\33630\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "fpga/scripts/sc520-card-recognition/simulate-i2c-ce.py",
+    "--checker-negative"
+  ],
+  "WorkingDirectory": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\scl-coverage\\ce-tests-negative-20261014-203926-072d7d3a",
+  "Inputs": [
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\custom_project\\sc520-pixel14\\overlay\\uii2c.v",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\scl-coverage\\ce-tests-negative-20261014-203926-072d7d3a\\inputs\\uii2c.v",
+      "sha256_before": "CFC585511D23CC2F215E2A98A39E6262B4B6F570451C9B62CE5BD1B94CBB532D"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\sim\\sc520-card-recognition\\tb_pixel14_i2c_ce.sv",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\scl-coverage\\ce-tests-negative-20261014-203926-072d7d3a\\inputs\\tb_pixel14_i2c_ce.sv",
+      "sha256_before": "28036CF97173BF80CAAA3A30E86BC11B4077E6BECFD1BF6010FB5CD1B7A39850"
+    },
+    {
+      "path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\simulate-i2c-ce.py",
+      "snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\scl-coverage\\ce-tests-negative-20261014-203926-072d7d3a\\inputs\\simulate-i2c-ce.py",
+      "sha256_before": "E5D52E24EDCD0CEF18022309D4DDE80CE3046C664582D5B3A628272D1978E8E1"
+    }
+  ],
+  "SimulatorIni": {
+    "path": "D:\\modeltech64_10.7\\modelsim.ini",
+    "sha256": "BC3F7544DD7D525A105A2CF08B4A33AF6B8529EBA49C3F58C415D2E37B47FC14"
+  },
+  "Scope": "Pin-only slave; 240 request phases x pre-edge/NBA, 42 reset release offsets, 488 completed transactions, 8 aborts. No board/electrical signoff.",
+  "LineModel": {
+    "rise_ns": 1000,
+    "fall_ns": 300,
+    "slave_resolved_data_valid_ns": 3450
+  },
+  "Limitations": [
+    "SCL output-only: no clock stretching or arbitration.",
+    "Master abort cannot clear a sensor that holds SDA low; explicit external sensor release is counted.",
+    "Logical net delays do not model board RC thresholds, pad timing, or metastability."
+  ]
+}

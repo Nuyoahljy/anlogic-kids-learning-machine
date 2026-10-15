@@ -35,6 +35,7 @@ def quote(path):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config-source", type=Path, default=VENDOR / "uics520_cfg/uicfgcs520.v")
+    parser.add_argument("--i2c-source", type=Path, default=VENDOR / "uics500_cfg/uii2c.v")
     modes = ("normal", "id-nack", "init-nack", "ae-nack", "id-reject", "id-stuck", "init-stuck", "ae-stuck", "id-wrong", "id-alt", "ae-snapshot", "timeout")
     parser.add_argument("--mode", choices=modes, default="normal")
     parser.add_argument("--expect-recovery", action="store_true")
@@ -48,7 +49,7 @@ def main():
     if modes.index(args.mode) >= 5 and not args.expect_recovery:
         parser.error("extended recovery modes require --expect-recovery and the candidate config source")
     config = args.config_source.resolve()
-    rtl = [config, VENDOR / "uics500_cfg/uii2c.v"] + [VENDOR / "uics520_cfg" / name for name in
+    rtl = [config, args.i2c_source.resolve()] + [VENDOR / "uics520_cfg" / name for name in
             ("uics520reg_720p60.v", "uics520regAE.v", "SC520GainTbl.v")]
     tb = REPO / "fpga/sim/sc520-card-recognition/tb_pixel14_i2c.sv"
     sources = [*rtl, tb, Path(__file__).resolve()]

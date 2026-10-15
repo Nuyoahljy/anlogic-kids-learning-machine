@@ -1,0 +1,16 @@
+{
+  "CreatedAt": "2026-10-14T21:07:08.883781+08:00",
+  "Command": [
+    "D:\\Anlogic\\TD_6.2.1_Engineer_6.2.168.116\\bin\\td_commands_prompt.exe",
+    "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/scl-coverage/io-probe-20261014-210647-195de9/probe.tcl"
+  ],
+  "ExitCode": 0,
+  "NonemptyPathReports": false,
+  "ProtectedInputs": {
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b113\\td_project\\camera_to_dsi_display_Runs\\phy_1\\camera_to_dsi_display_pr.db": "6B38A74343FA5523A9FDD408FBB9811785751CF5830051D8DCCEABBDF9FDAB73",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b113\\overlay\\pixel14.sdc": "19AC1237387D2A12AC6A91ED7204332B11056BB400D5F7837D0904F26189F498",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\probe-i2c-io.py": "50BD003923229A8799A0FFE26DFBCF822C2DA019CFAF93D31327902AF0555158"
+  },
+  "NoDatabaseOrBitModified": true,
+  "Purpose": "Routed FF-to-output propagation measurement only. The probe endpoint delay is zero by construction, not an external sensor guarantee."
+}

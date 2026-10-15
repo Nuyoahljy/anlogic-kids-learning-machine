@@ -35,6 +35,17 @@ for {set i 0} {$i<4} {incr i} {
     set finish [format {u_quiz_keys/keys_sync_safe[%d]} $i]
     report_timing_path -from [get_regs $start] -to [get_regs $finish] -ep_num 1 -path_num 1 -file "key-${i}.rpt"
 }
+# Additional T-018 synchronizers and all I2C input/output/reset path classes.
+foreach pair {{{u_uicfgcs520/u_i2c/reset_pipe[0]} {u_uicfgcs520/u_i2c/reset_pipe[1]} i2c-reset} {u_uicfgcs520/u_i2c/sda_meta u_uicfgcs520/u_i2c/sda_sync i2c-sda}} {
+    lassign $pair start finish name
+    if {[llength [get_regs $start]]!=1 || [llength [get_regs $finish]]!=1} {error "I2C synchronization register missing: $start $finish"}
+    report_timing_path -from [get_regs $start] -to [get_regs $finish] -ep_num 1 -path_num 1 -file "${name}.rpt"
+}
+set i2c_regs [get_regs {u_uicfgcs520/u_i2c/*}]
+if {[llength $i2c_regs]<20} {error "I2C register enumeration unexpectedly empty"}
+set fd [open i2c-core-objects.txt w];puts $fd $i2c_regs;close $fd
+report_timing_path -to $i2c_regs -ep_num 400 -path_num 2 -file i2c-core-inbound.rpt
+report_timing_path -from $i2c_regs -ep_num 400 -path_num 2 -file i2c-core-outbound.rpt
 report_timing_exception -file original-exceptions.rpt
 report_timing_ignored -file original-ignored.rpt
 report_clock_summary -file original-clocks.rpt

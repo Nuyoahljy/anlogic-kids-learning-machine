@@ -1,0 +1,64 @@
+Reading D:/modeltech64_10.7/tcl/vsim/pref.tcl
+
+# 10.7
+
+# source {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/scl-coverage/ce-tests-normal-20261014-203632-a649ee50/run.do}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 20:36:35 on Oct 14,2026
+# vlog E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/scl-coverage/ce-tests-normal-20261014-203632-a649ee50/inputs/uii2c.v 
+# -- Compiling module uii2c
+# 
+# Top level modules:
+# 	uii2c
+# End time: 20:36:35 on Oct 14,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 20:36:35 on Oct 14,2026
+# vlog -sv E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/scl-coverage/ce-tests-normal-20261014-203632-a649ee50/inputs/tb_pixel14_i2c_ce.sv 
+# -- Compiling module tb_pixel14_i2c_ce
+# 
+# Top level modules:
+# 	tb_pixel14_i2c_ce
+# End time: 20:36:35 on Oct 14,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -wlf wave.wlf work.tb_pixel14_i2c_ce "+CHECKER_NEGATIVE=0" 
+# Start time: 20:36:36 on Oct 14,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "uii2c(fast)".
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_pixel14_i2c_ce(fast)
+# Loading work.uii2c(fast)
+# CE_PHASE_SWEEP mode=0 complete=240 errors=0
+# CE_PHASE_SWEEP mode=1 complete=480 errors=0
+# CE_CHECK_FAIL t=315127541000 case=491 controller-only abort produces a released bus and sensor STOP
+# CE_CHECK_FAIL t=315153201000 case=492 repeated START follows exactly four acknowledged write bytes
+# CE_CHECK_FAIL t=315237363000 case=492 repeated segment uses preserved read address 6d
+# CE_CHECK_FAIL t=315328083000 case=492 repeated segment uses preserved read address 6d
+# CE_CHECK_FAIL t=315418803000 case=492 repeated segment uses preserved read address 6d
+# CE_CHECK_FAIL t=315509523000 case=492 repeated segment uses preserved read address 6d
+# CE_CHECK_FAIL t=317644118000 case=495 controller-only abort produces a released bus and sensor STOP
+# CE_CHECK_FAIL t=317659761000 case=496 repeated START follows exactly four acknowledged write bytes
+# CE_CHECK_FAIL t=317743923000 case=496 repeated segment uses preserved read address 6d
+# CE_CHECK_FAIL t=317834643000 case=496 repeated segment uses preserved read address 6d
+# CE_CHECK_FAIL t=317925363000 case=496 repeated segment uses preserved read address 6d
+# CE_CHECK_FAIL t=318016083000 case=496 repeated segment uses preserved read address 6d
+# CE_RESULT errors=12 checks=400549 completed=488 phases=240 same_edge=240 aborts=8 stuck=3 setup_min_ns=1590 hold_min_ns=1518
+# ** Note: $finish    : E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/scl-coverage/ce-tests-normal-20261014-203632-a649ee50/inputs/tb_pixel14_i2c_ce.sv(403)
+#    Time: 318284422 ns  Iteration: 0  Instance: /tb_pixel14_i2c_ce
+# Break in Module tb_pixel14_i2c_ce at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/scl-coverage/ce-tests-normal-20261014-203632-a649ee50/inputs/tb_pixel14_i2c_ce.sv line 403
+# Stopped at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/scl-coverage/ce-tests-normal-20261014-203632-a649ee50/inputs/tb_pixel14_i2c_ce.sv line 403
+# End time: 20:36:43 on Oct 14,2026, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 0

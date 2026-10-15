@@ -189,7 +189,7 @@
           <Attr Name="CompileOrder" Val="37" />
         </FileInfo>
       </File>
-      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-fixed-roi/fpga/custom_project/sc520-board-keys/user_source/hdl_source/uics500_cfg/uii2c.v">
+      <File Path="E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/fpga/custom_project/sc520-pixel14/overlay/uii2c.v">
         <FileInfo>
           <Attr Name="UsedInSyn" Val="true" />
           <Attr Name="UsedInP&R" Val="true" />

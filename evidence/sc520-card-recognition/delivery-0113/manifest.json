@@ -1,0 +1,126 @@
+{
+  "CreatedAt": "2026-10-15T10:25:49.533954+08:00",
+  "Version": "D0113",
+  "BuildId": "6a50b113",
+  "BaselineCommit": "f81483c740d40e46262648d132bd07e6a5079a2f",
+  "Task": "T-018",
+  "Owner": "01a13561-2629-7fa2-86a0-4087ad34cc7c /root",
+  "Workdir": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition",
+  "Status": "等待主审；内部SCL覆盖修复候选，不是颜色修复或完整外部IO签核",
+  "Bit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\delivery-0113\\sc520-pixel14-0113.bit",
+    "SHA256": "567EFF7D3887F896915F11F2B909D58760BF04701CD1B92B5C19E36E5DF8771F",
+    "Bytes": 1789539
+  },
+  "OriginalBit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b113\\td_project\\camera_to_dsi_display_Runs\\phy_1\\camera_to_dsi_display.bit",
+    "SHA256": "567EFF7D3887F896915F11F2B909D58760BF04701CD1B92B5C19E36E5DF8771F",
+    "Bytes": 1789539
+  },
+  "Guide": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\hardware\\sc520-card-recognition\\pixel14-scl113.md",
+    "SHA256": "21EFE8AE34A05414DB45A1503DA49742143A4B933F384B68980531136FD8F3F9",
+    "Bytes": 4569
+  },
+  "PhysicalAudit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b113\\scl-candidate-audit-v2.json",
+    "SHA256": "031E05734A3C0BA237429E649D645CFB80963DC1BE56C4CE1E11EAE3858D5742",
+    "Bytes": 1509614
+  },
+  "SoftwareAudit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\scl-coverage\\software-validation.json",
+    "SHA256": "6601004262AABD8D0E855BE691815A7AC7A91BDBA9E091B194719A6FA77670E9",
+    "Bytes": 32303
+  },
+  "GlobalTimingNs": {
+    "SWNS": 0.142,
+    "STNS": 0.0,
+    "HWNS": 0.02,
+    "HTNS": 0.0
+  },
+  "I2CCheckMinimumSlackNs": {
+    "setup": 1.115,
+    "recovery": 39.435,
+    "hold": 0.055,
+    "removal": 0.091
+  },
+  "I2CCellCount": 49,
+  "SynchronizerPairs": 19,
+  "MailboxRetainedBits": [
+    80,
+    175,
+    28
+  ],
+  "Resources": {
+    "Used": {
+      "IO": 62,
+      "input": 6,
+      "output": 31,
+      "inout": 25,
+      "lut6": 14799,
+      "reg": 13967,
+      "slice reg": 13967,
+      "pad reg": 0,
+      "slice": 15537,
+      "used ram": 312,
+      "dram lut": 296,
+      "shifter lut": 16,
+      "used logic": 15225,
+      "with luts": 12362,
+      "with adder": 2125,
+      "reg only": 738,
+      "feedthrough": 3388,
+      "f7mux": 386,
+      "f8mux": 192,
+      "eram": 97,
+      "eram20k": 97,
+      "fifo20k": 0,
+      "dsp": 22,
+      "ddr_byte": 6,
+      "mipi_tx": 0,
+      "mipi_rx": 1,
+      "pad": 21,
+      "pll": 3,
+      "gclk": 8,
+      "lclk": 0,
+      "sclk": 20,
+      "mlclk": 2,
+      "ioclk": 4,
+      "1          1": 23799,
+      "2          2": 5251,
+      "3          3": 1860,
+      "4          4": 835
+    },
+    "Available": {
+      "IO": 160,
+      "lut6": 21216,
+      "slice reg": 42432,
+      "slice": 21216,
+      "f7mux": 10608,
+      "f8mux": 5304,
+      "eram": 108,
+      "dsp": 40,
+      "ddr_byte": 12,
+      "mipi_tx": 2,
+      "mipi_rx": 2,
+      "pad": 160,
+      "pll": 6,
+      "gclk": 32,
+      "lclk": 12,
+      "sclk": 48,
+      "mlclk": 6,
+      "ioclk": 18
+    },
+    "OverCapacity": {}
+  },
+  "ImageRTLAndTemplatesUnchangedFromD0112": true,
+  "C002ImagingResolved": false,
+  "FullSystemTimingSignoff": false,
+  "HardwareValidated": false,
+  "FlashValidated": false,
+  "ResetEquivalenceBoundary": "PLL lock drives active-low two-register reset chain. Equivalence is claimed only after this reset establishes zero, not during the vendor models configuration window.",
+  "ExternalIOBoundary": "SDA synchronizer first stage is asynchronous. RTL tests assume1000ns rise/300ns fall and3450ns slave valid delay. Real pullups/voltage/clock tolerance remain unmeasured; no clock stretching or autonomous stuck-SDA bus clear. No MTBF or full external camera IO timing claim.",
+  "SDAOutputEnableToPadPropagationProven": false,
+  "SensorStuckLowRequiresExternalReset": true,
+  "Next": "主审T018内部覆盖证据及边界后选择C002同帧诊断/最小AB；T017显示仍等待，用户不必为颜色问题单独改刷113。"
+}

@@ -6,10 +6,34 @@
 - 分支：task/sc520-card-recognition
 - 基础提交：f609426044982c986b54e999866be9f4c1af2682
 - 开始时间：2026-10-10T19:31:42+08:00
-- 结束时间：2026-10-14；D0112阶段候选封存，提交号由共享提交记录绑定
+- 结束时间：2026-10-15 T-018候选封存；C-002独立诊断已准备，尚未板级集成
 - 工作目录：E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition
 
 ## 目标与验收条件
+
+### 2026-10-15 当前交付：T-018与C-002隔离诊断
+
+当前主对话已迁移到01a13d4f-6f61-71f2-8aec-85ff85a4be7e，依据101031主接替记录和直接派发继续。候选D0113/build6a50b113仅修I2C内部时钟覆盖，不修改f81483c的图像/识别/模板。bit SHA567EFF7D3887F896915F11F2B909D58760BF04701CD1B92B5C19E36E5DF8771F，1789539字节；D0112原镜像保持。交付与范围见[说明](../../hardware/sc520-card-recognition/pixel14-scl113.md)、[清单](../../evidence/sc520-card-recognition/delivery-0113/manifest.json)。
+
+T-018先在112原DB追加精确生成时钟，实际发现父→SCL hold=-3.055ns/removal=-3.379ns；未把所有父子路径false_path。随后只在自身overlay建立uii2c副本，内部全posedge父钟CE、239参数使SCL周期10080ns、2FF SDA和复位释放、事务数据锁存。原vendor未改，工程唯一引用已核。12上层模式8791检查0错，CE两组240相位/42复位偏移/488完成事务共496场景400555检查0错，正常/注错/提前停止均有独立资格；三卡线从机需外部复位恢复明确保留。[软件汇总](../../evidence/sc520-card-recognition/scl-coverage/software-validation.json)。
+
+完整TD6.2.1两阶段exit0，311输入/快照一致；全局+0.142/+0.020ns、TNS0，14799LUT6/13967寄存器/15537slice/97ERAM/22DSP。I2C的49个带寄存器物理cell全部追回父PLLclk1，双向报告只有pll_clk_24m，setup/hold/recovery/removal最低1.115/0.055/39.435/0.091ns。原17链+新增SDA/reset共19链，三mailbox80/175/28位全覆盖，最长1.257/1.626/1.159ns；29ROM及精确125组独立bank/class BDD选择复核。[物理汇总](../../evidence/sc520-card-recognition/builds/6a50b113/scl-candidate-audit-v2.json)。
+
+新route将shapeROM地址card_index[5]复制到_dup_4。保持旧审计器字节，T018适配器仅对该精确ROM的addra/b使用原厂模型证明的共同复位后等价映射，不做通用名称删后缀。2048输入/前态/CE/reset组合32796检查0错；最初1ns vendor配置模型q不同的2错证据保留，结论不含配置窗口。复位链原始Q/异步清零和PLL lock驱动已从真实网表核对。新主接替记录无每文件SHA，root另存确切文档SHA/对应记录SHA补绑定，未回滚主文档。
+
+I/O边界：独立只读STA探针获得SCLpad传播1.338..2.803ns，SDA三态使能→pad未导出有效路径，探针因此返回未完成而非宣称I/O通过。仿真采用rise1000/fall300/slavevalid3450ns，得到SCL高低5040ns、SDAsetup最低1590ns/hold1518ns；实物RC/电平/输出使能传播/时钟容差与自动卡线恢复不在签核内，FullSystemTimingSignoff仍false。内部SCL覆盖缺口关闭不等于整个相机接口或识别功能完成。
+
+C-002已实际查看两张D0112照片，计分初测正常只是用户报告。独立四组合真实color→分类计数300帧78613检查复现低饱和三色被tone或非单位WB破坏，白纸252被中性筛选排除；不是从屏拍提取的原始RGB。[反例与下一步方案](../../hardware/sc520-card-recognition/color-contract-next.md)。新增三阶段同帧诊断模块42场景1485检查0错、注错恰1/早停拒绝；只准备自包含模块与接口，未接ISP/CDC/OSD或113工程。首负向测试缺force传播delta未检出，root加1ps后重跑三模式；原失败保留。颜色定位产物与T018独立登记/提交，不改113镜像。后续最小A/B和诊断接入交主协调，仍禁止将COLOR_CORRECTION=0旧AWB称旁路。
+
+T-019独立音频提交b0bff23已通知且获主审接受，音频/验证的后续用户日志不归本任务改写。本轮没有显示T017、音频RTL、硬件下载、Flash、真实COM、推送或合并。后面为之前时间顺序的开发记录。
+
+### 2026-10-14 T-018接手
+
+当前新主对话01a13a30-dddd-7a63-8384-6f9dde2bed6f按D-029接受f81483c为受限阶段候选，派发T-018补I2C SCL覆盖。工作树起点f81483c740d40e46262648d132bd07e6a5079a2f，开始干净，分支不变。已重读共享入口/索引、194011/194926主接手与审核记录、主库AGENTS/记忆/计划/任务/决策/接口/协调表和本日志；今后完成及真实阻塞只通知新主。保持D0112原字节供用户实拍，本轮不接T-017或改变识别算法。
+
+范围：依据真实父钟、237覆盖分频、正负沿及SCL输出偏移补精确时序；验证父/子域request、payload、readback、busy/error稳定性、reset释放和外部I/O条件。先做现有路由DB独立约束观察，再据实际失败选择保留generated-clock或单父钟使能重构。不能仅按模块默认239生成约束，不能用宽泛false_path或放慢父钟掩盖问题；需要修改vendor uii2c时只在本任务overlay建立唯一活动副本。
+
+并行只读scl_protocol_audit核对协议/器件资料。按主D-031另将音频台架T-019交audio_bench_fix在独立sc520-dfr0534工作树执行；其用户真实bench-sessions保持，不混入T-018提交。本识别日志仅记录调度，音频改动与本地提交由其自己的分支日志/共享记录管理。
 
 ### 2026-10-14 当前阶段交付
 

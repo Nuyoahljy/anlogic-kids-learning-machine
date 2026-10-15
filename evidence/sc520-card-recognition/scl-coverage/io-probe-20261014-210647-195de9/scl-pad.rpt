@@ -1,0 +1,189 @@
+Created by          : Tang Dynasty v6.2.168116
+                    : Copyright (c) 2012-2025 Anlogic Inc.
+Generated           : Wed Oct 14 21:07:08 2026
+
+Top Model           : design_top_wrapper
+Device              : PH1P35MDG324
+Speed               : 3
+STA coverage        : 96.05%
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     pll_clk_24m -> pll_clk_24m
+Type           :     Self
+From Clock     :     pll_clk_24m
+To Clock       :     pll_clk_24m
+Min Period     :     4.633ns
+Fmax           :     215.843MHz
+
+Statistics:
+Max            : SWNS     37.367ns, STNS      0.000ns,         0 Viol Endpoints,         1 Total Endpoints,         1 Paths Analyzed
+Min            : HWNS      1.996ns, HTNS      0.000ns,         0 Viol Endpoints,         1 Total Endpoints,         1 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 37.367ns
+Begin Point         : u_uicfgcs520/u_i2c/O_iic_scl_reg_syn_10.clk (rising edge triggered by clock pll_clk_24m  { rise@0.000000ns  fall@21.000000ns  period=42.000000 })
+End Point           : O_cam_scl (rising edge triggered by clock pll_clk_24m  { rise@0.000000ns  fall@21.000000ns  period=42.000000 })
+Check Type          : setup
+Process             : slow_125c
+Budget              : 42.000ns { pll_clk_24m rising@42.000ns - pll_clk_24m rising@0.000ns }
+Data Path Delay     : 2.803ns (cell 1.974ns (70%), net 0.829ns (30%))
+Clock Skew          : 1.692ns
+Logic Level         : 2 ( HDIO=2 )
+Max Fanout          : 2
+Clock Uncertainty   : 0.138ns (sdc uncertainty: 0.000ns, default uncertainty: 0.138ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.860          0.860          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.567          1.427          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.091          1.518          net: I_sys_clk_dup_6,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b113/overlay/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.464          0.054          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[1]
+net (fo=1)                              0.728          0.782          net: O_cam_24m_dup_1,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b113/overlay/design_top_wrapper.v(10)
+                                                                      pin: O_cam_24m_dup_1_created_gclkinst.clkin[0]
+GCLK                x023y039z18         0.014          0.796          pin: O_cam_24m_dup_1_created_gclkinst.clkout
+net (fo=2)                              0.334          1.130          net: O_cam_24m_syn_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b113/overlay/design_top_wrapper.v(10)
+                                                                      pin: O_cam_24m_dup_1_created_gclkinst_auto_created_sclk_s_0_l_bk4.clkin
+SCLK                x023y019z3          0.072          1.202          pin: O_cam_24m_dup_1_created_gclkinst_auto_created_sclk_s_0_l_bk4.clkout
+net (fo=212)                            0.544          1.746          net: O_cam_24m_dup_1_created_gclkinst_auto_created_sclk_s_0_l_bk4_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_uicfgcs520/u_i2c/O_iic_scl_reg_syn_10.clk
+launch edge                             0.000    r     1.746               
+--------------------------------------------------------------------  ---------------
+clk2q               x011y001z6          0.114    f     1.860          pin: u_uicfgcs520/u_i2c/O_iic_scl_reg_syn_10.oqa
+net (fo=2)                              0.829          2.689          net: O_cam_scl_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b113/overlay/design_top_wrapper.v(8)
+                                                                      pin: O_cam_scl_syn_4.doq[0]
+HDIO                x010y000            0.000    f     2.689       1  pin: O_cam_scl_syn_4.sg09_do
+HDIO                x010y000            1.860    f     4.549       2  pin: O_cam_scl_syn_4.opad
+net (fo=1)          K3                  0.000          4.549          net: O_cam_scl,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b113/overlay/design_top_wrapper.v(8)
+                                                                      pin: O_cam_scl
+--------------------------------------------------------------------  ---------------
+Arrival                                                4.549               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.791          0.791          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.521          1.312          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.078          1.390          net: I_sys_clk_dup_6,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b113/overlay/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.254          0.136          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[1]
+capture edge                           42.000    r    42.136               
+--------------------------------------------------------------------  ---------------
+output              K3                  0.000         42.136               
+clock uncertainty                      -0.138         41.998               
+clock pessimism                        -0.082         41.916               
+--------------------------------------------------------------------  ---------------
+Required                                              41.916               
+--------------------------------------------------------------------  ---------------
+Slack                                                 37.367               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 1.996ns
+Begin Point         : u_uicfgcs520/u_i2c/O_iic_scl_reg_syn_10.clk (rising edge triggered by clock pll_clk_24m  { rise@0.000000ns  fall@21.000000ns  period=42.000000 })
+End Point           : O_cam_scl (rising edge triggered by clock pll_clk_24m  { rise@0.000000ns  fall@21.000000ns  period=42.000000 })
+Check Type          : hold
+Process             : fast_m40c
+Budget              : 0.000ns { pll_clk_24m rising@0.000ns - pll_clk_24m rising@0.000ns }
+Data Path Delay     : 1.338ns (cell 1.072ns (80%), net 0.266ns (20%))
+Clock Skew          : 0.708ns
+Logic Level         : 2 ( HDIO=2 )
+Max Fanout          : 2
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.000ns, default uncertainty: 0.050ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.257          1.067          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.040          1.107          net: I_sys_clk_dup_6,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b113/overlay/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.619          0.488          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[1]
+net (fo=1)                              0.313          0.801          net: O_cam_24m_dup_1,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b113/overlay/design_top_wrapper.v(10)
+                                                                      pin: O_cam_24m_dup_1_created_gclkinst.clkin[0]
+GCLK                x023y039z18         0.006          0.807          pin: O_cam_24m_dup_1_created_gclkinst.clkout
+net (fo=2)                              0.137          0.944          net: O_cam_24m_syn_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b113/overlay/design_top_wrapper.v(10)
+                                                                      pin: O_cam_24m_dup_1_created_gclkinst_auto_created_sclk_s_0_l_bk4.clkin
+SCLK                x023y019z3          0.025          0.969          pin: O_cam_24m_dup_1_created_gclkinst_auto_created_sclk_s_0_l_bk4.clkout
+net (fo=212)                            0.227          1.196          net: O_cam_24m_dup_1_created_gclkinst_auto_created_sclk_s_0_l_bk4_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_uicfgcs520/u_i2c/O_iic_scl_reg_syn_10.clk
+launch edge                             0.000    r     1.196               
+--------------------------------------------------------------------  ---------------
+clk2q               x011y001z6          0.062    f     1.258          pin: u_uicfgcs520/u_i2c/O_iic_scl_reg_syn_10.oqa
+net (fo=2)                              0.266          1.524          net: O_cam_scl_dup_3,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b113/overlay/design_top_wrapper.v(8)
+                                                                      pin: O_cam_scl_syn_4.doq[0]
+HDIO                x010y000            0.000    f     1.524       1  pin: O_cam_scl_syn_4.sg09_do
+HDIO                x010y000            1.010    r     2.534       2  pin: O_cam_scl_syn_4.opad
+net (fo=1)          K3                  0.000          2.534          net: O_cam_scl,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b113/overlay/design_top_wrapper.v(8)
+                                                                      pin: O_cam_scl
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.534               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.915          0.915          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.290          1.205          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.043          1.248          net: I_sys_clk_dup_6,  E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/builds/6a50b113/overlay/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.674          0.574          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[1]
+capture edge                            0.000    r     0.574               
+--------------------------------------------------------------------  ---------------
+output              K3                  0.000          0.574               
+clock uncertainty                       0.050          0.624               
+clock pessimism                        -0.086          0.538               
+--------------------------------------------------------------------  ---------------
+Required                                               0.538               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.996               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

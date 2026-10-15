@@ -559,7 +559,8 @@ module design_top_wrapper (
   );
   
     uicfgcs520 #(
-      .CLK_DIV(23809524 / 100000 - 1)
+      // 240 parent periods per SCL cycle at42ns:99.206kHz, below100kHz.
+      .CLK_DIV(239)
   ) u_uicfgcs520 (
       .I_clk(S_24m_clk),  //系统时钟输入
       .I_rst_n(S_cam_i2c_ready), // SC520CS power-up delay completed
@@ -976,7 +977,7 @@ isp_top u_isp_top (
         end
     pixel14_diag_osd u_p14_diag_osd(
         .clk(S_hdmi_pixel_clk),.rst_n(S_hdmi_rst_n),.frame_start(S_p14_display_sof),
-        .pixel_x(S_p14_x),.pixel_y(S_p14_y),.diagnostic({16'h0112,S_p14_diag_display[239:0]}),
+        .pixel_x(S_p14_x),.pixel_y(S_p14_y),.diagnostic({16'h0113,S_p14_diag_display[239:0]}),
         .i2c_diagnostic(S_p14_i2c_display),
         .business_flags({S_p14_diag_fault,S_p14_diag_received,S_p14_link_fault,S_p14_quarantined,
             S_p14_timeout,S_p14_conflict_seen,S_p14_obs_healthy,S_p14_event_seen}),

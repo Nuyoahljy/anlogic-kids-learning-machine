@@ -1,0 +1,284 @@
+{
+  "CreatedAt": "2026-10-15T10:05:47.117556+08:00",
+  "Verified": true,
+  "NativeExit": 0,
+  "Command": [
+    "D:\\modeltech64_10.7\\win64\\vsim.exe",
+    "-modelsimini",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\scl-coverage\\duplicate-q\\run-20261015-100537-a9327c\\modelsim.ini",
+    "-c",
+    "-l",
+    "transcript.log",
+    "-do",
+    "do run.do"
+  ],
+  "Summary": {
+    "errors": 0,
+    "checks": 32796,
+    "rows": 2048,
+    "comb_rows": 2048,
+    "done": 1
+  },
+  "Inputs": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b113\\td_project\\camera_to_dsi_display_Runs\\syn_1\\pixel14-syn_1-netlist.v",
+      "SHA256": "D31D65A0169A91AEFD84BA9DC0262DF6D052952B233CF29710DF0CC96360322B",
+      "Bytes": 32754002
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b113\\td_project\\camera_to_dsi_display_Runs\\phy_1\\pixel14-phy_1-netlist.v",
+      "SHA256": "B7168A405967730E03F4A1574BBDDC735E083973D612B8B0293372B86FA12971",
+      "Bytes": 28803948
+    },
+    {
+      "Path": "D:\\Anlogic\\TD_6.2.1_Engineer_6.2.168.116\\sim_release\\common\\al_map_seq.v",
+      "SHA256": "484D26A861F1243AB949873529C45DC2D545571AF47A348249FA7B01B1500C50",
+      "Bytes": 10719
+    },
+    {
+      "Path": "D:\\Anlogic\\TD_6.2.1_Engineer_6.2.168.116\\sim_release\\common\\al_map_lut.v",
+      "SHA256": "A8AF44DE361088C0BB66A58D5AF9B8EB5AA6E9B8CA56992D6164A9F689C488F0",
+      "Bytes": 18543
+    },
+    {
+      "Path": "D:\\Anlogic\\TD_6.2.1_Engineer_6.2.168.116\\sim_release\\common\\al_phy_glbl.v",
+      "SHA256": "C194F5335B54A6D707A8B633B8F4D3A171E52006337600F7433379B11FB3B2FF",
+      "Bytes": 4281
+    },
+    {
+      "Path": "D:\\Anlogic\\TD_6.2.1_Engineer_6.2.168.116\\sim_release\\ph1p\\ph1p_phy_gsr.v",
+      "SHA256": "787312A19B4007BEF3B76986BCE267966B2D04C1871290CE29905629E38F1524",
+      "Bytes": 4536
+    },
+    {
+      "Path": "D:\\Anlogic\\TD_6.2.1_Engineer_6.2.168.116\\sim_release\\ph1p\\ph1p_phy_lslice.v",
+      "SHA256": "BF1B01F9B22304FEAD0F4E75A777D27B7465019FE522F6C6EF0258D9FB358AF2",
+      "Bytes": 50532
+    },
+    {
+      "Path": "D:\\Anlogic\\TD_6.2.1_Engineer_6.2.168.116\\sim_release\\ph1p\\ph1p_phy_sclk_v2.v",
+      "SHA256": "3EA1F1917CC5871F199BAA3C4331543A00E29FCDBC4E200B2488B8E4779FC2D0",
+      "Bytes": 5711
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\scl-coverage\\duplicate-q\\prove_duplicate_q_after_reset.py",
+      "SHA256": "3D4B0BF670FD41F10243A472B553DF6E517207AB56E176D2A61260E8CE64ACFA",
+      "Bytes": 12943
+    }
+  ],
+  "GateNet": "u_p14_pipeline/scene_mode$scene/card_index[5]",
+  "RoutedEquivalentNets": [
+    "u_p14_pipeline/scene_mode$scene/card_index[5]_dup_3",
+    "u_p14_pipeline/scene_mode$scene/card_index[5]_dup_4"
+  ],
+  "ExactCells": [
+    {
+      "Name": "u_p14_pipeline/scene_mode$scene/card_index_reg[5]",
+      "Primitive": "AL_MAP_SEQ_GSR",
+      "Params": {
+        "CEMUX": "\"SIG\"",
+        "CLKMUX": "\"SIG\"",
+        "DFFMODE": "\"FF\"",
+        "REGSET": "\"RESET\"",
+        "SRMODE": "\"ASYNC\"",
+        "SRMUX": "\"INV\""
+      },
+      "Ports": {
+        "ce": "u_p14_pipeline/scene_mode$scene/card_valid_n",
+        "clk": "u_isp_top/u_demosaic/raw_matrix_3x3_buffer_d/zhenghe_d/blk_mem_gen_zhenghe_d1/ram_d32970204f32_Inst/clkb",
+        "d": "u_p14_pipeline/scene_mode$scene/sel62_syn_1382",
+        "sr": "u_p14_diag_cdc/src_reset[1]",
+        "q": "u_p14_pipeline/scene_mode$scene/card_index[5]"
+      },
+      "Line": 218440
+    },
+    {
+      "Name": "u_p14_pipeline/scene_mode$scene/sel62_syn_2542",
+      "Primitive": "AL_MAP_LUT2",
+      "Params": {
+        "EQN": "\"(B*~A)\"",
+        "INIT": "4'h4"
+      },
+      "Ports": {
+        "a": "u_p14_pipeline/scene_mode$scene/engine_fault_reg_syn_29",
+        "b": "u_p14_pipeline/scene_mode$scene/normalize_index[5]",
+        "o": "u_p14_pipeline/scene_mode$scene/sel62_syn_1382"
+      },
+      "Line": 291482
+    },
+    {
+      "Name": "u_p14_pipeline/blocks/top_edge_reg[20]_syn_5",
+      "Primitive": "PH1P_PHY_LSLICE",
+      "Params": {
+        "ASRMUX": "\"INV\"",
+        "CEAMUX": "\"1\"",
+        "CEBMUX": "\"SIG\"",
+        "CLKMUX": "\"SIG\"",
+        "INIT_LUT5A": "32'b11001100000010101010101010101010",
+        "LATCHMODE": "\"DFF\"",
+        "LUT5A_SD0": "\"IMA\"",
+        "LUT5A_SD1": "\"IMF\"",
+        "LUTMODE": "\"DLUT5\"",
+        "OFA_SD": "\"LUT5A\"",
+        "OQAMUX": "\"QA\"",
+        "OQBMUX": "\"QB\"",
+        "REGA_REGSET_ASYNC": "\"RESET\"",
+        "REGA_REGSET_SYNC": "\"RESET\"",
+        "REGA_SD": "\"LUT5A\"",
+        "REGB_REGSET_ASYNC": "\"RESET\"",
+        "REGB_REGSET_SYNC": "\"RESET\"",
+        "REGB_SD": "\"IMB\"",
+        "SSRMUX": "\"0\"",
+        "SSROVERCE": "\"ENABLE\""
+      },
+      "Ports": {
+        "asr": "u_p14_diag_cdc/src_reset[1]",
+        "ceb": "u_p14_pipeline/scene_mode$scene/card_valid_n",
+        "clk": "u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_1_r_bk2_sclk_outnet",
+        "ia": "u_p14_pipeline/blocks/top_edge[0][0]",
+        "ib": "u_p14_pipeline/scene_mode$scene/replay_y[0]",
+        "id": "u_p14_pipeline/blocks/top_edge_reg[23]_syn_24",
+        "ima": "u_p14_pipeline/blocks/bottom_edge_reg[23]_syn_4",
+        "imb": "u_p14_pipeline/scene_mode$scene/sel62_syn_1382",
+        "imf": "u_p14_pipeline/blocks/bottom_edge_reg[23]_syn_116",
+        "oqa": "u_p14_pipeline/blocks/top_edge[0][0]",
+        "oqb": "u_p14_pipeline/scene_mode$scene/card_index[5]_dup_3"
+      },
+      "Line": 170792
+    },
+    {
+      "Name": "u_p14_pipeline/scene_mode$scene/card_index_reg[7]_syn_2",
+      "Primitive": "PH1P_PHY_LSLICE",
+      "Params": {
+        "ASRMUX": "\"INV\"",
+        "CEAMUX": "\"SIG\"",
+        "CEBMUX": "\"SIG\"",
+        "CLKMUX": "\"SIG\"",
+        "INIT_LUT5A": "32'b01010101010101010000000000000000",
+        "INIT_LUT5B": "32'b01010101010101010000000000000000",
+        "LATCHMODE": "\"DFF\"",
+        "LUT5A_SD1": "\"IMF\"",
+        "LUTMODE": "\"DLUT5\"",
+        "OFA_SD": "\"LUT5A\"",
+        "OFB_SD": "\"LUTX\"",
+        "OQAMUX": "\"QA\"",
+        "OQBMUX": "\"QB\"",
+        "REGA_REGSET_ASYNC": "\"RESET\"",
+        "REGA_REGSET_SYNC": "\"RESET\"",
+        "REGA_SD": "\"LUT5A\"",
+        "REGB_REGSET_ASYNC": "\"RESET\"",
+        "REGB_REGSET_SYNC": "\"RESET\"",
+        "REGB_SD": "\"LUT6\"",
+        "SSRMUX": "\"0\"",
+        "SSROVERCE": "\"ENABLE\""
+      },
+      "Ports": {
+        "asr": "u_p14_diag_cdc/src_reset[1]",
+        "cea": "u_p14_pipeline/scene_mode$scene/card_valid_n",
+        "ceb": "u_p14_pipeline/scene_mode$scene/card_valid_n",
+        "clk": "u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_1_r_bk2_sclk_outnet",
+        "ia": "u_p14_pipeline/scene_mode$scene/engine_fault_reg_syn_29",
+        "ie": "u_p14_pipeline/scene_mode$scene/normalize_index[5]",
+        "imf": "u_p14_pipeline/scene_mode$scene/normalize_index[7]",
+        "ofb": "u_p14_pipeline/scene_mode$scene/sel62_syn_1382",
+        "oqa": "u_p14_pipeline/scene_mode$scene/card_index[7]",
+        "oqb": "u_p14_pipeline/scene_mode$scene/card_index[5]_dup_4"
+      },
+      "Line": 213321
+    },
+    {
+      "Name": "u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_1_r_bk2",
+      "Primitive": "PH1P_PHY_SCLK_V2",
+      "Params": {
+        "BYPASS": "\"DISABLE\""
+      },
+      "Ports": {
+        "clkin": "u_isp_top/u_demosaic/raw_matrix_3x3_buffer_d/zhenghe_d/blk_mem_gen_zhenghe_d1/ram_d32970204f32_Inst/clkb",
+        "clkout": "u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_1_r_bk2_sclk_outnet"
+      },
+      "Line": 135742
+    }
+  ],
+  "ResetPrecondition": "The common active-low src_reset[1] is asserted after configuration-model release; outputs and transitions are compared only in that reset-established epoch.",
+  "StartupModelDifference": "At1ns the actual vendor models give gate=0 and physical duplicates=1; this difference is recorded and is not an equality claim.",
+  "Equation": "After a common reset: Q+ = !src_reset[1] ? 0 : card_valid_n ? (normalize_index[5] & !engine_fault_reg_syn_29) : Q; rising original/buffered clock. Async src_reset[1] falling edge clears Q independently of CE.",
+  "ProofDomain": "All 256 combinations of 8 connected data leaves x 2 previous QB values x 2 CE x 2 reset values. Gate LUT and routed OFB compared on all rows. Rising-edge update, falling-edge hold, no-edge hold, async reset at both clock levels. The A-side feedback is cut to an arbitrary leaf, so no reachability assumption about the co-packed A FF is needed.",
+  "Initialization": "Power-up differences are retained in the original failed run. This proof explicitly checks the observed011 initial vector, then applies a common low reset after25ns and proves the subsequent2048 rows. It does not prove pre-reset hardware behavior or arbitrary user-GSR equivalence.",
+  "Limitations": [
+    "Local functional cutpoint equivalence only; not all design signals, not four-state/X propagation proof.",
+    "No SDF, setup/hold or recovery/removal margin proof; STA is separate.",
+    "No hardware operation, no bit generation, no historical audit modification."
+  ],
+  "Artifacts": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\scl-coverage\\duplicate-q\\run-20261015-100537-a9327c\\al_map_lut.v",
+      "SHA256": "A8AF44DE361088C0BB66A58D5AF9B8EB5AA6E9B8CA56992D6164A9F689C488F0",
+      "Bytes": 18543
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\scl-coverage\\duplicate-q\\run-20261015-100537-a9327c\\al_map_seq.v",
+      "SHA256": "484D26A861F1243AB949873529C45DC2D545571AF47A348249FA7B01B1500C50",
+      "Bytes": 10719
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\scl-coverage\\duplicate-q\\run-20261015-100537-a9327c\\al_phy_glbl.v",
+      "SHA256": "C194F5335B54A6D707A8B633B8F4D3A171E52006337600F7433379B11FB3B2FF",
+      "Bytes": 4281
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\scl-coverage\\duplicate-q\\run-20261015-100537-a9327c\\bindings.json",
+      "SHA256": "13C52A4F1CE7CC0BB9D2DDE11B96A70D9D8068653D1D49A65EE004D24C132919",
+      "Bytes": 4835
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\scl-coverage\\duplicate-q\\run-20261015-100537-a9327c\\exact-cells.v.txt",
+      "SHA256": "DA3D1A45F87D358723564B421A6CC9F78623BB616C1A20464BF55F4709CD7274",
+      "Bytes": 4213
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\scl-coverage\\duplicate-q\\run-20261015-100537-a9327c\\ph1p_phy_gsr.v",
+      "SHA256": "787312A19B4007BEF3B76986BCE267966B2D04C1871290CE29905629E38F1524",
+      "Bytes": 4536
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\scl-coverage\\duplicate-q\\run-20261015-100537-a9327c\\ph1p_phy_lslice.v",
+      "SHA256": "BF1B01F9B22304FEAD0F4E75A777D27B7465019FE522F6C6EF0258D9FB358AF2",
+      "Bytes": 50532
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\scl-coverage\\duplicate-q\\run-20261015-100537-a9327c\\ph1p_phy_sclk_v2.v",
+      "SHA256": "3EA1F1917CC5871F199BAA3C4331543A00E29FCDBC4E200B2488B8E4779FC2D0",
+      "Bytes": 5711
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\scl-coverage\\duplicate-q\\run-20261015-100537-a9327c\\run.do",
+      "SHA256": "A41AB4C0C4A60F3A6BD1D72339C8DD36D604110F84665755D341863A9A7ABDB7",
+      "Bytes": 850
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\scl-coverage\\duplicate-q\\run-20261015-100537-a9327c\\stderr.log",
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "Bytes": 0
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\scl-coverage\\duplicate-q\\run-20261015-100537-a9327c\\stdout.log",
+      "SHA256": "655273B78990F8C1A48B76E94A2883A85CF3E879860A3A82DEB8440C2AFF8AF7",
+      "Bytes": 9384
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\scl-coverage\\duplicate-q\\run-20261015-100537-a9327c\\summary.json",
+      "SHA256": "6A5FA29C2115197A163EF716637838D113CDEE4FE59A36D59E1021E1DFA459D4",
+      "Bytes": 67
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\scl-coverage\\duplicate-q\\run-20261015-100537-a9327c\\tb_duplicate_q.sv",
+      "SHA256": "612560ADC48AB2C28A7ED649C7452099DE4E76FF452D9F4CE4986829E5AD0725",
+      "Bytes": 3801
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\scl-coverage\\duplicate-q\\run-20261015-100537-a9327c\\transcript.log",
+      "SHA256": "AD23D93FC3EE92BD0663E418698338C68ECCCB9000C0102272A0346B3D839216",
+      "Bytes": 9325
+    }
+  ]
+}

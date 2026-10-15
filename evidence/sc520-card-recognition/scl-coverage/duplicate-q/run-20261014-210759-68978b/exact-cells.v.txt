@@ -1,0 +1,99 @@
+AL_MAP_SEQ_GSR #(
+    //.INIT(1'b0),
+    .CEMUX("SIG"),
+    .CLKMUX("SIG"),
+    .DFFMODE("FF"),
+    .REGSET("RESET"),
+    .SRMODE("ASYNC"),
+    .SRMUX("INV"))
+    \u_p14_pipeline/scene_mode$scene/card_index_reg[5]  (
+    .ce(\u_p14_pipeline/scene_mode$scene/card_valid_n ),
+    .clk(\u_isp_top/u_demosaic/raw_matrix_3x3_buffer_d/zhenghe_d/blk_mem_gen_zhenghe_d1/ram_d32970204f32_Inst/clkb ),
+    .d(\u_p14_pipeline/scene_mode$scene/sel62_syn_1382 ),
+    .sr(\u_p14_diag_cdc/src_reset [1]),
+    .q(\u_p14_pipeline/scene_mode$scene/card_index [5]));
+
+AL_MAP_LUT2 #(
+    .EQN("(B*~A)"),
+    .INIT(4'h4))
+    \u_p14_pipeline/scene_mode$scene/sel62_syn_2542  (
+    .a(\u_p14_pipeline/scene_mode$scene/engine_fault_reg_syn_29 ),
+    .b(\u_p14_pipeline/scene_mode$scene/normalize_index [5]),
+    .o(\u_p14_pipeline/scene_mode$scene/sel62_syn_1382 ));
+
+PH1P_PHY_LSLICE #(
+    //.LUT5A("(~(D)*~(E)*~(C)*A*~(B)+D*~(E)*~(C)*A*~(B)+~(D)*E*~(C)*A*~(B)+~(D)*~(E)*C*A*~(B)+D*~(E)*C*A*~(B)+D*E*~(C)*~(A)*B+D*E*C*~(A)*B+~(D)*~(E)*~(C)*A*B+D*~(E)*~(C)*A*B+~(D)*E*~(C)*A*B+D*E*~(C)*A*B+~(D)*~(E)*C*A*B+D*~(E)*C*A*B+D*E*C*A*B)"),
+    .ASRMUX("INV"),
+    .CEAMUX("1"),
+    .CEBMUX("SIG"),
+    .CLKMUX("SIG"),
+    .INIT_LUT5A(32'b11001100000010101010101010101010),
+    .LATCHMODE("DFF"),
+    .LUT5A_SD0("IMA"),
+    .LUT5A_SD1("IMF"),
+    .LUTMODE("DLUT5"),
+    .OFA_SD("LUT5A"),
+    .OQAMUX("QA"),
+    .OQBMUX("QB"),
+    .REGA_REGSET_ASYNC("RESET"),
+    .REGA_REGSET_SYNC("RESET"),
+    .REGA_SD("LUT5A"),
+    .REGB_REGSET_ASYNC("RESET"),
+    .REGB_REGSET_SYNC("RESET"),
+    .REGB_SD("IMB"),
+    .SSRMUX("0"),
+    .SSROVERCE("ENABLE"))
+    \u_p14_pipeline/blocks/top_edge_reg[20]_syn_5  (
+    .asr(\u_p14_diag_cdc/src_reset [1]),
+    .ceb(\u_p14_pipeline/scene_mode$scene/card_valid_n ),
+    .clk(\u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_1_r_bk2_sclk_outnet ),
+    .ia(\u_p14_pipeline/blocks/top_edge[0] [0]),
+    .ib(\u_p14_pipeline/scene_mode$scene/replay_y [0]),
+    .id(\u_p14_pipeline/blocks/top_edge_reg[23]_syn_24 ),
+    .ima(\u_p14_pipeline/blocks/bottom_edge_reg[23]_syn_4 ),
+    .imb(\u_p14_pipeline/scene_mode$scene/sel62_syn_1382 ),
+    .imf(\u_p14_pipeline/blocks/bottom_edge_reg[23]_syn_116 ),
+    .oqa(\u_p14_pipeline/blocks/top_edge[0] [0]),
+    .oqb(\u_p14_pipeline/scene_mode$scene/card_index[5]_dup_3 ));
+
+PH1P_PHY_LSLICE #(
+    //.LUT5A("(E*~A)"),
+    //.LUT5B("(E*~A)"),
+    .ASRMUX("INV"),
+    .CEAMUX("SIG"),
+    .CEBMUX("SIG"),
+    .CLKMUX("SIG"),
+    .INIT_LUT5A(32'b01010101010101010000000000000000),
+    .INIT_LUT5B(32'b01010101010101010000000000000000),
+    .LATCHMODE("DFF"),
+    .LUT5A_SD1("IMF"),
+    .LUTMODE("DLUT5"),
+    .OFA_SD("LUT5A"),
+    .OFB_SD("LUTX"),
+    .OQAMUX("QA"),
+    .OQBMUX("QB"),
+    .REGA_REGSET_ASYNC("RESET"),
+    .REGA_REGSET_SYNC("RESET"),
+    .REGA_SD("LUT5A"),
+    .REGB_REGSET_ASYNC("RESET"),
+    .REGB_REGSET_SYNC("RESET"),
+    .REGB_SD("LUT6"),
+    .SSRMUX("0"),
+    .SSROVERCE("ENABLE"))
+    \u_p14_pipeline/scene_mode$scene/card_index_reg[7]_syn_2  (
+    .asr(\u_p14_diag_cdc/src_reset [1]),
+    .cea(\u_p14_pipeline/scene_mode$scene/card_valid_n ),
+    .ceb(\u_p14_pipeline/scene_mode$scene/card_valid_n ),
+    .clk(\u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_1_r_bk2_sclk_outnet ),
+    .ia(\u_p14_pipeline/scene_mode$scene/engine_fault_reg_syn_29 ),
+    .ie(\u_p14_pipeline/scene_mode$scene/normalize_index [5]),
+    .imf(\u_p14_pipeline/scene_mode$scene/normalize_index [7]),
+    .ofb(\u_p14_pipeline/scene_mode$scene/sel62_syn_1382 ),
+    .oqa(\u_p14_pipeline/scene_mode$scene/card_index [7]),
+    .oqb(\u_p14_pipeline/scene_mode$scene/card_index[5]_dup_4 ));
+
+PH1P_PHY_SCLK_V2 #(
+    .BYPASS("DISABLE"))
+    \u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_1_r_bk2  (
+    .clkin(\u_isp_top/u_demosaic/raw_matrix_3x3_buffer_d/zhenghe_d/blk_mem_gen_zhenghe_d1/ram_d32970204f32_Inst/clkb ),
+    .clkout(\u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_1_r_bk2_sclk_outnet ));

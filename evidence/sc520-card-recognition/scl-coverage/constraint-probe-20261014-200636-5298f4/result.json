@@ -1,0 +1,24 @@
+{
+  "CreatedAt": "2026-10-14T20:07:01.880327+08:00",
+  "Command": [
+    "D:\\Anlogic\\TD_6.2.1_Engineer_6.2.168.116\\bin\\td_commands_prompt.exe",
+    "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/scl-coverage/constraint-probe-20261014-200636-5298f4/probe.tcl"
+  ],
+  "ExitCode": 0,
+  "Inputs": {
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b112\\td_project\\camera_to_dsi_display_Runs\\phy_1\\camera_to_dsi_display_pr.db": "1EEBF02F4137F45292AE1E482AEFC52A186C45964CA2400576916D626A100CEE",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b112\\overlay\\pixel14.sdc": "6D32C1AE0E49014A52D7E54AE8E88E3948758E3034905B6F2232EFD8E975E963",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\probe-scl-constraints.py": "993682F27CEDBCE1AC97087609880C0CDB99A2A56E8EA2C6734CCD57490CD547"
+  },
+  "SourceDivider": 237,
+  "HalfPeriodParentClocks": 119,
+  "ParentPeriodNs": 42,
+  "GeneratedEdges": [
+    237,
+    475,
+    713
+  ],
+  "ExternalSCLDelayParentClocks": 90,
+  "NoBitOrDatabaseModified": true,
+  "HardwareValidated": false
+}

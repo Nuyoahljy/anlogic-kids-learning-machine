@@ -36,10 +36,8 @@ set_max_delay -from [get_regs {u_quiz_keys/keys_sync_meta[3]}] -to [get_regs {u_
 # SC520_PIXEL14_CDC_BEGIN: preserve hold analysis on same-domain synchronizers.
 set_max_delay -from [get_regs {u_p14_pipeline/forward/req_meta}] -to [get_regs {u_p14_pipeline/forward/req_sync}] 2.000
 set_max_delay -from [get_regs {u_p14_pipeline/forward/ack_meta}] -to [get_regs {u_p14_pipeline/forward/ack_sync}] 2.000
-set_max_delay -from [get_regs {u_p14_pipeline/forward/fault_meta}] -to [get_regs {u_p14_pipeline/forward/fault_sync}] 2.000
 set_max_delay -from [get_regs {u_p14_pipeline/backward/req_meta}] -to [get_regs {u_p14_pipeline/backward/req_sync}] 2.000
 set_max_delay -from [get_regs {u_p14_pipeline/backward/ack_meta}] -to [get_regs {u_p14_pipeline/backward/ack_sync}] 2.000
-set_max_delay -from [get_regs {u_p14_pipeline/backward/fault_meta}] -to [get_regs {u_p14_pipeline/backward/fault_sync}] 2.000
 # Bundled payload propagation is audited after routing on this exact database
 # without broad clock-group cuts; see report-pixel14-cdc.tcl. No CDC MTBF claim.
 # SC520_PIXEL14_CDC_END
@@ -65,3 +63,10 @@ set_false_path -from [get_clocks {HDMI_PIXEL_CLK}] -through [get_nets {u_p14_i2c
 set_false_path -from [get_clocks {pll_clk_24m}] -through [get_nets {u_p14_i2c_cdc/held_data*}] -to [get_clocks {HDMI_PIXEL_CLK}]
 set_max_delay -from [get_regs {u_p14_i2c_cdc/req_meta}] -to [get_regs {u_p14_i2c_cdc/req_sync}] 2.000
 set_max_delay -from [get_regs {u_p14_i2c_cdc/ack_meta}] -to [get_regs {u_p14_i2c_cdc/ack_sync}] 2.000
+
+# T-018: SCL is an output waveform, not an internal register clock. Every
+# I2C state/counter now uses pll_clk_24m. The asynchronous SDA pad is allowed
+# only into the first metastability stage; the second stage stays fully timed.
+set_false_path -from [get_ports {IO_cam_sda}] -to [get_regs {u_uicfgcs520/u_i2c/sda_meta}]
+set_max_delay -from [get_regs {u_uicfgcs520/u_i2c/sda_meta}] -to [get_regs {u_uicfgcs520/u_i2c/sda_sync}] 2.000
+set_max_delay -from [get_regs {u_uicfgcs520/u_i2c/reset_pipe[0]}] -to [get_regs {u_uicfgcs520/u_i2c/reset_pipe[1]}] 2.000

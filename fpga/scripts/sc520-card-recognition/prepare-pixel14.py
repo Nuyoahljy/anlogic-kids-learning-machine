@@ -126,6 +126,7 @@ def make(destination,snapshot=False):
         (OLD/'user_source/hdl_source/design_top_wrapper.v').resolve():overlay/'design_top_wrapper.v',
         (OLD/'user_source/hdl_source/isp/isp_top.v').resolve():overlay/'isp_top.v',
         (OLD/'user_source/hdl_source/uics520_cfg/uicfgcs520.v').resolve():overlay/'uicfgcs520.v',
+        (OLD/'user_source/hdl_source/uics500_cfg/uii2c.v').resolve():overlay/'uii2c.v',
         (OLD/'user_source/constraints_source/pin.adc').resolve():overlay/'pin.adc',
         (OLD/'td_project/camera_to_dsi_display.sdc').resolve():overlay/'pixel14.sdc'}
     refs=set()
