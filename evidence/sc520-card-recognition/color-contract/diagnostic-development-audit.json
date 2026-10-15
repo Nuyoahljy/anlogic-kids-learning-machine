@@ -1,0 +1,90 @@
+{
+  "CreatedAt": "2026-10-15T10:24:47.325608+08:00",
+  "Verified": true,
+  "Runs": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\color-contract\\normal-20261014-204420-2d4e73\\result.json",
+      "SHA256": "73795FEA15B0B8B7984A55E7C59B0C77680D5CD88E356ABA9E060B8F1558F986",
+      "Mode": "normal",
+      "Kind": "color-contract",
+      "Summary": {
+        "errors": 0,
+        "checks": 78613,
+        "done": 1,
+        "injected": 0
+      },
+      "Scope": "Constructed RGB counterexamples, actual four new-color-module modes and actual color-gate counters. No photographic RGB inference or sensor measurement."
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\color-contract\\negative-20261014-204420-d6c6f2\\result.json",
+      "SHA256": "B9E883CAAEF71160A18076FD2CC29D7D79866B9E17C104B95E06EB03DB9FE707",
+      "Mode": "negative",
+      "Kind": "color-contract",
+      "Summary": {
+        "errors": 1,
+        "checks": 78614,
+        "done": 1,
+        "injected": 1
+      },
+      "Scope": "Constructed RGB counterexamples, actual four new-color-module modes and actual color-gate counters. No photographic RGB inference or sensor measurement."
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\color-contract\\watchdog-20261014-204420-a66a57\\result.json",
+      "SHA256": "EA31B8F56798D492317E7106671E43DFA7FDACBD1A97FE6A681E3A1E8AEB8892",
+      "Mode": "watchdog",
+      "Kind": "color-contract",
+      "Summary": {
+        "errors": 0,
+        "checks": 0,
+        "done": 0,
+        "injected": 0
+      },
+      "Scope": "Constructed RGB counterexamples, actual four new-color-module modes and actual color-gate counters. No photographic RGB inference or sensor measurement."
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\color-diagnostics\\normal-20261015-101921-3dba1d\\result.json",
+      "SHA256": "A4707A44069FEC2E8F13E1CE9598AEFABC681157142AC9B627A6A03671477B71",
+      "Mode": "normal",
+      "Kind": "color-diagnostics",
+      "Summary": {
+        "errors": 0,
+        "checks": 1485,
+        "scenarios": 42,
+        "injected": 0,
+        "done": 1
+      },
+      "Scope": "Isolated aligned RGB96 diagnostics; four sample lane offsets, both lane orders, 1280x720 frames, synthetic triples; no real CSI/ISP alignment, physical timing or board evidence."
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\color-diagnostics\\negative-20261015-101644-3bac90\\result.json",
+      "SHA256": "7F4686B032BE2C1ED3B271FA73238E491335401CC2EE6C963391AF4CD7844757",
+      "Mode": "negative",
+      "Kind": "color-diagnostics",
+      "Summary": {
+        "errors": 1,
+        "checks": 1485,
+        "scenarios": 42,
+        "injected": 1,
+        "done": 1
+      },
+      "Scope": "Isolated aligned RGB96 diagnostics; four sample lane offsets, both lane orders, 1280x720 frames, synthetic triples; no real CSI/ISP alignment, physical timing or board evidence."
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\color-diagnostics\\watchdog-20261015-101921-8ebb5b\\result.json",
+      "SHA256": "3A47BA3A39B9C5EAB3811E394656BB9BF6DAD4309FE64B070FA114952065C28E",
+      "Mode": "watchdog",
+      "Kind": "color-diagnostics",
+      "Summary": {
+        "errors": 0,
+        "checks": 318,
+        "scenarios": 11,
+        "injected": 0,
+        "done": 0
+      },
+      "Scope": "Isolated aligned RGB96 diagnostics; four sample lane offsets, both lane orders, 1280x720 frames, synthetic triples; no real CSI/ISP alignment, physical timing or board evidence."
+    }
+  ],
+  "BoardFix": false,
+  "ProductionIntegration": false,
+  "Notes": "Four-mode counterexamples and aligned-input diagnostic module are isolated from113. This is not camera RGB evidence or completed physical imaging repair."
+}

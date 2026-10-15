@@ -1,0 +1,58 @@
+Reading D:/modeltech64_10.7/tcl/vsim/pref.tcl
+
+# 10.7
+
+# do run.do
+# Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+# vmap work work 
+# Modifying E:\juan\FPGA\worktrees\anlogic-kids-learning-machine\sc520-card-recognition\evidence\sc520-card-recognition\color-diagnostics\watchdog-20261014-211139-fa6a05\modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:11:41 on Oct 14,2026
+# vlog -sv E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/color-diagnostics/watchdog-20261014-211139-fa6a05/inputs/pixel14_color_diagnostics.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/color-diagnostics/watchdog-20261014-211139-fa6a05/inputs/tb_pixel14_color_diagnostics.sv 
+# -- Compiling module pixel14_color_diagnostics
+# -- Compiling module color_diag_case
+# -- Compiling module tb_pixel14_color_diagnostics
+# 
+# Top level modules:
+# 	tb_pixel14_color_diagnostics
+# End time: 21:11:41 on Oct 14,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.tb_pixel14_color_diagnostics "+INJECT_FAULT=0" 
+# Start time: 21:11:41 on Oct 14,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_pixel14_color_diagnostics(fast)
+# Loading work.color_diag_case(fast)
+# Loading work.pixel14_color_diagnostics(fast)
+# Loading work.color_diag_case(fast__1)
+# Loading work.pixel14_color_diagnostics(fast__1)
+# Loading work.color_diag_case(fast__2)
+# Loading work.pixel14_color_diagnostics(fast__2)
+# Loading work.color_diag_case(fast__3)
+# Loading work.pixel14_color_diagnostics(fast__3)
+# Loading work.color_diag_case(fast__4)
+# Loading work.pixel14_color_diagnostics(fast__4)
+# Loading work.color_diag_case(fast__5)
+# Loading work.pixel14_color_diagnostics(fast__5)
+# DIAG_CASE_DONE case=5 W=4 H=1 msb=1 checks=106 errors=0 scenes=2
+# 0
+# 318
+# 11
+# 0
+# 0
+# fileb0dd1f0
+# End time: 21:11:43 on Oct 14,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

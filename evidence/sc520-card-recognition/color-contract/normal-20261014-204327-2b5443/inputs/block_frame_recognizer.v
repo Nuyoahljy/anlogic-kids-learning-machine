@@ -1,0 +1,156 @@
+// Current-frame block candidate. Full raster health and full-resolution
+// presence are required; held boxes from an earlier frame are never reused.
+module block_frame_recognizer #(
+    parameter integer FRAME_WIDTH=320,FRAME_HEIGHT=180,
+    parameter integer X_MIN=80,X_MAX=239,Y_MIN=30,Y_MAX=149,
+    parameter integer MIN_AREA=16,MIN_WIDTH=2,MIN_HEIGHT=2,
+    parameter integer RUN_LENGTH=1,CONFIRM_FRAMES=3
+) (
+    input wire clk,rst_n,flush,in_valid,in_sof,in_eol,
+    input wire [10:0] in_x,
+    input wire [9:0] in_y,
+    input wire [23:0] in_rgb,
+    input wire in_frame_end,in_frame_good,in_frame_present,
+    input wire [31:0] in_frame_id,
+    input wire in_source_test,
+    output reg out_frame,out_healthy,out_present,out_valid,
+    output reg [3:0] out_item,
+    output reg [31:0] out_frame_id,
+    output reg out_source_test,
+    output reg [7:0] stable_count,
+    output reg out_revoke
+);
+    reg active;
+    reg [2:0] stage;
+    reg [31:0] active_id,pixels;
+    reg active_source,saved_present;
+    reg [10:0] expected_x;
+    reg [9:0] expected_y;
+    reg [19:0] area[0:2];
+    reg [10:0] left_edge[0:2],right_edge[0:2];
+    reg [9:0] top_edge[0:2],bottom_edge[0:2];
+    reg [1:0] selected_color;
+    reg [19:0] selected_area;
+    reg [10:0] selected_left,selected_right;
+    reg [9:0] selected_top,selected_bottom;
+    reg [11:0] width;
+    reg [10:0] height;
+    reg geometry_good;
+    reg [22:0] box_area;
+    reg [3:0] candidate,previous_item;
+    reg previous_source;
+    integer k;
+    wire [8:0] r={1'b0,in_rgb[23:16]},g={1'b0,in_rgb[15:8]},b={1'b0,in_rgb[7:0]};
+    wire red=r>=80 && r>=g+32 && r>=b+32;
+    wire blue=b>=80 && b>=r+24 && b>=g+24;
+    wire yellow=r>=96 && g>=80 && b<=96 && r<=g+80 && g<=r+80 && r>=b+32 && g>=b+24;
+    wire roi=in_x>=X_MIN && in_x<=X_MAX && in_y>=Y_MIN && in_y<=Y_MAX;
+    wire [1:0] color=yellow ? 2'd2 : red ? 2'd1 : blue ? 2'd3 : 2'd0;
+    wire start_ok=in_valid && in_sof && !active && stage==0 && !in_frame_end;
+    wire raster_bad=in_valid &&
+        (!(active || start_ok) || (in_sof && !start_ok) ||
+         in_x!=(start_ok ? 0 : expected_x) || in_y!=(start_ok ? 0 : expected_y) ||
+         in_eol!=(in_x==FRAME_WIDTH-1) || (!start_ok &&
+             (in_frame_id!=active_id || in_source_test!=active_source || pixels>=FRAME_WIDTH*FRAME_HEIGHT)));
+    wire marker_bad=(!in_valid && (in_sof || in_eol)) ||
+        (in_frame_end && (!active || stage!=0 || in_valid || in_sof || in_eol || !in_frame_good ||
+         pixels!=FRAME_WIDTH*FRAME_HEIGHT || in_frame_id!=active_id || in_source_test!=active_source ||
+         (!in_frame_present && (area[0]!=0 || area[1]!=0 || area[2]!=0))));
+    reg [1:0] winning_color;
+    reg [19:0] winning_area;
+    integer winning_index;
+    always @* begin
+        winning_color=0;winning_area=0;winning_index=0;
+        if(area[0]>=MIN_AREA && {1'b0,area[0]}>={area[1],1'b0} && {1'b0,area[0]}>={area[2],1'b0})begin
+            winning_color=1;winning_area=area[0];winning_index=0;
+        end else if(area[1]>=MIN_AREA && {1'b0,area[1]}>={area[0],1'b0} && {1'b0,area[1]}>={area[2],1'b0})begin
+            winning_color=2;winning_area=area[1];winning_index=1;
+        end else if(area[2]>=MIN_AREA && {1'b0,area[2]}>={area[0],1'b0} && {1'b0,area[2]}>={area[1],1'b0})begin
+            winning_color=3;winning_area=area[2];winning_index=2;
+        end
+    end
+    wire [29:0] scaled_area={3'd0,selected_area,7'd0};
+    wire near_square=width*5>=height*4 && height*5>=width*4;
+    wire triangle_aspect=width*2>=height && width*4<=height*7;
+    reg [1:0] shape;
+    always @* begin
+        shape=0;
+        if(geometry_good && selected_area!=0 && selected_area<=box_area)begin
+            if(near_square && scaled_area>=box_area*116)shape=2;
+            else if(near_square && scaled_area>=box_area*88 && scaled_area<=box_area*110)shape=1;
+            else if(triangle_aspect && scaled_area>=box_area*51 && scaled_area<=box_area*80)shape=3;
+        end
+    end
+    wire same_candidate=candidate!=0 && candidate==previous_item && active_source==previous_source;
+    wire [7:0] next_count=candidate==0 ? 8'd0 : same_candidate ?
+        (stable_count==255 ? 8'd255 : stable_count+1'b1) : 8'd1;
+    always @(posedge clk or negedge rst_n) begin
+        if(!rst_n)begin
+            active<=0;stage<=0;active_id<=0;active_source<=0;saved_present<=1;pixels<=0;
+            expected_x<=0;expected_y<=0;selected_color<=0;selected_area<=0;width<=0;height<=0;
+            geometry_good<=0;box_area<=0;candidate<=0;previous_item<=0;previous_source<=0;
+            selected_left<=0;selected_right<=0;selected_top<=0;selected_bottom<=0;
+            out_frame<=0;out_healthy<=0;out_present<=1;out_valid<=0;out_item<=0;
+            out_frame_id<=0;out_source_test<=0;stable_count<=0;out_revoke<=0;
+            for(k=0;k<3;k=k+1)begin area[k]<=0;left_edge[k]<=0;right_edge[k]<=0;top_edge[k]<=0;bottom_edge[k]<=0;end
+        end else begin
+            out_frame<=0;out_revoke<=0;
+            if(flush || raster_bad || marker_bad)begin
+                active<=0;stage<=0;pixels<=0;previous_item<=0;stable_count<=0;
+                out_healthy<=0;out_present<=1;out_valid<=0;out_item<=0;
+                out_revoke<=!flush;
+            end else begin
+                if(start_ok)begin
+                    active<=1;active_id<=in_frame_id;active_source<=in_source_test;pixels<=0;
+                    for(k=0;k<3;k=k+1)begin area[k]<=0;left_edge[k]<=0;right_edge[k]<=0;top_edge[k]<=0;bottom_edge[k]<=0;end
+                end
+                if(in_valid)begin
+                    pixels<=(start_ok ? 0 : pixels)+1;
+                    if(in_x==FRAME_WIDTH-1)begin expected_x<=0;expected_y<=in_y+1'b1;end
+                    else begin expected_x<=in_x+1'b1;expected_y<=in_y;end
+                    if(roi && color!=0)begin
+                        area[color-1]<=(start_ok ? 0 : area[color-1])+1'b1;
+                        if(start_ok || area[color-1]==0 || in_x<left_edge[color-1])left_edge[color-1]<=in_x;
+                        if(start_ok || area[color-1]==0 || in_x>right_edge[color-1])right_edge[color-1]<=in_x;
+                        if(start_ok || area[color-1]==0 || in_y<top_edge[color-1])top_edge[color-1]<=in_y;
+                        if(start_ok || area[color-1]==0 || in_y>bottom_edge[color-1])bottom_edge[color-1]<=in_y;
+                    end
+                end
+                if(in_frame_end)begin active<=0;stage<=1;saved_present<=in_frame_present;end
+                else if(stage==1)begin
+                    selected_color<=winning_color;selected_area<=winning_area;
+                    selected_left<=left_edge[winning_index];selected_right<=right_edge[winning_index];
+                    selected_top<=top_edge[winning_index];selected_bottom<=bottom_edge[winning_index];
+                    geometry_good<=winning_color!=0 && saved_present && left_edge[winning_index]>X_MIN &&
+                        right_edge[winning_index]<X_MAX && top_edge[winning_index]>Y_MIN && bottom_edge[winning_index]<Y_MAX;
+                    stage<=2;
+                end else if(stage==2)begin
+                    width<={1'b0,selected_right}-{1'b0,selected_left}+1'b1;
+                    height<={1'b0,selected_bottom}-{1'b0,selected_top}+1'b1;
+                    stage<=3;
+                end else if(stage==3)begin
+                    box_area<=width*height;
+                    geometry_good<=geometry_good && width>=MIN_WIDTH && height>=MIN_HEIGHT;
+                    stage<=4;
+                end else if(stage==4)begin
+                    candidate<=shape==0 ? 0 : (selected_color-1)*3+shape;
+                    stage<=5;
+                end else if(stage==5)begin
+                    out_frame<=1;out_healthy<=1;out_present<=saved_present;
+                    out_frame_id<=active_id;out_source_test<=active_source;
+                    stable_count<=next_count;previous_item<=candidate;previous_source<=active_source;
+                    out_valid<=candidate!=0 && next_count>=CONFIRM_FRAMES;
+                    out_item<=candidate!=0 && next_count>=CONFIRM_FRAMES ? candidate : 0;
+                    stage<=0;
+                end
+            end
+        end
+    end
+    // synthesis translate_off
+    initial if(FRAME_WIDTH<1 || FRAME_WIDTH>2048 || FRAME_HEIGHT<1 || FRAME_HEIGHT>1024 ||
+        FRAME_WIDTH*FRAME_HEIGHT>1048575 || X_MIN<0 || X_MAX>=FRAME_WIDTH || X_MIN>=X_MAX ||
+        Y_MIN<0 || Y_MAX>=FRAME_HEIGHT || Y_MIN>=Y_MAX || MIN_AREA<1 || MIN_WIDTH<1 || MIN_HEIGHT<1 ||
+        RUN_LENGTH!=1 || CONFIRM_FRAMES<1 || CONFIRM_FRAMES>255)
+        $fatal(1,"block_frame_recognizer invalid parameters (RUN_LENGTH must be 1)");
+    // synthesis translate_on
+endmodule

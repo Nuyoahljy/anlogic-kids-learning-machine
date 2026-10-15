@@ -1,0 +1,67 @@
+{
+  "CreatedAt": "2026-10-15T10:19:24.632830+08:00",
+  "Mode": "watchdog",
+  "Command": [
+    "D:\\modeltech64_10.7\\win64\\vsim.exe",
+    "-c",
+    "-modelsimini",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\color-diagnostics\\watchdog-20261015-101921-8ebb5b\\modelsim.ini",
+    "-l",
+    "transcript.log",
+    "-do",
+    "do run.do"
+  ],
+  "Inputs": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\rtl\\sc520-card-recognition\\color_diag\\pixel14_color_diagnostics.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\color-diagnostics\\watchdog-20261015-101921-8ebb5b\\inputs\\pixel14_color_diagnostics.v",
+      "SHA256": "9B15228BDF69212689DC20B6BA761CA9A201E30F36A4E64B91F9C817CC9324FE"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\sim\\sc520-card-recognition\\tb_pixel14_color_diagnostics.sv",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\color-diagnostics\\watchdog-20261015-101921-8ebb5b\\inputs\\tb_pixel14_color_diagnostics.sv",
+      "SHA256": "E57B7B1047833069903C1AA91B25C4076A30355820AAFBE37A5391827775E482"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\simulate-color-diagnostics.py",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\color-diagnostics\\watchdog-20261015-101921-8ebb5b\\inputs\\simulate-color-diagnostics.py",
+      "SHA256": "7B33A548AEA48443B133BB96C895D993F48B45CC401E50636E42AE50C7C4E8EE"
+    }
+  ],
+  "Summary": {
+    "errors": 0,
+    "checks": 318,
+    "scenarios": 11,
+    "injected": 0,
+    "done": 0
+  },
+  "NativeExitCode": 2,
+  "Qualified": true,
+  "InputsUnchanged": true,
+  "Exception": null,
+  "Scope": "Isolated aligned RGB96 diagnostics; four sample lane offsets, both lane orders, 1280x720 frames, synthetic triples; no real CSI/ISP alignment, physical timing or board evidence.",
+  "BoardFix": false,
+  "ProductionIntegration": false,
+  "Outputs": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\color-diagnostics\\watchdog-20261015-101921-8ebb5b\\run.do",
+      "SHA256": "8DA4D0834528D57D32CD8AD853F4B1A950C27664B3ACDF3D7B6B69E96366C219"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\color-diagnostics\\watchdog-20261015-101921-8ebb5b\\stderr.log",
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\color-diagnostics\\watchdog-20261015-101921-8ebb5b\\stdout.log",
+      "SHA256": "C3DA2B0195F851EDD80ECDA8E243CC9A4A81781CD36B3518268BD074A27D30B8"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\color-diagnostics\\watchdog-20261015-101921-8ebb5b\\summary.json",
+      "SHA256": "87C9F4F046A5518F9E374A8AA9C32938E169B889FD5DCF3AAD5C4BFF922F8D47"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\color-diagnostics\\watchdog-20261015-101921-8ebb5b\\transcript.log",
+      "SHA256": "48A1780DA8B07FB171E67EF873E9F91CCE598EB9EA4E490AB8E6BB359158C5FC"
+    }
+  ]
+}
