@@ -1,0 +1,168 @@
+AL_MAP_SEQ_GSR #(
+    //.INIT(1'b0),
+    .CEMUX("SIG"),
+    .CLKMUX("SIG"),
+    .DFFMODE("FF"),
+    .REGSET("RESET"),
+    .SRMODE("ASYNC"),
+    .SRMUX("INV"))
+    \u_p14_pipeline/scene_mode$scene/card_index_reg[5]  (
+    .ce(\u_p14_pipeline/scene_mode$scene/card_valid_n ),
+    .clk(\u_isp_top/u_demosaic/raw_matrix_3x3_buffer_d/zhenghe_d/blk_mem_gen_zhenghe_d1/ram_d32970204f32_Inst/clkb ),
+    .d(\u_p14_pipeline/scene_mode$scene/sel64_syn_1382 ),
+    .sr(\u_p14_pipeline/capture_release [1]),
+    .q(\u_p14_pipeline/scene_mode$scene/card_index [5]));
+
+AL_MAP_LUT2 #(
+    .EQN("(B*~A)"),
+    .INIT(4'h4))
+    \u_p14_pipeline/scene_mode$scene/sel64_syn_2539  (
+    .a(\u_p14_pipeline/scene_mode$scene/engine_fault_reg_syn_29 ),
+    .b(\u_p14_pipeline/scene_mode$scene/normalize_index [5]),
+    .o(\u_p14_pipeline/scene_mode$scene/sel64_syn_1382 ));
+
+PH1P_PHY_LSLICE #(
+    //.LUT5A("(E*~D)"),
+    //.LUT5B("(~E*~C*B)"),
+    .ASRMUX("INV"),
+    .CEAMUX("SIG"),
+    .CLKMUX("SIG"),
+    .INIT_LUT5A(32'b00000000111111110000000000000000),
+    .INIT_LUT5B(32'b00000000000000000000110000001100),
+    .LATCHMODE("DFF"),
+    .LUT5A_SD1("IMF"),
+    .LUTMODE("DLUT5"),
+    .OFA_SD("LUT5A"),
+    .OFB_SD("LUTX"),
+    .OQAMUX("QA"),
+    .OQBMUX("QB"),
+    .REGA_REGSET_ASYNC("RESET"),
+    .REGA_REGSET_SYNC("RESET"),
+    .REGA_SD("LUT5A"),
+    .SSRMUX("0"),
+    .SSROVERCE("ENABLE"))
+    \u_p14_pipeline/scene_mode$scene/card_index_reg[5]_syn_4  (
+    .asr(\u_p14_pipeline/capture_release [1]),
+    .cea(\u_p14_pipeline/scene_mode$scene/card_valid_n ),
+    .clk(\u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk1_sclk_outnet ),
+    .id(\u_p14_pipeline/scene_mode$scene/engine_fault_reg_syn_29 ),
+    .imf(\u_p14_pipeline/scene_mode$scene/normalize_index [5]),
+    .oqa(\u_p14_pipeline/scene_mode$scene/card_index[5]_dup_4 ));
+
+AL_MAP_SEQ_GSR #(
+    //.INIT(1'b0),
+    .CEMUX("SIG"),
+    .CLKMUX("SIG"),
+    .DFFMODE("FF"),
+    .REGSET("RESET"),
+    .SRMODE("ASYNC"),
+    .SRMUX("INV"))
+    \u_p14_pipeline/scene_mode$scene/card_index_reg[6]  (
+    .ce(\u_p14_pipeline/scene_mode$scene/card_valid_n ),
+    .clk(\u_isp_top/u_demosaic/raw_matrix_3x3_buffer_d/zhenghe_d/blk_mem_gen_zhenghe_d1/ram_d32970204f32_Inst/clkb ),
+    .d(\u_p14_pipeline/scene_mode$scene/sel64_syn_1610 ),
+    .sr(\u_p14_pipeline/capture_release [1]),
+    .q(\u_p14_pipeline/scene_mode$scene/card_index [6]));
+
+AL_MAP_LUT2 #(
+    .EQN("(B*~A)"),
+    .INIT(4'h4))
+    \u_p14_pipeline/scene_mode$scene/sel64_syn_2542  (
+    .a(\u_p14_pipeline/scene_mode$scene/engine_fault_reg_syn_29 ),
+    .b(\u_p14_pipeline/scene_mode$scene/normalize_index [6]),
+    .o(\u_p14_pipeline/scene_mode$scene/sel64_syn_1610 ));
+
+PH1P_PHY_LSLICE #(
+    //.LUT5A("(E*~B)"),
+    //.LUT5B("(~E*~(~C*~D))"),
+    .ASRMUX("INV"),
+    .CEAMUX("SIG"),
+    .CLKMUX("SIG"),
+    .INIT_LUT5A(32'b00110011001100110000000000000000),
+    .INIT_LUT5B(32'b00000000000000001111111111110000),
+    .LATCHMODE("DFF"),
+    .LUT5A_SD1("IMF"),
+    .LUT5B_SD2("ID"),
+    .LUTMODE("DLUT5"),
+    .OFA_SD("LUT5A"),
+    .OFB_SD("LUTX"),
+    .OQAMUX("QA"),
+    .OQBMUX("QB"),
+    .REGA_REGSET_ASYNC("RESET"),
+    .REGA_REGSET_SYNC("RESET"),
+    .REGA_SD("LUT5A"),
+    .SSRMUX("0"),
+    .SSROVERCE("ENABLE"))
+    \u_p14_pipeline/scene_mode$scene/card_index_reg[6]_syn_3  (
+    .asr(\u_p14_pipeline/capture_release [1]),
+    .cea(\u_p14_pipeline/scene_mode$scene/card_valid_n ),
+    .clk(\u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk1_sclk_outnet ),
+    .ib(\u_p14_pipeline/scene_mode$scene/engine_fault_reg_syn_29 ),
+    .ic(\u_p14_pipeline/capture/block_x [6]),
+    .id(\u_p14_pipeline/scene_mode$scene/mux275_syn_596 ),
+    .ie(\u_p14_pipeline/scene_mode$scene/mux275_syn_600 ),
+    .imf(\u_p14_pipeline/scene_mode$scene/normalize_index [6]),
+    .ofb(\u_p14_pipeline/scene_mode$scene/mux275_syn_602 ),
+    .oqa(\u_p14_pipeline/scene_mode$scene/card_index[6]_dup_6 ));
+
+AL_MAP_SEQ_GSR #(
+    //.INIT(1'b0),
+    .CEMUX("SIG"),
+    .CLKMUX("SIG"),
+    .DFFMODE("FF"),
+    .REGSET("RESET"),
+    .SRMODE("ASYNC"),
+    .SRMUX("INV"))
+    \u_p14_pipeline/scene_mode$scene/card_index_reg[8]  (
+    .ce(\u_p14_pipeline/scene_mode$scene/card_valid_n ),
+    .clk(\u_isp_top/u_demosaic/raw_matrix_3x3_buffer_d/zhenghe_d/blk_mem_gen_zhenghe_d1/ram_d32970204f32_Inst/clkb ),
+    .d(\u_p14_pipeline/scene_mode$scene/sel64_syn_2066 ),
+    .sr(\u_p14_pipeline/capture_release [1]),
+    .q(\u_p14_pipeline/scene_mode$scene/card_index [8]));
+
+AL_MAP_LUT2 #(
+    .EQN("(B*~A)"),
+    .INIT(4'h4))
+    \u_p14_pipeline/scene_mode$scene/sel64_syn_2546  (
+    .a(\u_p14_pipeline/scene_mode$scene/engine_fault_reg_syn_29 ),
+    .b(\u_p14_pipeline/scene_mode$scene/normalize_index [8]),
+    .o(\u_p14_pipeline/scene_mode$scene/sel64_syn_2066 ));
+
+PH1P_PHY_LSLICE #(
+    //.LUT5A("(E*~D)"),
+    //.LUT5B("(E*~C*~B*A)"),
+    .ASRMUX("INV"),
+    .CEAMUX("SIG"),
+    .CLKMUX("SIG"),
+    .INIT_LUT5A(32'b00000000111111110000000000000000),
+    .INIT_LUT5B(32'b00000010000000100000000000000000),
+    .LATCHMODE("DFF"),
+    .LUT5A_SD1("IMF"),
+    .LUTMODE("DLUT5"),
+    .OFA_SD("LUT5A"),
+    .OFB_SD("LUTX"),
+    .OQAMUX("QA"),
+    .OQBMUX("QB"),
+    .REGA_REGSET_ASYNC("RESET"),
+    .REGA_REGSET_SYNC("RESET"),
+    .REGA_SD("LUT5A"),
+    .SSRMUX("0"),
+    .SSROVERCE("ENABLE"))
+    \u_p14_pipeline/scene_mode$scene/card_index_reg[8]_syn_3  (
+    .asr(\u_p14_pipeline/capture_release [1]),
+    .cea(\u_p14_pipeline/scene_mode$scene/card_valid_n ),
+    .clk(\u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk1_sclk_outnet ),
+    .ia(\u_p14_pipeline/shape_mode$shape_guard/saved_good_reg_syn_9 ),
+    .ib(\u_p14_pipeline/shape_mode$shape_guard/count [8]),
+    .ic(\u_p14_pipeline/shape_mode$shape_guard/count [9]),
+    .id(\u_p14_pipeline/scene_mode$scene/engine_fault_reg_syn_29 ),
+    .ie(\u_p14_pipeline/shape_mode$shape_guard/count [10]),
+    .imf(\u_p14_pipeline/scene_mode$scene/normalize_index [8]),
+    .ofb(\u_p14_pipeline/shape_mode$shape_guard/saved_good_reg_syn_11 ),
+    .oqa(\u_p14_pipeline/scene_mode$scene/card_index[8]_dup_3 ));
+
+PH1P_PHY_SCLK_V2 #(
+    .BYPASS("DISABLE"))
+    \u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk1  (
+    .clkin(\u_isp_top/u_demosaic/raw_matrix_3x3_buffer_d/zhenghe_d/blk_mem_gen_zhenghe_d1/ram_d32970204f32_Inst/clkb ),
+    .clkout(\u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk1_sclk_outnet ));

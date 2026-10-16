@@ -1,0 +1,11 @@
+FROM {u_p14_pipeline/capture_reset[0]}
+TO {u_p14_pipeline/capture_reset[1]}
+TO {u_p14_pipeline/capture_release[0]}
+TO {u_p14_pipeline/capture_release[1]}
+TO {u_p14_pipeline/capture_release[2]}
+TO {u_p14_pipeline/capture_release[3]}
+TO {u_p14_pipeline/capture_release[4]}
+TO {u_p14_pipeline/capture_release[5]}
+TO {u_p14_pipeline/capture_release[6]}
+TO {u_p14_pipeline/capture_release[7]}
+TO {u_p14_pipeline/capture_release[8]}

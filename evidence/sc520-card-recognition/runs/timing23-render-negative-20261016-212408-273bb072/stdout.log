@@ -1,0 +1,123 @@
+Reading D:/modeltech64_10.7/tcl/vsim/pref.tcl
+
+# 10.7
+
+# set card_top tb_timing23_render
+# tb_timing23_render
+#  set card_sources [list {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/items14_content.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/items14_font_rom.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/items14_osd.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/items14_question_bank.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/items14_quiz_control.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/items14_result_join.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/items14_system.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/sc520_processing_display.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/sc520_color_classify.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/sc520_logo_pipeline.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel17_display_request.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel22_audio.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel22_compositor.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel22_content.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel22_font_rom.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel22_panel.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/dfr0534_items14_audio.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/dfr0534_link.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/dfr0534_player.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/dfr0534_player_core.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/dfr0534_track_map.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/t020_audio_queue.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel14_color_diag_osd.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel23_color_diag_osd.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel23_color_observer.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel23_compositor.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel23_pipeline.v}]
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/items14_content.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/items14_font_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/items14_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/items14_question_bank.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/items14_quiz_control.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/items14_result_join.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/items14_system.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/sc520_processing_display.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/sc520_color_classify.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/sc520_logo_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel17_display_request.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel22_audio.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel22_compositor.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel22_content.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel22_font_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel22_panel.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/dfr0534_items14_audio.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/dfr0534_link.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/dfr0534_player.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/dfr0534_player_core.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/dfr0534_track_map.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/t020_audio_queue.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel14_color_diag_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel23_color_diag_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel23_color_observer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel23_compositor.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel23_pipeline.v
+#  set card_tb {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/tb_timing23_render.sv}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/tb_timing23_render.sv
+#  set card_assets {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs
+#  set card_negative 1
+# 1
+#  set card_probe 0
+# 0
+#  source {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/run-audio22.do}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:24:11 on Oct 16,2026
+# vlog E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/items14_content.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/items14_font_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/items14_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/items14_question_bank.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/items14_quiz_control.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/items14_result_join.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/items14_system.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/sc520_processing_display.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/sc520_color_classify.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/sc520_logo_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel17_display_request.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel22_audio.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel22_compositor.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel22_content.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel22_font_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel22_panel.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/dfr0534_items14_audio.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/dfr0534_link.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/dfr0534_player.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/dfr0534_player_core.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/dfr0534_track_map.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/t020_audio_queue.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel14_color_diag_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel23_color_diag_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel23_color_observer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel23_compositor.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/pixel23_pipeline.v 
+# -- Compiling module items14_content
+# -- Compiling module items14_font_rom
+# -- Compiling module items14_osd
+# -- Compiling module items14_question_bank
+# -- Compiling module items14_quiz_control
+# -- Compiling module items14_result_join
+# -- Compiling module items14_system
+# -- Compiling module sc520_processing_display
+# -- Compiling module sc520_color_classify
+# -- Compiling module sc520_logo_pipeline
+# -- Compiling module pixel17_display_request
+# -- Compiling module pixel22_audio
+# -- Compiling module pixel22_compositor
+# -- Compiling module pixel22_content
+# -- Compiling module pixel22_font_rom
+# -- Compiling module pixel22_panel
+# -- Compiling module dfr0534_items14_audio
+# -- Compiling module dfr0534_link
+# -- Compiling module dfr0534_player
+# -- Compiling module dfr0534_player_core
+# -- Compiling module dfr0534_track_map
+# -- Compiling module t020_audio_queue
+# -- Compiling module pixel14_color_diag_osd
+# -- Compiling module pixel23_color_diag_osd
+# -- Compiling module pixel23_color_observer
+# -- Compiling module pixel23_compositor
+# -- Compiling module pixel23_pipeline
+# 
+# Top level modules:
+# 	pixel17_display_request
+# 	pixel22_audio
+# 	pixel22_compositor
+# 	pixel23_compositor
+# 	pixel23_pipeline
+# End time: 21:24:12 on Oct 16,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:24:12 on Oct 16,2026
+# vlog -sv "+incdir+E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs" E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/tb_timing23_render.sv 
+# -- Compiling module tb_timing23_render
+# 
+# Top level modules:
+# 	tb_timing23_render
+# End time: 21:24:12 on Oct 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -wlf wave.wlf work.tb_timing23_render "+ASSET_ROOT=E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs" "+INJECT_FAULT=1" 
+# Start time: 21:24:12 on Oct 16,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 3 FSMs in module "items14_quiz_control(fast)".
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_timing23_render(fast)
+# Loading work.items14_system(fast)
+# Loading work.items14_result_join(fast)
+# Loading work.items14_quiz_control(fast)
+# Loading work.items14_question_bank(fast)
+# Loading work.pixel17_display_request(fast)
+# Loading work.pixel23_compositor(fast)
+# Loading work.sc520_processing_display(fast)
+# Loading work.sc520_color_classify(fast)
+# Loading work.pixel22_panel(fast)
+# Loading work.pixel22_content(fast)
+# Loading work.pixel22_font_rom(fast)
+# Loading work.pixel23_color_diag_osd(fast)
+# Loading work.sc520_logo_pipeline(fast)
+# CASE system 1 startup and all fourteen objects through join/control/OSD/audio event
+# CASE system 2 frame snapshot prevents mid-frame name tearing
+# CASE system 3 conflict withdraws stale object and arming before replay
+# CASE system 4 queued valid observation is killed by same-edge upstream fault
+# CASE system 5 timeout cannot count as object removal
+# CASE system 6 test-source label survives revoke and real source needs epoch flush
+# CASE system 7 TEST timeout provenance and unhealthy OSD change together at frame start
+# CASE system 8 queued correct quiz answer and simultaneous replay lose to new fault
+# CASE system 9 twenty scored questions cover rotating fourteen-item bank
+# CASE system 10 OSD target and observed object stay separate in a question
+# CASE system 11 new K3 display routing, all key priorities, quiz completion
+# CASE system 12 full720p independent pixel/reference case 0
+# FAIL system case=12 t=2074205000 independent golden image mismatch x=160 y=120 actual=010203 expected=ff0000 mode=1 q=0 target=0 score=0 obs=0/1/1
+# CASE system 13 full720p independent pixel/reference case 1
+# CASE system 14 full720p independent pixel/reference case 2
+# CASE system 15 live diagnostic invalidation and recovery cannot revive old snapshot
+# CASE system 16 full720p independent pixel/reference case 3
+# CASE system 17 asynchronous reset removes full-chain pixels
+# RESULT tb_timing23_render errors=1 checks=11329115 scenarios=17 injected=1
+# ** Note: $finish    : E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/tb_timing23_render.sv(361)
+#    Time: 50457018058 ps  Iteration: 0  Instance: /tb_timing23_render
+# Break in Module tb_timing23_render at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/tb_timing23_render.sv line 361
+# Stopped at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/timing23-render-negative-20261016-212408-273bb072/inputs/tb_timing23_render.sv line 361
+CARD_SIM_FINISHED tb_timing23_render errors=1 checks=11329115 scenarios=17 done=1 injected=1
+# End time: 21:25:26 on Oct 16,2026, Elapsed time: 0:01:14
+# Errors: 0, Warnings: 0

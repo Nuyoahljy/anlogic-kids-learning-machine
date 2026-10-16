@@ -1,0 +1,187 @@
+Reading D:/modeltech64_10.7/tcl/vsim/pref.tcl
+
+# 10.7
+
+# do run.do
+# Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+# vmap work work 
+# Modifying E:\juan\FPGA\worktrees\anlogic-kids-learning-machine\sc520-card-recognition\evidence\sc520-card-recognition\timing23\address-proofs\routed230-v1\negative\modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 22:50:34 on Oct 16,2026
+# vlog al_phy_glbl.v al_map_seq.v al_map_lut.v ph1p_phy_gsr.v ph1p_phy_lslice.v ph1p_phy_sclk_v2.v 
+# -- Compiling module glbl
+# -- Compiling module AL_MAP_SEQ
+# -- Compiling module AL_MAP_SEQ_GSR
+# -- Compiling module AL_MAP_LUT1
+# -- Compiling module AL_MAP_LUT2
+# -- Compiling module AL_MAP_LUT3
+# -- Compiling module AL_MAP_LUT4
+# -- Compiling module AL_MAP_LUT5
+# -- Compiling module AL_MAP_LUT6
+# -- Compiling module AL_MAP_LUT6P
+# -- Compiling module AL_MAP_LUT6X
+# -- Compiling module AL_MAP_LLMUX
+# -- Compiling module AL_MAP_F7MUX
+# -- Compiling module AL_MAP_F8MUX
+# -- Compiling module AL_MAP_CARRY4
+# -- Compiling module PH1P_PHY_GSR
+# -- Compiling module PH1P_PHY_LSLICE
+# -- Compiling module PH1P_PHY_SCLK_V2
+# 
+# Top level modules:
+# 	glbl
+# 	AL_MAP_SEQ
+# 	AL_MAP_SEQ_GSR
+# 	AL_MAP_LUT1
+# 	AL_MAP_LUT2
+# 	AL_MAP_LUT3
+# 	AL_MAP_LUT6
+# 	AL_MAP_LUT6P
+# 	AL_MAP_LUT6X
+# 	AL_MAP_LLMUX
+# 	AL_MAP_F7MUX
+# 	AL_MAP_F8MUX
+# 	AL_MAP_CARRY4
+# 	PH1P_PHY_GSR
+# 	PH1P_PHY_LSLICE
+# 	PH1P_PHY_SCLK_V2
+# End time: 22:50:34 on Oct 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 22:50:34 on Oct 16,2026
+# vlog -sv tb_address.sv 
+# -- Compiling module tb_address
+# 
+# Top level modules:
+# 	tb_address
+# End time: 22:50:35 on Oct 16,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -wlf wave.wlf work.tb_address work.PH1P_PHY_GSR work.glbl 
+# Start time: 22:50:35 on Oct 16,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: tb_address.sv(48): (vopt-2685) [TFMPC] - Too few port connections for 'route_ff_0'.  Expected 38, found 6.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'dpram_wclk'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'dpram_byteaddr'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'dpram_waddr'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'dpram_we'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'dpram_shiftmode'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'dpram_rammode'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'dpram_width'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'dffshiften'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'f78i'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'relut6'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'olut5a'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'ft_lut5a'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'shoqb'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'shoqa'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'shiqb'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'shiqa'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'fco_f'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'fco'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'fci_f'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'fci'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'imc'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'ofb'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'ofa'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'oqb'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'ssr'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'ceb'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'imb'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'ima'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'ie'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'ic'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'ib'.
+# ** Warning: tb_address.sv(48): (vopt-2718) [TFMPC] - Missing connection for port 'ia'.
+# ** Warning: tb_address.sv(98): (vopt-2685) [TFMPC] - Too few port connections for 'route_ff_1'.  Expected 38, found 10.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'dpram_wclk'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'dpram_byteaddr'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'dpram_waddr'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'dpram_we'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'dpram_shiftmode'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'dpram_rammode'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'dpram_width'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'dffshiften'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'f78i'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'relut6'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'olut5a'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'ft_lut5a'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'shoqb'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'shoqa'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'shiqb'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'shiqa'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'fco_f'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'fco'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'fci_f'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'fci'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'imc'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'ofa'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'oqb'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'ssr'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'ceb'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'imb'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'ima'.
+# ** Warning: tb_address.sv(98): (vopt-2718) [TFMPC] - Missing connection for port 'ia'.
+# ** Warning: tb_address.sv(151): (vopt-2685) [TFMPC] - Too few port connections for 'route_ff_2'.  Expected 38, found 11.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'dpram_wclk'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'dpram_byteaddr'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'dpram_waddr'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'dpram_we'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'dpram_shiftmode'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'dpram_rammode'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'dpram_width'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'dffshiften'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'f78i'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'relut6'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'olut5a'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'ft_lut5a'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'shoqb'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'shoqa'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'shiqb'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'shiqa'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'fco_f'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'fco'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'fci_f'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'fci'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'imc'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'ofa'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'oqb'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'ssr'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'ceb'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'imb'.
+# ** Warning: tb_address.sv(151): (vopt-2718) [TFMPC] - Missing connection for port 'ima'.
+# ** Warning: tb_address.sv(166): (vopt-2685) [TFMPC] - Too few port connections for 'physical_clock'.  Expected 4, found 2.
+# ** Warning: tb_address.sv(166): (vopt-2718) [TFMPC] - Missing connection for port 'dlytrim'.
+# ** Warning: tb_address.sv(166): (vopt-2718) [TFMPC] - Missing connection for port 'ce'.
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_address(fast)
+# Loading work.AL_MAP_LUT2(fast)
+# Loading work.AL_MAP_SEQ_GSR(fast)
+# Loading work.PH1P_PHY_LSLICE(fast)
+# Loading work.PH1P_PHY_LSLICE(fast__1)
+# Loading work.PH1P_PHY_LSLICE(fast__2)
+# Loading work.PH1P_PHY_SCLK_V2(fast)
+# Loading work.PH1P_PHY_GSR(fast)
+# Loading work.glbl(fast)
+# STARTUP_UNQUALIFIED 000111
+# MISMATCH id=90 t=131187000 got=1 want=0
+# ADDRESS_DONE checks=475191 rows=16384 errors=1 injected=1
+# ** Note: $finish    : tb_address.sv(199)
+#    Time: 131187 ns  Iteration: 0  Instance: /tb_address
+# Break in Module tb_address at tb_address.sv line 199
+# Stopped at tb_address.sv line 199
+# fileb10ff70
+# End time: 22:50:36 on Oct 16,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 93

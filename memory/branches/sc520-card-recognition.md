@@ -2,12 +2,57 @@
 
 - 任务 ID：sc520-card-recognition
 - 状态：等待主对话审核
-- 负责人：接续 T022 语音整机集成与布线审计 01a142a0-2945-7823-b9c2-868aa816a6f6 /root；按D053原目录接管失败旧板级01a14030-32d9-78f2-b274-91a370cc9ff0
+- 负责人：01a144c7-e802-7272-a29d-a8159f5ec84b /root T023；新聊天接续 D057/T023，当前主 01a14468-1741-70a2-aea6-757eb183382f
 - 分支：task/sc520-card-recognition
 - 基础提交：f609426044982c986b54e999866be9f4c1af2682
 - 开始时间：2026-10-10T19:31:42+08:00
-- 结束时间：2026-10-16 T022拒收分析与优化提案完成；软件阶段D055接受，物理未通过，等待主审核下一阶段
+- 结束时间：2026-10-16T23:12:12.445337+08:00；T023离线阶段完成待主审，T022拒收封存保持
 - 工作目录：E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition
+
+
+## D057/T023启动（2026-10-16）
+
+从干净9f670bc沿用原工作树和分支，接替失败01a144ae；当前主D059仅更新负责人，D057技术范围不变。已核恢复快照7628跟踪文件及763保护文件SHA。主库现行文档优先于旧工作树总文档；不重建原工程，不reset/stash/切分支，XYZ已由主解除。
+
+新增timing23局部候选：同capture_reset[0]驱动9个preserve第二级分区，原第二级保留；诊断原始坐标在N预译码、6行字符分组在N+1输出，单快照、六层N+5保持。只从本机TD6.2.1随附SWUG106第4.2.14确认preserve防合并，尚须实际网表确认。54拍ISP、音频冻结代码、时钟/例外与厂商DDR均保持。当前仅实现，仿真/物理待验证，禁止bitgen/下载。
+
+下一步：针对性复位/首帧/坏帧/停采/payload以及完整720p/四键/音频回归，然后独立新候选综合布局布线，复核全部ROM、原24链及新增复位链、四mailbox和四类全局时序。
+
+## T023软件验证完成（2026-10-16）
+
+当前51场景/28,685,263检查/0错误；render、pipeline、reset、business、default五组各完成正常、实际DUT输出注错和500ns提前停止，共15轮资格成功。注错均原生exit1/errors1/injected1；提前停止均exit2/done0/errors0，未当作正常功能通过。使用bundled Python `-B -X utf8 fpga/scripts/sc520-card-recognition/simulate-timing23.py --test render|pipeline|reset`，各组另带`--negative`、`--watchdog-probe`；business/default由`simulate-timing23-extended.py`同参数运行。完整原生命令、环境、输入快照和输出SHA保存在各run-manifest。
+
+复位新增不同相位释放、时钟停止时异步断言、原第二沿恢复、7个完整720p首帧、坏EOF/恢复、元数据错误及停采超时；检查5,196,083复位沿和103项业务/800位mailbox稳定性。第一次reset编译因任务引用变量声明顺序失败，修正测试声明位置后成功；失败目录timing23-reset-normal-20261016-211859-380c9162原样保留。
+
+`audit-timing23-validation.py`实际成功：872项当前引用、763项旧保护文件SHA一致，四组独立测试仅更名DUT/顶层。四幅720p逐像素一致；已目视核全部诊断行、Logo、原图/处理、计分与音频状态和红色失效诊断。原可选端口缺失告警保留说明，正常render零告警。入口`evidence/sc520-card-recognition/timing23/software-validation-v1.json`及`preview-v1/actual-0..3-timing23.png`。
+
+软件通过后RTL未变；随后新增综合复位拓扑审计和十条精确2ns一级至二级复位约束、专用时序报告，尚待实际TD执行。保持54拍、六层N+5、单800位快照、全部字形/256模板/四键/Logo/UART/队列和原厂DDR、时钟、既有例外。正式三个VERIFIED仍0、TRACKS空；测试profile独立。下一批启动唯一新run，仅综合及opt_route，不bitgen，实际检查保留属性和分区扇出后才布局。
+
+## T023综合与ROM阶段（2026-10-16）
+
+共享软件批次20261016-214833-sc520-timing23-939031和index/-Check成功后，实际执行`pwsh -File fpga/scripts/sc520-card-recognition/build-timing23.ps1 -RunId 6a50b230`；363输入哈希、105工程引用，syn_1原生exit0/新结束标记/阶段成功日志。`reset-synthesis.json`确认原一级及10个独立二级同D/clk/异步reset，preserve属性生效，各负载仅属约定分区；随后自动进入phy_1，当前布局布线中。只使用自身V映射和Hidden TD，XYZ不用，GUI不关闭。
+
+首份综合负载统计为226/197/2480/346/185/52/51/312/1816/2027；后续精确pin-role回读发现AL_MAP LUT的c是输入，场景支路应为2481而非2480（其余一致）。原始reset-synthesis.json保持；最终物理审计补充精确统计。这些是综合输入pin统计，不和旧物理2448fanout直接等同，也不能认定全局最大负载下降。
+
+执行`derive-timing23-rom-bindings.py .../6a50b230 --tag syn230-v1`最终成功：39绑定、102400旋转模板字、125独立bank/class BDD及640Logo选择真值。适配初次遇到新首层dy寄存别名，其后遇到解析器额外INIT=0；按实际Q/D、异步参数和一层时序关系补充1024行坐标真值证明后通过，未改RTL或构建快照。实际物理连接与时序仍待最终审计。
+
+新增`snapshot-timing23-coordinator.py`已对7份最新主文档与其登记SHA封存到coordinator230-v1；新增`audit-timing23-physical.py`准备按真实新run检查，尚未运行，不引用T022正向报告作为新资格。
+
+## T023最终离线时序交付（2026-10-16）
+
+状态：等待主对话审核。唯一6a50b230于22:27完成，syn/phy原生exit0、输入变化为空，V临时映射已按finally解除；XYZ和用户TD GUI保持。没有重跑已完成构建或软件测试，无bitgen/bit/下载操作。全球SWNS +0.102ns/STNS0、HWNS +0.020ns/HTNS0，覆盖96.36%；资源19163LUT6/21801REG/19870slice/107ERAM/22DSP，满足slice≤21216和ERAM≤108。
+
+本轮实际执行bundled Python `-B -X utf8 fpga/scripts/sc520-card-recognition/prove-timing23-address.py evidence/sc520-card-recognition/builds/6a50b230 --tag routed230-v1 --mode normal|negative|watchdog`，三轮资格均成功。正常16384行/475190检查/0错，注错475191检查/1错/native1，500ns早停49行/done0/native2。仅对新shape ROM实际复制的card_index[5/6/8]，使用未经修改的厂商FF/LUT/SCLK及十一独立输入叶证明共同复位后的局部Q行为；配置窗口未资格、无SDF或整个网表等价。
+
+`audit-timing23-physical.py .../6a50b230 --bindings .../rom-proofs/syn230-v1/bindings.json --address-proof-dir .../address-proofs/routed230-v1 --coordinator-review .../coordinator230-v1/review.json --output .../physical-audit-v2.json`实际exit0。15项独立审核全通过：39ROM、原24同步链、新增十路复位、四mailbox、I2C/音频、原时钟例外/正式零门控/测试配置、363构建输入、872软件引用、763保护及导入。首次v1的ROM地址别名和三份换行差异失败保留；只在新审计器使用本次网表/精确ROM/三alias专项证明与严格LF→CRLF转换，不改原构建文件。
+
+复位每条原始clk2q实际oqa/oqb已解码，同单元附带Q路径单独保留。十路物理源网扇出141/133/1415/237/98/31/29/179/1219/1354，各本Q路径均正；场景recovery +1.682ns，诊断最长源网9.173ns/recovery +0.183ns如实保留。不是把综合pin扇出或同LSLICE混合报告当本Q结果。
+
+历史源完整性：v1程序SHA保留，逆向重构未匹配，未伪造v1源码快照。最终v2程序将按其报告SHA原字节封存；完整v1/v2与大STA报告保留本地，新compact视图往返重构全部字段，仅去重复存储。封存入口timing23/validation-manifest-v1.json，说明hardware/sc520-card-recognition/timing23-validation.md。当前源码/测试/脚本及独立生成证据均属本任务，旧T022/0117/0116和主专属文档保持。
+
+未解决与建议主动作：请主按9f670bc之后增量审核本次离线时序/软件资格。正式三VERIFIED=0/TRACKS空，54拍、六层N+5、单800位诊断快照、31位业务音频快照、256模板、Logo、四键/计分、真实UART/队列、厂商DDR/时钟/旧例外不变。未知针位/电平/媒体曲号/BUSY、实物颜色和整机长测继续待验证，FullSystemTimingSignoff/HardwareValidated仍false。审核后由主决定后续正式配置和硬件阶段，本交付没有下载镜像。实际提交、finish-task/index检查与一次通知结果另以独立闭环批次登记。
+
+提交前的完整git diff --cached --check因厂商STA固有对齐空白及继承overlay空白返回2，没有修改其原始字节。另发现九份新overlay被Git默认转为LF；任务局部sc520-timing23/.gitattributes设置-text，仅保留已构建副本的原字节，不改RTL内容。源码/脚本和文档的定向空白检查及全部提交blob与工作字节核对随后执行；原构建/软件哈希不变。
 
 ## D054/D055：T022物理拒收交付（2026-10-16）
 

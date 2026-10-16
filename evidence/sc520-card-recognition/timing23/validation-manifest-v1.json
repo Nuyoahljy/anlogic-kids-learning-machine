@@ -1,0 +1,447 @@
+{
+  "At": "2026-10-16T23:10:40.371354+08:00",
+  "Owner": "01a144c7-e802-7272-a29d-a8159f5ec84b /root T023",
+  "Task": "D057/D059 T023",
+  "Status": "离线时序及资源审计通过，等待主对话审核；无下载镜像",
+  "BaseCommit": "9f670bc80f07ea178fa6a1787683bde7ca60b9d3",
+  "Run": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230",
+  "PhysicalAudit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\timing23\\physical-audit-v2.json",
+    "SHA256": "D7BCD37B246F91C39AD1D4EFCB099F8839514E39485CF2338DB72250255AEE81",
+    "Bytes": 37865191
+  },
+  "CompactPhysicalAudit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\timing23\\physical-audit-compact-v1.json",
+    "SHA256": "2D5656734273F3ED5C5793F831A2C2C15C31F7FE845C90B4CCC2AB81332962BC",
+    "Bytes": 16148524
+  },
+  "Software": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\timing23\\software-validation-v1.json",
+    "SHA256": "7A5489127CDF2F84915109983B2B72D03A8E455C5EF8D716BC898F8A5CF673F2",
+    "Bytes": 136727
+  },
+  "Start": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\timing23\\start.json",
+    "SHA256": "901A6CA787A70076771AE2F3DAF0411F2408344B588480F7278507027DAF60EA",
+    "Bytes": 248989
+  },
+  "Guide": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\hardware\\sc520-card-recognition\\timing23-validation.md",
+    "SHA256": "FDE516D9067A21514EB1680A99F2EC511B2DDC61349478D3927CD64873C43BF6",
+    "Bytes": 7880
+  },
+  "AuditorSource": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\timing23\\audit-source-v2\\audit-timing23-physical.py",
+    "SHA256": "CB8AC9701F50EFD3D3A3816E4E357024461426D11E024137385281C1CD841C68",
+    "Bytes": 26797
+  },
+  "HistoricalFailedAudit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\timing23\\physical-audit-v1.json",
+    "SHA256": "84535675A30D9CEB94BD10EB6FA938D942EA33C550EF35E5DC45B83CCF0CC7E8",
+    "Bytes": 17430267
+  },
+  "HistoricalProgramSHA256": "5ADA3EB56C8F1D4039F3EA0670BCC1657FACA1C46FB5D9344EB475525480C19C",
+  "HistoricalProgramSourceAvailable": false,
+  "HistoricalSourceLimitation": "The v1 program digest is retained. Exact reconstruction of its pre-line-ending-patch source did not match; current source is archived only as v2.",
+  "ReferencesChecked": 1198,
+  "ProtectedCount": 763,
+  "TimingNs": {
+    "SWNS": 0.102,
+    "STNS": 0.0,
+    "HWNS": 0.02,
+    "HTNS": 0.0
+  },
+  "Resources": {
+    "Used": {
+      "IO": 65,
+      "input": 8,
+      "output": 32,
+      "inout": 25,
+      "lut6": 19163,
+      "reg": 21801,
+      "slice reg": 21801,
+      "pad reg": 0,
+      "slice": 19870,
+      "used ram": 320,
+      "dram lut": 304,
+      "shifter lut": 16,
+      "used logic": 19550,
+      "with luts": 16079,
+      "with adder": 2764,
+      "reg only": 707,
+      "feedthrough": 2495,
+      "f7mux": 384,
+      "f8mux": 192,
+      "eram": 107,
+      "eram20k": 107,
+      "fifo20k": 0,
+      "dsp": 22,
+      "ddr_byte": 6,
+      "mipi_tx": 0,
+      "mipi_rx": 1,
+      "pad": 24,
+      "pll": 3,
+      "gclk": 8,
+      "lclk": 0,
+      "sclk": 18,
+      "mlclk": 2,
+      "ioclk": 4,
+      "1          1": 33870,
+      "2          2": 6366,
+      "3          3": 3265,
+      "4          4": 1345
+    },
+    "Available": {
+      "IO": 160,
+      "lut6": 21216,
+      "slice reg": 42432,
+      "slice": 21216,
+      "f7mux": 10608,
+      "f8mux": 5304,
+      "eram": 108,
+      "dsp": 40,
+      "ddr_byte": 12,
+      "mipi_tx": 2,
+      "mipi_rx": 2,
+      "pad": 160,
+      "pll": 6,
+      "gclk": 32,
+      "lclk": 12,
+      "sclk": 48,
+      "mlclk": 6,
+      "ioclk": 18
+    },
+    "OverCapacity": {}
+  },
+  "OriginalSynchronizerPairs": 24,
+  "AdditionalResetPairs": 10,
+  "DisplayLayers": 6,
+  "SampleToOutputEdges": 5,
+  "ISPPixelLatency": 54,
+  "DiagnosticSnapshotBits": 800,
+  "BusinessAudioSnapshotBits": 31,
+  "Preview": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\timing23\\preview-v1\\actual-0-timing23.png",
+      "SHA256": "E5047F897F373B2CB226810E90D1FA0ABDD30310E3E1F894B535B7BBE95D50AF",
+      "Bytes": 18572
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\timing23\\preview-v1\\actual-1-timing23.png",
+      "SHA256": "89DE9B1488940203C49D6AFC0FA43E6D2AD1E3A5EF276C498B9E9982CCCCC35F",
+      "Bytes": 18457
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\timing23\\preview-v1\\actual-2-timing23.png",
+      "SHA256": "7AE208C55055F0C40DE7962A561B800A76C527E9648AE450505E1D4AEEBFF835",
+      "Bytes": 17817
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\timing23\\preview-v1\\actual-3-timing23.png",
+      "SHA256": "C61C41D6C767883C3C01C3CE4051844639C9E5A2899D764289751D81C9FEA8CB",
+      "Bytes": 17918
+    }
+  ],
+  "BuildKeyReports": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\analysis-clocks.rpt",
+      "SHA256": "5C70BBA6656B05381A7C03085FFF9D7A24469D9DD7845685056CCB53BABB07BB",
+      "Bytes": 394
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\analysis-exceptions.rpt",
+      "SHA256": "E4DC2640D994E4D33FB63A7F861D4AE45206B6EEBDAC14FDEC8C2FD0D686F475",
+      "Bytes": 1125
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\analysis-ignored.rpt",
+      "SHA256": "6B550DEC7CC351364B04523F2461922092A5DD1120119E2AFB8DC28CE8EE9FFA",
+      "Bytes": 1090
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\audio-busy.rpt",
+      "SHA256": "688B14A8BED622366CEE13C929F30104B9FE819F99C92E0B2EBCAE2195BF82EE",
+      "Bytes": 17160
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\audio-inbound.rpt",
+      "SHA256": "AE242EF2A5F7845D088010C4F00568FF4F245F5F77DEFCCE20FC61B2A3AA00F1",
+      "Bytes": 29388507
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\audio-outbound.rpt",
+      "SHA256": "2E67B94926B7455AC8A8B6AADCBEE4B5C6667D8B7C6A69E1D2633B647538C8BC",
+      "Bytes": 32748102
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\audio-reset.rpt",
+      "SHA256": "266FCC766285C5E83D32ADAA992D3936F24C37D287F17A2E4FF336C3FA652331",
+      "Bytes": 16866
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\audio-rx.rpt",
+      "SHA256": "239431652B9D5F00A76CE78196BB2247924A2E14D04597707BAE8BAA25B866DB",
+      "Bytes": 17100
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\backward-ack.rpt",
+      "SHA256": "FDC0B8E08A48FCBC50C2386715937D297DC8DCFEFE3A5D6B9CABA6E70A19CBD0",
+      "Bytes": 17030
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\backward-req.rpt",
+      "SHA256": "BCC1C647042302D22A67D88D9E88EE8868CFC7DB7B4BBA49BEF4B8C4E579C83C",
+      "Bytes": 17454
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\color-ack.rpt",
+      "SHA256": "D9224740A3E4326EAE519319A4A80C0D9AF31C41F93297975896D0141C9F87C4",
+      "Bytes": 17852
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\color-req.rpt",
+      "SHA256": "F1A47AFD40BB253CE18728E0405F47090CC898E4E2F42E563C587FCD1F0649FB",
+      "Bytes": 17428
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\color-routing.rpt",
+      "SHA256": "D07454D8E7BEE2A1392D4CF5D5F83711F030EFE9C16C12DF6271E417D6FF5B9D",
+      "Bytes": 10177568
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\config-done.rpt",
+      "SHA256": "4114E2CD3CEEF6026D62F2FA558E4DF86FC9B9535D9C1D0A7B7409AB7BBF145A",
+      "Bytes": 17220
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\config-error.rpt",
+      "SHA256": "9F4E0110BB475A29060D74C201E75302FBB727DF23B46F4A7089C2AE78ED4DAF",
+      "Bytes": 17226
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\diagnostic-ack.rpt",
+      "SHA256": "84B2C3E14242E7A4D7EE2ECF32515FBE84F4347DF6C98C04F2DC6F445A777F0F",
+      "Bytes": 17292
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\diagnostic-req.rpt",
+      "SHA256": "F2685CFE2EC1AF7A4281968AD27718857EB6E91024369ABF3000D9073CB2789B",
+      "Bytes": 16868
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\diagnostic-routing.rpt",
+      "SHA256": "E1F3D1C7D88DD06A75CDBF857BDE1F73E64465DD9E8B2779E3AD2A752F7C73C4",
+      "Bytes": 2723113
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\forward-ack.rpt",
+      "SHA256": "4B307290E0BA4444B6D3B56182E8BA1F78B87B800DB8F47A9C31402C27A6EA10",
+      "Bytes": 17448
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\forward-req.rpt",
+      "SHA256": "99D2AB2DEBCE179C1253A56042442780119D51F8752F0CB2EA5BA97E1C022443",
+      "Bytes": 17012
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\i2c-ack.rpt",
+      "SHA256": "C7EADF64857FAA0DDB9F81F042DC3130EDBF0FD68C8B4FFFB7C90FF50E6D7BF7",
+      "Bytes": 16750
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\i2c-busy.rpt",
+      "SHA256": "96772EB44EEC8E9CF6E6FA220A9596B1622872F28E82AF6D227A9939D2547B4E",
+      "Bytes": 16716
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\i2c-core-inbound.rpt",
+      "SHA256": "109ED87D66ADD49DDE8DC649455E6C463174CC3C432B31996CFEF68433FF4AC5",
+      "Bytes": 6263006
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\i2c-core-outbound.rpt",
+      "SHA256": "2A7BA67E41BCB4553F523E3BB4B19BAF356AEAB663EB6D62C22ECA0AE7EA58BA",
+      "Bytes": 6129665
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\i2c-error.rpt",
+      "SHA256": "2916D34098460D0279D58685F5C545BF12901C09BC9BBF3EDA5FEBCBBA64D9D7",
+      "Bytes": 16734
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\i2c-req.rpt",
+      "SHA256": "66F9AAB109A5864C99EB873402CD30567F1B8779AE3D1B4DBAD09015B24A5069",
+      "Bytes": 16850
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\i2c-reset.rpt",
+      "SHA256": "4672F7493C88F5DEF2FD6E774B0F5550AD1F505C3C1F7D8C7C3B16866F2D5183",
+      "Bytes": 16876
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\i2c-routing.rpt",
+      "SHA256": "41DAFC4F12343D664ACDB8654E3A60B4F8FCC1BB1D744BFB069D83FCF839D683",
+      "Bytes": 653114
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\i2c-sda.rpt",
+      "SHA256": "FB5D09615E5D885112AD60DA5A4F27162D6A014C6378995B3553CF752C5463F7",
+      "Bytes": 16786
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\key-0.rpt",
+      "SHA256": "68E366AA63ED27E8848E77878FA971D360A36DA0D056871A5393B9F4B535771C",
+      "Bytes": 16970
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\key-1.rpt",
+      "SHA256": "42DDCB56522E4FCEA12C589B2A51566F56EA07D0BFE30B4B7AFE08FBEA825B3A",
+      "Bytes": 16970
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\key-2.rpt",
+      "SHA256": "CE166D42CE7F88627392B5AF250B3E8BAC049FA8AF9F0D73DF75EE6BD3786F3B",
+      "Bytes": 16970
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\key-3.rpt",
+      "SHA256": "A2A69090FDBDB0D39C3285E8265C9722E64A314B5F9ABEAFA7970D4B9FDAE8AE",
+      "Bytes": 16970
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\original-clocks.rpt",
+      "SHA256": "EC7AF450B1D22020B1B38DA05A906C6F8BA2EC1C3B99DDC67BC5490E3EE303F7",
+      "Bytes": 293
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\original-exceptions.rpt",
+      "SHA256": "B6AB7D93AFB704DD9DCD056C46549735D90C6E7FD14C8F69A32B2A1F386F0D1D",
+      "Bytes": 308833
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\original-ignored.rpt",
+      "SHA256": "8F116842087F0177B714F7556354E5BA76E7CBA7227C8EBFF4ABE83721A200D0",
+      "Bytes": 362677
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\payload-routing.rpt",
+      "SHA256": "FEE25134E0B690F50E192A2728A5E4882E14DF9D0D3638E508C6F3E5F4DDFADA",
+      "Bytes": 1827779
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\reset23-0-outbound.rpt",
+      "SHA256": "EA73EEB27BB3A5FE660EA7743EBB0ACF511F67524B54C8DE80EE4A4EC7D06809",
+      "Bytes": 10070162
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\reset23-0.rpt",
+      "SHA256": "EA5E29FAF2A0F08A657D0D0C6309B9D3E2CEB34B3D2EF9B666A252D7773A0EB0",
+      "Bytes": 17412
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\reset23-1-outbound.rpt",
+      "SHA256": "FD98AAB0C2BF474378EDD0FB8BA95C97459B34112A3BE752476D509B84D76648",
+      "Bytes": 20360785
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\reset23-1.rpt",
+      "SHA256": "EC7F0913F387318EDB720811347781F16A9546693C9AA210DD49887B0A6254DD",
+      "Bytes": 17430
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\reset23-2-outbound.rpt",
+      "SHA256": "E4D3C9F196CA1647379C49AC43C7612B458252F2781F6085C41CBF1AB6F77532",
+      "Bytes": 22969908
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\reset23-2.rpt",
+      "SHA256": "4499D41596282D5850D9679F872A93BB77DFC91AD696B520A1DCACDB4F74B036",
+      "Bytes": 17430
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\reset23-3-outbound.rpt",
+      "SHA256": "AA24CFBC586F9F2A041129500212B31124FE78DE0E09166FC002FA398564BA46",
+      "Bytes": 24048092
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\reset23-3.rpt",
+      "SHA256": "D1496F96CDABA292E992BD5644B22D83D1421DCA879D83C3BF1F76CF56F44404",
+      "Bytes": 17430
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\reset23-4-outbound.rpt",
+      "SHA256": "CE657AFA9C684C938FAA621A9CB6D2B5C00B9D2D465F42650EAFE3D25657498E",
+      "Bytes": 22969908
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\reset23-4.rpt",
+      "SHA256": "6312EF14A8622375643A00881C75D55E8278EDBC84A955276B2C5B8E0F36C572",
+      "Bytes": 17430
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\reset23-5-outbound.rpt",
+      "SHA256": "1A8560719E691C845C4F91E1440913C738276499D366B15F83B5F136F74F749D",
+      "Bytes": 470597
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\reset23-5.rpt",
+      "SHA256": "110EED1F762968BA016D0AFC8CAD66DEC211CAD66CD537F964A168428A4CD63C",
+      "Bytes": 17430
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\reset23-6-outbound.rpt",
+      "SHA256": "7D464CA29A71AAF945363C7DFFEF0CC8B6B31FCC49B9A84811639C3ECBDB1D96",
+      "Bytes": 3116975
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\reset23-6.rpt",
+      "SHA256": "4FDC98E613C2369B8EFB4FEA2C6E223002ADF82F7B9CE8D0C6D7262CB89D03AF",
+      "Bytes": 17430
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\reset23-7-outbound.rpt",
+      "SHA256": "7D464CA29A71AAF945363C7DFFEF0CC8B6B31FCC49B9A84811639C3ECBDB1D96",
+      "Bytes": 3116975
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\reset23-7.rpt",
+      "SHA256": "416E7189B8521719AAAC655D6C0E9CA09A284C2F4DE73CF7097052815AB84E68",
+      "Bytes": 17430
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\reset23-8-outbound.rpt",
+      "SHA256": "3F4E6D6FE36E5918B518B37F493DEF23086A88C3C3FBC545A10F265DF3947415",
+      "Bytes": 20360785
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\reset23-8.rpt",
+      "SHA256": "AB1FD18999D0F96D396EAE74D09DCA3E9FCAA866DDE487EA55DAED641BE3279C",
+      "Bytes": 17430
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\reset23-9-outbound.rpt",
+      "SHA256": "E618D4A12F2317762C92C49ABE1A3A7CF512973D02FC325B7BE1760D88146B1E",
+      "Bytes": 24048092
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\reset23-9.rpt",
+      "SHA256": "53FE59AFEC2B6FE2156B37DC3D90441AA3B178C0793818711D3BE48777360C20",
+      "Bytes": 17430
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b230\\analysis\\staging-fault.rpt",
+      "SHA256": "9AE0BA4AB33C9E229B52DC2FB4E2F12E476B0F29BFD252C8E3FA35249ED21072",
+      "Bytes": 17026
+    }
+  ],
+  "Program": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\seal-timing23.py",
+    "SHA256": "2C4DFE0F10E1D5016DF953609AAA453CD21032521AB8FE1265EE2299F14D0687",
+    "Bytes": 6791
+  },
+  "BitGenerationAllowed": false,
+  "Downloadable": false,
+  "HardwareValidated": false,
+  "FullSystemTimingSignoff": false,
+  "Limits": "Synthetic-profile offline probe only. All four timing classes and both TNS must pass. Partial checks cannot override failures. No bitgen, board, connector, voltage, external audio, media mapping, BUSY, optical correction or MTBF qualification."
+}
