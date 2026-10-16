@@ -1,0 +1,47 @@
+{
+  "At": "2026-10-16T11:24:40.1048534+08:00",
+  "Owner": "01a142a0-2945-7823-b9c2-868aa816a6f6 /root",
+  "Run": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\route220-v2",
+  "ObservedOutcome": "Interrupted; both original TD PID35888 and parent PID30524 absent, without native exit or completion",
+  "RootCauseProven": false,
+  "WindowsApplicationFaultEventsSince1100Observed": 0,
+  "MissingNativeResults": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\route220-v2\\result.json",
+      "Exists": false
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\route220-v2\\stages.json",
+      "Exists": false
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\route220-v2\\failure.json",
+      "Exists": false
+    }
+  ],
+  "Stdout": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\route220-v2\\phy_1.stdout.log",
+    "SHA256": "AF87263A41B20AD772D57863F7BA8B0019547611FD4A3599B4C6D03C83152912",
+    "LastWriteTime": "2026-10-16T11:07:17.2589622+08:00"
+  },
+  "Stderr": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\route220-v2\\phy_1.stderr.log",
+    "Bytes": 0
+  },
+  "RouteBeginExists": true,
+  "RouteEndExists": false,
+  "Subst": [
+    "X:\\: => E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b117",
+    "Y:\\: => E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b220",
+    "Z:\\: => E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\route220-v2"
+  ],
+  "SubstChanged": false,
+  "Gui": {
+    "PID": 28952,
+    "Title": "Anlogic TD 6.2.1",
+    "DependencyOnAliases": "Unresolved; keep existing X/Y/Z"
+  },
+  "RecoveryPlan": "New route220-v3 under this chat execution session, from qualified original 6a50b220 place.db; no synthesis/place rerun; no bitgen",
+  "NativeExitCode": null,
+  "HardwareValidated": false
+}

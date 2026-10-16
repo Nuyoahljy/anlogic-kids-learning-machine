@@ -1,0 +1,319 @@
+# set card_top tb_audio22_business
+# tb_audio22_business
+#  set card_sources [list {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/items14_content.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/items14_font_rom.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/items14_osd.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/items14_question_bank.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/items14_quiz_control.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/items14_result_join.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/items14_system.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/sc520_processing_display.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/sc520_color_classify.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/sc520_logo_pipeline.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/pixel17_display_request.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/pixel22_audio.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/pixel22_compositor.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/pixel22_content.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/pixel22_font_rom.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/pixel22_panel.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/dfr0534_items14_audio.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/dfr0534_link.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/dfr0534_player.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/dfr0534_player_core.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/dfr0534_track_map.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/t020_audio_queue.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/pixel14_color_diag_osd.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/dfr0534_uart_model.sv}]
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/items14_content.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/items14_font_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/items14_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/items14_question_bank.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/items14_quiz_control.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/items14_result_join.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/items14_system.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/sc520_processing_display.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/sc520_color_classify.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/sc520_logo_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/pixel17_display_request.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/pixel22_audio.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/pixel22_compositor.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/pixel22_content.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/pixel22_font_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/pixel22_panel.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/dfr0534_items14_audio.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/dfr0534_link.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/dfr0534_player.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/dfr0534_player_core.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/dfr0534_track_map.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/t020_audio_queue.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/pixel14_color_diag_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/dfr0534_uart_model.sv
+#  set card_tb {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/tb_audio22_business.sv}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/tb_audio22_business.sv
+#  set card_assets {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs
+#  set card_negative 0
+# 0
+#  set card_probe 0
+# 0
+#  source {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/run-audio22.do}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 00:30:04 on Oct 16,2026
+# vlog E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/items14_content.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/items14_font_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/items14_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/items14_question_bank.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/items14_quiz_control.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/items14_result_join.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/items14_system.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/sc520_processing_display.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/sc520_color_classify.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/sc520_logo_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/pixel17_display_request.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/pixel22_audio.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/pixel22_compositor.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/pixel22_content.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/pixel22_font_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/pixel22_panel.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/dfr0534_items14_audio.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/dfr0534_link.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/dfr0534_player.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/dfr0534_player_core.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/dfr0534_track_map.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/t020_audio_queue.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/pixel14_color_diag_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/dfr0534_uart_model.sv 
+# -- Compiling module items14_content
+# -- Compiling module items14_font_rom
+# -- Compiling module items14_osd
+# -- Compiling module items14_question_bank
+# -- Compiling module items14_quiz_control
+# -- Compiling module items14_result_join
+# -- Compiling module items14_system
+# -- Compiling module sc520_processing_display
+# -- Compiling module sc520_color_classify
+# -- Compiling module sc520_logo_pipeline
+# -- Compiling module pixel17_display_request
+# -- Compiling module pixel22_audio
+# -- Compiling module pixel22_compositor
+# -- Compiling module pixel22_content
+# -- Compiling module pixel22_font_rom
+# -- Compiling module pixel22_panel
+# -- Compiling module dfr0534_items14_audio
+# -- Compiling module dfr0534_link
+# -- Compiling module dfr0534_player
+# -- Compiling module dfr0534_player_core
+# -- Compiling module dfr0534_track_map
+# -- Compiling module t020_audio_queue
+# -- Compiling module pixel14_color_diag_osd
+# -- Compiling module dfr0534_uart_model
+# 
+# Top level modules:
+# 	items14_system
+# 	pixel17_display_request
+# 	pixel22_audio
+# 	pixel22_compositor
+# 	dfr0534_uart_model
+# End time: 00:30:04 on Oct 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 00:30:04 on Oct 16,2026
+# vlog -sv "+incdir+E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs" E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/tb_audio22_business.sv 
+# -- Compiling module tb_audio22_business
+# 
+# Top level modules:
+# 	tb_audio22_business
+# End time: 00:30:04 on Oct 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -wlf wave.wlf work.tb_audio22_business "+ASSET_ROOT=E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs" "+INJECT_FAULT=0" 
+# Start time: 00:30:04 on Oct 16,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "dfr0534_player_core(fast__1)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "dfr0534_link(fast)".
+# ** Note: (vopt-143) Recognized 3 FSMs in module "items14_quiz_control(fast)".
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_audio22_business(fast)
+# Loading work.items14_system(fast)
+# Loading work.items14_result_join(fast)
+# Loading work.items14_quiz_control(fast)
+# Loading work.items14_question_bank(fast)
+# Loading work.pixel22_audio(fast)
+# Loading work.dfr0534_items14_audio(fast)
+# Loading work.t020_audio_queue(fast)
+# Loading work.dfr0534_player(fast)
+# Loading work.dfr0534_track_map(fast)
+# Loading work.dfr0534_link(fast)
+# Loading work.dfr0534_player_core(fast)
+# Loading work.dfr0534_items14_audio(fast__1)
+# Loading work.t020_audio_queue(fast__1)
+# Loading work.dfr0534_player(fast__1)
+# Loading work.dfr0534_track_map(fast__1)
+# Loading work.dfr0534_player_core(fast__1)
+# Loading work.dfr0534_uart_model(fast)
+# Loading work.pixel17_display_request(fast)
+# Loading work.pixel22_compositor(fast)
+# Loading work.sc520_processing_display(fast)
+# Loading work.sc520_color_classify(fast)
+# Loading work.pixel22_panel(fast)
+# Loading work.pixel22_content(fast)
+# Loading work.pixel22_font_rom(fast)
+# Loading work.pixel14_color_diag_osd(fast)
+# Loading work.sc520_logo_pipeline(fast)
+# SCENARIO 1 default disabled and initializing state share the actual current renderer
+# SCENARIO 2 pre-init event queue + real explore dedup
+# UART t=84125468000 cmd=04 len=0 d=0000
+# UART t=90125464000 cmd=01 len=0 d=0000
+# UART t=100652540000 cmd=18 len=1 d=0200
+# UART t=105862954000 cmd=13 len=1 d=0800
+# UART t=113209824000 cmd=07 len=2 d=1201
+# UART t=119125445000 cmd=01 len=0 d=0000
+# UART t=130125438000 cmd=01 len=0 d=0000
+# UART t=141125431000 cmd=01 len=0 d=0000
+# UART t=152125424000 cmd=01 len=0 d=0000
+# UART t=163125417000 cmd=01 len=0 d=0000
+# SCENARIO 3 explore K3 display changes have no audio event or cancellation
+# SCENARIO 4 explicit replay uses07 and remains intentionally repeatable
+# UART t=183271238000 cmd=07 len=2 d=1201
+# UART t=189125400000 cmd=01 len=0 d=0000
+# UART t=200125393000 cmd=01 len=0 d=0000
+# UART t=211125386000 cmd=01 len=0 d=0000
+# UART t=222125379000 cmd=01 len=0 d=0000
+# UART t=233125372000 cmd=01 len=0 d=0000
+# UART t=246209739000 cmd=07 len=2 d=1201
+# UART t=252125360000 cmd=01 len=0 d=0000
+# UART t=263125353000 cmd=01 len=0 d=0000
+# UART t=274125346000 cmd=01 len=0 d=0000
+# UART t=285125339000 cmd=01 len=0 d=0000
+# UART t=296125332000 cmd=01 len=0 d=0000
+# SCENARIO 5 test source and revoked recognition cannot auto announce
+# SCENARIO 6 quiz question and early correct feedback obey audio drain
+# UART t=309209699000 cmd=07 len=2 d=120f
+# UART t=315125320000 cmd=01 len=0 d=0000
+# UART t=326125313000 cmd=01 len=0 d=0000
+# UART t=337125306000 cmd=01 len=0 d=0000
+# UART t=348125299000 cmd=01 len=0 d=0000
+# UART t=359125292000 cmd=01 len=0 d=0000
+# UART t=372209658000 cmd=07 len=2 d=121d
+# UART t=378125279000 cmd=01 len=0 d=0000
+# UART t=389125272000 cmd=01 len=0 d=0000
+# UART t=400125265000 cmd=01 len=0 d=0000
+# UART t=411125258000 cmd=01 len=0 d=0000
+# UART t=422125251000 cmd=01 len=0 d=0000
+# UART t=435209618000 cmd=07 len=2 d=1218
+# UART t=441125239000 cmd=01 len=0 d=0000
+# UART t=452125232000 cmd=01 len=0 d=0000
+# UART t=463125225000 cmd=01 len=0 d=0000
+# UART t=474125218000 cmd=01 len=0 d=0000
+# UART t=485125211000 cmd=01 len=0 d=0000
+# SCENARIO 7 wrong answer retries current target without score
+# UART t=498209578000 cmd=07 len=2 d=121e
+# UART t=504125199000 cmd=01 len=0 d=0000
+# UART t=515125192000 cmd=01 len=0 d=0000
+# UART t=526125185000 cmd=01 len=0 d=0000
+# UART t=537125178000 cmd=01 len=0 d=0000
+# UART t=548125171000 cmd=01 len=0 d=0000
+# SCENARIO 8 skip cancels playback then emits new target
+# UART t=561209537000 cmd=07 len=2 d=1218
+# UART t=565378285000 cmd=04 len=0 d=0000
+# UART t=571125156000 cmd=01 len=0 d=0000
+# UART t=584209523000 cmd=07 len=2 d=1210
+# UART t=590125144000 cmd=01 len=0 d=0000
+# UART t=601125137000 cmd=01 len=0 d=0000
+# UART t=612125130000 cmd=01 len=0 d=0000
+# UART t=623125123000 cmd=01 len=0 d=0000
+# UART t=634125116000 cmd=01 len=0 d=0000
+# SCENARIO 9 K4 cancels old context and queues reset prompt
+# UART t=647209482000 cmd=07 len=2 d=1210
+# UART t=651378230000 cmd=04 len=0 d=0000
+# UART t=657125101000 cmd=01 len=0 d=0000
+# UART t=670209468000 cmd=07 len=2 d=1222
+# UART t=676125089000 cmd=01 len=0 d=0000
+# UART t=687125082000 cmd=01 len=0 d=0000
+# UART t=698125075000 cmd=01 len=0 d=0000
+# UART t=709125068000 cmd=01 len=0 d=0000
+# UART t=720125061000 cmd=01 len=0 d=0000
+# SCENARIO 10 ten skipped questions reach completion slot34
+# UART t=733209427000 cmd=07 len=2 d=120f
+# UART t=739125048000 cmd=01 len=0 d=0000
+# UART t=750125041000 cmd=01 len=0 d=0000
+# UART t=761125034000 cmd=01 len=0 d=0000
+# UART t=772125027000 cmd=01 len=0 d=0000
+# UART t=783125020000 cmd=01 len=0 d=0000
+# UART t=796209387000 cmd=07 len=2 d=1218
+# UART t=802125008000 cmd=01 len=0 d=0000
+# UART t=813125001000 cmd=01 len=0 d=0000
+# UART t=824124994000 cmd=01 len=0 d=0000
+# UART t=835124987000 cmd=01 len=0 d=0000
+# UART t=846124980000 cmd=01 len=0 d=0000
+# UART t=859209347000 cmd=07 len=2 d=1210
+# UART t=865124968000 cmd=01 len=0 d=0000
+# UART t=876124961000 cmd=01 len=0 d=0000
+# UART t=887124954000 cmd=01 len=0 d=0000
+# UART t=898124947000 cmd=01 len=0 d=0000
+# UART t=909124940000 cmd=01 len=0 d=0000
+# UART t=922209306000 cmd=07 len=2 d=1219
+# UART t=928124927000 cmd=01 len=0 d=0000
+# UART t=939124920000 cmd=01 len=0 d=0000
+# UART t=950124913000 cmd=01 len=0 d=0000
+# UART t=961124906000 cmd=01 len=0 d=0000
+# UART t=972124899000 cmd=01 len=0 d=0000
+# UART t=985209266000 cmd=07 len=2 d=1211
+# UART t=991124887000 cmd=01 len=0 d=0000
+# UART t=1002124880000 cmd=01 len=0 d=0000
+# UART t=1013124873000 cmd=01 len=0 d=0000
+# UART t=1024124866000 cmd=01 len=0 d=0000
+# UART t=1035124859000 cmd=01 len=0 d=0000
+# UART t=1048209226000 cmd=07 len=2 d=121a
+# UART t=1054124847000 cmd=01 len=0 d=0000
+# UART t=1065124840000 cmd=01 len=0 d=0000
+# UART t=1076124833000 cmd=01 len=0 d=0000
+# UART t=1087124826000 cmd=01 len=0 d=0000
+# UART t=1098124819000 cmd=01 len=0 d=0000
+# UART t=1111209185000 cmd=07 len=2 d=1212
+# UART t=1117124807000 cmd=01 len=0 d=0000
+# UART t=1128124799000 cmd=01 len=0 d=0000
+# UART t=1139124792000 cmd=01 len=0 d=0000
+# UART t=1150124785000 cmd=01 len=0 d=0000
+# UART t=1161124778000 cmd=01 len=0 d=0000
+# UART t=1174209145000 cmd=07 len=2 d=121b
+# UART t=1180124766000 cmd=01 len=0 d=0000
+# UART t=1191124759000 cmd=01 len=0 d=0000
+# UART t=1202124752000 cmd=01 len=0 d=0000
+# UART t=1213124745000 cmd=01 len=0 d=0000
+# UART t=1224124738000 cmd=01 len=0 d=0000
+# UART t=1237209105000 cmd=07 len=2 d=1213
+# UART t=1243124726000 cmd=01 len=0 d=0000
+# UART t=1254124719000 cmd=01 len=0 d=0000
+# UART t=1265124712000 cmd=01 len=0 d=0000
+# UART t=1276124705000 cmd=01 len=0 d=0000
+# UART t=1287124698000 cmd=01 len=0 d=0000
+# UART t=1300209064000 cmd=07 len=2 d=121c
+# UART t=1306124686000 cmd=01 len=0 d=0000
+# UART t=1317124679000 cmd=01 len=0 d=0000
+# UART t=1328124671000 cmd=01 len=0 d=0000
+# UART t=1339124664000 cmd=01 len=0 d=0000
+# UART t=1350124657000 cmd=01 len=0 d=0000
+# UART t=1363209024000 cmd=07 len=2 d=1223
+# UART t=1369124645000 cmd=01 len=0 d=0000
+# UART t=1380124638000 cmd=01 len=0 d=0000
+# UART t=1391124631000 cmd=01 len=0 d=0000
+# UART t=1402124624000 cmd=01 len=0 d=0000
+# UART t=1413124617000 cmd=01 len=0 d=0000
+# SCENARIO 11 checksum fault cannot masquerade as curve end; K4 not recovery
+# UART t=1426208984000 cmd=07 len=2 d=1222
+# UART t=1432124605000 cmd=01 len=0 d=0000
+# UART t=1443124598000 cmd=01 len=0 d=0000
+# UART t=1454124591000 cmd=01 len=0 d=0000
+# UART t=1465124584000 cmd=01 len=0 d=0000
+# UART t=1476124577000 cmd=01 len=0 d=0000
+# UART t=1489208943000 cmd=07 len=2 d=120e
+# UART t=1495124565000 cmd=01 len=0 d=0000
+# UART t=1529123501000 cmd=04 len=0 d=0000
+# UART t=1637685932000 cmd=04 len=0 d=0000
+# UART t=1643685928000 cmd=01 len=0 d=0000
+# UART t=1654213004000 cmd=18 len=1 d=0200
+# UART t=1659423418000 cmd=13 len=1 d=0800
+# SCENARIO 12 late reply stays quarantined until reset
+# UART t=1666770288000 cmd=07 len=2 d=1207
+# UART t=1672685909000 cmd=01 len=0 d=0000
+# UART t=1706684846000 cmd=04 len=0 d=0000
+# UART t=1871695157000 cmd=04 len=0 d=0000
+# UART t=1877695153000 cmd=01 len=0 d=0000
+# UART t=1888222230000 cmd=18 len=1 d=0200
+# UART t=1893432643000 cmd=13 len=1 d=0800
+# SCENARIO 13 BUSY/status mismatch and missing response are bounded faults
+# UART t=1900779513000 cmd=07 len=2 d=1204
+# UART t=1906695135000 cmd=01 len=0 d=0000
+# UART t=1917695127000 cmd=01 len=0 d=0000
+# UART t=1928695120000 cmd=01 len=0 d=0000
+# UART t=1939695113000 cmd=01 len=0 d=0000
+# UART t=1950695106000 cmd=01 len=0 d=0000
+# UART t=1961695099000 cmd=01 len=0 d=0000
+# UART t=1972695092000 cmd=01 len=0 d=0000
+# UART t=1983695085000 cmd=01 len=0 d=0000
+# UART t=1994695078000 cmd=01 len=0 d=0000
+# UART t=2005695071000 cmd=01 len=0 d=0000
+# UART t=2016695064000 cmd=01 len=0 d=0000
+# UART t=2027695057000 cmd=01 len=0 d=0000
+# UART t=2118704374000 cmd=04 len=0 d=0000
+# UART t=2124704370000 cmd=01 len=0 d=0000
+# UART t=2135231447000 cmd=18 len=1 d=0200
+# UART t=2140441860000 cmd=13 len=1 d=0800
+# UART t=2147788730000 cmd=07 len=2 d=1205
+# UART t=2153704351000 cmd=01 len=0 d=0000
+# UART t=2267713653000 cmd=04 len=0 d=0000
+# UART t=2273713650000 cmd=01 len=0 d=0000
+# UART t=2284240726000 cmd=18 len=1 d=0200
+# UART t=2289451140000 cmd=13 len=1 d=0800
+# SCENARIO 14 warm reset stops a still-playing physical module
+# UART t=2296798010000 cmd=07 len=2 d=1206
+# UART t=2380923998000 cmd=04 len=0 d=0000
+# UART t=2386923994000 cmd=01 len=0 d=0000
+# UART t=2397451070000 cmd=18 len=1 d=0200
+# UART t=2402661484000 cmd=13 len=1 d=0800
+# SCENARIO 15 wrong join tags revoke recognition and cannot score
+# UART t=2486891638000 cmd=04 len=0 d=0000
+# UART t=2492891634000 cmd=01 len=0 d=0000
+# UART t=2503418711000 cmd=18 len=1 d=0200
+# UART t=2508629124000 cmd=13 len=1 d=0800
+# SCENARIO 16 wrong response tag cannot complete the current request
+# FAIL business response tag belongs to accepted transaction time=2509778081000
+# UART t=2515975995000 cmd=07 len=2 d=1201
+# UART t=2521891616000 cmd=01 len=0 d=0000
+# UART t=2532891609000 cmd=01 len=0 d=0000
+# UART t=2543891602000 cmd=01 len=0 d=0000
+# UART t=2554891595000 cmd=01 len=0 d=0000
+# UART t=2565891588000 cmd=01 len=0 d=0000
+# SCENARIO 17 full queue is a sticky fault, K4 leaves player reset released
+# ** Fatal: UART_MODEL AA header at 2573767624000
+#    Time: 2573767624257 ps  Scope: tb_audio22_business.peripheral.check File: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/dfr0534_uart_model.sv Line: 24
+# ** Note: $finish    : E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/dfr0534_uart_model.sv(24)
+#    Time: 2573767624257 ps  Iteration: 0  Instance: /tb_audio22_business/peripheral
+# Break in Task check at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/dfr0534_uart_model.sv line 24
+# Stopped at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-card-recognition/evidence/sc520-card-recognition/runs/audio22-business-normal-20261016-003001-720f482d/inputs/dfr0534_uart_model.sv line 24
+# End time: 00:30:08 on Oct 16,2026, Elapsed time: 0:00:04
+# Errors: 1, Warnings: 0
