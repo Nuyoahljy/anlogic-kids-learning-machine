@@ -6,7 +6,9 @@ BASE='fe5173964657dacc9c6723fe00e7ed5975901462'
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest().upper()
 def git(*a):return subprocess.check_output(['git',*a],cwd=ROOT)
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--output',required=True,type=Path);a=ap.parse_args();assert not a.output.exists()
+    ap=argparse.ArgumentParser();ap.add_argument('--output',required=True,type=Path)
+    ap.add_argument('--manifest',type=Path,default=E/'audio22/integration-manifest-v1.json')
+    a=ap.parse_args();assert not a.output.exists()
     commit=git('rev-parse','HEAD').decode().strip();assert commit!=BASE
     assert not git('status','--porcelain').strip(),'Task worktree is not clean'
     existing=git('diff','--diff-filter=MD','--name-only',BASE,commit).decode().splitlines()
@@ -23,7 +25,8 @@ def main():
             normalized.append(row)
     start=json.loads((E/'audio22/start.json').read_text(encoding='utf-8-sig'))
     for x in start['Protected']+start['Imports']:assert sha(x['Path'])==x['SHA256'],x['Path']
-    manifest=json.loads((E/'audio22/integration-manifest-v1.json').read_text(encoding='utf-8-sig'))
+    manifest=json.loads(a.manifest.read_text(encoding='utf-8-sig'))
+    assert manifest['Downloadable'] is False and manifest['BitGenerationAllowed'] is False
     def check(x):
         if isinstance(x,dict):
             if 'Path' in x and 'SHA256' in x:assert sha(x['Path'])==x['SHA256'],x['Path']
@@ -37,7 +40,9 @@ def main():
         if x.get('Snapshot'):assert sha(x['Snapshot'])==x['SnapshotSHA256'],x['Snapshot']
     assert not list(run.rglob('*.bit')) and not list((ROOT/'fpga/custom_project/sc520-audio22').rglob('*.bit'))
     result={'At':datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).isoformat(),'Commit':commit,'Base':BASE,
-        'Qualified':True,'ExactFiles':exact,'CRLFOnlyFiles':normalized,'ExistingSourceFilesModified':[],
+        'Qualified':True,'VerificationScope':'Git and evidence byte identity only; no physical qualification',
+        'ManifestStatus':manifest['Status'],'ManifestPath':str(a.manifest.resolve()),'ManifestSHA256':sha(a.manifest),
+        'ExactFiles':exact,'CRLFOnlyFiles':normalized,'ExistingSourceFilesModified':[],
         'ProtectedCount':len(start['Protected']),'InputsChecked':len(inputs['Files']),'HardwareValidated':False,'BitFilesFound':[]}
     with a.output.open('x',encoding='utf-8') as f:json.dump(result,f,ensure_ascii=False,indent=2);f.write('\n')
     print(json.dumps({'Commit':commit,'Exact':len(exact),'CRLFOnly':len(normalized),'Protected':len(start['Protected']),'Inputs':len(inputs['Files'])}))

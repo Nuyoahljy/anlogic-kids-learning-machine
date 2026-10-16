@@ -1,0 +1,22 @@
+{
+  "At": "2026-10-16T19:02:57.1064811+08:00",
+  "Command": [
+    "-B",
+    "-X",
+    "utf8",
+    "fpga/scripts/sc520-card-recognition/audit-audio22-probe.py",
+    "evidence/sc520-card-recognition/builds/route220-v3",
+    "--bindings",
+    "evidence/sc520-card-recognition/audio22/rom-proofs/220-v1/bindings.json",
+    "--coordinator-review",
+    "evidence/sc520-card-recognition/audio22/coordinator220-v2/review.json",
+    "--software",
+    "evidence/sc520-card-recognition/audio22/software-validation-v2.json",
+    "--output",
+    "evidence/sc520-card-recognition/audio22/probe-audit-v1.json"
+  ],
+  "NativeExitCode": 1,
+  "Output": "evidence/sc520-card-recognition/audio22/probe-audit-v1.json",
+  "OutputExists": false,
+  "LogSHA256": "5884EB8251DED9BAF51EF6C894C667BB21C4AFB8710FE8A190920EA67889C6CC"
+}

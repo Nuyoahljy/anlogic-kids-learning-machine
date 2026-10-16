@@ -1,0 +1,187 @@
+{
+  "At": "2026-10-16T19:29:05.081993+08:00",
+  "Owner": "01a142a0-2945-7823-b9c2-868aa816a6f6 /root",
+  "MainThread": "01a14468-1741-70a2-aea6-757eb183382f",
+  "Task": "D051/T022",
+  "Status": "物理拒收分析完成，等待主审核保功能优化提案；D055仅软件阶段接受",
+  "Run": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\route220-v3",
+  "BaseCommit": "fe5173964657dacc9c6723fe00e7ed5975901462",
+  "SourceSoftwareCommit": "e8466e2faf8abebc2ca645d5334a9ff56a81e36b",
+  "AudioSourceCommit": "3287af4ad8943e43f2dcd0d13c7b253dffd7e4b3",
+  "ProbeQualified": false,
+  "Downloadable": false,
+  "BitGenerationAllowed": false,
+  "HardwareValidated": false,
+  "FullSystemTimingSignoff": false,
+  "BitFilesFound": [],
+  "Audit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\audio22\\probe-rejection-v2.json",
+    "SHA256": "D1F5D9992CF3EB80E59E91DA96913009EFA4614E209C904BE15CB92DD1F46C45",
+    "Bytes": 6570567
+  },
+  "Software": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\audio22\\software-validation-v2.json",
+    "SHA256": "EBC2665F23B07DA0EF60FF77DCDAF100BC2A0E4AF0305DC193A53E90EA87CD74",
+    "Bytes": 90987
+  },
+  "Guide": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\hardware\\sc520-card-recognition\\audio22-integration.md",
+    "SHA256": "123838F078052239723477AEC4C1B52E04CDD9857185967A2198EE48A6D7861D",
+    "Bytes": 11479
+  },
+  "Proposal": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\hardware\\sc520-card-recognition\\audio22-timing-proposal.md",
+    "SHA256": "1B45A93BAEE8C3BDF80E0631F03BD7D4663921D360E6C8AA890C7CA3AED7A17E",
+    "Bytes": 7204
+  },
+  "Coordinator": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\audio22\\coordinator220-v3\\review.json",
+    "SHA256": "AA08170B12209129C1B39CCF8993BAB2E3CBD9FBD6088B6A380B895E649E9DF4",
+    "Bytes": 4716
+  },
+  "SerializationCheck": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\audio22\\recovery-serialization-check-v1.json",
+    "SHA256": "26751E2D2611C3ABDD248E82075DBAF87F504283E6E14B58340BDA166FB2671B",
+    "Bytes": 1531
+  },
+  "NativeResult": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\route220-v3\\result.json",
+    "SHA256": "D615C8A6A2529F62A04690C49EA699DC3BFFA0CEB70117D889D2403DCFB7A790",
+    "Bytes": 1697
+  },
+  "NativeStages": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\route220-v3\\stages.json",
+    "SHA256": "D23BAE1C2B801B3426747008CE68FFF16310A59A31B9AF5550FAEB6F1F2FB8A7",
+    "Bytes": 1094
+  },
+  "Recovery": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\route220-v3\\resume.json",
+    "SHA256": "3DD02C21B9B3EF30AC0F943A70B87D9E3D9B6D6873EA32C8F72C34B5AB56CC9A",
+    "Bytes": 43724
+  },
+  "TimingNs": {
+    "SWNS": -2.045,
+    "STNS": -1617.371,
+    "HWNS": 0.02,
+    "HTNS": 0.0
+  },
+  "Resources": {
+    "Used": {
+      "IO": 65,
+      "input": 8,
+      "output": 32,
+      "inout": 25,
+      "lut6": 19144,
+      "reg": 21592,
+      "slice reg": 21592,
+      "pad reg": 0,
+      "slice": 19686,
+      "used ram": 320,
+      "dram lut": 304,
+      "shifter lut": 16,
+      "used logic": 19366,
+      "with luts": 16055,
+      "with adder": 2769,
+      "reg only": 542,
+      "feedthrough": 2699,
+      "f7mux": 384,
+      "f8mux": 192,
+      "eram": 107,
+      "eram20k": 107,
+      "fifo20k": 0,
+      "dsp": 22,
+      "ddr_byte": 6,
+      "mipi_tx": 0,
+      "mipi_rx": 1,
+      "pad": 24,
+      "pll": 3,
+      "gclk": 8,
+      "lclk": 0,
+      "sclk": 20,
+      "mlclk": 2,
+      "ioclk": 4,
+      "1          1": 33665,
+      "2          2": 6386,
+      "3          3": 3154,
+      "4          4": 1366
+    },
+    "Available": {
+      "IO": 160,
+      "lut6": 21216,
+      "slice reg": 42432,
+      "slice": 21216,
+      "f7mux": 10608,
+      "f8mux": 5304,
+      "eram": 108,
+      "dsp": 40,
+      "ddr_byte": 12,
+      "mipi_tx": 2,
+      "mipi_rx": 2,
+      "pad": 160,
+      "pll": 6,
+      "gclk": 32,
+      "lclk": 12,
+      "sclk": 48,
+      "mlclk": 6,
+      "ioclk": 18
+    },
+    "OverCapacity": {}
+  },
+  "ResourceDeltaFrom0117": {
+    "lut6": 672,
+    "reg": 428,
+    "slice": 620,
+    "eram": 0,
+    "dsp": 0
+  },
+  "IndependentChecksPassed": [
+    "RoutedROMs",
+    "Inputs",
+    "ProfileAndConstraints",
+    "RecoveryCopies",
+    "CoordinatorAndLegacyProtection",
+    "Legacy17SynchronizersAndThreeMailboxes",
+    "ColorMailboxAndTwoSynchronizers",
+    "I2CTwoSynchronizers",
+    "I2CClockAndAllReportedPaths",
+    "AudioClockThreeSynchronizersAndAllReportedPaths",
+    "ProtectedFilesAndImports",
+    "SoftwareRawEvidence",
+    "I2CClassificationAndTemplatesUnchanged"
+  ],
+  "TotalSynchronizerPairs": 24,
+  "AudioCells": 272,
+  "AudioPathCount": 7142,
+  "MailboxBits": {
+    "business": 80,
+    "diagnostic": 106,
+    "i2c": 28,
+    "color": 762
+  },
+  "HardwareDefault": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\audio22\\hardware-default.json",
+    "SHA256": "8D26D6D4A32D5A19A4F11579A58115F0D306BDF006AEBBAFC8B88C6C07BC89A9",
+    "Bytes": 213
+  },
+  "SyntheticTestProfile": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\assets\\templates\\sc520-card-recognition\\audio22\\offline-test.json",
+    "SHA256": "5CE46AD71F425ADFDFBBF6F16C056B1465D9148172417F812180632A518B5435",
+    "Bytes": 596
+  },
+  "ObservedSubst": [
+    "X:\\: => E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b117",
+    "Y:\\: => E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b220",
+    "Z:\\: => E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\route220-v2"
+  ],
+  "ObservedTDProcesses": [
+    {
+      "ProcessId": 28952,
+      "Name": "td.exe",
+      "CommandLine": "\"D:\\Anlogic\\TD_6.2.1_Engineer_6.2.168.116\\bin\\td.exe\" TD_6.2.1_Engineer6.2.168.116"
+    }
+  ],
+  "WMappingPresent": false,
+  "OtherMappingsChangedByThisChat": false,
+  "MappingLimit": "X/Y/Z retained: GUI28952 project dependency unresolved; no real directory deletion",
+  "Limits": "Independent passing checks do not waive global violations. No clock/exception change, bitgen, board qualification, physical track mapping, connector or external audio timing approval."
+}

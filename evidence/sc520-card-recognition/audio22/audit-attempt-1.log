@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "E:\juan\FPGA\worktrees\anlogic-kids-learning-machine\sc520-card-recognition\fpga\scripts\sc520-card-recognition\audit-audio22-probe.py", line 165, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "E:\juan\FPGA\worktrees\anlogic-kids-learning-machine\sc520-card-recognition\fpga\scripts\sc520-card-recognition\audit-audio22-probe.py", line 146, in main
+    report=observation.audit(run,json.loads(base.read(a.bindings)),a.coordinator_review)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\juan\FPGA\worktrees\anlogic-kids-learning-machine\sc520-card-recognition\fpga\custom_project\sc520-pixel14\tools\audit-observation-candidate.py", line 85, in audit
+    result=base.audit_build(run,'scene',bindings,False);assert result['BaseQualified']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\juan\FPGA\worktrees\anlogic-kids-learning-machine\sc520-card-recognition\fpga\scripts\sc520-card-recognition\audit-audio22-probe.py", line 92, in probe_build
+    assert metrics['SWNS']>=0 and metrics['HWNS']>=0 and metrics['STNS']==metrics['HTNS']==0,metrics
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'SWNS': -2.045, 'STNS': -1617.371, 'HWNS': 0.02, 'HTNS': 0.0}

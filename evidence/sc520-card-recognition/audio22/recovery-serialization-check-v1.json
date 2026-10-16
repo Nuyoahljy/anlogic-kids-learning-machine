@@ -1,0 +1,41 @@
+{
+  "At": "2026-10-16T19:15:09.405934+08:00",
+  "Program": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\fpga\\scripts\\sc520-card-recognition\\audit-audio22-probe.py",
+    "Bytes": 15987,
+    "SHA256": "460AAE8F4170BB2DD6AC3EAED271287AA3A79C9D27EEBA1B45985FB28FD8DA4C"
+  },
+  "ExactNativeStageEquivalent": true,
+  "PermittedAdjustments": [
+    {
+      "Field": "FinishedAtUtc",
+      "Original": "2026-10-15T16:28:50.3547570Z",
+      "Reserialized": "2026-10-15T16:28:50.354757Z"
+    }
+  ],
+  "RejectedMutations": [
+    "100ns difference",
+    "PID change",
+    "extra field"
+  ],
+  "Recovery": {
+    "Recovery": {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\route220-v3\\resume.json",
+      "Bytes": 43724,
+      "SHA256": "3DD02C21B9B3EF30AC0F943A70B87D9E3D9B6D6873EA32C8F72C34B5AB56CC9A"
+    },
+    "InheritedPlacement": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-card-recognition\\evidence\\sc520-card-recognition\\builds\\6a50b220",
+    "SynthesisReexecuted": false,
+    "PlacementReexecuted": false,
+    "RecoveryFilesChecked": 86,
+    "OriginalSingleStageObject": true,
+    "ExactUtcSerializationAdjustments": [
+      {
+        "Field": "FinishedAtUtc",
+        "Original": "2026-10-15T16:28:50.3547570Z",
+        "Reserialized": "2026-10-15T16:28:50.354757Z"
+      }
+    ]
+  },
+  "TimingCriteriaChanged": false
+}

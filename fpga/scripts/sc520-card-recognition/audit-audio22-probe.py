@@ -52,6 +52,22 @@ def profile_review(run):
     assert extra==expected_constraints,extra
     return {'Profiles':[base.artifact(p) for p in paths],'HardwareDefaultDisabled':True,'SyntheticTestMappingOnly':True,'TopProfileTransformationChecked':True,
             'OriginalVideoConstraintsPreserved':True,'ExactAddedAudioConstraints':extra,'ExternalAudioTimingInvented':False}
+def inherited_stage_identity(expected,actual):
+    assert set(expected)==set(actual),'Inherited stage fields changed'
+    adjusted=[]
+    for key,value in expected.items():
+        if value==actual[key]:continue
+        assert key in ('StartedAtUtc','FinishedAtUtc'),('Inherited stage changed',key)
+        def precise_utc(text):
+            m=re.fullmatch(r'(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})(?:\.(\d{1,7}))?Z',text)
+            assert m,('Not an exact UTC timestamp',text)
+            return m[1],(m[2] or '').rstrip('0')
+        # ConvertFrom-Json/ConvertTo-Json can trim fractional trailing zeros.
+        # Compare the exact decimal instant; never truncate 100ns precision.
+        assert precise_utc(value)==precise_utc(actual[key]),('Inherited timestamp changed',key)
+        adjusted.append({'Field':key,'Original':value,'Reserialized':actual[key]})
+    return adjusted
+
 def recovery_review(run):
     path=run/'resume.json'
     if not path.exists():return {}
@@ -73,10 +89,14 @@ def recovery_review(run):
     assert not (phy/'.opt_place.begin.f').exists() and not (parent/'result.json').exists()
     assert base.sha(run/'inputs.json')==base.sha(parent/'inputs.json')
     inherited=json.loads(base.read(parent/'stages.json'))
+    single_object=isinstance(inherited,dict)
+    if single_object:inherited=[inherited]
     actual=json.loads(base.read(run/'stages.json'))
-    assert len(inherited)==1 and inherited[0]==actual[0] and inherited[0]['ExitCode']==0
+    assert len(inherited)==1 and len(actual)==2 and inherited[0]['Stage']=='syn_1' and inherited[0]['ExitCode']==0
+    serialization=inherited_stage_identity(inherited[0],actual[0])
     return {'Recovery':base.artifact(path),'InheritedPlacement':str(parent),'SynthesisReexecuted':False,
-            'PlacementReexecuted':False,'RecoveryFilesChecked':len(r['CopiedFiles'])}
+            'PlacementReexecuted':False,'RecoveryFilesChecked':len(r['CopiedFiles']),
+            'OriginalSingleStageObject':single_object,'ExactUtcSerializationAdjustments':serialization}
 def probe_build(run,profile,bindings,historical):
     assert not historical
     result=json.loads(base.read(run/'result.json'));assert not result['ChangedInputs'] and result['TestOnly'] and not result['BitGenerationAllowed']
