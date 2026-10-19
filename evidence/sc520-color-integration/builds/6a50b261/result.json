@@ -1,0 +1,31 @@
+{
+  "FinishedAtUtc": "2026-10-19T04:42:45.6799008Z",
+  "Stages": [
+    {
+      "Stage": "syn_1",
+      "PID": 29740,
+      "ExitCode": 0,
+      "StartedAtUtc": "2026-10-19T04:21:23.5508818Z",
+      "FinishedAtUtc": "2026-10-19T04:26:39.3578937Z",
+      "MarkerFresh": true,
+      "Stdout": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b261\\syn_1.stdout.log",
+      "Stderr": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b261\\syn_1.stderr.log"
+    },
+    {
+      "Stage": "phy_1",
+      "PID": 29196,
+      "ExitCode": 0,
+      "StartedAtUtc": "2026-10-19T04:26:41.1555535Z",
+      "FinishedAtUtc": "2026-10-19T04:42:45.5596965Z",
+      "MarkerFresh": true,
+      "Stdout": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b261\\phy_1.stdout.log",
+      "Stderr": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b261\\phy_1.stderr.log"
+    }
+  ],
+  "ChangedInputs": [],
+  "BitGenerationAllowed": false,
+  "BitFilesFound": [],
+  "TestOnly": false,
+  "HardwareValidated": false,
+  "TimingQualified": false
+}

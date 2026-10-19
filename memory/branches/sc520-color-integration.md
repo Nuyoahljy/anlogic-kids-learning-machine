@@ -1,7 +1,7 @@
 # T026 固定颜色参数整机集成
 
-- 状态：进行中。
-- 负责人：主聊天 01a15235-d7ad-7531-b390-c5fd0941eea0 的唯一实现代理 /root/color26_impl。
+- 状态：等待主对话审核
+- 负责人：接续主聊天的唯一收尾代理 /root/color26_delivery_finish；接替已停止的 /root/color26_impl_resume，仅负责交付文档、工具与证据，不改冻结生产源。原主01a15235作为历史。
 - 工作树：E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration；分支 task/sc520-color-integration；基础 c04530c。
 - 用户授权：2026-10-19 接续主对话断点，将曝光1800、gain索引144、WB304/256/333、tone1、现场三色规则接入独立正式候选；显示相机底图饱和度×1.25。
 - 最新主 D075 决定优先于工作树旧总文档；本代理不修改主专属文档。
@@ -91,3 +91,37 @@
 新增D0261 SRAM步骤草案和显式主批准JSON门控的generate-color26-bit.py；只执行--help，未bitgen。正式语音未配置、不暴露未核音频pad，用户只SRAM步骤另等主。software-v2.json保持软件结论，不回写物理通过。
 
 非构建fixture生成器修为每次从原timing23 TB派生，避免重复在已派生TB插入oracle；未运行生成器覆盖现有测试输入，不影响冻结生产源/261。
+
+## 软件源码Git检查点
+
+已提交9c550baec978e68c836f6589c439eca950844e46：214新增文件，仅本任务范围，原c04530c已跟踪文件没有修改/删除。提交包括失败历史、独立候选源和软件证据；不是物理/bit放行。verify-color26-checkpoint.py逐字回读新候选源Git blob与261源/快照记录；结果见checkpoint-source-review.json。261原生布局布线继续，后续物理/bit证据另批提交。
+
+## 2026-10-19 13:09 接手中断产物
+
+本轮由主指定 /root/color26_impl_resume 接替唯一实现归属，沿用task/sc520-color-integration、HEAD9c550ba，不新建工作树。已重读根入口/规则/索引、主D075/D076及当日协调、工作树旧规则/记忆/接口与本日志。工作树总文档仍是旧初始化快照，当前范围以主D076及本轮接续派发为准，不回写主专属文档。
+
+接手已有未提交内容为261 stages.json、result.json，SRAM草案漏检取证段、本日志检查点段及verify-color26-checkpoint.py。checkpoint-source-review.json实际于12:30:48产生，SHA256为08859073837F6E9F5E47B1C953CCA9181E805A07219734AA641623438FD401F5；历史记录已经登记它，本轮不伪称新生成或覆写。仅修核验脚本为已存在时比较语义而不写入，并同时核对全部388当前输入及快照。生产RTL、工程约束与冻结输入清单保持，后续执行结果另列。
+
+261阶段记录显示syn_1 PID29740于12:26:39原生0，phy_1 PID29196于12:42:45原生0，ChangedInputs为空、没有bit。主已亲读报告头+0.107/+0.010ns双TNS0；这不替代独立ROM/CDC/全物理主审。未重跑TD、bitgen、下载或Flash，build result中的TimingQualified=false保持为生成器当时未签核状态。
+
+generate-color26-bit.py已读：须Stage=bitgen_approved、ApprovedBy、Purpose=SRAM validation only、HardwareValidated=false，并核RouteDatabase/BuildInputs/SoftwareReview/PhysicalReview四SHA和全部当前源/快照；输出目录必须不存在。收到主绑定SHA批准前不执行。主审后具体命令为python -B -X utf8 fpga/scripts/sc520-card-recognition/generate-color26-bit.py --approval <主提供绝对JSON路径> --output <本树evidence/sc520-color-integration/下新目录>。三VERIFIED0/空TRACKS及音频外部隔离保持，实板背景/位置/光照仍待验证。
+
+13:10实际执行python -B -X utf8 fpga/scripts/sc520-card-recognition/verify-color26-checkpoint.py，原生0：24任务生产源Git blob、388当前输入、74源快照均吻合；已有checkpoint结果仅校验不覆写，前后SHA保持。inputs.json SHA仍为99CE59144021DC9FAA26F554850F0CCC530A1D816BC3467085A3B17C12EA5486。git diff HEAD -- fpga/rtl fpga/custom_project为空；c04530c..HEAD的既有文件M/D/R为空。真实结果保存在resume-verification-20261019-131003.json。全树git diff --check只因原生stages.json的CRLF报空白，原产物不为格式化而改写；人工文件定向检查另执行。下一步等待独立物理结果和绑定SHA的主批准，当前无bitgen资格。
+
+## D077 离线接受与 v4 唯一交付收尾（2026-10-19）
+
+本节为当前状态，上文“物理待审核”“禁止bitgen”和“未生成bit”为原时点历史。主已实际执行 software-v2、固定261和bit身份复核，并接受离线阶段；当前收尾文件等待主对话审核，现场尚未验证，未合并稳定基线。
+
+主批准为共享 learning/sc520-color-integration/main-review/final-261-20261019/bitgen-approval.json，限定从 SHA3A95B2E4A0C801703D5A498F161267F5D560328DC934F7BE0E0B867308001CC1 的原路由DB生成SRAM测试bit；不授权重构建、下载或Flash。原生构建 result 中 TimingQualified=false/BitGenerationAllowed=false 是生成器12:42:45当时未签核的历史状态，保持原字节；当前接受由独立主审核提供，不回写原报告。
+
+旧实现先后实际生成四个目录。v1启动路径反斜杠导致脚本未执行，无bit；v2工具原生0且旧包装Complete=true，但原始stdout含8条PRJ-9210 ERROR，明确拒收；v3工程cwd修正后仍有6条MAX_PATH相关PRJ ERROR，拒收。v4临时subst共同worktrees父目录，保留fixed-roi与本树相对关系，原生0、无ERROR、stderr空、实际导入原DB和完成marker；finally解除本任务V盘。前三次结果和bit保留为历史，绝不覆盖、升级为合格或交付。
+
+唯一bit为 evidence/sc520-color-integration/bitgen-d0261-v4/sc520-d0261.bit，1789539字节，SHA256 FB9CBC03119EF3F58F366BD0AAA09C895E7C7C877D1535250F983AE5C5346D40。主报告 delivery-261-20261019.json 实际核403受保护输入保持；冻结源仍9c550ba，388构建输入未变。生成器当前SHA与v4 result的GeneratorSHA256绑定，收尾没有再运行TD/bitgen。
+
+当前生成器修复Windows路径、工程cwd、MAX_PATH临时映射和严格ERROR拒收；这两处工具改进及verify-color26-checkpoint.py随收尾提交。检查点工具固定比较已批准9c550ba，并核它是当前HEAD祖先，避免仅交付元数据提交使旧报告Commit比较失效；已有checkpoint-source-review.json不覆写。
+
+交付清单 delivery-manifest.json 绑定主批准、软件/物理主审、适配证明、原DB、388输入清单、生成器、四次原始result/stdout/stderr和唯一bit。Git仅纳入小型清单/日志/Tcl/批准副本；bit、DB、TD缓存仍在本机原路径，按manifest迁移并复核SHA，不能把Git克隆当作完整交付包。
+
+主实际物理结果为Routed/Both +0.107/+0.010ns、双TNS0；19040总slice、107ERAM、25DSP。12139个带LATCHMODE的寄存器LSLICE均DFF，不是19040个寄存器。厂商DDR告警窄证明、6条裁剪音频reset匹配critical及全部原失败保留，最紧recovery+.110ns；无MTBF、完整外部IO或DDR硬件结论。本次仅读既有主报告，不冒称重做独立物理或软件。
+
+待决策及下一步：主审核本次收尾提交和共享登记后，按最终主审核与d0261-sram-guide.md交用户PROGRAM_SRAM，优先四原背景反例，再九积木/五卡/空场、位置光照、四键问答。4DN包络及干净边框/内区偏色限制保持；三VERIFIED0/TRACKS空、音频外部隔离保持，现场无声音不升级或降级本次颜色结论。不恢复无关开发。

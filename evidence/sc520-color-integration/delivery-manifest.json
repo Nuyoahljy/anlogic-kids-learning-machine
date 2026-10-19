@@ -1,0 +1,98 @@
+{
+  "ManifestVersion": 1,
+  "CreatedAt": "2026-10-19T13:45:00+08:00",
+  "Task": "sc520-color-integration",
+  "Candidate": "D0261",
+  "Purpose": "SRAM validation only",
+  "HardwareValidated": false,
+  "DownloadExecuted": false,
+  "FlashExecuted": false,
+  "FrozenSourceCommit": "9c550baec978e68c836f6589c439eca950844e46",
+  "Build": {
+    "Project": "sc520-color26-bg",
+    "RunId": "6a50b261",
+    "Inputs": {
+      "Path": "builds/6a50b261/inputs.json",
+      "SHA256": "99CE59144021DC9FAA26F554850F0CCC530A1D816BC3467085A3B17C12EA5486",
+      "Bytes": 152544
+    },
+    "RouteDatabase": {
+      "Path": "builds/6a50b261/td_project/camera_to_dsi_display_Runs/phy_1/camera_to_dsi_display_pr.db",
+      "SHA256": "3A95B2E4A0C801703D5A498F161267F5D560328DC934F7BE0E0B867308001CC1",
+      "Bytes": 25101886
+    }
+  },
+  "Reviews": {
+    "MainReview": {
+      "Path": "E:/juan/FPGA/learning/sc520-color-integration/main-review/final-261-20261019/main-review.json",
+      "SHA256": "83433092ACA646CDA8ADF2B6C624CC5BD9F78F01893CF16D5EA99E9083F86816",
+      "Bytes": 3431
+    },
+    "Approval": {
+      "Path": "E:/juan/FPGA/learning/sc520-color-integration/main-review/final-261-20261019/bitgen-approval.json",
+      "SHA256": "7F1B7B7D0FDC7ED7E099A9D7AA33C587AB7FBB0BD4AD6FA4F8EF7ABEA4FAFC14",
+      "Bytes": 1667
+    },
+    "SoftwareReview": {
+      "Path": "E:/juan/FPGA/learning/sc520-color-integration/main-review/software-v2-resume-20261019.json",
+      "SHA256": "1D07240A4B8ED2096E9497F489EFDE1DEB38C4AA101F98E0958BD7D31263BB39",
+      "Bytes": 18947
+    },
+    "PhysicalReview": {
+      "Path": "E:/juan/FPGA/learning/sc520-color-integration/physical-review/final-6a50b261-resume-20261019/physical-report-adapted.json",
+      "SHA256": "4EC94351373AC79BA31B9E2382703CFB63D61FD662CD8FA5815EBA9A266CE3EF",
+      "Bytes": 35444973
+    },
+    "PhysicalAdapterProof": {
+      "Path": "E:/juan/FPGA/learning/sc520-color-integration/physical-review/final-6a50b261-resume-20261019/adapter-proof.json",
+      "SHA256": "D6C078979AA99204E1CD69366A469A7D80C217CB66564EC2171590330625D924",
+      "Bytes": 11012
+    }
+  },
+  "Generator": {
+    "Path": "fpga/scripts/sc520-card-recognition/generate-color26-bit.py",
+    "SHA256": "B1420196376DD4659EE8762C1A33F5A4901CFDFAE13C811C6DA05B716D967BD8",
+    "Bytes": 4448
+  },
+  "Bit": {
+    "Path": "bitgen-d0261-v4/sc520-d0261.bit",
+    "SHA256": "FB9CBC03119EF3F58F366BD0AAA09C895E7C7C877D1535250F983AE5C5346D40",
+    "Bytes": 1789539,
+    "Status": "唯一可交付候选；现场待验证"
+  },
+  "BitgenAttempts": [
+    {
+      "Directory": "bitgen-d0261",
+      "Status": "not_executed",
+      "Reason": "Windows backslash startup path prevented script execution"
+    },
+    {
+      "Directory": "bitgen-d0261-v2",
+      "Status": "rejected",
+      "Reason": "8 PRJ-9210 ERROR lines in raw stdout; generated bit is not deliverable",
+      "ResultSHA256": "91B1052F6C64FCC49DFCE0F951C057AD2A39BA62282768F630D6BAE63B514F43"
+    },
+    {
+      "Directory": "bitgen-d0261-v3",
+      "Status": "rejected",
+      "Reason": "6 PRJ-9210/MAX_PATH ERROR lines in raw stdout; generated bit is not deliverable",
+      "ResultSHA256": "5A73B77E39E610B6453DB57DED8C562CC2C033F1AA09506D7EB5CEA8BA1F2421"
+    },
+    {
+      "Directory": "bitgen-d0261-v4",
+      "Status": "accepted_offline",
+      "ResultPath": "bitgen-d0261-v4/result.json",
+      "ResultSHA256": "5DA82824F7EC8189FEA9B93C6F8BFFDD48E1EA42FE3AEAA1E9784912CA8CF5A3",
+      "StdoutSHA256": "150B31BFD5DBF68D00922646458B060A2F828FFEB6B23D0B07DB80469466D0BE",
+      "StderrSHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "NativeExitCode": 0,
+      "Errors": 0,
+      "DatabaseImportSucceeded": true,
+      "TemporaryMappingReleased": true
+    }
+  ],
+  "Limits": [
+    "This manifest does not claim board, Flash, DDR, MTBF, complete external IO, audio or real-scene validation.",
+    "Synthetic scene and software evidence do not establish all real backgrounds, positions, lighting or fourteen-item coverage."
+  ]
+}
