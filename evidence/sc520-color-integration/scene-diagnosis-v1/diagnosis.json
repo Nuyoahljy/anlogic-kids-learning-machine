@@ -1,0 +1,1023 @@
+{
+  "ProductionRTLChanged": false,
+  "BG_TOLERANCE": 48,
+  "SceneQuantization": "lower border median in 16-wide bins, center=bin*16+8",
+  "Reason": "Scene flood-fill admits boundary-connected pixels as background when every RGB channel is within48. New low-chroma colors can be consumed before normalized block classification.",
+  "Cases": [
+    {
+      "Case": "field_block_1",
+      "Item": 1,
+      "NewScene": {
+        "background_rgb": [
+          248,
+          248,
+          248
+        ],
+        "present": true,
+        "scene_count": 253,
+        "glyph_count": 253,
+        "scene_bbox": [
+          51,
+          21,
+          68,
+          38
+        ],
+        "glyph_bbox": [
+          51,
+          21,
+          68,
+          38
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "OriginalIdealColorScene": {
+        "background_rgb": [
+          248,
+          248,
+          248
+        ],
+        "present": true,
+        "scene_count": 253,
+        "glyph_count": 253,
+        "scene_bbox": [
+          51,
+          21,
+          68,
+          38
+        ],
+        "glyph_bbox": [
+          51,
+          21,
+          68,
+          38
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "WhiteControlScene": {
+        "background_rgb": [
+          248,
+          248,
+          248
+        ],
+        "present": true,
+        "scene_count": 253,
+        "glyph_count": 253,
+        "scene_bbox": [
+          51,
+          21,
+          68,
+          38
+        ],
+        "glyph_bbox": [
+          51,
+          21,
+          68,
+          38
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "SampledObjectPixels": 253,
+      "ObjectWithinBackgroundTolerance48": 0,
+      "ObjectMaxChannelDistanceMinMedianMax": [
+        148,
+        159.0,
+        171
+      ],
+      "ObjectRGBMin": [
+        103,
+        80,
+        77
+      ],
+      "ObjectRGBMax": [
+        130,
+        115,
+        101
+      ],
+      "Source": {
+        "Name": "field_block_1",
+        "Item": 1,
+        "Present": true,
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\field_block_1.rgb.mem",
+        "SHA256": "E3635F53C4B875BCB12BF058402056961ECF13C503D42B114436F8A053056ED0",
+        "Source": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r126_legacy_596_block_red_circle_white_36.rgb.mem",
+        "SourceSHA256": "A865ED06EEC17BB7A669B0B048CCAB9A2293D6157A9FF8225D486EAAAC70EF0B",
+        "Recipe": "Original shape mask/background; actual first stage2 ROI texture tiled without smoothing. Synthetic scene, not new field capture."
+      },
+      "WhiteControl": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes-white-v1\\white_field_block_1.rgb.mem",
+        "SHA256": "E3635F53C4B875BCB12BF058402056961ECF13C503D42B114436F8A053056ED0"
+      }
+    },
+    {
+      "Case": "field_block_2",
+      "Item": 2,
+      "NewScene": {
+        "background_rgb": [
+          72,
+          72,
+          72
+        ],
+        "present": true,
+        "scene_count": 46,
+        "glyph_count": 46,
+        "scene_bbox": [
+          51,
+          23,
+          58,
+          37
+        ],
+        "glyph_bbox": [
+          51,
+          23,
+          58,
+          37
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "OriginalIdealColorScene": {
+        "background_rgb": [
+          72,
+          72,
+          72
+        ],
+        "present": true,
+        "scene_count": 324,
+        "glyph_count": 324,
+        "scene_bbox": [
+          51,
+          21,
+          68,
+          38
+        ],
+        "glyph_bbox": [
+          51,
+          21,
+          68,
+          38
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "WhiteControlScene": {
+        "background_rgb": [
+          248,
+          248,
+          248
+        ],
+        "present": true,
+        "scene_count": 324,
+        "glyph_count": 324,
+        "scene_bbox": [
+          51,
+          21,
+          68,
+          38
+        ],
+        "glyph_bbox": [
+          51,
+          21,
+          68,
+          38
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "SampledObjectPixels": 324,
+      "ObjectWithinBackgroundTolerance48": 269,
+      "ObjectMaxChannelDistanceMinMedianMax": [
+        31,
+        44.0,
+        58
+      ],
+      "ObjectRGBMin": [
+        101,
+        80,
+        77
+      ],
+      "ObjectRGBMax": [
+        135,
+        117,
+        103
+      ],
+      "Source": {
+        "Name": "field_block_2",
+        "Item": 2,
+        "Present": true,
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\field_block_2.rgb.mem",
+        "SHA256": "62901392612B51AC736B1D49F207F8679B5EDED4F17B1386545C86738B5F47A7",
+        "Source": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r127_legacy_608_block_red_square_dark_36.rgb.mem",
+        "SourceSHA256": "BBE2B13DFD1A8382A8D3AC3A41682AC5F73C7507BA25DF21A46E2F033CD971B2",
+        "Recipe": "Original shape mask/background; actual first stage2 ROI texture tiled without smoothing. Synthetic scene, not new field capture."
+      },
+      "WhiteControl": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes-white-v1\\white_field_block_2.rgb.mem",
+        "SHA256": "BCF2CA328C453189FE07419EA1A24914063B9D860D741AD96EF4F3F86AE22628"
+      }
+    },
+    {
+      "Case": "field_block_3",
+      "Item": 3,
+      "NewScene": {
+        "background_rgb": [
+          104,
+          88,
+          72
+        ],
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "scene_bbox": null,
+        "glyph_bbox": null,
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "OriginalIdealColorScene": {
+        "background_rgb": [
+          104,
+          88,
+          72
+        ],
+        "present": true,
+        "scene_count": 171,
+        "glyph_count": 171,
+        "scene_bbox": [
+          51,
+          21,
+          68,
+          38
+        ],
+        "glyph_bbox": [
+          51,
+          21,
+          68,
+          38
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "WhiteControlScene": {
+        "background_rgb": [
+          248,
+          248,
+          248
+        ],
+        "present": true,
+        "scene_count": 171,
+        "glyph_count": 171,
+        "scene_bbox": [
+          51,
+          21,
+          68,
+          38
+        ],
+        "glyph_bbox": [
+          51,
+          21,
+          68,
+          38
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "SampledObjectPixels": 171,
+      "ObjectWithinBackgroundTolerance48": 171,
+      "ObjectMaxChannelDistanceMinMedianMax": [
+        7,
+        17.0,
+        28
+      ],
+      "ObjectRGBMin": [
+        103,
+        80,
+        77
+      ],
+      "ObjectRGBMax": [
+        130,
+        117,
+        100
+      ],
+      "Source": {
+        "Name": "field_block_3",
+        "Item": 3,
+        "Present": true,
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\field_block_3.rgb.mem",
+        "SHA256": "968F2050A5B9CF5036B2E52366E7E9BF204C1BD3E526C81701D26BAC7174687D",
+        "Source": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r128_legacy_620_block_red_triangle_wood_36.rgb.mem",
+        "SourceSHA256": "D91DF85ACFF911FB986C63F3AFA91EE4AFA9EE0631923273BA87BFDDC391258E",
+        "Recipe": "Original shape mask/background; actual first stage2 ROI texture tiled without smoothing. Synthetic scene, not new field capture."
+      },
+      "WhiteControl": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes-white-v1\\white_field_block_3.rgb.mem",
+        "SHA256": "F32B171B7DE27DE903D469EADDC847853748B58DBF95EC72460DF6ADED129CF2"
+      }
+    },
+    {
+      "Case": "field_block_4",
+      "Item": 4,
+      "NewScene": {
+        "background_rgb": [
+          248,
+          248,
+          248
+        ],
+        "present": true,
+        "scene_count": 530,
+        "glyph_count": 530,
+        "scene_bbox": [
+          47,
+          17,
+          72,
+          42
+        ],
+        "glyph_bbox": [
+          47,
+          17,
+          72,
+          42
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "OriginalIdealColorScene": {
+        "background_rgb": [
+          248,
+          248,
+          248
+        ],
+        "present": true,
+        "scene_count": 530,
+        "glyph_count": 530,
+        "scene_bbox": [
+          47,
+          17,
+          72,
+          42
+        ],
+        "glyph_bbox": [
+          47,
+          17,
+          72,
+          42
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "WhiteControlScene": {
+        "background_rgb": [
+          248,
+          248,
+          248
+        ],
+        "present": true,
+        "scene_count": 530,
+        "glyph_count": 530,
+        "scene_bbox": [
+          47,
+          17,
+          72,
+          42
+        ],
+        "glyph_bbox": [
+          47,
+          17,
+          72,
+          42
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "SampledObjectPixels": 530,
+      "ObjectWithinBackgroundTolerance48": 0,
+      "ObjectMaxChannelDistanceMinMedianMax": [
+        111,
+        131.0,
+        145
+      ],
+      "ObjectRGBMin": [
+        130,
+        148,
+        101
+      ],
+      "ObjectRGBMax": [
+        165,
+        201,
+        138
+      ],
+      "Source": {
+        "Name": "field_block_4",
+        "Item": 4,
+        "Present": true,
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\field_block_4.rgb.mem",
+        "SHA256": "D54CEBAD3BDAA1CC6FF0B36AA542A4B92FA569B5C556256A034B22C903061DFB",
+        "Source": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r129_legacy_624_block_yellow_circle_white_52.rgb.mem",
+        "SourceSHA256": "374313B186838A5845614B29C9F788099B74BCC0D343CF59D948AB189B72B9B5",
+        "Recipe": "Original shape mask/background; actual first stage2 ROI texture tiled without smoothing. Synthetic scene, not new field capture."
+      },
+      "WhiteControl": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes-white-v1\\white_field_block_4.rgb.mem",
+        "SHA256": "D54CEBAD3BDAA1CC6FF0B36AA542A4B92FA569B5C556256A034B22C903061DFB"
+      }
+    },
+    {
+      "Case": "field_block_5",
+      "Item": 5,
+      "NewScene": {
+        "background_rgb": [
+          72,
+          72,
+          72
+        ],
+        "present": true,
+        "scene_count": 676,
+        "glyph_count": 676,
+        "scene_bbox": [
+          47,
+          17,
+          72,
+          42
+        ],
+        "glyph_bbox": [
+          47,
+          17,
+          72,
+          42
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "OriginalIdealColorScene": {
+        "background_rgb": [
+          72,
+          72,
+          72
+        ],
+        "present": true,
+        "scene_count": 676,
+        "glyph_count": 676,
+        "scene_bbox": [
+          47,
+          17,
+          72,
+          42
+        ],
+        "glyph_bbox": [
+          47,
+          17,
+          72,
+          42
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "WhiteControlScene": {
+        "background_rgb": [
+          248,
+          248,
+          248
+        ],
+        "present": true,
+        "scene_count": 676,
+        "glyph_count": 676,
+        "scene_bbox": [
+          47,
+          17,
+          72,
+          42
+        ],
+        "glyph_bbox": [
+          47,
+          17,
+          72,
+          42
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "SampledObjectPixels": 676,
+      "ObjectWithinBackgroundTolerance48": 0,
+      "ObjectMaxChannelDistanceMinMedianMax": [
+        76,
+        99.0,
+        118
+      ],
+      "ObjectRGBMin": [
+        130,
+        148,
+        101
+      ],
+      "ObjectRGBMax": [
+        165,
+        201,
+        138
+      ],
+      "Source": {
+        "Name": "field_block_5",
+        "Item": 5,
+        "Present": true,
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\field_block_5.rgb.mem",
+        "SHA256": "04A5EBBB6A2D7CD99683A53704BE0E1D67D873DFE41AC4082EFBA01C4332CACA",
+        "Source": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r130_legacy_636_block_yellow_square_dark_52.rgb.mem",
+        "SourceSHA256": "3D9E020607F0D57FF543A59F5879A082222DC8ABEC066519E599BBDCE6D5D704",
+        "Recipe": "Original shape mask/background; actual first stage2 ROI texture tiled without smoothing. Synthetic scene, not new field capture."
+      },
+      "WhiteControl": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes-white-v1\\white_field_block_5.rgb.mem",
+        "SHA256": "A8E9B4A2AE4E16B30A2B922A4EC5C0ECC6A71AA4F95EC5E96FC7A9A89BD141D7"
+      }
+    },
+    {
+      "Case": "field_block_6",
+      "Item": 6,
+      "NewScene": {
+        "background_rgb": [
+          104,
+          88,
+          72
+        ],
+        "present": true,
+        "scene_count": 351,
+        "glyph_count": 351,
+        "scene_bbox": [
+          47,
+          17,
+          72,
+          42
+        ],
+        "glyph_bbox": [
+          47,
+          17,
+          72,
+          42
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "OriginalIdealColorScene": {
+        "background_rgb": [
+          104,
+          88,
+          72
+        ],
+        "present": true,
+        "scene_count": 351,
+        "glyph_count": 351,
+        "scene_bbox": [
+          47,
+          17,
+          72,
+          42
+        ],
+        "glyph_bbox": [
+          47,
+          17,
+          72,
+          42
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "WhiteControlScene": {
+        "background_rgb": [
+          248,
+          248,
+          248
+        ],
+        "present": true,
+        "scene_count": 351,
+        "glyph_count": 351,
+        "scene_bbox": [
+          47,
+          17,
+          72,
+          42
+        ],
+        "glyph_bbox": [
+          47,
+          17,
+          72,
+          42
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "SampledObjectPixels": 351,
+      "ObjectWithinBackgroundTolerance48": 0,
+      "ObjectMaxChannelDistanceMinMedianMax": [
+        63,
+        85.0,
+        102
+      ],
+      "ObjectRGBMin": [
+        130,
+        148,
+        101
+      ],
+      "ObjectRGBMax": [
+        165,
+        201,
+        138
+      ],
+      "Source": {
+        "Name": "field_block_6",
+        "Item": 6,
+        "Present": true,
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\field_block_6.rgb.mem",
+        "SHA256": "57423C3C09336BDBC61B902483750A7A20C1B694788DC1F5C57BF0E866CD8B5D",
+        "Source": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r131_legacy_648_block_yellow_triangle_wood_52.rgb.mem",
+        "SourceSHA256": "573EC895F13949A3D9BDA6A48608505F5AC5D4BAA8891E1A0892325797907AE8",
+        "Recipe": "Original shape mask/background; actual first stage2 ROI texture tiled without smoothing. Synthetic scene, not new field capture."
+      },
+      "WhiteControl": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes-white-v1\\white_field_block_6.rgb.mem",
+        "SHA256": "3449D33D7A23CBEB604389963E69134D8E058FF93EAB494BB4F4ACD21EBB2C21"
+      }
+    },
+    {
+      "Case": "field_block_7",
+      "Item": 7,
+      "NewScene": {
+        "background_rgb": [
+          248,
+          248,
+          248
+        ],
+        "present": true,
+        "scene_count": 906,
+        "glyph_count": 906,
+        "scene_bbox": [
+          43,
+          13,
+          76,
+          46
+        ],
+        "glyph_bbox": [
+          43,
+          13,
+          76,
+          46
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "OriginalIdealColorScene": {
+        "background_rgb": [
+          248,
+          248,
+          248
+        ],
+        "present": true,
+        "scene_count": 906,
+        "glyph_count": 906,
+        "scene_bbox": [
+          43,
+          13,
+          76,
+          46
+        ],
+        "glyph_bbox": [
+          43,
+          13,
+          76,
+          46
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "WhiteControlScene": {
+        "background_rgb": [
+          248,
+          248,
+          248
+        ],
+        "present": true,
+        "scene_count": 906,
+        "glyph_count": 906,
+        "scene_bbox": [
+          43,
+          13,
+          76,
+          46
+        ],
+        "glyph_bbox": [
+          43,
+          13,
+          76,
+          46
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "SampledObjectPixels": 906,
+      "ObjectWithinBackgroundTolerance48": 0,
+      "ObjectMaxChannelDistanceMinMedianMax": [
+        157,
+        169.0,
+        180
+      ],
+      "ObjectRGBMin": [
+        67,
+        74,
+        91
+      ],
+      "ObjectRGBMax": [
+        103,
+        134,
+        133
+      ],
+      "Source": {
+        "Name": "field_block_7",
+        "Item": 7,
+        "Present": true,
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\field_block_7.rgb.mem",
+        "SHA256": "11B9B9C22316F33B1EB0AC25BC2121CBA43E211025B08807851192B307901173",
+        "Source": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r132_legacy_652_block_blue_circle_white_68.rgb.mem",
+        "SourceSHA256": "7405F95A8780898903365ED58CAF010B8846D338AD59D2D9AC25C2CC19742176",
+        "Recipe": "Original shape mask/background; actual first stage2 ROI texture tiled without smoothing. Synthetic scene, not new field capture."
+      },
+      "WhiteControl": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes-white-v1\\white_field_block_7.rgb.mem",
+        "SHA256": "11B9B9C22316F33B1EB0AC25BC2121CBA43E211025B08807851192B307901173"
+      }
+    },
+    {
+      "Case": "field_block_8",
+      "Item": 8,
+      "NewScene": {
+        "background_rgb": [
+          72,
+          72,
+          72
+        ],
+        "present": false,
+        "scene_count": 1,
+        "glyph_count": 1,
+        "scene_bbox": [
+          61,
+          26,
+          61,
+          26
+        ],
+        "glyph_bbox": [
+          61,
+          26,
+          61,
+          26
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "OriginalIdealColorScene": {
+        "background_rgb": [
+          72,
+          72,
+          72
+        ],
+        "present": true,
+        "scene_count": 1156,
+        "glyph_count": 1156,
+        "scene_bbox": [
+          43,
+          13,
+          76,
+          46
+        ],
+        "glyph_bbox": [
+          43,
+          13,
+          76,
+          46
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "WhiteControlScene": {
+        "background_rgb": [
+          248,
+          248,
+          248
+        ],
+        "present": true,
+        "scene_count": 1156,
+        "glyph_count": 1156,
+        "scene_bbox": [
+          43,
+          13,
+          76,
+          46
+        ],
+        "glyph_bbox": [
+          43,
+          13,
+          76,
+          46
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "SampledObjectPixels": 1156,
+      "ObjectWithinBackgroundTolerance48": 1134,
+      "ObjectMaxChannelDistanceMinMedianMax": [
+        24,
+        37.0,
+        53
+      ],
+      "ObjectRGBMin": [
+        67,
+        74,
+        91
+      ],
+      "ObjectRGBMax": [
+        103,
+        134,
+        133
+      ],
+      "Source": {
+        "Name": "field_block_8",
+        "Item": 8,
+        "Present": true,
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\field_block_8.rgb.mem",
+        "SHA256": "43AB3C4EA76366B3363E73996144B011F1C754C706342C619D0B2AA92F840124",
+        "Source": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r133_legacy_664_block_blue_square_dark_68.rgb.mem",
+        "SourceSHA256": "12FBF98505AB47BA5792A51689AEBC0CCF46E1A752CD50847843E10FCD76C2D5",
+        "Recipe": "Original shape mask/background; actual first stage2 ROI texture tiled without smoothing. Synthetic scene, not new field capture."
+      },
+      "WhiteControl": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes-white-v1\\white_field_block_8.rgb.mem",
+        "SHA256": "D4E0F6CAED3C57248E6A52DBF8810924FA7192C1AC375C22182505CB3C8035AB"
+      }
+    },
+    {
+      "Case": "field_block_9",
+      "Item": 9,
+      "NewScene": {
+        "background_rgb": [
+          104,
+          88,
+          72
+        ],
+        "present": false,
+        "scene_count": 1,
+        "glyph_count": 1,
+        "scene_bbox": [
+          61,
+          26,
+          61,
+          26
+        ],
+        "glyph_bbox": [
+          61,
+          26,
+          61,
+          26
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "OriginalIdealColorScene": {
+        "background_rgb": [
+          104,
+          88,
+          72
+        ],
+        "present": true,
+        "scene_count": 595,
+        "glyph_count": 595,
+        "scene_bbox": [
+          43,
+          13,
+          76,
+          46
+        ],
+        "glyph_bbox": [
+          43,
+          13,
+          76,
+          46
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "WhiteControlScene": {
+        "background_rgb": [
+          248,
+          248,
+          248
+        ],
+        "present": true,
+        "scene_count": 595,
+        "glyph_count": 595,
+        "scene_bbox": [
+          43,
+          13,
+          76,
+          46
+        ],
+        "glyph_bbox": [
+          43,
+          13,
+          76,
+          46
+        ],
+        "border_similar": 356,
+        "border_count": 356,
+        "background_qualified": true,
+        "edge_contact": false
+      },
+      "SampledObjectPixels": 595,
+      "ObjectWithinBackgroundTolerance48": 582,
+      "ObjectMaxChannelDistanceMinMedianMax": [
+        24,
+        39.0,
+        53
+      ],
+      "ObjectRGBMin": [
+        67,
+        74,
+        91
+      ],
+      "ObjectRGBMax": [
+        103,
+        134,
+        133
+      ],
+      "Source": {
+        "Name": "field_block_9",
+        "Item": 9,
+        "Present": true,
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\field_block_9.rgb.mem",
+        "SHA256": "617CADDC5D9E3B32CA8B2099F8BDAB397CEED13CA9FD26F1B8115DA40B5385F1",
+        "Source": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r134_legacy_676_block_blue_triangle_wood_68.rgb.mem",
+        "SourceSHA256": "D0034D436DF0C8A82540CB38FD0EDFABF6BE842358AC0E0098CF9B5D3913537C",
+        "Recipe": "Original shape mask/background; actual first stage2 ROI texture tiled without smoothing. Synthetic scene, not new field capture."
+      },
+      "WhiteControl": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes-white-v1\\white_field_block_9.rgb.mem",
+        "SHA256": "5275CDAC28D7AF8E418D177AE445784304B6C41E4056AFDE82465D88BAB62522"
+      }
+    }
+  ],
+  "Model": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\scripts\\sc520-card-recognition\\scene-model.py",
+    "SHA256": "4696B16F3086E2FA6B027A17A144DC917BFEE9D7C0C20F74E00E5BF87F6E28A7"
+  },
+  "SourceManifest": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\manifest.json",
+    "SHA256": "5D832FAE621354506C66DB252C3C8433342EE3081522A88CD61BEC1EED34B458"
+  }
+}

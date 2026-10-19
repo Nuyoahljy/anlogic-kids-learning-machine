@@ -1,0 +1,1774 @@
+{
+  "CreatedAt": "2026-10-19T11:51:20.572826+08:00",
+  "Owner": "01a15235-d7ad-7531-b390-c5fd0941eea0 /root/color26_impl T026",
+  "SourceProject": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys",
+  "Project": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260",
+  "Snapshot": true,
+  "Files": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\scripts\\sc520-card-recognition\\prepare-color26.py",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\tools\\prepare-color26.py",
+      "SHA256": "EEC0607E9BFB93F78946A224E2965A13FD03A30211E9722424C20A141E8AFD7F",
+      "SnapshotSHA256": "EEC0607E9BFB93F78946A224E2965A13FD03A30211E9722424C20A141E8AFD7F"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\scripts\\sc520-card-recognition\\build-color26.ps1",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\tools\\build-color26.ps1",
+      "SHA256": "26936E14B20E3A68B2D9126E6370F87B13FBEA0878B8E07D5EC780D1CB0CA3A1",
+      "SnapshotSHA256": "26936E14B20E3A68B2D9126E6370F87B13FBEA0878B8E07D5EC780D1CB0CA3A1"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\scripts\\sc520-card-recognition\\prepare-timing23.py",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\tools\\prepare-timing23.py",
+      "SHA256": "E072BC3DC8D7427B0D982A11611D259D567B23794A78BDF8E5809C5AB546FBF9",
+      "SnapshotSHA256": "E072BC3DC8D7427B0D982A11611D259D567B23794A78BDF8E5809C5AB546FBF9"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\scripts\\sc520-card-recognition\\audit-timing23-reset.py",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\tools\\audit-timing23-reset.py",
+      "SHA256": "3B2A7B22838BF96D462A720FADACA454D2E357E9CBF90E1774CB5BCF0E993EC8",
+      "SnapshotSHA256": "3B2A7B22838BF96D462A720FADACA454D2E357E9CBF90E1774CB5BCF0E993EC8"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\pixel14\\block_frame_recognizer.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\block_frame_recognizer.v",
+      "SHA256": "B6AAEE99C269753E1B1C49A6DBD2F00439F415F9890F141A9A709B587EC835E9",
+      "SnapshotSHA256": "B6AAEE99C269753E1B1C49A6DBD2F00439F415F9890F141A9A709B587EC835E9"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\pixel14\\capture_rgb96.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\capture_rgb96.v",
+      "SHA256": "805150EE3996FBB345C52BA3580205FEDC4FFA7C76C64213E198B65B31FDD9DF",
+      "SnapshotSHA256": "805150EE3996FBB345C52BA3580205FEDC4FFA7C76C64213E198B65B31FDD9DF"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_block_filter.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_block_filter.v",
+      "SHA256": "6B012CD311F7ED254548D8515B1B6E707DC0DAF890464D4B0F1CD88FEB5F4873",
+      "SnapshotSHA256": "6B012CD311F7ED254548D8515B1B6E707DC0DAF890464D4B0F1CD88FEB5F4873"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_block_shape_guard.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_block_shape_guard.v",
+      "SHA256": "2BCB1AABD82168E05CC5E17C026D70A3FBC2B605444BF9050E244BF0AB4BD58B",
+      "SnapshotSHA256": "2BCB1AABD82168E05CC5E17C026D70A3FBC2B605444BF9050E244BF0AB4BD58B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_capture_provenance.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_capture_provenance.v",
+      "SHA256": "98DF6B45CDA1EF595E5C50332A8103F729A7574D8129D8309621B266D633FA00",
+      "SnapshotSHA256": "98DF6B45CDA1EF595E5C50332A8103F729A7574D8129D8309621B266D633FA00"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_card_matcher.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_card_matcher.v",
+      "SHA256": "2F0A62B003B3633FD529870C63420B105F4FB00CD63DDC9F17F2F7E1EF708F87",
+      "SnapshotSHA256": "2F0A62B003B3633FD529870C63420B105F4FB00CD63DDC9F17F2F7E1EF708F87"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_card_template_rom.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_card_template_rom.v",
+      "SHA256": "548EE01C8D003F9D76B8879ABBDB1B65A67CF54CCA63D7C2B0F6651BCE96E26A",
+      "SnapshotSHA256": "548EE01C8D003F9D76B8879ABBDB1B65A67CF54CCA63D7C2B0F6651BCE96E26A"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_diag_osd.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_diag_osd.v",
+      "SHA256": "CBC2D7A288737F73700EA18A9D366A29A00EFA8E49EB16C7D629C32FCB7A9417",
+      "SnapshotSHA256": "CBC2D7A288737F73700EA18A9D366A29A00EFA8E49EB16C7D629C32FCB7A9417"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_pipeline.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_pipeline.v",
+      "SHA256": "DC96CC7CE9FDC8E5D6489EC0E0C7AE79798D0859065A22664CBF9BAABB271AAA",
+      "SnapshotSHA256": "DC96CC7CE9FDC8E5D6489EC0E0C7AE79798D0859065A22664CBF9BAABB271AAA"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_result_cdc.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_result_cdc.v",
+      "SHA256": "C13D3A688352EE3C5486DB5A2E979E2A7F50F3830B251EC5A3096C3152940053",
+      "SnapshotSHA256": "C13D3A688352EE3C5486DB5A2E979E2A7F50F3830B251EC5A3096C3152940053"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_rotation_matcher.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_rotation_matcher.v",
+      "SHA256": "D92B0CE7F6E14A6734EB2D8F706FC7F23B4CB28BEAC704DEF5A89D1D18DCCFC8",
+      "SnapshotSHA256": "D92B0CE7F6E14A6734EB2D8F706FC7F23B4CB28BEAC704DEF5A89D1D18DCCFC8"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\pixel14\\pixel14_scene_preprocess.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_scene_preprocess.v",
+      "SHA256": "78FA97719C2F717E29500EE6F89E5E69CCBE26715F15B6EA807D7C8190FAA10A",
+      "SnapshotSHA256": "78FA97719C2F717E29500EE6F89E5E69CCBE26715F15B6EA807D7C8190FAA10A"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_content.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\items14_content.v",
+      "SHA256": "8AC445100F0539E6716A224B57BAA74F7BC031EB7F112361EA8667417132D477",
+      "SnapshotSHA256": "8AC445100F0539E6716A224B57BAA74F7BC031EB7F112361EA8667417132D477"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_font_rom.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\items14_font_rom.v",
+      "SHA256": "E9F823F73499A6371503C753C02FE0DB7AF94B48CE972FF3389A4AB701E7AA53",
+      "SnapshotSHA256": "E9F823F73499A6371503C753C02FE0DB7AF94B48CE972FF3389A4AB701E7AA53"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_osd.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\items14_osd.v",
+      "SHA256": "62B7AD31BDA1AD73FF7846CEE39566E158DC336936CA5E8576D1C73C7D299875",
+      "SnapshotSHA256": "62B7AD31BDA1AD73FF7846CEE39566E158DC336936CA5E8576D1C73C7D299875"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_question_bank.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\items14_question_bank.v",
+      "SHA256": "D48A28CB887A3045C6839696612AD3E446C9E691D32298E3240C6A3A0F45CB54",
+      "SnapshotSHA256": "D48A28CB887A3045C6839696612AD3E446C9E691D32298E3240C6A3A0F45CB54"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_quiz_control.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\items14_quiz_control.v",
+      "SHA256": "4DB2B8A9ECBFB9F087C298A5ADE2164BFAB39AEA5A52A361D8626F68F46D6E97",
+      "SnapshotSHA256": "4DB2B8A9ECBFB9F087C298A5ADE2164BFAB39AEA5A52A361D8626F68F46D6E97"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_result_join.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\items14_result_join.v",
+      "SHA256": "62426C8ECF8E25BD36F96DB93672301A5877E9817E87F55BC9E9C2E1C4CFCC59",
+      "SnapshotSHA256": "62426C8ECF8E25BD36F96DB93672301A5877E9817E87F55BC9E9C2E1C4CFCC59"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\items14\\items14_system.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\items14_system.v",
+      "SHA256": "B358DD4FD0A89FD102B25FE2B02F6FD568BF73B40886A405F802293B8A0844F5",
+      "SnapshotSHA256": "B358DD4FD0A89FD102B25FE2B02F6FD568BF73B40886A405F802293B8A0844F5"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\card_template_rom.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\card_template_rom.v",
+      "SHA256": "36BAF5B6B3E85F96D11C47CD480D7C28B9C3248D2AFEC1F59522234C9A102C63",
+      "SnapshotSHA256": "36BAF5B6B3E85F96D11C47CD480D7C28B9C3248D2AFEC1F59522234C9A102C63"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\card_result_filter.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\card_result_filter.v",
+      "SHA256": "2496768096E8CDB243D477021CDD9C681F804182F46DBACE30C0AC7076C63B98",
+      "SnapshotSHA256": "2496768096E8CDB243D477021CDD9C681F804182F46DBACE30C0AC7076C63B98"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\custom_project\\sc520-color26\\overlay\\pixel14_color_pipeline.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_color_pipeline.v",
+      "SHA256": "2918511FD84BE80482D9010E7090DB9873672C68998513F0D2A4E9F0C2F24344",
+      "SnapshotSHA256": "2918511FD84BE80482D9010E7090DB9873672C68998513F0D2A4E9F0C2F24344"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\color_diag\\pixel14_color_diag_osd.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_color_diag_osd.v",
+      "SHA256": "592DF9162A0E49E16CC528E3A4F4048728E3A3D06D1FAEAAD219D3203FB49BDC",
+      "SnapshotSHA256": "592DF9162A0E49E16CC528E3A4F4048728E3A3D06D1FAEAAD219D3203FB49BDC"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\color_diag\\pixel14_color_diagnostics.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_color_diagnostics.v",
+      "SHA256": "9B15228BDF69212689DC20B6BA761CA9A201E30F36A4E64B91F9C817CC9324FE",
+      "SnapshotSHA256": "9B15228BDF69212689DC20B6BA761CA9A201E30F36A4E64B91F9C817CC9324FE"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\color_diag\\pixel14_color_observer.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_color_observer.v",
+      "SHA256": "86A644081E94251C5EB07689A5A6F99BA097BD248187A09CB6E9F35A95A26943",
+      "SnapshotSHA256": "86A644081E94251C5EB07689A5A6F99BA097BD248187A09CB6E9F35A95A26943"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\color_diag\\pixel14_observation_bridge.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_observation_bridge.v",
+      "SHA256": "58D0B19158BE33A23065502632E4A6C63DC2A3A7704620B7A8788E55281B56E1",
+      "SnapshotSHA256": "58D0B19158BE33A23065502632E4A6C63DC2A3A7704620B7A8788E55281B56E1"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\color_diag\\pixel14_observation_join.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_observation_join.v",
+      "SHA256": "6F5CFEF8762374DA7145E675E7ACB9B7BB9EDE2E464338BC5785081D27BDA453",
+      "SnapshotSHA256": "6F5CFEF8762374DA7145E675E7ACB9B7BB9EDE2E464338BC5785081D27BDA453"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\display17\\sc520_processing_display.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\sc520_processing_display.v",
+      "SHA256": "72D83BBB59788D75BE22B08D52FDB4F2D877D0320832F3BDFBD6133A666F55D7",
+      "SnapshotSHA256": "72D83BBB59788D75BE22B08D52FDB4F2D877D0320832F3BDFBD6133A666F55D7"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\display17\\sc520_color_classify.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\sc520_color_classify.v",
+      "SHA256": "B8F779CCD3DD795DCDBA3D0BF49F8D58FB06F3D31418ED529BD3213015CFF537",
+      "SnapshotSHA256": "B8F779CCD3DD795DCDBA3D0BF49F8D58FB06F3D31418ED529BD3213015CFF537"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\display17\\sc520_logo_pipeline.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\sc520_logo_pipeline.v",
+      "SHA256": "94463647C403615F99FC80C3CC70456C416EF2809DDD23BD09467A144CB2B640",
+      "SnapshotSHA256": "94463647C403615F99FC80C3CC70456C416EF2809DDD23BD09467A144CB2B640"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\display17\\pixel17_display_request.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel17_display_request.v",
+      "SHA256": "0E796EDD938F0D62CBBC91C3543F5476D24E49821929F38FCC918BAF8720499B",
+      "SnapshotSHA256": "0E796EDD938F0D62CBBC91C3543F5476D24E49821929F38FCC918BAF8720499B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\audio22\\pixel22_audio.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel22_audio.v",
+      "SHA256": "936406E669BAF0A68ECB062B65F708B327DFE4FADB616C9B26AB36ECA613EF60",
+      "SnapshotSHA256": "936406E669BAF0A68ECB062B65F708B327DFE4FADB616C9B26AB36ECA613EF60"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\audio22\\pixel22_compositor.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel22_compositor.v",
+      "SHA256": "D5A9B6D5A15CB86562D3C65C964A06413ACD5154AFB3A47A6C930AF1FB964B1F",
+      "SnapshotSHA256": "D5A9B6D5A15CB86562D3C65C964A06413ACD5154AFB3A47A6C930AF1FB964B1F"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\audio22\\pixel22_content.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel22_content.v",
+      "SHA256": "B3D5AC948A29FC7854E1334A825188C6D9132973762ECD48BE15E9630262EBD4",
+      "SnapshotSHA256": "B3D5AC948A29FC7854E1334A825188C6D9132973762ECD48BE15E9630262EBD4"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\audio22\\pixel22_font_rom.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel22_font_rom.v",
+      "SHA256": "72D4037194BEE82DF98D61287D510F9FDC552B496853912AF52CF3086AA71EC6",
+      "SnapshotSHA256": "72D4037194BEE82DF98D61287D510F9FDC552B496853912AF52CF3086AA71EC6"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\audio22\\pixel22_panel.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel22_panel.v",
+      "SHA256": "94DB67FB654FDFC322B1227F138B84459FD04420DF1FDE2DCAC0B0414D90FFE6",
+      "SnapshotSHA256": "94DB67FB654FDFC322B1227F138B84459FD04420DF1FDE2DCAC0B0414D90FFE6"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\audio22\\imported\\dfr0534_items14_audio.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\dfr0534_items14_audio.v",
+      "SHA256": "D4338F5A9970402B613FD145C06F369DE2577E45E9CFF9A61D8F080BD58C5814",
+      "SnapshotSHA256": "D4338F5A9970402B613FD145C06F369DE2577E45E9CFF9A61D8F080BD58C5814"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\audio22\\imported\\dfr0534_link.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\dfr0534_link.v",
+      "SHA256": "E86A75AB518AF0555785D94096485A9E7FFBC47931CA3510017CF48FD2EE55A9",
+      "SnapshotSHA256": "E86A75AB518AF0555785D94096485A9E7FFBC47931CA3510017CF48FD2EE55A9"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\audio22\\imported\\dfr0534_player.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\dfr0534_player.v",
+      "SHA256": "FBAD8B661606B22958B1A581B3D3F40D931423B481D214DC59D5AA594A791DFB",
+      "SnapshotSHA256": "FBAD8B661606B22958B1A581B3D3F40D931423B481D214DC59D5AA594A791DFB"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\audio22\\imported\\dfr0534_player_core.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\dfr0534_player_core.v",
+      "SHA256": "B0B3BE942CCF4E449A074E3A23CD4BA1D6DA7CC1050DFBBE864972FB2D8E3B68",
+      "SnapshotSHA256": "B0B3BE942CCF4E449A074E3A23CD4BA1D6DA7CC1050DFBBE864972FB2D8E3B68"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\audio22\\imported\\dfr0534_track_map.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\dfr0534_track_map.v",
+      "SHA256": "717815D88B64247429C07B3B3EFC2FE9E3D0E101E24B1CA2DECB47A61B808784",
+      "SnapshotSHA256": "717815D88B64247429C07B3B3EFC2FE9E3D0E101E24B1CA2DECB47A61B808784"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\audio22\\imported\\t020_audio_queue.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\t020_audio_queue.v",
+      "SHA256": "78874099250197989B5ECA0EE33F1B644744C4874B9C1DB21E9A0C56E7C32177",
+      "SnapshotSHA256": "78874099250197989B5ECA0EE33F1B644744C4874B9C1DB21E9A0C56E7C32177"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\timing23\\pixel23_color_diag_osd.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel23_color_diag_osd.v",
+      "SHA256": "26CDB124D170A220867962C7ADFCAD0F754CFC3869C346C298255D22E52C9118",
+      "SnapshotSHA256": "26CDB124D170A220867962C7ADFCAD0F754CFC3869C346C298255D22E52C9118"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\timing23\\pixel23_color_observer.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel23_color_observer.v",
+      "SHA256": "97269258F722759EF45CB5DC1731B58452208FE52855497F72C12DD7B23C02BE",
+      "SnapshotSHA256": "97269258F722759EF45CB5DC1731B58452208FE52855497F72C12DD7B23C02BE"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\timing23\\pixel23_compositor.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel23_compositor.v",
+      "SHA256": "34B1AF12A763CE1103F2EEC2FB6A887D74F00233425DB40A8470E94BB1D53F73",
+      "SnapshotSHA256": "34B1AF12A763CE1103F2EEC2FB6A887D74F00233425DB40A8470E94BB1D53F73"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-card-recognition\\timing23\\pixel23_pipeline.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel23_pipeline.v",
+      "SHA256": "643388D92A437FA46EBEC77DF99963D0D55893638C5FFEC7DD54A01E46F2D0A1",
+      "SnapshotSHA256": "643388D92A437FA46EBEC77DF99963D0D55893638C5FFEC7DD54A01E46F2D0A1"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-color-integration\\pixel26_block_recognizer.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel26_block_recognizer.v",
+      "SHA256": "C0F0316D8AC162697BB81DE71FF90C546E58D022A93D142F1EC255CEFF546EDF",
+      "SnapshotSHA256": "C0F0316D8AC162697BB81DE71FF90C546E58D022A93D142F1EC255CEFF546EDF"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-color-integration\\pixel26_color_classify.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel26_color_classify.v",
+      "SHA256": "58F7BEB2A9E499E3B06A2A539C0DF01D024C2D1F6385A816E05931689728792F",
+      "SnapshotSHA256": "58F7BEB2A9E499E3B06A2A539C0DF01D024C2D1F6385A816E05931689728792F"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-color-integration\\pixel26_compositor.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel26_compositor.v",
+      "SHA256": "7333E2890018D0A18C06AF6EC1E795C0C43DF7CAEA0D4EBE5C13BE27E94FB0C2",
+      "SnapshotSHA256": "7333E2890018D0A18C06AF6EC1E795C0C43DF7CAEA0D4EBE5C13BE27E94FB0C2"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-color-integration\\pixel26_fixed_exposure.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel26_fixed_exposure.v",
+      "SHA256": "A3923DB20EE8F542B3FDBF085E07B7985148CD7B5320CB7FF8444E649FC3E890",
+      "SnapshotSHA256": "A3923DB20EE8F542B3FDBF085E07B7985148CD7B5320CB7FF8444E649FC3E890"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-color-integration\\pixel26_pipeline.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel26_pipeline.v",
+      "SHA256": "474870E1DDC7507C759D610C007DB29FB5FDE73ADDC503E5D4D95676F10450B6",
+      "SnapshotSHA256": "474870E1DDC7507C759D610C007DB29FB5FDE73ADDC503E5D4D95676F10450B6"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-color-integration\\pixel26_processing_display.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel26_processing_display.v",
+      "SHA256": "6AB32D2B398752CCB2DC932A3F31CFF563540116B63218324DF712A9134342D8",
+      "SnapshotSHA256": "6AB32D2B398752CCB2DC932A3F31CFF563540116B63218324DF712A9134342D8"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-color-integration\\pixel26_saturation.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel26_saturation.v",
+      "SHA256": "06E3759B8427B65D2E9901B5CF480F3A32A7DE5EFD3DC5F7560E496FB565374A",
+      "SnapshotSHA256": "06E3759B8427B65D2E9901B5CF480F3A32A7DE5EFD3DC5F7560E496FB565374A"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\custom_project\\sc520-color26\\overlay\\cdc-analysis.sdc",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\overlay\\cdc-analysis.sdc",
+      "SHA256": "DA2D2B3D1F2EF8C50E0DC23ADEA456D8C264CB63099F39799F82E77278FAFDBD",
+      "SnapshotSHA256": "DA2D2B3D1F2EF8C50E0DC23ADEA456D8C264CB63099F39799F82E77278FAFDBD"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\custom_project\\sc520-color26\\overlay\\design_top_wrapper.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\overlay\\design_top_wrapper.v",
+      "SHA256": "413EBE4B0930E9B1673747217E52B2FEFFFD02CEE7BBDEF84C68FF9F95FA8065",
+      "SnapshotSHA256": "CE298F89DF7C83B43CA758E62AD9F243CC39F44AFFF4D4952DA60A04BACB73EC"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\custom_project\\sc520-color26\\overlay\\isp_top.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\overlay\\isp_top.v",
+      "SHA256": "19457AB89719484465C266FB7185569BC82A48A6FA56DAEA818A791615A2BFCD",
+      "SnapshotSHA256": "19457AB89719484465C266FB7185569BC82A48A6FA56DAEA818A791615A2BFCD"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\custom_project\\sc520-color26\\overlay\\pin.adc",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\overlay\\pin.adc",
+      "SHA256": "1EC59B2EDA9BFDE53CE8CDC0C660797D6B2423C5CF4AB4945B717BC383E911E7",
+      "SnapshotSHA256": "1EC59B2EDA9BFDE53CE8CDC0C660797D6B2423C5CF4AB4945B717BC383E911E7"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\custom_project\\sc520-color26\\overlay\\pixel14.sdc",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\overlay\\pixel14.sdc",
+      "SHA256": "AC5F3682177ABE52423F2CAB38C398EC143FCA5C1B705C5FCD52A8F705C36C64",
+      "SnapshotSHA256": "AC5F3682177ABE52423F2CAB38C398EC143FCA5C1B705C5FCD52A8F705C36C64"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\custom_project\\sc520-color26\\overlay\\pixel14_color_pipeline.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\overlay\\pixel14_color_pipeline.v",
+      "SHA256": "2918511FD84BE80482D9010E7090DB9873672C68998513F0D2A4E9F0C2F24344",
+      "SnapshotSHA256": "2918511FD84BE80482D9010E7090DB9873672C68998513F0D2A4E9F0C2F24344"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\custom_project\\sc520-color26\\overlay\\report-pixel14-cdc.tcl",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\overlay\\report-pixel14-cdc.tcl",
+      "SHA256": "5FD24D3869357BDD2801D38334DFAD7BE87BE06BF767082AD422F33D2270618C",
+      "SnapshotSHA256": "5FD24D3869357BDD2801D38334DFAD7BE87BE06BF767082AD422F33D2270618C"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\custom_project\\sc520-color26\\overlay\\uicfgcs520.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\overlay\\uicfgcs520.v",
+      "SHA256": "851363FA8C2F4940CE60FF80A0A90204D85DB5D2DF92816F14BFD26668DF9B2A",
+      "SnapshotSHA256": "851363FA8C2F4940CE60FF80A0A90204D85DB5D2DF92816F14BFD26668DF9B2A"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\custom_project\\sc520-color26\\overlay\\uii2c.v",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\overlay\\uii2c.v",
+      "SHA256": "CFC585511D23CC2F215E2A98A39E6262B4B6F570451C9B62CE5BD1B94CBB532D",
+      "SnapshotSHA256": "CFC585511D23CC2F215E2A98A39E6262B4B6F570451C9B62CE5BD1B94CBB532D"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\templates.mem",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\templates.mem",
+      "SHA256": "731EC1B57D12F2EF305C35A055169BCD6733A4F76836AD1FA278BEE5BD9E8341",
+      "SnapshotSHA256": "731EC1B57D12F2EF305C35A055169BCD6733A4F76836AD1FA278BEE5BD9E8341"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\display17\\anlogic_logo_index.mem",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\anlogic_logo_index.mem",
+      "SHA256": "C2D435002BA873F92555373D156F85452CBD354931C20295638834F32A532D82",
+      "SnapshotSHA256": "C2D435002BA873F92555373D156F85452CBD354931C20295638834F32A532D82"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\display17\\anlogic_logo_palette.mem",
+      "Snapshot": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\anlogic_logo_palette.mem",
+      "SHA256": "05CCB51FEC4FEAA91D1993AF012D6D9589FEA3B1FE3756C13F632658BF91132B",
+      "SnapshotSHA256": "05CCB51FEC4FEAA91D1993AF012D6D9589FEA3B1FE3756C13F632658BF91132B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\audio22\\hardware-default.json",
+      "SHA256": "8D26D6D4A32D5A19A4F11579A58115F0D306BDF006AEBBAFC8B88C6C07BC89A9"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\overlay\\design_top_wrapper.v",
+      "SHA256": "CE298F89DF7C83B43CA758E62AD9F243CC39F44AFFF4D4952DA60A04BACB73EC"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\overlay\\isp_top.v",
+      "SHA256": "19457AB89719484465C266FB7185569BC82A48A6FA56DAEA818A791615A2BFCD"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\overlay\\pin.adc",
+      "SHA256": "1EC59B2EDA9BFDE53CE8CDC0C660797D6B2423C5CF4AB4945B717BC383E911E7"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\overlay\\pixel14.sdc",
+      "SHA256": "AC5F3682177ABE52423F2CAB38C398EC143FCA5C1B705C5FCD52A8F705C36C64"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\overlay\\uicfgcs520.v",
+      "SHA256": "851363FA8C2F4940CE60FF80A0A90204D85DB5D2DF92816F14BFD26668DF9B2A"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\overlay\\uii2c.v",
+      "SHA256": "CFC585511D23CC2F215E2A98A39E6262B4B6F570451C9B62CE5BD1B94CBB532D"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\block_frame_recognizer.v",
+      "SHA256": "B6AAEE99C269753E1B1C49A6DBD2F00439F415F9890F141A9A709B587EC835E9"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\capture_rgb96.v",
+      "SHA256": "805150EE3996FBB345C52BA3580205FEDC4FFA7C76C64213E198B65B31FDD9DF"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\card_result_filter.v",
+      "SHA256": "2496768096E8CDB243D477021CDD9C681F804182F46DBACE30C0AC7076C63B98"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\card_template_rom.v",
+      "SHA256": "36BAF5B6B3E85F96D11C47CD480D7C28B9C3248D2AFEC1F59522234C9A102C63"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\dfr0534_items14_audio.v",
+      "SHA256": "D4338F5A9970402B613FD145C06F369DE2577E45E9CFF9A61D8F080BD58C5814"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\dfr0534_link.v",
+      "SHA256": "E86A75AB518AF0555785D94096485A9E7FFBC47931CA3510017CF48FD2EE55A9"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\dfr0534_player.v",
+      "SHA256": "FBAD8B661606B22958B1A581B3D3F40D931423B481D214DC59D5AA594A791DFB"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\dfr0534_player_core.v",
+      "SHA256": "B0B3BE942CCF4E449A074E3A23CD4BA1D6DA7CC1050DFBBE864972FB2D8E3B68"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\dfr0534_track_map.v",
+      "SHA256": "717815D88B64247429C07B3B3EFC2FE9E3D0E101E24B1CA2DECB47A61B808784"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\items14_content.v",
+      "SHA256": "8AC445100F0539E6716A224B57BAA74F7BC031EB7F112361EA8667417132D477"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\items14_font_rom.v",
+      "SHA256": "E9F823F73499A6371503C753C02FE0DB7AF94B48CE972FF3389A4AB701E7AA53"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\items14_osd.v",
+      "SHA256": "62B7AD31BDA1AD73FF7846CEE39566E158DC336936CA5E8576D1C73C7D299875"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\items14_question_bank.v",
+      "SHA256": "D48A28CB887A3045C6839696612AD3E446C9E691D32298E3240C6A3A0F45CB54"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\items14_quiz_control.v",
+      "SHA256": "4DB2B8A9ECBFB9F087C298A5ADE2164BFAB39AEA5A52A361D8626F68F46D6E97"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\items14_result_join.v",
+      "SHA256": "62426C8ECF8E25BD36F96DB93672301A5877E9817E87F55BC9E9C2E1C4CFCC59"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\items14_system.v",
+      "SHA256": "B358DD4FD0A89FD102B25FE2B02F6FD568BF73B40886A405F802293B8A0844F5"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_block_filter.v",
+      "SHA256": "6B012CD311F7ED254548D8515B1B6E707DC0DAF890464D4B0F1CD88FEB5F4873"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_block_shape_guard.v",
+      "SHA256": "2BCB1AABD82168E05CC5E17C026D70A3FBC2B605444BF9050E244BF0AB4BD58B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_capture_provenance.v",
+      "SHA256": "98DF6B45CDA1EF595E5C50332A8103F729A7574D8129D8309621B266D633FA00"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_card_matcher.v",
+      "SHA256": "2F0A62B003B3633FD529870C63420B105F4FB00CD63DDC9F17F2F7E1EF708F87"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_card_template_rom.v",
+      "SHA256": "548EE01C8D003F9D76B8879ABBDB1B65A67CF54CCA63D7C2B0F6651BCE96E26A"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_color_diag_osd.v",
+      "SHA256": "592DF9162A0E49E16CC528E3A4F4048728E3A3D06D1FAEAAD219D3203FB49BDC"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_color_diagnostics.v",
+      "SHA256": "9B15228BDF69212689DC20B6BA761CA9A201E30F36A4E64B91F9C817CC9324FE"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_color_observer.v",
+      "SHA256": "86A644081E94251C5EB07689A5A6F99BA097BD248187A09CB6E9F35A95A26943"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_color_pipeline.v",
+      "SHA256": "2918511FD84BE80482D9010E7090DB9873672C68998513F0D2A4E9F0C2F24344"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_diag_osd.v",
+      "SHA256": "CBC2D7A288737F73700EA18A9D366A29A00EFA8E49EB16C7D629C32FCB7A9417"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_observation_bridge.v",
+      "SHA256": "58D0B19158BE33A23065502632E4A6C63DC2A3A7704620B7A8788E55281B56E1"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_observation_join.v",
+      "SHA256": "6F5CFEF8762374DA7145E675E7ACB9B7BB9EDE2E464338BC5785081D27BDA453"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_pipeline.v",
+      "SHA256": "DC96CC7CE9FDC8E5D6489EC0E0C7AE79798D0859065A22664CBF9BAABB271AAA"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_result_cdc.v",
+      "SHA256": "C13D3A688352EE3C5486DB5A2E979E2A7F50F3830B251EC5A3096C3152940053"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_rotation_matcher.v",
+      "SHA256": "D92B0CE7F6E14A6734EB2D8F706FC7F23B4CB28BEAC704DEF5A89D1D18DCCFC8"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_scene_preprocess.v",
+      "SHA256": "78FA97719C2F717E29500EE6F89E5E69CCBE26715F15B6EA807D7C8190FAA10A"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel17_display_request.v",
+      "SHA256": "0E796EDD938F0D62CBBC91C3543F5476D24E49821929F38FCC918BAF8720499B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel22_audio.v",
+      "SHA256": "936406E669BAF0A68ECB062B65F708B327DFE4FADB616C9B26AB36ECA613EF60"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel22_compositor.v",
+      "SHA256": "D5A9B6D5A15CB86562D3C65C964A06413ACD5154AFB3A47A6C930AF1FB964B1F"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel22_content.v",
+      "SHA256": "B3D5AC948A29FC7854E1334A825188C6D9132973762ECD48BE15E9630262EBD4"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel22_font_rom.v",
+      "SHA256": "72D4037194BEE82DF98D61287D510F9FDC552B496853912AF52CF3086AA71EC6"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel22_panel.v",
+      "SHA256": "94DB67FB654FDFC322B1227F138B84459FD04420DF1FDE2DCAC0B0414D90FFE6"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel23_color_diag_osd.v",
+      "SHA256": "26CDB124D170A220867962C7ADFCAD0F754CFC3869C346C298255D22E52C9118"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel23_color_observer.v",
+      "SHA256": "97269258F722759EF45CB5DC1731B58452208FE52855497F72C12DD7B23C02BE"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel23_compositor.v",
+      "SHA256": "34B1AF12A763CE1103F2EEC2FB6A887D74F00233425DB40A8470E94BB1D53F73"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel23_pipeline.v",
+      "SHA256": "643388D92A437FA46EBEC77DF99963D0D55893638C5FFEC7DD54A01E46F2D0A1"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel26_block_recognizer.v",
+      "SHA256": "C0F0316D8AC162697BB81DE71FF90C546E58D022A93D142F1EC255CEFF546EDF"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel26_color_classify.v",
+      "SHA256": "58F7BEB2A9E499E3B06A2A539C0DF01D024C2D1F6385A816E05931689728792F"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel26_compositor.v",
+      "SHA256": "7333E2890018D0A18C06AF6EC1E795C0C43DF7CAEA0D4EBE5C13BE27E94FB0C2"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel26_fixed_exposure.v",
+      "SHA256": "A3923DB20EE8F542B3FDBF085E07B7985148CD7B5320CB7FF8444E649FC3E890"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel26_pipeline.v",
+      "SHA256": "474870E1DDC7507C759D610C007DB29FB5FDE73ADDC503E5D4D95676F10450B6"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel26_processing_display.v",
+      "SHA256": "6AB32D2B398752CCB2DC932A3F31CFF563540116B63218324DF712A9134342D8"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel26_saturation.v",
+      "SHA256": "06E3759B8427B65D2E9901B5CF480F3A32A7DE5EFD3DC5F7560E496FB565374A"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\sc520_color_classify.v",
+      "SHA256": "B8F779CCD3DD795DCDBA3D0BF49F8D58FB06F3D31418ED529BD3213015CFF537"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\sc520_logo_pipeline.v",
+      "SHA256": "94463647C403615F99FC80C3CC70456C416EF2809DDD23BD09467A144CB2B640"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\sc520_processing_display.v",
+      "SHA256": "72D83BBB59788D75BE22B08D52FDB4F2D877D0320832F3BDFBD6133A666F55D7"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\t020_audio_queue.v",
+      "SHA256": "78874099250197989B5ECA0EE33F1B644744C4874B9C1DB21E9A0C56E7C32177"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\td_project\\al_ip\\ChipWatcher_0\\.m_params_ChipWatcher_0.txt",
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\td_project\\al_ip\\ChipWatcher_0\\.params_ChipWatcher_0.txt",
+      "SHA256": "22157F184B5FA6930B359CD29BA06D8D93F32D500B44228CD7B260905923CFBB"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\td_project\\al_ip\\ChipWatcher_0\\.ports_ChipWatcher_0.txt",
+      "SHA256": "F8F5FFD9D48271FE7BCBEFC7825452A7341DCCA5E5936BDE8C21541BDE3A5182"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\td_project\\al_ip\\ChipWatcher_0\\ChipWatcher_0.sv",
+      "SHA256": "8EEC067181D72DA62AC0CE267ED840DA4932A00C9866231CEE8F0B51EAE5F8F3"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\td_project\\al_ip\\ChipWatcher_0\\ChipWatcher_0.xml",
+      "SHA256": "0385331F41C7B0E3A719081D83A1E87D439AA0EBB8F705E47A0C7E6F8233E4B1"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\td_project\\al_ip\\ChipWatcher_0\\Design.xml",
+      "SHA256": "7E722E6C3ED90C6A7180035A4E50545567EB4DEF1CF340BAB7DB395684FE46C3"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\td_project\\al_ip\\ChipWatcher_0\\DesignConfiguration.xml",
+      "SHA256": "B29E59DCA2CC79784E1C8C6B42CB93AF22F15F45D258A4C2D7DD6B1B26692E3E"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\td_project\\al_ip\\ChipWatcher_0\\Other\\templa.tcl",
+      "SHA256": "B3EF134318503500FB1E82BDB06364802E4CC988E29B23BE51F0CE0241A1D059"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\td_project\\al_ip\\ChipWatcher_0\\RTL\\ChipWatcher_16ce29dbbb24.sv",
+      "SHA256": "38652633252A9EA1905824D30CC715A177F6022557545F752C3CDA421649DE2C"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\td_project\\al_ip\\ChipWatcher_0\\RTL\\include\\define.v",
+      "SHA256": "0BECCCF01F3D1AFE5DCA4F918514D67D698E3B8B992868737B1A361AE43062CC"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\td_project\\al_ip\\ChipWatcher_mipi\\.m_params_ChipWatcher_mipi.txt",
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\td_project\\al_ip\\ChipWatcher_mipi\\.params_ChipWatcher_mipi.txt",
+      "SHA256": "0E88873E45544D91B2D908E426F2A1A1C627EC620529FFE1733D98A3042598F4"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\td_project\\al_ip\\ChipWatcher_mipi\\.ports_ChipWatcher_mipi.txt",
+      "SHA256": "438D7209AFFF7A5D928EE1CF3FA8B0C787CB418433A89470CD0E82B7AFEA413C"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\td_project\\al_ip\\ChipWatcher_mipi\\ChipWatcher_mipi.sv",
+      "SHA256": "2CBFE3AA9989FF75ADB5BB89A3EB2A2DC351C73673A3B8A00D411A11E84930FC"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\td_project\\al_ip\\ChipWatcher_mipi\\ChipWatcher_mipi.xml",
+      "SHA256": "7F4132221716881B3D0CE8C2D705F3F282C0826B48544B9CA5F088C03660DEF8"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\td_project\\al_ip\\ChipWatcher_mipi\\Design.xml",
+      "SHA256": "E808EF9A1023DFD6D459C5813575AA8CC93008F4BDCC5EB19BB1DAB5CB328AF6"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\td_project\\al_ip\\ChipWatcher_mipi\\DesignConfiguration.xml",
+      "SHA256": "6FF4B0B9127E10BA0005300340A5B4FFAB56D89762806D5A58CF8448EFBB04F6"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\td_project\\al_ip\\ChipWatcher_mipi\\Other\\templa.tcl",
+      "SHA256": "B3EF134318503500FB1E82BDB06364802E4CC988E29B23BE51F0CE0241A1D059"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\td_project\\al_ip\\ChipWatcher_mipi\\RTL\\ChipWatcher_aef86b9bb9fc.sv",
+      "SHA256": "0AE9889A18D15BE83C45BE11821907F1E4BBF0D67D8085BAA7B11839D3A1FBA6"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\td_project\\al_ip\\ChipWatcher_mipi\\RTL\\include\\define.v",
+      "SHA256": "7DFAF27563D4418D8411604F0BB38DB800F1E10BB2CBF6BAF39A540575148268"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\constraints_source\\pin.adc",
+      "SHA256": "1C84446C6091DD59FE015DF85C8F8F0A3C1C6026758A7E84E257F606B7E17354"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\constraints_source\\timing.sdc",
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\audio_arc_calculate.v",
+      "SHA256": "552D8D86AFD237666B30AE08F31247808E89EB024EFDE5EFC670B82EB617A7DC"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\auto_white_balance.v",
+      "SHA256": "248B841FDC7640D07768B0E6E086704A862DA24047DE40C80BEB8CC201180E0F"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\awb.v",
+      "SHA256": "FFA95657DFE125F8F7432D9319E25336AE33C97384D5DB80F1EE1F50C65D0EB4"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\csi_unpacket.v",
+      "SHA256": "CC66FEC1EE55FFF7E8A31964E6C27670006CAF294D153FEA8823C83FA9890233"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\data_96bit_to_128bit.v",
+      "SHA256": "6861038B75F2F7010BFF99742E4DB9470643716C7E6B9B615A27DA60D4542924"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\design_top_wrapper.v",
+      "SHA256": "E17812C00911C0FAAFCB90432F1F0014F032590F229B5D5B1B29C1056E1CC8C1"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\dsi_tx_packet\\config_data.mif",
+      "SHA256": "0F5842F2CA3E46634E0215CC55CF2C9B5AFAB16517E96D9E5DDE6BF3845813AD"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\dsi_tx_packet\\config_data.mif.dat",
+      "SHA256": "4E05846962E371E436714AC3268109D6322E333620AD4E95E3391C6DA9F432E2"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\hdmi_1_4b_transmitter_core_wrapper.enc.v",
+      "SHA256": "867E0B0BDD874BC383D00918C9E1BE3FE01EDF41F343B6A0D73E262776596A63"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\hdmi_mixer.v",
+      "SHA256": "B0D8D5D549604005B0CFE2B03778F55CF1F3DD12E3640AF230D5E3DF519DC0D0"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\hdmi_phy_warpper.v",
+      "SHA256": "416B082B0987001BDBC0A7E20A557CB8FB1DCA34E25DC881E6D28A8CB3CF4300"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\hdmi_tx.v",
+      "SHA256": "12AA38918C9C7F589AF6D6E6A16E8F4825B0ACF0210EDD050FBF462667C243AD"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\I2S_receiver.v",
+      "SHA256": "08904598B42C2E1A4836CD9FB3293BC6C791EA2F79E35C7663A33127DC97F47B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\image_correction.v",
+      "SHA256": "6BF43322799BD1B4A727F0571EAE2224FCB4C1F8C72575CF005F0B3E56BD2DF8"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\awb\\awb.v",
+      "SHA256": "BD7F8178ECDC372DCAAC28195F97CC52E23A8DB9824854A10376002B244E428C"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\awb\\divider\\divider.ipc",
+      "SHA256": "9999CF173CD5EEC48AC008563BA334374536A54BB2310F0B92EE0708DCD34DED"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\awb\\divider\\divider_gate.v",
+      "SHA256": "FC1AC2635A0CF09C98BBC48CEA52E0640904A3505EB46B59F0B944935C491C53"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\awb\\ram\\blk_mem_gen_awb_delay_signal.ipc",
+      "SHA256": "8C5708A314EB6754EC78CCFD3B5331047C7602D972F18C67A97DC01D36D1D826"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\awb\\ram\\blk_mem_gen_awb_delay_signal.v",
+      "SHA256": "9110444F36261B8A4661056BAF88262A648503182467FC5CB1FC0C212CEEF44D"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\awb\\ram\\blk_mem_gen_awb_delay_signal.vhd",
+      "SHA256": "3C63595F98A7A38371F5935678A16DC80275BDEAFD273FABC17357F422AA398F"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\awb\\signal_delay.v",
+      "SHA256": "C195CEFB01385F8436C019940120B8BC4BD4B4CA18D8FF1402600249B3BD23AF"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\BLC\\BLC.v",
+      "SHA256": "011D09B3E1DE47B9E444945C257426836F4947E8DD9B3CD2E9C1539B44129221"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\csi_unpacket_2lane.v",
+      "SHA256": "FE1008432A7A2EB019B2D91EDB22D21C685828BCE1B8986BD84862ED0C7AFED5"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\data128_96\\data128_96.v",
+      "SHA256": "B6ACCEB73CC76058D4AFE6EC593360BAE6701646FDDA780A9264ADA3BEFD5318"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\data96_128\\data96_128.v",
+      "SHA256": "C79A102378C70CE5FAACBC46A62B5AE6EAAC151B93891379EDA2880A7D68FE30"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\bilinear_interpolation.v",
+      "SHA256": "53A4FC3DEA805D59CEE9BDAB1A090C26C03EB555AB612A1A4698D810C1991BAF"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\blk_mem_gen_demosaic\\.m_params_blk_mem_gen_demosaic.txt",
+      "SHA256": "5E26EA4E1476686542CD496C81A4557AA1B674149BA313B3FD625AF5C9FD1A2C"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\blk_mem_gen_demosaic\\.params_blk_mem_gen_demosaic.txt",
+      "SHA256": "FD29C924B47D1E48BDC3A2EAB4F7ABB679FB23AAB23B3C40E29372F0F2C8F1B1"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\blk_mem_gen_demosaic\\.ports_blk_mem_gen_demosaic.txt",
+      "SHA256": "F9882B0975A77F758BAA98B74649159C7F4C6590A259591941C039BF1EF8EAB9"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\blk_mem_gen_demosaic\\blk_mem_gen_demosaic.v",
+      "SHA256": "F52E1A6EF3DA30B6B5342ED21FFFC1651B9D0574FD3331215DBC0FB21476B83F"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\blk_mem_gen_demosaic\\blk_mem_gen_demosaic.xml",
+      "SHA256": "9488F4F3AF1D7CD60574A6A115F6FE78416432810231EE50DE51E27C844A0570"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\blk_mem_gen_demosaic\\Design.xml",
+      "SHA256": "15D9B59FEAC472CFDC73A0AB4BC78C76C8AF7CC9BBD3F1B09B3C10623770A559"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\blk_mem_gen_demosaic\\DesignConfiguration.xml",
+      "SHA256": "B4B0392BA552C1631343AC2C7732075D9AA95460715723994AECABF399DA8868"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\blk_mem_gen_demosaic\\RTL\\include\\define.v",
+      "SHA256": "CE22C429ACD5D725B986015DB98A3A86609204620DC1BA9158123F1E335B6AC5"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\blk_mem_gen_demosaic\\RTL\\ram_c36c2ca3b3a7.v",
+      "SHA256": "4C007B82769A2AF9474683EC27711133C735AC776FD1F3D037D4EB00CC20A832"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\blk_mem_gen_zhenghe\\.m_params_blk_mem_gen_zhenghe.txt",
+      "SHA256": "97A9F87B1F5AC927934D32BEBC00206A13B23830FACC6B2A2298CCF7924903FC"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\blk_mem_gen_zhenghe\\.params_blk_mem_gen_zhenghe.txt",
+      "SHA256": "902190F496EEDD54C33824555EF6AF4E5553329C256CC046074F7B8F4468693B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\blk_mem_gen_zhenghe\\.ports_blk_mem_gen_zhenghe.txt",
+      "SHA256": "F9882B0975A77F758BAA98B74649159C7F4C6590A259591941C039BF1EF8EAB9"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\blk_mem_gen_zhenghe\\blk_mem_gen_zhenghe.v",
+      "SHA256": "C6B2064638CF7217B792E8F880840F46151A1C83158DD6E96D8D4C63631432BD"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\blk_mem_gen_zhenghe\\blk_mem_gen_zhenghe.xml",
+      "SHA256": "48EDBC23F5A159C7174D46CFB3F71D57726553D99EE9C7095D3913ECB3B7A6EF"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\blk_mem_gen_zhenghe\\Design.xml",
+      "SHA256": "DEE91DFD99DEE99429C37B0E7D57888C3AFF5473464176C1D848573F08143BA4"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\blk_mem_gen_zhenghe\\DesignConfiguration.xml",
+      "SHA256": "ABF427DEB516260163DBFE3677440C5BA3B75ADE76DE7BE5E13B9F02F65B2D33"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\blk_mem_gen_zhenghe\\RTL\\include\\define.v",
+      "SHA256": "104EB8D9B626B944B1E2D3B8070F51C636AF132BC00B32EBED0236BBB2C144C0"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\blk_mem_gen_zhenghe\\RTL\\ram_d32970204f32.v",
+      "SHA256": "FACBB17D5CF7AA37E7CB63764780C2C7ACC655FF421A766701C656ADBB9F8C26"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\demosaic.v",
+      "SHA256": "95FF3EAA0E99FD1DBE63C153164E36FAA1A97B19D071E4A0B0BB3936287F22D4"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\line_buffer_demosaic.v",
+      "SHA256": "57D2626EF83F555D027CC442FAE0959A916CF1B0939C0115AAA9D414745F94C7"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\mipi_to_raw_converter.v",
+      "SHA256": "B77E678034AF9968D0969655F403CAC3B992412B109DBA889E8CCB3F6F224975"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\raw_matrix_3x3_buffer.v",
+      "SHA256": "28F19502F5A70B48E9BDEEADDCB84500052B7BD0C6E15B4DA1EA9899265577C3"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\zhenghe.v",
+      "SHA256": "ABCC6447EA9C47185B0E93B5ACAEF001F19E5FF99D0F80CC6E4CB4BB852A4BDD"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\isp_top.v",
+      "SHA256": "C65DC71DCBE05FFDB0FFD2CFE161EE1D96DC14C35B62CB8AAFB71861173DBA36"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\raw10_unpacket_2lane.v",
+      "SHA256": "83F89D7F8E2B19322A7F6A8DDC0CAE64FCBD83FED6B742C10F5D2339F59D30FD"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\uial2axis.v",
+      "SHA256": "8CD4D98799DA50285BC381C16405AEB55EB4D28363E20B33836542A32539610E"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\key_remove_shakes.v",
+      "SHA256": "8832F59E7BA94BFB8CF31E4F5A772EF7177D5257A5A2532D53CBFA1D9B7F5CD9"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\lane_lvds_10_1.v",
+      "SHA256": "DE9529321354F04837E051D0EC1681CF44783D4BE3284703A788E081147500BC"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\learning\\audio_event_player.v",
+      "SHA256": "FDD447F1B08C99CE0A2C26CC8E3A5C0F3594CAEFE3C956C8AB672DE2BBF6F212"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\learning\\detection_adapter.v",
+      "SHA256": "88C8D2C28ADA81E18A4DBDB251E1169476D84B07B2EFED95E063EC0F7BEFBCAD"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\learning\\hdmi_learning.v",
+      "SHA256": "BABB610956591F4C4095E176660DE9F282350A9C685BF7DCD5BBA7DC10476586"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\learning\\learning_content.v",
+      "SHA256": "B219F032C6A1894CD90F1294F3E6BF5D77A793C71FA4FC0317496B4539EA2082"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\learning\\learning_events.v",
+      "SHA256": "57C8321B1897B3ABF63918FEB12300F0EA2BBEBAB137D1BD8157CD1A71C121E2"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\learning\\learning_font_rom.v",
+      "SHA256": "DD5FBC6FCB1AFFF248E99EA0A3AB49BB8C21B3352F1BC8F3047B68A5D1D1E51F"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\learning\\learning_osd.v",
+      "SHA256": "9759F2BB4CF8D8294B324C6C1A49099133D8C3979522A00FCE1C70261F7403D3"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\learning\\mock_audio_player.v",
+      "SHA256": "6E1CDD67E148CBBFFC963B653EAE73F22E66DC53E0F06B15AAE89A762F8C68F4"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\mc_to_user_interface.v",
+      "SHA256": "FEB0E79B852CE9AE3319BDD8CB563A3A829498E487F9252F89818482651FF527"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\mipi_dphy_rx\\byte_aligner.enc.v",
+      "SHA256": "25A3581A512AD89BB43FED2758E32CE089CCCA29DEC445EF9B71DA36423F217C"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\mipi_dphy_rx\\byte_aligner_wrapper.enc.sv",
+      "SHA256": "D98AE007D77AE262C0C34B53586A5AA8A840EDC7DCDBFCC9091EB89CC68A6776"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\mipi_dphy_rx\\channel_aligner.enc.v",
+      "SHA256": "3824E224A0B0B4E2B37CA4AC5533002221BCAEC2694EE86DE5C0F1A104DFFEBB"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\mipi_dphy_rx\\channel_aligner_wrapper.enc.sv",
+      "SHA256": "C26AEF5AEB40A767633EFA21BE4E5E59C25B91E79D0EA1F7C05D70A958771846"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\mipi_dphy_rx\\hs_detect.enc.v",
+      "SHA256": "BBF7A362273291A874793ABBBD027A8D668C6281A4DD81240EAE45572D5E5C92"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\mipi_dphy_rx\\mipi_dphy_rx_ph1p_mipiio_wrapper.sv",
+      "SHA256": "86B796060B0A133D1D10FC659B85C73EBFC98EBFA51904860A89AD5BDB68FE5A"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\mipi_dphy_rx\\ph1p_mipiio_rx_wrapper.v",
+      "SHA256": "F957019576D22A8322889AF73F8BFEE07F46006959F9EFCCA0595BC8FA3234AE"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\mipi_rx_error_detect.v",
+      "SHA256": "7AB5204D168148EC095B7DDC9E8156679D06A428D168CDC88BE47E82AFA5628E"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\.m_params_ddr2.txt",
+      "SHA256": "2E7E92F7421EA8CDE90C09D90FC68472E2043801F5AB8115518B347E4617546A"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\.params_ddr2.txt",
+      "SHA256": "05C307685A34E4E3FAFF48B3F67BCA22B992AD3A2CA39D67112347CA307D3CFB"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\.ports_ddr2.txt",
+      "SHA256": "8C870855F11B7288369350FB8CAE50196DDAD60B7DF9108780ACA164825EE88F"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\ddr2.v",
+      "SHA256": "99910FCD06D61B728C4333F8EB15DD07B61DB32AF197AD3871995283461FE29E"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\ddr2.xml",
+      "SHA256": "1C0928264DCBC2217F7C1015042FC61E02BD444B727EAC8B2E8F9BC4B89FC720"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\Design.xml",
+      "SHA256": "05F2DF14236DAE523772394418C4BFC68949FD9BC0C5A25FE9A5C82B815B3538"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\DesignConfiguration.xml",
+      "SHA256": "A3B21234CB726166D33141F559B20BFDADEA14B5F752E547B07E6EE8A8230FE5"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\ph1p_ddrmc_wrapper_63f4ac254419.v",
+      "SHA256": "A206D148022C1A5BB46C37932714DC9D57FEA32F39FDB344E060E9FC9C6FF1CE"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\sim\\fileset\\fileset_mis.f",
+      "SHA256": "ED60CFA5D7EC730EE1114414CD7C74DF3A6B5710E9FE38689710CEEC59761E7F"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\adc\\ddr2.adc",
+      "SHA256": "9B579AEF1DD260789B02B7012CA9689AF6280EC9AF530A1A946C5AC0A8C43E81"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\clk\\ph1p_ddrphy_clk_top.v",
+      "SHA256": "036A13CEFC0014468CB7553AA43064A65BD2BF3008C25D2E495867FC5F43D329"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\clk\\ph1p_ddrphy_pll0.v",
+      "SHA256": "AB08D9B46EFF0E2ACF0ABAF5B57E999629894E1BA4F28D14F859C45A6B487FA7"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\clk\\ph1p_ddrphy_pll1.v",
+      "SHA256": "9AAFA4558B482EE93F926AD3F710A90CE1BE99DDF8712752D1E1C48404F90AE0"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\include\\ph1p_mis_define.vh",
+      "SHA256": "A0E0BC78EAB01CD1815A04F246420B68B4A5A616C43C2F36988C4DF94FC1B471"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\init\\ph1p_ddrphy_dram_init_ddr2.v",
+      "SHA256": "B4B6C9E5223852750D2A0D3A013447716A08C56055511AFA517DCE612380649F"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\mc\\alc_mc_top_all.enc.sv",
+      "SHA256": "19B4B773F7DAE211B9B9ADB73C3871D5B494345FBF684CE1B7DAC9CD3CAE512B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\mc\\alc_phy2mc_fifo_ctrl.v",
+      "SHA256": "CF1500A2D491C637A9150FB36FBC6DE109E62CCA5D8FF3C58DADF5F7F84472C6"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\misc\\ph1p_ddr_fifo_dram_sync.v",
+      "SHA256": "21795BF78115DBD04D7EC81F4F240832D8E7267FDEBEDDCB6BE50D3CB95AB8B6"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\misc\\ph1p_ddrphy_sync_rst_gen.v",
+      "SHA256": "8DB3D13DEEC253A2248899DE81A7D1A382EACB7683F229732A28272AB9969C55"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\phy\\ddrphy_cfg_rom.txt",
+      "SHA256": "2F5A00C5A364A4D37891042B4D4956A29B3990B3385512D20EDE491C8CCF863B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\phy\\include\\ph1p_ddrphy_board_delay.vh",
+      "SHA256": "FBB70F7D53984AC052B29DED89FEFDE7C82A003484FC7FC60E0A816372C0DE89"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\phy\\include\\ph1p_ddrphy_bus_matrix.vh",
+      "SHA256": "828CB1DECEAD67B69CCD6540FC7C9B15B8DAEB3B5F101F08C92D2A8A228F4ACB"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\phy\\include\\ph1p_ddrphy_ddrio.vh",
+      "SHA256": "8E9BDE3255E6A332FC43AAE1414A29183B5E1ED650D3EF731FDDD2DBBFF21863"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\phy\\include\\ph1p_ddrphy_pad_type.vh",
+      "SHA256": "76439AB49AEFB1E41D91D2D4EE12094EF362B1AC69A382B8FAA5D3202842B7FB"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\phy\\ph1p_ddrphy.v",
+      "SHA256": "D48E70211A598A211CE0F9060C767C04148592B0EC1137017027BB741AD5B283"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\phy\\ph1p_ddrphy_apb_bridge.v",
+      "SHA256": "CDE632F73A4E58C1CF375F62626B26E144EF553926B5539B5EAE08B655FECB12"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\phy\\ph1p_ddrphy_bankref_cfg.v",
+      "SHA256": "96121F2A93A56127499518158B07B2DB9DEFF29BBAC464D3C077AB6A718A8F1C"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\phy\\ph1p_ddrphy_byte_wrapper.v",
+      "SHA256": "AD7FA1A71337F4A3989CB619D77B770510C30C5B81F126F6661EAF65F01F710C"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\phy\\ph1p_ddrphy_cmd_decode.v",
+      "SHA256": "B3BD00DF9D41B792D6F6A18B2BE29C8AB363AEB3FB7DC88FE0BE61DFF8905ABD"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\phy\\ph1p_ddrphy_cmd_execution.v",
+      "SHA256": "53C5EAAD74ABFC98BB0C2A4EDE0A1863C8A34008DA1955CF7AD397E151D0A9C1"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\phy\\ph1p_ddrphy_cmd_wrapper.v",
+      "SHA256": "82CDEA3269662C94B82C675C8A7E110C1C1FC212775F4C696E876215E7EBD68E"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\phy\\ph1p_ddrphy_dcu.v",
+      "SHA256": "0F335EBF3607A7823B90A6D6278DD3906FDF0E941C019C83186B2D017E613B49"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\phy\\ph1p_ddrphy_dcu_wrapper.v",
+      "SHA256": "B130B5B93BCC9FB8FB71A0E38A1000C86CB663AC1D72AEF0A47215D8154AB32C"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\phy\\ph1p_ddrphy_fast_init.v",
+      "SHA256": "C36A5925A09F8DAFE5D49144CDC72FA85656602B3D4A944F587BBD0D9FA1D5A3"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\phy\\ph1p_ddrphy_fast_init_wrapper.v",
+      "SHA256": "30CF679296790CAA864D0EBBE6110A17B3C9B6BEE529EF3CD6EEABE37DA2DAC1"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\phy\\ph1p_ddrphy_init.v",
+      "SHA256": "FAFA767B0A4D1F431DAC6EA1461DC16AFF2EA1169C8AA45A50A009117A90F5C4"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\phy\\ph1p_ddrphy_mdl_cal.v",
+      "SHA256": "247C8A832EFEBF5C4733E599D7E2B19ABC3687CA48B6317EA1FC882095768D95"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\phy\\ph1p_ddrphy_mdl_cal_wrapper.v",
+      "SHA256": "0B583C987311DEEADEEEDD19DD51A04E8E14B227873E37F1EC8DB8DD18B7C125"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\phy\\ph1p_ddrphy_rphase_ctl.v",
+      "SHA256": "2E26A87B37C99613BC61C52FD2482012A2F5BD8A662636F782418DE5D9CE6928"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\phy\\ph1p_ddrphy_top.v",
+      "SHA256": "0780509185215671E361E6FCC47A0CD8A986C5F48B8A3E140FAA8EC64AD62EEE"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\phy\\ph1p_ddrphy_wphase_ctl.v",
+      "SHA256": "6E62E4E832B2B85859CDBD38D2D08DDE9B8066670246C6C7AB6D675E0DD13680"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\phy\\ph1p_ddrphy_wrapper.v",
+      "SHA256": "12CE7589375EB44F6E71D9D4280AE32CF2BB82EF7519A2DDAAE01F7914BA0467"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\timing\\ddr2\\ddr2_1066.vh",
+      "SHA256": "B64F54DDCCA5FF29139F55CC2E9BFB388B3781C951EEC156353DD6794171A49C"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\timing\\ddr2\\ddr2_1333.vh",
+      "SHA256": "50F8013FFD18E874A8917E633287E2C7803126C594E0F95BC582931A8E1AAAB5"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\timing\\ddr2\\ddr2_400.vh",
+      "SHA256": "9CA837EF541E787058F3BBBDACB952B6D97A8FCA315DC87DFC4DB6561AEDFD73"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\timing\\ddr2\\ddr2_533.vh",
+      "SHA256": "78495997F24D6A890756101CADBD39EBDCD814EBC3981F190AE43CB319815C9C"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\timing\\ddr2\\ddr2_667.vh",
+      "SHA256": "66FDE1491AEB55F212CCCCBB174649B63029D4E63DF5105515241765538518D5"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\timing\\ddr2\\ddr2_800.vh",
+      "SHA256": "034F9FA434E52A7F6E38E3C5D8D01218BC87C60CC8463BDDE6BC5C454E1B25AE"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\timing\\ddr2\\ddr2_parameter.vh",
+      "SHA256": "4B10686E72BCDE0F3F2A25C28B31DF92C3478A39257B16B28CF7F88572436DFE"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\rtl\\top\\ph1p_ddrmc_top.v",
+      "SHA256": "067AC86D88E35CB0C12E62816175542DF2E907D244E86F92411611B83123736E"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\src\\sdc\\ddr2.sdc",
+      "SHA256": "ADB6317927DFD09095073CAD40BE8E63D39EA3D941B4C790F2F483B1AED428D6"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ph1p35_324_ddr_wrapper.v",
+      "SHA256": "891E2838AB36107B05BD23F67967F8EF3F9E9564F2FB022EC382F54E233E9E8D"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\pll_hdmi.v",
+      "SHA256": "FE5889427A7C5B7586F3C1350C3FE9A16851BEC343257A44C472606BBF954FF7"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ps_wrapper.v",
+      "SHA256": "46D6F2C8E42724E28FFCD8516BC4F2A2D12E36F920E1F20CD42FE722BE461AFE"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\quiz\\hdmi_quiz.v",
+      "SHA256": "59B72B1C55A1B0D29950CD7865330F1E34AC350E5EA4497965564AD486F4C2CA"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\quiz\\quiz_audio_queue.v",
+      "SHA256": "3D99F4A6760F45513E51A84A6DC785E8BD06AD8A420B261153AF52E4175DFD08"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\quiz\\quiz_boot_controls.v",
+      "SHA256": "DBB8AF3B57ADF60B3BD13DF03A1FED8F6F7BACCF5FDF76A33683686D64AD1728"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\quiz\\quiz_content.v",
+      "SHA256": "1737C984C4A0B5B005261D9BC41038E7613EB7F5DCF934CCD0EC6F85A4B84333"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\quiz\\quiz_control.v",
+      "SHA256": "CD41CB3FBD5F5B698CFE1A5AA7E8FB699F91929112EED97B3D9AF724662B8DD0"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\quiz\\quiz_font_rom.v",
+      "SHA256": "E53021AB719BFBF6A8E364A740BFB9990085D5C218BE8AEAD1A2350FDCC3C4EB"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\quiz\\quiz_key_inputs.v",
+      "SHA256": "BB14A8A2F4C049E1547A5A1805C4291D41D829A725FF4A2F8C6781CAC2D4F85B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\quiz\\quiz_millisecond_tick.v",
+      "SHA256": "173C1155E8EC0B239CA2F7E00EC87C2E7AAD704C9998EA5B4142118CFC37763B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\quiz\\quiz_mock_player.v",
+      "SHA256": "83C80A9B06C565BAC4836B90C927B1607458745E638C98C1A3EC39578563518D"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\quiz\\quiz_osd.v",
+      "SHA256": "8D449C66B7509C900304DFF3C7F93CEC17CCA436762879C4FF9F7A85D25915D8"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\raw10_unpacket.v",
+      "SHA256": "840C54C3EA5C025BEA90A751656DB98079E773FF7535B27F4AC11E8837D46798"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\raw8_to_rgb888.v",
+      "SHA256": "FCC29DDD6942015D5E5FD43D148A9487CF3689C7C70C896A654A4E934FCADE2C"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\roi\\bbox_stabilizer.v",
+      "SHA256": "C052C4253C379FA217A2A14555B3E87A8745129E6DBAFCFE0492CB65160B5A5D"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\roi\\chinese_osd.v",
+      "SHA256": "3F0F4FE17EF23233F15C54ECA55BDE0596BEA5D029A0A810F2C93F4DACDD3995"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\roi\\color_bbox_stats.v",
+      "SHA256": "E896117B20AE7772EFE542C13FD6F3243A6C4B13897D895CF557BD7A16CDD620"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\roi\\demo_pattern.v",
+      "SHA256": "B983810FD22F56CA715C34E0953260ECB7D5EC7F092697E4D2462C4EC70DBEA7"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\roi\\demo_sequence.v",
+      "SHA256": "ACDFB47C7BB11468916B12BB674AAF59D88BA87D4468CB00B3ECE6AC41DF686A"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\roi\\fixed_rect_overlay.v",
+      "SHA256": "4B9837D9E7187FF58C22AB8038304F292D23FD41DB0CBFA1C4BBACAB38F8A755"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\roi\\hdmi_color_mask.v",
+      "SHA256": "4B6FAA588C50189A054D593C4F802663414374852153D5DF590F4AFB73060528"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\roi\\hdmi_dynamic_box.v",
+      "SHA256": "0A309EA2FDD37D82E1C09355210E5346585D4A530744D7F2FDF5E3C9A6F54D1B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\roi\\hdmi_osd_demo.v",
+      "SHA256": "50DD38570EAFD0D2083FFFBD8224B6354961F7EFA210FDD6786350509F9D88D6"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\roi\\hdmi_roi_overlay.v",
+      "SHA256": "CB26853931CB6EEC11AF75E437E1800A13C6DCC3F0CD4F58911662F7A965AC48"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\roi\\hdmi_shape.v",
+      "SHA256": "770059BC3B3667D58A09032EDA92900B5D2CBC41382ED99E86448AE62DF842E7"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\roi\\osd_font_rom.v",
+      "SHA256": "EC5B5EE9122B271DB520CBD7E6CD0E0AFC9256F440C176787DC93856A16A6804"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\roi\\pixel_coord_adapter.v",
+      "SHA256": "08CED44E72901B030ADB71A737D06ADC7AD0897845B66A86FD660F4FFB0AEBB9"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\roi\\rgb_color_segment.v",
+      "SHA256": "35051F8DBE446AFD73DAE6488B15FFC1D4ABF80BC3635CC918F5468A26F180EA"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\roi\\shape_classifier.v",
+      "SHA256": "9A3B7DD9513A345E2622E869AF34FA70C0813FC7F953CAC21C416520AE58C49B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\roi\\shape_confirm.v",
+      "SHA256": "795B5E90F83BE96DAE8A2CE5CD9A48B722BA2AB6A4B5CDE772D401F034B25E3F"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\roi\\shape_label.v",
+      "SHA256": "941CABCE6F3EA9DA97155D26EF6F116B8B57EB85B49014C7398E4C3BDB67B383"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\signal_delay.v",
+      "SHA256": "B7A8156BC59BEE5DE2C1AF20CB31079388ACE1F4E767A18288A7DFF8BAE3D5FD"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uial2axis\\uial2axis.v",
+      "SHA256": "84A820E3643555443AAAADE01E0BDF0BF2112AD757F4AF37DFA9007D9846068B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics500_cfg\\SC500GainTbl.v",
+      "SHA256": "574A37980C5353C8079AE870B0B60DF3429B78B301DC58FC97954B9FB79FBFD3"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics500_cfg\\uicfgcs500.v",
+      "SHA256": "E41DA183EBA57AF58FDEB0152AD5AC7A5DB7C45332C7B194EC2821D4BC121E52"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics500_cfg\\uics500reg.v",
+      "SHA256": "54C80188EB9713022BA28EE5DF9A424480BEEE479DCA29490A928D311992575E"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics500_cfg\\uics500regAE.v",
+      "SHA256": "F37E71B95B8AAA8F1A4C3BC7A38492D15C5FBEA076D8564C3498F54FACB8996F"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics500_cfg\\uii2c.v",
+      "SHA256": "032DF05881F9BD7C7CF86CC1381ADCB739A18F8A8744ED06B1160AC294A6DC0D"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics520_cfg\\SC520GainTbl.v",
+      "SHA256": "45C6E2867F9FCAD17EDDEB55ABAD62ED423663B03A0BE26B4E41FC83081C8B68"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics520_cfg\\uicfgcs520.v",
+      "SHA256": "A8F41E1ADB98EFF4EC8F7CE902F925646809BEE227420D633FE8B9FA6552FC0D"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics520_cfg\\uics520reg.v",
+      "SHA256": "3F05B138D91DBCB0093398488DC48EE3FD60E892698ADB3C21ED61DDA60CB572"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics520_cfg\\uics520reg_720p60.v",
+      "SHA256": "8C871586E9D2BF46F245F161F925AB1D811AE647D3089C1EAF8FA9CE5C8F48C7"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics520_cfg\\uics520reg_full_2560x1920_30.v",
+      "SHA256": "162F85E0F314B1FCA4ED9577AABE9EF8B426B17DDE06E732AA2EBB61BE8AB8EC"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics520_cfg\\uics520regAE.v",
+      "SHA256": "C8930145298088FF75C3F0130B40E3F8FA801B2D53653A4BC7FDA4BE5BCE4403"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uiisp_beta\\ae_set.v",
+      "SHA256": "230FFC2722B88DC585E5164022870F9B22D86F68D3F002C6A5B7A8968ADBBE74"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uiisp_beta\\csi_unpacket_2lane.v",
+      "SHA256": "B7E093E1E377F5A61A22216E9A4EC404068A3346923758297867B465679DACDD"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uiisp_beta\\raw10_unpacket_2lane.v",
+      "SHA256": "FF8CEFB3F6001339D16A34863151C67DACE3EC04D375B2FA16844911BB1DFB10"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\video_cuttting.v",
+      "SHA256": "C1131787DA9C80029759EE2821C9C042A850CB459B812676D1CC6A144FF14480"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\video_in.v",
+      "SHA256": "7C9501805013C5B53E3BD247C37A7BEE7D27AE09F45A01829758F51E52BF0F9A"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\video_out.v",
+      "SHA256": "1BD84F808D9A9D67909D6AA2B4AB99680061C704D485F84A41401F5E19C30617"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\vtc\\uivtc.v",
+      "SHA256": "C7DEAEA83EA04FAE9CAAF34644FE089AEBA6DC54DEE26C377AEF1DF44648E4DB"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\blk_mem_gen_awb_delay_signal\\.m_params_blk_mem_gen_awb_delay_signal.txt",
+      "SHA256": "C712F469BF120EA38E3D1C91D2D6AAE1DD5CA658B26A5CE5DBDB9CC7370EB8DD"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\blk_mem_gen_awb_delay_signal\\.params_blk_mem_gen_awb_delay_signal.txt",
+      "SHA256": "E9157F46121A253584F414D5A95B56A1BDBC958EE45C6CC053CD195AD021D7EA"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\blk_mem_gen_awb_delay_signal\\.ports_blk_mem_gen_awb_delay_signal.txt",
+      "SHA256": "ED060B0A8F1216F9389653E982879185B21022C48DD226DA197A76315F1A2A46"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\blk_mem_gen_awb_delay_signal\\blk_mem_gen_awb_delay_signal.v",
+      "SHA256": "7CAB7914392384BCC93A3DAEFE1DC038FC5CD88AC8F4306532FABB71740DA93E"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\blk_mem_gen_awb_delay_signal\\blk_mem_gen_awb_delay_signal.xml",
+      "SHA256": "2A4036C207EE38A5CC415E9DF729333F00B82072C774AC911EB71A8855BCD423"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\blk_mem_gen_awb_delay_signal\\Design.xml",
+      "SHA256": "E436F92F4C57A127CFF592927C58DCEC6901816CCD324D6A394DEC3CDD1EF527"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\blk_mem_gen_awb_delay_signal\\DesignConfiguration.xml",
+      "SHA256": "FBD224D860D857522661F5DDE1710438D95FF685832A1D61F39B8B77BD005F0B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\blk_mem_gen_awb_delay_signal\\ram_f84573da5ab5.v",
+      "SHA256": "2DCDA5EDBC2764E38137BF47B9AA0ED601DCAD32B150E5F135036AE92308A94B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\divider\\divider.ipc",
+      "SHA256": "6C8D11F165ACA0D4818325452B554EF11C11FF618E2E99473B50AF32745AFA62"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\divider\\divider_gate.v",
+      "SHA256": "9F7DDAB1D4AA3419C81061C3F14448B1475D22AAB02492B9BB67CA6A5842EE7D"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\MCU\\.m_params_MCU.txt",
+      "SHA256": "1F489B88483DBD05335A545649F8EA6105A7EC048BB44F3108C936A00428FA8A"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\MCU\\.params_MCU.txt",
+      "SHA256": "31F6DC0B6F4E33B05D1897E7B4DC6E61BF48FA2E2B2418D0077174BBAD9191FC"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\MCU\\.ports_MCU.txt",
+      "SHA256": "D52DC281A150540FD52E7B745B246D30E0D3558FC6D06F5C02492F8FF95248D3"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\MCU\\Design.xml",
+      "SHA256": "E3574642F03452E16E4EB4426E984BEEA0D9135BB55FE8B3A9557DF7F927BCC8"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\MCU\\DesignConfiguration.xml",
+      "SHA256": "FECC5E476C99B2064985A8FECAE0F597DD770585261B9DF48F93A770EC79F7C5"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\MCU\\MCU.v",
+      "SHA256": "C21CD2FCF06734642BFDBF2F1CCE97BCC40E4A4D1A9351B179AE48302FDB2F97"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\MCU\\MCU.xml",
+      "SHA256": "2F344AF5400C056F21493C6CA3F298AE3FFE972D7ACD1069596BC3A14AE4CB68"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\MCU\\MCU_f9f874759a41.v",
+      "SHA256": "94E907F7B8040984A1D74D1E7E9C9CF44C90A35A3627B3A1C30731ABC21F449C"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\PLL\\.m_params_PLL.txt",
+      "SHA256": "2A9AEC5BC56EAF55D21BDF04D909DBA9F821359EDA82395E7A170508ECF0A819"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\PLL\\.params_PLL.txt",
+      "SHA256": "E73AFC6DB374FD675872530F5D57C162C75F708898C0C7493B61C499CA2D00EC"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\PLL\\.ports_PLL.txt",
+      "SHA256": "BD8D1143B3926737D797E55F079433D4881E2029314EE46C4EA36802EEB246B4"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\PLL\\Design.xml",
+      "SHA256": "D72D72C78CA050DE67B898426664373E915A67EFFED434D44ABA3FF1FE30624F"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\PLL\\DesignConfiguration.xml",
+      "SHA256": "890CCD3B2FAF9F3A2B0D36BD26FE5BFC81CC3A6C8BA9B8110311B97F43D55F65"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\PLL\\PLL.v",
+      "SHA256": "C0AADBA1288F653AB4BD3AC4829090A28C6138E1D37DC342C9A7EA366DBF9F68"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\PLL\\PLL.xml",
+      "SHA256": "CDD3123C372C914EE1F71C7EDE955DC572EBA871EBB5752D0FF3220D16B89707"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\PLL\\RTL\\include\\define.v",
+      "SHA256": "6C747D798A21ADD4498D24776CAAA1318E0A20F0B04BC5E6F759ECE127B53997"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\PLL\\RTL\\ph1p_phy_pll_wrapper_25a56e5ce2f9.v",
+      "SHA256": "2F6F2560129B950C9F5A36136F128A9304FF858BF1BAE0F2129EA0145D941A1E"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w128_d512_fifo\\.m_params_w128_d512_fifo.txt",
+      "SHA256": "1A8581B6E24056EA3B566874C652189C227F2B7018E8D15109277A9DDD7F8875"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w128_d512_fifo\\.params_w128_d512_fifo.txt",
+      "SHA256": "9084C1D68AF266A4109D691BB7DAFA79249D7E4574E66537C55C96469C277602"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w128_d512_fifo\\.ports_w128_d512_fifo.txt",
+      "SHA256": "572011B96130D64D6F8CA9CDD691E3D159E01CF3C646A18B6E04E74EC3EE926E"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w128_d512_fifo\\Design.xml",
+      "SHA256": "73FB27576629BEFAFB79A6FC5F7319186FD3730AB02B64230D39396B2EEF8518"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w128_d512_fifo\\DesignConfiguration.xml",
+      "SHA256": "AA7E1A92676245A06F76BE11C89D1E6448350746169B2759F2048F2D5FFD43C6"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w128_d512_fifo\\soft_fifo_al_4057d6b76aa6.v",
+      "SHA256": "75E5785AE0733B4EF7CE9A80D09F68419CEB0A6A5143BAF866C5442CA310CB5E"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w128_d512_fifo\\w128_d512_fifo.tcl",
+      "SHA256": "D8C23F200B61011541161D6F7A3AFC73958DEFA23B46D11039C66F2E0E555235"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w128_d512_fifo\\w128_d512_fifo.v",
+      "SHA256": "5CD5F8E2216DD8989DC1E54D42B4DA348DBB09F130BBE92DEAA205DB53A96BB4"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w128_d512_fifo\\w128_d512_fifo.xml",
+      "SHA256": "168018C547DD95D242196199BDFB35D426265AD0DF0A39288D23E0C4C8A4BDFC"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w155_d512_fifo\\.m_params_w155_d512_fifo.txt",
+      "SHA256": "1A8581B6E24056EA3B566874C652189C227F2B7018E8D15109277A9DDD7F8875"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w155_d512_fifo\\.params_w155_d512_fifo.txt",
+      "SHA256": "0827A0ECC7EDA30611D9426412018D4200DDD71BFC48137BF8AEA0686815E880"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w155_d512_fifo\\.ports_w155_d512_fifo.txt",
+      "SHA256": "1B00BEACFFF42ED042379FBB7C7EEB7D74543DF3C116CC98F60A194087E5E3AD"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w155_d512_fifo\\Design.xml",
+      "SHA256": "9D55317FCAFC1F7770A913DEF7546A9CF6D528E2E1F5D3053475FBF41E8E3D27"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w155_d512_fifo\\DesignConfiguration.xml",
+      "SHA256": "FD3AC947078686AF5AC2D07AE9E64B5CDDAEA3F796163A10C5C1079E47CCCDEE"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w155_d512_fifo\\soft_fifo_al_f58e8b3e1f3d.v",
+      "SHA256": "CFFDAE59273CA6D7A4AB6473BAA8CF94E81AB1900C4B9E358ADCA6E4B196114D"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w155_d512_fifo\\w155_d512_fifo.v",
+      "SHA256": "D600BCD8E876691D6CF3A512650E7E69118FC8016E9FDF892AC85E4C63851E37"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w155_d512_fifo\\w155_d512_fifo.xml",
+      "SHA256": "C16F1A475E2C0C61E4D9F05598A753086AC4F95BB223997E2C686557B30285EA"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w40_d512_fifo\\.m_params_w40_d512_fifo.txt",
+      "SHA256": "1A8581B6E24056EA3B566874C652189C227F2B7018E8D15109277A9DDD7F8875"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w40_d512_fifo\\.params_w40_d512_fifo.txt",
+      "SHA256": "10ADDE761500631C1A1A1FB136A7CB244AD87F31A7558CE604A2808A47F648B3"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w40_d512_fifo\\.ports_w40_d512_fifo.txt",
+      "SHA256": "1B00BEACFFF42ED042379FBB7C7EEB7D74543DF3C116CC98F60A194087E5E3AD"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w40_d512_fifo\\Design.xml",
+      "SHA256": "311A0D9843760FE0C341A191AE2DA5061F40E027FF675887258723AFE1F80C0D"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w40_d512_fifo\\DesignConfiguration.xml",
+      "SHA256": "B29C9E3C6965C746A65717DB143DFC4EC15E6F739768AC2A504ECAAAC85F07A3"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w40_d512_fifo\\soft_fifo_al_2758cdf81c93.v",
+      "SHA256": "877BBC9512A33B54BEBD43C75E35EF5B5DA751BDF9C588DE8B6685014332CD9B"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w40_d512_fifo\\w40_d512_fifo.tcl",
+      "SHA256": "D8C23F200B61011541161D6F7A3AFC73958DEFA23B46D11039C66F2E0E555235"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w40_d512_fifo\\w40_d512_fifo.v",
+      "SHA256": "F5EA0F964E59AF51BB1FC301570766340E9F4DB3FCEB4EE635D3024172732AF8"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w40_d512_fifo\\w40_d512_fifo.xml",
+      "SHA256": "A0697A71D077E4EF389FA667B26391084FDF12733844345D33EA0DCFAC5A6305"
+    }
+  ],
+  "ManifestSources": [
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\overlay\\design_top_wrapper.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\overlay\\isp_top.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\overlay\\pin.adc",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\overlay\\pixel14.sdc",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\overlay\\uicfgcs520.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\overlay\\uii2c.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\block_frame_recognizer.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\capture_rgb96.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\card_result_filter.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\card_template_rom.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\dfr0534_items14_audio.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\dfr0534_link.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\dfr0534_player.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\dfr0534_player_core.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\dfr0534_track_map.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\items14_content.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\items14_font_rom.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\items14_osd.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\items14_question_bank.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\items14_quiz_control.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\items14_result_join.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\items14_system.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_block_filter.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_block_shape_guard.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_capture_provenance.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_card_matcher.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_card_template_rom.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_color_diag_osd.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_color_diagnostics.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_color_observer.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_color_pipeline.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_diag_osd.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_observation_bridge.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_observation_join.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_pipeline.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_result_cdc.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_rotation_matcher.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel14_scene_preprocess.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel17_display_request.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel22_audio.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel22_compositor.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel22_content.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel22_font_rom.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel22_panel.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel23_color_diag_osd.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel23_color_observer.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel23_compositor.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel23_pipeline.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel26_block_recognizer.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel26_color_classify.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel26_compositor.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel26_fixed_exposure.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel26_pipeline.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel26_processing_display.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\pixel26_saturation.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\sc520_color_classify.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\sc520_logo_pipeline.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\sc520_processing_display.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\builds\\6a50b260\\rtl\\t020_audio_queue.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\td_project\\al_ip\\ChipWatcher_mipi\\ChipWatcher_mipi.xml",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\audio_arc_calculate.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\awb.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\hdmi_1_4b_transmitter_core_wrapper.enc.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\hdmi_mixer.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\hdmi_phy_warpper.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\hdmi_tx.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\I2S_receiver.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\csi_unpacket_2lane.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\data128_96\\data128_96.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\data96_128\\data96_128.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\bilinear_interpolation.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\blk_mem_gen_demosaic\\blk_mem_gen_demosaic.xml",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\blk_mem_gen_zhenghe\\blk_mem_gen_zhenghe.xml",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\demosaic.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\line_buffer_demosaic.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\mipi_to_raw_converter.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\raw_matrix_3x3_buffer.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\demosaic_4x_2_0\\zhenghe.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\raw10_unpacket_2lane.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\isp\\uial2axis.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\key_remove_shakes.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\lane_lvds_10_1.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\mc_to_user_interface.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\mipi_dphy_rx\\byte_aligner.enc.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\mipi_dphy_rx\\byte_aligner_wrapper.enc.sv",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\mipi_dphy_rx\\channel_aligner.enc.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\mipi_dphy_rx\\channel_aligner_wrapper.enc.sv",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\mipi_dphy_rx\\hs_detect.enc.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\mipi_dphy_rx\\mipi_dphy_rx_ph1p_mipiio_wrapper.sv",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\mipi_dphy_rx\\ph1p_mipiio_rx_wrapper.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ddr2\\ddr2.xml",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\ph1p35_ddr\\ph1p35_324_ddr_wrapper.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\quiz\\quiz_key_inputs.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\quiz\\quiz_millisecond_tick.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\signal_delay.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics500_cfg\\SC500GainTbl.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics500_cfg\\uicfgcs500.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics500_cfg\\uics500regAE.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics520_cfg\\SC520GainTbl.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics520_cfg\\uics520reg.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics520_cfg\\uics520reg_720p60.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics520_cfg\\uics520reg_full_2560x1920_30.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uics520_cfg\\uics520regAE.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\uiisp_beta\\ae_set.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\video_in.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\video_out.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\hdl_source\\vtc\\uivtc.v",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\blk_mem_gen_awb_delay_signal\\blk_mem_gen_awb_delay_signal.xml",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\divider\\divider.ipc",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\PLL\\PLL.xml",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w128_d512_fifo\\w128_d512_fifo.xml",
+    "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-fixed-roi\\fpga\\custom_project\\sc520-board-keys\\user_source\\ip_source\\w155_d512_fifo\\w155_d512_fifo.xml"
+  ],
+  "HardwareValidated": false
+}

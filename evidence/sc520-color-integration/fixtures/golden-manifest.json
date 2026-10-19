@@ -1,0 +1,79 @@
+{
+  "Cases": [
+    [
+      "探索模式  题号 --/10   分数 00/10",
+      "摄像来源：实时画面，待实物验收         原图",
+      "语音未配置",
+      "探索学习：放入积木或卡片认识物体",
+      "K1模式 K2重播 K3切图 K4清分",
+      "当前识别：红色圆形"
+    ],
+    [
+      "探索模式  题号 --/10   分数 00/10",
+      "摄像来源：实时画面，待实物验收         处理图",
+      "语音初始化中",
+      "探索学习：放入积木或卡片认识物体",
+      "K1模式 K2重播 K3切图 K4清分",
+      "当前识别：红色圆形"
+    ],
+    [
+      "问答模式  题号 01/10   分数 00/10",
+      "摄像来源：实时画面，待实物验收         处理图",
+      "语音播放中",
+      "请找出：红色圆形",
+      "已确认移走，请放入答案",
+      "当前识别：未知目标"
+    ],
+    [
+      "问答模式  题号 01/10   分数 00/10",
+      "摄像来源：实时画面，待实物验收         处理图",
+      "语音故障",
+      "请找出：红色圆形",
+      "识别不可信：请移走物体，等待恢复",
+      "当前识别：不可信"
+    ]
+  ],
+  "DiagnosticRows": [
+    "D0260 F12345678 V1 A12 X00 E0040 B43 Q01413E02 GR0FF GB102 N00ABC0 W1 T1",
+    "C0A08080 C19F8080 C2B79D9D P0F0E8E0 P1EFF0E2 P2F4F5EA C280,168 P0C4,094",
+    "MC09E7E7E MC19B7E7E MC2B69B9B MP0E8E0D8 MP1E7E8DA MP2EEEFE4 0=RAW 1=WB 2=TONE",
+    "R00001 /00004 /00007 Y00002 /00005 /00008 B00003 /00006 /00009 RAW THRESHOLD COUNTS",
+    "S0456 G0033 P0123 V35 RB2 SH5 D013 /045 /089 BC03 CC00 I2 M021 /050 /3AA ",
+    "LC010203040506 HC0A0B0C0D0E0F C46500 R38400 I38400 H0330 L02D0 Y02D0 "
+  ],
+  "Modes": [
+    0,
+    1,
+    1,
+    1
+  ],
+  "Fresh": [
+    true,
+    true,
+    true,
+    false
+  ],
+  "Reference": "Literal expected user text; bitmap assets and official RGBA, no DUT calls or production RTL text selector.",
+  "TinyGlyphReference": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\sim\\sc520-card-recognition\\tb_pixel14_observation_display.sv",
+    "SHA256": "919089A4BBB51FC38D8FBAAC12BE5315EC74E7D8BDEC97D446FB4A13959977B8"
+  },
+  "Files": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\fixtures\\golden-0.mem",
+      "SHA256": "737210E193A34D45364796E4E03B9646AFBCA66B0290589EEC0A232B7101B93C"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\fixtures\\golden-1.mem",
+      "SHA256": "5D3EB93D7A421DB83E06BAD181872301A1A6505EA7D31E56DFFF4958D92C0D4C"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\fixtures\\golden-2.mem",
+      "SHA256": "596ACEB760467E4F91DE2E86A56E9F7C88837749F098B89A17069600164B7148"
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\fixtures\\golden-3.mem",
+      "SHA256": "9093E3120DC07F3690F3FE1D5B7483408697A80C92130189DB6A95CBD3CCF8BE"
+    }
+  ]
+}

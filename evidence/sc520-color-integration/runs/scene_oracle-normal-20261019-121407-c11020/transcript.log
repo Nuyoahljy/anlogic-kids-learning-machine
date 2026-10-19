@@ -1,0 +1,352 @@
+# set card_top tb_color26_scene_oracle
+# tb_color26_scene_oracle
+#  set card_sources [list {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_bg_pipeline.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_block_recognizer.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_color_classify.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_compositor.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_fixed_exposure.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_pipeline.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_processing_display.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_saturation.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_scene_preprocess.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/items14_content.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/items14_font_rom.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/items14_osd.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/items14_question_bank.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/items14_quiz_control.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/items14_result_join.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/items14_system.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel17_compositor.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel17_display_request.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel17_panel.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/sc520_color_classify.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/sc520_logo_pipeline.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/sc520_processing_display.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel22_audio.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel22_compositor.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel22_content.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel22_font_rom.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel22_panel.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/dfr0534_items14_audio.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/dfr0534_link.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/dfr0534_player.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/dfr0534_player_core.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/dfr0534_track_map.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/t020_audio_queue.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/block_frame_recognizer.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/capture_rgb96.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_block_filter.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_block_shape_guard.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_capture_provenance.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_card_matcher.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_card_template_rom.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_diag_osd.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_pipeline.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_result_cdc.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_rotation_matcher.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_scene_preprocess.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_color_diag_osd.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_color_diagnostics.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_color_observer.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_observation_bridge.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_observation_join.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel23_color_diag_osd.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel23_color_observer.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel23_compositor.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel23_pipeline.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/card_matcher.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/card_template_rom.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/card_result_filter.v} {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/dfr0534_uart_model.sv}]
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_bg_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_block_recognizer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_color_classify.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_compositor.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_fixed_exposure.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_processing_display.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_saturation.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_scene_preprocess.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/items14_content.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/items14_font_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/items14_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/items14_question_bank.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/items14_quiz_control.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/items14_result_join.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/items14_system.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel17_compositor.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel17_display_request.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel17_panel.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/sc520_color_classify.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/sc520_logo_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/sc520_processing_display.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel22_audio.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel22_compositor.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel22_content.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel22_font_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel22_panel.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/dfr0534_items14_audio.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/dfr0534_link.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/dfr0534_player.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/dfr0534_player_core.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/dfr0534_track_map.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/t020_audio_queue.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/block_frame_recognizer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/capture_rgb96.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_block_filter.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_block_shape_guard.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_capture_provenance.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_card_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_card_template_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_diag_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_result_cdc.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_rotation_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_scene_preprocess.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_color_diag_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_color_diagnostics.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_color_observer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_observation_bridge.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_observation_join.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel23_color_diag_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel23_color_observer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel23_compositor.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel23_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/card_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/card_template_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/card_result_filter.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/dfr0534_uart_model.sv
+#  set card_tb {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/tb_color26_scene_oracle.sv}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/tb_color26_scene_oracle.sv
+#  set card_assets {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs}
+# E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs
+#  set card_negative 0
+# 0
+#  set card_probe 0
+# 0
+#  source {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/run-audio22.do}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 12:14:09 on Oct 19,2026
+# vlog E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_bg_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_block_recognizer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_color_classify.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_compositor.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_fixed_exposure.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_processing_display.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_saturation.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel26_scene_preprocess.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/items14_content.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/items14_font_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/items14_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/items14_question_bank.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/items14_quiz_control.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/items14_result_join.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/items14_system.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel17_compositor.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel17_display_request.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel17_panel.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/sc520_color_classify.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/sc520_logo_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/sc520_processing_display.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel22_audio.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel22_compositor.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel22_content.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel22_font_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel22_panel.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/dfr0534_items14_audio.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/dfr0534_link.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/dfr0534_player.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/dfr0534_player_core.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/dfr0534_track_map.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/t020_audio_queue.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/block_frame_recognizer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/capture_rgb96.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_block_filter.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_block_shape_guard.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_capture_provenance.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_card_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_card_template_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_diag_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_result_cdc.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_rotation_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_scene_preprocess.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_color_diag_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_color_diagnostics.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_color_observer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_observation_bridge.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel14_observation_join.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel23_color_diag_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel23_color_observer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel23_compositor.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/pixel23_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/card_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/card_template_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/card_result_filter.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/dfr0534_uart_model.sv 
+# -- Compiling module pixel26_bg_pipeline
+# -- Compiling module pixel26_block_recognizer
+# -- Compiling module pixel26_color_classify
+# -- Compiling module pixel26_compositor
+# -- Compiling module pixel26_fixed_exposure
+# -- Compiling module pixel26_pipeline
+# -- Compiling module pixel26_processing_display
+# -- Compiling module pixel26_saturation
+# -- Compiling module pixel26_scene_preprocess
+# -- Compiling module items14_content
+# -- Compiling module items14_font_rom
+# -- Compiling module items14_osd
+# -- Compiling module items14_question_bank
+# -- Compiling module items14_quiz_control
+# -- Compiling module items14_result_join
+# -- Compiling module items14_system
+# -- Compiling module pixel17_compositor
+# -- Compiling module pixel17_display_request
+# -- Compiling module pixel17_panel
+# -- Compiling module sc520_color_classify
+# -- Compiling module sc520_logo_pipeline
+# -- Compiling module sc520_processing_display
+# -- Compiling module pixel22_audio
+# -- Compiling module pixel22_compositor
+# -- Compiling module pixel22_content
+# -- Compiling module pixel22_font_rom
+# -- Compiling module pixel22_panel
+# -- Compiling module dfr0534_items14_audio
+# -- Compiling module dfr0534_link
+# -- Compiling module dfr0534_player
+# -- Compiling module dfr0534_player_core
+# -- Compiling module dfr0534_track_map
+# -- Compiling module t020_audio_queue
+# -- Compiling module block_frame_recognizer
+# -- Compiling module capture_rgb96
+# -- Compiling module pixel14_block_filter
+# -- Compiling module pixel14_block_shape_guard
+# -- Compiling module pixel14_block_shape_rom
+# -- Compiling module pixel14_capture_provenance
+# -- Compiling module pixel14_card_matcher
+# -- Compiling module pixel14_card_template_rom
+# -- Compiling module pixel14_diag_osd
+# -- Compiling module pixel14_pipeline
+# -- Compiling module pixel14_result_cdc
+# -- Compiling module pixel14_rotation_matcher
+# -- Compiling module pixel14_scene_preprocess
+# -- Compiling module pixel14_color_diag_osd
+# -- Compiling module pixel14_color_diagnostics
+# -- Compiling module pixel14_color_observer
+# -- Compiling module pixel14_observation_bridge
+# -- Compiling module pixel14_observation_join
+# -- Compiling module pixel23_color_diag_osd
+# -- Compiling module pixel23_color_observer
+# -- Compiling module pixel23_compositor
+# -- Compiling module pixel23_pipeline
+# -- Compiling module card_matcher
+# -- Compiling module card_template_rom
+# -- Compiling module card_result_filter
+# -- Compiling module dfr0534_uart_model
+# 
+# Top level modules:
+# 	pixel26_bg_pipeline
+# 	pixel26_compositor
+# 	pixel26_fixed_exposure
+# 	pixel26_pipeline
+# 	pixel17_compositor
+# 	pixel17_display_request
+# 	pixel22_audio
+# 	pixel22_compositor
+# 	pixel14_capture_provenance
+# 	pixel14_diag_osd
+# 	pixel14_pipeline
+# 	pixel23_compositor
+# 	pixel23_pipeline
+# 	card_matcher
+# 	dfr0534_uart_model
+# End time: 12:14:11 on Oct 19,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 12:14:11 on Oct 19,2026
+# vlog -sv "+incdir+E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs" E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/tb_color26_scene_oracle.sv 
+# -- Compiling module tb_color26_scene_oracle
+# ** Warning: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/tb_color26_scene_oracle.sv(56): (vlog-2597) '3000000000' is being treated as 32-bit signed integer and will overflow.
+# 
+# Top level modules:
+# 	tb_color26_scene_oracle
+# End time: 12:14:11 on Oct 19,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim -voptargs="+acc" -wlf wave.wlf work.tb_color26_scene_oracle "+ASSET_ROOT=E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs" "+INJECT_FAULT=0" 
+# Start time: 12:14:11 on Oct 19,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "pixel26_scene_preprocess(fast)".
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_color26_scene_oracle(fast)
+# Loading work.pixel26_scene_preprocess(fast)
+# CASE oracle           1 c000
+# CASE oracle           2 c001
+# CASE oracle           3 c002
+# CASE oracle           4 c003
+# CASE oracle           5 c004
+# CASE oracle           6 c005
+# CASE oracle           7 c006
+# CASE oracle           8 c007
+# CASE oracle           9 c008
+# CASE oracle          10 c009
+# CASE oracle          11 c010
+# CASE oracle          12 c011
+# CASE oracle          13 c012
+# CASE oracle          14 c013
+# CASE oracle          15 c014
+# CASE oracle          16 c015
+# CASE oracle          17 c016
+# CASE oracle          18 c017
+# CASE oracle          19 c018
+# CASE oracle          20 c019
+# CASE oracle          21 c020
+# CASE oracle          22 c021
+# CASE oracle          23 c022
+# CASE oracle          24 c023
+# CASE oracle          25 c024
+# CASE oracle          26 c025
+# CASE oracle          27 c026
+# CASE oracle          28 c027
+# CASE oracle          29 c028
+# CASE oracle          30 c029
+# CASE oracle          31 c030
+# CASE oracle          32 c031
+# CASE oracle          33 c032
+# CASE oracle          34 c033
+# CASE oracle          35 c034
+# CASE oracle          36 c035
+# CASE oracle          37 c036
+# CASE oracle          38 c037
+# CASE oracle          39 c038
+# CASE oracle          40 c039
+# CASE oracle          41 c040
+# CASE oracle          42 c041
+# CASE oracle          43 c042
+# CASE oracle          44 c043
+# CASE oracle          45 c044
+# CASE oracle          46 c045
+# CASE oracle          47 c046
+# CASE oracle          48 c047
+# CASE oracle          49 c048
+# CASE oracle          50 c049
+# CASE oracle          51 c050
+# CASE oracle          52 c051
+# CASE oracle          53 c052
+# CASE oracle          54 c053
+# CASE oracle          55 c054
+# CASE oracle          56 c055
+# CASE oracle          57 c056
+# CASE oracle          58 c057
+# CASE oracle          59 c058
+# CASE oracle          60 c059
+# CASE oracle          61 c060
+# CASE oracle          62 c061
+# CASE oracle          63 c062
+# CASE oracle          64 c063
+# CASE oracle          65 c064
+# CASE oracle          66 c065
+# CASE oracle          67 c066
+# CASE oracle          68 c067
+# CASE oracle          69 c068
+# CASE oracle          70 c069
+# CASE oracle          71 c070
+# CASE oracle          72 c071
+# CASE oracle          73 c072
+# CASE oracle          74 c073
+# CASE oracle          75 c074
+# CASE oracle          76 c075
+# CASE oracle          77 c076
+# CASE oracle          78 c077
+# CASE oracle          79 c078
+# CASE oracle          80 c079
+# CASE oracle          81 c080
+# CASE oracle          82 c081
+# CASE oracle          83 c082
+# CASE oracle          84 c083
+# CASE oracle          85 c084
+# CASE oracle          86 c085
+# CASE oracle          87 c086
+# CASE oracle          88 c087
+# CASE oracle          89 c088
+# CASE oracle          90 c089
+# CASE oracle          91 c090
+# CASE oracle          92 c091
+# CASE oracle          93 c092
+# CASE oracle          94 c093
+# CASE oracle          95 c094
+# CASE oracle          96 c095
+# CASE oracle          97 c096
+# CASE oracle          98 c097
+# CASE oracle          99 c098
+# CASE oracle         100 c099
+# CASE oracle         101 c100
+# CASE oracle         102 c101
+# CASE oracle         103 c102
+# CASE oracle         104 c103
+# CASE oracle         105 c104
+# CASE oracle         106 c105
+# CASE oracle         107 c106
+# CASE oracle         108 c107
+# CASE oracle         109 c108
+# CASE oracle         110 c109
+# CASE oracle         111 c110
+# CASE oracle         112 c111
+# CASE oracle         113 c112
+# CASE oracle         114 c113
+# CASE oracle         115 c114
+# CASE oracle         116 c115
+# CASE oracle         117 c116
+# CASE oracle         118 c117
+# CASE oracle         119 c118
+# CASE oracle         120 c119
+# CASE oracle         121 c120
+# CASE oracle         122 c121
+# CASE oracle         123 c122
+# CASE oracle         124 c123
+# CASE oracle         125 c124
+# CASE oracle         126 c125
+# CASE oracle         127 c126
+# CASE oracle         128 c127
+# CASE oracle         129 c128
+# CASE oracle         130 c129
+# CASE oracle         131 c130
+# CASE oracle         132 c131
+# CASE oracle         133 c132
+# CASE oracle         134 c133
+# CASE oracle         135 c134
+# CASE oracle         136 c135
+# CASE oracle         137 c136
+# CASE oracle         138 c137
+# CASE oracle         139 c138
+# CASE oracle         140 c139
+# CASE oracle         141 c140
+# CASE oracle         142 c141
+# CASE oracle         143 c142
+# CASE oracle         144 c143
+# CASE oracle         145 c144
+# CASE oracle         146 c145
+# CASE oracle         147 c146
+# CASE oracle         148 c147
+# CASE oracle         149 c148
+# CASE oracle         150 c149
+# CASE oracle         151 c150
+# CASE oracle         152 c151
+# CASE oracle         153 c152
+# CASE oracle         154 c153
+# CASE oracle         155 c154
+# CASE oracle         156 c155
+# CASE oracle         157 c156
+# CASE oracle         158 c157
+# CASE oracle         159 c158
+# CASE oracle         160 c159
+# CASE oracle         161 c160
+# CASE oracle         162 c161
+# CASE oracle         163 c162
+# CASE oracle         164 c163
+# CASE oracle         165 c164
+# CASE oracle         166 c165
+# CASE oracle         167 c166
+# CASE oracle         168 c167
+# CASE oracle         169 c168
+# CASE oracle         170 c169
+# CASE oracle         171 c170
+# CASE oracle         172 c171
+# CASE oracle         173 c172
+# CASE oracle         174 c173
+# CASE oracle         175 c174
+# CASE oracle         176 c175
+# CASE oracle         177 c176
+# CASE oracle         178 c177
+# CASE oracle         179 c178
+# CASE oracle         180 c179
+# CASE oracle         181 c180
+# CASE oracle         182 c181
+# CASE oracle         183 c182
+# CASE oracle         184 c183
+# CASE oracle         185 c184
+# CASE oracle         186 c185
+# CASE oracle         187 c186
+# CASE oracle         188 c187
+# CASE oracle         189 c188
+# CASE oracle         190 c189
+# CASE oracle         191 c190
+# CASE oracle         192 c191
+# CASE oracle         193 c192
+# CASE oracle         194 c193
+# CASE oracle         195 c194
+# CASE oracle         196 c195
+# CASE oracle         197 c196
+# CASE oracle         198 c197
+# CASE oracle         199 c198
+# CASE oracle         200 c199
+# CASE oracle         201 c200
+# CASE oracle         202 c201
+# CASE oracle         203 c202
+# CASE oracle         204 c203
+# CASE oracle         205 c204
+# CASE oracle         206 c205
+# CASE oracle         207 c206
+# CASE oracle         208 c207
+# CASE oracle         209 c208
+# CASE oracle         210 c209
+# CASE oracle         211 c210
+# CASE oracle         212 c211
+# CASE oracle         213 c212
+# CASE oracle         214 c213
+# CASE oracle         215 c214
+# CASE oracle         216 c215
+# CASE oracle         217 c216
+# CASE oracle         218 c217
+# CASE oracle         219 c218
+# CASE oracle         220 c219
+# CASE oracle         221 c220
+# DONE scene oracle cases=        221 checks=   95278070 errors=          0
+# ** Note: $finish    : E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/tb_color26_scene_oracle.sv(54)
+#    Time: 872097796500 ps  Iteration: 1  Instance: /tb_color26_scene_oracle
+# Break in Module tb_color26_scene_oracle at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/tb_color26_scene_oracle.sv line 54
+# Stopped at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/runs/scene_oracle-normal-20261019-121407-c11020/inputs/tb_color26_scene_oracle.sv line 54
+# End time: 12:16:09 on Oct 19,2026, Elapsed time: 0:01:58
+# Errors: 0, Warnings: 0

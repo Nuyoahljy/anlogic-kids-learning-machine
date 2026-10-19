@@ -1,0 +1,8146 @@
+{
+  "ProductionRTLChanged": false,
+  "MarginDN": 8,
+  "Method": "Original RGB +/-48 AND current boundary R-G / B-G min..max envelope expanded by8",
+  "FieldCases": [
+    {
+      "Case": "field_block_1",
+      "TruthItem": 1,
+      "TruthPresent": true,
+      "Before": {
+        "item": 1,
+        "present": true,
+        "scene_count": 253,
+        "glyph_count": 253,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            15,
+            81,
+            175
+          ],
+          "shape_bits": 1
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 1,
+        "present": true,
+        "scene_count": 253,
+        "glyph_count": 253,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            15,
+            81,
+            175
+          ],
+          "shape_bits": 1
+        },
+        "conflict": false
+      },
+      "Pass": true
+    },
+    {
+      "Case": "field_block_2",
+      "TruthItem": 2,
+      "TruthPresent": true,
+      "Before": {
+        "item": 0,
+        "present": true,
+        "scene_count": 46,
+        "glyph_count": 46,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            252,
+            330,
+            162
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 2,
+        "present": true,
+        "scene_count": 324,
+        "glyph_count": 324,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            84,
+            0,
+            200
+          ],
+          "shape_bits": 2
+        },
+        "conflict": false
+      },
+      "Pass": true
+    },
+    {
+      "Case": "field_block_3",
+      "TruthItem": 3,
+      "TruthPresent": true,
+      "Before": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": true,
+        "scene_count": 154,
+        "glyph_count": 154,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            166,
+            210,
+            36
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "Pass": false
+    },
+    {
+      "Case": "field_block_4",
+      "TruthItem": 4,
+      "TruthPresent": true,
+      "Before": {
+        "item": 4,
+        "present": true,
+        "scene_count": 530,
+        "glyph_count": 530,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            10,
+            90,
+            172
+          ],
+          "shape_bits": 1
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 4,
+        "present": true,
+        "scene_count": 530,
+        "glyph_count": 530,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            10,
+            90,
+            172
+          ],
+          "shape_bits": 1
+        },
+        "conflict": false
+      },
+      "Pass": true
+    },
+    {
+      "Case": "field_block_5",
+      "TruthItem": 5,
+      "TruthPresent": true,
+      "Before": {
+        "item": 5,
+        "present": true,
+        "scene_count": 676,
+        "glyph_count": 676,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            84,
+            0,
+            200
+          ],
+          "shape_bits": 2
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 5,
+        "present": true,
+        "scene_count": 676,
+        "glyph_count": 676,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            84,
+            0,
+            200
+          ],
+          "shape_bits": 2
+        },
+        "conflict": false
+      },
+      "Pass": true
+    },
+    {
+      "Case": "field_block_6",
+      "TruthItem": 6,
+      "TruthPresent": true,
+      "Before": {
+        "item": 6,
+        "present": true,
+        "scene_count": 351,
+        "glyph_count": 351,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            161,
+            193,
+            11
+          ],
+          "shape_bits": 4
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 6,
+        "present": true,
+        "scene_count": 351,
+        "glyph_count": 351,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            161,
+            193,
+            11
+          ],
+          "shape_bits": 4
+        },
+        "conflict": false
+      },
+      "Pass": true
+    },
+    {
+      "Case": "field_block_7",
+      "TruthItem": 7,
+      "TruthPresent": true,
+      "Before": {
+        "item": 7,
+        "present": true,
+        "scene_count": 906,
+        "glyph_count": 906,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            10,
+            94,
+            170
+          ],
+          "shape_bits": 1
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 7,
+        "present": true,
+        "scene_count": 906,
+        "glyph_count": 906,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            10,
+            94,
+            170
+          ],
+          "shape_bits": 1
+        },
+        "conflict": false
+      },
+      "Pass": true
+    },
+    {
+      "Case": "field_block_8",
+      "TruthItem": 8,
+      "TruthPresent": true,
+      "Before": {
+        "item": 0,
+        "present": false,
+        "scene_count": 1,
+        "glyph_count": 1,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            84,
+            0,
+            200
+          ],
+          "shape_bits": 2
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 8,
+        "present": true,
+        "scene_count": 1156,
+        "glyph_count": 1156,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            84,
+            0,
+            200
+          ],
+          "shape_bits": 2
+        },
+        "conflict": false
+      },
+      "Pass": true
+    },
+    {
+      "Case": "field_block_9",
+      "TruthItem": 9,
+      "TruthPresent": true,
+      "Before": {
+        "item": 0,
+        "present": false,
+        "scene_count": 1,
+        "glyph_count": 1,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            84,
+            0,
+            200
+          ],
+          "shape_bits": 2
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 9,
+        "present": true,
+        "scene_count": 595,
+        "glyph_count": 595,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            164,
+            194,
+            8
+          ],
+          "shape_bits": 4
+        },
+        "conflict": false
+      },
+      "Pass": true
+    },
+    {
+      "Case": "card_10",
+      "TruthItem": 10,
+      "TruthPresent": true,
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 365,
+        "glyph_count": 358,
+        "paper_count": 7,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            66,
+            130,
+            116
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 365,
+        "glyph_count": 358,
+        "paper_count": 7,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            66,
+            130,
+            116
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "Pass": true
+    },
+    {
+      "Case": "card_11",
+      "TruthItem": 11,
+      "TruthPresent": true,
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 233,
+        "glyph_count": 233,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            187,
+            257,
+            167
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 233,
+        "glyph_count": 233,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            187,
+            257,
+            167
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "Pass": true
+    },
+    {
+      "Case": "card_12",
+      "TruthItem": 12,
+      "TruthPresent": true,
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 258,
+        "glyph_count": 230,
+        "paper_count": 28,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            169,
+            249,
+            177
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 258,
+        "glyph_count": 230,
+        "paper_count": 28,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            169,
+            249,
+            177
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "Pass": true
+    },
+    {
+      "Case": "card_13",
+      "TruthItem": 13,
+      "TruthPresent": true,
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 190,
+        "glyph_count": 187,
+        "paper_count": 3,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            153,
+            229,
+            107
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 190,
+        "glyph_count": 187,
+        "paper_count": 3,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            153,
+            229,
+            107
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "Pass": true
+    },
+    {
+      "Case": "card_14",
+      "TruthItem": 14,
+      "TruthPresent": true,
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 213,
+        "glyph_count": 207,
+        "paper_count": 6,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            173,
+            257,
+            207
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 213,
+        "glyph_count": 207,
+        "paper_count": 6,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            173,
+            257,
+            207
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "Pass": true
+    },
+    {
+      "Case": "empty_black",
+      "TruthItem": 0,
+      "TruthPresent": false,
+      "Before": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "Pass": true
+    },
+    {
+      "Case": "empty_white",
+      "TruthItem": 0,
+      "TruthPresent": false,
+      "Before": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "Pass": true
+    },
+    {
+      "Case": "empty_gray",
+      "TruthItem": 0,
+      "TruthPresent": false,
+      "Before": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "Pass": true
+    },
+    {
+      "Case": "empty_red",
+      "TruthItem": 0,
+      "TruthPresent": false,
+      "Before": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "Pass": true
+    },
+    {
+      "Case": "empty_yellow",
+      "TruthItem": 0,
+      "TruthPresent": false,
+      "Before": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "Pass": true
+    },
+    {
+      "Case": "empty_blue",
+      "TruthItem": 0,
+      "TruthPresent": false,
+      "Before": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "Pass": true
+    },
+    {
+      "Case": "empty_green",
+      "TruthItem": 0,
+      "TruthPresent": false,
+      "Before": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "Pass": true
+    }
+  ],
+  "FieldPass": 20,
+  "LegacyCases": [
+    {
+      "Case": "r000_empty_dark",
+      "Before": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r001_empty_white",
+      "Before": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r002_empty_red",
+      "Before": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r003_card_10_angle_0",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 365,
+        "glyph_count": 358,
+        "paper_count": 7,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            66,
+            130,
+            116
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 365,
+        "glyph_count": 358,
+        "paper_count": 7,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            66,
+            130,
+            116
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r004_card_10_angle_90",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1406,
+        "glyph_count": 354,
+        "paper_count": 1052,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            63,
+            133,
+            161
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1406,
+        "glyph_count": 354,
+        "paper_count": 1052,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            63,
+            133,
+            161
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r005_card_10_angle_180",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1406,
+        "glyph_count": 354,
+        "paper_count": 1052,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            63,
+            133,
+            179
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1406,
+        "glyph_count": 354,
+        "paper_count": 1052,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            63,
+            133,
+            179
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r006_card_10_angle_270",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 363,
+        "glyph_count": 354,
+        "paper_count": 9,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            53,
+            125,
+            143
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 363,
+        "glyph_count": 354,
+        "paper_count": 9,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            53,
+            125,
+            143
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r007_card_10_angle_2p5",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1413,
+        "glyph_count": 355,
+        "paper_count": 1058,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            73,
+            155,
+            127
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1413,
+        "glyph_count": 355,
+        "paper_count": 1058,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            73,
+            155,
+            127
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r008_card_10_angle_87p5",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1408,
+        "glyph_count": 356,
+        "paper_count": 1052,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            60,
+            130,
+            158
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1408,
+        "glyph_count": 356,
+        "paper_count": 1052,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            60,
+            130,
+            158
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r009_card_10_angle_177p5",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 363,
+        "glyph_count": 356,
+        "paper_count": 7,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            60,
+            130,
+            178
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 363,
+        "glyph_count": 356,
+        "paper_count": 7,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            60,
+            130,
+            178
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r010_card_10_angle_267p5",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1396,
+        "glyph_count": 358,
+        "paper_count": 1038,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            48,
+            122,
+            146
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1396,
+        "glyph_count": 358,
+        "paper_count": 1038,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            48,
+            122,
+            146
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r011_card_10_size_53_angle_17p5",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 186,
+        "paper_count": 514,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            83,
+            167,
+            113
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 186,
+        "paper_count": 514,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            83,
+            167,
+            113
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r012_card_10_size_53_angle_62p5",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 181,
+        "paper_count": 518,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            48,
+            120,
+            150
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 181,
+        "paper_count": 518,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            48,
+            120,
+            150
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r013_card_10_size_53_angle_152p5",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 186,
+        "paper_count": 514,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            49,
+            109,
+            165
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 186,
+        "paper_count": 514,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            49,
+            109,
+            165
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r014_card_10_size_53_angle_242p5",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 181,
+        "paper_count": 518,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            50,
+            120,
+            150
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 181,
+        "paper_count": 518,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            50,
+            120,
+            150
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r015_card_10_size_53_angle_332p5",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 186,
+        "paper_count": 514,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            55,
+            113,
+            177
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 186,
+        "paper_count": 514,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            55,
+            113,
+            177
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r016_card_10_size_69_angle_17p5",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 304,
+        "paper_count": 886,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            68,
+            150,
+            126
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 304,
+        "paper_count": 886,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            68,
+            150,
+            126
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r017_card_10_size_69_angle_62p5",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 301,
+        "paper_count": 888,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            49,
+            99,
+            141
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 301,
+        "paper_count": 888,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            49,
+            99,
+            141
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r018_card_10_size_69_angle_152p5",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 305,
+        "paper_count": 885,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            45,
+            113,
+            161
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 305,
+        "paper_count": 885,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            45,
+            113,
+            161
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r019_card_10_size_69_angle_242p5",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 301,
+        "paper_count": 888,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            49,
+            99,
+            171
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 301,
+        "paper_count": 888,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            49,
+            99,
+            171
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r020_card_10_size_69_angle_332p5",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 305,
+        "paper_count": 885,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            45,
+            113,
+            163
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 305,
+        "paper_count": 885,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            45,
+            113,
+            163
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r021_card_10_size_77_angle_17p5",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 373,
+        "paper_count": 1109,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            79,
+            163,
+            117
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 373,
+        "paper_count": 1109,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            79,
+            163,
+            117
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r022_card_10_size_77_angle_62p5",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 377,
+        "paper_count": 1105,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            56,
+            124,
+            130
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 377,
+        "paper_count": 1105,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            56,
+            124,
+            130
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r023_card_10_size_77_angle_152p5",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 373,
+        "paper_count": 1108,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            70,
+            148,
+            148
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 373,
+        "paper_count": 1108,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            70,
+            148,
+            148
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r024_card_10_size_77_angle_242p5",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 377,
+        "paper_count": 1105,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            56,
+            124,
+            162
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 377,
+        "paper_count": 1105,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            56,
+            124,
+            162
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r025_card_10_size_77_angle_332p5",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 373,
+        "paper_count": 1108,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            71,
+            145,
+            155
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 373,
+        "paper_count": 1108,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            71,
+            145,
+            155
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r026_card_10_soft_paper_edge",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1404,
+        "glyph_count": 355,
+        "paper_count": 1048,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            73,
+            157,
+            113
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1404,
+        "glyph_count": 355,
+        "paper_count": 1048,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            73,
+            157,
+            113
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r027_card_11_angle_0",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 233,
+        "glyph_count": 233,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            187,
+            257,
+            167
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 233,
+        "glyph_count": 233,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            187,
+            257,
+            167
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r028_card_11_angle_90",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1406,
+        "glyph_count": 223,
+        "paper_count": 1183,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            187,
+            247,
+            131
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1406,
+        "glyph_count": 223,
+        "paper_count": 1183,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            187,
+            247,
+            131
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r029_card_11_angle_180",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1406,
+        "glyph_count": 223,
+        "paper_count": 1183,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            185,
+            247,
+            233
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1406,
+        "glyph_count": 223,
+        "paper_count": 1183,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            185,
+            247,
+            233
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r030_card_11_angle_270",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 230,
+        "glyph_count": 228,
+        "paper_count": 2,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            178,
+            246,
+            150
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 230,
+        "glyph_count": 228,
+        "paper_count": 2,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            178,
+            246,
+            150
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r031_card_11_angle_2p5",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1413,
+        "glyph_count": 232,
+        "paper_count": 1181,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            180,
+            242,
+            164
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1413,
+        "glyph_count": 232,
+        "paper_count": 1181,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            180,
+            242,
+            164
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r032_card_11_angle_87p5",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1408,
+        "glyph_count": 229,
+        "paper_count": 1179,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            179,
+            241,
+            141
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1408,
+        "glyph_count": 229,
+        "paper_count": 1179,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            179,
+            241,
+            141
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r033_card_11_angle_177p5",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 231,
+        "glyph_count": 229,
+        "paper_count": 2,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            179,
+            241,
+            239
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 231,
+        "glyph_count": 229,
+        "paper_count": 2,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            179,
+            241,
+            239
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r034_card_11_angle_267p5",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1396,
+        "glyph_count": 230,
+        "paper_count": 1166,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            182,
+            258,
+            168
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1396,
+        "glyph_count": 230,
+        "paper_count": 1166,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            182,
+            258,
+            168
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r035_card_11_size_53_angle_17p5",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 116,
+        "paper_count": 584,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            176,
+            238,
+            174
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 116,
+        "paper_count": 584,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            176,
+            238,
+            174
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r036_card_11_size_53_angle_62p5",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 114,
+        "paper_count": 586,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            177,
+            239,
+            147
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 114,
+        "paper_count": 586,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            177,
+            239,
+            147
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r037_card_11_size_53_angle_152p5",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 119,
+        "paper_count": 581,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            186,
+            246,
+            250
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 119,
+        "paper_count": 581,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            186,
+            246,
+            250
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r038_card_11_size_53_angle_242p5",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 114,
+        "paper_count": 586,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            177,
+            239,
+            231
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 114,
+        "paper_count": 586,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            177,
+            239,
+            231
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r039_card_11_size_53_angle_332p5",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 119,
+        "paper_count": 581,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            186,
+            246,
+            148
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 119,
+        "paper_count": 581,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            186,
+            246,
+            148
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r040_card_11_size_69_angle_17p5",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 195,
+        "paper_count": 995,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            178,
+            236,
+            172
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 195,
+        "paper_count": 995,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            178,
+            236,
+            172
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r041_card_11_size_69_angle_62p5",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 196,
+        "paper_count": 994,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            178,
+            246,
+            176
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 196,
+        "paper_count": 994,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            178,
+            246,
+            176
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r042_card_11_size_69_angle_152p5",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 195,
+        "paper_count": 995,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            176,
+            230,
+            260
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 195,
+        "paper_count": 995,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            176,
+            230,
+            260
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r043_card_11_size_69_angle_242p5",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 196,
+        "paper_count": 994,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            178,
+            246,
+            232
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 196,
+        "paper_count": 994,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            178,
+            246,
+            232
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r044_card_11_size_69_angle_332p5",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 195,
+        "paper_count": 995,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            176,
+            230,
+            160
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 195,
+        "paper_count": 995,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            176,
+            230,
+            160
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r045_card_11_size_77_angle_17p5",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 246,
+        "paper_count": 1236,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            182,
+            248,
+            176
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 246,
+        "paper_count": 1236,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            182,
+            248,
+            176
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r046_card_11_size_77_angle_62p5",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 242,
+        "paper_count": 1240,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            180,
+            234,
+            172
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 242,
+        "paper_count": 1240,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            180,
+            234,
+            172
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r047_card_11_size_77_angle_152p5",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 241,
+        "paper_count": 1241,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            193,
+            237,
+            273
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 241,
+        "paper_count": 1241,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            193,
+            237,
+            273
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r048_card_11_size_77_angle_242p5",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 242,
+        "paper_count": 1240,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            194,
+            238,
+            252
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 242,
+        "paper_count": 1240,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            194,
+            238,
+            252
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r049_card_11_size_77_angle_332p5",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 241,
+        "paper_count": 1241,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            198,
+            238,
+            162
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 241,
+        "paper_count": 1241,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            198,
+            238,
+            162
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r050_card_11_soft_paper_edge",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1404,
+        "glyph_count": 231,
+        "paper_count": 1173,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            182,
+            256,
+            178
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1404,
+        "glyph_count": 231,
+        "paper_count": 1173,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            182,
+            256,
+            178
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r051_card_12_angle_0",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 258,
+        "glyph_count": 230,
+        "paper_count": 28,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            169,
+            249,
+            177
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 258,
+        "glyph_count": 230,
+        "paper_count": 28,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            169,
+            249,
+            177
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r052_card_12_angle_90",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1406,
+        "glyph_count": 232,
+        "paper_count": 1174,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            178,
+            258,
+            126
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1406,
+        "glyph_count": 232,
+        "paper_count": 1174,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            178,
+            258,
+            126
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r053_card_12_angle_180",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1406,
+        "glyph_count": 232,
+        "paper_count": 1174,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            178,
+            258,
+            198
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1406,
+        "glyph_count": 232,
+        "paper_count": 1174,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            178,
+            258,
+            198
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r054_card_12_angle_270",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 268,
+        "glyph_count": 234,
+        "paper_count": 34,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            180,
+            260,
+            120
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 268,
+        "glyph_count": 234,
+        "paper_count": 34,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            180,
+            260,
+            120
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r055_card_12_angle_2p5",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1413,
+        "glyph_count": 228,
+        "paper_count": 1185,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            185,
+            263,
+            171
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1413,
+        "glyph_count": 228,
+        "paper_count": 1185,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            185,
+            263,
+            171
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r056_card_12_angle_87p5",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1408,
+        "glyph_count": 233,
+        "paper_count": 1175,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            175,
+            257,
+            121
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1408,
+        "glyph_count": 233,
+        "paper_count": 1175,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            175,
+            257,
+            121
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r057_card_12_angle_177p5",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 268,
+        "glyph_count": 233,
+        "paper_count": 35,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            175,
+            257,
+            185
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 268,
+        "glyph_count": 233,
+        "paper_count": 35,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            175,
+            257,
+            185
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r058_card_12_angle_267p5",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1396,
+        "glyph_count": 232,
+        "paper_count": 1164,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            176,
+            258,
+            112
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1396,
+        "glyph_count": 232,
+        "paper_count": 1164,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            176,
+            258,
+            112
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r059_card_12_size_53_angle_17p5",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 122,
+        "paper_count": 578,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            168,
+            244,
+            176
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 122,
+        "paper_count": 578,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            168,
+            244,
+            176
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r060_card_12_size_53_angle_62p5",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 118,
+        "paper_count": 582,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            169,
+            235,
+            165
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 118,
+        "paper_count": 582,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            169,
+            235,
+            165
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r061_card_12_size_53_angle_152p5",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 121,
+        "paper_count": 579,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            159,
+            231,
+            173
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 121,
+        "paper_count": 579,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            159,
+            231,
+            173
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r062_card_12_size_53_angle_242p5",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 118,
+        "paper_count": 582,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            169,
+            235,
+            97
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 118,
+        "paper_count": 582,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            169,
+            235,
+            97
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r063_card_12_size_53_angle_332p5",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 121,
+        "paper_count": 579,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            159,
+            231,
+            189
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 121,
+        "paper_count": 579,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            159,
+            231,
+            189
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r064_card_12_size_69_angle_17p5",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 201,
+        "paper_count": 989,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            175,
+            247,
+            173
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 201,
+        "paper_count": 989,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            175,
+            247,
+            173
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r065_card_12_size_69_angle_62p5",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 200,
+        "paper_count": 990,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            159,
+            231,
+            163
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 200,
+        "paper_count": 990,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            159,
+            231,
+            163
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r066_card_12_size_69_angle_152p5",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 199,
+        "paper_count": 991,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            175,
+            253,
+            169
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 199,
+        "paper_count": 991,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            175,
+            253,
+            169
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r067_card_12_size_69_angle_242p5",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 200,
+        "paper_count": 990,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            159,
+            231,
+            109
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 200,
+        "paper_count": 990,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            159,
+            231,
+            109
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r068_card_12_size_69_angle_332p5",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 199,
+        "paper_count": 991,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            175,
+            253,
+            163
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 199,
+        "paper_count": 991,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            175,
+            253,
+            163
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r069_card_12_size_77_angle_17p5",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 244,
+        "paper_count": 1238,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            180,
+            254,
+            168
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 244,
+        "paper_count": 1238,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            180,
+            254,
+            168
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r070_card_12_size_77_angle_62p5",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 242,
+        "paper_count": 1240,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            168,
+            248,
+            158
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 242,
+        "paper_count": 1240,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            168,
+            248,
+            158
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r071_card_12_size_77_angle_152p5",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 245,
+        "paper_count": 1237,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            164,
+            238,
+            178
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 245,
+        "paper_count": 1237,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            164,
+            238,
+            178
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r072_card_12_size_77_angle_242p5",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 242,
+        "paper_count": 1240,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            168,
+            248,
+            118
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 242,
+        "paper_count": 1240,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            168,
+            248,
+            118
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r073_card_12_size_77_angle_332p5",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 245,
+        "paper_count": 1237,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            164,
+            238,
+            170
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 245,
+        "paper_count": 1237,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            164,
+            238,
+            170
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r074_card_12_soft_paper_edge",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1404,
+        "glyph_count": 234,
+        "paper_count": 1170,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            162,
+            230,
+            188
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1404,
+        "glyph_count": 234,
+        "paper_count": 1170,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            162,
+            230,
+            188
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r075_card_13_angle_0",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 190,
+        "glyph_count": 187,
+        "paper_count": 3,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            153,
+            229,
+            107
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 190,
+        "glyph_count": 187,
+        "paper_count": 3,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            153,
+            229,
+            107
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r076_card_13_angle_90",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1406,
+        "glyph_count": 186,
+        "paper_count": 1220,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            154,
+            230,
+            140
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1406,
+        "glyph_count": 186,
+        "paper_count": 1220,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            154,
+            230,
+            140
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r077_card_13_angle_180",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1406,
+        "glyph_count": 186,
+        "paper_count": 1220,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            154,
+            230,
+            170
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1406,
+        "glyph_count": 186,
+        "paper_count": 1220,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            154,
+            230,
+            170
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r078_card_13_angle_270",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 190,
+        "glyph_count": 189,
+        "paper_count": 1,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            167,
+            247,
+            127
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 190,
+        "glyph_count": 189,
+        "paper_count": 1,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            167,
+            247,
+            127
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r079_card_13_angle_2p5",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1413,
+        "glyph_count": 188,
+        "paper_count": 1225,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            154,
+            228,
+            106
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1413,
+        "glyph_count": 188,
+        "paper_count": 1225,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            154,
+            228,
+            106
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r080_card_13_angle_87p5",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1408,
+        "glyph_count": 190,
+        "paper_count": 1218,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            165,
+            241,
+            131
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1408,
+        "glyph_count": 190,
+        "paper_count": 1218,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            165,
+            241,
+            131
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r081_card_13_angle_177p5",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 196,
+        "glyph_count": 190,
+        "paper_count": 6,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            165,
+            241,
+            163
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 196,
+        "glyph_count": 190,
+        "paper_count": 6,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            165,
+            241,
+            163
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r082_card_13_angle_267p5",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1396,
+        "glyph_count": 183,
+        "paper_count": 1212,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            145,
+            217,
+            141
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1396,
+        "glyph_count": 183,
+        "paper_count": 1212,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            145,
+            217,
+            141
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r083_card_13_size_53_angle_17p5",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 93,
+        "paper_count": 606,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            156,
+            236,
+            134
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 93,
+        "paper_count": 606,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            156,
+            236,
+            134
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r084_card_13_size_53_angle_62p5",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 98,
+        "paper_count": 601,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            146,
+            228,
+            122
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 98,
+        "paper_count": 601,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            146,
+            228,
+            122
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r085_card_13_size_53_angle_152p5",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 94,
+        "paper_count": 605,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            151,
+            233,
+            121
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 94,
+        "paper_count": 605,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            151,
+            233,
+            121
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r086_card_13_size_53_angle_242p5",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 98,
+        "paper_count": 601,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            146,
+            228,
+            150
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 98,
+        "paper_count": 601,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            146,
+            228,
+            150
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r087_card_13_size_53_angle_332p5",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 94,
+        "paper_count": 605,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            151,
+            233,
+            151
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 94,
+        "paper_count": 605,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            151,
+            233,
+            151
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r088_card_13_size_69_angle_17p5",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 162,
+        "paper_count": 1028,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            147,
+            223,
+            129
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 162,
+        "paper_count": 1028,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            147,
+            223,
+            129
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r089_card_13_size_69_angle_62p5",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 158,
+        "paper_count": 1031,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            135,
+            213,
+            117
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 158,
+        "paper_count": 1031,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            135,
+            213,
+            117
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r090_card_13_size_69_angle_152p5",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 162,
+        "paper_count": 1028,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            156,
+            238,
+            112
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 162,
+        "paper_count": 1028,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            156,
+            238,
+            112
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r091_card_13_size_69_angle_242p5",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 158,
+        "paper_count": 1031,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            135,
+            213,
+            143
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 158,
+        "paper_count": 1031,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            135,
+            213,
+            143
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r092_card_13_size_69_angle_332p5",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 162,
+        "paper_count": 1028,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            160,
+            238,
+            154
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 162,
+        "paper_count": 1028,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            160,
+            238,
+            154
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r093_card_13_size_77_angle_17p5",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 202,
+        "paper_count": 1280,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            162,
+            238,
+            136
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 202,
+        "paper_count": 1280,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            162,
+            238,
+            136
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r094_card_13_size_77_angle_62p5",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 200,
+        "paper_count": 1282,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            156,
+            232,
+            106
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 200,
+        "paper_count": 1282,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            156,
+            232,
+            106
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r095_card_13_size_77_angle_152p5",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 199,
+        "paper_count": 1283,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            156,
+            232,
+            104
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 199,
+        "paper_count": 1283,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            156,
+            232,
+            104
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r096_card_13_size_77_angle_242p5",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 200,
+        "paper_count": 1282,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            156,
+            232,
+            152
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 200,
+        "paper_count": 1282,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            156,
+            232,
+            152
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r097_card_13_size_77_angle_332p5",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 199,
+        "paper_count": 1283,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            156,
+            232,
+            152
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 199,
+        "paper_count": 1283,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            156,
+            232,
+            152
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r098_card_13_soft_paper_edge",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1404,
+        "glyph_count": 188,
+        "paper_count": 1216,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            166,
+            244,
+            162
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1404,
+        "glyph_count": 188,
+        "paper_count": 1216,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            166,
+            244,
+            162
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r099_card_14_angle_0",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 213,
+        "glyph_count": 207,
+        "paper_count": 6,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            173,
+            257,
+            207
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 213,
+        "glyph_count": 207,
+        "paper_count": 6,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            173,
+            257,
+            207
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r100_card_14_angle_90",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1406,
+        "glyph_count": 211,
+        "paper_count": 1195,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            162,
+            244,
+            188
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1406,
+        "glyph_count": 211,
+        "paper_count": 1195,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            162,
+            244,
+            188
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r101_card_14_angle_180",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1406,
+        "glyph_count": 211,
+        "paper_count": 1195,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            162,
+            244,
+            112
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1406,
+        "glyph_count": 211,
+        "paper_count": 1195,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            162,
+            244,
+            112
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r102_card_14_angle_270",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 204,
+        "glyph_count": 201,
+        "paper_count": 2,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            174,
+            252,
+            196
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 204,
+        "glyph_count": 201,
+        "paper_count": 2,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            174,
+            252,
+            196
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r103_card_14_angle_2p5",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1413,
+        "glyph_count": 209,
+        "paper_count": 1204,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            170,
+            254,
+            210
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1413,
+        "glyph_count": 209,
+        "paper_count": 1204,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            170,
+            254,
+            210
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r104_card_14_angle_87p5",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1408,
+        "glyph_count": 203,
+        "paper_count": 1205,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            169,
+            251,
+            191
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1408,
+        "glyph_count": 203,
+        "paper_count": 1205,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            169,
+            251,
+            191
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r105_card_14_angle_177p5",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 209,
+        "glyph_count": 203,
+        "paper_count": 6,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            169,
+            251,
+            117
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 209,
+        "glyph_count": 203,
+        "paper_count": 6,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            169,
+            251,
+            117
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r106_card_14_angle_267p5",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1396,
+        "glyph_count": 209,
+        "paper_count": 1187,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            163,
+            245,
+            183
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1396,
+        "glyph_count": 209,
+        "paper_count": 1187,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            163,
+            245,
+            183
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r107_card_14_size_53_angle_17p5",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 103,
+        "paper_count": 597,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            169,
+            239,
+            227
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 103,
+        "paper_count": 597,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            169,
+            239,
+            227
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r108_card_14_size_53_angle_62p5",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 102,
+        "paper_count": 597,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            175,
+            247,
+            203
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 102,
+        "paper_count": 597,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            175,
+            247,
+            203
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r109_card_14_size_53_angle_152p5",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 103,
+        "paper_count": 596,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            177,
+            241,
+            123
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 103,
+        "paper_count": 596,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            177,
+            241,
+            123
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r110_card_14_size_53_angle_242p5",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 102,
+        "paper_count": 597,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            175,
+            249,
+            179
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 102,
+        "paper_count": 597,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            175,
+            249,
+            179
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r111_card_14_size_53_angle_332p5",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 103,
+        "paper_count": 596,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            179,
+            237,
+            237
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 700,
+        "glyph_count": 103,
+        "paper_count": 596,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            179,
+            237,
+            237
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r112_card_14_size_69_angle_17p5",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 173,
+        "paper_count": 1017,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            165,
+            247,
+            213
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 173,
+        "paper_count": 1017,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            165,
+            247,
+            213
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r113_card_14_size_69_angle_62p5",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 177,
+        "paper_count": 1013,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            172,
+            254,
+            198
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 177,
+        "paper_count": 1013,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            172,
+            254,
+            198
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r114_card_14_size_69_angle_152p5",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 170,
+        "paper_count": 1019,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            179,
+            241,
+            119
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 170,
+        "paper_count": 1019,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            179,
+            241,
+            119
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r115_card_14_size_69_angle_242p5",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 177,
+        "paper_count": 1013,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            172,
+            254,
+            190
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 177,
+        "paper_count": 1013,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            172,
+            254,
+            190
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r116_card_14_size_69_angle_332p5",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 170,
+        "paper_count": 1019,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            179,
+            241,
+            227
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1190,
+        "glyph_count": 170,
+        "paper_count": 1019,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            179,
+            241,
+            227
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r117_card_14_size_77_angle_17p5",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 214,
+        "paper_count": 1267,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            175,
+            257,
+            217
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 214,
+        "paper_count": 1267,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            175,
+            257,
+            217
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r118_card_14_size_77_angle_62p5",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 218,
+        "paper_count": 1263,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            165,
+            235,
+            213
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 218,
+        "paper_count": 1263,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            165,
+            235,
+            213
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r119_card_14_size_77_angle_152p5",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 214,
+        "paper_count": 1268,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            176,
+            256,
+            120
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 214,
+        "paper_count": 1268,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            176,
+            256,
+            120
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r120_card_14_size_77_angle_242p5",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 218,
+        "paper_count": 1263,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            165,
+            235,
+            187
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 218,
+        "paper_count": 1263,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            165,
+            235,
+            187
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r121_card_14_size_77_angle_332p5",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 214,
+        "paper_count": 1268,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            177,
+            255,
+            223
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1482,
+        "glyph_count": 214,
+        "paper_count": 1268,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            177,
+            255,
+            223
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r122_card_14_soft_paper_edge",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1404,
+        "glyph_count": 199,
+        "paper_count": 1205,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            177,
+            213,
+            225
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1404,
+        "glyph_count": 199,
+        "paper_count": 1205,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            177,
+            213,
+            225
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r123_legacy_008_empty_dark_soft_shadow",
+      "Before": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r124_legacy_013_empty_wood_noise",
+      "Before": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r125_legacy_122_card_10_cut_right",
+      "Before": {
+        "item": 0,
+        "present": true,
+        "scene_count": 389,
+        "glyph_count": 93,
+        "paper_count": 295,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": true,
+        "scene_count": 389,
+        "glyph_count": 93,
+        "paper_count": 295,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r126_legacy_596_block_red_circle_white_36",
+      "Before": {
+        "item": 1,
+        "present": true,
+        "scene_count": 253,
+        "glyph_count": 253,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            15,
+            81,
+            175
+          ],
+          "shape_bits": 1
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 1,
+        "present": true,
+        "scene_count": 253,
+        "glyph_count": 253,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            15,
+            81,
+            175
+          ],
+          "shape_bits": 1
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r127_legacy_608_block_red_square_dark_36",
+      "Before": {
+        "item": 2,
+        "present": true,
+        "scene_count": 324,
+        "glyph_count": 324,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            84,
+            0,
+            200
+          ],
+          "shape_bits": 2
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 2,
+        "present": true,
+        "scene_count": 324,
+        "glyph_count": 324,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            84,
+            0,
+            200
+          ],
+          "shape_bits": 2
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r128_legacy_620_block_red_triangle_wood_36",
+      "Before": {
+        "item": 3,
+        "present": true,
+        "scene_count": 171,
+        "glyph_count": 171,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            161,
+            189,
+            17
+          ],
+          "shape_bits": 4
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 3,
+        "present": true,
+        "scene_count": 171,
+        "glyph_count": 171,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            161,
+            189,
+            17
+          ],
+          "shape_bits": 4
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r129_legacy_624_block_yellow_circle_white_52",
+      "Before": {
+        "item": 4,
+        "present": true,
+        "scene_count": 530,
+        "glyph_count": 530,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            10,
+            90,
+            172
+          ],
+          "shape_bits": 1
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 4,
+        "present": true,
+        "scene_count": 530,
+        "glyph_count": 530,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            10,
+            90,
+            172
+          ],
+          "shape_bits": 1
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r130_legacy_636_block_yellow_square_dark_52",
+      "Before": {
+        "item": 5,
+        "present": true,
+        "scene_count": 676,
+        "glyph_count": 676,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            84,
+            0,
+            200
+          ],
+          "shape_bits": 2
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 5,
+        "present": true,
+        "scene_count": 676,
+        "glyph_count": 676,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            84,
+            0,
+            200
+          ],
+          "shape_bits": 2
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r131_legacy_648_block_yellow_triangle_wood_52",
+      "Before": {
+        "item": 6,
+        "present": true,
+        "scene_count": 351,
+        "glyph_count": 351,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            161,
+            193,
+            11
+          ],
+          "shape_bits": 4
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 6,
+        "present": true,
+        "scene_count": 351,
+        "glyph_count": 351,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            161,
+            193,
+            11
+          ],
+          "shape_bits": 4
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r132_legacy_652_block_blue_circle_white_68",
+      "Before": {
+        "item": 7,
+        "present": true,
+        "scene_count": 906,
+        "glyph_count": 906,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            10,
+            94,
+            170
+          ],
+          "shape_bits": 1
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 7,
+        "present": true,
+        "scene_count": 906,
+        "glyph_count": 906,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            10,
+            94,
+            170
+          ],
+          "shape_bits": 1
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r133_legacy_664_block_blue_square_dark_68",
+      "Before": {
+        "item": 8,
+        "present": true,
+        "scene_count": 1156,
+        "glyph_count": 1156,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            84,
+            0,
+            200
+          ],
+          "shape_bits": 2
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 8,
+        "present": true,
+        "scene_count": 1156,
+        "glyph_count": 1156,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            84,
+            0,
+            200
+          ],
+          "shape_bits": 2
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r134_legacy_676_block_blue_triangle_wood_68",
+      "Before": {
+        "item": 9,
+        "present": true,
+        "scene_count": 595,
+        "glyph_count": 595,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            164,
+            194,
+            8
+          ],
+          "shape_bits": 4
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 9,
+        "present": true,
+        "scene_count": 595,
+        "glyph_count": 595,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            164,
+            194,
+            8
+          ],
+          "shape_bits": 4
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r135_legacy_686_unknown_ring_white",
+      "Before": {
+        "item": 0,
+        "present": true,
+        "scene_count": 780,
+        "glyph_count": 568,
+        "paper_count": 212,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            96,
+            180,
+            238
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": true,
+        "scene_count": 780,
+        "glyph_count": 568,
+        "paper_count": 212,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            96,
+            180,
+            238
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r136_legacy_696_unknown_checker_dark",
+      "Before": {
+        "item": 0,
+        "present": true,
+        "scene_count": 1936,
+        "glyph_count": 450,
+        "paper_count": 1486,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            200,
+            200,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": true,
+        "scene_count": 1936,
+        "glyph_count": 450,
+        "paper_count": 1486,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            200,
+            200,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r137_legacy_704_different_apple_outline",
+      "Before": {
+        "item": 0,
+        "present": true,
+        "scene_count": 1681,
+        "glyph_count": 426,
+        "paper_count": 1255,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            148,
+            228,
+            202
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": true,
+        "scene_count": 1681,
+        "glyph_count": 426,
+        "paper_count": 1255,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            148,
+            228,
+            202
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r138_legacy_705_different_apple_striped",
+      "Before": {
+        "item": 0,
+        "present": true,
+        "scene_count": 1681,
+        "glyph_count": 427,
+        "paper_count": 1252,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            157,
+            235,
+            189
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": true,
+        "scene_count": 1681,
+        "glyph_count": 427,
+        "paper_count": 1252,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            157,
+            235,
+            189
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r139_legacy_706_outside_roi_interference",
+      "Before": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": false,
+        "scene_count": 0,
+        "glyph_count": 0,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r140_legacy_707_block_touching_left",
+      "Before": {
+        "item": 0,
+        "present": true,
+        "scene_count": 375,
+        "glyph_count": 375,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": true,
+        "scene_count": 375,
+        "glyph_count": 375,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r141_legacy_711_unqualified_border_red_blue",
+      "Before": {
+        "item": 0,
+        "present": true,
+        "scene_count": 7200,
+        "glyph_count": 7200,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": true,
+        "scene_count": 7200,
+        "glyph_count": 7200,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r142_legacy_712_unqualified_border_light_dark",
+      "Before": {
+        "item": 0,
+        "present": true,
+        "scene_count": 3600,
+        "glyph_count": 0,
+        "paper_count": 3600,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": true,
+        "scene_count": 3600,
+        "glyph_count": 0,
+        "paper_count": 3600,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            316,
+            400,
+            200
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r143_card_10_gain65_before",
+      "Before": {
+        "item": 0,
+        "present": true,
+        "scene_count": 1444,
+        "glyph_count": 1444,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            84,
+            0,
+            200
+          ],
+          "shape_bits": 2
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": true,
+        "scene_count": 1444,
+        "glyph_count": 1444,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            84,
+            0,
+            200
+          ],
+          "shape_bits": 2
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r144_card_10_gain65_after",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1444,
+        "glyph_count": 369,
+        "paper_count": 1075,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            46,
+            112,
+            140
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 1444,
+        "glyph_count": 369,
+        "paper_count": 1075,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            46,
+            112,
+            140
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r145_card_11_gain65_before",
+      "Before": {
+        "item": 0,
+        "present": true,
+        "scene_count": 1444,
+        "glyph_count": 1444,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            84,
+            0,
+            200
+          ],
+          "shape_bits": 2
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": true,
+        "scene_count": 1444,
+        "glyph_count": 1444,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            84,
+            0,
+            200
+          ],
+          "shape_bits": 2
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r146_card_11_gain65_after",
+      "Before": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1444,
+        "glyph_count": 236,
+        "paper_count": 1208,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            177,
+            243,
+            163
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 11,
+        "present": true,
+        "scene_count": 1444,
+        "glyph_count": 236,
+        "paper_count": 1208,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            177,
+            243,
+            163
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r147_card_12_gain65_before",
+      "Before": {
+        "item": 0,
+        "present": true,
+        "scene_count": 1444,
+        "glyph_count": 1444,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            84,
+            0,
+            200
+          ],
+          "shape_bits": 2
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": true,
+        "scene_count": 1444,
+        "glyph_count": 1444,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            84,
+            0,
+            200
+          ],
+          "shape_bits": 2
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r148_card_12_gain65_after",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1444,
+        "glyph_count": 264,
+        "paper_count": 1180,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            160,
+            240,
+            166
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 1444,
+        "glyph_count": 264,
+        "paper_count": 1180,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            160,
+            240,
+            166
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r149_card_13_gain65_before",
+      "Before": {
+        "item": 0,
+        "present": true,
+        "scene_count": 1444,
+        "glyph_count": 1444,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            84,
+            0,
+            200
+          ],
+          "shape_bits": 2
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": true,
+        "scene_count": 1444,
+        "glyph_count": 1444,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            84,
+            0,
+            200
+          ],
+          "shape_bits": 2
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r150_card_13_gain65_after",
+      "Before": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1444,
+        "glyph_count": 194,
+        "paper_count": 1250,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            162,
+            242,
+            106
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 13,
+        "present": true,
+        "scene_count": 1444,
+        "glyph_count": 194,
+        "paper_count": 1250,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            162,
+            242,
+            106
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r151_card_14_gain65_before",
+      "Before": {
+        "item": 0,
+        "present": true,
+        "scene_count": 1444,
+        "glyph_count": 1444,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            84,
+            0,
+            200
+          ],
+          "shape_bits": 2
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": true,
+        "scene_count": 1444,
+        "glyph_count": 1444,
+        "paper_count": 0,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            84,
+            0,
+            200
+          ],
+          "shape_bits": 2
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r152_card_14_gain65_after",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1444,
+        "glyph_count": 223,
+        "paper_count": 1221,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            158,
+            236,
+            206
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 1444,
+        "glyph_count": 223,
+        "paper_count": 1221,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            158,
+            236,
+            206
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r153_unknown_gray_circle",
+      "Before": {
+        "item": 0,
+        "present": true,
+        "scene_count": 1936,
+        "glyph_count": 593,
+        "paper_count": 1343,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            16,
+            96,
+            176
+          ],
+          "shape_bits": 1
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 0,
+        "present": true,
+        "scene_count": 1936,
+        "glyph_count": 593,
+        "paper_count": 1343,
+        "paper_route": true,
+        "shape": {
+          "distances": [
+            16,
+            96,
+            176
+          ],
+          "shape_bits": 1
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r154_refusal_10_67_67p5_10",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 292,
+        "glyph_count": 286,
+        "paper_count": 5,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            42,
+            114,
+            152
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 294,
+        "glyph_count": 286,
+        "paper_count": 7,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            42,
+            114,
+            152
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": false
+    },
+    {
+      "Case": "r155_refusal_10_67_157p5_01",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 292,
+        "glyph_count": 286,
+        "paper_count": 5,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            42,
+            114,
+            168
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 294,
+        "glyph_count": 286,
+        "paper_count": 7,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            42,
+            114,
+            168
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": false
+    },
+    {
+      "Case": "r156_refusal_12_51_47p5_10",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 128,
+        "glyph_count": 110,
+        "paper_count": 18,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            151,
+            203,
+            173
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 128,
+        "glyph_count": 110,
+        "paper_count": 18,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            151,
+            203,
+            173
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r157_refusal_12_51_52p5_00",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 123,
+        "glyph_count": 108,
+        "paper_count": 15,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            150,
+            196,
+            180
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 124,
+        "glyph_count": 108,
+        "paper_count": 16,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            150,
+            196,
+            180
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": false
+    },
+    {
+      "Case": "r158_refusal_12_51_57p5_11",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 126,
+        "glyph_count": 111,
+        "paper_count": 15,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            154,
+            218,
+            152
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 126,
+        "glyph_count": 111,
+        "paper_count": 15,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            154,
+            218,
+            152
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r159_refusal_12_51_127p5_10",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 128,
+        "glyph_count": 113,
+        "paper_count": 15,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            155,
+            203,
+            121
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 128,
+        "glyph_count": 113,
+        "paper_count": 15,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            155,
+            203,
+            121
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r160_refusal_12_51_137p5_01",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 128,
+        "glyph_count": 110,
+        "paper_count": 18,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            151,
+            203,
+            149
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 128,
+        "glyph_count": 110,
+        "paper_count": 18,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            151,
+            203,
+            149
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r161_refusal_12_51_142p5_00",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 123,
+        "glyph_count": 108,
+        "paper_count": 15,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            150,
+            196,
+            170
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 124,
+        "glyph_count": 108,
+        "paper_count": 16,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            150,
+            196,
+            170
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": false
+    },
+    {
+      "Case": "r162_refusal_12_51_147p5_11",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 126,
+        "glyph_count": 111,
+        "paper_count": 15,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            154,
+            218,
+            168
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 126,
+        "glyph_count": 111,
+        "paper_count": 15,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            154,
+            218,
+            168
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r163_refusal_12_51_207p5_10",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 127,
+        "glyph_count": 109,
+        "paper_count": 18,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            172,
+            248,
+            176
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 127,
+        "glyph_count": 109,
+        "paper_count": 18,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            172,
+            248,
+            176
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r164_refusal_12_51_217p5_00",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 128,
+        "glyph_count": 113,
+        "paper_count": 15,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            149,
+            203,
+            175
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 128,
+        "glyph_count": 113,
+        "paper_count": 15,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            149,
+            203,
+            175
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r165_refusal_12_51_227p5_10",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 128,
+        "glyph_count": 110,
+        "paper_count": 18,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            151,
+            203,
+            129
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 128,
+        "glyph_count": 110,
+        "paper_count": 18,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            151,
+            203,
+            129
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r166_refusal_12_51_237p5_00",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 127,
+        "glyph_count": 113,
+        "paper_count": 14,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            152,
+            216,
+            106
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 127,
+        "glyph_count": 113,
+        "paper_count": 14,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            152,
+            216,
+            106
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r167_refusal_12_51_292p5_00",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 130,
+        "glyph_count": 115,
+        "paper_count": 15,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            163,
+            241,
+            147
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 130,
+        "glyph_count": 115,
+        "paper_count": 15,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            163,
+            241,
+            147
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r168_refusal_12_51_317p5_01",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 128,
+        "glyph_count": 110,
+        "paper_count": 18,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            151,
+            203,
+            205
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 128,
+        "glyph_count": 110,
+        "paper_count": 18,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            151,
+            203,
+            205
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r169_refusal_12_67_132p5_10",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 217,
+        "glyph_count": 189,
+        "paper_count": 28,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            151,
+            201,
+            129
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 217,
+        "glyph_count": 189,
+        "paper_count": 28,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            151,
+            201,
+            129
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r170_refusal_12_67_312p5_10",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 217,
+        "glyph_count": 189,
+        "paper_count": 28,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            151,
+            201,
+            171
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 217,
+        "glyph_count": 189,
+        "paper_count": 28,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            151,
+            201,
+            171
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r171_refusal_14_51_27p5_11",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 100,
+        "glyph_count": 96,
+        "paper_count": 4,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            173,
+            229,
+            223
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 100,
+        "glyph_count": 96,
+        "paper_count": 4,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            173,
+            229,
+            223
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r172_refusal_14_51_37p5_10",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 101,
+        "glyph_count": 96,
+        "paper_count": 4,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            171,
+            231,
+            219
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 101,
+        "glyph_count": 96,
+        "paper_count": 4,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            171,
+            231,
+            219
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r173_refusal_14_51_117p5_11",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 100,
+        "glyph_count": 96,
+        "paper_count": 4,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            173,
+            229,
+            161
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 100,
+        "glyph_count": 96,
+        "paper_count": 4,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            173,
+            229,
+            161
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r174_refusal_14_51_127p5_01",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 101,
+        "glyph_count": 96,
+        "paper_count": 4,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            171,
+            231,
+            149
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 101,
+        "glyph_count": 96,
+        "paper_count": 4,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            171,
+            231,
+            149
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r175_refusal_14_51_207p5_11",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 100,
+        "glyph_count": 96,
+        "paper_count": 4,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            173,
+            229,
+            145
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 100,
+        "glyph_count": 96,
+        "paper_count": 4,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            173,
+            229,
+            145
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r176_refusal_14_51_217p5_11",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 101,
+        "glyph_count": 97,
+        "paper_count": 4,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            172,
+            228,
+            150
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 101,
+        "glyph_count": 97,
+        "paper_count": 4,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            172,
+            228,
+            150
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r177_refusal_14_51_297p5_11",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 100,
+        "glyph_count": 96,
+        "paper_count": 4,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            173,
+            229,
+            171
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 100,
+        "glyph_count": 96,
+        "paper_count": 4,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            173,
+            229,
+            171
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r178_refusal_14_51_307p5_11",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 101,
+        "glyph_count": 97,
+        "paper_count": 4,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            172,
+            228,
+            178
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 101,
+        "glyph_count": 97,
+        "paper_count": 4,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            172,
+            228,
+            178
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r179_refusal_14_51_322p5_10",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 99,
+        "glyph_count": 97,
+        "paper_count": 2,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            169,
+            231,
+            213
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 99,
+        "glyph_count": 97,
+        "paper_count": 2,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            169,
+            231,
+            213
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    },
+    {
+      "Case": "r180_refusal_14_51_347p5_01",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 100,
+        "glyph_count": 97,
+        "paper_count": 2,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            172,
+            246,
+            220
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 101,
+        "glyph_count": 97,
+        "paper_count": 3,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            172,
+            246,
+            220
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": false
+    },
+    {
+      "Case": "r181_refusal_14_83_297p5_10",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 256,
+        "glyph_count": 249,
+        "paper_count": 7,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            172,
+            230,
+            182
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 256,
+        "glyph_count": 249,
+        "paper_count": 7,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            172,
+            230,
+            182
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": true
+    }
+  ],
+  "LegacyOutputChanges": [],
+  "LegacySceneChanges": [
+    {
+      "Case": "r154_refusal_10_67_67p5_10",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 292,
+        "glyph_count": 286,
+        "paper_count": 5,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            42,
+            114,
+            152
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 294,
+        "glyph_count": 286,
+        "paper_count": 7,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            42,
+            114,
+            152
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": false
+    },
+    {
+      "Case": "r155_refusal_10_67_157p5_01",
+      "Before": {
+        "item": 10,
+        "present": true,
+        "scene_count": 292,
+        "glyph_count": 286,
+        "paper_count": 5,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            42,
+            114,
+            168
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 10,
+        "present": true,
+        "scene_count": 294,
+        "glyph_count": 286,
+        "paper_count": 7,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            42,
+            114,
+            168
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": false
+    },
+    {
+      "Case": "r157_refusal_12_51_52p5_00",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 123,
+        "glyph_count": 108,
+        "paper_count": 15,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            150,
+            196,
+            180
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 124,
+        "glyph_count": 108,
+        "paper_count": 16,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            150,
+            196,
+            180
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": false
+    },
+    {
+      "Case": "r161_refusal_12_51_142p5_00",
+      "Before": {
+        "item": 12,
+        "present": true,
+        "scene_count": 123,
+        "glyph_count": 108,
+        "paper_count": 15,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            150,
+            196,
+            170
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 12,
+        "present": true,
+        "scene_count": 124,
+        "glyph_count": 108,
+        "paper_count": 16,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            150,
+            196,
+            170
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": false
+    },
+    {
+      "Case": "r180_refusal_14_51_347p5_01",
+      "Before": {
+        "item": 14,
+        "present": true,
+        "scene_count": 100,
+        "glyph_count": 97,
+        "paper_count": 2,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            172,
+            246,
+            220
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "After": {
+        "item": 14,
+        "present": true,
+        "scene_count": 101,
+        "glyph_count": 97,
+        "paper_count": 3,
+        "paper_route": false,
+        "shape": {
+          "distances": [
+            172,
+            246,
+            220
+          ],
+          "shape_bits": 0
+        },
+        "conflict": false
+      },
+      "SameOutput": true,
+      "SameScene": false
+    }
+  ]
+}
