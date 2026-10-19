@@ -1,0 +1,27 @@
+# Local immutable inputs, waveforms, reference pixels and tool caches remain on
+# this workstation. Git carries the selected manifests and original text logs.
+*
+!.gitignore
+!.gitattributes
+!README.md
+!software-v1.json
+!protected-d0261.json
+!runs/
+!runs/*/
+!runs/*/*.json
+!runs/*/*.log
+!runs/*/scene-results.csv
+!fixtures/
+!fixtures/manifest.json
+!fixtures/cases.txt
+!render-fixtures/
+!render-fixtures/golden-manifest.json
+!builds/
+!builds/*/
+!builds/*/inputs.json
+!builds/*/profile.json
+!builds/*/started.json
+!builds/*/stages.json
+!builds/*/result.json
+!builds/*/failure.json
+!builds/*/reset-synthesis.json

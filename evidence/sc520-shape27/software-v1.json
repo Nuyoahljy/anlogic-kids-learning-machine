@@ -1,0 +1,407 @@
+{
+  "CreatedAt": "2026-10-19T21:03:34.444970+08:00",
+  "Task": "sc520-shape27",
+  "Owner": "Codex /root/shape27_impl_resume",
+  "SoftwareQualified": true,
+  "MainAccepted": false,
+  "PhysicalQualified": false,
+  "HardwareValidated": false,
+  "BitGenerationAllowed": false,
+  "Runs": [
+    {
+      "Run": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\runs\\scenes-normal-20261019-204351-38a6c6\\run-manifest.json",
+        "SHA256": "F10FFE0CC6612ABA65E92E39EDB02A19B8EA084D6EFBB3E43F9B09845D7F83E1",
+        "Bytes": 81796
+      },
+      "Summary": {
+        "errors": 0,
+        "checks": 930,
+        "scenarios": 62,
+        "done": 1,
+        "injected": 0
+      },
+      "Inputs": 142,
+      "Outputs": 10
+    },
+    {
+      "Run": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\runs\\scenes-normal-20261019-205055-7fd100\\run-manifest.json",
+        "SHA256": "4176AE41D470DE56FC0C30BE06D35D47017A5D89E6DEADD4595919594C0C61FF",
+        "Bytes": 62996
+      },
+      "Summary": {
+        "errors": 0,
+        "checks": 315,
+        "scenarios": 21,
+        "done": 1,
+        "injected": 0
+      },
+      "Inputs": 101,
+      "Outputs": 10
+    },
+    {
+      "Run": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\runs\\reset-normal-20261019-204553-e12822\\run-manifest.json",
+        "SHA256": "D7B6EE258F29ED587F1866C5FF17CF17675966BE2970CCCDFDA9CE103816D51F",
+        "Bytes": 54559
+      },
+      "Summary": {
+        "errors": 0,
+        "checks": 16485898,
+        "scenarios": 7,
+        "done": 1,
+        "injected": 0
+      },
+      "Inputs": 82,
+      "Outputs": 10
+    },
+    {
+      "Run": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\runs\\pipeline-normal-20261019-204553-9a0787\\run-manifest.json",
+        "SHA256": "37B64752F42A8036D186B4A83DA7A0B558DE218A2C0F2E537354F7F9A712CD2E",
+        "Bytes": 52837
+      },
+      "Summary": {
+        "errors": 0,
+        "checks": 807474,
+        "scenarios": 5,
+        "done": 1,
+        "injected": 0
+      },
+      "Inputs": 79,
+      "Outputs": 9
+    },
+    {
+      "Run": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\runs\\render-normal-20261019-205055-a6c750\\run-manifest.json",
+        "SHA256": "C82117C29A94079E05D1C11DA8D0DE9C3C4C842D1280C8F80ED2D4644ED5EFAA",
+        "Bytes": 53652
+      },
+      "Summary": {
+        "errors": 0,
+        "checks": 11329115,
+        "scenarios": 17,
+        "done": 1,
+        "injected": 0
+      },
+      "Inputs": 79,
+      "Outputs": 13
+    },
+    {
+      "Run": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\runs\\pairing-normal-20261019-205055-453de5\\run-manifest.json",
+        "SHA256": "32A872107D21368CA2FAF73C7F6D90A7F0B3728B72055AA95B7C1C62768B29CD",
+        "Bytes": 53145
+      },
+      "Summary": {
+        "errors": 0,
+        "checks": 504,
+        "scenarios": 72,
+        "done": 1,
+        "injected": 0
+      },
+      "Inputs": 80,
+      "Outputs": 9
+    },
+    {
+      "Run": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\runs\\lifecycle-normal-20261019-205826-250661\\run-manifest.json",
+        "SHA256": "B1A19D399D280174A792228585C77B8F759B1CF7766AE7029C1BFD5FA8EEAEC2",
+        "Bytes": 82663
+      },
+      "Summary": {
+        "errors": 0,
+        "checks": 463,
+        "scenarios": 14,
+        "done": 1,
+        "injected": 0
+      },
+      "Inputs": 143,
+      "Outputs": 9
+    }
+  ],
+  "RunnerGuards": [
+    {
+      "Run": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\runs\\reset-negative-20261019-210149-29e13c\\run-manifest.json",
+        "SHA256": "47BE3E3F3CE0735594A01C6ACB2FB79B31F0FA52A881680BB905829EF801C50B",
+        "Bytes": 54897
+      },
+      "Summary": {
+        "errors": 1,
+        "checks": 2,
+        "scenarios": 1,
+        "done": 1,
+        "injected": 1
+      },
+      "ExpectedNativeExitCode": 1
+    },
+    {
+      "Run": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\runs\\reset-watchdog-20261019-210149-561bbb\\run-manifest.json",
+        "SHA256": "1123F162242B4C478C8C205F75A71EC8902CF3A112E1079ED6A7CE00A21236A4",
+        "Bytes": 54885
+      },
+      "Summary": {
+        "errors": 0,
+        "checks": 48,
+        "scenarios": 1,
+        "done": 0,
+        "injected": 0
+      },
+      "ExpectedNativeExitCode": 2
+    }
+  ],
+  "LegacySameTruthCompleteFailure": {
+    "Run": {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\runs\\scenes-legacy-20261019-204351-462c46\\run-manifest.json",
+      "SHA256": "F66E3846BF892AA73C8B91B9C017CBF04764A867D9AE4DE144856DF1FEBBC6D3",
+      "Bytes": 81798
+    },
+    "Summary": {
+      "errors": 30,
+      "checks": 930,
+      "scenarios": 62,
+      "done": 1,
+      "injected": 0
+    },
+    "Inputs": 142,
+    "Outputs": 10
+  },
+  "DamagedRedSquareComparison": [
+    {
+      "Case": "block_2_gray20",
+      "Old": {
+        "case": "block_2_gray20",
+        "frame": "2",
+        "item": "0",
+        "valid": "0",
+        "present": "1",
+        "count": "0",
+        "scene": "324",
+        "glyph": "324",
+        "paper": "0",
+        "shape": "2",
+        "raw": "1"
+      },
+      "New": {
+        "case": "block_2_gray20",
+        "frame": "2",
+        "item": "2",
+        "valid": "1",
+        "present": "1",
+        "count": "3",
+        "scene": "324",
+        "glyph": "324",
+        "paper": "0",
+        "shape": "2",
+        "raw": "1"
+      }
+    },
+    {
+      "Case": "block_2_gray25",
+      "Old": {
+        "case": "block_2_gray25",
+        "frame": "2",
+        "item": "0",
+        "valid": "0",
+        "present": "1",
+        "count": "0",
+        "scene": "324",
+        "glyph": "324",
+        "paper": "0",
+        "shape": "2",
+        "raw": "1"
+      },
+      "New": {
+        "case": "block_2_gray25",
+        "frame": "2",
+        "item": "2",
+        "valid": "1",
+        "present": "1",
+        "count": "3",
+        "scene": "324",
+        "glyph": "324",
+        "paper": "0",
+        "shape": "2",
+        "raw": "1"
+      }
+    },
+    {
+      "Case": "block_2_wrong20",
+      "Old": {
+        "case": "block_2_wrong20",
+        "frame": "2",
+        "item": "0",
+        "valid": "0",
+        "present": "1",
+        "count": "0",
+        "scene": "324",
+        "glyph": "324",
+        "paper": "0",
+        "shape": "2",
+        "raw": "1"
+      },
+      "New": {
+        "case": "block_2_wrong20",
+        "frame": "2",
+        "item": "2",
+        "valid": "1",
+        "present": "1",
+        "count": "3",
+        "scene": "324",
+        "glyph": "324",
+        "paper": "0",
+        "shape": "2",
+        "raw": "1"
+      }
+    },
+    {
+      "Case": "block_2_wrong25",
+      "Old": {
+        "case": "block_2_wrong25",
+        "frame": "2",
+        "item": "0",
+        "valid": "0",
+        "present": "1",
+        "count": "0",
+        "scene": "324",
+        "glyph": "324",
+        "paper": "0",
+        "shape": "2",
+        "raw": "1"
+      },
+      "New": {
+        "case": "block_2_wrong25",
+        "frame": "2",
+        "item": "2",
+        "valid": "1",
+        "present": "1",
+        "count": "3",
+        "scene": "324",
+        "glyph": "324",
+        "paper": "0",
+        "shape": "2",
+        "raw": "1"
+      }
+    }
+  ],
+  "Summary": {
+    "Scenarios": 198,
+    "Checks": 28624699,
+    "Errors": 0
+  },
+  "SourceFreeze": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-shape27\\pixel27_color_core.v",
+      "SHA256": "C1DBA49D8CCFB825C65CE26CD84E9A4F09E8DDC785A9FB01D3DB5F9485058BED",
+      "Bytes": 7988
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-shape27\\pixel27_color_recognizer.v",
+      "SHA256": "A8FFBA1254CCB41400341D065CE5E83E3A0C33C0F42FA28B9A13C6A655F58F38",
+      "Bytes": 2371
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-shape27\\pixel27_pipeline.v",
+      "SHA256": "A4E7FB1BA1C1D27ECBB1049910871CFAB518B4525085EA8FC80DE4F363D9965B",
+      "Bytes": 34355
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\rtl\\sc520-shape27\\pixel27_scene_preprocess.v",
+      "SHA256": "EA7F20C9DF4427EDEAD4FC3ABF031114A810FD4443997AC2CBB2165609F3011B",
+      "Bytes": 33577
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\custom_project\\sc520-shape27\\overlay\\cdc-analysis.sdc",
+      "SHA256": "DA2D2B3D1F2EF8C50E0DC23ADEA456D8C264CB63099F39799F82E77278FAFDBD",
+      "Bytes": 3201
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\custom_project\\sc520-shape27\\overlay\\design_top_wrapper.v",
+      "SHA256": "F0211113F9660C057034A30E89D931D0B4AA792D91DCA5F230D7108404AEDBB2",
+      "Bytes": 43394
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\custom_project\\sc520-shape27\\overlay\\isp_top.v",
+      "SHA256": "19457AB89719484465C266FB7185569BC82A48A6FA56DAEA818A791615A2BFCD",
+      "Bytes": 10287
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\custom_project\\sc520-shape27\\overlay\\pin.adc",
+      "SHA256": "1EC59B2EDA9BFDE53CE8CDC0C660797D6B2423C5CF4AB4945B717BC383E911E7",
+      "Bytes": 2018
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\custom_project\\sc520-shape27\\overlay\\pixel14.sdc",
+      "SHA256": "AC5F3682177ABE52423F2CAB38C398EC143FCA5C1B705C5FCD52A8F705C36C64",
+      "Bytes": 7657
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\custom_project\\sc520-shape27\\overlay\\pixel14_color_pipeline.v",
+      "SHA256": "2918511FD84BE80482D9010E7090DB9873672C68998513F0D2A4E9F0C2F24344",
+      "Bytes": 18074
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\custom_project\\sc520-shape27\\overlay\\report-pixel14-cdc.tcl",
+      "SHA256": "1AF983C40831B5B847333C55D5CD03D9D967D991B7A8F5A35849AD8DBB9E2F45",
+      "Bytes": 11363
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\custom_project\\sc520-shape27\\overlay\\uicfgcs520.v",
+      "SHA256": "851363FA8C2F4940CE60FF80A0A90204D85DB5D2DF92816F14BFD26668DF9B2A",
+      "Bytes": 12223
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\custom_project\\sc520-shape27\\overlay\\uii2c.v",
+      "SHA256": "CFC585511D23CC2F215E2A98A39E6262B4B6F570451C9B62CE5BD1B94CBB532D",
+      "Bytes": 5637
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\scripts\\sc520-card-recognition\\prepare-shape27.py",
+      "SHA256": "DAF7B9944BC2EE2F28814CE35C45EEF6957ECEE3E6063BB98D3A743D4E0F0865",
+      "Bytes": 1850
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\scripts\\sc520-card-recognition\\build-shape27.ps1",
+      "SHA256": "5291AB04CD3878F6313B5FB5AE69C4CFDD81FBD7EE08FEA70473F1B4E65B0738",
+      "Bytes": 5610
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\scripts\\sc520-card-recognition\\generate-shape27-bit.py",
+      "SHA256": "91BA6C60C92B9B193ED08E285081544950DC6EF301ADA42303651F5DF5334CDC",
+      "Bytes": 4428
+    }
+  ],
+  "FrozenD0261": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\protected-d0261.json",
+    "SHA256": "0802FE4A517338CF05BC09DD1BD1952B179CD381B2E1E2F9F976AA440410089D",
+    "Bytes": 143978
+  },
+  "IndependentBoundaryReview": {
+    "Path": "E:\\juan\\FPGA\\learning\\sc520-shape27\\review\\run-20261019-204556-94b862\\result.json",
+    "SHA256": "8D6AAAEC041DB4215D53E8241B176E69BE7AC3465934FA9F772EA8C0EAECBE71",
+    "Bytes": 3848
+  },
+  "OriginalInterruptedRun": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\runs\\scenes-legacy-20261019-203636-a35a42",
+  "RejectedTestHistory": [
+    {
+      "Run": "lifecycle-normal-20261019-205055-73a725",
+      "Reason": "Test-only TIMEOUT500 exceeded observation bridge parameter range; time-zero failure, retained."
+    },
+    {
+      "Run": "lifecycle-normal-20261019-205243-1d2127",
+      "Reason": "Test-only synthetic stats pulse coincided with EOF; observer requires previously cached stats. Also attempted source switch without required epoch flush. Both invalid stimulus failures retained, no production change."
+    }
+  ],
+  "Limits": [
+    "All damaged shapes are synthetic; not a replay of the user JPEG. White substrate is the current operating constraint.",
+    "The 2/3 coverage is an engineering candidate, with 2:1 dominant bichromatic inputs permitted.",
+    "CSV raw is an internal 1/4/7 color anchor; diagnostic packet RB is the combined public 1..9 item.",
+    "Pairing test forces classifier-boundary evidence and isolates unrelated engines; full raster tests exercise the complete engines separately.",
+    "Original source bootstrap scripts are historical and refuse to overwrite the resumed implementation.",
+    "Git holds compact logs/manifests. Preserve and SHA-verify local immutable snapshots, fixtures, raw pixels and tool outputs separately.",
+    "No TD, bitgen, download, Flash or new hardware result is claimed by this software report."
+  ]
+}

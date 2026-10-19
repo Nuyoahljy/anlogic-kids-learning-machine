@@ -125,3 +125,42 @@ generate-color26-bit.py已读：须Stage=bitgen_approved、ApprovedBy、Purpose=
 主实际物理结果为Routed/Both +0.107/+0.010ns、双TNS0；19040总slice、107ERAM、25DSP。12139个带LATCHMODE的寄存器LSLICE均DFF，不是19040个寄存器。厂商DDR告警窄证明、6条裁剪音频reset匹配critical及全部原失败保留，最紧recovery+.110ns；无MTBF、完整外部IO或DDR硬件结论。本次仅读既有主报告，不冒称重做独立物理或软件。
 
 待决策及下一步：主审核本次收尾提交和共享登记后，按最终主审核与d0261-sram-guide.md交用户PROGRAM_SRAM，优先四原背景反例，再九积木/五卡/空场、位置光照、四键问答。4DN包络及干净边框/内区偏色限制保持；三VERIFIED0/TRACKS空、音频外部隔离保持，现场无声音不升级或降级本次颜色结论。不恢复无关开发。
+
+## T027 2026-10-19 颜色与整体形状解耦实现启动
+
+- 状态：进行中；负责人 Codex /root/shape27_impl；基础 9e11005，工作树/分支保持。
+- 已读根入口/索引、20261019-202039照片记录、主/树规则与记忆任务接口及旧日志。工作树总文档是旧骨架，以主D079和本轮派发优先，不改主专属文件。
+- 主已批准局部新增replay_glyph，与现有mask_q[1]同步且保持paper/clip门控；颜色和分母均仅统计glyph有效区域，>=MIN_AREA、分别>=2倍其他色、3*主色>=2*glyph。保留2级判色/metadata、原3%规则和全部背景/shape阈值。
+- 新pixel27_pipeline在同帧/source唯一shape合格后组合1..9，再进入原三帧；D0270 RB也改为组合候选，避免把颜色码当红圆。新独立overlay，旧D0261文件未改；新源码尚未完成仿真，不能视为通过。
+- 下一步合成20/25%灰/错色损伤旧新同真值对照，完整阴性/帧健康与旧业务显示回归。2/3是候选容忍边界，不是现场校准；bit需软件及物理主审后单独放行，不下载/Flash。
+
+## T027 中断接续（2026-10-19）
+
+由主指定 /root/shape27_impl_resume 唯一接管现有盘上断点。分支 task/sc520-color-integration、HEAD9e11005；保留全部未提交T027文件，不重建。已读共享入口、索引相关批次、主D079、learning/sc520-shape27范围、工作树规则/记忆/计划/任务/决策/接口和本日志。主文档新决策优先于本工作树旧骨架。
+
+接手进程核查未发现命令行含sc520-color/shape27/T027的在途vsim/python/TD。原scenes-legacy-20261019-203636-a35a42只跑到case23、无summary/run-manifest，属于中断而非完整回归；其原始失败/CSV/快照全部保留。原报告Owner错误沿用T026身份，只修新runner的身份，不回写历史。新reset测试改引用本任务独立overlay，避免测试与实际工程分离。
+
+补登记原中断后新增setup/simulate/run-shape27工具、三个TB、62合成fixture和原legacy run。尚未执行本轮RTL结果，软件待实测；D0261冻结源/388输入/唯一bit不改，当前不启动TD/bitgen。
+
+## T027 已实测软件与测试契约修正（2026-10-19 20:59）
+
+本轮真实命令均为 `python -B -X utf8 fpga/scripts/sc520-card-recognition/simulate-shape27.py --test <name>`，ModelSim SE-64 10.7。62场景旧新以同一个cases及62份RGB快照、相同对象真值运行：scenes-normal-20261019-204351-38a6c6原生0/done1/930检查/0错；scenes-legacy-20261019-204351-462c46原生1/done1/930检查/30错，作为完整失败保留，不包装成通过。原旧legacy中断run另保留。红方gray20/25和wrong20/25旧item0，新item2；CSV raw列为内部色锚1，不能冒充诊断RB。
+
+原21场景以 `--test scenes --scene-dir E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-color-integration/scenes` 运行，新scenes-normal-20261019-205055-7fd100为21场景/315检查/0错。reset-normal-20261019-204553-e12822为7场景/16485898检查/0错，确实引用本任务overlay，验证实际54拍、复位/metadata/握手；pipeline-normal-20261019-204553-9a0787为5场景/807474检查/0错，真实UART模型与四键问答保持。
+
+额外runner采用独立simulate-shape27-extra.py，不改已跑完run绑定的runner/do/TB。render-normal-20261019-205055-a6c750为17场景/11329115检查/0错，四幅完整720p、D0270独立literal期望、六寄存层N+5/四键优先级/十四类文字/诊断/Logo均比较。pairing-normal-20261019-205055-453de5为72场景/504检查/0错，在实际pipeline注入分类器边界证据，枚举shape0..7、所有非法锚点、tag/source/healthy/valid异常、撤销清计数和三帧恢复；它隔离其他引擎，不能冒充完整相机场景。
+
+lifecycle首轮因测试TIMEOUT500超观察bridge范围在t0失败；第二轮104错保留，其中统计pulse与EOF同拍违反观察器先缓存stats的契约，以及未flush就切source违反既有来源epoch保护。当前最终retry仅修测试TIMEOUT100、stats提前两拍、source切换先flush，不改生产或期望；运行目录lifecycle-normal-20261019-205826-250661，结果待其结束。另新增UI参考生成首次系统Python无numpy而失败，切工作区依赖Python（NumPy2.3.5）成功；未改历史参考。
+
+新物理报告hook已按物理审核建议，在clear_sdc前列新replay_glyph、glyph/color计数、raw_record和原确认器实际对象，端点限额随集合规模变化并报告双向原约束路径；空核心集合拒绝、局部0匹配保留待别名审核。当前未运行TD/bitgen。历史starter/setup明确一次性/退役并拒覆盖现有树，防止重跑旧脚手架覆盖已修实现。
+
+实际 `verify-color26-checkpoint.py` 原生0，冻结24自有源/388输入/74快照吻合，不回写旧报告；D0261 bit仍1789539字节，SHA256 FB9CBC03119EF3F58F366BD0AAA09C895E7C7C877D1535250F983AE5C5346D40。待最终诊断retry结束后生成software-v1/protected-d0261，逐run当前及快照/输出SHA复核，登记并提交软件检查点交主审。
+
+## T027 软件冻结交主审核（2026-10-19 21:03）
+
+- 状态：等待主对话审核，候选生产源未变；当前仅软件资格，不授物理或bit资格。
+- 最终lifecycle-normal-20261019-205826-250661真实原生0/done1，14场景/463检查/0错，51个raw候选及51组packet[780]/tag/RB[682:679]/最终item绑定全通过；完整九类25%灰损伤、同色换形、灰目标撤销、三帧重确认、合法source epoch、坏EOF及复位恢复均覆盖。
+- 快速测试门控：`simulate-shape27.py --test reset --negative`产生reset-negative-20261019-210149-29e13c，原生1/done1/注入1/错误1/检查2；`--watchdog-probe`产生reset-watchdog-20261019-210149-561bbb，原生2/done0/错误0/检查48。主确认此门控已足够，不重复pipeline负例。
+- `seal-shape27-software.py --lifecycle-run lifecycle-normal-20261019-205826-250661` 原生0：software-v1.json SHA256 B50384E3C2A76CB66227593D89071FFEBF63F442C1F1F64132AD30C6269DF537；7正常轮次198场景/28624699检查/0错，全部当前输入/快照/输出SHA吻合。旧完整legacy同期待930检查30错仍失败；原中断及两次错误测试激励也保留。
+- protected-d0261.json核465条当前输入/快照/DB/bit，原388输入和74快照全部保持；独立core/61位metadata审核另有32场景40473检查0错，不混入本代理统计。
+- 生产T027源/独立overlay/构建工具当前SHA见software-v1 SourceFreeze；主审与独立审核尚未在本节冒称通过。源码检查点提交后再报告实际SHA；无TD/bitgen/下载/Flash，无现场新结论。
