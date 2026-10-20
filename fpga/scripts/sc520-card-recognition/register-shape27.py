@@ -15,6 +15,8 @@ for folder in ['evidence/sc520-shape27/fixtures','evidence/sc520-shape27/render-
 files+=list((R/'evidence/sc520-shape27').glob('*'))
 files+=list((R/'evidence/sc520-shape27/runs').glob('*/run-manifest.json'))
 files+=list((R/'evidence/sc520-shape27/runs').glob('*/summary.json'))
+for name in ['inputs.json','started.json','stages.json','result.json','failure.json','reset-synthesis.json']:
+ files+=list((R/'evidence/sc520-shape27/builds').glob('*/'+name))
 files=list(dict.fromkeys(files))
 changes=[{'Path':str(f),'Action':'modified' if f.name=='sc520-color-integration.md' else 'observed','Purpose':'T027任务独立源/测试/工程/工具当前字节；不改冻结D0261','Status':'开发中/待主审核'} for f in files if f.is_file()]
 for folder in ['fpga/custom_project/sc520-shape27/td_project','evidence/sc520-shape27']:

@@ -1,0 +1,64 @@
+{
+  "CreatedAt": "2026-10-19T21:25:36.034356+08:00",
+  "Owner": "Codex /root/shape27_impl_resume",
+  "Candidate": "D0270",
+  "State": "software_accepted_build_in_progress",
+  "Draft": true,
+  "Purpose": "Future user-controlled SRAM validation on a white substrate",
+  "ProductionSourceCommit": "b7247b8d8963ff60bd8a2f710a174e5434531b33",
+  "CurrentGitHead": "b7247b8d8963ff60bd8a2f710a174e5434531b33",
+  "Approval": {
+    "Path": "E:\\juan\\FPGA\\learning\\sc520-shape27\\main-review\\software-approved.json",
+    "SHA256": "A771885BF61297914B2ECD274262D3DC71BD4CD225424165252FDCC5357D2096",
+    "Bytes": 1064
+  },
+  "SoftwareManifest": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\software-v1.json",
+    "SHA256": "B50384E3C2A76CB66227593D89071FFEBF63F442C1F1F64132AD30C6269DF537",
+    "Bytes": 14883
+  },
+  "MainSoftwareReview": {
+    "Path": "E:\\juan\\FPGA\\learning\\sc520-shape27\\main-review\\software-02\\review.json",
+    "SHA256": "5EB8AAE32C413FB098977EC0D1FB87DC4B9455188E70A8269B55CD3221FD51C6",
+    "Bytes": 1221373
+  },
+  "IndependentSoftwareReview": {
+    "Path": "E:\\juan\\FPGA\\learning\\sc520-shape27\\review\\review-final.json",
+    "SHA256": "7AA25AF707A442059FCD2E8A6AA387B6A8A5CFD826E9BD21BF5B08189F47F7F9",
+    "Bytes": 649182
+  },
+  "FrozenD0261Protection": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\protected-d0261.json",
+    "SHA256": "0802FE4A517338CF05BC09DD1BD1952B179CD381B2E1E2F9F976AA440410089D",
+    "Bytes": 143978
+  },
+  "Build": {
+    "RunId": "6a50b270",
+    "Inputs": {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270\\inputs.json",
+      "SHA256": "ECC2A1BE92EF800218165386709B30CD0BF81990E9B2608E5296D861322D95F8",
+      "Bytes": 154260
+    },
+    "Started": {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270\\started.json",
+      "SHA256": "7DD21A896FD9BDAA0EBBB8EAB8B8266E62C84A5DB5528DE375370314C10C0960",
+      "Bytes": 306
+    },
+    "InputCount": 396,
+    "ProjectReferenceCount": 121
+  },
+  "PhysicalReview": null,
+  "RouteDatabase": null,
+  "Bit": null,
+  "PhysicalQualified": false,
+  "BitGenerationAllowed": false,
+  "DownloadAllowed": false,
+  "FlashAllowed": false,
+  "HardwareValidated": false,
+  "GuideDraft": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\hardware\\sc520-shape27\\d0270-sram-guide.md",
+    "SHA256": "C7FA27944A219CB7D1B64FC3181506AD997894C06B80E7A2549F82C2CBCF46C6",
+    "Bytes": 3897
+  },
+  "NextStep": "Wait for native route completion, independent new physical review and main acceptance; bitgen needs a separate SHA-bound approval."
+}

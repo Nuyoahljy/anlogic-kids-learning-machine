@@ -1,0 +1,31 @@
+[
+  {
+    "Stage": "syn_1",
+    "PID": 33512,
+    "ExitCode": 0,
+    "StartedAtUtc": "2026-10-19T13:20:00.961851Z",
+    "FinishedAtUtc": "2026-10-19T13:24:28.3857058Z",
+    "MarkerFresh": true,
+    "Stdout": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270\\syn_1.stdout.log",
+    "Stderr": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270\\syn_1.stderr.log",
+    "InheritedFrom": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-shape27/builds/6a50b270",
+    "ExecutedInThisAttempt": false,
+    "StageProvenance": "Original 2026-10-19 native synthesis; no synthesis executed during this physical retry."
+  },
+  {
+    "Stage": "phy_1",
+    "PID": 29580,
+    "ExitCode": 0,
+    "StartedAtUtc": "2026-10-20T15:14:43.457812+08:00",
+    "FinishedAtUtc": "2026-10-20T07:34:36.0000000Z",
+    "MarkerFresh": true,
+    "Stdout": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-shape27/builds/6a50b270-phy-r2/stdout.log",
+    "Stderr": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-shape27/builds/6a50b270-phy-r2/stderr.log",
+    "ExecutedInThisAttempt": true,
+    "StageProvenance": "This attempt reran only opt_place and opt_route from a byte-identical copy of the original gate database.",
+    "FinishTimestampBasis": "Resume wrapper completion after native process exit and immutable-input verification",
+    "ResultSHA256": "92DBF27F70722DB842C2F485872246219762983E0950D5AEBB9DFEF506768C65",
+    "HardwareValidated": false,
+    "BitGenerationAllowed": false
+  }
+]

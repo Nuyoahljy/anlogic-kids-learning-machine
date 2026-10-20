@@ -1,0 +1,43 @@
+{
+  "Stage": "bitgen_approved",
+  "ApprovedBy": "Codex /root T027 main review 2026-10-20",
+  "At": "2026-10-20T18:15:29.042357+08:00",
+  "Purpose": "SRAM validation only",
+  "SourceCommit": "b7247b8d8963ff60bd8a2f710a174e5434531b33",
+  "RouteDatabase": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270-phy-r2\\td_project\\camera_to_dsi_display_Runs\\phy_1\\camera_to_dsi_display_pr.db",
+    "SHA256": "7755E6390D684DA939D01EB3851716425F92385C556E24570B0CE779C3F4B05B",
+    "Bytes": 24628274
+  },
+  "BuildInputs": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270-phy-r2\\inputs.json",
+    "SHA256": "ECC2A1BE92EF800218165386709B30CD0BF81990E9B2608E5296D861322D95F8",
+    "Bytes": 154260
+  },
+  "SoftwareReview": {
+    "Path": "E:\\juan\\FPGA\\learning\\sc520-shape27\\main-review\\software-02\\review.json",
+    "SHA256": "5EB8AAE32C413FB098977EC0D1FB87DC4B9455188E70A8269B55CD3221FD51C6",
+    "Bytes": 1221373
+  },
+  "PhysicalReview": {
+    "Path": "E:\\juan\\FPGA\\learning\\sc520-shape27\\main-review\\physical-r2-final\\review.json",
+    "SHA256": "3163AEF9A954F87171AF96DAC7581BADF67CCDD0CAEFB1BCB61046968521AEAD",
+    "Bytes": 566200
+  },
+  "IndependentPhysicalReview": {
+    "Path": "E:\\juan\\FPGA\\learning\\sc520-shape27\\physical-review\\physical-main-r2-final\\physical-report.json",
+    "SHA256": "FFCEA3322535DD14E80C51F0FE2409874C419F91FCA83C9EC9D9091336772B22",
+    "Bytes": 50217659
+  },
+  "Program": {
+    "Path": "E:\\juan\\FPGA\\learning\\sc520-shape27\\approve-bitgen-r2.py",
+    "SHA256": "242699731D33C972815ADE1ABA88E90CC0813DC0348CF0918A659490394DE809",
+    "Bytes": 5567
+  },
+  "PhysicalAcceptedByMain": true,
+  "BitGenerationAllowed": true,
+  "DownloadAllowed": false,
+  "FlashAllowed": false,
+  "HardwareValidated": false,
+  "Limits": "Fixed white surface and existing uneven white borders; actual fourteen classes and lighting/placement remain for user SRAM validation. No stable merge or hardware qualification."
+}

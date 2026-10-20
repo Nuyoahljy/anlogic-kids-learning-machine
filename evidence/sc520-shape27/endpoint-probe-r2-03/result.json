@@ -1,0 +1,730 @@
+{
+  "Complete": true,
+  "PhysicalQualified": false,
+  "BitGenerationAllowed": false,
+  "HardwareValidated": false,
+  "StartedAt": "2026-10-20T17:34:29.373851+08:00",
+  "TemporaryMapping": {
+    "Drive": "U:",
+    "Target": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03",
+    "Released": true
+  },
+  "PID": 23200,
+  "NativeExitCode": 0,
+  "NativeFinishedAt": "2026-10-20T17:34:45.235468+08:00",
+  "Errors": [],
+  "StderrEmpty": true,
+  "OriginalTimingMarker": true,
+  "ProbeCompleteMarker": true,
+  "ChangedProtectedFiles": [],
+  "FrozenInputsUnchanged": true,
+  "BitFilesFound": [],
+  "Outputs": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\preflight-clocks.rpt",
+      "SHA256": "F4EC8B391F2781EF277B8D03F5CACBA47F74E5C06872014BB7F394592E2D07D8",
+      "Bytes": 293
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\preflight-exceptions.rpt",
+      "SHA256": "7617D428E5665343B1F179FFAADD4DB4B3BC61EA62A25B2E0AC1740E7C04BF1E",
+      "Bytes": 283030
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\preflight-ignored.rpt",
+      "SHA256": "F5BDAB83C577AC0D587BD905C28BFD9D511E4589208CD2357E7BF7FE1EA2B5E8",
+      "Bytes": 351272
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\preflight-timing.rpt",
+      "SHA256": "322D16E7B9A83DD62A5E89938D9C8F43F22AF44B3C2011F201A905D9BEA5DE49",
+      "Bytes": 5104046
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\probe.tcl",
+      "SHA256": "88CCD66C1FB3C3AD6145D03FB3338D57F228A7C25F8DC60626A9E940F685144A",
+      "Bytes": 12059
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\process.json",
+      "SHA256": "7B651386C3734F3D42AFCBC7D0EB416A90C055C6E655F5964B997BA3335133A9",
+      "Bytes": 197
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0000-outbound.rpt",
+      "SHA256": "CE4EAD717D98FF53FE0D89A7244E158D9704B23B042DB72B66B08C2785C74FA9",
+      "Bytes": 82101
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0001-outbound.rpt",
+      "SHA256": "6804221EE36D1A10394CD0A0A6A90E1F10C1B5CDCB3C6D122714276581FABD2E",
+      "Bytes": 83421
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0002-outbound.rpt",
+      "SHA256": "316D51F22C4732621CE9669ED896D599AF96FC7E8231E7DAF62C59396CB431E9",
+      "Bytes": 36239
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0003-outbound.rpt",
+      "SHA256": "D4BE7E02E94EAC82C2C08A1D3D1D24A48132DA3A18905D39AEF4BCF12587BA18",
+      "Bytes": 38015
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0004-outbound.rpt",
+      "SHA256": "A2DE2C67C92DF6451EDEB47E91BC5D6B506649FF3607B4836DC050582F705B58",
+      "Bytes": 82495
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0005-outbound.rpt",
+      "SHA256": "223B5594EE20582838F120B1C5C119B13A42BE180E28D7FD8157351ADF4D45CE",
+      "Bytes": 79761
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0006-outbound.rpt",
+      "SHA256": "0A15DB7E1EF4624EAD7C026C9C48C28D1D272D27CE753738FC104960AD455324",
+      "Bytes": 77945
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0007-outbound.rpt",
+      "SHA256": "D71B1498EDA382FA07835341A7BF554A18C89B3A5A3EA34DF9ECBC295A2A7809",
+      "Bytes": 83048
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0008-outbound.rpt",
+      "SHA256": "02D021AD354B074E4836360B54CA76D132193783C1B8A7DEBFE1C0B117E35126",
+      "Bytes": 76155
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0009-outbound.rpt",
+      "SHA256": "4C8446D92362D12BC72632DAF559767E512EC8A2681337305C8E0E173D9C8B3D",
+      "Bytes": 73384
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0010-outbound.rpt",
+      "SHA256": "6E07CCE99574CC85BA1F7C4E6959175D6DC2FCE489B90A1551F25B41E75EA725",
+      "Bytes": 80495
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0011-outbound.rpt",
+      "SHA256": "D8A07A31124E600F2BE6D2FBF5ED27B3465BC9941BD1D04E1012B4868454F86E",
+      "Bytes": 79802
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0012-outbound.rpt",
+      "SHA256": "DC5EABD21F3DC934AA0583630108673E35A70B82F1CC79B5B978DD6B7876FA2B",
+      "Bytes": 78744
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0013-outbound.rpt",
+      "SHA256": "BE7C24E1965B8114CA85613DD41956C04A20D92933711B29CF64D5263AC10A87",
+      "Bytes": 82313
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0014-outbound.rpt",
+      "SHA256": "09EF17A372E59E49C4C04772E92E6C5A4A93371DE302FCEA00ECCAC0B2B262D1",
+      "Bytes": 81611
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0015-outbound.rpt",
+      "SHA256": "BA9FCC6B1981456CE41D1C36529D903F362CB59F363ED87861D398F59FFF8D00",
+      "Bytes": 77328
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0016-outbound.rpt",
+      "SHA256": "D487A7A43A872EF174E8B76198F3AAEE5BA53326B778C193EBF3BDC892BC1008",
+      "Bytes": 81797
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0017-outbound.rpt",
+      "SHA256": "37B3213976D07886F09859C40CB47328FE9644CB303D88E3536C34F3805CB637",
+      "Bytes": 83359
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0018-outbound.rpt",
+      "SHA256": "025DD8BB133830BD9556A48AD06FEAD21EB5088E3422C13E8A8AD42FB2A38F2A",
+      "Bytes": 79202
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0019-outbound.rpt",
+      "SHA256": "964B5E9A8550C793E5A6114F36B46A8230D1165763DCF2850A5D731CD457948F",
+      "Bytes": 79213
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0020-outbound.rpt",
+      "SHA256": "2C8E517A316B3664ABCBEA640E6E8C2E0F160F597F2A2A75C8AA8EC0277CC9EF",
+      "Bytes": 75947
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0021-outbound.rpt",
+      "SHA256": "779066F56B2381949A046095C237BC47A471F5F845ED9559BE44BEAAF5C033B0",
+      "Bytes": 70845
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0022-outbound.rpt",
+      "SHA256": "5E8A041E7435AA799751A3C35154D4AAB73C15BCBFD18DD9D2D5FC82F6769972",
+      "Bytes": 86671
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0023-outbound.rpt",
+      "SHA256": "9E0F19C38B82AF78E18AB1E7BFB911E257E02E5B4A3BEC44FF90A084A47D125B",
+      "Bytes": 90984
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0024-outbound.rpt",
+      "SHA256": "B7403B1AA68D72D9E3F9D7C52BEC4AC489F423102DFD2A2254FBBFEFC3C3EEFA",
+      "Bytes": 77882
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0025-outbound.rpt",
+      "SHA256": "FBD5D6869233D213EBE7436F41F7470AEEC3B5DF65E3453F0F7E7C473C6544EE",
+      "Bytes": 81722
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0026-outbound.rpt",
+      "SHA256": "BA64B33E29D2ACA70A5BA65B21B1EA2DB8D15BD2CEDBFA6DFEF07ED4C0AD8BCC",
+      "Bytes": 82633
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0027-outbound.rpt",
+      "SHA256": "A008DC6F86E21568A1D4DAB295C6C7ADBDC936526277FD70635E0786570D030A",
+      "Bytes": 72711
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0028-outbound.rpt",
+      "SHA256": "C39C0B732AD4361F0C0EAA2A163AC22249A9C0C39FA152D4D479809992DA5FD2",
+      "Bytes": 100695
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0029-outbound.rpt",
+      "SHA256": "DE97CBD9F1B0722DD9526BAE56E8936669B0FB7BF593854EB4FA494483C8530C",
+      "Bytes": 82240
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0030-outbound.rpt",
+      "SHA256": "BDEBC25E1F46EC16CBEE22D4DCAE12A2F56C68A20E28370E8F0B00D5F3FBF8F2",
+      "Bytes": 49360
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0031-outbound.rpt",
+      "SHA256": "7494DA5990815E3122B33C10BC1B58A2202DA628A43EF9011FE2F544E3D5596E",
+      "Bytes": 86313
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0032-outbound.rpt",
+      "SHA256": "09F64AB55E9E87DB8AED431080583E948CB4110DF6C2DBD4DC8A8F9C86129978",
+      "Bytes": 87139
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0033-outbound.rpt",
+      "SHA256": "F91A32413658F08BAF224BBBCB88F5CF7AADD6F76957701402BBF68E2C9DAA58",
+      "Bytes": 92600
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0034-outbound.rpt",
+      "SHA256": "6570BEADDBA3FEB56DD31391ECC19B23FCA20DA09E57D64F8272BBCE5FFAE84D",
+      "Bytes": 83733
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0035-outbound.rpt",
+      "SHA256": "B92CF519ECDD9C9115540274EF1B49CBC59E61386B4251D298C3F53EE5A74429",
+      "Bytes": 85925
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0036-outbound.rpt",
+      "SHA256": "602E6F019F84C2B73BB41CE21769E15C14B4498E8DD11CE24774D7CF32AE7F90",
+      "Bytes": 85893
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0037-outbound.rpt",
+      "SHA256": "8790C34E4FF079946F460BB45BBDE82E32D59C7B558A40C688E14051C8674FA4",
+      "Bytes": 86757
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0038-outbound.rpt",
+      "SHA256": "06F912DAE0CEA0B99EE32234F57EE86C4D46A918C4D4FF264809E8E48ADA5806",
+      "Bytes": 80915
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0039-outbound.rpt",
+      "SHA256": "1E16E621FF05DE3F8FB6CA510EC18C158FBA6AC981AAA666FEF3B7604CAAE859",
+      "Bytes": 86509
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0040-outbound.rpt",
+      "SHA256": "28A87B8E59AF7315B198ACB98EF27CC3F28E42AA732B24A6D52E1DDDA8CC54A5",
+      "Bytes": 93339
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0041-outbound.rpt",
+      "SHA256": "AF5FD750EA875E8AAE78B1B598B311735E341BF7C86E68FC90531C357B74DB58",
+      "Bytes": 73359
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0042-outbound.rpt",
+      "SHA256": "FEE250209B721024FF4EC34CC4CE28F23C4FF2C6DCD45BCFF50D418DB26B9F7D",
+      "Bytes": 79682
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0043-outbound.rpt",
+      "SHA256": "FFD30DFF2B0A2D2685285F72BBDBC537C371EC428FAF6946BD53614A5627D332",
+      "Bytes": 86322
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0044-outbound.rpt",
+      "SHA256": "4AD0333A11258194E204214652D6310DA160012F812217EAA70C596A1D9627A1",
+      "Bytes": 85259
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0045-outbound.rpt",
+      "SHA256": "DFD9780B640B2F29E97772BDB846C7A928019FDD617E9755E55F9245C25AF2EA",
+      "Bytes": 84316
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0046-outbound.rpt",
+      "SHA256": "2DC6FF5D39C14EFDCEF7A90F29A9C42FCB814E22CF4A4B8B535BA36CE57D5B62",
+      "Bytes": 77108
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0047-outbound.rpt",
+      "SHA256": "BF0985771D3989E8C001C089563A94F1B480A1C158206AA69083294C0EC8A5C0",
+      "Bytes": 80055
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0048-outbound.rpt",
+      "SHA256": "8414E0AE75254C3DA4371724B11C47BEAC1A6A08CDC72B34CF2F5F140D898CFC",
+      "Bytes": 81103
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0049-outbound.rpt",
+      "SHA256": "EB0482D494686712AC07052B871AE6A6A470F286F109D84F9480B2006012F352",
+      "Bytes": 86575
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0050-outbound.rpt",
+      "SHA256": "30850DA6E313D2F44EB301111073B4807DA94644C49F71486E7ADF91E9065F92",
+      "Bytes": 89443
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0051-outbound.rpt",
+      "SHA256": "2197D538A676837269A2276D0A9DF6D75E89AC68289D817DBA74FA913367BC85",
+      "Bytes": 75541
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0052-outbound.rpt",
+      "SHA256": "1D3641803676CF3DB5B1D532AD3AD1EABA4DAB1B782956850E2078E375A323A2",
+      "Bytes": 83210
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0053-outbound.rpt",
+      "SHA256": "21D790AD1CBA900829EF2598570C63711C3026AC089F91BC5992480A96FB4A5F",
+      "Bytes": 85766
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0054-outbound.rpt",
+      "SHA256": "E3AE8200BC63F414B095443CAAB0D7549A00E7D8E061A459167DCD68C0F12F59",
+      "Bytes": 79386
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0055-outbound.rpt",
+      "SHA256": "28393E1D50A27D9A11438943CAF8768728F5D23754F653AD817ACE54EB7B876F",
+      "Bytes": 75623
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0056-outbound.rpt",
+      "SHA256": "E2F8A56E62E31EB52B93813201A75B26446A3B8E5F45BED144F20E22D22C3511",
+      "Bytes": 78968
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0057-outbound.rpt",
+      "SHA256": "41A6D5E409C96650AE2FF654EB87F5F84CAEE3F90EA601A7161D7BBB1FA78AA8",
+      "Bytes": 77580
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0058-outbound.rpt",
+      "SHA256": "23CFE96FF1D830089506D23C7CD98D9824A3767C0A5626A5A2D11847268CA4C0",
+      "Bytes": 80714
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0059-outbound.rpt",
+      "SHA256": "D714E1DA00E1968E60C0BB05BBA5F94BCA16246D6D83A42084E2BCEDF71B665F",
+      "Bytes": 84015
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0060-outbound.rpt",
+      "SHA256": "794B7D735AD324BDD9F2F5F170F2F2DE14E288AB0BF2D0B26C58506136AF7010",
+      "Bytes": 52718
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0061-outbound.rpt",
+      "SHA256": "C57F87BBA2F624D810FF5ECE47D5A4726DE1B8125BE3C5A57F3F5F0811DC0678",
+      "Bytes": 50664
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0062-outbound.rpt",
+      "SHA256": "708AC459A9A9FB18FD07FC0A8E557F34EDDD248A38B1008F97B5CC29661A5044",
+      "Bytes": 47234
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0063-outbound.rpt",
+      "SHA256": "7A55AD08DF0CD1F2A2A127121A06F70C02B51D6CEA52684358E4512E0A7AEAE9",
+      "Bytes": 45579
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0064-outbound.rpt",
+      "SHA256": "35330517CEE9002BC4C5BCADB1E08E62838A581CCDAF5647FB5DFB6C166032F6",
+      "Bytes": 43616
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0065-outbound.rpt",
+      "SHA256": "FEBB6F252C7DFD6BDCD3321AB58B3A77AD2497EE336163B1DF89166BEF55B53E",
+      "Bytes": 40598
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0066-outbound.rpt",
+      "SHA256": "117E0BC96407E99D7278CE273A20B80556BF610E2B26810E263F0005585BB6B7",
+      "Bytes": 60305
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0067-outbound.rpt",
+      "SHA256": "F18BB446EA7A8E369371B0CF3EED834F52EF976E94130D5EA8040F9B3F364159",
+      "Bytes": 53362
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0068-outbound.rpt",
+      "SHA256": "18D023E5E97EFC3597B8AE8CF4A8FEDA47618926CA66BD14616AEA4A53C92690",
+      "Bytes": 57039
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0069-outbound.rpt",
+      "SHA256": "79C44E935D943DC9C4848645423CDE0A9A037A24EB076D348891976E21F6B420",
+      "Bytes": 50627
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0070-outbound.rpt",
+      "SHA256": "3B8B2FF20499F3F2BCDA37AF753EAEC4F3DC2E6BD36DAC076385D4954E785641",
+      "Bytes": 50061
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0071-outbound.rpt",
+      "SHA256": "B14995BE1D9EFFDA20AF2C0ABCDC6BC67D012AE730389FC01BD2C34D64190148",
+      "Bytes": 68782
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0072-outbound.rpt",
+      "SHA256": "35F38D97875B7AF5BF75C3D98EE0724FC91FB3E35C19286739F8B750984C86C5",
+      "Bytes": 69305
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0073-outbound.rpt",
+      "SHA256": "B489C6095A7460FD208916FCC58395B5365D330DA12EBEC9B9577EBA5B416D5C",
+      "Bytes": 69297
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0074-outbound.rpt",
+      "SHA256": "8816507E60137EB178B8BE6F4FCEC303E7A2338F43110C283C48B0FB2C0E9212",
+      "Bytes": 16903
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0075-outbound.rpt",
+      "SHA256": "1CBBEC1AAF5FF076D4545CCEB35D82E1F4A8811AAF6C8189C40413FDCB2D535D",
+      "Bytes": 16893
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0076-outbound.rpt",
+      "SHA256": "1747CF8A65EE24B60876F62047DCD13EF889D3A83ABF535D19E2FEB5BFB96F54",
+      "Bytes": 16893
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0077-outbound.rpt",
+      "SHA256": "66456340236B5972DA7494912C533785CCE9985DD19BF21FF20A19ED770DAC3A",
+      "Bytes": 16903
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0078-outbound.rpt",
+      "SHA256": "71C621F7A3B85D084389DD26CB4003924D89A657AB9372FFDC11F491412460C9",
+      "Bytes": 16897
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0079-outbound.rpt",
+      "SHA256": "D4F46D5A4407FF0CC466209C518FD0FBF1783A4A956403289F66C35E7BE23910",
+      "Bytes": 16899
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0080-outbound.rpt",
+      "SHA256": "2CDC6BCB0EE2B2505CC2BB9812E90F1BEB3AAD5D0DF05898599B4F0D7CC93CE4",
+      "Bytes": 16902
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0081-outbound.rpt",
+      "SHA256": "44F90D38F8064E7CCD5FCB7909AA1C3390CE7F84476BBB59335FEA4CACFE0E8A",
+      "Bytes": 16903
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0082-outbound.rpt",
+      "SHA256": "74179F6079E174CAE6097B3CE8962555E2AF553C69A876932CAB5439AC357B01",
+      "Bytes": 16887
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0083-outbound.rpt",
+      "SHA256": "AF1DE1A65AD395F14588F6B60D6A5E8CAB9BA04294790B70D7D9561E6B0B21E1",
+      "Bytes": 16883
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0084-outbound.rpt",
+      "SHA256": "AFA60857B1541F3FD371E217141D5BC35B51DA81A0C3D787311BF3914AC7D958",
+      "Bytes": 16931
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0085-outbound.rpt",
+      "SHA256": "C3D080D5B67B0776C47FF54771B876544B333B666BD65CCE3B03B07A3B3B27ED",
+      "Bytes": 16883
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0086-outbound.rpt",
+      "SHA256": "E8A0086AB4FD8A915F09CDE09ACF03716AC0A084AE7A9D76F92BEC0A8AA7C012",
+      "Bytes": 16887
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0087-outbound.rpt",
+      "SHA256": "BE5C2257E0BC2E083221365E8E4868CDDFEB6513CEBC6A8CF1989B61450F2196",
+      "Bytes": 16887
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0088-outbound.rpt",
+      "SHA256": "13E272DEACF3AD073E6EEF576332FB3B8137129EBF5C78884D6FCA666F241846",
+      "Bytes": 16883
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0089-outbound.rpt",
+      "SHA256": "EA1A6969593C2136481124D16F2BC8FD60D367940DE65E671CE4E6828AFBE470",
+      "Bytes": 16898
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0090-outbound.rpt",
+      "SHA256": "E05BCA2CD8B910393C8DFFC16017ADDFEC69CAA4143B76791465841517B979A7",
+      "Bytes": 16897
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0091-outbound.rpt",
+      "SHA256": "EA73245FF3D1CDF7F79C3E2F98E6812CDBD6C4F214FE5ADA04D648FF4BE16153",
+      "Bytes": 16875
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0092-outbound.rpt",
+      "SHA256": "145ECDF00BF1B6FD507E7B080E0704CAEBA466767C7E6AEC6B076C2B7017BC39",
+      "Bytes": 16909
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0093-outbound.rpt",
+      "SHA256": "9DA9804EFD14723837605CA4A4988CADE14F09F978C1BBB2451722FB682ADDA1",
+      "Bytes": 16883
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0094-outbound.rpt",
+      "SHA256": "7E0DA4AD36425DFDE99EF839DEFACA0425CEF137BD3EFC5AEF58C2F80E95578C",
+      "Bytes": 16936
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0095-outbound.rpt",
+      "SHA256": "753E007B9666FB3C7A68F593B0D6CDE7A09113FBF667E9ABB70E5FD86AAE554D",
+      "Bytes": 78929
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0096-outbound.rpt",
+      "SHA256": "F98BC49C9C0BE1F90292A40BB2C99F74CFFABC0E19ECD5AA437646E5B1D450DA",
+      "Bytes": 79261
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0097-outbound.rpt",
+      "SHA256": "5E8A8289F0F494A31610B916AB93CD36D68F4091B7A2E0A65B84475079ED5B2D",
+      "Bytes": 79261
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0098-outbound.rpt",
+      "SHA256": "AA6F1F834A861890D01C167D073BEB142053AE6A53791FB215708AE42DAF3BCF",
+      "Bytes": 79253
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0099-outbound.rpt",
+      "SHA256": "F7C5AF3088D57ABE883BF355C5D38EDE847CC83F355329A52389E71CBF27E8CA",
+      "Bytes": 74470
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0100-outbound.rpt",
+      "SHA256": "52C5DB6E1D4C12CECF81AF961D864DCDBA38485378FD37CC9F192973DE66557E",
+      "Bytes": 68586
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0101-outbound.rpt",
+      "SHA256": "EA21ABB19F63483538CA5E80390C42EC77AD7E2BE0194E5A2B502DB7B6DABB02",
+      "Bytes": 67855
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0102-outbound.rpt",
+      "SHA256": "ECBD84B5BC6ED6217B4B33D8982246EAF204CD2F7969DC9BC41903CC29544FEA",
+      "Bytes": 67871
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0103-outbound.rpt",
+      "SHA256": "CCA48B575B829E1DD3849EC8888E7430F6CB1C55C6E269A5ABFD8D13F6AB22C5",
+      "Bytes": 87687
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0104-outbound.rpt",
+      "SHA256": "D7BB8EDD94A27DC4E3959A3BB6039FB83132AB63E0C768D7240E07D29BC6F54B",
+      "Bytes": 81543
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0105-outbound.rpt",
+      "SHA256": "9D565AD12CFD4900CD4BF056BC7C7D7C06481245320AB76CE556FC88FFA3B9B2",
+      "Bytes": 89384
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0106-outbound.rpt",
+      "SHA256": "F78383A831DC1FBC58693C73C14BC5A8C2F5CBC35E545701422F4BE5C0B5140B",
+      "Bytes": 85560
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0107-outbound.rpt",
+      "SHA256": "1F67FD02E219E931815133B32E02D8D50925F20E958908E99A0D7FCBF3C6147B",
+      "Bytes": 83100
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0108-outbound.rpt",
+      "SHA256": "D04297C490168122E8879EE735356C4A4B8304EC1E65CFC54283D6EECFDEFD05",
+      "Bytes": 69844
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0109-outbound.rpt",
+      "SHA256": "4355F779A6964C94CEFF72A24C0411F55E8E2D80726861C104D1644B43B3D071",
+      "Bytes": 76029
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0110-outbound.rpt",
+      "SHA256": "5DAD318AD681E1404B689AB9EDEBE012BF61E3B8B45BFB43AD3494585C0A2746",
+      "Bytes": 73754
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0111-outbound.rpt",
+      "SHA256": "46083A4C2169E340FB7C60364AA2B7599250379C75C46A970A38463951BA7AB0",
+      "Bytes": 76007
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0112-outbound.rpt",
+      "SHA256": "0A033C1835E3710447ADDBF670A9757A10B44F0E3592A4279CE891DBECC896F4",
+      "Bytes": 76003
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0113-outbound.rpt",
+      "SHA256": "F6700DA329E0ED8004FC8FF2B0AE4D0FF7C0EE4BCD25EF0885E5D52550202BB3",
+      "Bytes": 75963
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0114-outbound.rpt",
+      "SHA256": "22FD388128158677BB69535BA24A6E43CD9505FEC6CC63C41F00E626B65DFA33",
+      "Bytes": 76352
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0115-outbound.rpt",
+      "SHA256": "02195E211879D143FCC84CAFE49B4C2CE9F63D6205555C559ADA6DD6BE0A34A6",
+      "Bytes": 76357
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0116-outbound.rpt",
+      "SHA256": "0071C28E21761C24855A7A62C38FBCD5221DF47F9E6BF206A6093ACD9236625D",
+      "Bytes": 76352
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0117-outbound.rpt",
+      "SHA256": "D53A9569DE604DBE89536458F4E4571CD9B1D26E78FBF1B5D66765F662CE0FF6",
+      "Bytes": 76347
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0118-outbound.rpt",
+      "SHA256": "00839546929567180C61DD71260EE278C9A83D0A02DD6E1B52FE17B2BAD7A8E3",
+      "Bytes": 75967
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0119-outbound.rpt",
+      "SHA256": "0FE7AAEB07579C626E6D42D02F8C4F0D7E0E2743C15D579257409E34409574C7",
+      "Bytes": 76816
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0120-outbound.rpt",
+      "SHA256": "B31D33AEA92FBC12A8757565B31BB0C8B06BF22EAF49483211833E2795F694FB",
+      "Bytes": 76033
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0121-outbound.rpt",
+      "SHA256": "81BC2431DD982EB4693BEBF9C0501320AAF40993D21CE0662A7F4C699D7C05BE",
+      "Bytes": 75967
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0122-outbound.rpt",
+      "SHA256": "67F51AF607CBEBFED157230A627E6ED12DD4E282B852950CA3D090F0D8386267",
+      "Bytes": 75985
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0123-outbound.rpt",
+      "SHA256": "9BF4E703AB30369CF2C4FA55EE952CEC951307D778D618CE14A89E8619BE5D56",
+      "Bytes": 74909
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0124-outbound.rpt",
+      "SHA256": "C81F24976F2C9424C758C7271371B47B43A4D606F71E690D3317423FF7CE69D4",
+      "Bytes": 70353
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0125-outbound.rpt",
+      "SHA256": "0198BA966B518FA2865626B206C8189B1CCA43FC6CC7B69B3E095EAF0CFF9089",
+      "Bytes": 68201
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0126-outbound.rpt",
+      "SHA256": "A7458F101E21157F0F20BB8E77789DB8BC0CD0B6C20B43963D2C58D9740E2129",
+      "Bytes": 65320
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\q0127-outbound.rpt",
+      "SHA256": "293F8D131AFF064EE9DC088789CD4A4E331B3E2F407B0C99C5E7BBE996F7289E",
+      "Bytes": 63213
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\query-results.txt",
+      "SHA256": "D2ADF1CA23E757EDA3B71E52C68452C302C30FF39EC3B3C39A9351CBB13C2C56",
+      "Bytes": 19046
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\requests.json",
+      "SHA256": "259EB51C556AC2D7CE8C8B4663881D6C9E673EEC1888BAF1D8E57F5F561F0C42",
+      "Bytes": 417743
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\started.json",
+      "SHA256": "FC1031227F6439A32DD5C80E3D2523784673813C4AE8990E726E6855013B9AC2",
+      "Bytes": 50322
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\stderr.log",
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "Bytes": 0
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\stdout.log",
+      "SHA256": "4538804FB0EDD0F035E54D37C3EF59CFC86F47B55B37492D35D81045019E87BC",
+      "Bytes": 61763
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\td_20261020_173429.log",
+      "SHA256": "E74BFE0F28D8A74375BA428927C8CF0B9A697E4A76C137C34BDDAEEB82A49E34",
+      "Bytes": 51223
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\td_20261020_173429.logw",
+      "SHA256": "17EF1ED5CFD5589BA8A0549A34BE8B2BEEBF7A6F4AB2373E00D551C260F2E60A",
+      "Bytes": 910
+    }
+  ],
+  "FinishedAt": "2026-10-20T17:34:47.227424+08:00"
+}

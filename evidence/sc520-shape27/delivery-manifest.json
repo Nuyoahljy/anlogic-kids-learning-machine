@@ -1,0 +1,195 @@
+{
+  "CreatedAt": "2026-10-20T18:24:02.757496+08:00",
+  "Owner": "Codex /root/shape27_delivery",
+  "Candidate": "D0270",
+  "State": "bit_generated_waiting_main_final_acceptance",
+  "ProductionSourceCommit": "b7247b8d8963ff60bd8a2f710a174e5434531b33",
+  "GitHeadAtSeal": "b7247b8d8963ff60bd8a2f710a174e5434531b33",
+  "Program": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\scripts\\sc520-card-recognition\\seal-shape27-delivery.py",
+    "SHA256": "E91BFACE9B82B972BD85D4B069918E39BCF918D43283694C13B5C2D2D3DC989F",
+    "Bytes": 12217
+  },
+  "BitgenApproval": {
+    "Path": "E:\\juan\\FPGA\\learning\\sc520-shape27\\main-review\\bitgen-phy-r2-approved.json",
+    "SHA256": "0CA624635EC084899E94441FDE0F31B2177A4084F2A007B5D80832A36BDED229",
+    "Bytes": 2169
+  },
+  "SoftwareManifest": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\software-v1.json",
+    "SHA256": "B50384E3C2A76CB66227593D89071FFEBF63F442C1F1F64132AD30C6269DF537",
+    "Bytes": 14883
+  },
+  "MainSoftwareReview": {
+    "Path": "E:\\juan\\FPGA\\learning\\sc520-shape27\\main-review\\software-02\\review.json",
+    "SHA256": "5EB8AAE32C413FB098977EC0D1FB87DC4B9455188E70A8269B55CD3221FD51C6",
+    "Bytes": 1221373
+  },
+  "IndependentSoftwareReview": {
+    "Path": "E:\\juan\\FPGA\\learning\\sc520-shape27\\review\\review-final.json",
+    "SHA256": "7AA25AF707A442059FCD2E8A6AA387B6A8A5CFD826E9BD21BF5B08189F47F7F9",
+    "Bytes": 649182
+  },
+  "MainPhysicalReview": {
+    "Path": "E:\\juan\\FPGA\\learning\\sc520-shape27\\main-review\\physical-r2-final\\review.json",
+    "SHA256": "3163AEF9A954F87171AF96DAC7581BADF67CCDD0CAEFB1BCB61046968521AEAD",
+    "Bytes": 566200
+  },
+  "IndependentPhysicalReview": {
+    "Path": "E:\\juan\\FPGA\\learning\\sc520-shape27\\physical-review\\physical-main-r2-final\\physical-report.json",
+    "SHA256": "FFCEA3322535DD14E80C51F0FE2409874C419F91FCA83C9EC9D9091336772B22",
+    "Bytes": 50217659
+  },
+  "FrozenD0261Protection": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\protected-d0261.json",
+    "SHA256": "0802FE4A517338CF05BC09DD1BD1952B179CD381B2E1E2F9F976AA440410089D",
+    "Bytes": 143978
+  },
+  "FrozenSourceCount": 16,
+  "OldProtectedFileCount": 465,
+  "BuildInputs": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270-phy-r2\\inputs.json",
+    "SHA256": "ECC2A1BE92EF800218165386709B30CD0BF81990E9B2608E5296D861322D95F8",
+    "Bytes": 154260
+  },
+  "RouteDatabase": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270-phy-r2\\td_project\\camera_to_dsi_display_Runs\\phy_1\\camera_to_dsi_display_pr.db",
+    "SHA256": "7755E6390D684DA939D01EB3851716425F92385C556E24570B0CE779C3F4B05B",
+    "Bytes": 24628274
+  },
+  "VersionEvidence": {
+    "DisplayTag": "D0270",
+    "TopLevel": {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\custom_project\\sc520-shape27\\overlay\\design_top_wrapper.v",
+      "SHA256": "F0211113F9660C057034A30E89D931D0B4AA792D91DCA5F230D7108404AEDBB2",
+      "Bytes": 43394
+    },
+    "CompositorVersion": "16'h0270",
+    "DiagnosticVersion": "16'h0270",
+    "Basis": "Frozen source plus build inputs and approved routed DB; not the bit filename."
+  },
+  "BuildProvenance": {
+    "OriginalSynthesisRun": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270",
+    "RetryRun": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270-phy-r2",
+    "OriginalStages": {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270\\stages.json",
+      "SHA256": "462F7B678FB5F0B998DB11760F865CEC3FBBA7A1554D13F884A6D8D1A75CBF2B",
+      "Bytes": 506
+    },
+    "RetryPreparation": {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270-phy-r2\\preparation.json",
+      "SHA256": "715177E098BDB8BEC0A500A2506E215857A7C64DE350DE50F6209F9EF70B1C9E",
+      "Bytes": 97251
+    },
+    "RetryStages": {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270-phy-r2\\stages.json",
+      "SHA256": "9CAC62DDC67A3CA7A5CABCF340F67C38BAA647DF91DAC5392209D372D4431681",
+      "Bytes": 1859
+    },
+    "RetryResult": {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270-phy-r2\\result.json",
+      "SHA256": "92DBF27F70722DB842C2F485872246219762983E0950D5AEBB9DFEF506768C65",
+      "Bytes": 3699
+    },
+    "SynthesisExecutedInRetry": false,
+    "PlacementAndRouteExecutedInRetry": true,
+    "Basis": "Original 2026-10-19 gate DB copied byte for byte; retry reran only placement and route."
+  },
+  "TimingNs": {
+    "SWNS": 0.103,
+    "STNS": 0.0,
+    "HWNS": 0.02,
+    "HTNS": 0.0
+  },
+  "EndpointProbeHistory": [
+    {
+      "Result": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-02\\result.json",
+        "SHA256": "64421C181A0CCF57EFBE48B4057D18914337C0A6E417231B9F21851BFB3F052A",
+        "Bytes": 290729
+      },
+      "RequestedQueries": 1009,
+      "NativeStartedAt": "2026-10-20T17:09:43.966286+08:00",
+      "NativeFinishedAt": "2026-10-20T17:10:05.433089+08:00"
+    },
+    {
+      "Result": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\endpoint-probe-r2-03\\result.json",
+        "SHA256": "5F24341B205835A8E162F8B3AC55BC573BE94C4D3086DB11DD5C4D857030EC09",
+        "Bytes": 40758
+      },
+      "RequestedQueries": 128,
+      "NativeStartedAt": "2026-10-20T17:34:29.373851+08:00",
+      "NativeFinishedAt": "2026-10-20T17:34:45.235468+08:00"
+    }
+  ],
+  "BitGeneration": {
+    "Result": {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\bitgen-d0270-v1\\result.json",
+      "SHA256": "B1CC7C41FD5F3D5564BDDCC8B94F74B43328DF89A093CA2B12733DBB2F6670B2",
+      "Bytes": 100552
+    },
+    "Script": {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\bitgen-d0270-v1\\bitgen.tcl",
+      "SHA256": "06FDDA9C438BFD0C47F491CB0F55D7C67CEB68F740B9381EF9964825E4633EE6",
+      "Bytes": 651
+    },
+    "ApprovalCopy": {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\bitgen-d0270-v1\\approval.json",
+      "SHA256": "0CA624635EC084899E94441FDE0F31B2177A4084F2A007B5D80832A36BDED229",
+      "Bytes": 2169
+    },
+    "Stdout": {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\bitgen-d0270-v1\\stdout.log",
+      "SHA256": "F873D77CA12497EFEFBED193FE405EDD1F12CC138984DCBC5F74030295B7A0BB",
+      "Bytes": 3477
+    },
+    "Stderr": {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\bitgen-d0270-v1\\stderr.log",
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "Bytes": 0
+    },
+    "Generator": {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\scripts\\sc520-card-recognition\\generate-shape27-bit.py",
+      "SHA256": "91BA6C60C92B9B193ED08E285081544950DC6EF301ADA42303651F5DF5334CDC",
+      "Bytes": 4428
+    },
+    "ToolSHA256": "E2E04ADA5E256DCCD017240C0F4DCFACE7F96DCA67CDE0E56E606AC0E02F827A",
+    "ProtectedInputCount": 411,
+    "TemporaryMapping": {
+      "Drive": "U:",
+      "Target": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine",
+      "Released": true
+    },
+    "InputsUnchanged": true
+  },
+  "Bit": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\bitgen-d0270-v1\\sc520-d0270.bit",
+    "SHA256": "0B6EA91C2396C31DC8F73AC8C5921E528F8F43E758CF445F1CC71DE99B60672B",
+    "Bytes": 1789539
+  },
+  "Guide": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\hardware\\sc520-shape27\\d0270-sram-guide.md",
+    "SHA256": "0D649526D62C60D941790840150BD9A1C0FBBCF451CD295A06D6790CE210F3A6",
+    "Bytes": 5122
+  },
+  "PreservedHistoricalDraft": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\delivery-draft.json",
+    "SHA256": "610C988EB0CE1EBCE7C1F56C20203712C9709877200300E721D13AE1DC6397D6",
+    "Bytes": 2908
+  },
+  "VerifiedUniqueFilesAtSeal": 1924,
+  "HardwareValidated": false,
+  "DownloadExecuted": false,
+  "FlashExecuted": false,
+  "StableBaselineMerged": false,
+  "UserSRAMExecutionGate": "Main D081 final acceptance is required before the user executes PROGRAM_SRAM.",
+  "Limits": [
+    "Fixed white surface, existing uneven white borders, actual fourteen classes and lighting/placement require user validation.",
+    "The bitgen approval grants generation only; it does not permit this computer to download or write Flash.",
+    "Three audio VERIFIED gates remain zero, TRACKS empty, and no unverified audio pads are exposed.",
+    "Native build and software reports retain their original stage flags and failure history.",
+    "Independent delivery QA must reference this manifest in one direction; this manifest does not reference that QA.",
+    "Git holds selected manifests and text logs; local bit, route DB, snapshots and caches require separate SHA-verified transfer."
+  ]
+}

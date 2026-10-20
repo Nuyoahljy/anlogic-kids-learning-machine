@@ -164,3 +164,87 @@ lifecycle首轮因测试TIMEOUT500超观察bridge范围在t0失败；第二轮10
 - `seal-shape27-software.py --lifecycle-run lifecycle-normal-20261019-205826-250661` 原生0：software-v1.json SHA256 B50384E3C2A76CB66227593D89071FFEBF63F442C1F1F64132AD30C6269DF537；7正常轮次198场景/28624699检查/0错，全部当前输入/快照/输出SHA吻合。旧完整legacy同期待930检查30错仍失败；原中断及两次错误测试激励也保留。
 - protected-d0261.json核465条当前输入/快照/DB/bit，原388输入和74快照全部保持；独立core/61位metadata审核另有32场景40473检查0错，不混入本代理统计。
 - 生产T027源/独立overlay/构建工具当前SHA见software-v1 SourceFreeze；主审与独立审核尚未在本节冒称通过。源码检查点提交后再报告实际SHA；无TD/bitgen/下载/Flash，无现场新结论。
+
+## D080 接受后唯一270构建启动（2026-10-19）
+
+主已接受b7247b8软件、software-02与独立review-final，并以 `E:/juan/FPGA/learning/sc520-shape27/main-review/software-approved.json` 明确授权唯一6a50b270的TD6.2.1 route-only构建。批准SHA256 A771885BF61297914B2ECD274262D3DC71BD4CD225424165252FDCC5357D2096；未授权bitgen、下载或Flash。
+
+接续时重读共享规则/入口/索引最新D080批次、工作树入口与分支日志。真实预检确认HEAD=b7247b8d8963ff60bd8a2f710a174e5434531b33、工作树干净、16冻结源及465旧保护全部SHA一致、目标run原不存在且无本任务在途进程。未更改生产源、约束、测试或16项SourceFreeze。
+
+实际在本树执行 `pwsh -File fpga/scripts/sc520-card-recognition/build-shape27.ps1 -RunId 6a50b270`，21:20:00+08启动综合，真实PID33512，原生TD6.2.1工具SHA E2E04ADA5E256DCCD017240C0F4DCFACE7F96DCA67CDE0E56E606AC0E02F827A，临时U盘启动路径U:/syn_1.launch.tcl。新run为evidence/sc520-shape27/builds/6a50b270，121工程引用、396输入清单SHA ECC2A1BE92EF800218165386709B30CD0BF81990E9B2608E5296D861322D95F8。当前syn在途，不提前判断原生结束、综合reset、物理时序或bit资格；session99486持续由唯一实现跟进。
+
+## T027 第二次中断接续与仅物理恢复准备（2026-10-20）
+
+当前 /root/shape27_impl_resume 按本轮主派发唯一接管原树；状态进行中，HEAD仍为b7247b8d8963ff60bd8a2f710a174e5434531b33，未改生产RTL/阈值/约束或已冻结工具。已重新读取共享根规则/入口/索引相关记录、主D079/D080与记忆、树规则/记忆/计划/任务/决策/接口和本日志，并读取失败主聊天01a1542c。
+
+真实磁盘断点：6a50b270综合于2026-10-19 21:24:28原生0且完成marker存在；failure.json为旧复位审计层级误拒。23:01启动的第一次phy恢复有place DB，但stdout及TD日志停于23:09:20的Rip-up And ReRoute，无route DB/end marker/最终result。当前仅用户td.exe GUI PID10896存活，无TD console；旧V盘subst仍指向原6a50b270，未移除。中断原因没有证据，不能认定路由/时序通过。
+
+旧reset-shape27-synthesis.json保留3879字节/C148开头的Program绑定，而当前audit-shape27-reset.py为3707字节/6E946开头；不能把旧JSON当作当前程序结果。独立物理代理实际重新执行当前脚本，reset-recheck.json位于learning/sc520-shape27/physical-review/resume-20261020-01，native0、10分支/max2552，绑定当前脚本/解析器和同一syn网表。原报告与程序均未改写。
+
+新增resume-shape27-phy-v2.py，将准备与实际TD执行分离。主已仅放行prepare，实际命令为 `python -B -X utf8 fpga/scripts/sc520-card-recognition/resume-shape27-phy-v2.py --prepare --reset-audit E:/juan/FPGA/learning/sc520-shape27/physical-review/resume-20261020-01/reset-recheck.json`，退出0。新独立builds/6a50b270-phy-r2已有87个原字节输入/DB/审核副本、独立launcher/preparation；87项包括审计所需rtl/overlay/tools和三mem。工程绝对源/约束仍指原冻结snapshot；gate DB原字节复制到新syn_1，后续只opt_place至opt_route，不重综合、不沿用中断place DB。
+
+准备校验16SourceFreeze、396输入/121引用及快照、465旧保护、reset Qualified/网表/Program/Parser与工具SHA；原6a50b270全部129文件逐项SHA/清单保护。preparation.json SHA256为715177E098BDB8BEC0A500A2506E215857A7C64DE350DE50F6209F9EF70B1C9E；随后 `--verify-prepared` 实际退出0/ PREPARED_HASHES_OK。仅AST/准备与字节核验，无TD/bitgen/下载/Flash。
+
+补登记昨日中断未交接的resume脚本/launcher/stdout/stderr/started、syn完成与失败记录、SRAM指南及delivery-draft；均保留原字节/真实历史时间，草案不代表可下载。下一步主审核准备清单并给绑定SHA的phy_resume_approved；新execute门控严格要求原生0、fresh route marker、路由DB/时序/新端点报告、两个完成marker、无ERROR且stderr为空、原目录/冻结输入保持及无bit。TD如修改新工程元数据则保留失败证据交主审，不预先放宽。新物理仍须独立及主审核，bitgen仍另批批准。
+
+## phy-r2 主放行与启动（2026-10-20 15:14）
+
+本轮主独立审核后明确批准唯一phy-r2，批准文件learning/sc520-shape27/main-review/phy-r2-approved.json，SHA256 CE5F49A235BCCB42E76EF148A1D5C2811712F3CF89C76A69418D3660A878E838。先核此SHA，再实际执行 `python -B -X utf8 fpga/scripts/sc520-card-recognition/resume-shape27-phy-v2.py --execute --approval E:/juan/FPGA/learning/sc520-shape27/main-review/phy-r2-approved.json`。
+
+2026-10-20T15:14:43.690244+08:00启动TD6.2.1 td_commands_prompt.exe PID29580，父Python PID36800，唯一会话69705。任务临时U盘指向新phy-r2根，启动U:/phy_1.launch.tcl；旧V盘与用户GUI PID10896保持。原始stdout已进入placement，stderr空；这是运行中观察，不是时序/物理通过。执行绑定的script/preparation、全部源及约束未改，本轮仍不执行bitgen/下载/Flash。后续原生结束才写入继承syn和本轮phy的真实阶段清单。
+
+## phy-r2 完整结束，交独立物理审核（2026-10-20 15:34）
+
+session69705实际结束0；result.json记Complete=true、NativeExitCode=0、两个完成marker齐全、fresh route marker、数据库导入成功、RequiredOutputsPresent=true、LogErrors空、stderr空、无bit。原129文件清单与全部冻结源/输入/复制项前后保持；新工程元数据没有被TD改写。任务U映射由finally解除，旧V及用户GUI保持。
+
+原生Routed/Both报告于15:34:11生成，SWNS+0.103ns、HWNS+0.020ns、双TNS0、覆盖率96.20%；本节只记录原始报告头，不替代独立完整物理/约束/ROM/CDC审核。PR数据库24628274字节，SHA256 7755E6390D684DA939D01EB3851716425F92385C556E24570B0CE779C3F4B05B；pr.timing SHA A6F6340097CE1D4B289DA815E8E11DE2EBBB2FD204B83C430DB94DE3BABD6383；综合网表沿用原SHA7D9F83B0，新物理网表SHA4335789F0443966B83E6F7524F5F1DF43D3C930AE649B8DB3454B961D9A70432。shape27新端点对象/双向报告已生成。
+
+新增新目录stages.json（SHA74E54DEE3C5CD1CE6FAE29F853A2F4D7F84C913E8D137C1018504975D709B008），syn精确继承原stages字段并注明InheritedFrom/ExecutedInThisAttempt=false；phy使用本轮PID29580、native0、开始和包装器完成时间及独立stdout/stderr，并明确FinishedAt为原生结束后输入复核完成时间。没有重写原stages/result或伪称重综合。
+
+已通知独立物理代理开始新报告审核。当前TimingQualified/BitGenerationAllowed/HardwareValidated仍false，保留所有旧失败和中断历史。主要求预核现有generate-shape27-bit.py对新run与Windows短路径适用性；批准前仅静态预核和收尾准备，不执行bitgen。
+
+## 人工阶段汇总时间字符串修正与bitgen静态预核（2026-10-20）
+
+主发现首次stages用PowerShell ConvertFrom-Json生成时自动转换了时间：原syn小数秒尾零及phy时区字符串变化，尽管时刻相同也不满足严格来源一致。首次stages原字节保存在stages-first.json，SHA74E54DEE3C5CD1CE6FAE29F853A2F4D7F84C913E8D137C1018504975D709B008。按主要求改用Python json直接读取原syn/result，逐项验证原syn全部字段、phy StartedAtUtc/FinishedAt字符串完全相等，不放宽lineage断言；当前stages SHA9CAC62DDC67A3CA7A5CABCF340F67C38BAA647DF91DAC5392209D372D4431681。只修人工汇总，原生result/log/DB完全不变。
+
+实际静态预核generate-shape27-bit.py与新phy-r2路径：AST有效，输入474次SHA/121工程引用通过，新数据库位于生成器允许的builds/run/phy_1路径，已有.al工程可读取，预留独立bitgen-d0270-v1尚不存在。读取当前盘符后计算共同worktrees父目录映射的短路径，没有建立映射或执行TD；结果见新run/bitgen-preflight.json。静态兼容不代表bitgen实际成功，更不授bit资格。
+
+独立物理初审其余项目通过，新group报告未覆盖全部source，另有少数实际打包/别名需独立说明。主要求准备同固定PR DB的只读补充端点报告，原约束不clear、无route/optimize/export_db/bitgen、旧hook不改；具体Tcl尚待主审核再执行，当前未再次TD。默认无语音、固定白底与现有白边14类范围保持。
+
+## 五查询只读端点探针完成（2026-10-20）
+
+主完整审核并明确批准physical-review/endpoint-probe-20261020-r2-01/probe.tcl，SHA818F042131E59C14BAEE2A00C3CAECA326CF3E3D635A94F19752FABC6204F803。新增run-shape27-endpoint-probe.py仅做空闲/冻结SHA检查、新目录、隐藏进程和原始日志/前后保护，直接执行已批准Tcl副本，不添加TD命令。实际命令 `python -B -X utf8 fpga/scripts/sc520-card-recognition/run-shape27-endpoint-probe.py`，新目录evidence/sc520-shape27/endpoint-probe-r2-01，真实PID48500、session47815。
+
+原生退出0且Complete=true；T027_PROBE_ORIGINAL_TIMING_OK和T027_ENDPOINT_PROBE_DONE齐全，ERROR为空、stderr空。直接从固定PR DB import后原Routed/Both四值+.103/0/+.020/0与原clock XML完全相同，五个query唯一解析并产生独立报告。结果/原始stdout/stderr、五报告、预检报告和全部保护清单均在新目录；所有受保护DB/网表/原报告/请求/Tcl与冻结源前后SHA不变、无bit。临时U映射解除，旧V与用户GUI保持。
+
+已通知独立物理代理解析报告；这只是五查询工具语义探针，不提前认定全部新起终点覆盖或物理通过。后续如扩大报告范围由主审核精确清单再执行，不自行重跑TD或修改旧hook。
+
+## T027 新物理主审后生成 D0270（2026-10-20 18:18）
+
+本轮由主指定 /root/shape27_delivery 唯一接管交付，主仍负责终审；当前状态为等待主对话审核。实际 HEAD 仍为 b7247b8d8963ff60bd8a2f710a174e5434531b33，工作树既有未提交构建与工具保持，不修改冻结生产 RTL、约束、生成器及旧 D0261。已重读根规则/入口/索引相关记录、主规则和记忆、本树规则/记忆与本日志；工作树旧总文档仍是历史骨架，以主 D079/D080 和本轮绑定批准为准。
+
+原五查询之后，旧主已实际完成 endpoint-probe-r2-02 与 r2-03。本轮只读核查两份原生 result：分别 PID30824 于17:09:43启动、17:10:05结束，PID23200 于17:34:29启动、17:34:45结束；均 Complete/native0、ERROR空、stderr空、原时序与完成marker齐全、冻结输入未变、无bit。目录/关键result在本批补登记为 observed，不将本轮登记时间冒充生成时间。独立逐Q覆盖及十四项最终主审由主维护，原报告不回写。
+
+主明确给出 bitgen-phy-r2-approved.json，SHA256 为 0CA624635EC084899E94441FDE0F31B2177A4084F2A007B5D80832A36BDED229。先核此哈希、HEAD与无在途TD console，确认新输出目录不存在，再实际执行：
+
+```powershell
+& C:/Users/33630/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe -B -X utf8 fpga/scripts/sc520-card-recognition/generate-shape27-bit.py --approval E:/juan/FPGA/learning/sc520-shape27/main-review/bitgen-phy-r2-approved.json --output E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-shape27/bitgen-d0270-v1
+```
+
+真实会话40913结束0。result为 Complete=true/native0、InputsUnchanged=true、DatabaseImportSucceeded=true、LogErrors空，stderr为0字节；stdout实际导入固定7755E639路由DB并出现 Generate bitstream completely 与 MAIN_APPROVED_D0270_BITGEN_COMPLETE。生成器SHA仍91BA6C60C92B9B193ED08E285081544950DC6EF301ADA42303651F5DF5334CDC，TD6.2.168116工具SHA E2E04ADA5E256DCCD017240C0F4DCFACE7F96DCA67CDE0E56E606AC0E02F827A。临时U映射已解除；原V映射与用户GUI保留。没有重综合/路由、下载或Flash。
+
+唯一候选 bit 为 evidence/sc520-shape27/bitgen-d0270-v1/sc520-d0270.bit，1,789,539字节，SHA256 0B6EA91C2396C31DC8F73AC8C5921E528F8F43E758CF445F1CC71DE99B60672B。本节只交主核验，不自行批准用户下载。下一步新增最终交付清单、更新白底SRAM指南并提交任务检查点；原delivery-draft及所有失败/中断保持。实际白底、不等宽白边十四类/位置/光照仍待用户验证，三VERIFIED0/空TRACKS及音频pad隔离保持。
+
+## T027 最终交付清单与用户指南（2026-10-20 18:24）
+
+新增独立 seal-shape27-delivery.py，不重跑或修改旧 draft 生成器，不改冻结 bitgen 生成器。实际执行该工具绑定主批准、主/独立软件和物理报告、396项输入及快照、16冻结Git blob、465旧保护、原syn继承/新route-only来源、02/03原生输出、411个bitgen保护项、唯一bit及指南。封存与 --check 两次均原生0，共核1924个唯一文件；未调用TD或硬件。新 delivery-manifest.json 为10105字节，SHA256 45EB9CA246EE115D17949EAEEBC494A09247E2FF16AE79158DA428AD36613264。
+
+指南 d0270-sram-guide.md 已写准确bit路径/1789539字节/完整SHA、+.103/+.020双TNS0及原syn继承/phy-r2恢复依据。VERSION由冻结顶层的两处16'h0270和实际DB绑定证明，不以文件名替代。实际检查全部本地Markdown链接可用。指南SHA256 0D649526D62C60D941790840150BD9A1C0FBBCF451CD295A06D6790CE210F3A6。
+
+清单状态明确为 bit_generated_waiting_main_final_acceptance，用户须等主D081最终接受后执行PROGRAM_SRAM；生成阶段DownloadAllowed=false不回写，且不授本机自动操作硬件。清单不引用独立交付QA，QA只单向引用清单/指南，避免循环哈希。主终审、Git检查点和现场十四类尚待后续实际结果；原native result/software manifest/历史draft均保持原字节。
+
+## D081 主最终接受与交付检查点（2026-10-20）
+
+本节为当前阶段结论，上文“等待主最终接受”为生成及封存当时状态，原报告/清单不回写。主已按D081接受D0270离线软件、新固定物理及唯一bit；独立最终交付QA为 learning/sc520-shape27/delivery-review/final-v1.json，SHA256 3A1CC5CC0927B8ABA54A956829AC06FE5D1E1B631436BB4BDEEE0146D162F523，十项检查/1406处引用通过。当前统一入口为[最终主审核](../../../../../learning/sc520-shape27/final-main-review.md)，用户可按该入口及本树指南进行PROGRAM_SRAM现场验证；本机未下载/写Flash，未合并稳定基线，实际十四类/白边/位置/光照及真实音频仍未验证。
+
+主已审核并批准精确57项交付路径提交：七项任务脚本、用户指南、本日志，历史draft与最终manifest，原综合及中断phy/新phy-r2的小型原始元数据/日志/Tcl，以及三轮只读probe和唯一bitgen的元数据/日志/Tcl。冻结生产RTL/工程diff为空；bit/DB/网表/内存/波形和大量逐Q报告仍本机保留，不提交缓存。首次stage检查56个blob与磁盘字节完全相同；本日志按既有text/eol规则从CRLF归一化为LF，且不在manifest哈希绑定中；所有raw JSON/log/Tcl均保持原字节。当前任务状态仍为等待主对话审核/现场待验，提交只作可追溯检查点，不表示合并或硬件验收。

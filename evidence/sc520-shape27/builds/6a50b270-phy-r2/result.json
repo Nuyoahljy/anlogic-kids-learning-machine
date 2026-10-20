@@ -1,0 +1,72 @@
+{
+  "Stage": "phy_1",
+  "RunDirectory": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270-phy-r2",
+  "StartedAtUtc": "2026-10-20T07:14:43.457812+00:00",
+  "Approval": {
+    "Path": "E:\\juan\\FPGA\\learning\\sc520-shape27\\main-review\\phy-r2-approved.json",
+    "SHA256": "CE5F49A235BCCB42E76EF148A1D5C2811712F3CF89C76A69418D3660A878E838",
+    "Bytes": 1951
+  },
+  "Preparation": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270-phy-r2\\preparation.json",
+    "SHA256": "715177E098BDB8BEC0A500A2506E215857A7C64DE350DE50F6209F9EF70B1C9E",
+    "Bytes": 97251
+  },
+  "SourceSynthesisDatabase": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270\\td_project\\camera_to_dsi_display_Runs\\syn_1\\camera_to_dsi_display_gate.db",
+    "SHA256": "62DF168C92705154358F68D334B0AC7202E32AA660015EA07A0C702D80C3BF0F",
+    "Bytes": 13847478
+  },
+  "Complete": true,
+  "BitGenerationAllowed": false,
+  "HardwareValidated": false,
+  "TimingQualified": false,
+  "TemporaryMapping": {
+    "Drive": "U:",
+    "Target": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270-phy-r2",
+    "Released": true
+  },
+  "PID": 29580,
+  "NativeExitCode": 0,
+  "LogErrors": [],
+  "StderrEmpty": true,
+  "MarkerFresh": true,
+  "RequiredOutputsPresent": true,
+  "DatabaseImportSucceeded": true,
+  "CompletionMarkers": true,
+  "BitFilesFound": [],
+  "OriginalAndFrozenInputsUnchanged": true,
+  "KeyOutputs": [
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270-phy-r2\\td_project\\camera_to_dsi_display_Runs\\phy_1\\camera_to_dsi_display_pr.db",
+      "SHA256": "7755E6390D684DA939D01EB3851716425F92385C556E24570B0CE779C3F4B05B",
+      "Bytes": 24628274
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270-phy-r2\\td_project\\camera_to_dsi_display_Runs\\phy_1\\camera_to_dsi_display_pr.timing",
+      "SHA256": "A6F6340097CE1D4B289DA815E8E11DE2EBBB2FD204B83C430DB94DE3BABD6383",
+      "Bytes": 5104046
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270-phy-r2\\td_project\\camera_to_dsi_display_Runs\\phy_1\\pixel14-phy_1-netlist.v",
+      "SHA256": "4335789F0443966B83E6F7524F5F1DF43D3C930AE649B8DB3454B961D9A70432",
+      "Bytes": 38281775
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270-phy-r2\\analysis\\shape27-objects.txt",
+      "SHA256": "C294AFA4B13309C930670CA259BD1882AE5218D1F30EC57C77D7883DBE5B6AF1",
+      "Bytes": 99308
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270-phy-r2\\analysis\\shape27-inbound.rpt",
+      "SHA256": "D5A3620923BB75FF12B083198BD710070304ECF12283C8F052F08ECD10E321ED",
+      "Bytes": 28576424
+    },
+    {
+      "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270-phy-r2\\analysis\\shape27-outbound.rpt",
+      "SHA256": "85B8958B377DF0D2DAC3FE494CC9414F9612CDE07F3674C1E78E81EEE66989B8",
+      "Bytes": 29366402
+    }
+  ],
+  "FinishedAt": "2026-10-20T15:34:36.854067+08:00"
+}

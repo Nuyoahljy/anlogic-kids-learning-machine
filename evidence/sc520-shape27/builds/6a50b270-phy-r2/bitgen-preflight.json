@@ -1,0 +1,48 @@
+{
+  "CreatedAt": "2026-10-20T16:07:11.696690+08:00",
+  "Method": "Read generator AST/text and apply path/input checks without importing or calling its execution functions.",
+  "Generator": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\scripts\\sc520-card-recognition\\generate-shape27-bit.py",
+    "SHA256": "91BA6C60C92B9B193ED08E285081544950DC6EF301ADA42303651F5DF5334CDC",
+    "Bytes": 4428
+  },
+  "RouteDatabase": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270-phy-r2\\td_project\\camera_to_dsi_display_Runs\\phy_1\\camera_to_dsi_display_pr.db",
+    "SHA256": "7755E6390D684DA939D01EB3851716425F92385C556E24570B0CE779C3F4B05B",
+    "Bytes": 24628274
+  },
+  "Project": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270-phy-r2\\td_project\\camera_to_dsi_display.al",
+    "SHA256": "EAC895A19E42768C5AA9FBF39079FA02EBCC39AD767F84B9A270CADBD5B1D4D8",
+    "Bytes": 53250
+  },
+  "BuildInputs": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270-phy-r2\\inputs.json",
+    "SHA256": "ECC2A1BE92EF800218165386709B30CD0BF81990E9B2608E5296D861322D95F8",
+    "Bytes": 154260
+  },
+  "InputSHAComparisons": 474,
+  "ProjectUniqueSourceReferences": 121,
+  "StaticPathCompatibility": true,
+  "ProposedNewOutput": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\bitgen-d0270-v1",
+  "ObservedMappings": [
+    "V:\\: => E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\builds\\6a50b270"
+  ],
+  "AvailableDriveAtReview": "U:",
+  "ProposedShortPaths": {
+    "Project": "U:/sc520-color-integration/evidence/sc520-shape27/builds/6a50b270-phy-r2/td_project/camera_to_dsi_display.al",
+    "Database": "U:/sc520-color-integration/evidence/sc520-shape27/builds/6a50b270-phy-r2/td_project/camera_to_dsi_display_Runs/phy_1/camera_to_dsi_display_pr.db",
+    "Output": "U:/sc520-color-integration/evidence/sc520-shape27/bitgen-d0270-v1"
+  },
+  "TemporaryMappingCreated": false,
+  "TDExecuted": false,
+  "BitGenerationExecuted": false,
+  "PhysicalQualified": false,
+  "BitGenerationAllowed": false,
+  "HardwareValidated": false,
+  "Limits": [
+    "Static checks do not prove TD bitgen execution succeeds.",
+    "Wait for supplemental physical endpoint review and main SHA-bound bitgen approval.",
+    "Current candidate target is fixed white substrate and the existing uneven white borders, all 14 classes; audio remains unconfigured."
+  ]
+}
