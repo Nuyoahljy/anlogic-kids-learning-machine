@@ -248,3 +248,44 @@ session69705实际结束0；result.json记Complete=true、NativeExitCode=0、两
 本节为当前阶段结论，上文“等待主最终接受”为生成及封存当时状态，原报告/清单不回写。主已按D081接受D0270离线软件、新固定物理及唯一bit；独立最终交付QA为 learning/sc520-shape27/delivery-review/final-v1.json，SHA256 3A1CC5CC0927B8ABA54A956829AC06FE5D1E1B631436BB4BDEEE0146D162F523，十项检查/1406处引用通过。当前统一入口为[最终主审核](../../../../../learning/sc520-shape27/final-main-review.md)，用户可按该入口及本树指南进行PROGRAM_SRAM现场验证；本机未下载/写Flash，未合并稳定基线，实际十四类/白边/位置/光照及真实音频仍未验证。
 
 主已审核并批准精确57项交付路径提交：七项任务脚本、用户指南、本日志，历史draft与最终manifest，原综合及中断phy/新phy-r2的小型原始元数据/日志/Tcl，以及三轮只读probe和唯一bitgen的元数据/日志/Tcl。冻结生产RTL/工程diff为空；bit/DB/网表/内存/波形和大量逐Q报告仍本机保留，不提交缓存。首次stage检查56个blob与磁盘字节完全相同；本日志按既有text/eol规则从CRLF归一化为LF，且不在manifest哈希绑定中；所有raw JSON/log/Tcl均保持原字节。当前任务状态仍为等待主对话审核/现场待验，提交只作可追溯检查点，不表示合并或硬件验收。
+
+## T029 颜色主体与边缘辅助模型启动（2026-10-20）
+
+- 状态：进行中；负责人 Codex /root/shape27_delivery；工作树task/sc520-color-integration，基础4a9b0b36f74a5025d7796ceabc1d9f4a3c542bed，接手时干净。
+- 用户明确批准按颜色分割为主、边缘辅助和几何/五卡拒识方向实现，主编号T029/sc520-contour29、候选D0290；T028/AWB28另树独立，禁止混入。
+- 重新读根AGENTS/README/索引与最新红圆现场/交付记录、主规则/总记忆和本日志；现场两JPEG只支持失败标签，不构建假现场RGB。主已批准四点模型/原型，具体8DN/1格/竞争差24仍候选，完整RTL和TD尚未放行。
+- 新增独立算法提案、数组模型及评估脚本，保留完整glyph/present与旧保护。先扫旧182样本及5×256模板中的几何竞争差分和合成圆/椭圆/孔洞/阴影，不把一格闭合作为椭圆问题已解决。拟复用flags/fifo、clean_mask维持2位，0新增ERAM为目标而非已验资源结论。
+- 待实际运行模型并交主/独立审核结果；不改D0270生产源、参数、输入、DB、bit，不执行TD/bitgen/硬件。
+
+首轮真实Python模型 model-v1 已结束0，但候选算法未通过：182旧fixture及1280模板完整扫描，margin24不拒原模板，却误拒4个原苹果fixture（差距24/22/20/23）；margin16对这些无额外拒识。无缺口椭圆ratio90/80仍可通过旧苹果模板与canonical几何差距，因此1格闭合与单一margin不能宣称已修复。20个合成圆/椭圆扰动中候选与本轮构造真值11处不一致，全部保留。样图已目视：色轮廓可排除中性侧阴影且补一格断线，但理想圆模板采样alias仍导致拒识/竞争。下一轮评估自身宽高归一的显式椭圆负类与近方aspect边界，不把所有椭圆强制圆，不删真苹果/原refusal。
+
+protect-contour29.py实际执行退出0，冻结3165个旧D0270/D0261源、输入/快照、审核证据、原DB及bit；保护表在evidence/sc520-contour29/protected-baselines.json。原16生产源/396输入保持，分支日志及新增T029文件不在旧保护集合中。
+
+模型v2/v3/v4均追加独立源和输出，不回写旧Program/Model或原报告。v2实际182/1280扫描0旧正确丢失、0模板拒识，140合成23不符（22圆→未知、1扁椭圆缺口→圆），且恢复分支隐式绕过fullglyph2/3，明确拒收。v3恢复原full覆盖及同winner，145合成0苹果但仍gray_large_red_radius17假接收；该红占84.76%不是少量彩点，真值0保持。
+
+v4区分外轮廓与内部孔洞：恢复须fullglyph在闭合body外残留<12、full非圆ellipse>20；显著灰外围/柄尾/阴影保守未知，不改原2/3、shape20/card40/异类24。新增圆19别名及12个非圆ellipse常量明确披露，负类不映射公开SH。实际182旧无新增丢失、62T027全部同真值、1280模板0负类拒，148合成0错类/0苹果误报、7恢复/46未知，不能称全部圆成功。样图已目视，implementation-contract.md给局部信号/16bitROM、同match_event最终确认及粗周期预算，等待主批准完整RTL。
+
+## T029 独立RTL与首批真实软件（2026-10-20）
+
+主已审核原合同SHA68E643C2及v4模型、独立19例边界，明确批准有界保守RTL，新增恢复仅圆；implementation-supplement.md和model-contour29-final.py收窄其余方/三角恢复，旧模型原件保持。独立gray25新增压力样本Truth1→unknown作为known miss保留。
+
+新增pixel29_scene/shape_guard/pipeline及独立overlay。flags/fifo分阶段复用，clean_mask仍2位；原full glyph/纸面/触边/present/颜色覆盖不变，四个同帧规范化mask送16bit/1024常量ROM，原3几何/r19/12ellipse明示。shape先缓存，统一match_event最终资格后才计原三帧，错误/缺失tag/source/slot/flush撤销。D0290版本常量只在新overlay。ROM源SHA9D8988D80FF92683B292EF9A5D2E5BE354225C6610C4445DEA6098EEAAA361A5，独立物理已用精确整数核全部1024词；不冒称物理ROM已过。
+
+实际Python命令统一为依赖Python -B -X utf8对应独立runner。simulate-contour29.py --test scene（17场/13881793检查）及--all（202场/164829733检查）均native0/0错/0warning，4mask逐位及metadata比较通过，最大771873拍，known misses46另存Truth与ExpectedContract，不按未知改标签。原runner/sceneTB/fixtures不再修改。独立guard38场/2426检查通过，其首轮声明编译错误和审核方轴线接反失败保留，不归生产逻辑通过历史。
+
+完整系统使用新增simulate-contour29-system.py，原T02762场/930检查、lifecycle14场/463检查均native0/0错；继承capture可选block_roi_fg_count未连接的2条告警原样披露，未为消警更改生产。render第一次仅准备重复golden快照断言失败、未启ModelSim，目录render-normal-20261020-204052-95a2b7保留；新增aux runner排除旧同名golden后，四720p/17场/11329115检查native0，D0290参考仅从冻结独立golden核字形7→9的固定槽改版，不用DUT输出造期望。
+
+新pairing83场/569检查native0，验证shape先到不提前BC、原九类及恢复三帧、card竞争±1、同色主导、错tag/source、丢raw/shape/match、flush和source epoch。该测试是边界注入，不冒充RGB；完整RGB另跑。
+
+新202系统contract、旧D0270同202 Truth完整失败对照、原182+旧21的203矩阵和reset54当前已真实启动，结果待结束。203固定Truth有旧模型8不符：3旧黄样本为固定SC520赢家规则下red（需核真实RGB，不称等R/G）、5个gain65_before卡拒0；不偷偷修颜色或改变标签，将旧新实际结果完整保留。尚需连续60fps双bank/过快流拒绝、业务UART、全部输入保护与独立主审，无新TD/bitgen/硬件。
+
+## T029 软件冻结与真实完整矩阵（2026-10-20）
+
+- 状态：等待主对话审核。生产三新RTL、独立overlay、16bit ROM和所需工具冻结，完整software-v1.json SHA256 890456358DECFE262EF3086843063FD4006A24340461F1333C0274096036DDC7，458236字节，SourceFreeze53。
+- 10个完整正常实现验证run合计797测试场景/196095690检查/0合同错误；这是各测试累计实现检查数，不是797个独立实物或零识别错误。正常选择、原始命令/PID/native/Inputs/快照/Outputs/Summary全部在清单中，注错和失败不混统计。
+- 原T02762/930、lifecycle14/463、pairing83/569、四720p render17/11329115、54拍reset7/19096354、真实业务UART5/832434均native0；旧800bit同tag诊断、四键/问答/计分/音频隔离、N+5保持。继承2条未用capture输出告警如实保留。
+- 新202真实全pipeline最终CSV按固定Truth独立重算：46圆拒识、0错类；旧D0270同202向量/Truth完整结束native1/69不符，原日志与全部606帧保留。新contract0错不把46拒识改Truth。原182+旧21的203矩阵，新旧实际最终结果都是8个Truth不符（5个gain65_before卡未知、3旧黄RGB245/205/45被原固定R领先规则判红），0新回退；同case RGB/SHA/Truth及两侧最后帧逐项绑定在ActualTruthComparisons，不称原203全准确。
+- 首三大矩阵只因测试全局2秒watchdog未完成（old已34错、new0错）保留done0/native2。新增matrixTB及独立入口将全局预算按203×3规模设12秒，原单帧1.2M不变；完整重试202/203均完成，未回写原run或旧62 TB。
+- 连续103.519669MHz/每720行×2396拍加帧开闭开销的约60fps，4帧未等待前识别，正常tag/BC完整，maxPostEOF841578、maxFIFO6403、双bank交叠为真；超速输入明确revoke。初fps两次仅因统计把capture cycle12初始化撤销计入cycle38后支持窗口而失败，原件保留。新fpsverify明确startup1、supported0，17检查0错，不改生产RTL或吞窗口故障。
+- 门禁reset-negative原生1/done1/errors1/checks2、reset-watchdog原生2/done0/errors0/checks48，Qualified只表示门禁按预期有效，不列正常通过场景。
+- prepare-contour29.py已只生成独立工程（124引用、326非snapshot哈希、3个明确geometry cwd副本）；build脚本仅静态语法通过，未执行TD。新hook覆盖完整scene、根saved/meta/原子pair、guard及三帧，ROM/源/门禁须新物理审核，不沿用D0270资格。后续主软件接受、绑定提交后才唯一新TD，bit仍单独主批，不自动下载/Flash。

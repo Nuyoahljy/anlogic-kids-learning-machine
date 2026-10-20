@@ -1,0 +1,3675 @@
+{
+  "At": "2026-10-20T20:47:41.834158+08:00",
+  "Owner": "Codex /root/shape27_delivery",
+  "Generator": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\scripts\\sc520-card-recognition\\generate-contour29-system-fixtures.py",
+    "SHA256": "B92C4FE4577E4DF95BF2D19ABEEAE5E0A7F06FFD111FDD68D04A46F1644C1EAD",
+    "Bytes": 3580
+  },
+  "Model": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\scripts\\sc520-card-recognition\\model-contour29-final.py",
+    "SHA256": "080DF603523CE36530C5E3A245D2B52A28922DA928AE0B2DD5B2C285DD5946FD",
+    "Bytes": 637
+  },
+  "Cases": [
+    {
+      "Name": "r000_empty_dark",
+      "Prefix": "r000",
+      "TruthItem": 0,
+      "ExpectedContractItem": 0,
+      "Present": false,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r000_empty_dark.rgb.mem",
+        "SHA256": "AEBF6EA10DB0C8F4591F331C29A15589D7751857E12195B2EDC5D6C9BE2F029F",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r000.rgb.mem",
+        "SHA256": "AEBF6EA10DB0C8F4591F331C29A15589D7751857E12195B2EDC5D6C9BE2F029F",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r001_empty_white",
+      "Prefix": "r001",
+      "TruthItem": 0,
+      "ExpectedContractItem": 0,
+      "Present": false,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r001_empty_white.rgb.mem",
+        "SHA256": "14101DA0E169B457C026EDBD83FC0CCFD891B56510CD8B4F231D953F18CD8583",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r001.rgb.mem",
+        "SHA256": "14101DA0E169B457C026EDBD83FC0CCFD891B56510CD8B4F231D953F18CD8583",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r002_empty_red",
+      "Prefix": "r002",
+      "TruthItem": 0,
+      "ExpectedContractItem": 0,
+      "Present": false,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r002_empty_red.rgb.mem",
+        "SHA256": "D8FFC427A8F9930AC4A98B1BB5359582A55B4C13FA0B5A58EBAA2F89C9B26413",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r002.rgb.mem",
+        "SHA256": "D8FFC427A8F9930AC4A98B1BB5359582A55B4C13FA0B5A58EBAA2F89C9B26413",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r003_card_10_angle_0",
+      "Prefix": "r003",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r003_card_10_angle_0.rgb.mem",
+        "SHA256": "FD5E0BC129948BBB06EB0B2843C9A1801D3437DEC6F28665AA725193F1053AFA",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r003.rgb.mem",
+        "SHA256": "FD5E0BC129948BBB06EB0B2843C9A1801D3437DEC6F28665AA725193F1053AFA",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r004_card_10_angle_90",
+      "Prefix": "r004",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r004_card_10_angle_90.rgb.mem",
+        "SHA256": "BA8766C0E5A351AD76451C2AB87AF64DCA8E4497913DA441399E341CE31C695C",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r004.rgb.mem",
+        "SHA256": "BA8766C0E5A351AD76451C2AB87AF64DCA8E4497913DA441399E341CE31C695C",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r005_card_10_angle_180",
+      "Prefix": "r005",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r005_card_10_angle_180.rgb.mem",
+        "SHA256": "695CB668B27003C3AFBDB477FA8ED64174C9396620BC9802F601FBB3439701F9",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r005.rgb.mem",
+        "SHA256": "695CB668B27003C3AFBDB477FA8ED64174C9396620BC9802F601FBB3439701F9",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r006_card_10_angle_270",
+      "Prefix": "r006",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r006_card_10_angle_270.rgb.mem",
+        "SHA256": "FD9A8F16AF13CFF6430960D3F0AEC2134DAA9AE8782D9473D899BFBF975905B9",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r006.rgb.mem",
+        "SHA256": "FD9A8F16AF13CFF6430960D3F0AEC2134DAA9AE8782D9473D899BFBF975905B9",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r007_card_10_angle_2p5",
+      "Prefix": "r007",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r007_card_10_angle_2p5.rgb.mem",
+        "SHA256": "FF4772B8E2BE3238A6FEC9C5838A0594C9307168D350879A2F498B00A98D5FF1",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r007.rgb.mem",
+        "SHA256": "FF4772B8E2BE3238A6FEC9C5838A0594C9307168D350879A2F498B00A98D5FF1",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r008_card_10_angle_87p5",
+      "Prefix": "r008",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r008_card_10_angle_87p5.rgb.mem",
+        "SHA256": "46C0903761BFC7F7C0B6708754038D835EA67ADE627775F837031455F9350754",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r008.rgb.mem",
+        "SHA256": "46C0903761BFC7F7C0B6708754038D835EA67ADE627775F837031455F9350754",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r009_card_10_angle_177p5",
+      "Prefix": "r009",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r009_card_10_angle_177p5.rgb.mem",
+        "SHA256": "D05F2E8332F4688E878617837853EB8D65B5D6D6397539B6C034A9070D670B29",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r009.rgb.mem",
+        "SHA256": "D05F2E8332F4688E878617837853EB8D65B5D6D6397539B6C034A9070D670B29",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r010_card_10_angle_267p5",
+      "Prefix": "r010",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r010_card_10_angle_267p5.rgb.mem",
+        "SHA256": "B5CD18F435F87257B4E4126ABEC0B9B05594577AF35D4F29389C77B5C1380F55",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r010.rgb.mem",
+        "SHA256": "B5CD18F435F87257B4E4126ABEC0B9B05594577AF35D4F29389C77B5C1380F55",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r011_card_10_size_53_angle_17p5",
+      "Prefix": "r011",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r011_card_10_size_53_angle_17p5.png",
+        "SHA256": "29D60962037976B73CBE9A0337C4312A64944CA74BEFD8B70C40AD2F37717888",
+        "Bytes": 3154
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r011.rgb.mem",
+        "SHA256": "83846896703EB23325201F970532A79294942072715BB0953E899D4E6B5CCFB8",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r012_card_10_size_53_angle_62p5",
+      "Prefix": "r012",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r012_card_10_size_53_angle_62p5.png",
+        "SHA256": "1CC874AAC0D61350961E8342D91C7711637C951F408411CC698A9B7F4C19C17A",
+        "Bytes": 3236
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r012.rgb.mem",
+        "SHA256": "35438A3DA4925553C279A01BAF9ADE070C0D641488F89859871976BBCC3E0610",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r013_card_10_size_53_angle_152p5",
+      "Prefix": "r013",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r013_card_10_size_53_angle_152p5.png",
+        "SHA256": "0FFC72C38E88A38D3CA43212BD21008508C1FC4898287075C879A677A03D6B8B",
+        "Bytes": 3226
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r013.rgb.mem",
+        "SHA256": "E271BF09D4B0CFC9D47A1CB5FE83900284592B81997C16B874377C04060F5928",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r014_card_10_size_53_angle_242p5",
+      "Prefix": "r014",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r014_card_10_size_53_angle_242p5.png",
+        "SHA256": "FFE6328D03532EB617D85F7BC8EEBF0987E0E079A74BF833E6A22A67349A73CF",
+        "Bytes": 3243
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r014.rgb.mem",
+        "SHA256": "1747DC21585C6B08C5B1E6E9647EB016CA08A68F49F17EBF9E78CF13385CDE34",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r015_card_10_size_53_angle_332p5",
+      "Prefix": "r015",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r015_card_10_size_53_angle_332p5.png",
+        "SHA256": "69E25F0C72842B450AA5BB97B22BC0BC1479200B483FED2D67DEA26C1E582D9B",
+        "Bytes": 3241
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r015.rgb.mem",
+        "SHA256": "2BC9EE10CC5CA6C7DF22C4155DBE23E14C276EC4D476E14E65D76CC37A8DCAFA",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r016_card_10_size_69_angle_17p5",
+      "Prefix": "r016",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r016_card_10_size_69_angle_17p5.png",
+        "SHA256": "A67FA6D04C2098E016213E30A81B908D9E16CD01749C63E4F64809383C33E952",
+        "Bytes": 4072
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r016.rgb.mem",
+        "SHA256": "A81A27B2A5FD556B10ACE86B3511DEB25A46D9C9950069AF40D34D7E631074DF",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r017_card_10_size_69_angle_62p5",
+      "Prefix": "r017",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r017_card_10_size_69_angle_62p5.png",
+        "SHA256": "BC81E134230BF9F22E94D3311BCE5BBFE83DEA8AD62FA2222F7605E0541E0EAA",
+        "Bytes": 4162
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r017.rgb.mem",
+        "SHA256": "B264BE2D3B496C1306ED77EB7DCA88DEB4C11BABE0F3D720A3B7E9D7A919B369",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r018_card_10_size_69_angle_152p5",
+      "Prefix": "r018",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r018_card_10_size_69_angle_152p5.png",
+        "SHA256": "0B89991E02D7131EA494AA8FD3447210B1C79E2258F8E82755183E75FAE123DD",
+        "Bytes": 4112
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r018.rgb.mem",
+        "SHA256": "B76F66EC73266EA76C1FBB506052D2A6C4C8011BE1BA9F50031E47EFB5DD7C08",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r019_card_10_size_69_angle_242p5",
+      "Prefix": "r019",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r019_card_10_size_69_angle_242p5.png",
+        "SHA256": "B1EB67FB030DB873F10062109D14DBDF92D19E42EAAEA68DE4C7574B28006857",
+        "Bytes": 4118
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r019.rgb.mem",
+        "SHA256": "D4D29D9037ADF45D1D805B72EF9E21C596EB7A3B6FC35EDAF948073C8411B900",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r020_card_10_size_69_angle_332p5",
+      "Prefix": "r020",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r020_card_10_size_69_angle_332p5.png",
+        "SHA256": "72124146DBA27EEB2AC573C924F2C6DE31F1B874F80236508119E8932DC7E4FB",
+        "Bytes": 4127
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r020.rgb.mem",
+        "SHA256": "D8428ABC121156A5B99F83B4DDDB6623F6B6197A09EB3226058812D9D4DA1B44",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r021_card_10_size_77_angle_17p5",
+      "Prefix": "r021",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r021_card_10_size_77_angle_17p5.png",
+        "SHA256": "1CDCE4E7EABBB06965C7B9103C56226D5BBC07D8F3DFC9A80BA50C1F4DA5ED03",
+        "Bytes": 4495
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r021.rgb.mem",
+        "SHA256": "B9F8DCD79459AE59D1B17527845A50434340DFC3B0463265CB1ECA0AA315294D",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r022_card_10_size_77_angle_62p5",
+      "Prefix": "r022",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r022_card_10_size_77_angle_62p5.png",
+        "SHA256": "34148F9802E0BAA240944D4C5AE8DBD35048CA85AA0EF0A8131568C93A4B74F1",
+        "Bytes": 4680
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r022.rgb.mem",
+        "SHA256": "4D2D96A5A8E5B1D0D14C6F8950CB730988C9ADA75B3BAB13D1C4655EC6B9F077",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r023_card_10_size_77_angle_152p5",
+      "Prefix": "r023",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r023_card_10_size_77_angle_152p5.png",
+        "SHA256": "0B72BF348EF5FA3074BC69C26A852C76FE7FB81CD29FE0CEF7477033A1C3B9DE",
+        "Bytes": 4569
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r023.rgb.mem",
+        "SHA256": "222C4C2998EC7E7EB08D2043B8DA87EDAED7E6DFEBA27ED5817BD4FF2DD0FE97",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r024_card_10_size_77_angle_242p5",
+      "Prefix": "r024",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r024_card_10_size_77_angle_242p5.png",
+        "SHA256": "5D84A1D1B14075FB1A36C4C926D51F942FA0440B6EF02FD954DDB8D80D7B0A05",
+        "Bytes": 4617
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r024.rgb.mem",
+        "SHA256": "536FC0296C496DBC20FBBBC26CC9BE97CCBEC48E20CABD3780F9A419A2C942D2",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r025_card_10_size_77_angle_332p5",
+      "Prefix": "r025",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r025_card_10_size_77_angle_332p5.png",
+        "SHA256": "6A5BF8AC021E0D3F412806D814069BABC5E6BFCAEB1E70B28BD7F687A7EC0A52",
+        "Bytes": 4611
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r025.rgb.mem",
+        "SHA256": "D634B1D2C49EC3100D724AC8598085B7E4B3302B21C9F19428DB9C72EE78D54B",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r026_card_10_soft_paper_edge",
+      "Prefix": "r026",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r026_card_10_soft_paper_edge.png",
+        "SHA256": "85830FD6853C14DD3A7B58D13B6FBE9F1884F59A226AC28673FCB1D296287B4F",
+        "Bytes": 4563
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r026.rgb.mem",
+        "SHA256": "3846568AD49B2093B6A01EA0DC3D7C14998423AC2A8EA21E2DBDFBBC6FF50E15",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r027_card_11_angle_0",
+      "Prefix": "r027",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r027_card_11_angle_0.rgb.mem",
+        "SHA256": "3C43E401D551E012C0B498D986C4CE4143CD3461B16ABD6760C1EB5AFB0472C0",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r027.rgb.mem",
+        "SHA256": "3C43E401D551E012C0B498D986C4CE4143CD3461B16ABD6760C1EB5AFB0472C0",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r028_card_11_angle_90",
+      "Prefix": "r028",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r028_card_11_angle_90.rgb.mem",
+        "SHA256": "7941A9397EBFF1CA8C65F41D9138C3C058D93572793F7AB02A0DEC7A32DD8C23",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r028.rgb.mem",
+        "SHA256": "7941A9397EBFF1CA8C65F41D9138C3C058D93572793F7AB02A0DEC7A32DD8C23",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r029_card_11_angle_180",
+      "Prefix": "r029",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r029_card_11_angle_180.rgb.mem",
+        "SHA256": "9BAC6B9F000410AE4BFF3C8E4A6CB5D2847A1C8E679C28A911687C7373A02748",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r029.rgb.mem",
+        "SHA256": "9BAC6B9F000410AE4BFF3C8E4A6CB5D2847A1C8E679C28A911687C7373A02748",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r030_card_11_angle_270",
+      "Prefix": "r030",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r030_card_11_angle_270.rgb.mem",
+        "SHA256": "0120A3B84FB587379E6DC2CF91FC89EEA49FEF41A0514BC40135B9A9E00DC733",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r030.rgb.mem",
+        "SHA256": "0120A3B84FB587379E6DC2CF91FC89EEA49FEF41A0514BC40135B9A9E00DC733",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r031_card_11_angle_2p5",
+      "Prefix": "r031",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r031_card_11_angle_2p5.rgb.mem",
+        "SHA256": "61CEB6F5D8BC7153BD060BA0846782BEEFB03B754FD8394AB4CD5BA767216E9B",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r031.rgb.mem",
+        "SHA256": "61CEB6F5D8BC7153BD060BA0846782BEEFB03B754FD8394AB4CD5BA767216E9B",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r032_card_11_angle_87p5",
+      "Prefix": "r032",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r032_card_11_angle_87p5.rgb.mem",
+        "SHA256": "B4B4CD8A7C2D7310A6E64D234CCE9070C9D2E380886B92750FCB76CD3C444428",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r032.rgb.mem",
+        "SHA256": "B4B4CD8A7C2D7310A6E64D234CCE9070C9D2E380886B92750FCB76CD3C444428",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r033_card_11_angle_177p5",
+      "Prefix": "r033",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r033_card_11_angle_177p5.rgb.mem",
+        "SHA256": "DB0EBEAAC1D16DC5AE544C51539149F156DF022543C5136B89DF66476707B8C8",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r033.rgb.mem",
+        "SHA256": "DB0EBEAAC1D16DC5AE544C51539149F156DF022543C5136B89DF66476707B8C8",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r034_card_11_angle_267p5",
+      "Prefix": "r034",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r034_card_11_angle_267p5.rgb.mem",
+        "SHA256": "AFF3956F35F9E0F51342B94794DEEC8879C1DC0BFCB81A332AFFD2D7A9D1BBDA",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r034.rgb.mem",
+        "SHA256": "AFF3956F35F9E0F51342B94794DEEC8879C1DC0BFCB81A332AFFD2D7A9D1BBDA",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r035_card_11_size_53_angle_17p5",
+      "Prefix": "r035",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r035_card_11_size_53_angle_17p5.png",
+        "SHA256": "948ADADA28532741AB5BFC34BC3F49E426335CD32A8CF0E52DC584B8E5F61A39",
+        "Bytes": 3363
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r035.rgb.mem",
+        "SHA256": "4D0BB7BCB8119342ACD2521A0766221E43D6CAEDDEF31BF0267FAB90F2F7B3D6",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r036_card_11_size_53_angle_62p5",
+      "Prefix": "r036",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r036_card_11_size_53_angle_62p5.png",
+        "SHA256": "DD18191BE7DE814E3D318D3666DC6FA6036E047588C99E0BB42BCA5D661788EC",
+        "Bytes": 3331
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r036.rgb.mem",
+        "SHA256": "832D7127B64E2FF5A24960B2159E62E45A8EA940A1FE80971BB30FABDC567932",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r037_card_11_size_53_angle_152p5",
+      "Prefix": "r037",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r037_card_11_size_53_angle_152p5.png",
+        "SHA256": "88836C45614E4201C3AF0E024084C8CE5AB385A4F0F3AA1A71C57BA3F0257574",
+        "Bytes": 3387
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r037.rgb.mem",
+        "SHA256": "5A6F7B2088FB38FFC4B94AB77A85E4E133A5F9C8588675E38DA2DA69017963A4",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r038_card_11_size_53_angle_242p5",
+      "Prefix": "r038",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r038_card_11_size_53_angle_242p5.png",
+        "SHA256": "28F4B2E543846B2044CD2738C973BDC97CCCAA7ACF5FAE07F83A160189C99477",
+        "Bytes": 3359
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r038.rgb.mem",
+        "SHA256": "05948807B190DB673B0418909A4680962D11D131740A88D36E0E4B60D3E35B83",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r039_card_11_size_53_angle_332p5",
+      "Prefix": "r039",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r039_card_11_size_53_angle_332p5.png",
+        "SHA256": "1AB7BB4D841EF3574B7626CAC817D2DD65CB2D6E11FC149DB5E0679D9807884C",
+        "Bytes": 3392
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r039.rgb.mem",
+        "SHA256": "1F5B496A0264984F307B76048C56A70103B9EE40DC78736BCDA3C029CCAD09D9",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r040_card_11_size_69_angle_17p5",
+      "Prefix": "r040",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r040_card_11_size_69_angle_17p5.png",
+        "SHA256": "1B30489B23805F39AAFB8EADF02D866530D221EA76F208A5875F9CBA3C19DAF2",
+        "Bytes": 4431
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r040.rgb.mem",
+        "SHA256": "199FB015E4A88B525553EAD2CC2E8CD396DB20CCFA31AE9945B5E5B432DCA721",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r041_card_11_size_69_angle_62p5",
+      "Prefix": "r041",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r041_card_11_size_69_angle_62p5.png",
+        "SHA256": "30E5294E901842E7296A630741285F6D6EA4202769332867A372ABA6289D3155",
+        "Bytes": 4372
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r041.rgb.mem",
+        "SHA256": "8EFD8AB6212EEED07AB324BDAB5863A8B4EFC7EF6A07773C448CA6454F6C7F22",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r042_card_11_size_69_angle_152p5",
+      "Prefix": "r042",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r042_card_11_size_69_angle_152p5.png",
+        "SHA256": "FAEBA2E668CA91AC0E0504136779E5511E5046BDF840A9937DBC6DD612BDD870",
+        "Bytes": 4500
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r042.rgb.mem",
+        "SHA256": "64419230680A326E40AE85B8CD31BFDBB45611678BFCA618660349FD7D12B7FE",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r043_card_11_size_69_angle_242p5",
+      "Prefix": "r043",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r043_card_11_size_69_angle_242p5.png",
+        "SHA256": "DC4FE487780F57E1A327AB8A360FB236C9F31F86DAAF6327151D34286DBB62F7",
+        "Bytes": 4430
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r043.rgb.mem",
+        "SHA256": "C60976027649773CA0B273102AC02D349535C886E079338485252DC9D624D56D",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r044_card_11_size_69_angle_332p5",
+      "Prefix": "r044",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r044_card_11_size_69_angle_332p5.png",
+        "SHA256": "AF44D7F34C73B28AD8D1925FE56F652FEA91DBA14C9DE3D12F5EDEFACC3D41EA",
+        "Bytes": 4425
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r044.rgb.mem",
+        "SHA256": "7577DA0B14FFA16D191B6E3DE5D84FF8E89D0CEC15A2F5702A2E939D6AEC9245",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r045_card_11_size_77_angle_17p5",
+      "Prefix": "r045",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r045_card_11_size_77_angle_17p5.png",
+        "SHA256": "192CD6140D10B70B692637ACC5EB1989FC323165B2EFF864768FC4B08CFDE978",
+        "Bytes": 4966
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r045.rgb.mem",
+        "SHA256": "074C81A47D3861F97EFFCF80853DB4BB3E572964B5B94D2A1DACDDC76A5F0226",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r046_card_11_size_77_angle_62p5",
+      "Prefix": "r046",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r046_card_11_size_77_angle_62p5.png",
+        "SHA256": "798D8F4CB1307BE88BC9112726CCEC5682B255BEBE4DBF972EFA6A9D2E045C6B",
+        "Bytes": 4862
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r046.rgb.mem",
+        "SHA256": "BD4F099A63476497C0B8D78D7082843A2606502B9E9882EE0E4264EA6FA23E11",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r047_card_11_size_77_angle_152p5",
+      "Prefix": "r047",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r047_card_11_size_77_angle_152p5.png",
+        "SHA256": "809BD42E1E0B6E3F5E8A0D3C2E0E61AC3A0161FAC8CF9840772EA9EEC83EDEA6",
+        "Bytes": 5009
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r047.rgb.mem",
+        "SHA256": "AA99F2EE24795BE23C99161D66CAB6E573B33592FE2B9D57CA6E4A064D57C181",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r048_card_11_size_77_angle_242p5",
+      "Prefix": "r048",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r048_card_11_size_77_angle_242p5.png",
+        "SHA256": "479D573ACD3C6C20770B61A0D4E1F1328A54D43CD495B875DE0C66BD7BBF3FB0",
+        "Bytes": 4906
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r048.rgb.mem",
+        "SHA256": "523A9671404A96EF7F7D2492F8D2F4383B58241CCCB15110A0170E4C257493B2",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r049_card_11_size_77_angle_332p5",
+      "Prefix": "r049",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r049_card_11_size_77_angle_332p5.png",
+        "SHA256": "C121913E7F9CD23D030E5FB4C366BEC89ECCD40A2ABBB3A3395C2FDD37FEC739",
+        "Bytes": 4972
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r049.rgb.mem",
+        "SHA256": "EA3E7870A89A4B6F01DFA837B079439907C03F63ED580D58F65F91EF1DA7554A",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r050_card_11_soft_paper_edge",
+      "Prefix": "r050",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r050_card_11_soft_paper_edge.png",
+        "SHA256": "76A11383355FBB79D141F79AD54D797A6524E53A90BE2FB3FE78539A9DB08CFD",
+        "Bytes": 4925
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r050.rgb.mem",
+        "SHA256": "1F195F23C2A100973B55D59E52C89AC9E9F82C31365699FEF7476B1229864DC0",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r051_card_12_angle_0",
+      "Prefix": "r051",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r051_card_12_angle_0.rgb.mem",
+        "SHA256": "59D3A0E70E3B060231C1E7B43BB2D765F98BAEE39D2D54E413EDB01ECFC4D7B8",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r051.rgb.mem",
+        "SHA256": "59D3A0E70E3B060231C1E7B43BB2D765F98BAEE39D2D54E413EDB01ECFC4D7B8",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r052_card_12_angle_90",
+      "Prefix": "r052",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r052_card_12_angle_90.rgb.mem",
+        "SHA256": "4897F2F44EF8FE6D4E1447A2F4C46148EBE5413172FBDE3FD54C900547FB2B3A",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r052.rgb.mem",
+        "SHA256": "4897F2F44EF8FE6D4E1447A2F4C46148EBE5413172FBDE3FD54C900547FB2B3A",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r053_card_12_angle_180",
+      "Prefix": "r053",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r053_card_12_angle_180.rgb.mem",
+        "SHA256": "024A8EA74C7C994C3EDE6556EE7E325CEBDDE9692020286D4F989E2FFEF466B4",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r053.rgb.mem",
+        "SHA256": "024A8EA74C7C994C3EDE6556EE7E325CEBDDE9692020286D4F989E2FFEF466B4",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r054_card_12_angle_270",
+      "Prefix": "r054",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r054_card_12_angle_270.rgb.mem",
+        "SHA256": "26047F831EFC1E21B5D1412254213841817C0C6FA76E2540F434F638457A218E",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r054.rgb.mem",
+        "SHA256": "26047F831EFC1E21B5D1412254213841817C0C6FA76E2540F434F638457A218E",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r055_card_12_angle_2p5",
+      "Prefix": "r055",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r055_card_12_angle_2p5.rgb.mem",
+        "SHA256": "E5B598C9379689164AEDD07A9FA08D8E8DA7E02D6E9097C149B1DDB168F1D7D2",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r055.rgb.mem",
+        "SHA256": "E5B598C9379689164AEDD07A9FA08D8E8DA7E02D6E9097C149B1DDB168F1D7D2",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r056_card_12_angle_87p5",
+      "Prefix": "r056",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r056_card_12_angle_87p5.rgb.mem",
+        "SHA256": "4D0260513312A2E73C3764B17784E15C674561E34D10AF5AFB265F95B995A801",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r056.rgb.mem",
+        "SHA256": "4D0260513312A2E73C3764B17784E15C674561E34D10AF5AFB265F95B995A801",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r057_card_12_angle_177p5",
+      "Prefix": "r057",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r057_card_12_angle_177p5.rgb.mem",
+        "SHA256": "69F1F6816692B704CB379E1CFB1B1CC1EF4F4EA6C58AAAD84959573D31D05DCA",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r057.rgb.mem",
+        "SHA256": "69F1F6816692B704CB379E1CFB1B1CC1EF4F4EA6C58AAAD84959573D31D05DCA",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r058_card_12_angle_267p5",
+      "Prefix": "r058",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r058_card_12_angle_267p5.rgb.mem",
+        "SHA256": "DCA6C47B58FE2F80E21C4E8073D7C97846A47F8BB7CA186B2B6FB6CDF92A20CD",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r058.rgb.mem",
+        "SHA256": "DCA6C47B58FE2F80E21C4E8073D7C97846A47F8BB7CA186B2B6FB6CDF92A20CD",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r059_card_12_size_53_angle_17p5",
+      "Prefix": "r059",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r059_card_12_size_53_angle_17p5.png",
+        "SHA256": "7DD5A2FC476908623302F5A092A937D81EB724BF8387B129B14608C767111D38",
+        "Bytes": 3378
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r059.rgb.mem",
+        "SHA256": "01F3ECF21E209D59FE5168B3E803EBA7B21DEBC5717D2C6A44448E4036DC5077",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r060_card_12_size_53_angle_62p5",
+      "Prefix": "r060",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r060_card_12_size_53_angle_62p5.png",
+        "SHA256": "447DC09812E6D35028DCE959D7C27D0E68A6ED7724F8E9DB407DC41C12438773",
+        "Bytes": 3444
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r060.rgb.mem",
+        "SHA256": "E6658EA4064DE915C562AF6334A89973BFE0C5B96486BB2AB6F2193F6942DACD",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r061_card_12_size_53_angle_152p5",
+      "Prefix": "r061",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r061_card_12_size_53_angle_152p5.png",
+        "SHA256": "C09D901C10EADFAD70E90F4E0ED1174BCAFBF4E0CE739106E0CC726EF8D4F413",
+        "Bytes": 3427
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r061.rgb.mem",
+        "SHA256": "D09D736897C443966B72BDD07E556F0A9E579B0A2015F3BBB06B626562B0D1B7",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r062_card_12_size_53_angle_242p5",
+      "Prefix": "r062",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r062_card_12_size_53_angle_242p5.png",
+        "SHA256": "1898234DAA52163FA5BADE4EDD991F621E797E19505127585CF8C254E2AFB901",
+        "Bytes": 3407
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r062.rgb.mem",
+        "SHA256": "A1D1507F65568ED42C1D28DD501BB2740E2A77AFE2D6FF425730B4C17B6FDB3A",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r063_card_12_size_53_angle_332p5",
+      "Prefix": "r063",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r063_card_12_size_53_angle_332p5.png",
+        "SHA256": "B9DC71E83F3F30748BD797C7C6B6A1D619292D53182CDEC68CF045A4F64A27EA",
+        "Bytes": 3472
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r063.rgb.mem",
+        "SHA256": "ED06C24070A754E2AE4C97385FCF4831348D5BBF1614B018E8878E185DE8A226",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r064_card_12_size_69_angle_17p5",
+      "Prefix": "r064",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r064_card_12_size_69_angle_17p5.png",
+        "SHA256": "42BEC72F4A3B2CA91AB65C7E0E4AEB539E441741E45C99C3311CE43976521186",
+        "Bytes": 4549
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r064.rgb.mem",
+        "SHA256": "4712E278D0E19235AB9B67E6173CD06425055D299C06F27D05016B02472C94F7",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r065_card_12_size_69_angle_62p5",
+      "Prefix": "r065",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r065_card_12_size_69_angle_62p5.png",
+        "SHA256": "5BE4BAE3667AA042A46D899188AD625E605235BE726D64E1004E28265C347945",
+        "Bytes": 4619
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r065.rgb.mem",
+        "SHA256": "905174534CC7E98CCAFB88BAAB3921A6AE5B26BD0DEA19A4B6A6674303E020FB",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r066_card_12_size_69_angle_152p5",
+      "Prefix": "r066",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r066_card_12_size_69_angle_152p5.png",
+        "SHA256": "247CEADDB23D676DFBC978E3F2BEFDAE32A0390C9EB63E4F16F0F31AD824F2DC",
+        "Bytes": 4625
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r066.rgb.mem",
+        "SHA256": "7B4166E89FC198957632F92C67A80D18E2BF939AC610CDA322F588E5B52C58D3",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r067_card_12_size_69_angle_242p5",
+      "Prefix": "r067",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r067_card_12_size_69_angle_242p5.png",
+        "SHA256": "438A1F2B20B478C58179F030EE98C6610E31CE91935786A23698F5DBFC9523F3",
+        "Bytes": 4621
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r067.rgb.mem",
+        "SHA256": "9C45FCF6EB2BE529D3279B6FAF935DCA121AC7F335D386C4581D7C2B657DFB39",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r068_card_12_size_69_angle_332p5",
+      "Prefix": "r068",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r068_card_12_size_69_angle_332p5.png",
+        "SHA256": "A310793BE6E5D41C78B5CBD6A8AC9A6BFCB40BEB4844AC6B2D8BC22E0BDDD943",
+        "Bytes": 4713
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r068.rgb.mem",
+        "SHA256": "E819D14ACD70685D518C4DF823689B690750A7C759EB2C8B529C812094494AEC",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r069_card_12_size_77_angle_17p5",
+      "Prefix": "r069",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r069_card_12_size_77_angle_17p5.png",
+        "SHA256": "D6923445B7647C1B37E3F668B8F50997F4A4FA78D277A24BFE47E89F7CF94996",
+        "Bytes": 5279
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r069.rgb.mem",
+        "SHA256": "D5D6F1A4CFCE86BE16B91C3B094F0DCEFA760894F041B5633A302C8367284D75",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r070_card_12_size_77_angle_62p5",
+      "Prefix": "r070",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r070_card_12_size_77_angle_62p5.png",
+        "SHA256": "479E2E0283547E178FB3EDAB8CFE8045BD37F99634CA70155054ED3B8E309A87",
+        "Bytes": 5310
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r070.rgb.mem",
+        "SHA256": "E177BCE7FC6903C25434FD5DBE1203D2E47C27B6B1924416050362A4764BD976",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r071_card_12_size_77_angle_152p5",
+      "Prefix": "r071",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r071_card_12_size_77_angle_152p5.png",
+        "SHA256": "CA6AD225C1618E7AF43A72F328B5F6EDB181E7915A6B0F231CF847692FDB54A8",
+        "Bytes": 5385
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r071.rgb.mem",
+        "SHA256": "718AC3D8E96A1F3783C9773758F69C94FFED91B3C929C7691571526AC42E526E",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r072_card_12_size_77_angle_242p5",
+      "Prefix": "r072",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r072_card_12_size_77_angle_242p5.png",
+        "SHA256": "22B8FACF50EF10DB003A1190D22ED26B3AB379341384EE7743EB3693063FAF44",
+        "Bytes": 5326
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r072.rgb.mem",
+        "SHA256": "35CA2124ACF87D8B41B935088531E509BE5C3C4A4B6F52F369CBDAFA927596D9",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r073_card_12_size_77_angle_332p5",
+      "Prefix": "r073",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r073_card_12_size_77_angle_332p5.png",
+        "SHA256": "5FB748413C0B8F8AAF3F337261B8D26F7F28DEC0FDEF4F7BEB04DB632D442F38",
+        "Bytes": 5433
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r073.rgb.mem",
+        "SHA256": "2C64298C019409E387E821810E33D04DD7B4C4FD55101169EFF02D02B431EDC7",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r074_card_12_soft_paper_edge",
+      "Prefix": "r074",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r074_card_12_soft_paper_edge.png",
+        "SHA256": "2BFFA8CCFBE9BBE23435B499D540568431D3F9F847126C374177FCBB28C5E9E5",
+        "Bytes": 5221
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r074.rgb.mem",
+        "SHA256": "D398EE75C547FBD25593E88A5D859FBBC55096CC94226A5BF65A26C2BA457CC8",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r075_card_13_angle_0",
+      "Prefix": "r075",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r075_card_13_angle_0.rgb.mem",
+        "SHA256": "FEF7C269E615CF7391ED56C7674782E69A38E83B0EEFF463BEADE32644DE4BE5",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r075.rgb.mem",
+        "SHA256": "FEF7C269E615CF7391ED56C7674782E69A38E83B0EEFF463BEADE32644DE4BE5",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r076_card_13_angle_90",
+      "Prefix": "r076",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r076_card_13_angle_90.rgb.mem",
+        "SHA256": "024219E7638812B8C3960795474607C58B3E27E469EB8E4EBB0AAE612C595D7B",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r076.rgb.mem",
+        "SHA256": "024219E7638812B8C3960795474607C58B3E27E469EB8E4EBB0AAE612C595D7B",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r077_card_13_angle_180",
+      "Prefix": "r077",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r077_card_13_angle_180.rgb.mem",
+        "SHA256": "E02164E88C51C9B507A0D69EF28DF610D7379CFAD6A005FC89A5662A9C8AC9AE",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r077.rgb.mem",
+        "SHA256": "E02164E88C51C9B507A0D69EF28DF610D7379CFAD6A005FC89A5662A9C8AC9AE",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r078_card_13_angle_270",
+      "Prefix": "r078",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r078_card_13_angle_270.rgb.mem",
+        "SHA256": "A17D154C1F5B524A8929D9A33BB9595308BF8A8E229AB4448C7E3F4DD3CFAA86",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r078.rgb.mem",
+        "SHA256": "A17D154C1F5B524A8929D9A33BB9595308BF8A8E229AB4448C7E3F4DD3CFAA86",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r079_card_13_angle_2p5",
+      "Prefix": "r079",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r079_card_13_angle_2p5.rgb.mem",
+        "SHA256": "48EB3F69F69A66FEF55934AF23BE7950C2B7C7B9E7F9B7BB78970FE71AAD4370",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r079.rgb.mem",
+        "SHA256": "48EB3F69F69A66FEF55934AF23BE7950C2B7C7B9E7F9B7BB78970FE71AAD4370",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r080_card_13_angle_87p5",
+      "Prefix": "r080",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r080_card_13_angle_87p5.rgb.mem",
+        "SHA256": "CEF50D45F827A154EA08330F92AE9B2D22B073E5B9EF9FC5881C73F95EB13E0C",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r080.rgb.mem",
+        "SHA256": "CEF50D45F827A154EA08330F92AE9B2D22B073E5B9EF9FC5881C73F95EB13E0C",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r081_card_13_angle_177p5",
+      "Prefix": "r081",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r081_card_13_angle_177p5.rgb.mem",
+        "SHA256": "98280C85F0E9C69ECE6B4FEB3C40F7AE84BE7DA631716AE9C61F3D2B72CEADE5",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r081.rgb.mem",
+        "SHA256": "98280C85F0E9C69ECE6B4FEB3C40F7AE84BE7DA631716AE9C61F3D2B72CEADE5",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r082_card_13_angle_267p5",
+      "Prefix": "r082",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r082_card_13_angle_267p5.rgb.mem",
+        "SHA256": "FAC0051C55BB32F4105B32EE5768C841754D04A37D557E47176F44DD116498E7",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r082.rgb.mem",
+        "SHA256": "FAC0051C55BB32F4105B32EE5768C841754D04A37D557E47176F44DD116498E7",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r083_card_13_size_53_angle_17p5",
+      "Prefix": "r083",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r083_card_13_size_53_angle_17p5.png",
+        "SHA256": "CAABE516876C560C7737E632DFA4D9EE48FC96A7C7D2A2D4E9B20C1233F2B767",
+        "Bytes": 2918
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r083.rgb.mem",
+        "SHA256": "2BE3ED1F597FA72C792505EC5F94C236A5334DB799D43E57F4F58B6EE06FCE88",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r084_card_13_size_53_angle_62p5",
+      "Prefix": "r084",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r084_card_13_size_53_angle_62p5.png",
+        "SHA256": "2ED083309DCDB9F3B36FDD4BB6B6186F0130A7C2F2147C6FD3D2CC3E92EB7793",
+        "Bytes": 2973
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r084.rgb.mem",
+        "SHA256": "DE74FEEC6EF9A1FCD65661927EC29BE7A760C459D3F78ED5404AE982A6B0D119",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r085_card_13_size_53_angle_152p5",
+      "Prefix": "r085",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r085_card_13_size_53_angle_152p5.png",
+        "SHA256": "76FE7249259E6845B4AE97CF2902765FA18E6A24C0480B1F46E5768377DF33FB",
+        "Bytes": 2971
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r085.rgb.mem",
+        "SHA256": "55296830EAF8CC3305C2E331AFAFF2127A02412F74D6321FE14CC88D0F163A92",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r086_card_13_size_53_angle_242p5",
+      "Prefix": "r086",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r086_card_13_size_53_angle_242p5.png",
+        "SHA256": "C621412842C0D1F771085F5864CE608EBF8DDD9C5A9B5BD024883BBC10BE842B",
+        "Bytes": 2977
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r086.rgb.mem",
+        "SHA256": "1110103CFF2733478966EBFBCD23310CB2979CA2B2A4BA254B7AA6F4FE8C4F70",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r087_card_13_size_53_angle_332p5",
+      "Prefix": "r087",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r087_card_13_size_53_angle_332p5.png",
+        "SHA256": "7A99591659BCB1E40EFCEC030FC803972F6428909DB94A0CE012DA0AD862836B",
+        "Bytes": 2976
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r087.rgb.mem",
+        "SHA256": "20484F79CD0BBE6C8E1616B0D40962C1F46DCDD2C72A74A23BA4918F11EBF60A",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r088_card_13_size_69_angle_17p5",
+      "Prefix": "r088",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r088_card_13_size_69_angle_17p5.png",
+        "SHA256": "31814902EC0F3ECA65EC64F1211660B6F35835AE1DB702E4D9B72B0671ED3146",
+        "Bytes": 3762
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r088.rgb.mem",
+        "SHA256": "90DB92300AC0C1D6EBED0BDCE1E0DA23648CB32211BA5CE86403CEFFD093932F",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r089_card_13_size_69_angle_62p5",
+      "Prefix": "r089",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r089_card_13_size_69_angle_62p5.png",
+        "SHA256": "E347110189F52096F01992628F38689BF4CBD1F6CD584C5DAA8C89FB7AEB470A",
+        "Bytes": 3827
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r089.rgb.mem",
+        "SHA256": "6B3F629984430E49D73FABBDF9763327F482CC5A2F3534BE18A5B99CD8BAFEF4",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r090_card_13_size_69_angle_152p5",
+      "Prefix": "r090",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r090_card_13_size_69_angle_152p5.png",
+        "SHA256": "98E9CF800E56941BFD8AA33BE09355308624E31E8819CD00A8E66AEA1BF6708A",
+        "Bytes": 3900
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r090.rgb.mem",
+        "SHA256": "45979EF335A10B215EFCB364239A77E131FB2D9138C48670F391C322D3743016",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r091_card_13_size_69_angle_242p5",
+      "Prefix": "r091",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r091_card_13_size_69_angle_242p5.png",
+        "SHA256": "16C3BA1EFD990A953DC5AC96E8F2B57C7DE84EA2BC9BEECC7B38D49F4567E154",
+        "Bytes": 3901
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r091.rgb.mem",
+        "SHA256": "0DAAB4135E8FDA1CD4274CC3EFCF93EEAFCC1B5B18D065E9BCD5F68E2DD73C07",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r092_card_13_size_69_angle_332p5",
+      "Prefix": "r092",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r092_card_13_size_69_angle_332p5.png",
+        "SHA256": "F866D83043885E37C554CFE1D67FB322A9FCC5AEF57D924134A3524713E1222E",
+        "Bytes": 3859
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r092.rgb.mem",
+        "SHA256": "E72FA9466A27D162FC77346EB6A3CF0B63374BCE3E93FF2ECA53A3F5A8C86660",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r093_card_13_size_77_angle_17p5",
+      "Prefix": "r093",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r093_card_13_size_77_angle_17p5.png",
+        "SHA256": "2E637AA631743772419114B871C4DAA30555FABED384317E239E1A4F0CD38A5D",
+        "Bytes": 4209
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r093.rgb.mem",
+        "SHA256": "9052451DAE9916DB63200637853253966CBE11657D6BFE280D7DC10D8F2D42EE",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r094_card_13_size_77_angle_62p5",
+      "Prefix": "r094",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r094_card_13_size_77_angle_62p5.png",
+        "SHA256": "9389109E1865209CA115E147066DB7F11C1BE465C6C583F9F2ACE2749DC61532",
+        "Bytes": 4249
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r094.rgb.mem",
+        "SHA256": "A360CCC4BA5E67BC8996DF72ACF1375168B236D66529E31A528FA6C431D69BDA",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r095_card_13_size_77_angle_152p5",
+      "Prefix": "r095",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r095_card_13_size_77_angle_152p5.png",
+        "SHA256": "9B0DACD158CD557F75029E9A69862B8E91E5AFB15E58A16D8F8A58FB6B9D9BE4",
+        "Bytes": 4313
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r095.rgb.mem",
+        "SHA256": "38320264D72B120CA97DC324B98497619B1B23426AA384E9D3A8721A758E2464",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r096_card_13_size_77_angle_242p5",
+      "Prefix": "r096",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r096_card_13_size_77_angle_242p5.png",
+        "SHA256": "90B4619021B5FBA2BEF2329CFDC06C82D574757AF1E3527C2E1E31716838B1C8",
+        "Bytes": 4304
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r096.rgb.mem",
+        "SHA256": "CB60217DC4D2569FE7E27D9402EE546136107024AC76FD75313642E5661A8155",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r097_card_13_size_77_angle_332p5",
+      "Prefix": "r097",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r097_card_13_size_77_angle_332p5.png",
+        "SHA256": "262D1D237792A5C3F1020874C4B19D527F9C2CD13647E9FAD34A18E2EBE9BB93",
+        "Bytes": 4331
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r097.rgb.mem",
+        "SHA256": "3145D446D5E0F57334C317B2B8D83D16B0DC6AB244696852EABBA0A1E0622722",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r098_card_13_soft_paper_edge",
+      "Prefix": "r098",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r098_card_13_soft_paper_edge.png",
+        "SHA256": "FE0F7031C87D3846C49FB83D32060830219FA3FFB53B6C0B078C969D7D90C44E",
+        "Bytes": 4217
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r098.rgb.mem",
+        "SHA256": "65293AA8107E557A86083294398134D0D85691DC1C8742CFF83F7BD56DCEDB0B",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r099_card_14_angle_0",
+      "Prefix": "r099",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r099_card_14_angle_0.rgb.mem",
+        "SHA256": "18BDD50F8CC0E24899EB0EA6384F532DB99F2773B3B7546285912F5751F9D574",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r099.rgb.mem",
+        "SHA256": "18BDD50F8CC0E24899EB0EA6384F532DB99F2773B3B7546285912F5751F9D574",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r100_card_14_angle_90",
+      "Prefix": "r100",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r100_card_14_angle_90.rgb.mem",
+        "SHA256": "AD0EE07367990BDB10FF8281E65F72EC6F459E640E4D6BAE059681D644559EF2",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r100.rgb.mem",
+        "SHA256": "AD0EE07367990BDB10FF8281E65F72EC6F459E640E4D6BAE059681D644559EF2",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r101_card_14_angle_180",
+      "Prefix": "r101",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r101_card_14_angle_180.rgb.mem",
+        "SHA256": "964DD173A3D6DE9664CA83CF3605824EC9E632B3ADDD5CA36B973DF505B7D3DB",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r101.rgb.mem",
+        "SHA256": "964DD173A3D6DE9664CA83CF3605824EC9E632B3ADDD5CA36B973DF505B7D3DB",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r102_card_14_angle_270",
+      "Prefix": "r102",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r102_card_14_angle_270.rgb.mem",
+        "SHA256": "E067CB1A33DD73451243CE6DE233FE7459FE7CB2949CEDFBAD0A72155673B17E",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r102.rgb.mem",
+        "SHA256": "E067CB1A33DD73451243CE6DE233FE7459FE7CB2949CEDFBAD0A72155673B17E",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r103_card_14_angle_2p5",
+      "Prefix": "r103",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r103_card_14_angle_2p5.rgb.mem",
+        "SHA256": "9E7243B303774C86D78D79CF0D2AE3E62444C4A041129E69BA4676C045EE64B4",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r103.rgb.mem",
+        "SHA256": "9E7243B303774C86D78D79CF0D2AE3E62444C4A041129E69BA4676C045EE64B4",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r104_card_14_angle_87p5",
+      "Prefix": "r104",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r104_card_14_angle_87p5.rgb.mem",
+        "SHA256": "E1D74927C7B8CA42C8336AD61EFB822FFDE7D632ED9075B6CDD6C5915EF51D4B",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r104.rgb.mem",
+        "SHA256": "E1D74927C7B8CA42C8336AD61EFB822FFDE7D632ED9075B6CDD6C5915EF51D4B",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r105_card_14_angle_177p5",
+      "Prefix": "r105",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r105_card_14_angle_177p5.rgb.mem",
+        "SHA256": "7E1731BFF9ECEE3DE452589E68F844F2E3E3EA532AC060DA14EB7076273FC2E4",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r105.rgb.mem",
+        "SHA256": "7E1731BFF9ECEE3DE452589E68F844F2E3E3EA532AC060DA14EB7076273FC2E4",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r106_card_14_angle_267p5",
+      "Prefix": "r106",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r106_card_14_angle_267p5.rgb.mem",
+        "SHA256": "ED25BB5813FE000E3265CA42B34A007EC9155E078F3E6653D8BE4C4C8DFFA8EE",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r106.rgb.mem",
+        "SHA256": "ED25BB5813FE000E3265CA42B34A007EC9155E078F3E6653D8BE4C4C8DFFA8EE",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r107_card_14_size_53_angle_17p5",
+      "Prefix": "r107",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r107_card_14_size_53_angle_17p5.png",
+        "SHA256": "96CF4FC630AA4A35EAE7C5562D25EA60BC3FF645191DAF4BA583FF0E4479CBE7",
+        "Bytes": 3300
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r107.rgb.mem",
+        "SHA256": "7468349AA479BA98BF43710982747D026F30EC6659E015062DDE61CCB97A2BE2",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r108_card_14_size_53_angle_62p5",
+      "Prefix": "r108",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r108_card_14_size_53_angle_62p5.png",
+        "SHA256": "E3DA8FA8767C3506B48AB0369CC3BA5E2761A7FFEC5988B2842F27A454B30ACC",
+        "Bytes": 3409
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r108.rgb.mem",
+        "SHA256": "8BEC447D07E55212892A325E0A0C7F40E7AEB6FCAA2F69C38268F635BF87D420",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r109_card_14_size_53_angle_152p5",
+      "Prefix": "r109",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r109_card_14_size_53_angle_152p5.png",
+        "SHA256": "40024380A12D63368128227AC8E4C6CF1A4781D28E669DE2DD3073E6B024A668",
+        "Bytes": 3357
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r109.rgb.mem",
+        "SHA256": "51596C9C9D658F598488E6D0721AB7AD27B8ACC18AF9A0AF1E4020DF46D7D22E",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r110_card_14_size_53_angle_242p5",
+      "Prefix": "r110",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r110_card_14_size_53_angle_242p5.png",
+        "SHA256": "55DD01C8368383D6CB4AFB061A953739248B02AD4123BC06E3B85CBBB5C3CD77",
+        "Bytes": 3402
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r110.rgb.mem",
+        "SHA256": "AA260A70156EC4BB6BCFC91DC728A944A9102F2D61C9601E3AF6C04599CF094E",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r111_card_14_size_53_angle_332p5",
+      "Prefix": "r111",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r111_card_14_size_53_angle_332p5.png",
+        "SHA256": "E2AE36CA96289503BED003B2C1C7898714D10CA19E7630F4F18A7342B89B5277",
+        "Bytes": 3377
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r111.rgb.mem",
+        "SHA256": "0EBB1D358AA5AA61B5F103B46245578FA7020E590B0B243E49493B1AE9A13220",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r112_card_14_size_69_angle_17p5",
+      "Prefix": "r112",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r112_card_14_size_69_angle_17p5.png",
+        "SHA256": "D9B33B0B2C00866AF328A6616A4B9D6D65A0D00665E261EF085F4471DE291B5B",
+        "Bytes": 4426
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r112.rgb.mem",
+        "SHA256": "7952C98A5D766EE5D065F34B582D1B93764E613675F319E13320D112B0FE0071",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r113_card_14_size_69_angle_62p5",
+      "Prefix": "r113",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r113_card_14_size_69_angle_62p5.png",
+        "SHA256": "F475EE01E5438F40C1EE665C98A7509A412DAE43B380C46773491E23B4D0649C",
+        "Bytes": 4557
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r113.rgb.mem",
+        "SHA256": "FE3E84813DC98B06D0BD893BDC1F9BCF05E0287D2014984344C2512B80FE7972",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r114_card_14_size_69_angle_152p5",
+      "Prefix": "r114",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r114_card_14_size_69_angle_152p5.png",
+        "SHA256": "965139BAB282BB5EB66DFC1818DB9D7CF1212BD5523B328F13A17DF81C24C96A",
+        "Bytes": 4530
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r114.rgb.mem",
+        "SHA256": "CD1716FCE40580733F39CB5A141A63C58FEFE85731E143C9FB17519739FF4D40",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r115_card_14_size_69_angle_242p5",
+      "Prefix": "r115",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r115_card_14_size_69_angle_242p5.png",
+        "SHA256": "DBE074C2C06950FBDE9947357F3B9A05200FBAA07D5AA95E2CC5EFD7C70B45C9",
+        "Bytes": 4526
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r115.rgb.mem",
+        "SHA256": "2AB02F7EBB1A982FA0644BB3716D650AA6303211125C4D70601A2660C3A3EC4D",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r116_card_14_size_69_angle_332p5",
+      "Prefix": "r116",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r116_card_14_size_69_angle_332p5.png",
+        "SHA256": "A5D44A77449FCDB61D3E18B815B1D5D95CEEC9282271125CD3BDFE40C4B883D5",
+        "Bytes": 4521
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r116.rgb.mem",
+        "SHA256": "E973BB37BB3C2D7160C56D11128689D0242B6278C251F320E72745BBFB472279",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r117_card_14_size_77_angle_17p5",
+      "Prefix": "r117",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r117_card_14_size_77_angle_17p5.png",
+        "SHA256": "75C9D345549C3101E1A4145590072BA0A6655958CE63F9F73DA9358EDF476B56",
+        "Bytes": 5017
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r117.rgb.mem",
+        "SHA256": "5BD71F8877BF9D290CE2411D3FA3A6CCDC157C4DA11E07063A64DC64341838E2",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r118_card_14_size_77_angle_62p5",
+      "Prefix": "r118",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r118_card_14_size_77_angle_62p5.png",
+        "SHA256": "4D97C2AF623A6512016FC5935D276B9A00483AA80A486C0AF6D92439B5329741",
+        "Bytes": 5128
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r118.rgb.mem",
+        "SHA256": "31B0221C3CF8CCACBD6C39E5385B36C458022FF4EAA79D84F5B4E336DD0A604F",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r119_card_14_size_77_angle_152p5",
+      "Prefix": "r119",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r119_card_14_size_77_angle_152p5.png",
+        "SHA256": "187E6190100AB8C55F6381DAD6CA33800C3D6B8AEC259319064E23305DD66260",
+        "Bytes": 5019
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r119.rgb.mem",
+        "SHA256": "D03ABED940674AD08948FD32ED4C0A1F6BEB8E7287EBD058EA314AA09D757215",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r120_card_14_size_77_angle_242p5",
+      "Prefix": "r120",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r120_card_14_size_77_angle_242p5.png",
+        "SHA256": "76E433784EA1A98D99FB4907711D5DD6100F6A85A74F87B88D7B5D84641F9D36",
+        "Bytes": 5091
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r120.rgb.mem",
+        "SHA256": "14A2A8507BE77D673AE1042D23527845616578C289B39E1F3BFDD93FF5554AC4",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r121_card_14_size_77_angle_332p5",
+      "Prefix": "r121",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r121_card_14_size_77_angle_332p5.png",
+        "SHA256": "367B13609A4AB830FF132544BE1D161B8E7BADB7BEE1AB6F29D920CBF50303F0",
+        "Bytes": 5057
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r121.rgb.mem",
+        "SHA256": "8216FA5D241BCE0B0DB1B2345A1D7CE8E6016BC7259BAE506467F11F9E8BE946",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r122_card_14_soft_paper_edge",
+      "Prefix": "r122",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r122_card_14_soft_paper_edge.png",
+        "SHA256": "7FDC20D0948676314BD207A98941C022F336441E622E4B5C4F5553818BF6E424",
+        "Bytes": 4972
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r122.rgb.mem",
+        "SHA256": "2620A4A76F890499383406EAA8392E515899491B1CAF0614FA100C064E119124",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r123_legacy_008_empty_dark_soft_shadow",
+      "Prefix": "r123",
+      "TruthItem": 0,
+      "ExpectedContractItem": 0,
+      "Present": false,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r123_legacy_008_empty_dark_soft_shadow.rgb.mem",
+        "SHA256": "6B6E1E0DFF9B5B8CC3396305472E0540CF0887A4114231EF966754FE62427BB2",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r123.rgb.mem",
+        "SHA256": "6B6E1E0DFF9B5B8CC3396305472E0540CF0887A4114231EF966754FE62427BB2",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r124_legacy_013_empty_wood_noise",
+      "Prefix": "r124",
+      "TruthItem": 0,
+      "ExpectedContractItem": 0,
+      "Present": false,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r124_legacy_013_empty_wood_noise.rgb.mem",
+        "SHA256": "179D384A369F261D4D0233970FA54FAEE4C2382A113F44CD4F2B7CC66C5DE447",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r124.rgb.mem",
+        "SHA256": "179D384A369F261D4D0233970FA54FAEE4C2382A113F44CD4F2B7CC66C5DE447",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r125_legacy_122_card_10_cut_right",
+      "Prefix": "r125",
+      "TruthItem": 0,
+      "ExpectedContractItem": 0,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r125_legacy_122_card_10_cut_right.rgb.mem",
+        "SHA256": "BC11CF69EC3B9701B24F6725C463C9BEBD7E305E946D2C0B9389907CEAC0486F",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r125.rgb.mem",
+        "SHA256": "BC11CF69EC3B9701B24F6725C463C9BEBD7E305E946D2C0B9389907CEAC0486F",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r126_legacy_596_block_red_circle_white_36",
+      "Prefix": "r126",
+      "TruthItem": 1,
+      "ExpectedContractItem": 1,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r126_legacy_596_block_red_circle_white_36.rgb.mem",
+        "SHA256": "A865ED06EEC17BB7A669B0B048CCAB9A2293D6157A9FF8225D486EAAAC70EF0B",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r126.rgb.mem",
+        "SHA256": "A865ED06EEC17BB7A669B0B048CCAB9A2293D6157A9FF8225D486EAAAC70EF0B",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r127_legacy_608_block_red_square_dark_36",
+      "Prefix": "r127",
+      "TruthItem": 2,
+      "ExpectedContractItem": 2,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r127_legacy_608_block_red_square_dark_36.rgb.mem",
+        "SHA256": "BBE2B13DFD1A8382A8D3AC3A41682AC5F73C7507BA25DF21A46E2F033CD971B2",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r127.rgb.mem",
+        "SHA256": "BBE2B13DFD1A8382A8D3AC3A41682AC5F73C7507BA25DF21A46E2F033CD971B2",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r128_legacy_620_block_red_triangle_wood_36",
+      "Prefix": "r128",
+      "TruthItem": 3,
+      "ExpectedContractItem": 3,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r128_legacy_620_block_red_triangle_wood_36.rgb.mem",
+        "SHA256": "D91DF85ACFF911FB986C63F3AFA91EE4AFA9EE0631923273BA87BFDDC391258E",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r128.rgb.mem",
+        "SHA256": "D91DF85ACFF911FB986C63F3AFA91EE4AFA9EE0631923273BA87BFDDC391258E",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r129_legacy_624_block_yellow_circle_white_52",
+      "Prefix": "r129",
+      "TruthItem": 4,
+      "ExpectedContractItem": 1,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r129_legacy_624_block_yellow_circle_white_52.rgb.mem",
+        "SHA256": "374313B186838A5845614B29C9F788099B74BCC0D343CF59D948AB189B72B9B5",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r129.rgb.mem",
+        "SHA256": "374313B186838A5845614B29C9F788099B74BCC0D343CF59D948AB189B72B9B5",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r130_legacy_636_block_yellow_square_dark_52",
+      "Prefix": "r130",
+      "TruthItem": 5,
+      "ExpectedContractItem": 2,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r130_legacy_636_block_yellow_square_dark_52.rgb.mem",
+        "SHA256": "3D9E020607F0D57FF543A59F5879A082222DC8ABEC066519E599BBDCE6D5D704",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r130.rgb.mem",
+        "SHA256": "3D9E020607F0D57FF543A59F5879A082222DC8ABEC066519E599BBDCE6D5D704",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r131_legacy_648_block_yellow_triangle_wood_52",
+      "Prefix": "r131",
+      "TruthItem": 6,
+      "ExpectedContractItem": 3,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r131_legacy_648_block_yellow_triangle_wood_52.rgb.mem",
+        "SHA256": "573EC895F13949A3D9BDA6A48608505F5AC5D4BAA8891E1A0892325797907AE8",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r131.rgb.mem",
+        "SHA256": "573EC895F13949A3D9BDA6A48608505F5AC5D4BAA8891E1A0892325797907AE8",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r132_legacy_652_block_blue_circle_white_68",
+      "Prefix": "r132",
+      "TruthItem": 7,
+      "ExpectedContractItem": 7,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r132_legacy_652_block_blue_circle_white_68.rgb.mem",
+        "SHA256": "7405F95A8780898903365ED58CAF010B8846D338AD59D2D9AC25C2CC19742176",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r132.rgb.mem",
+        "SHA256": "7405F95A8780898903365ED58CAF010B8846D338AD59D2D9AC25C2CC19742176",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r133_legacy_664_block_blue_square_dark_68",
+      "Prefix": "r133",
+      "TruthItem": 8,
+      "ExpectedContractItem": 8,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r133_legacy_664_block_blue_square_dark_68.rgb.mem",
+        "SHA256": "12FBF98505AB47BA5792A51689AEBC0CCF46E1A752CD50847843E10FCD76C2D5",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r133.rgb.mem",
+        "SHA256": "12FBF98505AB47BA5792A51689AEBC0CCF46E1A752CD50847843E10FCD76C2D5",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r134_legacy_676_block_blue_triangle_wood_68",
+      "Prefix": "r134",
+      "TruthItem": 9,
+      "ExpectedContractItem": 9,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r134_legacy_676_block_blue_triangle_wood_68.rgb.mem",
+        "SHA256": "D0034D436DF0C8A82540CB38FD0EDFABF6BE842358AC0E0098CF9B5D3913537C",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r134.rgb.mem",
+        "SHA256": "D0034D436DF0C8A82540CB38FD0EDFABF6BE842358AC0E0098CF9B5D3913537C",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r135_legacy_686_unknown_ring_white",
+      "Prefix": "r135",
+      "TruthItem": 0,
+      "ExpectedContractItem": 0,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r135_legacy_686_unknown_ring_white.rgb.mem",
+        "SHA256": "179E6AED2CC3092BC1B09D9F42F2CA4DED8D9D9FAD8400A7A5FB1093F28F1C85",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r135.rgb.mem",
+        "SHA256": "179E6AED2CC3092BC1B09D9F42F2CA4DED8D9D9FAD8400A7A5FB1093F28F1C85",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r136_legacy_696_unknown_checker_dark",
+      "Prefix": "r136",
+      "TruthItem": 0,
+      "ExpectedContractItem": 0,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r136_legacy_696_unknown_checker_dark.rgb.mem",
+        "SHA256": "52ED173FC1B61D5CC55E915E0C4057F491FD60035F562BD9C5C512EE160AF20C",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r136.rgb.mem",
+        "SHA256": "52ED173FC1B61D5CC55E915E0C4057F491FD60035F562BD9C5C512EE160AF20C",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r137_legacy_704_different_apple_outline",
+      "Prefix": "r137",
+      "TruthItem": 0,
+      "ExpectedContractItem": 0,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r137_legacy_704_different_apple_outline.rgb.mem",
+        "SHA256": "701001E0932EE95E8F1D2DD01E98D921E81C108FE563D939DB5DB40FF6F7B4FF",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r137.rgb.mem",
+        "SHA256": "701001E0932EE95E8F1D2DD01E98D921E81C108FE563D939DB5DB40FF6F7B4FF",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r138_legacy_705_different_apple_striped",
+      "Prefix": "r138",
+      "TruthItem": 0,
+      "ExpectedContractItem": 0,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r138_legacy_705_different_apple_striped.rgb.mem",
+        "SHA256": "98E817766950D4A2F91A910212BB22B83D37F7D5A59C022F4DA00A0E8887D317",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r138.rgb.mem",
+        "SHA256": "98E817766950D4A2F91A910212BB22B83D37F7D5A59C022F4DA00A0E8887D317",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r139_legacy_706_outside_roi_interference",
+      "Prefix": "r139",
+      "TruthItem": 0,
+      "ExpectedContractItem": 0,
+      "Present": false,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r139_legacy_706_outside_roi_interference.rgb.mem",
+        "SHA256": "B955BA231B077A073EA4738E70E9CAFE44E21DAAB37D88CB3EFDCC7E0170299B",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r139.rgb.mem",
+        "SHA256": "B955BA231B077A073EA4738E70E9CAFE44E21DAAB37D88CB3EFDCC7E0170299B",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r140_legacy_707_block_touching_left",
+      "Prefix": "r140",
+      "TruthItem": 0,
+      "ExpectedContractItem": 0,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r140_legacy_707_block_touching_left.rgb.mem",
+        "SHA256": "ECCE7ABF8E69BF22185909B3793AFBD6BA1B60FE5E39CD28BE33404E029C4189",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r140.rgb.mem",
+        "SHA256": "ECCE7ABF8E69BF22185909B3793AFBD6BA1B60FE5E39CD28BE33404E029C4189",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r141_legacy_711_unqualified_border_red_blue",
+      "Prefix": "r141",
+      "TruthItem": 0,
+      "ExpectedContractItem": 0,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r141_legacy_711_unqualified_border_red_blue.rgb.mem",
+        "SHA256": "0DF79469D1531D2FF195CD4DC195A5649A581251991EC3F444BD9C5C99C54CC4",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r141.rgb.mem",
+        "SHA256": "0DF79469D1531D2FF195CD4DC195A5649A581251991EC3F444BD9C5C99C54CC4",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r142_legacy_712_unqualified_border_light_dark",
+      "Prefix": "r142",
+      "TruthItem": 0,
+      "ExpectedContractItem": 0,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r142_legacy_712_unqualified_border_light_dark.rgb.mem",
+        "SHA256": "EFAB62A3837B2752FA7644DC3F268DBBE56E4E318A8DCCB2DD397A5E9BB3478D",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r142.rgb.mem",
+        "SHA256": "EFAB62A3837B2752FA7644DC3F268DBBE56E4E318A8DCCB2DD397A5E9BB3478D",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r143_card_10_gain65_before",
+      "Prefix": "r143",
+      "TruthItem": 10,
+      "ExpectedContractItem": 0,
+      "Present": true,
+      "KnownMiss": true,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r143_card_10_gain65_before.png",
+        "SHA256": "EC3B9BEC848AD7C6820292B45F027E72B0765662B978D3E3710DB3B545D2EB80",
+        "Bytes": 3328
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r143.rgb.mem",
+        "SHA256": "D32177D396F13FB4C873E24CC8540F00B08C8AB89898A7BC1B6CC0B07D738408",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r144_card_10_gain65_after",
+      "Prefix": "r144",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r144_card_10_gain65_after.rgb.mem",
+        "SHA256": "C9B9D9B17DDBA61048D312FC03210B1BC59537483581BDBEF39C576590DCFEC6",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r144.rgb.mem",
+        "SHA256": "C9B9D9B17DDBA61048D312FC03210B1BC59537483581BDBEF39C576590DCFEC6",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r145_card_11_gain65_before",
+      "Prefix": "r145",
+      "TruthItem": 11,
+      "ExpectedContractItem": 0,
+      "Present": true,
+      "KnownMiss": true,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r145_card_11_gain65_before.png",
+        "SHA256": "9F33FF4D2C6F9DAC9456532F361C16514A9C69B1D7CF7D6F55306941E3D92679",
+        "Bytes": 3904
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r145.rgb.mem",
+        "SHA256": "9A8E96C6B24BE048F01A057B581CFE09B84FBAA2CF41792DBC9EFBCAD964F624",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r146_card_11_gain65_after",
+      "Prefix": "r146",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r146_card_11_gain65_after.rgb.mem",
+        "SHA256": "19EEC1A3277F81B51731367B17E0C4CDA67B332C4427291D0610FF975E94D82B",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r146.rgb.mem",
+        "SHA256": "19EEC1A3277F81B51731367B17E0C4CDA67B332C4427291D0610FF975E94D82B",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r147_card_12_gain65_before",
+      "Prefix": "r147",
+      "TruthItem": 12,
+      "ExpectedContractItem": 0,
+      "Present": true,
+      "KnownMiss": true,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r147_card_12_gain65_before.png",
+        "SHA256": "BE384E1E6082FD1BCB726BF65588960D01ACCEEC309D703DC408207DC84DE6CB",
+        "Bytes": 3619
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r147.rgb.mem",
+        "SHA256": "698289D3BA1B47C6A133EB5144E6A2BD8045F271914340806717C5D61A312050",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r148_card_12_gain65_after",
+      "Prefix": "r148",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r148_card_12_gain65_after.rgb.mem",
+        "SHA256": "1A8DB94E9C708BE184C0AFBBB1A1DBB7AE1DBEC4041B2075CD62D767386DF0F3",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r148.rgb.mem",
+        "SHA256": "1A8DB94E9C708BE184C0AFBBB1A1DBB7AE1DBEC4041B2075CD62D767386DF0F3",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r149_card_13_gain65_before",
+      "Prefix": "r149",
+      "TruthItem": 13,
+      "ExpectedContractItem": 0,
+      "Present": true,
+      "KnownMiss": true,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r149_card_13_gain65_before.png",
+        "SHA256": "001BF0ABCAB0FD6E7ADC884CBCA86909E102E1498C97D6D51FBE7F664F88DC72",
+        "Bytes": 3142
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r149.rgb.mem",
+        "SHA256": "5167125AF531D3AC5FDB9245C9EB7BBECB3808EB6BC29CB216749C18700E7A8E",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r150_card_13_gain65_after",
+      "Prefix": "r150",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r150_card_13_gain65_after.rgb.mem",
+        "SHA256": "989E32F736C793E97DB1F8531E067E0BC3F97EF19E6733AE963F4070AA33AC2E",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r150.rgb.mem",
+        "SHA256": "989E32F736C793E97DB1F8531E067E0BC3F97EF19E6733AE963F4070AA33AC2E",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r151_card_14_gain65_before",
+      "Prefix": "r151",
+      "TruthItem": 14,
+      "ExpectedContractItem": 0,
+      "Present": true,
+      "KnownMiss": true,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r151_card_14_gain65_before.png",
+        "SHA256": "2C68C999D1627632B1DA906F2999B001B36ABB3C224ECC999B26D665AB08DABF",
+        "Bytes": 3557
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r151.rgb.mem",
+        "SHA256": "4267CC65FBC6263998EC88785E35D33927D6709F0C2E36DE0629B2AE857DEE5B",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r152_card_14_gain65_after",
+      "Prefix": "r152",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r152_card_14_gain65_after.rgb.mem",
+        "SHA256": "647CEDF55B87C7BFEA3C4A2C224C638B85F5F483E38E0011AD9BC77B2D5F532A",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r152.rgb.mem",
+        "SHA256": "647CEDF55B87C7BFEA3C4A2C224C638B85F5F483E38E0011AD9BC77B2D5F532A",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r153_unknown_gray_circle",
+      "Prefix": "r153",
+      "TruthItem": 0,
+      "ExpectedContractItem": 0,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r153_unknown_gray_circle.rgb.mem",
+        "SHA256": "83B9680524C84A121100633C31339038921CFDF0A47F89EBBB6CFE03F26FFF32",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r153.rgb.mem",
+        "SHA256": "83B9680524C84A121100633C31339038921CFDF0A47F89EBBB6CFE03F26FFF32",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r154_refusal_10_67_67p5_10",
+      "Prefix": "r154",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r154_refusal_10_67_67p5_10.rgb.mem",
+        "SHA256": "9B097EAC106E86C51735B49EF1EA69B456151183A585AC067069BA038DAA9550",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r154.rgb.mem",
+        "SHA256": "9B097EAC106E86C51735B49EF1EA69B456151183A585AC067069BA038DAA9550",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r155_refusal_10_67_157p5_01",
+      "Prefix": "r155",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r155_refusal_10_67_157p5_01.rgb.mem",
+        "SHA256": "7EF4892CA750CCB2838681FB8688E5C31FEECB6E1DDC564EF1382E070826C62B",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r155.rgb.mem",
+        "SHA256": "7EF4892CA750CCB2838681FB8688E5C31FEECB6E1DDC564EF1382E070826C62B",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r156_refusal_12_51_47p5_10",
+      "Prefix": "r156",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r156_refusal_12_51_47p5_10.rgb.mem",
+        "SHA256": "7CD85F1DAC41023578A642DECFACBAE8C27735DD0775DF2F8A70BA2D08C37E80",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r156.rgb.mem",
+        "SHA256": "7CD85F1DAC41023578A642DECFACBAE8C27735DD0775DF2F8A70BA2D08C37E80",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r157_refusal_12_51_52p5_00",
+      "Prefix": "r157",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r157_refusal_12_51_52p5_00.rgb.mem",
+        "SHA256": "7A744F71A48BC58ADB37418EB0A55776E3B1CDEF965F8F3A7DA41E207E8E0090",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r157.rgb.mem",
+        "SHA256": "7A744F71A48BC58ADB37418EB0A55776E3B1CDEF965F8F3A7DA41E207E8E0090",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r158_refusal_12_51_57p5_11",
+      "Prefix": "r158",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r158_refusal_12_51_57p5_11.rgb.mem",
+        "SHA256": "1971A648AF14DA52D81DDA32AA640691E94AED32D24DD0F737EFD72287B00B3D",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r158.rgb.mem",
+        "SHA256": "1971A648AF14DA52D81DDA32AA640691E94AED32D24DD0F737EFD72287B00B3D",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r159_refusal_12_51_127p5_10",
+      "Prefix": "r159",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r159_refusal_12_51_127p5_10.rgb.mem",
+        "SHA256": "ABD286EE70533534A45C3E7051299E227149A0EBF6AA1E349BB322B7B5D21086",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r159.rgb.mem",
+        "SHA256": "ABD286EE70533534A45C3E7051299E227149A0EBF6AA1E349BB322B7B5D21086",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r160_refusal_12_51_137p5_01",
+      "Prefix": "r160",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r160_refusal_12_51_137p5_01.rgb.mem",
+        "SHA256": "8EFF5AE23CCD5768F908444EF94DDD0753137D06B5E58F2816D31B8C349CDE4C",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r160.rgb.mem",
+        "SHA256": "8EFF5AE23CCD5768F908444EF94DDD0753137D06B5E58F2816D31B8C349CDE4C",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r161_refusal_12_51_142p5_00",
+      "Prefix": "r161",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r161_refusal_12_51_142p5_00.rgb.mem",
+        "SHA256": "E69CDE4434B734FEE410C778DED545D7ADA0ED607DBAE5266095B3EC4A93CE9F",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r161.rgb.mem",
+        "SHA256": "E69CDE4434B734FEE410C778DED545D7ADA0ED607DBAE5266095B3EC4A93CE9F",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r162_refusal_12_51_147p5_11",
+      "Prefix": "r162",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r162_refusal_12_51_147p5_11.rgb.mem",
+        "SHA256": "FD93D3EACBF36B4976A5076F96D68F6E6BAF605ACCAD3D511B74A2E7373F395C",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r162.rgb.mem",
+        "SHA256": "FD93D3EACBF36B4976A5076F96D68F6E6BAF605ACCAD3D511B74A2E7373F395C",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r163_refusal_12_51_207p5_10",
+      "Prefix": "r163",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r163_refusal_12_51_207p5_10.rgb.mem",
+        "SHA256": "735994A27D18975DFE4ABD922ED8BFF538EFA9330FE3295C4D61CF56CCCC6E83",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r163.rgb.mem",
+        "SHA256": "735994A27D18975DFE4ABD922ED8BFF538EFA9330FE3295C4D61CF56CCCC6E83",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r164_refusal_12_51_217p5_00",
+      "Prefix": "r164",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r164_refusal_12_51_217p5_00.rgb.mem",
+        "SHA256": "978396D8C063DB279621227E0F23D85D9255820A4DB1EDB4EF1418FD0C6FD41B",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r164.rgb.mem",
+        "SHA256": "978396D8C063DB279621227E0F23D85D9255820A4DB1EDB4EF1418FD0C6FD41B",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r165_refusal_12_51_227p5_10",
+      "Prefix": "r165",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r165_refusal_12_51_227p5_10.rgb.mem",
+        "SHA256": "E600F0953659B64B48CBF1A2572273FE39D4D885E33FC9C399B501CBDDB4A0BB",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r165.rgb.mem",
+        "SHA256": "E600F0953659B64B48CBF1A2572273FE39D4D885E33FC9C399B501CBDDB4A0BB",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r166_refusal_12_51_237p5_00",
+      "Prefix": "r166",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r166_refusal_12_51_237p5_00.rgb.mem",
+        "SHA256": "36FE76CE17C39C5FB00D85E0786D9CCBAADDD5E3DFB5FD9DCB3A12B8359AD7BB",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r166.rgb.mem",
+        "SHA256": "36FE76CE17C39C5FB00D85E0786D9CCBAADDD5E3DFB5FD9DCB3A12B8359AD7BB",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r167_refusal_12_51_292p5_00",
+      "Prefix": "r167",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r167_refusal_12_51_292p5_00.rgb.mem",
+        "SHA256": "961E1161EC55109DE17898CC3BB9303886AAF406EE3FBFCD44CD5A97BC7DE287",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r167.rgb.mem",
+        "SHA256": "961E1161EC55109DE17898CC3BB9303886AAF406EE3FBFCD44CD5A97BC7DE287",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r168_refusal_12_51_317p5_01",
+      "Prefix": "r168",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r168_refusal_12_51_317p5_01.rgb.mem",
+        "SHA256": "66F6C9B78E0CFB3D068D661D90A55F33FD0932FD375A5647B0C5A93BC69D0A5F",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r168.rgb.mem",
+        "SHA256": "66F6C9B78E0CFB3D068D661D90A55F33FD0932FD375A5647B0C5A93BC69D0A5F",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r169_refusal_12_67_132p5_10",
+      "Prefix": "r169",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r169_refusal_12_67_132p5_10.rgb.mem",
+        "SHA256": "D3D312250C8587C493B76548E061CB1AA776EC87EE9AFBAD4CDB28BDDA9CE804",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r169.rgb.mem",
+        "SHA256": "D3D312250C8587C493B76548E061CB1AA776EC87EE9AFBAD4CDB28BDDA9CE804",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r170_refusal_12_67_312p5_10",
+      "Prefix": "r170",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r170_refusal_12_67_312p5_10.rgb.mem",
+        "SHA256": "F762C58AED46D1542E83B1F1AACB085396A6D72136A98924ABD4BDA876E792B7",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r170.rgb.mem",
+        "SHA256": "F762C58AED46D1542E83B1F1AACB085396A6D72136A98924ABD4BDA876E792B7",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r171_refusal_14_51_27p5_11",
+      "Prefix": "r171",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r171_refusal_14_51_27p5_11.rgb.mem",
+        "SHA256": "5CF29FF2B9B63EF0649967EB732752BDBDDEC856B68DDAD6E59F63A2E9EF4E7D",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r171.rgb.mem",
+        "SHA256": "5CF29FF2B9B63EF0649967EB732752BDBDDEC856B68DDAD6E59F63A2E9EF4E7D",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r172_refusal_14_51_37p5_10",
+      "Prefix": "r172",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r172_refusal_14_51_37p5_10.rgb.mem",
+        "SHA256": "5F2A4A8F669BD70BFA51C74BFE6A716820D4DD8B4EF0DA3F00317DE27C841CA4",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r172.rgb.mem",
+        "SHA256": "5F2A4A8F669BD70BFA51C74BFE6A716820D4DD8B4EF0DA3F00317DE27C841CA4",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r173_refusal_14_51_117p5_11",
+      "Prefix": "r173",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r173_refusal_14_51_117p5_11.rgb.mem",
+        "SHA256": "D7A7CDEF50ACD690FE72CD903E187855906E15979D1EDB217569125DE7649859",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r173.rgb.mem",
+        "SHA256": "D7A7CDEF50ACD690FE72CD903E187855906E15979D1EDB217569125DE7649859",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r174_refusal_14_51_127p5_01",
+      "Prefix": "r174",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r174_refusal_14_51_127p5_01.rgb.mem",
+        "SHA256": "3652FEB47F84877A4A439108F11C84ECBDCC6D04610B01D7810726A205E89A31",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r174.rgb.mem",
+        "SHA256": "3652FEB47F84877A4A439108F11C84ECBDCC6D04610B01D7810726A205E89A31",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r175_refusal_14_51_207p5_11",
+      "Prefix": "r175",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r175_refusal_14_51_207p5_11.rgb.mem",
+        "SHA256": "AAFD4909F267CFD2BCD0C21EC98893351FA386B43B062CB0A6F371BDC1C5DD61",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r175.rgb.mem",
+        "SHA256": "AAFD4909F267CFD2BCD0C21EC98893351FA386B43B062CB0A6F371BDC1C5DD61",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r176_refusal_14_51_217p5_11",
+      "Prefix": "r176",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r176_refusal_14_51_217p5_11.rgb.mem",
+        "SHA256": "C3F7C9816820BC06E542388A966D378452EA7EB72120417C8C7164B45B1E5A9D",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r176.rgb.mem",
+        "SHA256": "C3F7C9816820BC06E542388A966D378452EA7EB72120417C8C7164B45B1E5A9D",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r177_refusal_14_51_297p5_11",
+      "Prefix": "r177",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r177_refusal_14_51_297p5_11.rgb.mem",
+        "SHA256": "05D855C708E2F0AC2CB3F9EA5DC73B106CB0C87A701AA040DACB0B4C1A6F3E57",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r177.rgb.mem",
+        "SHA256": "05D855C708E2F0AC2CB3F9EA5DC73B106CB0C87A701AA040DACB0B4C1A6F3E57",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r178_refusal_14_51_307p5_11",
+      "Prefix": "r178",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r178_refusal_14_51_307p5_11.rgb.mem",
+        "SHA256": "C349BB00E5A5DC009ED8F27A8BAA9996BF3692E8F34BB626B85C94F666C3AA9E",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r178.rgb.mem",
+        "SHA256": "C349BB00E5A5DC009ED8F27A8BAA9996BF3692E8F34BB626B85C94F666C3AA9E",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r179_refusal_14_51_322p5_10",
+      "Prefix": "r179",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r179_refusal_14_51_322p5_10.rgb.mem",
+        "SHA256": "0A898B96DEEC29255BDC81CEFD9547B2D2ABF3D31DD64E562E0731ACABE5E708",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r179.rgb.mem",
+        "SHA256": "0A898B96DEEC29255BDC81CEFD9547B2D2ABF3D31DD64E562E0731ACABE5E708",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r180_refusal_14_51_347p5_01",
+      "Prefix": "r180",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r180_refusal_14_51_347p5_01.rgb.mem",
+        "SHA256": "8DCFCE35C55CBBCAFAD220807E3EE890ECC65D49D1DA35A06731DE0EF378B96E",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r180.rgb.mem",
+        "SHA256": "8DCFCE35C55CBBCAFAD220807E3EE890ECC65D49D1DA35A06731DE0EF378B96E",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "r181_refusal_14_83_297p5_10",
+      "Prefix": "r181",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\assets\\templates\\sc520-card-recognition\\rotation-v1\\vectors\\r181_refusal_14_83_297p5_10.rgb.mem",
+        "SHA256": "01A60C0D461404D95E3B028D36E5C1492104A340C4E8F9C58959798206D5416D",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r181.rgb.mem",
+        "SHA256": "01A60C0D461404D95E3B028D36E5C1492104A340C4E8F9C58959798206D5416D",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "field_block_1",
+      "Prefix": "r182",
+      "TruthItem": 1,
+      "ExpectedContractItem": 1,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\field_block_1.rgb.mem",
+        "SHA256": "E3635F53C4B875BCB12BF058402056961ECF13C503D42B114436F8A053056ED0",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r182.rgb.mem",
+        "SHA256": "E3635F53C4B875BCB12BF058402056961ECF13C503D42B114436F8A053056ED0",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "field_block_2",
+      "Prefix": "r183",
+      "TruthItem": 2,
+      "ExpectedContractItem": 2,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\field_block_2.rgb.mem",
+        "SHA256": "62901392612B51AC736B1D49F207F8679B5EDED4F17B1386545C86738B5F47A7",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r183.rgb.mem",
+        "SHA256": "62901392612B51AC736B1D49F207F8679B5EDED4F17B1386545C86738B5F47A7",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "field_block_3",
+      "Prefix": "r184",
+      "TruthItem": 3,
+      "ExpectedContractItem": 3,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\field_block_3.rgb.mem",
+        "SHA256": "968F2050A5B9CF5036B2E52366E7E9BF204C1BD3E526C81701D26BAC7174687D",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r184.rgb.mem",
+        "SHA256": "968F2050A5B9CF5036B2E52366E7E9BF204C1BD3E526C81701D26BAC7174687D",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "field_block_4",
+      "Prefix": "r185",
+      "TruthItem": 4,
+      "ExpectedContractItem": 4,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\field_block_4.rgb.mem",
+        "SHA256": "D54CEBAD3BDAA1CC6FF0B36AA542A4B92FA569B5C556256A034B22C903061DFB",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r185.rgb.mem",
+        "SHA256": "D54CEBAD3BDAA1CC6FF0B36AA542A4B92FA569B5C556256A034B22C903061DFB",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "field_block_5",
+      "Prefix": "r186",
+      "TruthItem": 5,
+      "ExpectedContractItem": 5,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\field_block_5.rgb.mem",
+        "SHA256": "04A5EBBB6A2D7CD99683A53704BE0E1D67D873DFE41AC4082EFBA01C4332CACA",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r186.rgb.mem",
+        "SHA256": "04A5EBBB6A2D7CD99683A53704BE0E1D67D873DFE41AC4082EFBA01C4332CACA",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "field_block_6",
+      "Prefix": "r187",
+      "TruthItem": 6,
+      "ExpectedContractItem": 6,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\field_block_6.rgb.mem",
+        "SHA256": "57423C3C09336BDBC61B902483750A7A20C1B694788DC1F5C57BF0E866CD8B5D",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r187.rgb.mem",
+        "SHA256": "57423C3C09336BDBC61B902483750A7A20C1B694788DC1F5C57BF0E866CD8B5D",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "field_block_7",
+      "Prefix": "r188",
+      "TruthItem": 7,
+      "ExpectedContractItem": 7,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\field_block_7.rgb.mem",
+        "SHA256": "11B9B9C22316F33B1EB0AC25BC2121CBA43E211025B08807851192B307901173",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r188.rgb.mem",
+        "SHA256": "11B9B9C22316F33B1EB0AC25BC2121CBA43E211025B08807851192B307901173",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "field_block_8",
+      "Prefix": "r189",
+      "TruthItem": 8,
+      "ExpectedContractItem": 8,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\field_block_8.rgb.mem",
+        "SHA256": "43AB3C4EA76366B3363E73996144B011F1C754C706342C619D0B2AA92F840124",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r189.rgb.mem",
+        "SHA256": "43AB3C4EA76366B3363E73996144B011F1C754C706342C619D0B2AA92F840124",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "field_block_9",
+      "Prefix": "r190",
+      "TruthItem": 9,
+      "ExpectedContractItem": 9,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\field_block_9.rgb.mem",
+        "SHA256": "617CADDC5D9E3B32CA8B2099F8BDAB397CEED13CA9FD26F1B8115DA40B5385F1",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r190.rgb.mem",
+        "SHA256": "617CADDC5D9E3B32CA8B2099F8BDAB397CEED13CA9FD26F1B8115DA40B5385F1",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "card_10",
+      "Prefix": "r191",
+      "TruthItem": 10,
+      "ExpectedContractItem": 10,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\card_10.rgb.mem",
+        "SHA256": "5380C1D1EDDAED873BB68782B659669E805C93231B17515425A302154CC3AC43",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r191.rgb.mem",
+        "SHA256": "5380C1D1EDDAED873BB68782B659669E805C93231B17515425A302154CC3AC43",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "card_11",
+      "Prefix": "r192",
+      "TruthItem": 11,
+      "ExpectedContractItem": 11,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\card_11.rgb.mem",
+        "SHA256": "C71B1A7FCE32E42D3F5805460BC37A77E34F5115C3DFF69D4C55FBD6287550B2",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r192.rgb.mem",
+        "SHA256": "C71B1A7FCE32E42D3F5805460BC37A77E34F5115C3DFF69D4C55FBD6287550B2",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "card_12",
+      "Prefix": "r193",
+      "TruthItem": 12,
+      "ExpectedContractItem": 12,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\card_12.rgb.mem",
+        "SHA256": "39EB240C41737BF109722F64533688DA627573220F71C6FEEB4652312D506CEE",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r193.rgb.mem",
+        "SHA256": "39EB240C41737BF109722F64533688DA627573220F71C6FEEB4652312D506CEE",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "card_13",
+      "Prefix": "r194",
+      "TruthItem": 13,
+      "ExpectedContractItem": 13,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\card_13.rgb.mem",
+        "SHA256": "25DB6A272C0C598108E1D435C781085C389663C170B12657B62222741476A801",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r194.rgb.mem",
+        "SHA256": "25DB6A272C0C598108E1D435C781085C389663C170B12657B62222741476A801",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "card_14",
+      "Prefix": "r195",
+      "TruthItem": 14,
+      "ExpectedContractItem": 14,
+      "Present": true,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\card_14.rgb.mem",
+        "SHA256": "687EADA809EBCB356C4A1D0BDB9C69C3A8F4FC09DC6001D9D56B662FF02082E9",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r195.rgb.mem",
+        "SHA256": "687EADA809EBCB356C4A1D0BDB9C69C3A8F4FC09DC6001D9D56B662FF02082E9",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "empty_black",
+      "Prefix": "r196",
+      "TruthItem": 0,
+      "ExpectedContractItem": 0,
+      "Present": false,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\empty_black.rgb.mem",
+        "SHA256": "8084E65E0853A134254AB025F995AC6793A8BB8976B618D539AC3DC6649CAC89",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r196.rgb.mem",
+        "SHA256": "8084E65E0853A134254AB025F995AC6793A8BB8976B618D539AC3DC6649CAC89",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "empty_white",
+      "Prefix": "r197",
+      "TruthItem": 0,
+      "ExpectedContractItem": 0,
+      "Present": false,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\empty_white.rgb.mem",
+        "SHA256": "42A65D6C1CC95137F45BF3CF6257CC445F512837E90AC71DD3C0AFC698E58112",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r197.rgb.mem",
+        "SHA256": "42A65D6C1CC95137F45BF3CF6257CC445F512837E90AC71DD3C0AFC698E58112",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "empty_gray",
+      "Prefix": "r198",
+      "TruthItem": 0,
+      "ExpectedContractItem": 0,
+      "Present": false,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\empty_gray.rgb.mem",
+        "SHA256": "E87B034AA550F1D708EACA579C048591B1E552B8E960C4E660731180244FAEAD",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r198.rgb.mem",
+        "SHA256": "E87B034AA550F1D708EACA579C048591B1E552B8E960C4E660731180244FAEAD",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "empty_red",
+      "Prefix": "r199",
+      "TruthItem": 0,
+      "ExpectedContractItem": 0,
+      "Present": false,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\empty_red.rgb.mem",
+        "SHA256": "D72D1C6DD7484FF21C7F1B507F2298A5895A903F0D7CB4EA300DB9B49F6F35CF",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r199.rgb.mem",
+        "SHA256": "D72D1C6DD7484FF21C7F1B507F2298A5895A903F0D7CB4EA300DB9B49F6F35CF",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "empty_yellow",
+      "Prefix": "r200",
+      "TruthItem": 0,
+      "ExpectedContractItem": 0,
+      "Present": false,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\empty_yellow.rgb.mem",
+        "SHA256": "61086361ED2D09D38BA4C1E78DF81A44D502A7D8F57461E99CA3DC027B40CCE7",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r200.rgb.mem",
+        "SHA256": "61086361ED2D09D38BA4C1E78DF81A44D502A7D8F57461E99CA3DC027B40CCE7",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "empty_blue",
+      "Prefix": "r201",
+      "TruthItem": 0,
+      "ExpectedContractItem": 0,
+      "Present": false,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\empty_blue.rgb.mem",
+        "SHA256": "17C98BDE303BABA6E50CAFFA76CA952B2915D595BDABCDA83F8AB270832D16AF",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r201.rgb.mem",
+        "SHA256": "17C98BDE303BABA6E50CAFFA76CA952B2915D595BDABCDA83F8AB270832D16AF",
+        "Bytes": 460800
+      }
+    },
+    {
+      "Name": "empty_green",
+      "Prefix": "r202",
+      "TruthItem": 0,
+      "ExpectedContractItem": 0,
+      "Present": false,
+      "KnownMiss": false,
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-color-integration\\scenes\\empty_green.rgb.mem",
+        "SHA256": "4FBAB15570A597B4627823C8F7D41A72905267B44E7A5750F17300CE927D3BDD",
+        "Bytes": 460800
+      },
+      "RGB": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\retained-system-v1\\r202.rgb.mem",
+        "SHA256": "4FBAB15570A597B4627823C8F7D41A72905267B44E7A5750F17300CE927D3BDD",
+        "Bytes": 460800
+      }
+    }
+  ],
+  "TruthLabelPolicy": "Original TruthItem is immutable. ExpectedContractItem records disclosed conservative unknowns separately. Legacy uses TruthItem and preserves complete failures.",
+  "Counts": {
+    "Cases": 203,
+    "KnownMisses": 5
+  }
+}

@@ -1,0 +1,176 @@
+Reading D:/modeltech64_10.7/tcl/vsim/pref.tcl
+
+# 10.7
+
+# source {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/run.do}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:47 on Oct 20,2026
+# vlog E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel26_bg_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel26_block_core.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel26_block_recognizer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel26_block_recognizer_piped.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel26_classify_pipe.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel26_color_classify.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel26_compositor.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel26_fixed_exposure.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel26_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel26_processing_display.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel26_saturation.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel26_scene_preprocess.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel27_color_core.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel27_color_recognizer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel27_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel27_scene_preprocess.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel29_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel29_scene_preprocess.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel29_shape_guard.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/items14_content.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/items14_font_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/items14_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/items14_question_bank.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/items14_quiz_control.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/items14_result_join.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/items14_system.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel17_compositor.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel17_display_request.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel17_panel.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/sc520_color_classify.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/sc520_logo_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/sc520_processing_display.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel22_audio.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel22_compositor.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel22_content.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel22_font_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel22_panel.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/dfr0534_items14_audio.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/dfr0534_link.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/dfr0534_player.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/dfr0534_player_core.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/dfr0534_track_map.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/t020_audio_queue.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/block_frame_recognizer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/capture_rgb96.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel14_block_filter.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel14_block_shape_guard.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel14_capture_provenance.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel14_card_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel14_card_template_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel14_diag_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel14_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel14_result_cdc.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel14_rotation_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel14_scene_preprocess.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel14_color_diag_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel14_color_diagnostics.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel14_color_observer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel14_observation_bridge.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel14_observation_join.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel23_color_diag_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel23_color_observer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel23_compositor.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel23_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/card_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/card_template_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/card_result_filter.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/dfr0534_uart_model.sv E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel14_color_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/signal_delay.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/ip_behavioral_models.sv 
+# -- Compiling module pixel26_bg_pipeline
+# -- Compiling module pixel26_block_core
+# -- Compiling module pixel26_block_recognizer
+# -- Compiling module pixel26_block_recognizer_piped
+# -- Compiling module pixel26_classify_pipe
+# -- Compiling module pixel26_color_classify
+# -- Compiling module pixel26_compositor
+# -- Compiling module pixel26_fixed_exposure
+# -- Compiling module pixel26_pipeline
+# -- Compiling module pixel26_processing_display
+# -- Compiling module pixel26_saturation
+# -- Compiling module pixel26_scene_preprocess
+# -- Compiling module pixel27_color_core
+# -- Compiling module pixel27_color_recognizer
+# -- Compiling module pixel27_pipeline
+# -- Compiling module pixel27_scene_preprocess
+# -- Compiling module pixel29_pipeline
+# -- Compiling module pixel29_scene_preprocess
+# -- Compiling module pixel29_shape_guard
+# -- Compiling module items14_content
+# -- Compiling module items14_font_rom
+# -- Compiling module items14_osd
+# -- Compiling module items14_question_bank
+# -- Compiling module items14_quiz_control
+# -- Compiling module items14_result_join
+# -- Compiling module items14_system
+# -- Compiling module pixel17_compositor
+# -- Compiling module pixel17_display_request
+# -- Compiling module pixel17_panel
+# -- Compiling module sc520_color_classify
+# -- Compiling module sc520_logo_pipeline
+# -- Compiling module sc520_processing_display
+# -- Compiling module pixel22_audio
+# -- Compiling module pixel22_compositor
+# -- Compiling module pixel22_content
+# -- Compiling module pixel22_font_rom
+# -- Compiling module pixel22_panel
+# -- Compiling module dfr0534_items14_audio
+# -- Compiling module dfr0534_link
+# -- Compiling module dfr0534_player
+# -- Compiling module dfr0534_player_core
+# -- Compiling module dfr0534_track_map
+# -- Compiling module t020_audio_queue
+# -- Compiling module block_frame_recognizer
+# -- Compiling module capture_rgb96
+# -- Compiling module pixel14_block_filter
+# -- Compiling module pixel14_block_shape_guard
+# -- Compiling module pixel14_block_shape_rom
+# -- Compiling module pixel14_capture_provenance
+# -- Compiling module pixel14_card_matcher
+# -- Compiling module pixel14_card_template_rom
+# -- Compiling module pixel14_diag_osd
+# -- Compiling module pixel14_pipeline
+# -- Compiling module pixel14_result_cdc
+# -- Compiling module pixel14_rotation_matcher
+# -- Compiling module pixel14_scene_preprocess
+# -- Compiling module pixel14_color_diag_osd
+# -- Compiling module pixel14_color_diagnostics
+# -- Compiling module pixel14_color_observer
+# -- Compiling module pixel14_observation_bridge
+# -- Compiling module pixel14_observation_join
+# -- Compiling module pixel23_color_diag_osd
+# -- Compiling module pixel23_color_observer
+# -- Compiling module pixel23_compositor
+# -- Compiling module pixel23_pipeline
+# -- Compiling module card_matcher
+# -- Compiling module card_template_rom
+# -- Compiling module card_result_filter
+# -- Compiling module dfr0534_uart_model
+# -- Compiling module pixel26_color_pipeline
+# -- Compiling module signal_delay
+# -- Compiling module divider
+# -- Compiling module blk_mem_gen_awb_delay_signal
+# 
+# Top level modules:
+# 	pixel26_bg_pipeline
+# 	pixel26_compositor
+# 	pixel26_fixed_exposure
+# 	pixel26_pipeline
+# 	pixel27_pipeline
+# 	pixel29_pipeline
+# 	pixel17_compositor
+# 	pixel17_display_request
+# 	pixel22_audio
+# 	pixel22_compositor
+# 	pixel14_capture_provenance
+# 	pixel14_diag_osd
+# 	pixel14_pipeline
+# 	pixel23_compositor
+# 	pixel23_pipeline
+# 	card_matcher
+# 	dfr0534_uart_model
+# 	pixel26_color_pipeline
+# 	divider
+# End time: 21:13:48 on Oct 20,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:48 on Oct 20,2026
+# vlog -sv "+incdir+E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs" E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/tb_contour29_reset.sv 
+# -- Compiling module tb_contour29_reset
+# 
+# Top level modules:
+# 	tb_contour29_reset
+# End time: 21:13:48 on Oct 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -wlf wave.wlf work.tb_contour29_reset "+ASSET_ROOT=E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs" "+CASE_FILE=cases.txt" "+INJECT_FAULT=1" 
+# Start time: 21:13:48 on Oct 20,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "pixel29_scene_preprocess(fast)".
+# ** Warning: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel29_pipeline.v(179): (vopt-2685) [TFMPC] - Too few port connections for 'capture'.  Expected 37, found 36.
+# ** Warning: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/pixel29_pipeline.v(179): (vopt-2718) [TFMPC] - Missing connection for port 'block_roi_fg_count'.
+# ** Note: (vopt-143) Recognized 1 FSM in module "pixel26_color_pipeline(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "pixel29_shape_guard(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "pixel27_color_core(fast)".
+# ** Note: (vopt-143) Recognized 3 FSMs in module "items14_quiz_control(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "pixel14_rotation_matcher(fast)".
+# ** Warning: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/items14_osd.v(35): (vopt-2685) [TFMPC] - Too few port connections for 'content'.  Expected 17, found 16.
+# ** Warning: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/items14_osd.v(35): (vopt-2718) [TFMPC] - Missing connection for port 'display_mode'.
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_contour29_reset(fast)
+# Loading work.pixel26_color_pipeline(fast)
+# Loading work.signal_delay(fast)
+# Loading work.blk_mem_gen_awb_delay_signal(fast)
+# Loading work.pixel29_pipeline(fast)
+# Loading work.capture_rgb96(fast)
+# Loading work.pixel29_scene_preprocess(fast)
+# Loading work.pixel26_classify_pipe(fast)
+# Loading work.pixel27_color_recognizer(fast)
+# Loading work.pixel27_color_core(fast)
+# Loading work.pixel29_shape_guard(fast)
+# Loading work.pixel14_block_filter(fast)
+# Loading work.pixel14_rotation_matcher(fast)
+# Loading work.card_result_filter(fast)
+# Loading work.pixel14_result_cdc(fast)
+# Loading work.pixel23_color_observer(fast)
+# Loading work.pixel14_color_diagnostics(fast)
+# Loading work.pixel14_observation_join(fast)
+# Loading work.pixel14_observation_bridge(fast)
+# Loading work.pixel14_result_cdc(fast__2)
+# Loading work.pixel14_result_cdc(fast__1)
+# Loading work.items14_system(fast)
+# Loading work.items14_result_join(fast)
+# Loading work.items14_quiz_control(fast)
+# Loading work.items14_question_bank(fast)
+# Loading work.items14_osd(fast)
+# Loading work.items14_content(fast)
+# Loading work.items14_font_rom(fast)
+# CASE color-scene 1 phase0.73 reset and first complete720p four-lane frame
+# FAIL color-scene case=1 frame=0 time=101000 live reset-release corruption is detected
+# ** Note: $finish    : E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/tb_contour29_reset.sv(251)
+#    Time: 101460 ps  Iteration: 0  Instance: /tb_contour29_reset
+# Break in Module tb_contour29_reset at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/tb_contour29_reset.sv line 251
+# Stopped at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/reset-negative-20261020-211345-064eef/inputs/tb_contour29_reset.sv line 251
+# End time: 21:13:51 on Oct 20,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 4

@@ -1,0 +1,367 @@
+Reading D:/modeltech64_10.7/tcl/vsim/pref.tcl
+
+# 10.7
+
+# source {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/run.do}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:05:20 on Oct 20,2026
+# vlog E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel26_bg_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel26_block_core.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel26_block_recognizer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel26_block_recognizer_piped.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel26_classify_pipe.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel26_color_classify.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel26_compositor.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel26_fixed_exposure.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel26_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel26_processing_display.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel26_saturation.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel26_scene_preprocess.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel27_color_core.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel27_color_recognizer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel27_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel27_scene_preprocess.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel29_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel29_scene_preprocess.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel29_shape_guard.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/items14_content.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/items14_font_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/items14_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/items14_question_bank.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/items14_quiz_control.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/items14_result_join.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/items14_system.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel17_compositor.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel17_display_request.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel17_panel.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/sc520_color_classify.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/sc520_logo_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/sc520_processing_display.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel22_audio.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel22_compositor.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel22_content.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel22_font_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel22_panel.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/dfr0534_items14_audio.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/dfr0534_link.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/dfr0534_player.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/dfr0534_player_core.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/dfr0534_track_map.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/t020_audio_queue.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/block_frame_recognizer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/capture_rgb96.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel14_block_filter.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel14_block_shape_guard.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel14_capture_provenance.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel14_card_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel14_card_template_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel14_diag_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel14_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel14_result_cdc.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel14_rotation_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel14_scene_preprocess.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel14_color_diag_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel14_color_diagnostics.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel14_color_observer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel14_observation_bridge.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel14_observation_join.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel23_color_diag_osd.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel23_color_observer.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel23_compositor.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel23_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/card_matcher.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/card_template_rom.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/card_result_filter.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/dfr0534_uart_model.sv 
+# -- Compiling module pixel26_bg_pipeline
+# -- Compiling module pixel26_block_core
+# -- Compiling module pixel26_block_recognizer
+# -- Compiling module pixel26_block_recognizer_piped
+# -- Compiling module pixel26_classify_pipe
+# -- Compiling module pixel26_color_classify
+# -- Compiling module pixel26_compositor
+# -- Compiling module pixel26_fixed_exposure
+# -- Compiling module pixel26_pipeline
+# -- Compiling module pixel26_processing_display
+# -- Compiling module pixel26_saturation
+# -- Compiling module pixel26_scene_preprocess
+# -- Compiling module pixel27_color_core
+# -- Compiling module pixel27_color_recognizer
+# -- Compiling module pixel27_pipeline
+# -- Compiling module pixel27_scene_preprocess
+# -- Compiling module pixel29_pipeline
+# -- Compiling module pixel29_scene_preprocess
+# -- Compiling module pixel29_shape_guard
+# -- Compiling module items14_content
+# -- Compiling module items14_font_rom
+# -- Compiling module items14_osd
+# -- Compiling module items14_question_bank
+# -- Compiling module items14_quiz_control
+# -- Compiling module items14_result_join
+# -- Compiling module items14_system
+# -- Compiling module pixel17_compositor
+# -- Compiling module pixel17_display_request
+# -- Compiling module pixel17_panel
+# -- Compiling module sc520_color_classify
+# -- Compiling module sc520_logo_pipeline
+# -- Compiling module sc520_processing_display
+# -- Compiling module pixel22_audio
+# -- Compiling module pixel22_compositor
+# -- Compiling module pixel22_content
+# -- Compiling module pixel22_font_rom
+# -- Compiling module pixel22_panel
+# -- Compiling module dfr0534_items14_audio
+# -- Compiling module dfr0534_link
+# -- Compiling module dfr0534_player
+# -- Compiling module dfr0534_player_core
+# -- Compiling module dfr0534_track_map
+# -- Compiling module t020_audio_queue
+# -- Compiling module block_frame_recognizer
+# -- Compiling module capture_rgb96
+# -- Compiling module pixel14_block_filter
+# -- Compiling module pixel14_block_shape_guard
+# -- Compiling module pixel14_block_shape_rom
+# -- Compiling module pixel14_capture_provenance
+# -- Compiling module pixel14_card_matcher
+# -- Compiling module pixel14_card_template_rom
+# -- Compiling module pixel14_diag_osd
+# -- Compiling module pixel14_pipeline
+# -- Compiling module pixel14_result_cdc
+# -- Compiling module pixel14_rotation_matcher
+# -- Compiling module pixel14_scene_preprocess
+# -- Compiling module pixel14_color_diag_osd
+# -- Compiling module pixel14_color_diagnostics
+# -- Compiling module pixel14_color_observer
+# -- Compiling module pixel14_observation_bridge
+# -- Compiling module pixel14_observation_join
+# -- Compiling module pixel23_color_diag_osd
+# -- Compiling module pixel23_color_observer
+# -- Compiling module pixel23_compositor
+# -- Compiling module pixel23_pipeline
+# -- Compiling module card_matcher
+# -- Compiling module card_template_rom
+# -- Compiling module card_result_filter
+# -- Compiling module dfr0534_uart_model
+# 
+# Top level modules:
+# 	pixel26_bg_pipeline
+# 	pixel26_compositor
+# 	pixel26_fixed_exposure
+# 	pixel26_pipeline
+# 	pixel27_pipeline
+# 	pixel29_pipeline
+# 	pixel17_compositor
+# 	pixel17_display_request
+# 	pixel22_audio
+# 	pixel22_compositor
+# 	pixel14_capture_provenance
+# 	pixel14_diag_osd
+# 	pixel14_pipeline
+# 	pixel23_compositor
+# 	pixel23_pipeline
+# 	card_matcher
+# 	dfr0534_uart_model
+# End time: 21:05:22 on Oct 20,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:05:22 on Oct 20,2026
+# vlog -sv "+define+LEGACY_D0270" "+incdir+E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs" E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/tb_contour29_matrix.sv 
+# -- Compiling module tb_contour29_matrix
+# 
+# Top level modules:
+# 	tb_contour29_matrix
+# End time: 21:05:22 on Oct 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -wlf wave.wlf work.tb_contour29_matrix "+ASSET_ROOT=E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs" "+CASE_FILE=truth-cases.txt" "+INJECT_FAULT=0" 
+# Start time: 21:05:22 on Oct 20,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "pixel27_scene_preprocess(fast)".
+# ** Warning: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel27_pipeline.v(166): (vopt-2685) [TFMPC] - Too few port connections for 'capture'.  Expected 37, found 36.
+# ** Warning: E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/pixel27_pipeline.v(166): (vopt-2718) [TFMPC] - Missing connection for port 'block_roi_fg_count'.
+# ** Note: (vopt-143) Recognized 1 FSM in module "pixel27_color_core(fast)".
+# ** Note: (vopt-143) Recognized 3 FSMs in module "items14_quiz_control(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "pixel14_rotation_matcher(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "pixel14_block_shape_guard(fast)".
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_contour29_matrix(fast)
+# Loading work.pixel27_pipeline(fast)
+# Loading work.capture_rgb96(fast)
+# Loading work.pixel27_scene_preprocess(fast)
+# Loading work.pixel27_color_recognizer(fast)
+# Loading work.pixel26_classify_pipe(fast)
+# Loading work.pixel27_color_core(fast)
+# Loading work.pixel14_block_shape_guard(fast)
+# Loading work.pixel14_block_shape_rom(fast)
+# Loading work.pixel14_block_filter(fast)
+# Loading work.pixel14_rotation_matcher(fast)
+# Loading work.card_result_filter(fast)
+# Loading work.pixel14_result_cdc(fast)
+# Loading work.pixel14_result_cdc(fast__1)
+# Loading work.items14_system(fast)
+# Loading work.items14_result_join(fast)
+# Loading work.items14_quiz_control(fast)
+# Loading work.items14_question_bank(fast)
+# CASE scene-system 1 r000
+# CASE scene-system 2 r001
+# CASE scene-system 3 r002
+# CASE scene-system 4 r003
+# CASE scene-system 5 r004
+# CASE scene-system 6 r005
+# CASE scene-system 7 r006
+# CASE scene-system 8 r007
+# CASE scene-system 9 r008
+# CASE scene-system 10 r009
+# CASE scene-system 11 r010
+# CASE scene-system 12 r011
+# CASE scene-system 13 r012
+# CASE scene-system 14 r013
+# CASE scene-system 15 r014
+# CASE scene-system 16 r015
+# CASE scene-system 17 r016
+# CASE scene-system 18 r017
+# CASE scene-system 19 r018
+# CASE scene-system 20 r019
+# CASE scene-system 21 r020
+# CASE scene-system 22 r021
+# CASE scene-system 23 r022
+# CASE scene-system 24 r023
+# CASE scene-system 25 r024
+# CASE scene-system 26 r025
+# CASE scene-system 27 r026
+# CASE scene-system 28 r027
+# CASE scene-system 29 r028
+# CASE scene-system 30 r029
+# CASE scene-system 31 r030
+# CASE scene-system 32 r031
+# CASE scene-system 33 r032
+# CASE scene-system 34 r033
+# CASE scene-system 35 r034
+# CASE scene-system 36 r035
+# CASE scene-system 37 r036
+# CASE scene-system 38 r037
+# CASE scene-system 39 r038
+# CASE scene-system 40 r039
+# CASE scene-system 41 r040
+# CASE scene-system 42 r041
+# CASE scene-system 43 r042
+# CASE scene-system 44 r043
+# CASE scene-system 45 r044
+# CASE scene-system 46 r045
+# CASE scene-system 47 r046
+# CASE scene-system 48 r047
+# CASE scene-system 49 r048
+# CASE scene-system 50 r049
+# CASE scene-system 51 r050
+# CASE scene-system 52 r051
+# CASE scene-system 53 r052
+# CASE scene-system 54 r053
+# CASE scene-system 55 r054
+# CASE scene-system 56 r055
+# CASE scene-system 57 r056
+# CASE scene-system 58 r057
+# CASE scene-system 59 r058
+# CASE scene-system 60 r059
+# CASE scene-system 61 r060
+# CASE scene-system 62 r061
+# CASE scene-system 63 r062
+# CASE scene-system 64 r063
+# CASE scene-system 65 r064
+# CASE scene-system 66 r065
+# CASE scene-system 67 r066
+# CASE scene-system 68 r067
+# CASE scene-system 69 r068
+# CASE scene-system 70 r069
+# CASE scene-system 71 r070
+# CASE scene-system 72 r071
+# CASE scene-system 73 r072
+# CASE scene-system 74 r073
+# CASE scene-system 75 r074
+# CASE scene-system 76 r075
+# CASE scene-system 77 r076
+# CASE scene-system 78 r077
+# CASE scene-system 79 r078
+# CASE scene-system 80 r079
+# CASE scene-system 81 r080
+# CASE scene-system 82 r081
+# CASE scene-system 83 r082
+# CASE scene-system 84 r083
+# CASE scene-system 85 r084
+# CASE scene-system 86 r085
+# CASE scene-system 87 r086
+# CASE scene-system 88 r087
+# CASE scene-system 89 r088
+# CASE scene-system 90 r089
+# CASE scene-system 91 r090
+# CASE scene-system 92 r091
+# CASE scene-system 93 r092
+# CASE scene-system 94 r093
+# CASE scene-system 95 r094
+# CASE scene-system 96 r095
+# CASE scene-system 97 r096
+# CASE scene-system 98 r097
+# CASE scene-system 99 r098
+# CASE scene-system 100 r099
+# CASE scene-system 101 r100
+# CASE scene-system 102 r101
+# CASE scene-system 103 r102
+# CASE scene-system 104 r103
+# CASE scene-system 105 r104
+# CASE scene-system 106 r105
+# CASE scene-system 107 r106
+# CASE scene-system 108 r107
+# CASE scene-system 109 r108
+# CASE scene-system 110 r109
+# CASE scene-system 111 r110
+# CASE scene-system 112 r111
+# CASE scene-system 113 r112
+# CASE scene-system 114 r113
+# CASE scene-system 115 r114
+# CASE scene-system 116 r115
+# CASE scene-system 117 r116
+# CASE scene-system 118 r117
+# CASE scene-system 119 r118
+# CASE scene-system 120 r119
+# CASE scene-system 121 r120
+# CASE scene-system 122 r121
+# CASE scene-system 123 r122
+# CASE scene-system 124 r123
+# CASE scene-system 125 r124
+# CASE scene-system 126 r125
+# CASE scene-system 127 r126
+# CASE scene-system 128 r127
+# CASE scene-system 129 r128
+# CASE scene-system 130 r129
+# FAIL scene-system case=130 time=2588504593000 three-frame confirmed shape/card truth last=1/1/1 tag=390 wanttag=390
+# CASE scene-system 131 r130
+# FAIL scene-system case=131 time=2608583747000 three-frame confirmed shape/card truth last=2/1/1 tag=393 wanttag=393
+# CASE scene-system 132 r131
+# FAIL scene-system case=132 time=2628803526000 three-frame confirmed shape/card truth last=3/1/1 tag=396 wanttag=396
+# CASE scene-system 133 r132
+# CASE scene-system 134 r133
+# CASE scene-system 135 r134
+# CASE scene-system 136 r135
+# CASE scene-system 137 r136
+# CASE scene-system 138 r137
+# CASE scene-system 139 r138
+# CASE scene-system 140 r139
+# CASE scene-system 141 r140
+# CASE scene-system 142 r141
+# CASE scene-system 143 r142
+# CASE scene-system 144 r143
+# FAIL scene-system case=144 time=2862440876000 three-frame confirmed shape/card truth last=0/1/0 tag=432 wanttag=432
+# CASE scene-system 145 r144
+# CASE scene-system 146 r145
+# FAIL scene-system case=146 time=2901930434000 three-frame confirmed shape/card truth last=0/1/0 tag=438 wanttag=438
+# CASE scene-system 147 r146
+# CASE scene-system 148 r147
+# FAIL scene-system case=148 time=2941416867000 three-frame confirmed shape/card truth last=0/1/0 tag=444 wanttag=444
+# CASE scene-system 149 r148
+# CASE scene-system 150 r149
+# FAIL scene-system case=150 time=2980897051000 three-frame confirmed shape/card truth last=0/1/0 tag=450 wanttag=450
+# CASE scene-system 151 r150
+# CASE scene-system 152 r151
+# FAIL scene-system case=152 time=3020383484000 three-frame confirmed shape/card truth last=0/1/0 tag=456 wanttag=456
+# CASE scene-system 153 r152
+# CASE scene-system 154 r153
+# CASE scene-system 155 r154
+# CASE scene-system 156 r155
+# CASE scene-system 157 r156
+# CASE scene-system 158 r157
+# CASE scene-system 159 r158
+# CASE scene-system 160 r159
+# CASE scene-system 161 r160
+# CASE scene-system 162 r161
+# CASE scene-system 163 r162
+# CASE scene-system 164 r163
+# CASE scene-system 165 r164
+# CASE scene-system 166 r165
+# CASE scene-system 167 r166
+# CASE scene-system 168 r167
+# CASE scene-system 169 r168
+# CASE scene-system 170 r169
+# CASE scene-system 171 r170
+# CASE scene-system 172 r171
+# CASE scene-system 173 r172
+# CASE scene-system 174 r173
+# CASE scene-system 175 r174
+# CASE scene-system 176 r175
+# CASE scene-system 177 r176
+# CASE scene-system 178 r177
+# CASE scene-system 179 r178
+# CASE scene-system 180 r179
+# CASE scene-system 181 r180
+# CASE scene-system 182 r181
+# CASE scene-system 183 r182
+# CASE scene-system 184 r183
+# CASE scene-system 185 r184
+# CASE scene-system 186 r185
+# CASE scene-system 187 r186
+# CASE scene-system 188 r187
+# CASE scene-system 189 r188
+# CASE scene-system 190 r189
+# CASE scene-system 191 r190
+# CASE scene-system 192 r191
+# CASE scene-system 193 r192
+# CASE scene-system 194 r193
+# CASE scene-system 195 r194
+# CASE scene-system 196 r195
+# CASE scene-system 197 r196
+# CASE scene-system 198 r197
+# CASE scene-system 199 r198
+# CASE scene-system 200 r199
+# CASE scene-system 201 r200
+# CASE scene-system 202 r201
+# CASE scene-system 203 r202
+# DONE scenes checks=       3045 errors=          8
+# ** Note: $finish    : E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/tb_contour29_matrix.sv(141)
+#    Time: 4050635949258 ps  Iteration: 1  Instance: /tb_contour29_matrix
+# Break in Module tb_contour29_matrix at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/tb_contour29_matrix.sv line 141
+# Stopped at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/matrix-legacy-20261020-210517-9b7337/inputs/tb_contour29_matrix.sv line 141
+# End time: 21:14:44 on Oct 20,2026, Elapsed time: 0:09:22
+# Errors: 0, Warnings: 2

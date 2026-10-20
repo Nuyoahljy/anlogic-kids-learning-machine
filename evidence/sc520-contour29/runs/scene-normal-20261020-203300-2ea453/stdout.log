@@ -1,0 +1,256 @@
+Reading D:/modeltech64_10.7/tcl/vsim/pref.tcl
+
+# 10.7
+
+# source {E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/scene-normal-20261020-203300-2ea453/run.do}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 20:33:02 on Oct 20,2026
+# vlog E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/scene-normal-20261020-203300-2ea453/inputs/pixel29_pipeline.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/scene-normal-20261020-203300-2ea453/inputs/pixel29_scene_preprocess.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/scene-normal-20261020-203300-2ea453/inputs/pixel29_shape_guard.v E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/scene-normal-20261020-203300-2ea453/inputs/pixel26_classify_pipe.v 
+# -- Compiling module pixel29_pipeline
+# -- Compiling module pixel29_scene_preprocess
+# -- Compiling module pixel29_shape_guard
+# -- Compiling module pixel26_classify_pipe
+# 
+# Top level modules:
+# 	pixel29_pipeline
+# End time: 20:33:02 on Oct 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 20:33:02 on Oct 20,2026
+# vlog -sv E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/scene-normal-20261020-203300-2ea453/inputs/tb_contour29_scene.sv 
+# -- Compiling module tb_contour29_scene
+# 
+# Top level modules:
+# 	tb_contour29_scene
+# End time: 20:33:02 on Oct 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -wlf wave.wlf work.tb_contour29_scene "+ASSET_ROOT=E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/scene-normal-20261020-203300-2ea453/inputs" "+CASE_FILE=all-cases.txt" "+INJECT_FAULT=0" 
+# Start time: 20:33:03 on Oct 20,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "pixel29_scene_preprocess(fast)".
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_contour29_scene(fast)
+# Loading work.pixel29_scene_preprocess(fast)
+# Loading work.pixel26_classify_pipe(fast)
+# CASE 1 c000 truth=1 contract=1
+# CASE 2 c001 truth=1 contract=1
+# CASE 3 c002 truth=1 contract=1
+# CASE 4 c003 truth=1 contract=1
+# CASE 5 c004 truth=1 contract=1
+# CASE 6 c005 truth=2 contract=2
+# CASE 7 c006 truth=2 contract=2
+# CASE 8 c007 truth=2 contract=2
+# CASE 9 c008 truth=2 contract=2
+# CASE 10 c009 truth=2 contract=2
+# CASE 11 c010 truth=0 contract=0
+# CASE 12 c011 truth=0 contract=0
+# CASE 13 c012 truth=0 contract=0
+# CASE 14 c013 truth=0 contract=0
+# CASE 15 c014 truth=2 contract=2
+# CASE 16 c015 truth=0 contract=0
+# CASE 17 c016 truth=3 contract=3
+# CASE 18 c017 truth=3 contract=3
+# CASE 19 c018 truth=3 contract=3
+# CASE 20 c019 truth=3 contract=3
+# CASE 21 c020 truth=3 contract=3
+# CASE 22 c021 truth=4 contract=4
+# CASE 23 c022 truth=4 contract=4
+# CASE 24 c023 truth=4 contract=4
+# CASE 25 c024 truth=4 contract=4
+# CASE 26 c025 truth=4 contract=4
+# CASE 27 c026 truth=5 contract=5
+# CASE 28 c027 truth=5 contract=5
+# CASE 29 c028 truth=5 contract=5
+# CASE 30 c029 truth=5 contract=5
+# CASE 31 c030 truth=5 contract=5
+# CASE 32 c031 truth=6 contract=6
+# CASE 33 c032 truth=6 contract=6
+# CASE 34 c033 truth=6 contract=6
+# CASE 35 c034 truth=6 contract=6
+# CASE 36 c035 truth=6 contract=6
+# CASE 37 c036 truth=7 contract=7
+# CASE 38 c037 truth=7 contract=7
+# CASE 39 c038 truth=7 contract=7
+# CASE 40 c039 truth=7 contract=7
+# CASE 41 c040 truth=7 contract=7
+# CASE 42 c041 truth=8 contract=8
+# CASE 43 c042 truth=8 contract=8
+# CASE 44 c043 truth=8 contract=8
+# CASE 45 c044 truth=8 contract=8
+# CASE 46 c045 truth=8 contract=8
+# CASE 47 c046 truth=9 contract=9
+# CASE 48 c047 truth=9 contract=9
+# CASE 49 c048 truth=9 contract=9
+# CASE 50 c049 truth=9 contract=9
+# CASE 51 c050 truth=9 contract=9
+# CASE 52 c051 truth=10 contract=10
+# CASE 53 c052 truth=11 contract=11
+# CASE 54 c053 truth=12 contract=12
+# CASE 55 c054 truth=13 contract=13
+# CASE 56 c055 truth=14 contract=14
+# CASE 57 c056 truth=0 contract=0
+# CASE 58 c057 truth=0 contract=0
+# CASE 59 c058 truth=0 contract=0
+# CASE 60 c059 truth=0 contract=0
+# CASE 61 c060 truth=0 contract=0
+# CASE 62 c061 truth=0 contract=0
+# CASE 63 c062 truth=1 contract=1
+# CASE 64 c063 truth=1 contract=0
+# CASE 65 c064 truth=1 contract=0
+# CASE 66 c065 truth=1 contract=0
+# CASE 67 c066 truth=1 contract=1
+# CASE 68 c067 truth=1 contract=0
+# CASE 69 c068 truth=1 contract=0
+# CASE 70 c069 truth=1 contract=0
+# CASE 71 c070 truth=1 contract=1
+# CASE 72 c071 truth=1 contract=0
+# CASE 73 c072 truth=1 contract=0
+# CASE 74 c073 truth=1 contract=0
+# CASE 75 c074 truth=1 contract=1
+# CASE 76 c075 truth=1 contract=1
+# CASE 77 c076 truth=1 contract=0
+# CASE 78 c077 truth=1 contract=1
+# CASE 79 c078 truth=1 contract=1
+# CASE 80 c079 truth=1 contract=0
+# CASE 81 c080 truth=1 contract=0
+# CASE 82 c081 truth=1 contract=0
+# CASE 83 c082 truth=1 contract=1
+# CASE 84 c083 truth=1 contract=0
+# CASE 85 c084 truth=1 contract=0
+# CASE 86 c085 truth=1 contract=0
+# CASE 87 c086 truth=1 contract=1
+# CASE 88 c087 truth=1 contract=0
+# CASE 89 c088 truth=1 contract=0
+# CASE 90 c089 truth=1 contract=0
+# CASE 91 c090 truth=1 contract=0
+# CASE 92 c091 truth=1 contract=0
+# CASE 93 c092 truth=1 contract=0
+# CASE 94 c093 truth=1 contract=0
+# CASE 95 c094 truth=1 contract=1
+# CASE 96 c095 truth=1 contract=0
+# CASE 97 c096 truth=1 contract=0
+# CASE 98 c097 truth=1 contract=0
+# CASE 99 c098 truth=1 contract=0
+# CASE 100 c099 truth=1 contract=0
+# CASE 101 c100 truth=1 contract=0
+# CASE 102 c101 truth=1 contract=0
+# CASE 103 c102 truth=1 contract=0
+# CASE 104 c103 truth=1 contract=0
+# CASE 105 c104 truth=1 contract=0
+# CASE 106 c105 truth=1 contract=0
+# CASE 107 c106 truth=1 contract=0
+# CASE 108 c107 truth=1 contract=0
+# CASE 109 c108 truth=1 contract=0
+# CASE 110 c109 truth=1 contract=0
+# CASE 111 c110 truth=1 contract=0
+# CASE 112 c111 truth=1 contract=0
+# CASE 113 c112 truth=1 contract=0
+# CASE 114 c113 truth=1 contract=0
+# CASE 115 c114 truth=1 contract=0
+# CASE 116 c115 truth=1 contract=0
+# CASE 117 c116 truth=1 contract=0
+# CASE 118 c117 truth=1 contract=0
+# CASE 119 c118 truth=0 contract=0
+# CASE 120 c119 truth=0 contract=0
+# CASE 121 c120 truth=0 contract=0
+# CASE 122 c121 truth=0 contract=0
+# CASE 123 c122 truth=0 contract=0
+# CASE 124 c123 truth=0 contract=0
+# CASE 125 c124 truth=0 contract=0
+# CASE 126 c125 truth=0 contract=0
+# CASE 127 c126 truth=0 contract=0
+# CASE 128 c127 truth=0 contract=0
+# CASE 129 c128 truth=0 contract=0
+# CASE 130 c129 truth=0 contract=0
+# CASE 131 c130 truth=0 contract=0
+# CASE 132 c131 truth=0 contract=0
+# CASE 133 c132 truth=0 contract=0
+# CASE 134 c133 truth=0 contract=0
+# CASE 135 c134 truth=0 contract=0
+# CASE 136 c135 truth=0 contract=0
+# CASE 137 c136 truth=0 contract=0
+# CASE 138 c137 truth=0 contract=0
+# CASE 139 c138 truth=0 contract=0
+# CASE 140 c139 truth=0 contract=0
+# CASE 141 c140 truth=0 contract=0
+# CASE 142 c141 truth=0 contract=0
+# CASE 143 c142 truth=0 contract=0
+# CASE 144 c143 truth=0 contract=0
+# CASE 145 c144 truth=0 contract=0
+# CASE 146 c145 truth=0 contract=0
+# CASE 147 c146 truth=0 contract=0
+# CASE 148 c147 truth=0 contract=0
+# CASE 149 c148 truth=0 contract=0
+# CASE 150 c149 truth=0 contract=0
+# CASE 151 c150 truth=0 contract=0
+# CASE 152 c151 truth=0 contract=0
+# CASE 153 c152 truth=0 contract=0
+# CASE 154 c153 truth=0 contract=0
+# CASE 155 c154 truth=0 contract=0
+# CASE 156 c155 truth=0 contract=0
+# CASE 157 c156 truth=0 contract=0
+# CASE 158 c157 truth=0 contract=0
+# CASE 159 c158 truth=0 contract=0
+# CASE 160 c159 truth=0 contract=0
+# CASE 161 c160 truth=0 contract=0
+# CASE 162 c161 truth=0 contract=0
+# CASE 163 c162 truth=0 contract=0
+# CASE 164 c163 truth=0 contract=0
+# CASE 165 c164 truth=0 contract=0
+# CASE 166 c165 truth=0 contract=0
+# CASE 167 c166 truth=0 contract=0
+# CASE 168 c167 truth=0 contract=0
+# CASE 169 c168 truth=0 contract=0
+# CASE 170 c169 truth=0 contract=0
+# CASE 171 c170 truth=0 contract=0
+# CASE 172 c171 truth=0 contract=0
+# CASE 173 c172 truth=0 contract=0
+# CASE 174 c173 truth=0 contract=0
+# CASE 175 c174 truth=0 contract=0
+# CASE 176 c175 truth=0 contract=0
+# CASE 177 c176 truth=0 contract=0
+# CASE 178 c177 truth=0 contract=0
+# CASE 179 c178 truth=0 contract=0
+# CASE 180 c179 truth=0 contract=0
+# CASE 181 c180 truth=0 contract=0
+# CASE 182 c181 truth=0 contract=0
+# CASE 183 c182 truth=0 contract=0
+# CASE 184 c183 truth=0 contract=0
+# CASE 185 c184 truth=0 contract=0
+# CASE 186 c185 truth=0 contract=0
+# CASE 187 c186 truth=0 contract=0
+# CASE 188 c187 truth=0 contract=0
+# CASE 189 c188 truth=0 contract=0
+# CASE 190 c189 truth=0 contract=0
+# CASE 191 c190 truth=0 contract=0
+# CASE 192 c191 truth=0 contract=0
+# CASE 193 c192 truth=0 contract=0
+# CASE 194 c193 truth=0 contract=0
+# CASE 195 c194 truth=0 contract=0
+# CASE 196 c195 truth=0 contract=0
+# CASE 197 c196 truth=0 contract=0
+# CASE 198 c197 truth=0 contract=0
+# CASE 199 c198 truth=0 contract=0
+# CASE 200 c199 truth=0 contract=0
+# CASE 201 c200 truth=0 contract=0
+# CASE 202 c201 truth=0 contract=0
+# RESULT errors=0 checks=164829733 scenarios=202 max_cycles=771873 known_misses=46
+# ** Note: $finish    : E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/scene-normal-20261020-203300-2ea453/inputs/tb_contour29_scene.sv(68)
+#    Time: 1627539860 ns  Iteration: 1  Instance: /tb_contour29_scene
+# Break in Module tb_contour29_scene at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/scene-normal-20261020-203300-2ea453/inputs/tb_contour29_scene.sv line 68
+# Stopped at E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/runs/scene-normal-20261020-203300-2ea453/inputs/tb_contour29_scene.sv line 68
+# End time: 20:35:05 on Oct 20,2026, Elapsed time: 0:02:02
+# Errors: 0, Warnings: 0

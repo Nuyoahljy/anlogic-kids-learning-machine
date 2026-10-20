@@ -1,0 +1,57 @@
+{
+  "Generator": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\scripts\\sc520-card-recognition\\setup-contour29-regressions.py",
+    "SHA256": "10919245B13B9D910DF2D3E46CF5F84CA79017F4B3A8B64A8CF5325572FDC96A"
+  },
+  "Reference": "Frozen approved four complete frames, independently checked old7/new9 literal bitmaps. No DUT render output used.",
+  "TinyGlyphReference": {
+    "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\fpga\\sim\\sc520-card-recognition\\tb_pixel14_observation_display.sv",
+    "SHA256": "919089A4BBB51FC38D8FBAAC12BE5315EC74E7D8BDEC97D446FB4A13959977B8"
+  },
+  "Files": [
+    {
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\render-fixtures\\golden-0.mem",
+        "SHA256": "C7A16CB51990246CEB432E86A7819D7C6B89C4E7F61F4C0D5B2DDCBF19527D1E"
+      },
+      "Output": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\render-fixtures\\golden-0.mem",
+        "SHA256": "5AC368A74ED340F3D99B33BF3A00D1AA4E186E4830BCABF8EB69D59D88C0E26D"
+      },
+      "ChangedRegion": "literal D0270 -> D0290: character index3 x56..60 y520..526 only"
+    },
+    {
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\render-fixtures\\golden-1.mem",
+        "SHA256": "8985A9ED5322F3676D0F4CE0C5682848B29325073BC659E9C00CBDD22C8A8E65"
+      },
+      "Output": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\render-fixtures\\golden-1.mem",
+        "SHA256": "9E7ACEC3341FEF50077B3D1BCE5461183CD93EF6014D95D53D68BFF0DA2446A9"
+      },
+      "ChangedRegion": "literal D0270 -> D0290: character index3 x56..60 y520..526 only"
+    },
+    {
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\render-fixtures\\golden-2.mem",
+        "SHA256": "893B6C8250D9A462D1C95FE9267F930EB754CA8F73A8222092BE8D9ECAB79756"
+      },
+      "Output": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\render-fixtures\\golden-2.mem",
+        "SHA256": "465E5D6B41A3884C10A0AC1F86D75986DECBD39439ED0B3540D2D5C3FC1452F7"
+      },
+      "ChangedRegion": "literal D0270 -> D0290: character index3 x56..60 y520..526 only"
+    },
+    {
+      "Source": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-shape27\\render-fixtures\\golden-3.mem",
+        "SHA256": "10A2747A71E684840CBFD8C70C791722838E23AAC843848CF87F89D33D3F7864"
+      },
+      "Output": {
+        "Path": "E:\\juan\\FPGA\\worktrees\\anlogic-kids-learning-machine\\sc520-color-integration\\evidence\\sc520-contour29\\render-fixtures\\golden-3.mem",
+        "SHA256": "790448F3984677CB80939BCA5025E5F5F9CEFE2DB3991001962C98EB607A5523"
+      },
+      "ChangedRegion": "literal D0270 -> D0290: character index3 x56..60 y520..526 only"
+    }
+  ]
+}
