@@ -289,3 +289,109 @@ v4区分外轮廓与内部孔洞：恢复须fullglyph在闭合body外残留<12�
 - 连续103.519669MHz/每720行×2396拍加帧开闭开销的约60fps，4帧未等待前识别，正常tag/BC完整，maxPostEOF841578、maxFIFO6403、双bank交叠为真；超速输入明确revoke。初fps两次仅因统计把capture cycle12初始化撤销计入cycle38后支持窗口而失败，原件保留。新fpsverify明确startup1、supported0，17检查0错，不改生产RTL或吞窗口故障。
 - 门禁reset-negative原生1/done1/errors1/checks2、reset-watchdog原生2/done0/errors0/checks48，Qualified只表示门禁按预期有效，不列正常通过场景。
 - prepare-contour29.py已只生成独立工程（124引用、326非snapshot哈希、3个明确geometry cwd副本）；build脚本仅静态语法通过，未执行TD。新hook覆盖完整scene、根saved/meta/原子pair、guard及三帧，ROM/源/门禁须新物理审核，不沿用D0270资格。后续主软件接受、绑定提交后才唯一新TD，bit仍单独主批，不自动下载/Flash。
+
+## D083 新构建首轮 ROM 搜索路径失败（2026-10-20 21:45）
+
+主已实际接受d38683ae软件阶段，主5948引用/四720p逐像素及目视、独立9397引用及53Gitblob通过；软件批准为learning/sc520-contour29/main-review/software-approved.json，SHA256 BD77FB4BE60D4410989E07AF7AEF35C18555352B26C09EFC6D6EDD7F1B94D20E。原Truth46圆miss/8旧问题及独立gray25miss保持，不升级现场。
+
+本代理先核批准SHA、HEAD与工作树干净、无TD console、唯一6a50b290不存在，protect --check3165通过。实际执行已冻结build-contour29.ps1 -Approval <上述绝对JSON> -ApprovalSHA256 <上述SHA> -RunId 6a50b290。snapshot124引用/406输入已生成，2026-10-20T21:38:45综合真实PID32532启动，21:38:50原生1，marker不存在；未进入布局布线、没有bit。failure/stages/stdout/stderr和所有原输入保留，不将read_design结束当综合通过。
+
+原stdout确切HDL-5105/HDL-8007显示相对readmemh寻找顺序为调用源码所在目录、.al工程目录、非工程时启动目录；本轮原prepare只复制新ROM到run根/syn/phy三个目录，TD在source/project模式仍找不到contour29-shapes.mem。ROM内容SHA9D8988...61A5及RTL原字节保持。这是构建输入位置错误，不改算法或重新解释仿真通过。任务U映射finally解除；用户GUI10896保留。本轮启动前subst已无V映射，本代理未解除或重建它。
+
+主最终选定新独立6a50b291，不覆盖/恢复写原290。新增prepare-contour29-rom-search.py只调用冻结prepare后，额外同字节copy到新run/rtl及td_project目录，共5个ROM副本，并扩新inputs Files/GeometryROM.Copies及独立准备来源证明；非top所有snapshot依然byteeq，不改guard参数、53源码或旧软件SHA。另一新增build-contour29-retry.ps1以单独rom_search_retry_approved门禁绑定原软件批准/旧builder/新preparer/自身及原290全部失败历史；仅内存替换原builder的preparer调用，原原生阶段/错误/输入门禁不变。
+
+新preparer SHA EC7185835BF637A240870DEDDEB2034DD5E3BF0485A8F5CDA6CDD261DB3DAFBE、retry wrapper SHA448C57CF51FB6518FAA834AC72BAA3E4E24ACBA34BD1B379EB0CF959BA29941B。--help原生0和PowerShell语法通过；原生产/prepare/build Git diff为空，3165旧保护再次通过。此处仅准备工具，尚未执行291 prepare或二次TD，等待主审单次恢复批准。没有写参数绝对路径修改方案或删除任何失败证据。
+
+## 6a50b291 ROM 搜索副本恢复已启动（2026-10-20 21:54）
+
+主审前发现准备证明中OriginalPreparedInputs若指向随后扩项的inputs.json会成为旧SHA引用，故仅新preparer加inputs-before-rom-search.json原字节副本再绑定；首审旧EC718哈希被真实拒绝，未生成批准。最终锁定preparer SHA E2C020FC10AC5721561FD0A71772C02A2C2E712602A8C9716C2A3274B317462E，wrapper448C57不变；旧工具/RTL/软件清单无变化。
+
+主实际批准rom-search-retry-approved.json，SHA256 984E59755B1612E27F9EE9F62A56DFB12A5B5A455E32711333FA9BE746BA6281。先核批准、唯一291不存在且无TDconsole，实际执行build-contour29-retry.ps1 -Approval <原BD77批准> -ApprovalSHA256 BD77...94D20E -RetryApproval <新984E批准> -RetryApprovalSHA256 984E...BA6281。新run124工程引用/408输入，inputs SHA05204D8A50FEF01B17F99A6FEEB9E92783B9010AB169BFA183B0D1D804CA491D，161498字节；五份ROM全部9D8988...61A5，完整非top快照保持原字节，原290全部104文件历史保持。
+
+真实session40487，syn_1 PID27996，started记录2026-10-20T13:53:29.3136736Z；新ROM已被TD从run/rtl读入，日志已进入综合优化，不再readmemh缺失。这是进行中观察，不等于综合或物理通过；原生结束后才核marker/errors/stderr/reset及后续route。U为本任务新映射，用户GUI10896不操作，bitgen/下载/Flash仍禁止。
+
+## 291 综合完成与交付工具静态准备（2026-10-20 22:07）
+
+实际syn_1于2026-10-20T13:57:02.0479641Z结束，native0、MarkerFresh=true，原生无ERROR/空stderr门禁通过。新reset-synthesis实际Qualified=true，十复位分区、最大扇出2784，SHA379E3D53BA607F477B94BA73E2590DF18373A761B29D11F5C8BC5D37C5D17E8D。脚本沿单次主批准启动phy_1 PID25008，session40487仍跟进路由；初始/中间负余量和gate面积不当最终结论。原gate报告ERAM107、DSP18，gate slice估值非最终，原报告备注要求Optimize-place后再核。
+
+按主明确授权利用构建时间，新增独立generate-contour29-bit.py（SHA08EAD550E2F4BE5F175289FB531307311C742595AD6B3B3C8CA7833F5C41E3DA）与hardware/sc520-contour29/d0290-sram-guide.md草案，不改旧生成器或53冻结源/已封manifest。仅--help原生0，未传有效批准或调用TD/bitgen。新门禁要求D0290/bitgen_approved/源d386、主新物理接受、固定新DB/input/SWmain/物理main/独立14项及所有current/snapshot/3165旧保护/原290历史SHA；隐藏原生、只管理自己临时盘并严格ERROR/stderr/import/完成marker。指南准确披露46miss/原8/独立gray25、full16/body12、Dfull与SH恢复来源、白底红圆/红方/五卡顺序；仍没有可执行bit路径/大小/SHA或下载批准。
+
+## 跨日恢复与原生长路由（2026-10-21 00:44）
+
+代理服务曾出现high-demand错误，但原session40487仍live，父wrapper PID28376命令行精确为原build-contour29-retry.ps1及BD77/984E批准；TD PID25008仍U:/phy_1.launch.tcl、Responding=true且CPU持续增长。没有因服务错误重启TD、重做综合或改变任何输入。已重读共享根规则/入口/针对索引/最新记录和主记忆及本日志。
+
+原生已自然走到Phase6。00:38输出Phase6 Iter1，over748、该轮耗718.29秒；00:41输出Iter2，over353、耗442.13秒。此前多轮内部setup余量-0.041ns/STNS-0.164ns/FEP4和hold+.020是优化过程数字，不代最终Routed结果；目前没有route完成标记、最终数据库、result/failure，本轮仍构建中，物理/bit未接受。
+
+只读本地TD命令文档的route选项仅eco/incremental/verbose，未给默认phase/iter/runtime上限，不能估ETA。现存唯一path report仍是Placed，最紧MIPI path为scene RAM读到fifo_tail enable八逻辑级、data8.924ns；不以Placed余量或当前over数量替代最终签核，也未发新TD命令干预活动进程。
+
+U盘正确归本任务291。另一个TD PID29664/V盘属于独立sc520-awb28/spatial282/builds/6a50b285，本代理仅读归属，不操作该进程、映射或文件。用户GUI10896保持。下一步继续跟原session原生结束，再核四timing、路由DB SHA、原始stage/error/stderr/marker和输入/原失败历史保护，交独立物理；无论通过或失败都保留原件并登记，不自动bitgen/硬件。
+
+## T029 重启后路由恢复准备（2026-10-21 12:22）
+
+- 状态：等待主对话审核；本轮唯一实现负责人 Codex `/root/contour29_recovery`，HEAD仍`d38683ae73621c4e34271e2bc326d716acc08ca0`，生产源未改。旧shape27_delivery代理和exec40487只保留为历史，不恢复并发写入。
+- 主及本方实际读取原291：综合真实PID27996/native0、marker新鲜；phy最后Phase6 Iter13 over81，无`pr.db`、`.opt_route.end.f`、result或failure，原TD25008/父28376均不在。OS报告本日10:02:23启动，确切终止原因和时点仍未知，不伪造旧phy退出码或失败结果。
+- 新增`resume-contour29-phy.py`，仅`--prepare`/`--verify-prepared`完成，`--execute`须新`phy_resume_approved`、D0290、原source和目的、run/Preparation精确SHA及命令显式批准SHA。复用原综合DB SHA`24B3518FEB3122213D37535988506F77A4A68A48CCB34D6D3176354B2DAEF84C`、综合网表SHA`91FAAFDB3CF38081F5C9E84C63006C7B44BC446A952CEB4943A5CE09E0F7CE7C`；新启动只`opt_place`到`opt_route`，不重综合、改算法/时钟/约束或提前bitgen。
+- 三个准备目录r2/r3/r4均未TD。r2因主要求增强旧syn新鲜时间及异常native保mapping，r3因独立要求实际父脚本归属而成为准备历史，不覆盖旧plan。最终r4的PreparationHistory绑定r2/r3全部246文件，原291全部138文件与121新副本逐字节保持；全部53冻结Git blob、408输入及3165旧D0270/261保护真实核过。
+- 最终工具SHA`089E60046E53C2C1A9B315221EEC9B15BC7493F30C9BBBDB0F2B6A822E81D414`，r4 preparation SHA`3EB0F7FA86B64DFCEA758C93FA10980D84274F7349E1F3A5A3A25243592DA122`，221155字节；launcher SHA`797CC6BCC9FC93C56C158FE6E9E3D27256BD28255669A3A64BFAFEDF593C0DF5`。`inputs.json`原字节旧路径不回写，复制及继承用独立Original/Copy和InheritedSynthesis证据，Stages仅记录后续真实phy，不冒称新综合执行。
+- 初次prepare严格全console gate被真实独立TD1264/V拒绝，没有生成目录。主批准窄归属门禁后实际核V映射`sc520-awb28/.../6a50b287-route-r2`、父7728的`resume-awb28-spatial.ps1 -Execute`及脚本文件；其他明确peer保留，自己树或未定位launcher/父脚本继续拒绝。未杀进程、解除V或改另一任务文件。异常finally如子进程仍活保留自身盘符并写NativeStillRunning/Complete=false，不写FinishedAt。
+- `test-contour29-recovery.py`真实退出0、9项通过，报告`evidence/sc520-contour29/recovery-preflight-20261021/report.json` SHA`E21413979AD13C891F42925370DB3E5979F5A17B482AF8D1CE5573DC7B8694DA`。实际准备验证/独立归属和错误SHA/软件批准阶段拒绝；same-tree、unknown及unknown父的门禁为内存合成子进程响应，不操作真实native；active-native异常保护仅AST/text检查，不冒称实进程注入。首次test因合成subst缺冒号而退出1，未写报告/启动TD；此失败保留为本日志历史，不混九项通过。
+- Python实际命令为依赖Python `-B -X utf8`执行对应工具`--help`、`--prepare --run-id 6a50b291-phy-r2/r3`、最终默认r4`--prepare`及`test-contour29-recovery.py`；r2曾实际`--verify-prepared`0，最终r4由测试调用全部verify门禁0。主与独立准备审核进行中，未授新TD、物理、bit、下载或Flash资格；旧46漏识、gray25和8旧真值边界继续保持。
+
+## T029 r4唯一物理恢复已启动（2026-10-21 12:48）
+
+独立`prepared-recovery-291-r4-v1.json` SHA`A37D6F93615EB600CD7BD6815BE8A20FD2329704F38D848DF3B255510BA78AEC`已通过，主亲读并执行批准工具。正式`phy-retry-r4-approved.json` SHA`23F1C291C554300098B32E375A3B9DB33F2817EF28AD73B43D370C139E834F00`允许唯一r4从冻结综合DB重新`opt_place`到`opt_route`，不重综合/放宽时钟、改识别阈值或bitgen。
+
+实际执行依赖Python `-B -X utf8 .../resume-contour29-phy.py --execute --run-id 6a50b291-phy-r4 --approval E:/juan/FPGA/learning/sc520-contour29/main-review/phy-retry-r4-approved.json --approval-sha 23F1C291C554300098B32E375A3B9DB33F2817EF28AD73B43D370C139E834F00`，原exec session为`86586`。2026-10-21 12:43:46真实TD PID15472、父Python23884、祖PowerShell35780，U映射仅本r4；process/started均准确绑定批准和工具SHA。
+
+服务曾报different Azure resource，恢复的是同一session86586；原TD/父进程仍live，没有重启或重写started。stdout明确`import_db ../syn_1/camera_to_dsi_display_gate.db`及`Import design success TD_VERSION=6.2.168116`，12:46位于Simulated Annealing Based DP，CPU增长、stderr0。原syn继承与121副本/53Git/408输入/3165旧保护在启动前再次verify，旧291138与r2/r3全部246保持；source/tool/plan/approval未改。
+
+当前只有布局布线在途，尚无最终route DB/时序/新物理资格/bit。后续仅poll原session，保自身U到native结束；不可因聊天报错另起一次`--execute`。真实结束后记录native exit/新marker/全部输入保持和原始报告，交独立完整14项及主审；不自动下载或Flash。
+
+## T029 r4来源专用bit生成器准备（2026-10-21 13:32）
+
+按主本轮明确分工新增`generate-contour29-bit-lineage-v1.py`，原`generate-contour29-bit.py` SHA`08EAD550E2F4BE5F175289FB531307311C742595AD6B3B3C8CA7833F5C41E3DA`保持；新文件只适配独立r4真实phy与原291真实syn，不回写旧输入/原生记录，不改冻结53生产源、时钟、阈值或其他树。新生成器SHA`F49348C64CB66F46234CDFA88CB07E31F7A61F178C18CE65D610A83FD01C709E`，还未主审核或获有效bit批准。
+
+门禁明确要求独立14项/原四类、全部容量、实际Q半部及适用in/out、主新完整性及精确generator artifact、fixed r4 DB/输入/主恢复批准/ExplicitMainExecutionLineage完全一致。真实原syn及单phy的PID/时间/原始stdout/stderr/XML marker、121 copies/138 old/246 preparation history、53 Git源/408 inputs/3165旧保护通过冻结recovery.verify复核；原manifest绝对路径保持original291。隐藏原生只调用bitgen，不综合/route/下载/Flash；异常如child活则保自身映射、不写FinishedAt，映射被其他进程改动不解除。有效执行禁用Python -O，因为复用冻结recovery工具包含assert。
+
+新增`test-contour29-bit-lineage-v1.py`，真实命令为依赖Python `-B -X utf8 <本测试绝对路径> --output E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-contour29/bit-lineage-preflight-20261021-v1`，原生0/9项通过，报告SHA`EF91DFF65890952A9EE5125B02B30DF2CCDCC63BDD83FC7D863D0E19B91A5EDC`，41827字节。仅语法/AST/真实--help/错误SHA及软件/恢复阶段拒收，另实际-O错误阶段CLI拒收且未创建v999999目录；没有有效bit审批、最终物理报告、TD或bitgen执行，异常native/mapping保护只静态检查不冒称实进程注入。首test原生1是静态字符串错误把dict关键字`MarkerWithinActualExecution=True`当成带引号键，输出目录未创建；修正仅测试断言后重试，失败历史本节保留。
+
+原session86586/TD15472/Python23884/U保持，同次route已到Rip-upAndReRoute iter25冲突4，仍无final result/DB资格；不根据个位冲突或中间-.041ns推出通过。下一步主/独立亲读新generator并反馈，实际route结束及完整14项主接受后才另给精确bit审批。46合成圆漏识、独立gray25及8旧真值边界、实际白底/白边现场未验保持。
+
+## T029 r4原生中断核查（2026-10-21 17:15）
+
+- 状态：等待主对话审核；本轮仅核查负责人 Codex `/root/contour29_reconcile`。接手分支仍 `task/sc520-color-integration`，HEAD `d38683ae73621c4e34271e2bc326d716acc08ca0`，既有未提交文件全部保留；没有修改生产源、冻结工具、时钟、约束、识别阈值或另一任务。
+- 17:13与17:15两次CIM确认原TD15472/父Python23884/祖PowerShell35780均不存在，系统启动时间仍为本日10:02:23.5。原r4 stdout最后在17:09:04写出Stage2.5.6.4第六轮iter6 over177；`result.json`、`stages.json`、`failure.json`、`.opt_route.end.f`和最终`camera_to_dsi_display_pr.db`均不存在。原退出码、准确结束时点和终止原因未知，不伪造native值，不声称主动按轮次条件停止或自然路由失败。原wrapper在wait后本应写结果并释放映射，当前没有该落盘证据。
+- 新独立证据 `evidence/sc520-contour29/interruption-r4-20261021-1715/`保存138项原r4文件的路径/大小/修改时间/SHA、全部进程快照、subst映射、16:55..17:15的Application/System原始事件XML及摘要。Application原文在17:10:25记录Codex sandbox service “was asked to stop”及“has stopped”，同时有AppX部署事件；时间相邻仅为观察，不据此确定其造成TD中断。按ProviderName过滤的首次只读事件查询报参数错误，改按日志和时间范围完整查询后成功，原事件未更改。
+- 实际命令为依赖pwsh `-NoProfile -File <本证据目录>/collect-interruption.ps1`，内部依赖Python `-B -X utf8 fpga/scripts/sc520-card-recognition/resume-contour29-phy.py --verify-prepared --run-id 6a50b291-phy-r4`真实native0：53冻结Git源、408输入/snapshot、3165旧保护、121新副本、138原291历史及246早期准备历史通过；输出`PreparedHashesUnchanged=true`、`CopiedFiles=121`、`OldHistoryFiles=138`。本次138项r4文件在采集前后SHA全部不变，stderr0，未启动TD。
+- `observation.json` SHA256为 `7AB2F79EDF0AFAECBA562E755CFD5235F2E70113EC38D9F62FBA511E6768405E`。U仍准确映射原r4，本轮保留：进程命令行快照不是完整current-directory/句柄审计，不以缺TD单项证据声称所有依赖已核。没有杀进程、解除映射、重写原run的started/process或创建伪result。
+- 建议主同步“r4已中断、退出未知、非整机重启”，保留原件后审核保功能关键路径提案；本轮无新TD/bitgen/下载/Flash批准。原46/gray25漏识及8旧真值问题不升级通过。没有提交或合并，HEAD不变。
+
+## D084 D0291独立两谓词实现与首批真实仿真（2026-10-21 17:35）
+
+主已明确批准`retime-software-implementation-approved.json`，本方亲读批准和DECISIONS D084后新增独立`fpga/rtl/sc520-contour29-retime/pixel29_scene_preprocess.v`。SHA `F45C5C37193344863620A266A79388FEB433237A0114AA4E15088B558CC7DE62`，与原scene仅两布尔reg、异步reset/原abort清零、W2/NW2采样、下一原CHECK消费七处差异。原53源、原场景/ROM/overlay/fixtures/TB/工具/构建未改，不启动TD或bit。
+
+新增单一`simulate-contour29-retime.py` SHA `548ECEA46BCC20C2FE26403109FD560C51A8CFCBBF1E8BDDA3B120DDA547CADB`：显式source list和baseline/candidate两个ModelSim库，用Verilog config绑定同名scene。系统回归从原software-v1已通过的输入清单拷贝，明确仅替换scene源，原TB和期望保持，不继承exec注入层。新miter TB最终SHA `9D040C3EF21FFE1FB96D0D99A0CBD8A7C4D4CA1F6AED8C59327B62C663B6E266`，沿前比所有实际RAM写事务，NBA后比全部35输出、原state/计数/地址/双bank及5RAM读q；同位置未知用case equality，不把错误改期望。
+
+实际依赖Python `-B -X utf8 <新runner> --test miter-fixtures --smoke`首轮17场/70482115检查0错，早期单RG边界1022场/26106检查0错；随后按独立意见补BG轴、显式消费覆盖及读q。这两run保留早期TB快照，不冒称当前最终TB下的全输入保持。最终`--test miter-boundary`真实native0，6132场/193240检查0错，RG/BG各1533seed+1533edge消费，±4/±8端点和各邻值全部独立计数=1。`--test miter-boundary --mutant-w0`仅改candidate仿真快照四处为过早W0/NW0采样，native1、3场/125检查/12错；具体flag RAM事务及distinct消费错拍被检出，不是编译失败或timeout。
+
+当前full202 miter、每CTstate reset/flush/bad-frame stress已实际启动，结果待结束后追加登记。原fpsverify候选整机已结束，原始日志Errors0/Warnings2，manifest待本方核实。miter 36条告警均为reference实例35个输出省略连接（checker直接hierarchy读取），没有缺输入；系统继承2条capture输出未连接告警如实保留。所有新run在`evidence/sc520-contour29-retime/runs/`，旧失败/原件不覆盖。状态进行中，尚无新软件主接受/TD/bit资格。
+
+## D0291最终miter通过与直接构建工具准备（2026-10-21 17:51）
+
+最终TB/runner保持9D040C3E/548ECEA4。full202 miter真实native0，202场/999446295检查0错，max_cycles771873，46known_misses保持；逐拍所有端口/状态和有效RAM事务无新增差异。stress90场/170010267检查native0，包括22个CTstate分别异步reset、flush、坏帧撤销，共66次有状态命中证明，以及24次固定seed协议错误和最终健康恢复。原fpsverify2/17、scenes62/930、lifecycle14/463、pairing83/569、render17/11329115、reset7/19096354、pipeline5/832434均native0/0错。原matrix202及matrix203使用各自原run manifest显式重放，目前在途，未将待结束计为通过。
+
+按主仅准备授权，新增直接`prepare-contour29-retime.py`和`build-contour29-retime.py`，无exec注入层；新独立overlay只两个`16'h0290`字节常量改为`0291`，原D0290 overlay保持。新preparer展开原make逻辑，scene在原source顺序位置替换，其他RTL/ADC/SDC/ROM/硬件默认三VERIFIED0/空TRACKS保持；五份geometry复制不减。新builder仅接收未来D0291 software_accepted及精确新工具/Preparation/SourceFreeze、原53freeze与祖先证明，当前D084和旧D0290批准不能执行。原software SHA89045635、3165旧保护及r4观察138在执行前和每stage前后逐项核；两个入口显式拒绝Python -O/-OO。
+
+292和293分别实际prepare native0，均124工程引用/408输入/五份ROM，未包含DB/marker/started，未TD；随后独立反馈要求补齐原保护和metadata schema，因此两目录保留为准备历史，不能执行过期builder，不回写原件。最终builder字段已对齐原native解析要求：Tool/Approval路径字符串和各SHA，另artifact保留；TestOnly=false经真实profile核，ChangedInputs和BitFilesFound最终实际计算；两个stage.native和final stages/result使用同一完整真实stage dict，含Command/Cwd/UTC开始结束/DB与新鲜性，write-once，不伪造marker或native结果。
+
+当前preparer SHA `8E8F138A486284693218A2A4D0BD379EEAE4DA92997E8EF46C6EAE5A52BC4C9A`、builder SHA `D409A1A8147A014A1F81E972B6498A98CD7A6D4A086BD15AD55B10D8BE398348`。物理/软件两独立已亲读并反馈无剩余阻断。实际`build-preflight-20261021-v2/report.json`七项通过：两help退出0；D084、旧D0290批准及错误SHA退出1；两-O退出1，无TD/started。v1五项工具预检报告保留为较早源hash历史，不能冒称最终工具绑定通过。最终新prepare等主确认一次定稿目录，不在旧目录重复写入。源码与物理/软件均未主接受，本机无TD/bit/硬件操作，HEAD仍d38683ae。
+
+## D0291软件交付、唯一294准备与检查点范围（2026-10-21 17:57）
+
+- 状态：等待主对话审核。实现负责人仍 `/root/contour29_reconcile`，仅本轮六个新源/工具/独立top与本日志获主精确七项本地检查点批准；旧未提交恢复脚本、原用户文件、旧D0290/261、其他任务均不暂存、不推送、不合并。
+- 最终12正常run全部实际native0/0错，累计7019场/1200915759合同检查；其中6132为强制内部输入的有符号边界诊断，不能当作实物场景或识别准确率。真实fixture202逐拍miter、90撤销压力和原9轮系统回归保持；matrix202/3030检查、matrix203/3045检查均完整结束，两个`scene-results.csv`与各自冻结原run字节完全相同。原46圆漏识、独立gray25漏识及8旧真值问题保持，不改Truth/期望/超时。
+- 新不可变软件清单为 `evidence/sc520-contour29-retime/software-v1.json`，469387字节，SHA `6D67DE2660B25F961E70703E325924C97614BC9B82C04FA2772FA0A4818CD1E1`。SourceFreeze为精确6新文件，原53baseline逐项保持，3165旧保护和r4原138文件最终再次真实重hash保持。两早期TB运行独列历史；W0错误快照独列负向，不混正常累计。
+- 独立实际最终审核 `learning/sc520-contour29/timing-review/software-review-20261021/software-final-review.json` SHA `D098E92D851E2AAE9B80DDB88044C587A826622BC105A0C487DDA9C2E91B3C7E`：12normal/7537Hash/53Gitblob、fixture与原202相同、两CSV字节比较及主/独立W0负向通过。主完整软件审及新的SourceCommit绑定待本地checkpoint后执行，不因此放行TD。
+- 主确认唯一最终 `evidence/sc520-contour29-retime/builds/6a50b294` 后，最后8E8F/D409工具实际prepare native0，124refs/408输入/5ROM，无DB/bit/marker/started。`preparation.json` SHA `8BB50DA2866D0567D0C6AAC31932DCE4CCC86775666C526E897AC323CCBDEBF4`。独立实际准备审查3950hash，所有rtl/overlay除scene/top外保持原字节、top仅两版号及资产快照路径、三个XML CompileOrder原位、全部保护通过；报告SHA `540C33300C8B02CD852C763F33CAE54B0D1C151DE0DF2A5C2C310CE1DA125F52`。292/293仅过期工具准备历史，不回写也不执行。
+- 当前软件回归仍使用原D0290集成overlay，四幅720p期望原样保持；新D0291独立top只改变两个身份常量，供后续新物理构建，不将此静态差异伪称已做新版号硬件渲染。294的SourceCommitObserved=d386是准备时真实观察；后续软件批准/native必须绑定本次检查点，新旧来源不混。
+- 后续由主完成软件接受、新构建的精确工具/输入批准，再唯一新综合路由。新物理、bitgen及真实白底识别均未通过，本轮没有TD、下载或Flash。本地提交完成号及Git元数据将在独立共享批次登记，不回写本日志制造提交前已完成的假历史。
