@@ -519,3 +519,84 @@ started真实18:52:46.548939，Stages空/Completefalse表示物理在途。Expli
 - finalrunner新增完整973/2253cardinality和各TB固定场景/checks、负向恰1错、ModelSim executable SHA前后不变；实际6normal+6negative于12:00..12:02全部Qualified，scene/score finalrunner smoke各10场仅证明当前工具，完整矩阵仍引用原11:02snapshots。当前full报告的旧runner后续强化被freeze显式披露，不伪补旧tool来源。
 - link_finish真实6文件冻结与完整启用render chain报告见`chain-runs/link-final-20261022-1202.json`SHA D1BD39BF...：正常39event/283检查/17场、EOF465142/FIFO7200/overlap1，负向319/16/恰1错；系统32/9/0、负向33/9/1。实际完整字体/LogoROM16384+1024和grayvideo0错；本日志为对方实际执行结果引用，不归本方亲跑。
 - 新catalog无色1圆2方3三角、五卡10..14与8槽明确；接口说明fresh!=healthy/fullNA/single192；只准备综合plan，不TD。源冻结`software-final-20261022-1206/source-freeze.json`SHA 5A349AB90A64F1D75A6E989854BAE22A0D46CCA59E9EF9A5D26E85081AB02F64绑定13RTL/1头/8runtime共享+原matcher验证参考/ROM字体Logo/catalog/interface及14detector/4link结果。当前等待独立/主审及统一Git检查点，无综合执行或整合开工许可。
+
+## D094软件接受与D095资源探针准备（2026-10-22 13:12补登记）
+
+- 状态：准备完成、等待独立及主对话审核。主D094正式`learning/sc520-shape-card30/main-review/software-approved-20261022.json` SHA `2AB5ED6CE7A60033773D277109E501F91FE884DBED670AA5198373FE4E71222D`接受有界白底/正放/已测尺度软件，主提交`1f0a6b72fabe3289d3f5d9f80a9f861570c15a7b`；本方未自行提交或合并。全部45冻结输入仍5A349AB9原字节，原17阴影/近圆、50新姿态、30holdout几何、1holdout苹果及五暗卡miss不改，不声称现场或变色鲁棒性通过。
+- 此批补登记12:20起v1/v2/v3完整可观察包装、Tcl/XML/ROM准备、wrapper ModelSim测试和执行器预检历史。各create-only原目录保留，不改成v4结果。原包装228动态输入+67输出=295名义IO；主从原PH1P35报告发现容量160，属于准备风险，没有新TD尝试或新的legalize失败。仅本地只读TD6.2.1命令/模板/手册调查，没有可证明的virtual/noIO参数，因此不添加猜测选项。
+- D095正式`main-review/synthesis-probe-scope-20261022.json`全文亲读，仅准wrapper资源探针：rst_n/capture_clk/display_clk仍直接外部；225其他输入经外部64bit data、2bit selector、write enable分四非重叠chunk独立任意存储，末33bit；无fold/hash/LFSR/相关发生器。原pipeline RTL、模型、素材、生产工程/时钟/ADC/SDC均不改，RENDER_ENABLE1/ROTATION_VARIANTS256、349输出全保，六64bit分块末35补零。137名义IO=3+64+2+1+67，资源包装不是生产接口或逐周期输入等价；225存储FF/decoder/mux/phase/pads将单独列资源，不能当识别节省。
+- 实际捆绑Python`-B -X utf8 fpga/scripts/sc520-card-recognition/prepare-shape-card30-synthesis.py`新create-only `synthesis-prepared-20261022-1255-v4/preparation.json` SHA `DF5ED747E5F383C4C08B251A4A7FCEEC4E2E1DF9546694D36459D1ED51BD1F8D`/40032B。22编译条目含21 runtime+wrapper，四ROM默认仅材料化为该目录绝对路径；所有源/asset副本绑定，结构XML与真实Tcl文本的正常/optimize_gate失败/write_verilog失败三stub通过。stub不能代表TD综合。
+- TB独立literal连接225输入，450组walking1/walking0每次四chunk保持/最终全端口一致，四selector的ENhold、reset；349输出literal端口强制698组walking1/walking0，每组六phase逐位映射和advance，加120拍真实pipeline输出。首v4正常native2/15181/1错，负向2/15182/2错，唯一非故意错为第一段未对齐display negedge，属TB期望多算一posedge；两个失败原目录保留。只在TB loop前同步negedge，不改wrapper/prep/软件。
+- 实际`verify-shape-card30-synthesis-preparation.py`及`--negative`新final目录：normal native0/15181checks/1scenario/0errors，report SHA `4D539D256151FB46F85E50AF2D0CF1C998CF32C0F7BE8F26341BFE2F679167FA`；negative native1/15182/1/恰1错，SHA `34B8CDBE98EF3C5716B6E9ACCDC8A9E903EA91B7400D80A45C2D4AA968D8C402`。两者Qualified/Input+Tool+ProgramUnchanged true。当前wrapper SHA `C7EC3E0580FD2A194DCE151AADD58634FF38D0805AE7D553F006A916CE824389`，TB SHA `4FFAF85148F986EC9CA1CA7C2A2355BA927B2227D027002E4BB71D1523AE615E`。
+- 新执行器只允许未来精确`synth_only_approved`，绑定Program/Preparation/SoftwareFreeze/MainSoftwareReview/IndependentSoftwareReview/WrapperVerification/IndependentPreparationReview/TD tool及HEAD/Git blob；禁止复用started/result/native/db/bit，不subst、不重试/kill。异常finally独立记录真实native/LiveNativePreserved、输入/工具/文件消失及ValidationErrors，未知poll不伪FinishedAt，精确完成marker和新鲜DB/全部输出受检。当前Program SHA `30458748A61A49E03DD28D6402716720A4DB960E2209E2732B0F778FA1C01BE7`。
+- 实际`test-shape-card30-synthesis-executor.py`新v4预检报告 SHA `99262AC10A43103C42CB0851364868225A7EEE9EE505B95766D974FF849841CD`：5真实CLI(help/verify-prepared/wrong-stage/wrong-SHA/optimized)实际0/0/1/1/1，准备前后保持；7异常case全crypto/input/Git/Popen stub FakePID900001，spawn/wait-live/wait-exited/poll/inputmissing/toolmissing/outputmissing均检出、不得计真TD。旧v3/toy审若源切换保持失败，不覆盖。
+- 未修改软件freeze绑定`synthesis-plan.md`。独立后审资料可复用旧`audit-scene-build.py` memories/init_decode/port_bits/word_address_bits与gate cells/INIT选择证明，但旧层级/9reset/25bank硬编码必须按新真实网表重核；当前仅新的资源清单计划，没有完整T030后审程序，也没有新资源实测。无TD、synthesis、route、bitgen、下载/Flash或整合开工消息。下一步独立亲核v4精确hash及主审核，再等未来另批综合许可。
+
+## D096唯一v4真实综合与告警待审（2026-10-22 13:39）
+
+- 状态：真实综合完成，资源/时钟/ROM/复位/CDC待独立与主审核，不能作为整机时序合格或开始整合。主D096最新AGENTS与批准`learning/sc520-shape-card30/main-review/synthesis-only-approved-20261022-v4.json`全文亲读，SHA `307D6A2B9C9B48E11F623D84156D0326B31A2D93380A5C389C4EA52162FE0C4D`复核一致；主索引Check870/14811完成后才执行。
+- 唯一实际命令为捆绑Python`-B -X utf8 fpga/scripts/sc520-card-recognition/execute-shape-card30-synthesis.py --approval E:/juan/FPGA/learning/sc520-shape-card30/main-review/synthesis-only-approved-20261022-v4.json --approval-sha 307D6A2B9C9B48E11F623D84156D0326B31A2D93380A5C389C4EA52162FE0C4D`，executor30458748、DF5E准备及HEAD1f0a6b72由该冻结程序再次校验。13:33:16.412668+08启动TD5920、父Python35572，cwd仅v4准备目录，绝对原TD6.2.1工具与Tcl。CIM亲核PID/父/创建13:33:16/ExecutablePath/完整命令一致；原session30610自然退出，未kill/重试/重launch。
+- 原native结束13:34:30.742599+08、ExitCode0、LiveNativePreservedfalse。`native.json` SHA `D81C94F5C8ED17EC984E987617367D451A2E316E5B509C5890B99412C0DFB0D6`；冻结executor自行write-once的`result.json` SHA `E539F8533BAE38A8BE322F9ADE7A324F1665A4C682A85915EBC2F9B8EDC612D4`/18924B，SynthesisCompletedtrue、ChangedInputs[]、ValidationErrors[]、ToolUnchangedtrue、exact完成marker新鲜、无bit。此完成只表示实际TD流程完成，不包含告警质量/时序/资源接受。
+- 全部新原始stdout/stderr/td log/logw、elaborate/rtl/gate数据库、gate.v、rtl/gate/gate_full.area、gate.qor、clock XML与gate timing保留。最终gateDB SHA `4EA4A9251296A733DB8A588B570BCABC1B44AE1D491F221BCD47986AC9B5E2A6`/4291672B，gate.v SHA `DD9984777EB1C286C0BE76246B642D76446D6BC974479943453D171623282BCD`/7717812B，stdout SHA `CD420B9B89ADBF04EE473AD7558817B3E1B05CF48B93A21C0C0C072618931B98`/48567B。原prepare manifest不回写，也不改result数据。
+- 实际gate_full.area为9142LUT/5570REG/6339slice/68ERAM/8DSP/137IO；前pack gate.area9707LUT/6847slice非同一统计阶段，不混数。hierarchy capture199seq；scene2539seq/28ERAM；shape344seq/1ERAM；matcher318seq/26ERAM/1DSP；render460seq/13ERAM/7DSP，含font3ERAM/Logo10ERAM；forward359seq/backward11seq/system368seq均存活。wrapper top与pipeline差167logic-lut/156seq，不是期望225+3物理FF，必须逐cell解释裁剪/合并，不能当模块净节省。
+- 重大时钟问题：stdout145/148实际create_clock命令端口为空，146/149各`USR-8122 CRITICAL-WARNING: create_clock: please import a netlist and launch a sdcinfo at first`；Tcl catch不抛错，流程继续。最终clock XML仅DeriveClock，gate.timing覆盖93.18%，仅默认20ns/50MHz；SWNS=-8.780ns/STNS=-199.604ns/HWNS=+0.328ns，worst为shape距离到ellipse最小串联33级。原9.660/13.468未生效，不能引用此报告作正式双时钟时序，不放宽预算清告警。
+- ROM告警原样保留：shape rom、matcher template_mem、font rom及Logo index/palette五项HDL-5314 no-driver，SYN-5025 using0 all undriven。68ERAM说明实例资源存在，不证明INIT、宽度/截断/地址/enable/CS/mux内容正确；独立必须逐实例解码原ROM并核门级选择拓扑，不能把这些告警自动忽略成正常。SYN-6021全部137端口无ADC并随机I/O分配/bitgen will abort符合隔离probe未板级约束的现状，不加ADC或启用unconstr_io。
+- 此批无subst/place/route/bitgen/下载/Flash、无任何源码/模型/真值/时钟预算修改。软件45冻结输入和全部prepared/审核工具绑定由原executor前后保持。完成登记/索引Check后交独立与主亲核全部真实新资源/ROM/reset/CDC；若需约束恢复或保功能修正，先新明确scope，不重execute本目录。资源接受及D089完整冻结检查点后才由主通知指定总整合开工。
+
+## 同4EA4门级DB只读时钟重分析准备（2026-10-22 13:58）
+
+- 主只准新create-only准备，不再综合或立即TD。完整亲读本地官方DefaultFlow.tcl/SynIpFlow.tcl以及旧已审probe-i2c-io.py，采用import_device/import_db/read_sdc/get_ports/get_clocks唯一性guard/update_timing/report_clock_summary/report_timing_summary，不猜新sdcinfo命令。不修改原3045执行器/DF5E准备/4EA4数据库/E539结果/原Tcl或45软件freeze。
+- 新`clock-reanalysis-prepared-20261022-1345-v1`含同SHA4EA4的DB复制、仅capture9.660/display13.468两条SDC及只读Tcl。两个端口各唯一、两命名clock各唯一、全部clock总数2才生成报告；没有exception、multicycle、ADC/IO预算、elaborate/optimize/export/write_verilog/place/route/bit/subst。原56history/全部45输入/官方及旧probe来源程序/主D096批准绑定始末保持。
+- 本方实际捆绑Python`-B -X utf8 prepare-shape-card30-clock-reanalysis.py`native0，prep SHA `F2F5D71329ADC86BAB5C194A016BA29954E360E33C22C6E85B5059053DA11EA2`/43408B；六实际Tk Tcl全stub正常、read_sdc失败、重复port、缺clock、update失败、report失败均准确0/1终止，失败没有marker/成功token，不是TD。
+- 严格新executor SHA `177F90149A2BA05B2E48B781DAC30BD139D669C34E0BC293444040A7B5E6A449`只允许未来精确`clock_reanalysis_only_approved`绑定7来源、HEAD、Program/Preparation/Tool和原native lineage。旧started/process/native/result/stdout/marker/report拒绝复用，活动TDconsole拒收，不kill/重试；未知poll保持live无伪FinishedAt，finally保存全部真实输出/变化/criticalwarning、禁止新db或bit。AnalysisCompleted只表示有两原命名及周期的新鲜报告，TimingQualified/ResourceAccepted/HardwareValidated始终false待独立主审。
+- 实际`test-shape-card30-clock-reanalysis.py`五CLI(help/verify/wrongD096stage/wrongSHA/optimized)原生0/0/1/1/1及七全crypto/input/Git/Popen模拟异常spawn/waitlive/waitexited/poll/input/tool/outputmissing全部通过，报告 SHA `D81F1053D8C0D23F7A63FFE10ABE872652A779A45D02F21170EC4C85FF5DE5F3`，FakePID900002绝非TD。输入/原history前后保持。提案/准备/预检交独立与主，仅新明确许可后才一次只读分析；无新TD会话。
+
+### 只读时钟准备v2结构门禁（2026-10-22 14:20）
+
+- 主审指出v1 substring名字/周期及只查stdout不足，原v1目录与预检保留，不覆盖成新通过。本方仅新`clock-reanalysis-prepared-20261022-1405-v2`create-only，原同4EA4DB/原56history/45freeze保持，追加保护原v1四准备文件。新prep SHA `C70655646859DCCFCCA43131A01BC136DB973A94C8EAE711C80B65FDBF063110`/44632B，原readsdc/Tcl二端口二时钟唯一guard及六Tclstub保持。
+- 亲读旧真实TD门级报告发现详细Name为内部clk0等ID，故先Clock-Id/C-Freq/Fanout/Clock-Name表建立唯一ID到原命名映射，再按详细行C-Period(ns)用Decimal分别精确9.660/13.468；只接受两合法clock、无重复/缺失/额外DeriveClock/非法行，不从任意notes/string决定成功。XML用ElementTree解析clock_summary根单groups/size2、两合法唯一clock_group各size1、正数一致endpoints/clocks且nonclocks0，不接受额外/非法root/group。stdout与stderr两流CRITICAL-WARNING/ERROR均入严重告警拒收。
+- executor新SHA `ADCDE9E4C61ED821E87C6BD214B69D66F35381C165CADF7FF3533C586D8718D9`，preparer SHA `28B342E5D873E0EF8808FA064D42A0AA3E0D91DE76C5675A3C4A92B41AAF821D`。本方实际准备native0，再实际v2预检：5真实CLI原生0/0/1/1/1；9结构parsercases涵盖合法timing/XML与wrongperiod/extra/duplicate/missing/非法root/extra group/零端点；11全crypto/input/Git/Popen模拟执行包括原7异常、合法双时钟报告完成及wrongperiod/extraDefault/stderrCritical拒收均通过。负时序合法报告允许AnalysisCompleted但TimingQualified/ResourceAccepted仍false，故不掩盖真实负余量。
+- v2预检报告 SHA `269D72544EBE243BD87D4BE2F057CFD481560BF5A2DF37E5250E8709F58A528B`，程序 SHA `816106F2360C0FA212004BEB5063CCA48D8DFE87CE8433FB08E249455943A15B`。原E539结果及4EA4 DB亲重hash不变，无新TD/二次综合/route/bit。等待独立及主对最终exact SHA审批，不沿v1许可猜运行。
+
+## D098唯一同DB只读时钟分析实际失败（2026-10-22 15:20）
+
+- 状态：等待主对话审核。`/root/shape30_clock_close`在原detector_finish不活动后，依主D098接唯一执行与本日志归属；冻结执行器ADCDE9E4中的Owner仍是旧作者标签`/root/shape30_detector_finish`，不是本次实际执行者。生产RTL、原执行器和原准备均未修改。
+- 主确认本批索引refresh及Check实际`879 records/14851 paths`通过后，才按精确批准`E:/juan/FPGA/learning/sc520-shape-card30/main-review/clock-reanalysis-only-approved-20261022-v2.json` SHA `80A00854187B27638531B426A088F57D0433F0B065C40439E9AD90E7ED153DB5`执行一次捆绑Python`-B -X utf8 execute-shape-card30-clock-reanalysis.py --approval <该绝对路径> --approval-sha <该完整SHA>`。执行前亲跑`--verify-prepared`实际native0。
+- 唯一TD24068、父Python19640、cwd仅`clock-reanalysis-prepared-20261022-1405-v2`；真实开始`2026-10-22T15:18:03.625246+08:00`，自然结束`15:18:07.176754+08:00`，TD原生ExitCode1，外层命令ExitCode1。无kill、重试、重launch；随后CIM确认24068已不存在，只有原无关TD GUI22472保持。
+- `import_device`与同4EA4数据库`import_db`成功，随后`read_sdc`与get_ports/get_clocks调用到达唯一性guard；stderr只有`Exact two ports and clocks not resolved`。本次未记录集合实际值，不能判定具体哪一个集合为空或额外，也不能声称周期生效。无`analysis.complete`、`clocks.rpt`或`gate.timing`。新logw只有工具banner、无严重告警；guard失败不是XML解析失败或新的综合失败。
+- 原write-once `result.json` SHA `210DBC3740EF7A5BF8B3A7326AF23C3D941FCBAF00066D929DE0473C8E9C7F07`/8276B，`native.json` SHA `2938BF305CD71503F0C166BD245F6FB611E7EF97EE62A144FD5D508694F2DD71`/139B。`AnalysisCompleted=false`、`LiveNativePreserved=false`、`ChangedInputs=[]`、`UnexpectedDatabaseOrBitFiles=[]`；缺报告及结构解析失败真实列入6条ValidationErrors，不能冒称分析完成。
+- 本方随后再次实际SHA/Bytes复核117项prepared/history/freeze/reference/tool绑定，并比较原综合目录全部54文件路径集合；原45软件输入、4EA4原/副本DB、E539原结果及HEAD1f0a6b72保持。原历史仍54原run+4旧v1准备=58；此前日志/登记中的56history文字误计在此纠正，不修改旧记录。
+- 不重综合、不export/route/bit/硬件或改SDC/时钟预算；本失败目录不得再执行。主与独立决定后续最小准备范围；资源/时序/正式交付与通知整合开工仍未放行。
+
+
+## 时钟 v3 独立准备接续（2026-10-22T16:41:46.820155+08:00）
+
+- 状态：等待主对话审核。`/root/shape30_clock_resume`接原不活动clock_close的时钟准备/执行器与本日志，原HEAD1f0a6b72/45软件源与所有v1/v2失败保持，不修改旧三脚本。主库D098前部仍为旧许可，原worktree总文档更早；本次按主明确新准备指令，不沿旧许可执行。
+- 已用本机SWUG105印刷33/38/78页核对-o可读查询与首次STA初始化，新增三个*-clock-reanalysis-v3.py及独立1610-v3准备。先init update_timing basic，再read_sdc原预算，再refresh，保存两报告后才五组-o查询；拒把UID用llength计数。完整表/XML和精确可读查询联合判定，旧失败与新报告不互换。
+- 本方实际捆绑Python -B -X utf8 prepare-shape-card30-clock-reanalysis-v3.py原生0，9真实Tcl stub通过；test-shape-card30-clock-reanalysis-v3.py原生0，5真实CLI/19结构parser/14完全模拟Popen分支/2历史集合检查通过。模拟PID900002均明确非TD。45冻源、原54综合文件、v1四文件、v2十二文件及旧三脚本/官方参考都保持。
+- Prep 909AA08765E01FADA65B6298D9089272FD36ADA1FED8BDC1BA4A5E612C432AD5/78362 B；executor D80580711E4FFF5384D85211729EC9DE9EEF6C5969FFD620C4BA561A36A7E128；preflight 3B2AA0FE29F34898A051D7C8BC6B832EFB31F90508737F355FC54448AC960198/221947 B。完整路径与执行批准8项字段见hardware/sc520-shape-card30/clock-reanalysis-v3-proposal.md。
+- 尚未运行TD、重综合、export、route、bit或硬件；AnalysisCompleted的本地模拟不是真实时钟通过，TimingQualified/ResourceAccepted/HardwareValidated保持false。独立/主审及精确Version3许可后才一次新目录只读执行。没有新提交，保留既有未提交证据和日志。
+
+
+## D0300交付草稿准备（2026-10-22T17:30:12.970604+08:00）
+
+- 主指派后仅新增hardware/sc520-shape-card30/delivery四份草稿：README、manifest-draft.json、compile-order.txt、verification-draft.json，未更改45freeze、旧失败或新v3。当前软件已接受，ResourceAccepted/ClockQualified/FinalDeliveryApproved/IntegrationStartAllowed全部false；不正式交付、不提交、无TD。
+- 本方实际逐项核45当前文件SHA/Bytes及1f0a6b72原Git blob全部相同，并核37份绑定证据引用；21源编译序、10资产合同、9TB、4工具与1验证参考齐全。D089六类要求逐项列出，资源与新时钟保持pending，4ROM参数/192协议/8类业务/逻辑音频/实际miss/集成边界清楚。
+- 原39帧链的display13.333ns软件激励与原13.468ns实现预算分开披露，约16.66476546ms为冻结循环推导，非硬件测量。旧interface/synthesis-plan的Stage为历史，不回写冒充当前状态。
+- 首次生成器在输出目录创建前因引用Path正反斜杠字符串差异拒收，随后改为规范路径读取和精确SHA/Bytes检查通过；不是审核内容或源文件变化。当前manifest SHA C5B126EE95293BCE678FBB41E9233B4E2EEDC6939B212D2CBEC90E4350A7B8A3，37引用与已列草稿自检再次通过。
+- 等主独立资源/时钟结论后再定稿与任务范围检查点；指定集成消息由主发送，本方不越过未完成门槛。
+
+
+## D100唯一v3只读分析实际拒收（2026-10-22T17:46:33.153689+08:00登记）
+
+- 主D100精确许可10A567C46BC0AB7BDA258964DE988108D5B7E9524B72C65151B7D167DAF2044A已全文/实际hash核对；主Check885/14882和本方随后Check886/14887通过。唯一执行捆绑Python -B -X utf8 execute-shape-card30-clock-reanalysis-v3.py --approval E:/juan/FPGA/learning/sc520-shape-card30/main-review/clock-reanalysis-only-approved-20261022-v3.json --approval-sha 10A567C46BC0AB7BDA258964DE988108D5B7E9524B72C65151B7D167DAF2044A。
+- 实际TD31708/父Python47728，2026-10-22T17:35:11.403910+08:00→2026-10-22T17:35:20.758298+08:00自然native0；外层exit1。ReportsFresh=true但AnalysisCompleted=false，两个报告在query之前均仍默认20ns。5个USR8011报告get_ports/get_clocks的-o选项无效；两个port返回名字，两clock及allclock返回空。新结果12B6A2876460E4DB114222B6D7C8E7A91D6C6BB49DDA0A8EC54757B4D95B7D52/8969 B。三项validation拒收（clock identity/XML两组/query空）；未把native0或marker误认通过。
+- 原始stdout/read_sdc只有启动行而无create_clock内部执行行；约束可能仅登记未应用是定位线索，尚非确定原因。未更改脚本、约束、数据库或任何原结果，未重试/重综合/export/route/bit/硬件；CIM实查31708已不存在。
+- 结果ChangedInputs[]、CompleteHistoryInventoriesUnchanged=true、UnexpectedDatabaseOrBitFiles[]。本方后续verify_prepared实际通过，135绑定/三个完整54、4、12历史集合保持。新失败原件只登记，不回写；完整资源/时钟与正式交付仍未接受。
+- delivery草稿仅更新v3真实失败状态并补第38个证据引用，当前manifest 1F1AC8AC2D2B99EEE99C9475575BD0CE13D893F237E0A0515EB9587E2D43D0F2。不提交、不正式发布、不通知总集成。
+
+## D103 模块交付收尾（2026-10-22 18:18）
+
+状态：等待总整合集成审核。主接替失败工具代理收尾；45软件原1f0a6b72保持，独立资源118A875与主DDA54接受模块用途。v4b唯一TD24764于18:11:07至18:11:14实际native3221225477、wrapper1，首create_clock空目标崩溃、minidump/无报告，原源/DB/历史保持。停止同DB试验，不接受任何时钟结果。
+
+D089交源码候选，21编译顺序/ROM/192接口/六类证据见hardware/sc520-shape-card30/delivery/HANDOFF.md及manifest-final.json，实际最终引用和45原Git字节均核。总整合须在正式project先证明原9.660/13.468时钟加载，再完整新综合/物理；无bit/硬件/合并通过。下一步登记索引、任务范围检查点后主正式通知指定整合对话并确认接收。
