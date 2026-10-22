@@ -1,0 +1,24 @@
+{
+  "CatalogId": "shape3-cards5-v1",
+  "CatalogRevision": 1,
+  "Candidate": "D0300",
+  "Status": "software_candidate_pending_main_review",
+  "UnknownItem": 0,
+  "RetiredItems": [4, 5, 6, 7, 8, 9],
+  "QuestionSlots": [1, 10, 2, 11, 3, 12, 13, 14],
+  "QuestionsPerRound": 10,
+  "MaximumScore": 10,
+  "NextRoundStartIncrementModulo8": 2,
+  "MediaMappingRequired": true,
+  "HardwareAudioEnabled": false,
+  "Items": [
+    {"ItemId": 1, "SemanticKey": "circle", "Name": "圆形", "Question": "请找出：圆形", "ColorIndependent": true, "MediaMappingRequired": true},
+    {"ItemId": 2, "SemanticKey": "square", "Name": "方形", "Question": "请找出：方形", "ColorIndependent": true, "MediaMappingRequired": true},
+    {"ItemId": 3, "SemanticKey": "triangle", "Name": "三角形", "Question": "请找出：三角形", "ColorIndependent": true, "MediaMappingRequired": true},
+    {"ItemId": 10, "SemanticKey": "apple", "Name": "苹果", "Question": "请找出：苹果", "ColorIndependent": false, "MediaMappingRequired": true},
+    {"ItemId": 11, "SemanticKey": "banana", "Name": "香蕉", "Question": "请找出：香蕉", "ColorIndependent": false, "MediaMappingRequired": true},
+    {"ItemId": 12, "SemanticKey": "car", "Name": "汽车", "Question": "请找出：汽车", "ColorIndependent": false, "MediaMappingRequired": true},
+    {"ItemId": 13, "SemanticKey": "star", "Name": "星星", "Question": "请找出：星星", "ColorIndependent": false, "MediaMappingRequired": true},
+    {"ItemId": 14, "SemanticKey": "umbrella", "Name": "雨伞", "Question": "请找出：雨伞", "ColorIndependent": false, "MediaMappingRequired": true}
+  ]
+}

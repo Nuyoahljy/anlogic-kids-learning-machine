@@ -395,3 +395,127 @@ U盘正确归本任务291。另一个TD PID29664/V盘属于独立sc520-awb28/spa
 - 主确认唯一最终 `evidence/sc520-contour29-retime/builds/6a50b294` 后，最后8E8F/D409工具实际prepare native0，124refs/408输入/5ROM，无DB/bit/marker/started。`preparation.json` SHA `8BB50DA2866D0567D0C6AAC31932DCE4CCC86775666C526E897AC323CCBDEBF4`。独立实际准备审查3950hash，所有rtl/overlay除scene/top外保持原字节、top仅两版号及资产快照路径、三个XML CompileOrder原位、全部保护通过；报告SHA `540C33300C8B02CD852C763F33CAE54B0D1C151DE0DF2A5C2C310CE1DA125F52`。292/293仅过期工具准备历史，不回写也不执行。
 - 当前软件回归仍使用原D0290集成overlay，四幅720p期望原样保持；新D0291独立top只改变两个身份常量，供后续新物理构建，不将此静态差异伪称已做新版号硬件渲染。294的SourceCommitObserved=d386是准备时真实观察；后续软件批准/native必须绑定本次检查点，新旧来源不混。
 - 后续由主完成软件接受、新构建的精确工具/输入批准，再唯一新综合路由。新物理、bitgen及真实白底识别均未通过，本轮没有TD、下载或Flash。本地提交完成号及Git元数据将在独立共享批次登记，不回写本日志制造提交前已完成的假历史。
+
+## D085唯一294实际完整构建启动（2026-10-21 18:10）
+
+- 状态：进行中；本方唯一跟进实际native。主已正式接受67b5448的软件，批准文件 `learning/sc520-contour29/main-review/retime-software-approved.json` SHA `6FD089CEAAA9973511D1B2B9DDFC3B3742B310844F4C4519C153E721DCEA02DD`，主实际11586引用、6新/53原Git、12normal、两CSV及四图主审通过。收到主733记录/14256路径的索引Check成功确认后才执行；此前只做无文件变动的prelaunch，真实0核批准/全部工具、6+53源、408输入、3165旧保护和r4观察138保持，未提前运行。
+- 实际命令为依赖Python `-B -X utf8 fpga/scripts/sc520-card-recognition/build-contour29-retime.py --approval E:/juan/FPGA/learning/sc520-contour29/main-review/retime-software-approved.json --approval-sha 6FD089CEAAA9973511D1B2B9DDFC3B3742B310844F4C4519C153E721DCEA02DD --run-directory <本树>/evidence/sc520-contour29-retime/builds/6a50b294`。原exec session `98139`，Python38260/父PowerShell37624；started真实18:10:29.195187，实际syn TD37044于18:10:40.416617创建，父38260，精确`T:/syn_1.launch.tcl`，Cwd `T:/td_project/camera_to_dsi_display_Runs/syn_1`。
+- T仅指向本次294；U仍旧r4，不操作原映射/文件、用户GUI22472、T028或音频任务。started/process均由冻结D409 builder真实write-once，Stages空表示尚无阶段退出，不补造native0。当前仅综合在途，不代表新时序或物理通过；软件已知46/gray25及8旧真值边界不变。
+- 后续只poll原session，综合真实完成后原工具核marker/DB/log/保护及十复位审计，再由同一次批准进入新place/route。第六轮结束无时序改善或进入第七轮的明确日志后重新核精确PID、创建时间、Command/Cwd及T归属，保原证据后仅停本TD，由原wrapper写真实结果，不无限重跑、不将中间余量视为最终签核。新完整14项与主新物理接受及固定DB另批前，bitgen/下载/Flash仍禁止。
+
+## 294真实综合完成与包装标记错误（2026-10-21 18:21）
+
+- 状态：等待主审核最小恢复方案，禁止重execute原294。TD syn37044真实native0，StartedAtUtc10:10:40.262737Z、FinishedAtUtc10:17:22.356454Z，`.opt_gate.end.f`与新gate DB均新鲜、stderr0。新DB SHA `A19F33EE2F996203C7255D059D12F4A829E125140652732BC5C5C57A451104FB`、14626492字节；综合网表 SHA `A5168F7B2A83CD96D65001CB8E4BAA36ADE953FE9A8F5FB5FA1E59C45016B8AD`。
+- 实现方写的D409模板使用全串`.replace("STAGE",stage)`，误把字面常量`PIXEL14_STAGE_OK`一并替换成`PIXEL14_syn_1_OK`。实际launcher和stdout全文均为`PIXEL14_syn_1_OK syn_1`，因此包装脚本在native返回后正常触发自己的完成token检查并退出1。原session98139已真实结束，未进phy、未执行reset audit；这是包装完成标记生成错误，不是RTL综合失败，也不改写成全流程成功。
+- 原result/stages/native/process/launcher/raw stdout/stderr/DB/网表均保留。result SHA `355101DB0D61F25BF45593A37557144FA5F67581A9A78F670C29D8620BD4F152`，syn.native SHA `EC6164ED9C3BC175468749A97ACD8C2CB0EB2BBFECB335ED8C7884CA327A3852`，stdout SHA `D651E472349C386CF769F3DA8742E984A5598697DD5064A696C7314285D114F7`。result实际Complete=false/ChangedInputs=[]/BitFilesFound=[]/T已Released=true，结束18:18:20.939401；CIM原三PID均不存在，仅用户GUI保留，U仍旧r4。
+- 新只读观察 `evidence/sc520-contour29-retime/failure-marker294-20261021/observation.json` SHA `DC62ED8C1B3509D9342921678E8532CEA518B814DEB22C6C05FB9C43A12A1928`，并保存原294全部125文件SHA清单。随后实际只读保护检查native0：6新/53原source、408inputs、3165旧保护、r4观察138和本次294全部125文件逐项保持。未改原D409、六冻结文件或原native metadata。
+- 主已要求仅准备独立route-only恢复：复用这次真实新综合、ExplicitInheritedSynthesis明确绑定altered token及真实source/command/DB/netlist，新Stages仅记录未来实际phy，真实reset audit先独立执行到新证据目录。新launcher用不会碰常量的唯一占位符或f字符串，必须检查实际生成Tcl全文及原完成token。恢复工具/目录和TD执行另经精确审核；不重复综合、不静默修原记录。
+- 等待综合期间按主明确准备授权新增直接`generate-contour29-retime-bit.py`与指南草案。gen SHA `BBC7C06688351A531E128788C837F8ECACBC1C5BB224457F0293920808774A88`，guide SHA `55E833A4BE239FBD87C5BFD4E44F5AE63377685C543A925AC934513940CA3FEC`。实际help0、D085错误阶段1、错误SHA1、-O1，未TD且无非法输出目录；原生成器和六冻结文件未改。当前草案要求294完整两native，已因本次包装错误明确暂停QA，须待恢复来源接口主审后再独立适配，不授任何bitgen资格。
+
+## 真实复位后审与294路由恢复准备（2026-10-21 18:40）
+
+- 主已明确仅准备route-only恢复，不重复新综合、不修改原六文件/D409/294任何原件。本方对原294新网表实际运行冻结`audit-contour29-reset.py <294> --output <failure-marker294-20261021>/reset-synthesis-294.json`，native0，Qualified=true/10分区/max2786。报告 SHA `B337CA0DC3365A8D4662E2BB4C52789F5E7275D56252ED0D5388955B90668D7D`；这是包装退出后真实只读后审，原wrapper未执行它，输出不写原294，原125文件清单保持。
+- 新直接`resume-contour29-retime-phy.py`最终 SHA `7AF42A23C6EBDEBDDCEA31A419C981F17AAA793CF7775FE3C3552549BFF30D41`。仅复用冻结D409纯哈希/输入/保护函数，不继承旧r4工具/HEAD门禁；新执行必须未来`phy_resume_approved/D0291`、精确helper/Preparation/主/独立来源，D085不能直接启动。只新增未来实际phy Stage；ExplicitInheritedSynthesis完整绑定原syn PID37044/真实UTC/原XML Pid与freshness/actual alteredtoken/DB/网表/原wrapperFalse，以及单独后审reset，不把副本时间伪造成新综合执行。
+- 恢复launcher是字面常量全文，不做STAGE替换。`--self-test`实际在Tk Tcl解释器执行生成文本，native动作只stub记录，exact输出`PIXEL14_STAGE_OK phy_1`、exit0和source/命令序列3断言通过（1输入场景）。独立对实际settings+生成Tcl又跑正向及6错配置/flow失败/bitgen禁令共9个Tcl输入场景，不调用TD。
+- 首次`--prepare`在mkdir前真实exit1：PS旧125文件清单的culture排序与Python排序不同，原/新路径数均125，Added/Removed/Changed全空，内容无变化。只将该清单比较改为路径唯一字典+SHA/Bytes，仍要求完整125且无重复；没有创建失败的准备目录。独立反馈另补finally输入比较异常及mapping清理异常守护，保真实result与活子进程映射，不假写FinishedAt。早期preflight-v1/v2保留历史，不改源SHA或冒称当前工具。
+- 唯一新目录`evidence/sc520-contour29-retime/builds/6a50b294-phy-r2`实际prepare native0，118同字节copies，原manifest/工程保原绝对路径，由Original/Copy显式绑定；原294125全保护。`preparation.json`132652字节，SHA `8DD046CAA0AF9DCD86D87313DB183AA1B5D6F87770D9EFF68D39393FAECF0E52`；实际`phy_1.launch.tcl`SHA `68060659C3E9738BF07D0FA4F8EBE73CC744DCF56BBE59B8D40F48FA6CE84E54`。`--verify-prepared`后续两次均native0，未有started/新native/route DB/bit。
+- 最终本方预检`recovery-preflight-20261021-final/report.json`SHA `0F849F5A4F7C66E58C533F58FA078BB67A42247D63BC9CF8450B83126F720A4C`：真实6个CLI（help/self-test/verify0、D085错误阶段/错误SHA/-O均1）；另3个finally故障注入直接执行控制流，但全部crypto/input/Popen/subst为stub。注入详报SHA `7724AED6B425CC30BB57206AE10387E9C29BA6715328265A605813797E4765CD`；模拟PID900001/FakeTool/模拟结果不能当真实native/进程/批准来源。活子进程无FinishedAt且保盘、已退出能落盘/清理模拟映射、映射查询失败仍落result/Releasedfalse，均通过。
+- 独立已真实审核r2：报告SHA `3E8CF9E665C8B572C8E23B62E8FFEFB44FFFCEAF07A3210822F150AD87379C80`，118copies/125old/440引用及59源/3165/r4138保持，9 Tcl场景和4 CLI通过，前后r2 inventory不变。当前只等待主精确恢复批准，不TD、不改源/时钟/约束/阈值、不恢复旧294。软件已知46/gray25/8边界、原U及所有失败/准备历史保持。
+
+### finally注入驱动补充来源（18:43）
+
+独立要求亲读实际注入代码，本方将先前真正以Python `-c`执行的同一body保存为`recovery-preflight-20261021-final/exception-driver-executed.py`，SHA `427FC9567B06ED3F2B7D2C1D99896A7E419DDBB546713FDC8A0D92DADBA310BA`。代码直接调用新helper的execute，所有crypto/input/Popen/subprocess/驱动器查询都stub，三个控制流场景实际产生模拟result后逐项断言，不调用TD或subst。`driver-provenance.json` SHA `4CE7674B1D03F5B27DFE64914D77359CDB4E8C4533EE42671EBEA3308FDDDF73`明确“先内联执行、后保存源文件”，没有伪称旧7724报告之前已绑定driver；原报告和helper/r2均未改。固定输出目录为create-only，复现实验须在隔离副本中改为新的测试输出路径，避免覆盖历史。该源证据不代表真实native异常注入或生产批准。
+
+## D087唯一r2实际物理恢复启动（2026-10-21 18:53）
+
+主已单独批准`retime-phy-r2-approved.json`，SHA `69D52899C8EE5E8CFD11564ACF7B66AD93C80F9E9D3802444F6770945C3D6F62`，绑定67/7AF helper/8DD准备与独立8ED终审。本方亲读D087/AGENTS/总记忆和精确批准，再实际`--verify-prepared`0核118副本/125原294及冻结保护，CIM只有用户GUI22472。收到主索引Check成功756记录/14340路径的明确执行确认后才启动，未提前调用。
+
+实际命令为依赖Python `-B -X utf8 fpga/scripts/sc520-card-recognition/resume-contour29-retime-phy.py --execute --run-id 6a50b294-phy-r2 --approval E:/juan/FPGA/learning/sc520-contour29/main-review/retime-phy-r2-approved.json --approval-sha 69D52899C8EE5E8CFD11564ACF7B66AD93C80F9E9D3802444F6770945C3D6F62`。唯一原exec session `10411`，Python27516/父PowerShell17796，TD39404于18:52:46.572055真实创建，父27516，精确`T:/phy_1.launch.tcl`，Cwd `T:/td_project/camera_to_dsi_display_Runs/phy_1`。T仅映射新r2，U仍原r4不操作，原294和用户GUI保持。
+
+started真实18:52:46.548939，Stages空/Completefalse表示物理在途。ExplicitInheritedSynthesis完整保原syn37044/exit0/源UTC/actual alteredtoken/原wrapperFalse/真实A19DB/A516网表和后审B337reset，不把新副本当新综合。新TD只opt_place..opt_route，不重综合；后续仅poll原10411，不重execute或另起尝试。按D087第六轮结束仍无改善或进入第七轮的明确日志后再核精确身份保存并只停本TD，原wrapper写实际结束；中间余量不作最终资格。新物理14项及主接受、固定DB另批前禁止bitgen/下载/Flash，草案不代表有效许可。
+
+## r2在途与直接bit入口双来源草案（2026-10-21 19:16）
+
+原session10411/TD39404/父27516保持同次运行，19:15已到Phase1 Rip-upAndReRoute iter15 over1326，CPU持续活跃；当前没有最终route DB/marker/result，不根据中间setup+.135或Placed+.890/-.284判断通过。启动批次统一索引Check已真实758/14346通过；新gen准备不操作T/U、原native或源6/53。
+
+按主继续准备授权以及物理方已定稿D158显式lineage接口，仅修改尚未审核的`generate-contour29-retime-bit.py`草案和指南，不改任何已冻结文件。当前generator SHA `3DBF5C7826B9EA494BE579B68A2636C223CB054F875222AAE7A575574E504A8F`：未来只接单独`bitgen_approved/D0291`，精确GeneratorArtifact/Tool/D085/D087/LineageProgram D158/Common及新DB/inputs/主物理/独立14报告；普通加载lineage模块、前后各调用实际`audit(r2,67,D085,sha)`，不伪两阶段视图。显式原294真实syn0/actual错误token/原wrapperFalse，新r2仅实际phy；两目录全文件、6+53源、3165原保护复核。仅导入固定新r2 DB再bitgen，不综合/route/下载/Flash，异常活native保映射，cleanup失败仍记录真实result。
+
+指南当前SHA `14290ACD41E2B4ACF96B2240E4B6EFB3FE40FB4BEB834365BD4B81082215D675`，明确真实综合/物理两个目录及原包装失败，不提供虚构有效bit路径/大小/SHA；白底、原白边、46/gray25/8及三VERIFIED0/空TRACKS边界保持。该草案已交独立timing_proposal亲读，当前无有效bit批准/生成/交付。
+
+`bitgen-preflight-20261021-v2/report.json`实际5项通过：help0，D085错误阶段/D087错误阶段/错SHA/-O各1；非法v999999输出目录未创建，未调用TD或有效lineage audit。v1报告保原早期294双stage草案hash，不与现稿混用；后续独立反馈若修草案须新记录，不覆盖既有测试报告。当前主任务仍是跟原native到真实结果。
+
+### 字面bit Tcl材料化验证与草案定稿待审（19:23）
+
+按主要求把gen实际使用的字面模板抽为纯`bitgen_script`，不使用阶段全串替换；当前gen SHA `30D683B6AC58B7758C7F6E88A219EA8B6DF581B0D7A233D2A3353772B7814BE8`，guide仍14290ACD。已交独立亲读，未运行有效lineage audit或bitgen。早期v3 Tcl测试的exit stub只返回，失败后可继续，因此不能证明失败退出；v3原报告保历史，v4明确披露并修正模拟exit为Tcl终止sentinel，生产gen模板未因此改变。
+
+`bitgen-preflight-20261021-v4/tcl-evaluation-driver.py`先保存再实际执行，普通加载gen生成实际文本，Tk Tcl三输入（正常/import_db错误/bitgen错误）均通过；正向仅import_device/open_project/import_db/bitgen和准确完成token，负向实际终止且无成功token，import失败绝无bitgen调用。所有native Tcl命令均stub，不调用TD/subst。v4五个实际CLIhelp/拒收也全部通过，非法输出仍不存在。当前原TD39404/session10411仍Phase1 iter22 over125，CPU2125秒，未有最终DB/result。
+
+## 用户主动中止r2与原始结果收口（2026-10-21 22:02）
+
+- 状态：本次颜色形状候选停止，等待主明确五图卡后续实施范围。用户在主对话讨论后明确“可以”，正式同意九类颜色形状退出必达、先保五张现有图卡闭环，并允许停止当前候选。此授权是本次停止原因，不冒称自然路由失败或D087六轮边界触发；停止前仍是18:52启动的同一TD进程内部第四轮，最后stdout为iter22 over4。
+- 21:57:47本方同一次CIM精确核TD39404创建18:52:46、父Python27516/祖pwsh17796、`T:/phy_1.launch.tcl`、完整父脚本D087命令与SHA、T仅新r2且U旧r4后，只执行`Stop-Process -Id 39404`。原wrapper/用户GUI22472/其他树未停，U未动。动作前`pre-stop.json`、原stdout快照及`stop-action.json`保存于`evidence/sc520-contour29-retime/user-stop-20261021-2157/`。
+- 原session10411随后自然结束，包装脚本实际exit1；原native真实ExitCode=`4294967295`，结束21:57:48.205504+08。原冻结helper自行write-once写`phy_1.native.json`、`stages.json`和`result.json`，没有手工补写；MarkerFresh=false/DatabaseFresh=false/Database=null，Complete=false/ChangedInputs=[]/BitFilesFound=[]，result FinishedAt21:57:56.5263、T Released=true。当前无最终route DB/end marker或bit。
+- 原result SHA `017902F718A690BEDD651135756A3840EA6DE55CFD5BF1CFF9D9661387C56138`，native SHA `F95CE1D7E54F622B5399F253CF5932C323A5169E9253831DFAEF26422A8769BB`，stages SHA `1D6E6AA363ABD1AA35C2E6AB0B463256EE7BB33996714454035B573499C3FE86`，stdout SHA `C387378D64E717958E1AC91DEEFA704446863E33B0612A99B1A4E12BB8388B08`。21:59CIM原39404/27516/17796均不存在，只用户GUI保留，subst仅U旧r4；没有重启任何TD。
+- 外置`verify-stop.py`先保存后真实执行native0，重新核6新/53原source、3165旧保护、r4观察138、原294全部125及118copies/恢复prepare保持；原result/stage/stages一致、真实退出值/无最终DB/无bit、包装器释放自身T均实际通过。`final-observation.json` SHA `567066F0EEE1FE2314604E044FD3E12887C8112FE83D17996D0BC6D5E541F06C`，15110字节，并保存r2最终全文件清单。所有原日志/阶段DB/源码/准备和旧候选保留。
+- 本轮没有新增五图卡RTL、重新编译、bitgen、下载或Flash。gen/QA准备工作暂停，不因本次停止或方案讨论继续扩工具。主及其他独立仅在读五图卡范围/资源预算，具体改动等待主精确scope；不能把去九类类别误算成共享scene/matcher ERAM自动释放。
+
+## D088八类模型与先验真值审计（2026-10-21 23:02）
+
+- 当前T030/D0300只做独立模型/评分/接口说明，不RTL/TD。已完整重读主D088/AGENTS/总记忆/接口03、新README及truth-mapping-contract。新目录shape3-cards5-v1：1圆2方3三角无色，10..14五卡，4..9退役；旧所有源、bit及失败历史保持，后续交指定集成对话，不在本树合AWB/TF/style。
+- 新`model-shape-card30.py` SHA `F7A24536888460EA15EFB92043EF27D091A6E189B81446C483B667E442052EA5`与`evaluate-shape-card30.py` SHA `AA3BBEAF36AC8EB441BE84C2D8EC386EF6EF8C8CFABB3D3EBF64B3B5ACE6A2D3`：只复用原D0261完整glyph数组scene及原五卡bank，不调用T029 body/桥接/恢复。A为3形+5卡跨族margin0/4/8/12/16/24；B-full只加完整glyph椭圆负证据，B-axis只再加完整glyph独立归一的负圆距。shape20/card40/card类margin24及原模型fg16..850保持。B预留16/18计数是保守ROM/计数机制估计，不称实际新综合资源。
+- 候选评分前主明确批准5个旧0构造白名单，独立F078固定decodedRGBSHA/源程序/行文：gray/sparse_red/half_color/gray_external新TaskTruth2，r153灰圆新TaskTruth1，仅对应decoded像素完全相同派生生效。SourceTruth/SourceCatalog/FileSHA保留，另列TaskTruth/DecodedRGBSHA/ConstructionDecision；环/椭圆/附体/触边等旧0不改。现10次occurrence按原182/ret203/new202/T02762为1/1/4/4。新142独立构造在评分前定义真值，不用输出反标。
+- 首`inputs-v1` freeze真实0，ScoresComputedfalse，但其Model artifact已捕获fg修正前旧A337；旧目录不改不用于评分。随后固定F7A/AA3B重跑`--phase freeze --output evidence/sc520-shape-card30/inputs-v2`真实0，2071行（182+203+202+62+142+1280），manifest SHA `97BF961A8AFF619200556A6904DB21DFDE4E83A610B2F45C93999FA0FF2FA361`。先前聊天“2171”为算术口误，文件和实际计数均为2071，明确纠正。独立先验真值审查6806865F真实0后才评分。
+- 实际依赖Python `-B -X utf8 evaluate-shape-card30.py --phase evaluate --inputs <inputs-v2>/truth-manifest.json --output <evidence>/model-v1`，exec9822真实退出0。report SHA `B94DBFE4B4F8D2FE918EE343FBB20882F565738A1093B2CE79EBC6AB9CE3D845`，2071行/1912输入键/18配置、完整scores.json/CSV与分组混淆落盘。独立35A683FD实际重算2071×18/每组混淆/全部1280模板/19RGB核心通过，ModelAccepted=false；并非算法通过或RTL运行。
+- A m0..12旧182为177正确/5错类，五张gain65_before暗卡全部从旧model未知变方2；所有配置1280原卡模板均正确。B-full/axis m16可消除误苹果和unknown误报，但同五暗卡×重叠原182/ret203仍10错类，且B-full m16原正确图卡新增3漏识：r012/r014苹果size53-angle62.5/242.5及r148汽车gain65_after。不能把组合2071（含重叠集与训练模板）当独立实物准确率。
+- 外置只读故障分析`model-v1-analysis/analysis.json` SHA `C7A99203DD88421EC89177663B10FA7ED58633CF061309164CC4A28E650674F9`实际0：五暗卡r143/145/147/149/151旧D0261数组结果均0、scene=glyph1444/paper0/clippedfalse，shape84/0/200、cardbest76/second181，完整400bit方mask与69条真方RGB同SHA。mask/评分本身不可区分这两种TaskTruth；RGB结构仍有信息，未据此改模型。
+- 新142中B-full m16的70个正几何miss按构造分组：circle20、square20、triangle30。square15/45及triangle15/45/90主要固定方向；circle0/90与15/45的浮点旋转等式在整数圆边界有包含差，导致bbox和归一采样别名变化，不能误称圆旋转不变性本身失效。源图/Truth/旧分数原样保留，未改失败输入。
+- 后续只读测量`fullglyph-measurements.json` SHA `0D7F06CC24D7A593289E426C2619EA62B96E5DD32C65F0E1391A3F63FCCD68A8`真实0，791RGB行/484独立decoded图；完整clean glyph Y=(R+2G+B)>>2，五暗卡span144/147/148/145/146，当前全部真几何包括新120及灰/双色方span均<=64。逐行bbox/7:8描述/原axis距保留；只是描述符，不创建新规则或Prediction，不推断现场阴影/噪声鲁棒性。
+- 新`hardware/sc520-shape-card30/interface-proposal.md` SHA `3933673507D9AEC0073F6538417B6ECEBCA097EBC76460B60DF020C3ECC3E056`已按主192位合同修订：paper_count去除，raw仲裁/availability/done/reasonbitmask/版本/不可用2047/真实join时机/鲜度不等健康明确，真正移除observer/800transport/旧diagpanel。11个最小新RTL和共享ERAM机制仅提案，无实现。
+- 主已进一步批准仅一个固定C离线候选及新先验holdout准备，当前尚未写C或新RTL：原F7A/AA3B与A/B结果冻结；规则/新增真值须固定后再独立审核与评分，不循环调参。全局cardmax32已因独立发现原car/umbrella回退撤销，只允许后续apple专门32评估。主新C批文待实际亲读执行，旧gen/QA暂停，不TD。
+
+## 固定C先验holdout与一次评分（2026-10-21 23:41）
+
+- 主正式`model-c-evaluation-scope.md`已完整亲读，未改原F7A/AA3B/旧2071/旧失败。新独立`model-shape-card30-c.py` SHA `B17AA96120AFF4FDD898916518818CCFCC5E848AF6557722784E606030C2BF9E`、`evaluate-shape-card30-c.py` SHA `1F6F9F2DE0C0E6029DE1563A48FA7C3625381D22F4CEF0866480AAAED9CE641E`。只有主准唯一档：Yspan64只拒几何、近方bbox7:8才允许axis双alias降低effective圆距、原shape20/卡异类margin24/仅apple32其余40/跨族8；完整ellipse也要求比effective3最小距多8才可正几何。此负证据门槛在任何Cfreeze/score前按旋转椭圆数学反例加入，非看holdout调参。
+- 原raw圆距/有效圆距/axis/宽高/Yavailability分列；新card竞争始终min(effective3,fullellipse)，Y拒几何不删竞争证据。1280模板无RGB：Y/bbox均None/GeometryAvailablefalse，不伪span0，不产生正几何，仍核卡族与原raw/negative竞争。加法10bit/axis第二pass周期和无新body/bridge明确为后续RTL验收要求。
+- 依赖Python `-B -X utf8 evaluate-shape-card30-c.py --phase freeze --output evidence/sc520-shape-card30/holdout-c-v1`实际session97223/native0，先验182行完整冻结：72几何（严格整数圆、灰/绿/青×14/17×0/30/60/90）、30未知负（ellipse70/82/86各角灰/红及ring/cross/appendage）、80五卡（原PNG/physical_frame/LANCZOS+BICUBIC/RGBA阈值、角11/79/157/257×49/67×gain1/.8、白底白纸）。manifest SHA `A1B31256760D87BC60452274655DA1B10751E85AC4FE2E53CA122A997C87A879`、315581B，ScoresComputedfalse。
+- 独立CAA3B963先验审核真实0，全部182RGB按源/recipe逐像素重建一致；实际158独立decoded图、3个与原集重叠，原182行全保，不谎称182独立新实物。主允许后才实际运行唯一`--phase evaluate --inputs <holdout-c-v1>/truth-manifest.json --output <evidence>/model-c-v1`，原session68902真实0。
+- C结果report SHA `9B2924425413E6817962D667A5A8B3780F87EA9A6F76F6C79C95DFAC4CFED610`、33214B，原2071+holdout182=2253行/1档。所有组0错类/0unknown误收/0误苹果，原正确卡回退0；old182177/182和ret203198/203仅五暗卡未知；ret6262/62；new202185/202、17漏；原new142 correct92/142、50漏；holdout-card79/80、1漏；holdout-geom42/72、30漏；holdout-negative30/30；1280模板全对。不能称通用几何/现场稳定通过。
+- 保守苹果holdout `h_card_10_a157_s67_g100`拒识：card28/raw45/axis33、Yspan158，几何因Y拒但axis仍是card竞争33，严格8差不够，未知保持，不为清该漏改阈值。原/holdout圆全部正确，方主要0/90、三角正放，其他姿态仍正真值miss，不转unknown标签。主倾向有界正放原型，仍待独立完整C审核与一次软件scope，不自动RTL。
+- 新文档`hardware/sc520-shape-card30/rtl-implementation-proposal.md` SHA `7AC03D926E99E80919790D29AAB52AEFF588A75FE2366420A9034C88A69A5522`已交主/独立：11新职责源+1任务私有192常量头，full+axis同RAM两pass/17计数、Y中心取样、真实单scoreboard仲裁→统一3帧→单192复合CDC→单结果join/100ms、新8槽/内容、六TB面/1.2M+60fps/54/N+5保持。原capture/matcher/filter/CDC/字体/Logo直接复用，真正移除colorobserver/800transport/旧diagpanel，不合AWB/TF/style。
+- D089交付合同已亲读：软件/接口/一次获准真实综合与资源证据后交指定总集成，不在本侧先临时整机route/bit；当前无任何新RTL/TD/bit资格。上一A/B共享批次已统一索引更新834/14623，后Check真实836/14626通过；本批另登记当前新源/holdout/score/提案，不复写旧记录。
+
+### RTL提案统一filter修正（2026-10-22 00:00）
+
+主和独立亲读提案指出原`card_result_filter.v` candidate严格限定10..14，本方实际全文复读确认，不能原样复用后声称可确认1..3。仅修文档新增任务私有`items30_result_filter.v`，candidate合法集合{1,2,3,10..14}，保原三帧/来源/flush/复位/8位饱和计数；外部仲裁/join也核合法，但不代替filter内部资格。旧filter不改，新增1/2/3及五卡逐类实际三帧正向、4..9非法负向的测试要求。
+
+提案当前SHA `066A0BCF4CBB193FC3A34A3344DC88378EBFCE42979641EBD8E9FCD46FA196CC`，12新RTL职责源+1私有192常量头的精确清单已报主。当前新RTL目录尚未创建，HEAD仍67，只有模型/runner/evidence/提案未跟踪及本日志修改；等主一次正式软件实施批准，不扩模型参数、不TD。用户“调整后画面色彩偏差不大”仅显示用户报告，不因此调整Y阈值、接入AWB或升级八类现场通过。
+
+## D090 RTL断点恢复与首批失败记录（2026-10-22 04:13补登记）
+
+- 本批接续 `/root/contour29_reconcile`，沿用原task/sc520-color-integration及67b5448；主D090仅准软件，未运行TD、route、bitgen或硬件。此前0:30..1:02的scene/scorer/filter/quiz/question/header、两个TB与直接runner已落盘但未登记，本批明确补登记，不回填发生时间。
+- 系统Python312缺numpy的两次runner调用均在加载模型时退出1，未启动vsim，残留run目录保留。改为捆绑Python完整路径后，scores-normal-20261022-013422-0507b1真实native0/30检查/10场/0错；scores-negative-20261022-013422-079725真实native1/同30检查/单注错检出，Qualified true。
+- scene-normal-20261022-013853-00b852真实native0/4334205检查/10场/0错，scene-negative-20261022-014747-47f995真实native1/同4334205检查/单Y-extrema注错检出；两者InputsUnchanged与Qualified true。仅10个smoke样本，不称全2253行RTL通过。
+- 聚焦filter-normal-20261022-0200实际ModelSim compile0、25检查/0错/done1，覆盖1..3及10..14三帧、4..9拒绝、flush；尚无source切换专项或负向checker资格。12RTL compile0315/0345零语法错误仅为compile-only，不等于软件通过。
+- 新arb/join/pipeline/system/content/panel/compositor及pairing TB为开发草稿。pairing-normal-0245因隐式recognition_packet连接缺失在vopt失败；后0400、0415实际进入仿真均errors3/checks3，不能以vsim native0冒称通过。首panel compile0225误用SystemVerilog保留字inside亦保留原失败。
+- 主逐项发现arb未正确实现苹果32最大距离/类间24、cross-family严格8竞争、unique shape、Yspan/source以及pending/metadata/fresh合同。当前arb需要按冻结B17逐句重写并做2253 score向量对照；尚未通过。content/panel/compositor未接原字体/Logo，明确不符合批准设计、不可集成，未撤销或覆盖任何旧源。
+- 下一步先固定C arb-only向量验收，再接同帧pending/filter/192链及完整六面测试。无新提交、综合或软件接受；所有原失败、旧T029/D0261与其他树保留。
+
+## D093探测显示第二次接续（2026-10-22 11:06登记）
+
+- 当前`/root/shape30_detector_finish`独占D092探测/显示及本日志，不写D091六个链路文件。原代理跨resource错误停止，原未提交文件/失败报告保留，不把继承运行归为本次执行。
+- 原09:41完整scene973实际summary为0错/3,992,219检查/max378532cycles；完整scores2253实际8错/42807检查，八行均clipped axis在旧runner被blank，不改原失败。原场景/scorer、matcher新增raw_winner、实际字体Logo显示草稿及filter/matcher TB先补登记，非完整接受。
+- 按D093仅将scene裁边full blank限制在第一pass，第二pass保持实际glyph轴向归一；runner相同oracle纠正。full raw与clipped拒识、B17/F7A及所有Truth/阈值均不改。runner增加完整冻结model报告/scores/template与原RGB来源快照，并核生成输入不变和场景数，不用旧失败反标期望。
+- 本方实际matcher11025878b292 native0/10场/7,547,864检查/0错，逐拍所有旧输出/control/score/rank和完整102400ROM与原件一致，独立重算最近类别，覆盖五卡/empty/checker/坏capture/flush/reset；更全面非法协议与负向待补。filter110258e8a5c2 native0/300场/1501检查/0错，八类/4..9非法、source、unknown/empty/bad/invalid、255饱和和flush通过；负向待跑。
+- 新scores/scene全量在途，不能提前计通过。quiz/render TB尚未完成。无综合、route、bit或硬件操作。
+
+## D093探测显示软件冻结候选（2026-10-22 12:10）
+
+- 本方实际11:02全量完成：`scene-normal-20261022-110258-4e9e1a`973场/3,992,219检查/0错/max378532 cycles；`scores-normal-20261022-110258-723053`2253场/42,807检查/0错。native0、done1、Qualified/InputsUnchanged true。裁边axis八行按F7A/B17纠正后通过，full blank、裁边拒识和原Truth/模型不改。旧八错报告保留。
+- matcher扩展到27场：固定literal400bit mask独立五类min=[182,188,182,185,182]证明tie保first raw10但qualified0；1023/1025长度、错index、active外fg、start/sample及end/sample并发、scan干扰、busy restart、end无start；SCAN/RANK/EMIT各flush与reset；完整ROM102400、每写event/bit、完整400capture mask、逐拍旧输出/control/rank/score一致。最终`matcher-normal-20261022-120112-c80897`12,597,049检查/0错，negative120113246a22为12,597,050/恰1错/native1。
+- 新quiz TB最终16场/114检查覆盖8槽/16索引、10题10分、next round+2、真实三空门控、TEST不计分、unknown-present、两次wrong、四键与revoke；最终quiz12012258a6a1正常0，339750负向115检查/恰1错。独立另补非法ID/来源/按键race深审，不替其预填通过。filter最终300场/1501检查0，negative1201194973371502/恰1错。
+- 按主准补compositor即时业务trust撤销sticky至下一FS，不撤销新鲜不健康包的真实raw诊断；single不可用字段扩为完整NA，已知V0/R1/FR0不假写NA。原processing/font/Logo六层和packet原位图不改。
+- 四幅720p actual与独立literal JSONfont/官方RGBA/旧tiny字体及新literal K逐像素比较：最终render1200531352fe5场/18,560,290检查/0错/native0；negative0db9de18,560,291/恰1错/native1。4×921600全图+55296全NA诊断patch零差；N+5全部同步坐标/模式/空白/overlay，FS快照、健康新类等待FS、normal-invalid-normal sticky、不健康fresh/revoke/identity/fault/stale恢复通过。实际视检114735四图与最终四图SHA逐项相等，无文案重叠/错色/Logo缺失。
+- 首render114007有928100错是literal参考错误：c0b030实际R-max、607080实际B-max且旧tinyreference缺K；未改旧classifier，仅oracle数学及独立K补正。后115537 actual0/负向恰1错但wrapper false因预计检查数7次偏差，原报告保留，最终固定准确count并重跑。不把这些原失败覆盖成通过。
+- finalrunner新增完整973/2253cardinality和各TB固定场景/checks、负向恰1错、ModelSim executable SHA前后不变；实际6normal+6negative于12:00..12:02全部Qualified，scene/score finalrunner smoke各10场仅证明当前工具，完整矩阵仍引用原11:02snapshots。当前full报告的旧runner后续强化被freeze显式披露，不伪补旧tool来源。
+- link_finish真实6文件冻结与完整启用render chain报告见`chain-runs/link-final-20261022-1202.json`SHA D1BD39BF...：正常39event/283检查/17场、EOF465142/FIFO7200/overlap1，负向319/16/恰1错；系统32/9/0、负向33/9/1。实际完整字体/LogoROM16384+1024和grayvideo0错；本日志为对方实际执行结果引用，不归本方亲跑。
+- 新catalog无色1圆2方3三角、五卡10..14与8槽明确；接口说明fresh!=healthy/fullNA/single192；只准备综合plan，不TD。源冻结`software-final-20261022-1206/source-freeze.json`SHA 5A349AB90A64F1D75A6E989854BAE22A0D46CCA59E9EF9A5D26E85081AB02F64绑定13RTL/1头/8runtime共享+原matcher验证参考/ROM字体Logo/catalog/interface及14detector/4link结果。当前等待独立/主审及统一Git检查点，无综合执行或整合开工许可。

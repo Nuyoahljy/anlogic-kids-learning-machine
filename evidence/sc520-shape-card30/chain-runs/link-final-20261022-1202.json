@@ -1,0 +1,92 @@
+{
+  "Task": "sc520-shape-card30",
+  "Owner": "Codex /root/shape30_link_finish",
+  "At": "2026-10-22T12:02:00+08:00",
+  "Stage": "link_software_waiting_independent_and_main_review",
+  "Workdir": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration",
+  "Branch": "task/sc520-color-integration",
+  "HEAD": "67b5448876a5d99989c1279e92c60ffb9288dfd5",
+  "SourceFreezeAt": "2026-10-22T11:53:14+08:00",
+  "TransientIntervalPatch": "Added an unexecuted timing-metric assertion after these successful runs, then precisely removed only that self-authored patch per parent instruction. Final runner and TB byte hashes equal the successful snapshots. workspace-records/20261022-115800 remains truthful as an unexecuted intermediate, not an accepted interval measurement.",
+  "OwnedSources": [
+    {"Path":"E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/fpga/rtl/sc520-shape-card30/pixel30_pipeline.v","SHA256":"C34032B0A08448DE1620819A104F56334A73D0DC09567CAA482A2A6C0E975A10"},
+    {"Path":"E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/fpga/rtl/sc520-shape-card30/items30_result_join.v","SHA256":"24D908E2B91C560216BDC3F67EDBD31E453EAD2365F8797F159EE9248DE33872"},
+    {"Path":"E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/fpga/rtl/sc520-shape-card30/items30_system.v","SHA256":"323C55B5CC1BC123AF49BA2C189C484F2134FDEB37643AD29ECE85E2D82DF6D4"},
+    {"Path":"E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/fpga/sim/sc520-shape-card30/tb_shape_card30_stream.sv","SHA256":"54B61486651AA8B114F128CB74BCD928830590CF28F554E150BDE9A9D0D94420"},
+    {"Path":"E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/fpga/sim/sc520-shape-card30/tb_shape_card30_system.sv","SHA256":"EAC891BA19CE94A5F58F5765E49742258D59A16DBD0B01508B4C72911D7C3400"},
+    {"Path":"E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/fpga/scripts/sc520-card-recognition/simulate-shape-card30-chain.py","SHA256":"01721447E4F922655870CDA4BE3C77FC7B5AD6DACB3A66DB8FCE6E7292C0F8A8"}
+  ],
+  "FinalRuns": [
+    {
+      "Report":"E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-shape-card30/chain-runs/stream-normal-20261022-115313-c51eb8/report.json",
+      "SHA256":"E492E4017A8986A941AB33AFE1B30295EA46DD3EE9165576849FC15D500AEDE7",
+      "Arguments":"--test stream --matrix --render-enable --full-fps",
+      "NativeExitCode":0,"Checks":283,"Scenarios":17,"Errors":0,"Done":1,
+      "Qualified":true,"InputsUnchanged":true,"RTLCompileMode":"plain vlog; SV only testbench",
+      "CompileErrors":0,"CompileWarnings":0,
+      "Events":39,"Revokes":5,"MaxEOFToBusinessCaptureCycles":465142,"MaxFIFO":7200,"OppositeBankOverlap":true,
+      "RenderSourceBindings":{
+        "pixel30_panel.v":"8B8996F86CA7E9611E7AC6986AED7A49F8E04647AE9C0A98CA9647D61534A9FC",
+        "pixel30_compositor.v":"2462B947E8CB54B5FE8D54193DADEC1FA7B5006ACAE9F08024A821BA2159F432"
+      }
+    },
+    {
+      "Report":"E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-shape-card30/chain-runs/stream-negative-20261022-115313-a2ea15/report.json",
+      "SHA256":"599E7F6F672CDC0676510C389E073C75179264B737F485CF1F3C630693DA3436",
+      "Arguments":"--test stream --matrix --negative",
+      "NativeExitCode":1,"Checks":319,"Scenarios":16,"Errors":1,"Done":1,
+      "Qualified":true,"InputsUnchanged":true,"IntentionalError":"checker asks obs_valid after explicit revoke",
+      "CompileErrors":0,"CompileWarnings":0
+    },
+    {
+      "Report":"E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-shape-card30/chain-runs/system-normal-20261022-115905-0dad22/report.json",
+      "SHA256":"AC9210BBCFEA5E4F884E0908F31368C8E80ECDAD4F0DA14972A14E2E28E7280B",
+      "Arguments":"--test system",
+      "NativeExitCode":0,"Checks":32,"Scenarios":9,"Errors":0,"Done":1,
+      "Qualified":true,"InputsUnchanged":true,"CompileErrors":0,"CompileWarnings":0
+    },
+    {
+      "Report":"E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-color-integration/evidence/sc520-shape-card30/chain-runs/system-negative-20261022-115905-33d2cb/report.json",
+      "SHA256":"442534DFECA45A9901FDB96A29AD0F6366826939914C26FB9398606F5A93986F",
+      "Arguments":"--test system --negative",
+      "NativeExitCode":1,"Checks":33,"Scenarios":9,"Errors":1,"Done":1,
+      "Qualified":true,"InputsUnchanged":true,"CompileErrors":0,"CompileWarnings":0
+    }
+  ],
+  "ValidationAt1201": "Personally rehashed every SourceFreeze original and snapshot for all four final reports. All equal recorded hashes. Generated vectors were frozen and unchanged inside each run. No needed exec session remains active.",
+  "Matrix": {
+    "Sequences":13,"Frames":39,"UniqueSelectedRGBCases":12,
+    "Selection":"retained62 block_1_plain,block_2_plain,block_3_plain,card_10..14,empty_white,clipped; old182 r135_legacy_686_unknown_ring_white,r143_card_10_gain65_before; repeat block_1_plain for recovery",
+    "TruthPreserved":"The Y-rejected r143 remains original TaskTruth10/model Item0; does not become unknown truth. Known frozen C model misses are retained, not tuned.",
+    "ExpectedFrom":"Exact frozen C scores, recomputed original RGB/decoded hash, original mask/scene/glyph, independent literal packet offsets, no producer mirroring",
+    "Checks":"All192 output bits, business present/valid/item/count after third frame, actual captured Y minima/maxima/bbox/availability, actual full ellipse and axis circle distances, each EOF<1.2Mcapture clocks",
+    "Scores":"93649247C6350F5C7B7274E445541197936AF5AE2DBC0D56C253FF1D124CB6F6",
+    "Model":"B17AA96120AFF4FDD898916518818CCFCC5E848AF6557722784E606030C2BF9E",
+    "SelectionSHA256":"0C357706CF6F7072C9FE8DF9902F8B62EBF5717AC899F0ABA875F87ACB2F2C45",
+    "ExpectedPacketSHA256":"F5BA9EB098A40CD0D9E0ACEDDC2A276C07531844E016E213206761C4B355DCFB",
+    "ExpectedDescriptorSHA256":"F972E058A86BFE37E69F65542A48C4989AF732E69A3FE21E7CE48C3CD1F7B323",
+    "ExpectedAuxiliaryScoresSHA256":"A7CFF85350539851A180B7E1A1FC2C29425BD70A047F73747F3F566ACBC17633"
+  },
+  "Throughput": {
+    "CapturePeriodNs":9.66,"DisplayPeriodNs":13.333,"BlankCaptureClocksPerLine":2076,
+    "DerivedRasterAndFinalBlankCaptureClocks":1725128,
+    "DerivedRasterIntervalMs":16.66473648,
+    "DerivedStartToStartWithTaskMarkersCaptureClocks":1725131,
+    "DerivedStartToStartMs":16.66476546,
+    "EvidenceClassification":"Calculated from frozen stimulus loops/markers and clocks, not hardware measurement or separately instrumented interval. Real simulation overlap and FIFO/EOF statistics are in raw transcript."
+  },
+  "Renderer":"RENDER_ENABLE1 full pipeline default asset loads compared all16384index/all1024palette words, no unknown bits. Camera test700/400 produces808080 through real renderer. Complete visual/allpixel unit acceptance belongs to detector and is not replaced by this probe.",
+  "PreservedFailures":[
+    {"Run":"stream-normal-20261022-113107-704549","Result":"native1/errors111/checks293/scenarios15; %02d ModelSim padded filename with spaces, RGB failed to load; corrected %0d, no RTL algorithm change"},
+    {"Run":"stream-normal-20261022-113633-82b2cf","Result":"preparation missing listed privatefont/diagnostic source; no vsim started, exact actual module dependencies corrected"},
+    {"Run":"stream-normal-20261022-114114-f5c03b","Result":"native1/errors1/checks296/scenarios16; all36packet/descriptor/auxiliaryscores and ROM passed, camera pixel650 was inside existing bottompanel608..711; moved testpoint400"},
+    {"Run":"initial exact-cardinality calls before112529","Result":"Python fstring braces syntaxerror before any new run directory; corrected Tcl composition"}
+  ],
+  "Limits":[
+    "This is bounded synthetic rawRGB software verification, not realcamera/background/light/generalrotation/hardware acceptance.",
+    "No synthesis, routing, bitgen, hardware, activeboard/profile/clock/ISP or oldsource edits.",
+    "Do not claim old inherited fullfps and negative execution as this owner's runs.",
+    "Independent reviewer owns joined CDC/source/history/quarantine/clear-busy tests. Final whole-task software and resource acceptance remains with parent.",
+    "No commit or integration start instruction by this subagent; parent coordinates freeze, separate synthesis approval and integration handoff."
+  ]
+}
