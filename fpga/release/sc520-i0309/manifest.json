@@ -1,0 +1,111 @@
+{
+  "Version": "I0309",
+  "PhysicalBuild": "r310",
+  "At": "2026-10-27T12:02:48.241284+08:00",
+  "Owner": "Codex /root local/01a17b18-5a45-78b3-83f3-46916f54535a",
+  "Status": "SRAM test candidate; not hardware validated",
+  "Bitstream": {
+    "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/fpga/release/sc520-i0309/sc520_i0309.bit",
+    "SHA256": "A448CFC83A4508AF04651D5D1E6D996F6EF9C494AC1156A5A6FD489C7D419684",
+    "Bytes": 1789539
+  },
+  "GeneratedBitstream": {
+    "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/evidence/sc520-system-integration/b310/i0309_candidate.bit",
+    "SHA256": "A448CFC83A4508AF04651D5D1E6D996F6EF9C494AC1156A5A6FD489C7D419684",
+    "Bytes": 1789539
+  },
+  "SourceArchive": {
+    "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/fpga/release/sc520-i0309/sc520_i0309_sources.zip",
+    "SHA256": "23E81129147476C6A93AAB0917228966A44F41552786F78D09F84A20AF1820AF",
+    "Bytes": 1872056
+  },
+  "ArchiveMembersVerified": 384,
+  "FrozenProjectFiles": 360,
+  "AuthoringFiles": 9,
+  "OriginalGitBase": "fe80e3fd4de5e0ade930dafbedf82625f605762d",
+  "BitgenResult": {
+    "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/evidence/sc520-system-integration/b310/bitgen-result.json",
+    "SHA256": "8B13B1808A46B4FA703B9C2CF9C39959A558F9AF221D86299D3D20D7E8879203",
+    "Bytes": 7979
+  },
+  "NativeExit": 0,
+  "NativeElapsedSeconds": 28.98399999999674,
+  "RoutedTimingNs": {
+    "SetupWNS": 0.01,
+    "HoldWNS": 0.02,
+    "SetupTNS": 0,
+    "HoldTNS": 0
+  },
+  "Resources": {
+    "SliceUsed": 20393,
+    "SliceAvailable": 21216,
+    "ERAMUsed": 103,
+    "ERAMAvailable": 108,
+    "DSPUsed": 27,
+    "DSPAvailable": 40
+  },
+  "CandidateCDCModel": {
+    "ForwardPaths": 166,
+    "GrayPaths": 36,
+    "Corners": 4,
+    "MinSetupMarginNs": 23.76,
+    "MinHoldMarginNs": 18.78,
+    "MinGrayBudgetMarginNs": 8.142,
+    "PhysicalClockJitterMeasured": false
+  },
+  "Evidence": [
+    {
+      "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/evidence/sc520-system-integration/r310/route-result.json",
+      "SHA256": "1D31DC843836DDA536C2499050608DA8178CA5D23A855CD171A0E7374A848EE6",
+      "Bytes": 11426
+    },
+    {
+      "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/evidence/sc520-system-integration/r310/td/pl_1/i0309-timing.rpt",
+      "SHA256": "995B77E4ED8C60452DD5DA4EEC7C150B7FC05C50EB13C18962F60ECB3DEED0BB",
+      "Bytes": 4849589
+    },
+    {
+      "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/evidence/sc520-system-integration/r310/td/pl_1/i0309-area.rpt",
+      "SHA256": "24B93EABFDA1103476A2374BBD718CB0F8472A0429C8E27BCF90D4557D14FCE5",
+      "Bytes": 57892
+    },
+    {
+      "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/evidence/sc520-system-integration/b310/bitgen-result.json",
+      "SHA256": "8B13B1808A46B4FA703B9C2CF9C39959A558F9AF221D86299D3D20D7E8879203",
+      "Bytes": 7979
+    },
+    {
+      "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/evidence/sc520-system-integration/b310/bitgen-parameters.txt",
+      "SHA256": "D68F0BCDCAF7B76014F69AF7163FC64C9C01645FD9A739884977A2616665C114",
+      "Bytes": 325
+    },
+    {
+      "Path": "E:/juan/FPGA/learning/sc520-system-integration/physical-review/i0309-final/sdf-bounded-review-20261027.json",
+      "SHA256": "DB15E4019B4D455E3A8506A02C1DC17ED8F8328C05150F740208A8AD94B25DC7",
+      "Bytes": 2178873
+    },
+    {
+      "Path": "E:/juan/FPGA/learning/sc520-system-integration/physical-review/i0309-final/sdf-bounded-review.py",
+      "SHA256": "A7C455628409E47B501CFDD882A227129C2EC1372FC8E566D93AB26333553596",
+      "Bytes": 22303
+    },
+    {
+      "Path": "E:/juan/FPGA/learning/sc520-system-integration/physical-review/i0309-final/routed-structure-review-20261027.json",
+      "SHA256": "FD356710D9B4C1C3BCD20170547FF58CF3C27A32D2DB451061301C292B50DF0C",
+      "Bytes": 115357
+    },
+    {
+      "Path": "E:/juan/FPGA/learning/sc520-system-integration/physical-review/i0309-final/release-static-review-20261027.json",
+      "SHA256": "F8E02728D610E8494B0FE0114B34EA5B217FDFB4713438FD8D7C3C732D6F7487",
+      "Bytes": 13701
+    },
+    {
+      "Path": "E:/juan/FPGA/learning/sc520-system-integration/i0309-bitgen-approved-20261027.json",
+      "SHA256": "3E8869FF0F3659F2C0F5902B45FD36B4348205B9D09EBBEC693F357D0B17CD38",
+      "Bytes": 3688
+    }
+  ],
+  "HardwareValidated": false,
+  "FlashWritten": false,
+  "MergedToMain": false
+}
