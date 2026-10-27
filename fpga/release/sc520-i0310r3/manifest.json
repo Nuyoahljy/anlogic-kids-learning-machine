@@ -1,0 +1,24 @@
+{
+  "Version": "I0310R3",
+  "At": "2026-10-27T21:25:13.1222974+08:00",
+  "Status": "SRAM test candidate; not hardware validated",
+  "Bitstream": {
+    "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/fpga/release/sc520-i0310r3/sc520_i0310r3.bit",
+    "SHA256": "B0236FC8D5E411C10776461B117AEF0B32549E62BFDFC1F6BB36470F5AA2CF83",
+    "Bytes": 1789539
+  },
+  "Build": {
+    "Preparation": "j312 / 36612A04B7FA5725A76FFA9B01C484ED50B358FC2A8B113EA62D33A7CD245ABA",
+    "Synthesis": "j312 / E2F210D31225FA3CFC26333C3FA03BBB4CAF1294AD43CA30708EB91CADC30CB5",
+    "Placement": "q313 / 6196A829557A39BD54F4DD4148687450FA0011470D7749DA41C9CA8330A28CA1",
+    "Route": "r313 / 4EE4A80929B4DE3E8AEE844EC508E284A8662168D28E19C0025496E6398DDE44",
+    "Bitgen": "b313 / A87B2B02BB0C6C864E28BE9AE166B6AB74ECD419E8E30C0D025D81ECCDAAB783"
+  },
+  "RoutedTimingNs": {"SetupWNS": 0.112, "SetupTNS": 0.0, "HoldWNS": 0.020, "HoldTNS": 0.0},
+  "Resources": {"SliceUsed": 20133, "SliceAvailable": 21216, "ERAMUsed": 103, "ERAMAvailable": 108, "DSPUsed": 27, "DSPAvailable": 40},
+  "ChangesFromI0309": ["SW4/D11 one-shot AWB recalibration", "engineering diagnostic hidden", "calibration/TF detail row hidden", "tracking coordinates retained"],
+  "CartoonAlgorithmChanged": false,
+  "HardwareValidated": false,
+  "FlashWritten": false,
+  "MergedToMain": false
+}

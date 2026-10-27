@@ -1684,3 +1684,77 @@ Root接受有界候选模型及先前软件/ROM/pins证据，批准54AB一次600
 Check1240/32253后，Root session52280按54AB/1D31/3E88唯一bitgen自然0/28.984s/clean，8B13结果与16输出，Root782绑定/779文件0差。普通bit A448CFC8/1789539B，未产生第二个压缩bit；不虚构压缩产物。
 
 交付复制到fpga/release/sc520-i0309/sc520_i0309.bit，SHA相同。源码ZIP逐成员CRC/SHA全核，包含360冻结工程文件及9作者源、工具/关键证据；manifest和SRAM检查单已写。Root已补读FD356结构报告并重核12输入，最坏bit235独立重算与SDF全矩阵一致。待本地检查点和本批统一索引完成后交用户，未下载/Flash/实板/合并。
+
+
+## 2026-10-27T12:28:42.638249+08:00 first-download status and portable source preparation
+
+用户本轮明确回复“还未下载到板卡”。本轮只读PnP按已知VID/名称未找到匹配安路/FTDI下载器；这不证明板卡断电或排除未知设备。未打开硬件通道、下载或写Flash。原候选b78d351/A448CFC8以及源ZIP23E81129保持。
+
+独立移机准备完成：仅原ZIP与Python标准库，在portable-i0309/prepared-v2生成359工程/25历史归档，7个文件只替换路径。152编译项、163项目路径、8XML/58fileset、4ROM、3include闭合，15约束/PLL原字节保持，388原文件前后0变化。首轮Python读取非UTF8注释失败保留，改为bytes扫描后13CB自然0；最新F54B只加创建前路径长度守卫，原结果6392246D仍绑定实际13CB，不伪造新版本运行。
+
+Root全文读审与独立384成员逐字节/7替换复核通过，额外路径长度函数实核8XML最大192字符，362字符纯输入拒绝；后验原结果/两脚本/prj四绑定重hash。仅接受源码准备/引用闭合；未TD打开、综合、生成新bit或升级硬件状态。Root审查i0309-portable-preparation-review-20261027.json及独立逐779文件记录统一索引后交接。下一实际硬件步骤仍是用户首次PROGRAM_SRAM并反馈画面。
+
+
+## 2026-10-27T18:09:55.8721959+08:00 I0309 first board feedback
+
+用户报告实时画面、文字、Logo和跟踪框正常，整体功能基本正常。按用户报告分层，未单独核对Programmer所选路径或bit SHA，不升级为全部硬件通过。后续仅补白平衡/色彩、五卡逐类、未知拒识、移动遮挡恢复、三风格、A4复位和十分钟稳定；FAT32根目录AUDIO.PAK的HDMI语音为附加应用验收。分支保持进行中，等待剩余实板结果，不合并主线或写Flash。
+
+
+## 2026-10-27T18:35:46.7779410+08:00 I0309 detailed board feedback and I0310 scope
+
+用户报告五卡、动态跟踪、三风格、A4复位、十分钟稳定和HDMI语音正常；白平衡成功时色彩正常但只在开机执行一次，卡通区别较弱，屏幕仍有工程诊断信息。未知物体与无卡片拒识待补。本分支保留I0309/b78d351不改，启动I0310：板载空闲SW4/D11触发一次运行中重新白平衡，关闭pixel30_diagnostic六行工程诊断层。风格、问答四键、Logo、文字、跟踪框和坐标保持；任何新bit必须重新软件验证及完整TD物理流程。
+
+
+## 2026-10-27T19:12:45.3904045+08:00 I0310 source integration accepted for preparation
+
+I0310六个源已冻结：新top、pipeline、可关闭诊断的compositor、AWB重触发、ADC和SDC。SW4/D11稳定0到1触发一次，在帧边界使AWB低一整帧并等待完整校准结果；校准期间撤销识别但视频连续。工程诊断层编译关闭，正式UI链保持。Root修改后的AWB ModelSim与诊断参数ModelSim均0错0警告PASS，准备工具12项纯检查通过。I0309候选及卡通算法保持；下一步只创建j310并审核清单，之后综合、布局和布线分别放行。
+
+
+## 2026-10-27T19:26:49.2611380+08:00 j310 prepared; one synthesis released
+
+j310已从精确j309清单材料化：360文件、355物理源、353角色、153编译项，输入和输出逐hash核对。变更仅为批准的top/pipeline/compositor/ADC/SDC、运行路径和新增AWB模块；I0309保持。Root只批准一次1200秒综合，布局、布线、bitgen和硬件仍未放行。
+
+
+## 2026-10-27T19:42:51.1845834+08:00 I0310 synthesis complete; placement released
+
+I0310综合native0/298.532s，全部输入和31输出保持。诊断层未进入综合网表，D11 pad和SW4两级同步约束真实生效。综合SWNS -0.813ns、hold +0.114ns；估算21819 Slice仍不是最终容量。Root只批准一次q311布局，route/bit/硬件继续未放行。
+
+
+## 2026-10-27T19:51:08.4272454+08:00 j310 synthesis rejected before placement; corrected preparation released
+
+j310在布局前因手动校准busy会通过calibration_flush持续清空空间统计而拒收，q311未创建。修正版新增calibration_inhibit，只撤销识别和刷新检测器，不清空颜色观察器；原始source revoke仍保持旧校准flush语义。R2工具使用j311/q312/r312，纯检查12项通过。I0309和j310历史均保持；只批准一次j311准备，不放行TD。
+
+
+## 2026-10-27T19:57:59.5410508+08:00 corrected j311 prepared; synthesis released
+
+j311已按修正版六源准备，375输入/360文件逐hash核对，355物理源/153编译项。Root只批准一次综合；j310/q311不作为后续输入。
+
+
+## 2026-10-27T20:16:00+08:00 release UI scope added before placement
+
+按用户要求精简正式文字：隐藏校准/TF详细状态行和六行工程诊断，保留模式、风格、识别、坐标及问答必要信息。坐标遮蔽的首轮测试失败已修复，第二轮ModelSim PASS。j311不布局，R3使用j312/q313/r313重新构建。
+
+
+## 2026-10-27T20:20:00+08:00 release UI j312 prepared; synthesis released
+
+j312已按最终正式UI范围准备，376输入和360文件逐hash通过。Root只放行一次综合，不复用旧构建根。
+
+
+## 2026-10-27T20:48:00+08:00 I0310R3 synthesis complete; placement released
+
+j312综合native0，诊断层未进入网表；综合SWNS -1.456ns，估算21918 Slice。只放行q313布局，route/bit未放行。
+
+
+## 2026-10-27T20:57:00+08:00 I0310R3 placement complete; route released
+
+q313真实占用20133 Slice，setup +0.911ns，hold -0.262ns。Root只放行r313布线，bit/硬件未放行。
+
+
+## 2026-10-27T21:11:00+08:00 I0310R3 routed; candidate bitgen released
+
+r313最终setup +0.112ns、hold +0.020ns，TNS均0，资源可容纳，D11已落位。只批准一次本地b313 bitgen，硬件仍待用户。
+
+
+## 2026-10-27T21:25:13.1222974+08:00 I0310R3 SRAM candidate generated
+
+I0310R3 bit B0236FC8/1789539B已生成并放入release目录。未下载或写Flash，等待用户PROGRAM_SRAM验证SW4重校准、正式UI及原功能回归。I0309回退候选保持。
