@@ -83,7 +83,10 @@ module tb_pixel310_compositor_track;
         if(!en_panel || en_rgb!==24'h00ff00)begin $display("ERROR: compatibility detail row missing");errors=errors+1;end
         if(!dis_panel || dis_rgb!==24'h18242c)begin $display("ERROR: release detail row not hidden");errors=errors+1;end
 
-        if(errors==0)$display("PASS: release UI hides engineering diagnostic and detail status only");
+        calibration_state=1;in_frame_start=1;@(posedge clk);#1;in_frame_start=0;settle(12);
+        if(!dis_panel || dis_rgb!==24'h00ff00)begin $display("ERROR: calibration notice hidden");errors=errors+1;end
+
+        if(errors==0)$display("PASS: release UI keeps transient calibration notice and hides idle detail");
         else $display("FAIL: errors=%0d",errors);
         $finish;
     end

@@ -1,0 +1,168 @@
+{
+  "Version": "I0310R4C",
+  "At": "2026-10-28T17:58:41.033482+08:00",
+  "Owner": "Codex /root local/01a18186-78f4-7101-93d9-0f77a7041af9",
+  "Status": "SRAM test candidate; hardware validation pending",
+  "Bitstream": {
+    "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/fpga/release/sc520-i0310r4c/sc520_i0310r4c.bit",
+    "SHA256": "E52E799C15F0507F22E69DEF6036EF218CDBF05EFC47D4EB53D5B1C1FC8DB87B",
+    "Bytes": 1789539
+  },
+  "SourceSnapshot": {
+    "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/fpga/release/sc520-i0310r4c/sc520_i0310r4c_sources.zip",
+    "SHA256": "ADEF639CB90DC41A1C23595ADC2D20978C881C7ADBD7A5D4F6A172312A05E96A",
+    "Bytes": 1464220
+  },
+  "SnapshotSourceFiles": 360,
+  "SourceRoles": {
+    "top": {
+      "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/fpga/custom_project/sc520-system-integration-i0310/overlay/design_top_wrapper.v",
+      "SHA256": "E66D116CC4E4C2AB5A2AC43D1C67414EBA1EEAE51E7C376E697273CA6805065D",
+      "Bytes": 43807
+    },
+    "pipeline": {
+      "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/fpga/rtl/sc520-system-integration-i0310-r4c/pixel310_pipeline.v",
+      "SHA256": "A01492ED5CDC5B1F35AD501105418FF48A3D70BFB1BE73E119D9AB51701E2D4D",
+      "Bytes": 26620
+    },
+    "compositor": {
+      "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/fpga/rtl/sc520-system-integration-i0310/pixel310_compositor_track.v",
+      "SHA256": "91647A71C43FD31823F0A9310971DC865271320BEB57318AED19AE06031072B8",
+      "Bytes": 9414
+    },
+    "awb": {
+      "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/fpga/rtl/sc520-system-integration-i0310/pixel310_awb_retrigger.v",
+      "SHA256": "3132F2F83A3A584F28239C26F46E0F0EA60409F339C0A53E5FEBE87E3CE3F3FB",
+      "Bytes": 4413
+    },
+    "adc": {
+      "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/fpga/custom_project/sc520-system-integration-i0310/constraints/pin.adc",
+      "SHA256": "F4DE0E9EC6315497435D68A8963BB60ACD703891375CF3D600E1B130C31EACB8",
+      "Bytes": 3004
+    },
+    "sdc": {
+      "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/fpga/custom_project/sc520-system-integration-i0310/constraints/production.sdc",
+      "SHA256": "4FC175D3E1E63A36637B31869B35D77E1BDE482E2CE0198B8400683E45BF5F08",
+      "Bytes": 7734
+    },
+    "isp": {
+      "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/fpga/custom_project/sc520-system-integration-i0310/overlay/isp310_top.v",
+      "SHA256": "67FF80D4363304408A3F211BAA3713669781A1D370449F20C420CA69110E8E93",
+      "Bytes": 11275
+    },
+    "color": {
+      "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/fpga/rtl/sc520-system-integration-i0310/pixel310_color_pipeline.v",
+      "SHA256": "A7742A7EEB311EEAC3093013733683487545A74D7AEBBFC81EB2D5AA65D9A4EE",
+      "Bytes": 25587
+    },
+    "spatial": {
+      "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/fpga/rtl/sc520-system-integration-i0310/pixel310_spatial_cal.v",
+      "SHA256": "603A56CFFA7E47999AF1D84CC79FA19287B8F444D1FCF50E6D1312650ADE8069",
+      "Bytes": 8277
+    }
+  },
+  "Build": {
+    "Preparation": {
+      "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/evidence/sc520-system-integration/j319/preparation-result.json",
+      "SHA256": "24428115B471207E9B183BFAD35DF4B92388A3C0F0565D165957F8CE5E486004",
+      "Bytes": 293608
+    },
+    "Synthesis": {
+      "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/evidence/sc520-system-integration/j319/synthesis-result.json",
+      "SHA256": "7F784E19729C3AC91FC4FCD9F611D67383C53924D44A6FB5B4C574939542C0F9",
+      "Bytes": 14770
+    },
+    "Placement": {
+      "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/evidence/sc520-system-integration/q320/placement-result.json",
+      "SHA256": "AE9FB4739C606C79EF05F4AA16A3DE25CBEC24EDF858558747B8B6685AA02819",
+      "Bytes": 12168
+    },
+    "Route": {
+      "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/evidence/sc520-system-integration/r320/route-result.json",
+      "SHA256": "58E434D0EC485B9DB83E44753B1F0638D1B877C3338FF7B5E9AD898128F5BEAC",
+      "Bytes": 12191
+    },
+    "Export": {
+      "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/evidence/sc520-system-integration/u321/export-result.json",
+      "SHA256": "7A7F4BAC4AF04762F8DBE081DD4BFF5C138AA2E31B431B631FD82BB753576F35",
+      "Bytes": 719321
+    },
+    "Bitgen": {
+      "Path": "E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration/evidence/sc520-system-integration/b320/bitgen-result.json",
+      "SHA256": "50FEF502EF88BD55F067478CE26889DCC2E78BE2DDF5D3BB5B311230AB997A45",
+      "Bytes": 844380
+    }
+  },
+  "Review": {
+    "Path": "E:/juan/FPGA/learning/sc520-system-integration/i0310r4c-physical-candidate-reviewed-20261028.json",
+    "SHA256": "6E4CE23D72A3A81FC9217F8F4E079CA528CBC47526CFAEB4038C103B7421B39D",
+    "Bytes": 6809
+  },
+  "CDCReview": {
+    "Path": "E:/juan/FPGA/learning/sc520-system-integration/physical-review/i0310r4c-final/cdc-numeric-v9-u321-root-r1.json",
+    "SHA256": "1F0377602D541B6DC9236A99ADC7B49C1291B3942DF39EAE0C2D30293369F0C0",
+    "Bytes": 6755590
+  },
+  "StructureReview": {
+    "Path": "E:/juan/FPGA/learning/sc520-system-integration/physical-review/i0310r4c-final/physical-structure-u321-r1.json",
+    "SHA256": "BC52A47E56778C2396FB5FE44E769A76E8597FB4FC0B554EC14BB561DC996D86",
+    "Bytes": 275170
+  },
+  "SoftwareReview": {
+    "Path": "E:/juan/FPGA/learning/sc520-system-integration/i0310r4c-software-review-20261028.json",
+    "SHA256": "7EFAD27253053394FA6804094620E5BDA60CAB0DB5AC40C4AE89C9A09470E40C",
+    "Bytes": 2956
+  },
+  "RoutedTimingNs": {
+    "Confidence": "Routed",
+    "Corners": "Both",
+    "Clocks": {
+      "MIPI_RX_BYTE_CLK": 9.66,
+      "HDMI_PIXEL_CLK": 13.333,
+      "u_ph1p35_324_ddr_wrapper/u_ddr2/usr_clk": 15.0,
+      "pll_clk_24m": 42.0,
+      "sys_clk_50m": 20.0,
+      "HDMI_SERIAL_CLK": 2.666,
+      "u_ph1p35_324_ddr_wrapper/u_ddr2/mcu_clk": 39.374,
+      "pll_clk_100m": 10.0,
+      "u_ph1p35_324_ddr_wrapper/u_ddr2/ctl_clk": 15.0,
+      "u_ph1p35_324_ddr_wrapper/u_ddr2/ddr_clk": 3.75,
+      "mipi_rx_ck_pad": 2.415,
+      "u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.tif_c16_in": 9.66,
+      "u_ph1p35_324_ddr_wrapper/u_ddr2/ref_clk": 15.0,
+      "u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.io_clk_pad_p": 2.415
+    },
+    "SWNS": 0.023,
+    "STNS": 0.0,
+    "HWNS": 0.02,
+    "HTNS": 0.0,
+    "NonnegativeUnderCurrentConstraints": true
+  },
+  "Resources": {
+    "Resources": {
+      "slice": {
+        "Used": 20142,
+        "Available": 21216
+      },
+      "eram": {
+        "Used": 103,
+        "Available": 108
+      },
+      "dsp": {
+        "Used": 27,
+        "Available": 40
+      }
+    },
+    "Fits": true
+  },
+  "HardwareValidated": false,
+  "Downloaded": false,
+  "FlashWritten": false,
+  "MergedToMain": false,
+  "Limits": [
+    "Current software simulation is bounded; full production720p/CSI/DDR hardware remains unverified.",
+    "CDC J254/J150 and synchronizer resolution are explicit unmeasured model assumptions.",
+    "STA coverage96.96%; inactive capture_release[2] constraint and inherited vendor-IP scope remain documented.",
+    "Gate ROM mux proof and routed memory/wiring preservation do not claim whole-netlist encrypted-primitive formal equivalence."
+  ]
+}

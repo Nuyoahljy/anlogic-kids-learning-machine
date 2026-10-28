@@ -2,7 +2,7 @@
 module tb_pixel310_awb_retrigger;
     reg clk=0,rst_n=0,switch_async=1,frame_start=0,base_enable=1;
     reg calibration_locked=0,calibration_failed=0;
-    wire awb_enable,recalibration_busy,trigger_pulse,switch_qualified;
+    wire awb_enable,recalibration_busy,calibration_restart,trigger_pulse,switch_qualified;
     integer errors=0,triggers=0;
 
     always #5 clk=~clk;
@@ -13,6 +13,7 @@ module tb_pixel310_awb_retrigger;
         .frame_start(frame_start),.base_enable(base_enable),
         .calibration_locked(calibration_locked),.calibration_failed(calibration_failed),
         .awb_enable(awb_enable),.recalibration_busy(recalibration_busy),
+        .calibration_restart(calibration_restart),
         .trigger_pulse(trigger_pulse),.switch_qualified(switch_qualified));
 
     task check(input bit condition,input string message);
@@ -45,9 +46,14 @@ module tb_pixel310_awb_retrigger;
         check(!awb_enable&&recalibration_busy,"whole reset frame disabled");
         cycles(5);check(!awb_enable,"disable persists until next SOF");
         @(negedge clk);frame_start=1;#1;
-        check(awb_enable,"following SOF restarts AWB");
+        check(!awb_enable,"following SOF still presents reset to calibration");
+        check(calibration_restart,"second SOF asserts explicit restart");
         @(posedge clk);@(negedge clk);frame_start=0;#1;
-        check(awb_enable&&recalibration_busy,"restart waits for calibration result");
+        check(awb_enable&&recalibration_busy,"AWB restarts after second SOF edge");
+        calibration_locked=1;cycles(2);
+        check(recalibration_busy,"old lock cannot complete a new request");
+        calibration_locked=0;cycles(2);
+        check(recalibration_busy,"controller observes unlocked state before completion");
         calibration_locked=1;cycles(1);calibration_locked=0;cycles(1);
         check(awb_enable&&!recalibration_busy,"locked result completes request");
 
@@ -55,7 +61,8 @@ module tb_pixel310_awb_retrigger;
         switch_async=0;cycles(8);check(!switch_qualified,"return low rearms");
         switch_async=1;cycles(8);check(triggers==2,"second rising action");
         sof();check(!awb_enable,"second action enters reset frame");
-        sof();check(awb_enable&&recalibration_busy,"second action waits for result");
+        sof();check(awb_enable&&recalibration_busy,"second action restarts after clean reset");
+        cycles(1);check(recalibration_busy,"failed path first observes cleared state");
         calibration_failed=1;cycles(1);calibration_failed=0;cycles(1);
         check(awb_enable&&!recalibration_busy,"failed result completes request");
 

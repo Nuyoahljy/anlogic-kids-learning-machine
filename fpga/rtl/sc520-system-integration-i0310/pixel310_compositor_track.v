@@ -131,10 +131,11 @@ module pixel310_compositor_track #(
     // The top-panel third row contains calibration/TF engineering detail.
     // Release builds retain the panel background while hiding that text row.
     wire detail_status_row=c_y>=10'd76 && c_y<10'd108;
+    wire calibration_notice=frame_calibration==2'd1 || frame_calibration==2'd3;
     // Formal UI keeps priority; engineering layers/details are optional.
     wire [23:0] mixed=!d_de ? 24'd0:diag_active ? diag_rgb:
         panel_active ? (coord_ink_d?24'h00ffff:
-            ((!DETAIL_STATUS_ENABLE && detail_status_row) ? 24'h18242c:panel_rgb)):
+            ((!DETAIL_STATUS_ENABLE && detail_status_row && !calibration_notice) ? 24'h18242c:panel_rgb)):
         (TRACK_ENABLE && track_border_d) ? 24'h00ffff : border_d ? 24'hff0000:video_d[23:0];
     sc520_logo_tile4_pipeline #(.X_ORIGIN(1008),.Y_ORIGIN(24),.MAP_FILE(LOGO_INDEX_FILE),.DICT_FILE(LOGO_PALETTE_FILE)) logo(
         .clk(clk),.rst_n(rst_n),.in_frame_start(video_d[49]),.in_de(d_de),.in_hsync(video_d[47]),.in_vsync(video_d[46]),

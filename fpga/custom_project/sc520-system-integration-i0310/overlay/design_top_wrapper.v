@@ -66,7 +66,7 @@ module design_top_wrapper #(
 	(* keep = "true" *) wire        S_cam_i2c_error;
     wire [31:0] S_cam_i2c_diagnostic;
     wire S_awb28_locked,S_awb28_failed;
-    wire S_awb_enable,S_awb_recalibration_busy;
+    wire S_awb_enable,S_awb_recalibration_busy,S_awb_calibration_restart;
     wire [5:0] S_spatial282_status;
     wire S_spatial286_event,S_spatial286_good;
     wire [215:0] S_spatial286_means;
@@ -735,8 +735,9 @@ pixel310_awb_retrigger #(.CLOCK_HZ(103520000),.DEBOUNCE_MS(20)) awb_retrigger(
     .base_enable(S_p14_cfg_done[1] && !S_p14_cfg_error[1]),
     .calibration_locked(S_awb28_locked),.calibration_failed(S_awb28_failed),
     .awb_enable(S_awb_enable),.recalibration_busy(S_awb_recalibration_busy),
+    .calibration_restart(S_awb_calibration_restart),
     .trigger_pulse(),.switch_qualified());
-isp_top u_isp_top (
+isp310_top u_isp_top (
 .axi4s_video_aclk(S_csi_rx_clk),
 .I_rst_n         (S_rst_n),
 .I_tlast         (S_raw_tlast	),
@@ -752,7 +753,7 @@ isp_top u_isp_top (
 .I_spatial_stats_event(S_spatial286_event),.I_spatial_stats_good(S_spatial286_good),
 .I_spatial_means(S_spatial286_means),.I_spatial_high(S_spatial286_high),.O_diag_pre_wb(S_p14_pre_wb),.O_diag_post_wb(S_p14_post_wb),
 .O_awb_locked(S_awb28_locked),.O_awb_failed(S_awb28_failed),.O_spatial_status(S_spatial282_status),
-.I_awb_enable(S_awb_enable),
+.I_awb_enable(S_awb_enable),.I_recalibrate_restart(S_awb_calibration_restart),
 .O_diag_gain_r(S_p14_gain_r),.O_diag_gain_b(S_p14_gain_b),.O_diag_pixel_id(S_p14_pixel_id),
 .O_diag_stats_id(S_p14_stats_id),.O_diag_stats_done(S_p14_stats_event),.O_diag_stats_good(S_p14_stats_good),.O_diag_neutral_count(S_p14_neutral),
 .O_tlast         (S_ISP_O_tlast ),
@@ -1008,7 +1009,11 @@ isp_top u_isp_top (
             S_awb28_meta<={S_ui_cfg_ready_24m,S_awb28_failed,S_awb28_locked};
             S_awb28_sync<=S_awb28_meta;
         end
-    wire [1:0] S_cal_state=S_awb_recalibration_busy?2'd1:
+    (* async_reg="true",preserve="true",keep="true" *) reg [1:0] S_awb_busy_sync;
+    always @(posedge S_hdmi_pixel_clk or negedge S_addon_rst_n)
+        if(!S_addon_rst_n)S_awb_busy_sync<=0;
+        else S_awb_busy_sync<={S_awb_busy_sync[0],S_awb_recalibration_busy};
+    wire [1:0] S_cal_state=S_awb_busy_sync[1]?2'd1:
         S_awb28_sync[1]?2'd3:S_awb28_sync[0]?2'd2:S_awb28_sync[2]?2'd1:2'd0;
     wire [1:0] S_tf_state=S_a22_fault?2'd3:S_tf_playing?2'd2:S_tf_ready?2'd1:2'd0;
     pixel301_style_inputs style_inputs(.clk(S_hdmi_pixel_clk),.rst_n(S_addon_rst_n),

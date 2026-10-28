@@ -1758,3 +1758,175 @@ r313最终setup +0.112ns、hold +0.020ns，TNS均0，资源可容纳，D11已落
 ## 2026-10-27T21:25:13.1222974+08:00 I0310R3 SRAM candidate generated
 
 I0310R3 bit B0236FC8/1789539B已生成并放入release目录。未下载或写Flash，等待用户PROGRAM_SRAM验证SW4重校准、正式UI及原功能回归。I0309回退候选保持。
+
+## 2026-10-27T23:07:00+08:00 I0310R4 j314 synthesis rejected
+
+用户实板严格测试确认：I0310R3 的SW4运行中重校准可能在拨回0后留下画面中央整体偏绿，重启后的开机校准恢复正常。因此R3手动重校准路径拒收，I0309继续作为稳定回退。R4源码已加入显式AWB/空间系数复位、旧锁定清零确认、busy跨域同步及仅在校准中/失败时显示提示；对应AWB/UI ModelSim和私有ISP源码编译均通过。
+
+j314首次TD综合于23:00执行，原生进程7.828秒自然退出1，未超时、未请求终止、进程树清理通过。准确失败为 `HDL-8007 ERROR: net 'drop_frame' is constantly driven from multiple places`：新 `pixel310_color_pipeline.v` 的独立SOF块与显式restart状态块同时驱动同一寄存器。流程只完成elaborate，未进入opt_rtl、资源统计、SDC验证、布局、布线或bitgen；runner的 `Native stage/lifecycle failed` 只是对原生退出1的通用拒收包装。j314已消费并永久保留为失败证据，不复用。下一步将 `drop_frame` 合并为单一时序驱动，补充elaboration级验证，并使用全新j316/q317/r317/b317构建链。
+
+## 2026-10-27T23:14:04+08:00 I0310R4B source and fresh tools accepted for preparation
+
+`pixel310_color_pipeline.v` 已把restart优先级并入原有 `drop_frame` 时序块，并从AWB主状态块删除重复赋值；现在该寄存器只有一个过程驱动，restart与SOF同周期时先丢弃重启帧，移除restart后的下一干净SOF再释放。新增有界测试实例化真实color/spatial/signal_delay/IP层级并执行vlog、vopt和vsim；最终R4日志为vlog 0错0警告、vopt 0错（四条为vendor signal_delay既有未连接端口警告）、vsim 0错0警告且打印restart优先级PASS。此前两次vopt命令问题和一次不支持的小几何仿真均在同一证据目录保留，未覆盖。
+
+新I0310R4B工具独占j316/q317/r317/b317，旧R4/j314工具和输出保持。准备/阶段/bitgen脚本24项纯检查通过，生产脚本无R3或j314旧标记；bitgen已改为精确绑定manifest SHA，避免原R4目录中遗留的R3硬编码。私有ISP/color/spatial源码重新vlog 0错0警告。Root已生成绑定九源、最终验证日志和0120C21A准备器的只准j316准备文件；尚未执行prepare或任何新TD阶段。
+
+## 2026-10-27T23:17:19+08:00 I0310R4B j316 prepared
+
+Root按精确准备许可唯一执行0120C21A准备器，自然退出0，生成j316 manifest `70D3E27E...65F33` / 293951B。Root逐项重核382输入及360清单文件的SHA/Bytes均零差，实际根361文件（含自排除manifest），无缺失或额外成员；355物理源、353角色、153编译项及唯一order均符合，修复后color快照为A7742A7E。j316没有native标记、数据库或bit，尚未启动TD。待独立只读审核一致后，只放行一次1200秒综合；q317/r317/b317仍未创建。
+
+## 2026-10-27T23:25:37+08:00 I0310R4B j316 synthesis complete
+
+独立j316准备审核确认361文件、382输入、九源、PLL/ROM和153编译项均精确，可执行一次综合。Root按70D3 manifest与E7DF runner唯一启动TD；native0、352.922秒、自然退出、无超时或终止、树清理通过，所有受保护输入保持。结果 `8C570C66...D5CC`，gate DB `1462EE6D...04D8` / 15793666B；三阶段marker完整，stderr空，HDL/全部ERROR为0。117条warning与j312数量相同，新增busy二级同步约束准确命中1起点/1终点，综合路径0.524ns；D11和SW4异步入口约束保留。
+
+综合时序为setup WNS -0.211ns/TNS -5.986ns、hold WNS +0.114ns/TNS 0，14时钟和周期保持；估算Slice 22000/21216、ERAM103/108、DSP27/40。综合Slice不是最终布局占用，且前版同类工程布局后可下降，但当前不称资源或时序通过。待独立综合审查一致后，只放行一次q317布局；route、bitgen和硬件仍未放行。
+
+## 2026-10-27T23:38:41+08:00 I0310R4B q317 placement complete
+
+独立综合审核确认744受保护输入与31输出均匹配、119条归一化告警与j312完全一致、busy同步2ns路径有1.371ns综合余量，准一次布局。Root按70D3 manifest、8C57 parent和E7DF runner唯一执行q317；native0、445.813秒、自然退出、无超时或终止、树清理通过，输入0变化、stderr空、ERROR/FATAL 0。结果 `E54B1A1D...6CC00`，place DB `243DC8D7...3E014` / 20934986B。
+
+真实布局资源为Slice 20192/21216（95.17%）、ERAM103/108、DSP27/40，D11保持，资源可容纳。Placed/Both时序为setup WNS -0.020ns/TNS -0.020ns（1端点），hold WNS -0.284ns/TNS -76.813ns；14时钟保持，新busy同步约束仍准确命中。布局没有通过最终时序，但其setup接近零且hold与q313同量级，前版route可修正；待独立布局审核一致后只放行一次r317布线。bitgen和硬件仍禁止。
+
+## 2026-10-28T00:17:53+08:00 I0310R4B r317 routed but timing rejected
+
+独立布局审核确认q317的793唯一绑定、真实资源、14时钟和busy同步路径均正确，准一次route。Root按70D3 manifest、E54B parent和E7DF runner唯一执行r317；native0、1662.062秒、自然退出、无超时或终止、树清理通过，输入0变化、stderr空、ERROR/FATAL 0。结果 `CF3B7B3B...5A3E5`，route DB `D63C0BFF...A0CCD` / 26508040B，资源仍为Slice20192/ERAM103/DSP27。
+
+Routed/Both最终hold通过：WNS +0.020ns、TNS 0；但setup失败：WNS -1.581ns、TNS -44.076ns、45端点，最坏路径位于MIPI_RX_BYTE_CLK域的scene preprocess RAM链，数据路径10.641ns且net占7.922ns。该路径不是新增AWB控制层级。r317因此拒收，`NonnegativeUnderCurrentConstraints=false`，不执行bitgen；所有输出作为失败历史保留。下一步只读比较r313成功物理结果、q317/r317迭代和TD可控seed/策略，使用全新物理根恢复时序，不放宽9.660ns约束。
+
+
+## 2026-10-28T00:39:17.137013+08:00 I0310R4B resumed after timing rejection
+
+当前负责人为 Codex /root local/01a17e34-14cb-7740-8b8a-b6d924cded05，已实际回读旧聊天、根入口、主库规则与最新登记。HEAD为8ec47d6，已有未提交改动保持。r317最终setup -1.581ns/TNS -44.076ns，hold +0.020ns/TNS0，禁止生成bit。独立审计789唯一路径零差，本主重核六项结果/数据库。
+
+下一步从原j316 gate在新q318/r318使用官方支持的seed 1重新物理实现；先审新runner并逐阶段放行。RTL、14时钟、引脚、PLL与所有约束保持。原TD GUI和交互命令行非本次拥有构建，保持不动。未上板、未Flash、未合并。
+
+
+## 2026-10-28T00:47:20.316925+08:00 R4B logic rejected; R4C repair authorized
+
+独立源码审查发现手动inhibit仍经drop_capture/wait_start持续清空空间统计；observer在非SOF时被flush、SOF时也不发cal_event，显式restart后空间锁定无法恢复，busy可卡住。现有color测试关闭空间引擎且不送像素，不能证明根因已修。q318/r318计划在执行前取消，无新TD。已准备seed脚本作为历史保留，不作为R4B候选资格。
+
+R4C只在新目录修pipeline，保持旧九源和j316/r317证据。先旧版失败/新版通过的observer与识别完整帧回归，再实际spatial27系数重启/重新锁定回归。新构建预留j319/q320/r320/b320，所有时钟/PLL/引脚/SDC不变。主逐阶段审核后继续；未上板/Flash/合并。旧接续聊天01a17b18已通过工具归档，历史与工作树保留。
+
+## 2026-10-28T10:40:33.8947683+08:00 R4C resumed with separate implementation and review
+
+状态：进行中。当前唯一接续 Codex /root local/01a18053-83ee-7682-9bc6-81420b384daf；task/sc520-system-integration@8ec47d6，既有改动保持。主库最新规则与当前 learning 断点优先于本 Worktree 的九月总记忆；本轮范围仍为第一版五卡/TF-HDMI及 R4C 手动校准修复，不恢复旧十四类或旧 UART 方案。
+
+r4c_pipeline 唯一接 R4C 管线及私有回归；r4c_software_review 独立审核真实 observer、空间重启和帧边界；r4c_build_review 独立审核四构建工具。Root 负责日志、共享索引及精确逐阶段放行。继承草稿/v1-v5 失败均保留并核实补登记；空间 8 场和工具 53 项只是待复核的既有局部证据，不能当作完整手动重校准通过。新 j319/q320/r320/b320 尚未放行，取消的 q318/r318 不启动。
+
+前主 01a17e34 已实际读取并归档，历史/工作树不删。CIM 未见 native 构建，用户 TD GUI 保留；不操作实板、Flash 或主线合并。下一步完成旧失败/新通过回归，补联合真实校准链证据，再审核准确九源和一次新准备。
+
+## 2026-10-28T11:59:20.9826883+08:00 R4C software accepted for fresh preparation
+
+状态：进行中。Root实际核核心D822（old2/new0、18帧687199检查、48源48快照/116引用0差），空间F26E（8场658检查）及工具29BB（53项）。核心已覆盖已发布/真实256扫描中帧busy、晚到禁止、自然fault和下一完整帧恢复，vopt30输出警告以新111627记录纠正。A014生产pipeline及旧9431、其他八源保持。
+
+Root在独立learning审核目录补真实color/observer/spatial/retrigger/管线循环。v7读到原RAM未接web=Z、dia非零而dob0，j316实际十bank WEBMUX0；v8只有显式只读引脚影子适配，不改生产源/假stats/force。真实110帧15090435检查、两次SW4重启、104有效统计、A/B/A 27系数清零重锁、下一完整帧恢复通过，原失败全部保留。vopt38/vsim2既有端口宽度警告不隐瞒。真实720p/CSI/DDR/色准/硬件仍待验证。
+
+Root只准准确九源和A443一次新j319准备；之后另审综合（需核新WEBMUX0）、seed1布局、路由和最终物理。新导出工具纯100项只代表准备，未创建u320/TD。q318/r318取消，I0309回退/R3拒收/旧r317保持，不合并或Flash。完整软件范围与许可见共享learning/sc520-system-integration下i0310r4c-software-review-20261028.json和i0310r4c-preparation-approved-20261028.json。
+
+## 2026-10-28T12:10:52.9421816+08:00 j319 prepared; fresh synthesis pending
+
+状态：进行中。统一索引1283/33235后，A443准确prepare自然0，清单24428115/293608B。Root全部381输入/360输出741绑定0差、实际361成员、355source/353role/153唯一compile且order453。只签44319693对j319一次1200s新综合；准备结果不代表时序/资源或硬件通过。新gate需核原14clock和全部delay RAM只读B口，后续q320/r320/b320另审。Root逐文件登记准备快照并串行索引；无合并/Flash/实板动作。
+
+## 2026-10-28T12:33:44.2435977+08:00 j319 synthesis completed; final stage review pending
+
+状态：进行中。Root唯一session49996/TD10596，新综合native/wrapper0、453.328s/Job clean，无超时/主动停止。result7F784E19/14770B，gateDEDE9EFB/15794650B；31输出、1516引用771绑定SHA/Bytes0差。原14clock保持，SWNS-0.811/STNS-7.506/HWNS+.114/TNS0，仅综合；Slice22013是门级估算而非最终容量，ERAM103/DSP27。
+
+新wait_frame寄存/MIPI时钟/复位D锥存在，十个delay RAM全部WEBMUX0/NOREGB，与独立真实校准模型合同一致；119归一化warning与j316无差。独立prepared F37D已通过且Root亲读，独立SYN终审仍在进行。Root本批同步记录/index；下一q320仍须新只准布局许可，保持原源码/时钟/SDC/PLL，不route/bit/硬件或合并。
+
+## 2026-10-28T12:39:41.6372111+08:00 exact q320 release pending final handoff
+
+Root已生成准确manifest24428115/parent7F784E19/gateDEDE9EFB/runner44319693的一次seed1 q320布局许可，1200s；当前q320不存在、未native。Root须先亲读独立SYN实际落盘结果并完成索引Check，再执行。原源码/14clock/PLL/约束不改；真实seed/布局容量/时序另核，route/bit/硬件未授予。
+
+## 2026-10-28T12:44:30.8987838+08:00 independent SYN accepted in bounded scope
+
+Root已全文亲读独立A3481D2D/13961B并重核10绑定0差，原生/源结构/原14clock/119warn/十RAM/新waitFF/D11实际一致，独立记录123836纳入共享索引。保留formal/最终物理/硬件限界。准确q320许可4703EFEF等读取前置已齐，只待本批Generate/-Check和无活动TD/无旧输出根确认后唯一执行布局；route/bit未授予。
+
+## 2026-10-28T13:07:56.4593435+08:00 q320 complete; fresh r320 pending
+
+状态：进行中。索引1289/33615后唯一q320/session27627/TD3904，native/wrapper0、234.688s/clean，resultAE9FB473/12168B、DBBC0DFA39/20911850B。Root1542引用794绑定全0差；14原clock/源/IO保持，实际Slice20142/21216、ERAM103、DSP27。Placed setup+1.091/TNS0、hold-.281/TNS-72.812，非最终通过。
+
+原生seed1命令已执行，报告没有seed读回且global enable_seed off，保持未验证seed效果限界。Root只签准确AE9F/2442/4431的r320一次7200s布线，独立placement实际报告/索引前置完成后才执行。原r317/I0309/R3及所有Source保留，不重syn/place、bit或硬件。新最终CDC须按实际160对及6pruned reason重新闭合，不沿旧166资格。
+
+## 2026-10-28T13:34:13.4350979+08:00 placement review accepted; route pending index
+
+Root已全文读取独立2FB1214F/14554B并重核15绑定0差，真实布局与完整保护/原clock/IO一致且无source/native/IO阻断；仍保负hold、seed未知和最终物理/硬件待验。Root接受5029B6FB准确一次r320许可的读取前置，统一本批Generate/-Check和无活动native/无旧根后唯一执行布线7200s。独立130851记录保持，发布后服务错误不作原生失败或否认已落盘证据。
+
+## 2026-10-28T14:28:25.4163509+08:00 r320 actual start registered after resume
+
+状态：进行中。Root压缩断点恢复后已重读最新规则、记忆/记录和实际旧聊天；本树task/sc520-system-integration@8ec47d6及已有改动保持。原session89175仍运行，request14:13:15、TD14592/父29824/FileTime134376415968656557与CIM/Command/Cwd一致。request217238B5/238433B、launcherFD633DAE/3235B、started2682EC28/1985B和runner44319693实核；770保护路径和Job启动身份已登记。
+
+当前Phase4 reroute、无route-result，继续原7200s预算，不重复syn/place/route，不终止用户TD。新导出执行器/数字工具仍仅prepare/pure；独立最终审核继续。原报告Remaining166文字错误不作资格，实际必须160+39+35+6=240及36Gray。最终时序/ROM/reset/CDC另审后才单批bitgen；无实板、Flash或主线合并。
+
+## 2026-10-28T14:48:07.1627002+08:00 r320 complete; final physical review continues
+
+状态：进行中。原89175自然0，TD14592 native0/1065.718s/Job clean，无超时/终止；result58E434D0/12191B、DB15BB9AC6/26402428B，Root1536引用790路径/23输出全0差、原native生命周期/结束token/空stderr/无bit已核。Routed/Both setup+.023/TNS0、hold+.020/TNS0，14原clock和资源20142slice/103ERAM/27DSP保持，A4/D11/B4/E11及四键落位正确。小setup裕量、96.96%覆盖、旧local-clock/无效裁剪bit告警与seed未知保持限界。
+
+Root gate42纯测试和完整新SHA默认只读实际通过，160+39+35+6=240与36Gray闭合，776输入0差；首个误传短SHA的CLI在前置拒绝，无文件/原生变化。新7C9E数字工具与5269测试已全文读，作者96/0/0及前两失败记录纳入，实际数值未执行。
+
+独立原100pure虽然通过，真实103bank的省略控制pin使旧96353 reviewer拒收。Root只授权新v2 checker/test及执行器Reviewer精确绑定，冻结四原稿不改；不能以pure/route通过代替ROM/reset/CDC。独立route/工具/数字审核继续，尚无u320/b320或硬件/Flash/合并。共享登记和本分支日志由Root串行闭环。
+
+## 2026-10-28T15:21:30.3015523+08:00 independent r320 report accepted; only u320 preparation released
+
+状态：进行中。Root已实际全文读取报错前落盘B0BD72C9独立route报告与0569审核器，并重核8绑定0差；独立794路径/23输出/31同步预算/72IO与Root原790范围一致，完整物理/CDC/ROM/reset/硬件仍false。独立144624记录保留，发布服务错误不否认真实已有报告；完整CRITICAL-WARNING原文仍以logw而非摘要遗漏为准。
+
+随后工具/数字接续代理多次服务失败，Root只接管审核工具缺项。已落盘v2 ERAM草稿未测试；A094数字partial全文读完，96pure保持但foreignCLK/非法triplet与未知结构两个helper P2待修，不能声称静态完整通过。生产源和原四导出稿保持。
+
+Root新许可只准8560/92EB从15BB新DB材料化唯一u320五副本/binding，无TD；E7FF Helper15419B、E2E0 TD76680976B真实绑定，独立读取前置已齐。共享索引后执行准备；原生导出、实际数字、b320均另审。无板卡、Flash或主线动作。
+
+## 2026-10-28T15:53:17.1491374+08:00 review tools repaired; only preparation pending index
+
+状态：进行中。Root仅修审核工具，原生产九源/原四导出稿/7C9E数字源码/旧报告保持。C9A6 ERAM v2现可完整解析真实j319的103bank；首轮18/1error保存，修正DP20K/NOREG/non-FIFO省略SIG OCE的显式模式分类，不假设常量，OUTREG缺有效信号仍拒绝，第二轮20/0/0。
+
+9D2F数字v2固定bytes原实现，补合法数值组/支持格式拒收及SDF每clock边对应route端口网络；原96+新增8场=104/0/0，实际SDF未执行。39870执行器精确绑定v2 Reviewer和官方ERAM模型，9AE5测试20/0/0、186检查（87B5报告），原92EB/E7FF/600s/源保护不变。Root是真实本批工具作者/测试执行者；新独立审核未完成不提前宣称通过。
+
+本批源码/失败/通过结果同步共享登记与索引，随后只按AC5FCE28材料化u320；原生仍须另批准，ROM/reset/clock/160+36四角真实审核后才能b320。无实板、Flash、推送或主线合并。
+
+
+## 2026-10-28T16:24:45.459106+08:00 successor v3 reviewers accepted; u320 prepared
+
+状态：进行中。当前实际Root为local/01a18186-78f4-7101-93d9-0f77a7041af9，已read_thread接收并归档idle旧接续聊天01a18053；保留原件与其他业务聊天。原分支task/sc520-system-integration/8ec47d6已有改动集合保持，未改生产RTL。
+
+独立export_review发现v2将escaped名称内[2]与终止空白后的bit select合并，新增AC6B v3和23场纯测试（0失败/0错误），Root亲读差异和用例。数值审者独立重放104既有pure后新增4CCE数值v3，准确绑定新export/SDF helper，109pure通过；J254/J150及官方加密LUT体限制保持。Root将执行器仅改v3路径/hash和实际Creator，3D98576D；真实20tests/186checks通过。旧v2/数字原实现/历史输出保持，记录真实作者。
+
+上批Generate/-Check实际1303records/33700paths通过。Root先check-only 795文件/8XML，后按原AC5F一次材料化u320，E9D683AA binding/253940B及五份原字节副本；工具Owner旧标签仅为历史作者，实际操作者为本Root。独立后续实核801唯一绑定零差、六文件三目录未消费。新单次600s原约束只读导出许可绑定当前执行器/Reviewer/DB/命令；本批完成索引后执行。此处无TD/native/bit/硬件/Flash/合并。
+
+
+## 2026-10-28T16:43:09.813696+08:00 u320 failure preserved; exact u321 recovery prepared
+
+状态：进行中。真实u320 TD PID9256自然native1/11.312s、Job clean，结果3B1EB747/688364B；导入同15BB DB成功，首次update_timing被导出器自己的泛化命令拦截阻止。没有SDF或routed网表；不能称导出通过。Root重核843唯一输入/输出绑定0差，旧目录及原稿保留。安装Tcl无可读实现，具体内部helper未确定，不伪称已定位到start_timer。
+
+Root和独立审核逐字确认新945B exporter仅回归成功I0309的16构建命令拦截并换u321目录；不新增显式约束/时钟/构建动作。BEC4准备器/EFD6 reviewer/D59F执行器绑定新根，执行器额外保护失败u320全目录；真实pure20/186通过。独立确认新u321不存在后Root按5400准备许可一次材料化，22D37BD1/253951B及五份输入，795+5绑定重核0差。新精确600s执行许可在本批索引通过后消费。
+
+export_review新增bitgen-v2工具将AcceptedEvidence及request加入前后保护、真实Root身份和完整native守卫；首轮9tests/1failure保留，修正后10tests/0fail/0error。目前只是工具候选，完整ROM/reset/CDC及原生恢复待续，无bit/硬件/Flash/合并。
+
+
+## 2026-10-28T16:50:34.904356+08:00 u321 read-only export completed; real numeric audit started
+
+真实u321已自然完成native0，结果7A7F4BAC/719321B，四SDF各约42MB、网表/时序/原SDC/完整clock/IO已导出；Root重核887唯一输入/输出绑定零差，before/after相同，j319/r320/失败u320完整库存保持。日志实际start_timer证明update_timing需要内部STA启动，先前过宽拦截已回归；保留capture_release[2]旧裁剪告警，不抹平失败历史。
+
+数值v4纯112/0/0（首轮112/2测试路径失败保留），Root真实首次调用在审查器Required fresh gate/route basis unbound拒收，尚未读取数值/未生成report。实核gate网表存在并在native InputsBefore/After，原prepare.Protected未含综合网表；新增独立audit reader正补准确证据集合，执行Reviewer v4与native结果原件不改。ROM地址组合锥和复位结构并行审核中；完整物理/CDC/bitgen/硬件仍待验。
+
+
+## 2026-10-28T17:45:14.720710+08:00 complete bounded candidate review; b320 separately authorized
+
+状态：进行中。Root接续多次限流/401后保留真实旧稿与失败，补纯只读工具：v5纳入native851输入/request精确集合；v7按512真实块分类488 setup/hold、4 removal、20shadowed拓扑，不把packed端点名当Gray逻辑身份；v8完整保LS/MS两条不同SETUPHOLD（四角各7511组），不放宽实际CDC端点sh唯一；v9加入真实SCLK_V2且BYPASS DISABLE、连网守卫保留。v6失败/130pure/完整slow SDF4pure/3mode检查均落盘。未重跑TD或改变原源/时钟。
+
+真实F9BA v9数值自然0，报告1F037760/6755590B：640payload/144Gray/16span，最小setup24045ps、hold18912ps、Gray8240ps、span8502ps；新native slow_m40 setup545ps和fast_m40 hold151ps两条均0差。Root重核900输入0差；独立numeric_close只读确认无门槛放宽。J254/J150仍候选模型假设，不声称实测jitter/MTBF。
+
+结构14706审核器及BC52报告通过，26依据前后完整：102400x5模板、888/3232x25 Logo、45x52 DDR源字/364 DDR route位；103ERAM4989live位、31同步对/57Q、cam143clock+1pad、9warning/11ignored分类。高bank gate1600/40/500真值、源ROM/mask低4位102400归纳、合并复位与复制Q控制已核；全器件加密原语formal/外部IO实物仍未验。Root实际IO73行而非早期72，4条列出的DDR removal余量.050/.050/.050/.054均非负。
+
+当前原Routed余量+.023/+.020、TNS0/0保留。Root仅准22BECB bitgen-v2从15BB同DB生成单次b320 SRAM候选，全部接受证据加入before/after保护；新许可在本批索引完成后消费。无自动下载/Flash/主线合并，硬件仍false。
+
+
+## 2026-10-28T17:52:19.351983+08:00 bitgen preflight corrected; no native action consumed
+
+真实22BECB v2 CLI在approve阶段退出1：916接受输入含13个合法空文件（既有vendor占位、状态标记、clean stderr），旧全体Bytes>0规则过严。b320未创建、TD未启动，原许可/代码不变。新A4D5 bitgen-v3仅允许集合中的精确零字节受保护成员，并仍要求实质非空证据；全部hash/alias/文件类型和候选bit非空规则保持。新10pure通过，Root对真实新919接受项执行approve+checked全0差。新许可保留原物理模型与硬件限制，索引后仍仅一次b320。
+
+
+## 2026-10-28T18:02:24.393443+08:00 I0310R4C SRAM candidate built and release files verified
+
+状态：等待主对话审核（SRAM候选已生成，真实上板待用户验证）。Root按A4D5/6EEC许可实际b320单次TD自然0/16.969s，Job clean，bitgen-result50FEF502/844380B；925输入before/after相同且Root逐hash重核0差，全部接受证据/15BB DB保持。候选bit E52E799C15F0507F22E69DEF6036EF218CDBF05EFC47D4EB53D5B1C1FC8DB87B/1789539B，未下载或Flash。
+
+发布目录fpga/release/sc520-i0310r4c含bit、manifest22EC8849、README与360源文件+清单源码快照ZIP ADEF639C/1464220B；ZIP全部361成员通过CRC并对360源逐hash/Bytes验证，README四链接存在。快照保原路径引用，不声称跨目录可直接运行。保持原+.023/+.020ns、20142slice/103ERAM/27DSP及已声明候选CDC/外部IO边界。旧I0309/R3与失败历史均未改动。
+
+随后将本次精确源、相关测试/构建器、release和本日志纳入独立feat提交；实际提交号记录在共享根的i0310r4c-checkpoint-20261028.json。历史无关untracked文件保持，未推送/合并main。下一步用户按新README用PROGRAM_SRAM验证SW4两次重校准和原业务回归。

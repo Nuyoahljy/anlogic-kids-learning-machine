@@ -88,6 +88,7 @@ set_max_delay -from [get_regs {style_inputs/meta[1]}] -to [get_regs {style_input
 # the synchronizer's second-stage setup/hold analysis.
 set_false_path -from [get_ports {I_awb_recalibrate}] -to [get_regs {awb_retrigger/switch_meta}]
 set_max_delay -from [get_regs {awb_retrigger/switch_meta}] -to [get_regs {awb_retrigger/switch_sync}] 2.000
+set_max_delay -from [get_regs {S_awb_busy_sync[0]}] -to [get_regs {S_awb_busy_sync[1]}] 2.000
 set_max_delay -from [get_regs {cal_reset[0]}] -to [get_regs {cal_reset[1]}] 2.000
 set_max_delay -from [get_regs {u_p14_pipeline/display_reset[0]}] -to [get_regs {u_p14_pipeline/display_reset[1]}] 2.000
 set_max_delay -from [get_regs {S_awb28_meta[2]}] -to [get_regs {S_awb28_sync[2]}] 2.000

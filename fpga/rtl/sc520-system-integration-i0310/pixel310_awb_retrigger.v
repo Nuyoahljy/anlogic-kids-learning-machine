@@ -12,6 +12,7 @@ module pixel310_awb_retrigger #(
     input  wire calibration_failed,
     output wire awb_enable,
     output wire recalibration_busy,
+    output wire calibration_restart,
     output reg  trigger_pulse,
     output reg  switch_qualified
 );
@@ -20,16 +21,20 @@ module pixel310_awb_retrigger #(
 
     (* async_reg="true", keep="true", preserve="true" *) reg switch_meta, switch_sync;
     reg candidate, qualified_valid, armed;
-    reg pending, reset_frame, waiting_for_result;
+    reg pending, reset_frame, waiting_for_result, saw_unlocked;
     reg [COUNT_W-1:0] stable_count;
 
     assign recalibration_busy = pending || reset_frame || waiting_for_result;
+    assign calibration_restart = reset_frame && frame_start;
 
     // The first SOF sees enable low. It remains low during that frame, then
     // returns high on the following SOF so calibration restarts cleanly.
+    // Keep enable low at both bounding SOF edges. If the first edge is not a
+    // clean commit point, the second edge occurs after a full disabled frame
+    // and gives AWB plus spatial calibration another deterministic reset.
     assign awb_enable = base_enable &&
                         !(pending && frame_start) &&
-                        !(reset_frame && !frame_start);
+                        !reset_frame;
 
     always @(posedge clk or negedge rst_n) begin
         if(!rst_n) begin
@@ -43,6 +48,7 @@ module pixel310_awb_retrigger #(
             pending <= 1'b0;
             reset_frame <= 1'b0;
             waiting_for_result <= 1'b0;
+            saw_unlocked <= 1'b0;
             trigger_pulse <= 1'b0;
         end else begin
             switch_meta <= switch_async;
@@ -73,6 +79,7 @@ module pixel310_awb_retrigger #(
                     end else if(armed) begin
                         armed <= 1'b0;
                         pending <= 1'b1;
+                        saw_unlocked <= 1'b0;
                         trigger_pulse <= 1'b1;
                     end
                 end else begin
@@ -88,8 +95,13 @@ module pixel310_awb_retrigger #(
             end else if(reset_frame && frame_start) begin
                 reset_frame <= 1'b0;
                 waiting_for_result <= 1'b1;
-            end else if(waiting_for_result && (calibration_locked || calibration_failed)) begin
-                waiting_for_result <= 1'b0;
+                saw_unlocked <= 1'b0;
+            end else if(waiting_for_result) begin
+                if(!calibration_locked && !calibration_failed)saw_unlocked<=1'b1;
+                else if(saw_unlocked && (calibration_locked || calibration_failed))begin
+                    waiting_for_result<=1'b0;
+                    saw_unlocked<=1'b0;
+                end
             end
         end
     end
