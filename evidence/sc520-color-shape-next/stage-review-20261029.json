@@ -1,0 +1,78 @@
+{
+  "At": "2026-10-29T11:36:34.1165345+08:00",
+  "Owner": "Codex /root local/01a18534-9515-79d0-8443-217f618fd923",
+  "Status": "Bounded private color observer experiment accepted; production integration pending",
+  "BaselineCommit": "435d5df612d7611e5d97837302b718ea34666e5d",
+  "Model": {
+    "Report": "model-v1-current-20261029-1118/model.json",
+    "SHA256": "E95F57A318F896FF5B8BD9996C3F6A661B7C22A4C47402A3611DD292724A8532",
+    "ToolSHA256": "E0B5812E98A844649AFF820811067300E276ABFC31F626C1365971DAFEA15C9A",
+    "Vectors": "model-v1-current-20261029-1118/vectors.json",
+    "VectorsSHA256": "69D2616EE4512232AE8ADF9F5BFD97884836AE81A16CD259975DCD139BE405DC",
+    "ExistingInputsRechecked": 63,
+    "ChangedInputs": 0,
+    "KnownColorCasesPassed": 46,
+    "KnownColorCasesFailed": 0,
+    "UnscoredColorCases": 16,
+    "ClippedColorQualificationRemainsAKnownLimit": true,
+    "GeometryInferred": false
+  },
+  "Sources": {
+    "DUTSHA256": "315E7C58E99A7824777E0C431FE81107287F6AB98DB1639965B416FDB9DDA8AE",
+    "TBSHA256": "901776B48F5AF15599ADBD482D009362C8BD11BE519AE1350C4B01A06CBB6774",
+    "RunnerSHA256": "36C9509135BB3022A2D2B4A3DCCC89E6AED20DBE95A966570850E818F4ACB97F"
+  },
+  "Normal": {
+    "Directory": "E:/juan/FPGA/learning/sc520-color-shape-next/color-vote-v2-normal-20261029-1132",
+    "NativeExitCode": 0,
+    "WrapperExitCode": 0,
+    "Accepted": true,
+    "CompileErrors": 0,
+    "CompileWarnings": 0,
+    "Errors": 0,
+    "Checks": 403,
+    "Events": 41,
+    "Revokes": 19,
+    "CanonicalVectors": 16,
+    "VoteVectors": 12,
+    "SupplementalThresholdVectors": 4,
+    "ProtectionUnchanged": true
+  },
+  "CheckerNegative": {
+    "Directory": "E:/juan/FPGA/learning/sc520-color-shape-next/color-vote-v2-negative-20261029-1132",
+    "NativeExitCode": 0,
+    "WrapperExitCode": 1,
+    "Accepted": false,
+    "CheckerFailureObserved": true,
+    "Errors": 1,
+    "Checks": 404,
+    "ProtectionUnchanged": true,
+    "Note": "Intentional wrong expectation; the same DUT bytes are used. This verifies rejection, not a DUT failure."
+  },
+  "IndependentReview": {
+    "Reviewer": "Codex /root/color_vote_review_final",
+    "EvidenceForm": "Actual read-only findings returned through agent messages; this JSON is Root's recorded observation.",
+    "BindingsPerRunRehashed": 20,
+    "Mismatches": 0,
+    "IdenticalFrozenFilesAcrossRuns": 7,
+    "GeneratedVectorCallsCompared": 28,
+    "NoAdditionalBlockers": true
+  },
+  "Corrections": [
+    "Old 44-check coverage was narrower than its summary list; it is not upgraded to the new 403-check result.",
+    "Old model-v1 reports bind 05C84576; current reports bind the re-executed E0B5812E script.",
+    "ModelSim raw zero exit does not establish success; logs and explicit acceptance are required."
+  ],
+  "Limits": [
+    "Only the actual 16+12+4 vectors and exercised transaction scenarios are accepted.",
+    "Real scene glyph, clipping, upstream health, shape and cross-transaction freshness are not validated here.",
+    "No five-card regression, whole-system synthesis, resources, timing, bitstream or hardware claim is made.",
+    "Timeout and orphan-process cleanup branches were not exercised."
+  ],
+  "ProductionChanged": false,
+  "TDExecuted": false,
+  "NewBitstreamGenerated": false,
+  "Downloaded": false,
+  "FlashWritten": false,
+  "HardwareValidated": false
+}

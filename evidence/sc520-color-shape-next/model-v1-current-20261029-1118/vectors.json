@@ -1,0 +1,1204 @@
+{
+  "Schema": "sc520-color-shape-next.color-vote-v1",
+  "ColorRule": {
+    "HighMinimum": 32,
+    "ChromaMinimum": 24,
+    "Red": "R > 2G and R > 2B",
+    "Blue": "B > 2R and B > 2G",
+    "Yellow": "min(R,G) >= 2B and max(R,G) <= 2*min(R,G)",
+    "Vote": "unique winner; 3*winner >= 2*glyph; winner >= 2*each other color",
+    "ColorID": "0 unknown, 1 red, 2 yellow, 3 blue"
+  },
+  "CanonicalVectors": [
+    {
+      "Name": "red",
+      "RGB": [
+        255,
+        0,
+        0
+      ],
+      "ExpectedColor": 1,
+      "PredictedColor": 1,
+      "OracleColor": 1,
+      "RuleMatchesOracle": true,
+      "Pass": true
+    },
+    {
+      "Name": "yellow",
+      "RGB": [
+        255,
+        255,
+        0
+      ],
+      "ExpectedColor": 2,
+      "PredictedColor": 2,
+      "OracleColor": 2,
+      "RuleMatchesOracle": true,
+      "Pass": true
+    },
+    {
+      "Name": "green",
+      "RGB": [
+        0,
+        255,
+        0
+      ],
+      "ExpectedColor": 0,
+      "PredictedColor": 0,
+      "OracleColor": 0,
+      "RuleMatchesOracle": true,
+      "Pass": true
+    },
+    {
+      "Name": "blue",
+      "RGB": [
+        0,
+        0,
+        255
+      ],
+      "ExpectedColor": 3,
+      "PredictedColor": 3,
+      "OracleColor": 3,
+      "RuleMatchesOracle": true,
+      "Pass": true
+    },
+    {
+      "Name": "cyan",
+      "RGB": [
+        0,
+        255,
+        255
+      ],
+      "ExpectedColor": 0,
+      "PredictedColor": 0,
+      "OracleColor": 0,
+      "RuleMatchesOracle": true,
+      "Pass": true
+    },
+    {
+      "Name": "magenta",
+      "RGB": [
+        255,
+        0,
+        255
+      ],
+      "ExpectedColor": 0,
+      "PredictedColor": 0,
+      "OracleColor": 0,
+      "RuleMatchesOracle": true,
+      "Pass": true
+    },
+    {
+      "Name": "gray",
+      "RGB": [
+        96,
+        96,
+        96
+      ],
+      "ExpectedColor": 0,
+      "PredictedColor": 0,
+      "OracleColor": 0,
+      "RuleMatchesOracle": true,
+      "Pass": true
+    },
+    {
+      "Name": "white",
+      "RGB": [
+        255,
+        255,
+        255
+      ],
+      "ExpectedColor": 0,
+      "PredictedColor": 0,
+      "OracleColor": 0,
+      "RuleMatchesOracle": true,
+      "Pass": true
+    },
+    {
+      "Name": "red_equal_boundary",
+      "RGB": [
+        200,
+        100,
+        100
+      ],
+      "ExpectedColor": 0,
+      "PredictedColor": 0,
+      "OracleColor": 0,
+      "RuleMatchesOracle": true,
+      "Pass": true
+    },
+    {
+      "Name": "red_strict",
+      "RGB": [
+        201,
+        80,
+        80
+      ],
+      "ExpectedColor": 1,
+      "PredictedColor": 1,
+      "OracleColor": 1,
+      "RuleMatchesOracle": true,
+      "Pass": true
+    },
+    {
+      "Name": "blue_strict",
+      "RGB": [
+        80,
+        80,
+        201
+      ],
+      "ExpectedColor": 3,
+      "PredictedColor": 3,
+      "OracleColor": 3,
+      "RuleMatchesOracle": true,
+      "Pass": true
+    },
+    {
+      "Name": "yellow_2x_boundary",
+      "RGB": [
+        200,
+        200,
+        100
+      ],
+      "ExpectedColor": 2,
+      "PredictedColor": 2,
+      "OracleColor": 2,
+      "RuleMatchesOracle": true,
+      "Pass": true
+    },
+    {
+      "Name": "yellow_equal_boundary",
+      "RGB": [
+        200,
+        100,
+        50
+      ],
+      "ExpectedColor": 2,
+      "PredictedColor": 2,
+      "OracleColor": 2,
+      "RuleMatchesOracle": true,
+      "Pass": true
+    },
+    {
+      "Name": "red_equal_goes_yellow",
+      "RGB": [
+        100,
+        50,
+        0
+      ],
+      "ExpectedColor": 2,
+      "PredictedColor": 2,
+      "OracleColor": 2,
+      "RuleMatchesOracle": true,
+      "Pass": true
+    },
+    {
+      "Name": "red_strict_pass",
+      "RGB": [
+        101,
+        50,
+        0
+      ],
+      "ExpectedColor": 1,
+      "PredictedColor": 1,
+      "OracleColor": 1,
+      "RuleMatchesOracle": true,
+      "Pass": true
+    },
+    {
+      "Name": "yellow_unbalanced",
+      "RGB": [
+        255,
+        200,
+        120
+      ],
+      "ExpectedColor": 0,
+      "PredictedColor": 0,
+      "OracleColor": 0,
+      "RuleMatchesOracle": true,
+      "Pass": true
+    }
+  ],
+  "VoteVectors": [
+    {
+      "Name": "two_thirds_red",
+      "ColorIDs": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "Counts": [
+        6,
+        0,
+        0
+      ],
+      "ExpectedColor": 1,
+      "PredictedColor": 1,
+      "Qualified": true,
+      "Pass": true
+    },
+    {
+      "Name": "just_under_two_thirds_red",
+      "ColorIDs": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Counts": [
+        5,
+        0,
+        0
+      ],
+      "ExpectedColor": 0,
+      "PredictedColor": 0,
+      "Qualified": false,
+      "Pass": true
+    },
+    {
+      "Name": "two_to_one_yellow_blue",
+      "ColorIDs": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "Counts": [
+        2,
+        4,
+        0
+      ],
+      "ExpectedColor": 2,
+      "PredictedColor": 2,
+      "Qualified": true,
+      "Pass": true
+    },
+    {
+      "Name": "two_votes_two_unknown_reject",
+      "ColorIDs": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "Counts": [
+        0,
+        2,
+        0
+      ],
+      "ExpectedColor": 0,
+      "PredictedColor": 0,
+      "Qualified": false,
+      "Pass": true
+    },
+    {
+      "Name": "three_votes_one_each_reject",
+      "ColorIDs": [
+        3,
+        1,
+        1,
+        0,
+        0
+      ],
+      "Counts": [
+        2,
+        0,
+        1
+      ],
+      "ExpectedColor": 0,
+      "PredictedColor": 0,
+      "Qualified": false,
+      "Pass": true
+    },
+    {
+      "Name": "two_to_one_red_unknown_accept",
+      "ColorIDs": [
+        1,
+        1,
+        0
+      ],
+      "Counts": [
+        2,
+        0,
+        0
+      ],
+      "ExpectedColor": 1,
+      "PredictedColor": 1,
+      "Qualified": true,
+      "Pass": true
+    },
+    {
+      "Name": "four_to_one_red_unknown_accept",
+      "ColorIDs": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        3
+      ],
+      "Counts": [
+        4,
+        1,
+        1
+      ],
+      "ExpectedColor": 1,
+      "PredictedColor": 1,
+      "Qualified": true,
+      "Pass": true
+    },
+    {
+      "Name": "fifty_fifty_red_blue",
+      "ColorIDs": [
+        1,
+        1,
+        1,
+        3,
+        3,
+        3
+      ],
+      "Counts": [
+        3,
+        0,
+        3
+      ],
+      "ExpectedColor": 0,
+      "PredictedColor": 0,
+      "Qualified": false,
+      "Pass": true
+    },
+    {
+      "Name": "single_blue_speck",
+      "ColorIDs": [
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "Counts": [
+        0,
+        0,
+        1
+      ],
+      "ExpectedColor": 0,
+      "PredictedColor": 0,
+      "Qualified": false,
+      "Pass": true
+    },
+    {
+      "Name": "two_to_one_red_yellow",
+      "ColorIDs": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "Counts": [
+        4,
+        2,
+        0
+      ],
+      "ExpectedColor": 1,
+      "PredictedColor": 1,
+      "Qualified": true,
+      "Pass": true
+    },
+    {
+      "Name": "all_unknown_reject",
+      "ColorIDs": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Counts": [
+        0,
+        0,
+        0
+      ],
+      "ExpectedColor": 0,
+      "PredictedColor": 0,
+      "Qualified": false,
+      "Pass": true
+    },
+    {
+      "Name": "gray_like_one_third_reject",
+      "ColorIDs": [
+        1,
+        0,
+        0
+      ],
+      "Counts": [
+        1,
+        0,
+        0
+      ],
+      "ExpectedColor": 0,
+      "PredictedColor": 0,
+      "Qualified": false,
+      "Pass": true
+    }
+  ],
+  "OldFixtureRows": [
+    {
+      "Name": "block_1_plain",
+      "ExpectedColor": 1,
+      "PredictedColor": 1,
+      "Counts": [
+        253,
+        0,
+        0
+      ],
+      "GlyphPixels": 253,
+      "Qualified": true
+    },
+    {
+      "Name": "block_1_gray20",
+      "ExpectedColor": 1,
+      "PredictedColor": 1,
+      "Counts": [
+        203,
+        0,
+        0
+      ],
+      "GlyphPixels": 253,
+      "Qualified": true
+    },
+    {
+      "Name": "block_1_gray25",
+      "ExpectedColor": 1,
+      "PredictedColor": 1,
+      "Counts": [
+        190,
+        0,
+        0
+      ],
+      "GlyphPixels": 253,
+      "Qualified": true
+    },
+    {
+      "Name": "block_1_wrong20",
+      "ExpectedColor": 1,
+      "PredictedColor": 1,
+      "Counts": [
+        203,
+        50,
+        0
+      ],
+      "GlyphPixels": 253,
+      "Qualified": true
+    },
+    {
+      "Name": "block_1_wrong25",
+      "ExpectedColor": 1,
+      "PredictedColor": 1,
+      "Counts": [
+        190,
+        63,
+        0
+      ],
+      "GlyphPixels": 253,
+      "Qualified": true
+    },
+    {
+      "Name": "block_2_plain",
+      "ExpectedColor": 1,
+      "PredictedColor": 1,
+      "Counts": [
+        324,
+        0,
+        0
+      ],
+      "GlyphPixels": 324,
+      "Qualified": true
+    },
+    {
+      "Name": "block_2_gray20",
+      "ExpectedColor": 1,
+      "PredictedColor": 1,
+      "Counts": [
+        259,
+        0,
+        0
+      ],
+      "GlyphPixels": 324,
+      "Qualified": true
+    },
+    {
+      "Name": "block_2_gray25",
+      "ExpectedColor": 1,
+      "PredictedColor": 1,
+      "Counts": [
+        243,
+        0,
+        0
+      ],
+      "GlyphPixels": 324,
+      "Qualified": true
+    },
+    {
+      "Name": "block_2_wrong20",
+      "ExpectedColor": 1,
+      "PredictedColor": 1,
+      "Counts": [
+        259,
+        65,
+        0
+      ],
+      "GlyphPixels": 324,
+      "Qualified": true
+    },
+    {
+      "Name": "block_2_wrong25",
+      "ExpectedColor": 1,
+      "PredictedColor": 1,
+      "Counts": [
+        243,
+        81,
+        0
+      ],
+      "GlyphPixels": 324,
+      "Qualified": true
+    },
+    {
+      "Name": "gray",
+      "ExpectedColor": null,
+      "PredictedColor": 0,
+      "Counts": [
+        0,
+        0,
+        0
+      ],
+      "GlyphPixels": 324,
+      "Qualified": false
+    },
+    {
+      "Name": "sparse_red",
+      "ExpectedColor": null,
+      "PredictedColor": 0,
+      "Counts": [
+        65,
+        0,
+        0
+      ],
+      "GlyphPixels": 324,
+      "Qualified": false
+    },
+    {
+      "Name": "half_color",
+      "ExpectedColor": null,
+      "PredictedColor": 0,
+      "Counts": [
+        162,
+        162,
+        0
+      ],
+      "GlyphPixels": 324,
+      "Qualified": false
+    },
+    {
+      "Name": "gray_external",
+      "ExpectedColor": null,
+      "PredictedColor": 0,
+      "Counts": [
+        3,
+        0,
+        0
+      ],
+      "GlyphPixels": 327,
+      "Qualified": false
+    },
+    {
+      "Name": "square_external",
+      "ExpectedColor": 1,
+      "PredictedColor": 1,
+      "Counts": [
+        327,
+        0,
+        0
+      ],
+      "GlyphPixels": 327,
+      "Qualified": true
+    },
+    {
+      "Name": "clipped",
+      "ExpectedColor": null,
+      "PredictedColor": 1,
+      "Counts": [
+        1024,
+        0,
+        0
+      ],
+      "GlyphPixels": 1024,
+      "Qualified": true
+    },
+    {
+      "Name": "block_3_plain",
+      "ExpectedColor": 1,
+      "PredictedColor": 1,
+      "Counts": [
+        171,
+        0,
+        0
+      ],
+      "GlyphPixels": 171,
+      "Qualified": true
+    },
+    {
+      "Name": "block_3_gray20",
+      "ExpectedColor": 1,
+      "PredictedColor": 1,
+      "Counts": [
+        135,
+        0,
+        0
+      ],
+      "GlyphPixels": 171,
+      "Qualified": true
+    },
+    {
+      "Name": "block_3_gray25",
+      "ExpectedColor": 1,
+      "PredictedColor": 1,
+      "Counts": [
+        129,
+        0,
+        0
+      ],
+      "GlyphPixels": 171,
+      "Qualified": true
+    },
+    {
+      "Name": "block_3_wrong20",
+      "ExpectedColor": 1,
+      "PredictedColor": 1,
+      "Counts": [
+        135,
+        36,
+        0
+      ],
+      "GlyphPixels": 171,
+      "Qualified": true
+    },
+    {
+      "Name": "block_3_wrong25",
+      "ExpectedColor": 1,
+      "PredictedColor": 1,
+      "Counts": [
+        129,
+        42,
+        0
+      ],
+      "GlyphPixels": 171,
+      "Qualified": true
+    },
+    {
+      "Name": "block_4_plain",
+      "ExpectedColor": 2,
+      "PredictedColor": 2,
+      "Counts": [
+        0,
+        530,
+        0
+      ],
+      "GlyphPixels": 530,
+      "Qualified": true
+    },
+    {
+      "Name": "block_4_gray20",
+      "ExpectedColor": 2,
+      "PredictedColor": 2,
+      "Counts": [
+        0,
+        425,
+        0
+      ],
+      "GlyphPixels": 530,
+      "Qualified": true
+    },
+    {
+      "Name": "block_4_gray25",
+      "ExpectedColor": 2,
+      "PredictedColor": 2,
+      "Counts": [
+        0,
+        397,
+        0
+      ],
+      "GlyphPixels": 530,
+      "Qualified": true
+    },
+    {
+      "Name": "block_4_wrong20",
+      "ExpectedColor": 2,
+      "PredictedColor": 2,
+      "Counts": [
+        0,
+        425,
+        105
+      ],
+      "GlyphPixels": 530,
+      "Qualified": true
+    },
+    {
+      "Name": "block_4_wrong25",
+      "ExpectedColor": 2,
+      "PredictedColor": 2,
+      "Counts": [
+        0,
+        397,
+        133
+      ],
+      "GlyphPixels": 530,
+      "Qualified": true
+    },
+    {
+      "Name": "block_5_plain",
+      "ExpectedColor": 2,
+      "PredictedColor": 2,
+      "Counts": [
+        0,
+        676,
+        0
+      ],
+      "GlyphPixels": 676,
+      "Qualified": true
+    },
+    {
+      "Name": "block_5_gray20",
+      "ExpectedColor": 2,
+      "PredictedColor": 2,
+      "Counts": [
+        0,
+        541,
+        0
+      ],
+      "GlyphPixels": 676,
+      "Qualified": true
+    },
+    {
+      "Name": "block_5_gray25",
+      "ExpectedColor": 2,
+      "PredictedColor": 2,
+      "Counts": [
+        0,
+        507,
+        0
+      ],
+      "GlyphPixels": 676,
+      "Qualified": true
+    },
+    {
+      "Name": "block_5_wrong20",
+      "ExpectedColor": 2,
+      "PredictedColor": 2,
+      "Counts": [
+        0,
+        541,
+        135
+      ],
+      "GlyphPixels": 676,
+      "Qualified": true
+    },
+    {
+      "Name": "block_5_wrong25",
+      "ExpectedColor": 2,
+      "PredictedColor": 2,
+      "Counts": [
+        0,
+        507,
+        169
+      ],
+      "GlyphPixels": 676,
+      "Qualified": true
+    },
+    {
+      "Name": "block_6_plain",
+      "ExpectedColor": 2,
+      "PredictedColor": 2,
+      "Counts": [
+        0,
+        351,
+        0
+      ],
+      "GlyphPixels": 351,
+      "Qualified": true
+    },
+    {
+      "Name": "block_6_gray20",
+      "ExpectedColor": 2,
+      "PredictedColor": 2,
+      "Counts": [
+        0,
+        276,
+        0
+      ],
+      "GlyphPixels": 351,
+      "Qualified": true
+    },
+    {
+      "Name": "block_6_gray25",
+      "ExpectedColor": 2,
+      "PredictedColor": 2,
+      "Counts": [
+        0,
+        264,
+        0
+      ],
+      "GlyphPixels": 351,
+      "Qualified": true
+    },
+    {
+      "Name": "block_6_wrong20",
+      "ExpectedColor": 2,
+      "PredictedColor": 2,
+      "Counts": [
+        0,
+        276,
+        75
+      ],
+      "GlyphPixels": 351,
+      "Qualified": true
+    },
+    {
+      "Name": "block_6_wrong25",
+      "ExpectedColor": 2,
+      "PredictedColor": 2,
+      "Counts": [
+        0,
+        264,
+        87
+      ],
+      "GlyphPixels": 351,
+      "Qualified": true
+    },
+    {
+      "Name": "block_7_plain",
+      "ExpectedColor": 3,
+      "PredictedColor": 3,
+      "Counts": [
+        0,
+        0,
+        906
+      ],
+      "GlyphPixels": 906,
+      "Qualified": true
+    },
+    {
+      "Name": "block_7_gray20",
+      "ExpectedColor": 3,
+      "PredictedColor": 3,
+      "Counts": [
+        0,
+        0,
+        725
+      ],
+      "GlyphPixels": 906,
+      "Qualified": true
+    },
+    {
+      "Name": "block_7_gray25",
+      "ExpectedColor": 3,
+      "PredictedColor": 3,
+      "Counts": [
+        0,
+        0,
+        679
+      ],
+      "GlyphPixels": 906,
+      "Qualified": true
+    },
+    {
+      "Name": "block_7_wrong20",
+      "ExpectedColor": 3,
+      "PredictedColor": 3,
+      "Counts": [
+        181,
+        0,
+        725
+      ],
+      "GlyphPixels": 906,
+      "Qualified": true
+    },
+    {
+      "Name": "block_7_wrong25",
+      "ExpectedColor": 3,
+      "PredictedColor": 3,
+      "Counts": [
+        227,
+        0,
+        679
+      ],
+      "GlyphPixels": 906,
+      "Qualified": true
+    },
+    {
+      "Name": "block_8_plain",
+      "ExpectedColor": 3,
+      "PredictedColor": 3,
+      "Counts": [
+        0,
+        0,
+        1156
+      ],
+      "GlyphPixels": 1156,
+      "Qualified": true
+    },
+    {
+      "Name": "block_8_gray20",
+      "ExpectedColor": 3,
+      "PredictedColor": 3,
+      "Counts": [
+        0,
+        0,
+        925
+      ],
+      "GlyphPixels": 1156,
+      "Qualified": true
+    },
+    {
+      "Name": "block_8_gray25",
+      "ExpectedColor": 3,
+      "PredictedColor": 3,
+      "Counts": [
+        0,
+        0,
+        867
+      ],
+      "GlyphPixels": 1156,
+      "Qualified": true
+    },
+    {
+      "Name": "block_8_wrong20",
+      "ExpectedColor": 3,
+      "PredictedColor": 3,
+      "Counts": [
+        231,
+        0,
+        925
+      ],
+      "GlyphPixels": 1156,
+      "Qualified": true
+    },
+    {
+      "Name": "block_8_wrong25",
+      "ExpectedColor": 3,
+      "PredictedColor": 3,
+      "Counts": [
+        289,
+        0,
+        867
+      ],
+      "GlyphPixels": 1156,
+      "Qualified": true
+    },
+    {
+      "Name": "block_9_plain",
+      "ExpectedColor": 3,
+      "PredictedColor": 3,
+      "Counts": [
+        0,
+        0,
+        595
+      ],
+      "GlyphPixels": 595,
+      "Qualified": true
+    },
+    {
+      "Name": "block_9_gray20",
+      "ExpectedColor": 3,
+      "PredictedColor": 3,
+      "Counts": [
+        0,
+        0,
+        483
+      ],
+      "GlyphPixels": 595,
+      "Qualified": true
+    },
+    {
+      "Name": "block_9_gray25",
+      "ExpectedColor": 3,
+      "PredictedColor": 3,
+      "Counts": [
+        0,
+        0,
+        447
+      ],
+      "GlyphPixels": 595,
+      "Qualified": true
+    },
+    {
+      "Name": "block_9_wrong20",
+      "ExpectedColor": 3,
+      "PredictedColor": 3,
+      "Counts": [
+        112,
+        0,
+        483
+      ],
+      "GlyphPixels": 595,
+      "Qualified": true
+    },
+    {
+      "Name": "block_9_wrong25",
+      "ExpectedColor": 3,
+      "PredictedColor": 3,
+      "Counts": [
+        148,
+        0,
+        447
+      ],
+      "GlyphPixels": 595,
+      "Qualified": true
+    },
+    {
+      "Name": "card_10",
+      "ExpectedColor": null,
+      "PredictedColor": 0,
+      "Counts": [
+        272,
+        0,
+        0
+      ],
+      "GlyphPixels": 410,
+      "Qualified": false
+    },
+    {
+      "Name": "card_11",
+      "ExpectedColor": null,
+      "PredictedColor": 0,
+      "Counts": [
+        0,
+        160,
+        0
+      ],
+      "GlyphPixels": 284,
+      "Qualified": false
+    },
+    {
+      "Name": "card_12",
+      "ExpectedColor": null,
+      "PredictedColor": 0,
+      "Counts": [
+        0,
+        4,
+        0
+      ],
+      "GlyphPixels": 330,
+      "Qualified": false
+    },
+    {
+      "Name": "card_13",
+      "ExpectedColor": null,
+      "PredictedColor": 0,
+      "Counts": [
+        0,
+        128,
+        1
+      ],
+      "GlyphPixels": 249,
+      "Qualified": false
+    },
+    {
+      "Name": "card_14",
+      "ExpectedColor": null,
+      "PredictedColor": 0,
+      "Counts": [
+        0,
+        0,
+        0
+      ],
+      "GlyphPixels": 278,
+      "Qualified": false
+    },
+    {
+      "Name": "empty_white",
+      "ExpectedColor": null,
+      "PredictedColor": 0,
+      "Counts": [
+        0,
+        0,
+        0
+      ],
+      "GlyphPixels": 0,
+      "Qualified": false
+    },
+    {
+      "Name": "empty_gray",
+      "ExpectedColor": null,
+      "PredictedColor": 0,
+      "Counts": [
+        0,
+        0,
+        0
+      ],
+      "GlyphPixels": 0,
+      "Qualified": false
+    },
+    {
+      "Name": "empty_black",
+      "ExpectedColor": null,
+      "PredictedColor": 0,
+      "Counts": [
+        0,
+        0,
+        0
+      ],
+      "GlyphPixels": 0,
+      "Qualified": false
+    },
+    {
+      "Name": "empty_red",
+      "ExpectedColor": null,
+      "PredictedColor": 0,
+      "Counts": [
+        0,
+        0,
+        0
+      ],
+      "GlyphPixels": 0,
+      "Qualified": false
+    },
+    {
+      "Name": "empty_yellow",
+      "ExpectedColor": null,
+      "PredictedColor": 0,
+      "Counts": [
+        0,
+        0,
+        0
+      ],
+      "GlyphPixels": 0,
+      "Qualified": false
+    },
+    {
+      "Name": "empty_blue",
+      "ExpectedColor": null,
+      "PredictedColor": 0,
+      "Counts": [
+        0,
+        0,
+        0
+      ],
+      "GlyphPixels": 0,
+      "Qualified": false
+    }
+  ]
+}
