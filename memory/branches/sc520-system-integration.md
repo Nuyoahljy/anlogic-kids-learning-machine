@@ -1,7 +1,7 @@
 # SC520 单工程功能整合
 
-- 状态：进行中；I0309 SRAM候选已生成并通过离线复核，等待用户上板初测
-- 负责人：Codex /root local/01a17b18-5a45-78b3-83f3-46916f54535a；原负责人见历史记录
+- 状态：进行中；I0310R4C 初步终版固定标签及分支已上传 GitHub，移机包整理中，真实上板仍待验证
+- 负责人：Codex /root local/01a18534-9515-79d0-8443-217f618fd923；原负责人见历史记录
 - 分支：task/sc520-system-integration
 - 基础提交：fe80e3fd4de5e0ade930dafbedf82625f605762d
 - 工作目录：E:/juan/FPGA/worktrees/anlogic-kids-learning-machine/sc520-system-integration
@@ -1930,3 +1930,35 @@ export_review新增bitgen-v2工具将AcceptedEvidence及request加入前后保�
 发布目录fpga/release/sc520-i0310r4c含bit、manifest22EC8849、README与360源文件+清单源码快照ZIP ADEF639C/1464220B；ZIP全部361成员通过CRC并对360源逐hash/Bytes验证，README四链接存在。快照保原路径引用，不声称跨目录可直接运行。保持原+.023/+.020ns、20142slice/103ERAM/27DSP及已声明候选CDC/外部IO边界。旧I0309/R3与失败历史均未改动。
 
 随后将本次精确源、相关测试/构建器、release和本日志纳入独立feat提交；实际提交号记录在共享根的i0310r4c-checkpoint-20261028.json。历史无关untracked文件保持，未推送/合并main。下一步用户按新README用PROGRAM_SRAM验证SW4两次重校准和原业务回归。
+
+## 2026-10-29 I0310R4C user-selected submission fallback frozen
+
+当前 Root 已回读两条引用聊天和根/主库/本树最新规则、日志与记录。用户指定先确认并整理当前初步终版、上传 GitHub；即使上传失败也必须保持本版，后续没有更好版本时提交这一版。当前工作树为 task/sc520-system-integration@435d5df，原 tracked 变动为空，主库既有未提交资料与历史未跟踪产物保留。
+
+Root 已建立固定 annotated tag `sc520-i0310r4c-submission-v1`（tag object `10888848a934373b3fd7c8e4578f60e1ad5958f0`）与保护分支 `release/sc520-i0310r4c-submission-v1`，均精确指向 `435d5df612d7611e5d97837302b718ea34666e5d`。离线 Git bundle 实际创建及 verify 成功，31023436 字节、SHA256 `9D8C09060910A9573FFB2E73DACE14E8C6598420C4AD5A49BF18B438617BC97D`；包含完整历史。bundle 和原四发布文件仅新增只读属性，原字节不变。准确记录位于共享 learning/sc520-system-integration/frozen-i0310r4c。
+
+独立只读复核已实际确认原四发布文件与基线 Git blob 逐字一致、ZIP 361 成员 CRC 正常、360 源文件与 j319 构建原字节和快照清单相符、manifest 21 项绑定无差。部分源码 Git blob 存在换行正规化，精确构建字节以原 ZIP 为准，不伪称所有源 Git 字节相同。正式顶层明确 SHAPE_ENABLE=0/TRACK_ENABLE=1，当前生产是五卡；默认 pipeline 八类及旧十四类不作为本 bit 可达功能。
+
+本批没有修改 RTL、PLL、约束、音频包或原 bit，没有新 TD/下载/Flash/主线合并。原 +0.023/+0.020ns、TNS0/0 及实板待验证边界保持。下一步在新的 package 目录补 create-only 移机准备、必要 v2 AUDIO.PAK、完整包核验与 GitHub 上传；颜色几何仅在独立新分支实施，不移动冻结引用或覆盖本版。共享登记和索引完成后再交接该批次。
+
+## 2026-10-29 I0310R4C frozen refs uploaded
+
+当前 Root 为 local/01a18534-9515-79d0-8443-217f618fd923，已实际 read_thread 读取01a18366、01a1833f和01a18186并重读共享入口、最新冻结记录、主库及本树规则/记忆/任务日志。本树仍 task/sc520-system-integration@435d5df；继承的分支日志修改和历史未跟踪产物保留。主库既有未提交资料不动；本树旧2026-09-20总文档的十四类/SC500/DFPlayer及环境待建描述不覆盖D106及当前冻结范围。
+
+Root本次实核freeze.json五项SHA/Bytes/只读属性与两冻结引用，全部一致。独立freeze_audit重核ZIP361成员/360源与j319、manifest21直接绑定，均无差。正式生产仍为五卡，SHAPE_ENABLE=0/TRACK_ENABLE=1；原冻结README中的“卡片/几何”历史措辞不代表该bit启用几何，新移机说明将明确纠正。
+
+按用户此前明确上传授权，Root通过本机现有代理一次atomic push固定release分支和annotated tag，自然exit0。随后ls-remote实际回读：release与tag peel均435d5df612d7611e5d97837302b718ea34666e5d，tag object10888848a934373b3fd7c8e4578f60e1ad5958f0，main仍f609426044982c986b54e999866be9f4c1af2682；未force或合并main。实际证据见共享learning/sc520-system-integration/frozen-i0310r4c/github-upload-20261029.json，不回写旧freeze的Pending历史。
+
+已读取且被本聊天接替的三个重复接续01a18366、01a1833f、01a18186均实际set_thread_archived=true，准确标题/末状态/工具结果见archived-threads-20261029.json。当前聊天、原代码、Worktree和历史均保留。
+
+portable_builder仅新增fpga/package/sc520-i0310r4c移机工具及独立验证输出；media_audit只读核现有v2 AUDIO.PAK，freeze_audit独立只读。Root单写公共/分支日志并做包审核和Git上传。不改原四发布文件或固定引用，不新TD/下载/Flash。移机包完成、共享登记闭环后，才在独立分支尝试颜色几何候选。
+
+## 2026-10-29 I0310R4C portable delivery accepted
+
+新增fpga/package/sc520-i0310r4c包含prepare.py、13守卫测试、移机说明、Root组包工具、完整交付说明和5741781B交付ZIP。ZIP SHA为E46694B30AA9312F939E81FDE642E1AAA3A0102DF2DCF91D22576AA3F6CDA34E；其中12载荷加清单，含原bit/精确360源ZIP/原版本2 AUDIO.PAK和必要既有审核摘要。原bit E52E、源ZIP ADEF、PAK 1F0D均逐字保持；不是新编译bit。
+
+prepare作者portable_builder实际ready-v2成功，360源/361成员、七路径逆向逐字和353原字节、153HDL/164refs/8XML58依赖/15约束PLL全部闭合。首次guard负向发现Windows ZipInfo原反斜杠正规化的守卫缺口，旧EDB68工具和ready身份保留；71FC当前工具增加orig_filename守卫，13项纯检查通过、旧363输出不变。没有回写旧成功报告冒称使用新代码。
+
+Root实际从完整交付ZIP解压delivery-test，仅用其中prepare.py和源ZIP独立生成transfer-ready；native工具未执行，IP非规范化最长198字符。独立freeze_audit不用组包工具的验证函数，另行重核13成员CRC/12清单、五固定载荷、解压字节、361映射/353原源/七逆向和全部引用，回传通过。media_audit独立核32槽及96 PCM/WAV/Source绑定，当前五卡实际可达14槽；未试听或实板播放。
+
+准确准备结果、首次失败及Root观察见共享learning/sc520-system-integration/portable-i0310r4c。后续将本批工具/交付ZIP/本日志单独提交并上传release/sc520-i0310r4c-delivery-v1；实际新提交与远端核验写入共享记录，不改原submission-v1引用。主库文档、原RTL/PLL/SDC/ADC、冻结四文件和离线bundle保持，无下载/Flash/新整机资格。
